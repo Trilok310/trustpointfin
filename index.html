@@ -238,17 +238,22 @@
                 </div>
                 <div class="contact-form-container">
                     <form class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="6679bc2a-ea90-437a-be81-da75ca213eec">
+                        <input type="hidden" name="subject" value="New Contact from TrustPointFin Website">
+                        <input type="hidden" name="from_name" value="TrustPointFin Website">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required>
                         </div>
                         <div class="form-group">
-                            <select id="service" required>
+                            <select name="service" id="service" required>
                                 <option value="" disabled selected>Select Service of Interest</option>
                                 <option value="demat">Open Demat Account</option>
                                 <option value="mutual_funds">Mutual Funds & SIP</option>

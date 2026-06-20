@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Form Submission Mock
+    // 4. Form Submission with Web3Forms
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -93,26 +93,43 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
             
-            // Simulate sending
             btn.innerText = 'Sending...';
             btn.disabled = true;
-            
-            setTimeout(() => {
-                btn.innerText = 'Message Sent!';
-                btn.classList.remove('btn-primary');
-                btn.style.backgroundColor = 'var(--success)';
-                btn.style.color = '#fff';
-                contactForm.reset();
-                
-                // Reset button after 3 seconds
+
+            const formData = new FormData(contactForm);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    btn.innerText = 'Message Sent Successfully!';
+                    btn.classList.remove('btn-primary');
+                    btn.style.backgroundColor = 'var(--success)';
+                    btn.style.color = '#fff';
+                    contactForm.reset();
+                } else {
+                    console.log(response);
+                    btn.innerText = 'Error Sending';
+                    btn.style.backgroundColor = 'red';
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                btn.innerText = 'Something went wrong';
+            })
+            .finally(() => {
+                // Reset button after 4 seconds
                 setTimeout(() => {
                     btn.innerText = originalText;
                     btn.disabled = false;
                     btn.classList.add('btn-primary');
                     btn.style.backgroundColor = '';
                     btn.style.color = '';
-                }, 3000);
-            }, 1500);
+                }, 4000);
+            });
         });
     }
 });
