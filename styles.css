@@ -315,7 +315,7 @@ ul {
     padding-top: 2rem;
 }
 
-.stat-item h3 {
+.stat-item h2.stat-number {
     font-size: 2rem;
     color: var(--accent-color);
     margin-bottom: 0.25rem;
@@ -720,7 +720,12 @@ ul {
 .disclaimer {
     font-size: 0.75rem;
     margin-top: 0.5rem;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.7);
+}
+
+::placeholder {
+    color: #64748b;
+    opacity: 1;
 }
 
 /* --- Responsive Design --- */
