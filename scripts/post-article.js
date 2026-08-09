@@ -150,18 +150,29 @@ async function main() {
   console.log(`📝 Writing article about: "${topic}"`);
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
+  const primaryModel = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
+  const fallbackModel = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
 
-  // Retry wrapper for Gemini API calls to handle 503 High Demand errors
-  async function generateContentWithRetry(prompt, retries = 3, delayMs = 5000) {
+  // Robust retry wrapper for Gemini API calls to handle 503 and 429 errors
+  async function generateContentWithRetry(prompt, retries = 4, delayMs = 10000) {
+    let currentModel = primaryModel;
     for (let i = 0; i < retries; i++) {
       try {
-        return await model.generateContent(prompt);
+        return await currentModel.generateContent(prompt);
       } catch (error) {
-        if (error.message.includes("503") && i < retries - 1) {
-          console.log(`⚠️ Gemini API high demand (503). Retrying in ${delayMs / 1000}s... (Attempt ${i + 1}/${retries})`);
+        const isTransientError = error.message.includes("503") || error.message.includes("429") || error.message.includes("500");
+        
+        if (isTransientError && i < retries - 1) {
+          console.log(`⚠️ Gemini API error (${error.message.substring(0, 50)}...). Retrying in ${delayMs / 1000}s... (Attempt ${i + 1}/${retries})`);
           await new Promise(res => setTimeout(res, delayMs));
-          delayMs *= 2; // exponential backoff
+          
+          // Fallback to 3.5-flash on the 3rd attempt if 3.6 is persistently busy
+          if (i === 1) {
+            console.log("🔄 Falling back to stable model: gemini-3.5-flash");
+            currentModel = fallbackModel;
+          }
+          
+          delayMs += 5000; // linear backoff to avoid waiting too long on actions
         } else {
           throw error;
         }
