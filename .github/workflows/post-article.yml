@@ -28,6 +28,11 @@ jobs:
         run: npm install
         working-directory: ./scripts
 
+      - name: Debug - List files in workspace
+        run: |
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          ls -la $GITHUB_WORKSPACE
+
       - name: Run Article Poster Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
