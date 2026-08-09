@@ -43,7 +43,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           cd $GITHUB_WORKSPACE/scripts
-          node post-article.js
+          for i in 1 2 3 4 5; do
+            node post-article.js && exit 0 || echo "⚠️ Script crashed (Attempt $i/5). Retrying in 60 seconds..."
+            sleep 60
+          done
+          echo "❌ Script failed after 5 attempts."
+          exit 1
 
       - name: Commit and Push New Article
         run: |
