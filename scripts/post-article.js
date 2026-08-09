@@ -3,7 +3,9 @@ const fs = require("fs");
 const path = require("path");
 
 // --- CONFIG ---
-const ROOT = path.join(__dirname, "..");
+// GITHUB_WORKSPACE is always set by GitHub Actions to the repo root.
+// Falls back to parent directory for local testing.
+const ROOT = process.env.GITHUB_WORKSPACE || path.join(__dirname, "..");
 const CALENDAR_PATH = path.join(ROOT, "content_calendar.md");
 const INSIGHTS_PATH = path.join(ROOT, "insights.html");
 const SOCIAL_PATH = path.join(ROOT, "latest_social_media.md");
