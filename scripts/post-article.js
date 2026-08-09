@@ -11,6 +11,14 @@ const INSIGHTS_PATH = path.join(ROOT, "insights.html");
 const SOCIAL_PATH = path.join(ROOT, "latest_social_media.md");
 const TEMPLATE_PATH = path.join(ROOT, "sample-insight.html");
 
+// Debug: print all paths so we can diagnose issues
+console.log("🔍 DEBUG PATHS:");
+console.log("  ROOT:", ROOT);
+console.log("  CALENDAR:", CALENDAR_PATH, "| exists:", fs.existsSync(CALENDAR_PATH));
+console.log("  INSIGHTS:", INSIGHTS_PATH, "| exists:", fs.existsSync(INSIGHTS_PATH));
+console.log("  TEMPLATE:", TEMPLATE_PATH, "| exists:", fs.existsSync(TEMPLATE_PATH));
+console.log("  Files in ROOT:", fs.readdirSync(ROOT).join(", "));
+
 const EMOJI_MAP = {
   "Indian Market": "📈",
   "US Market": "🇺🇸",
