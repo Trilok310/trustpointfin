@@ -161,7 +161,7 @@ ul {
 
 /* --- Navigation --- */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -189,9 +189,17 @@ ul {
     letter-spacing: -0.5px;
 }
 .logo-img {
-    height: 60px;
+    height: 45px;
     width: auto;
     display: block;
+    background: #FFFFFF;
+    border-radius: 8px; /* Makes the white background look intentional */
+    padding: 2px;
+    transition: height var(--transition-normal);
+}
+
+.navbar.scrolled .logo-img {
+    height: 35px;
 }
 
 .navbar.scrolled .logo-text {
