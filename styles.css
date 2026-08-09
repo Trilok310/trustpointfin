@@ -183,10 +183,15 @@ ul {
 }
 
 .logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: var(--text-white);
+    letter-spacing: -0.5px;
+}
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 .navbar.scrolled .logo-text {
