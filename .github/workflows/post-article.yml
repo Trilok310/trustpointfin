@@ -1,0 +1,43 @@
+name: Auto Post Financial Insight
+
+on:
+  schedule:
+    # All times in UTC (IST = UTC + 5:30)
+    - cron: '20 3 * * *'   # 8:50 AM IST
+    - cron: '50 3 * * *'   # 9:20 AM IST
+    - cron: '30 11 * * *'  # 5:00 PM IST
+    - cron: '30 14 * * *'  # 8:00 PM IST
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  post-article:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+        working-directory: ./scripts
+
+      - name: Run Article Poster Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node post-article.js
+        working-directory: ./scripts
+
+      - name: Commit and Push New Article
+        run: |
+          git config --global user.name "TrustPointFin AutoBot"
+          git config --global user.email "autobot@trustpointfin.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "🤖 Auto-post: New Financial Insight"
+          git push
