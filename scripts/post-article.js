@@ -77,7 +77,7 @@ function markTopicComplete(lines, lineIndex) {
   fs.writeFileSync(CALENDAR_PATH, lines.join("\n"), "utf-8");
 }
 
-function buildArticleHTML(title, metaDescription, date, bodyHTML, faqSchema, slug) {
+function buildArticleHTML(title, metaDescription, date, bodyHTML, faqSchema, slug, imageUrl, topic) {
   const template = fs.readFileSync(TEMPLATE_PATH, "utf-8");
 
   return template
@@ -98,6 +98,7 @@ function buildArticleHTML(title, metaDescription, date, bodyHTML, faqSchema, slu
       `<header class="article-header">
             <h1>${title}</h1>
             <div class="article-meta">Published on ${date} • By TrustPoint Finance Research</div>
+            <img src="${imageUrl}" alt="${topic}" style="width:100%; height:auto; max-height:400px; object-fit:cover; border-radius:12px; margin-top:2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
         </header>`
     )
     .replace(
@@ -106,13 +107,15 @@ function buildArticleHTML(title, metaDescription, date, bodyHTML, faqSchema, slu
     );
 }
 
-function addCardToInsights(title, slug, date, summary, emoji) {
+function addCardToInsights(title, slug, date, summary, imageUrl, topic) {
   const insightsHTML = fs.readFileSync(INSIGHTS_PATH, "utf-8");
 
   const newCard = `
             <!-- Auto-generated article -->
             <a href="${slug}.html" class="insight-card">
-                <div class="insight-thumb">${emoji}</div>
+                <div class="insight-thumb" style="background:none;">
+                    <img src="${imageUrl}" alt="${topic}" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0;">
+                </div>
                 <div class="insight-content">
                     <div class="insight-meta">${date} • 6 min read</div>
                     <h3>${title}</h3>
@@ -285,7 +288,11 @@ Detailed answer to second FAQ
   }, null, 2);
 
   const slug = slugify(title);
-  const articleHTML = buildArticleHTML(title, meta, dateStr, fullBodyHTML, faqSchema, slug);
+  
+  // Use Pollinations AI to generate a dynamic, zero-cost placeholder image based on the topic
+  const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(topic + " finance stock market corporate photorealistic")}?width=800&height=400&nologo=true`;
+
+  const articleHTML = buildArticleHTML(title, meta, dateStr, fullBodyHTML, faqSchema, slug, imageUrl, topic);
 
   // --- Save article file ---
   const articlePath = path.join(ROOT, `${slug}.html`);
@@ -293,8 +300,7 @@ Detailed answer to second FAQ
   console.log(`✅ Article saved: ${slug}.html`);
 
   // --- Update insights.html grid ---
-  const emoji = getEmoji(topic);
-  addCardToInsights(title, slug, dateStr, summary, emoji);
+  addCardToInsights(title, slug, dateStr, summary, imageUrl, topic);
   console.log("✅ insights.html updated with new article card");
 
   // --- Generate Social Media Posts ---
