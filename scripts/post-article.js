@@ -152,6 +152,23 @@ async function main() {
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
 
+  // Retry wrapper for Gemini API calls to handle 503 High Demand errors
+  async function generateContentWithRetry(prompt, retries = 3, delayMs = 5000) {
+    for (let i = 0; i < retries; i++) {
+      try {
+        return await model.generateContent(prompt);
+      } catch (error) {
+        if (error.message.includes("503") && i < retries - 1) {
+          console.log(`⚠️ Gemini API high demand (503). Retrying in ${delayMs / 1000}s... (Attempt ${i + 1}/${retries})`);
+          await new Promise(res => setTimeout(res, delayMs));
+          delayMs *= 2; // exponential backoff
+        } else {
+          throw error;
+        }
+      }
+    }
+  }
+
   const now = new Date();
   const dateStr = now.toLocaleDateString("en-IN", {
     day: "numeric",
@@ -202,7 +219,7 @@ Second frequently asked question
 Detailed answer to second FAQ
 ---END---`;
 
-  const articleResponse = await model.generateContent(articlePrompt);
+  const articleResponse = await generateContentWithRetry(articlePrompt);
   const articleText = articleResponse.response.text();
 
   // --- Parse the response ---
@@ -316,7 +333,7 @@ Your Facebook post here (conversational, 100-150 words, include a question to dr
 Your LinkedIn post here (professional, data-driven, 150-200 words, include hashtags)
 ---END---`;
 
-  const socialResponse = await model.generateContent(socialPrompt);
+  const socialResponse = await generateContentWithRetry(socialPrompt);
   const socialText = socialResponse.response.text();
 
   const instagram = extract(socialText, "---INSTAGRAM---", "---FACEBOOK---");
