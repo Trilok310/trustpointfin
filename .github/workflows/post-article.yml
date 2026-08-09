@@ -25,19 +25,25 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        run: npm install
-        working-directory: ./scripts
-
-      - name: Debug - List files in workspace
         run: |
-          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          cd $GITHUB_WORKSPACE/scripts
+          npm install
+          echo "✅ npm install done. node_modules exists: $(ls node_modules | wc -l) packages"
+
+      - name: Debug - List workspace files
+        run: |
+          echo "GITHUB_WORKSPACE = $GITHUB_WORKSPACE"
+          echo "--- Root files ---"
           ls -la $GITHUB_WORKSPACE
+          echo "--- Scripts files ---"
+          ls -la $GITHUB_WORKSPACE/scripts
 
       - name: Run Article Poster Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node post-article.js
-        working-directory: ./scripts
+        run: |
+          cd $GITHUB_WORKSPACE/scripts
+          node post-article.js
 
       - name: Commit and Push New Article
         run: |
