@@ -6,7 +6,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 
 - [x] 1. Indian Market Overview & Trends
 - [x] 2. US Market Overview & Trends
-- [ ] 3. Upcoming IPOs & Analysis
+- [x] 3. Upcoming IPOs & Analysis
 - [ ] 4. Behavioral Finance: Understanding Investor Psychology
 - [ ] 5. Relevance of Classic Financial Books to the Current Market Situation
 - [ ] 6. "Princes of the Yen" - Relevance to the Current Global Economy
