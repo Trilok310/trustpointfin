@@ -5,7 +5,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 ## Topic Queue
 
 - [x] 1. Indian Market Overview & Trends
-- [ ] 2. US Market Overview & Trends
+- [x] 2. US Market Overview & Trends
 - [ ] 3. Upcoming IPOs & Analysis
 - [ ] 4. Behavioral Finance: Understanding Investor Psychology
 - [ ] 5. Relevance of Classic Financial Books to the Current Market Situation
