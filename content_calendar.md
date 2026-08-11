@@ -9,7 +9,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 3. Upcoming IPOs & Analysis
 - [x] 4. Behavioral Finance: Understanding Investor Psychology
 - [x] 5. Relevance of Classic Financial Books to the Current Market Situation
-- [ ] 6. "Princes of the Yen" - Relevance to the Current Global Economy
+- [x] 6. "Princes of the Yen" - Relevance to the Current Global Economy
 - [ ] 7. CAN SLIM Technique: Finding Top Stocks for Proper Entry, SL, and Target
 - [ ] 8. Trading Markets: Daily Insights based on Classic Trading Literature
 - [ ] 9. Historical Market Crashes and their Relevance in the Current Situation
