@@ -11,7 +11,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 5. Relevance of Classic Financial Books to the Current Market Situation
 - [x] 6. "Princes of the Yen" - Relevance to the Current Global Economy
 - [x] 7. CAN SLIM Technique: Finding Top Stocks for Proper Entry, SL, and Target
-- [ ] 8. Trading Markets: Daily Insights based on Classic Trading Literature
+- [x] 8. Trading Markets: Daily Insights based on Classic Trading Literature
 - [ ] 9. Historical Market Crashes and their Relevance in the Current Situation
 - [ ] 10. The Long-Term Benefits of Investing / SIP / Trading
 - [ ] 11. Trading Psychology: Mastering your Emotions
