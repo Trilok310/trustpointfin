@@ -15,7 +15,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 9. Historical Market Crashes and their Relevance in the Current Situation
 - [x] 10. The Long-Term Benefits of Investing / SIP / Trading
 - [x] 11. Trading Psychology: Mastering your Emotions
-- [ ] 12. "Trading in the Zone" (Mark Douglas) - Relevance to Current Scenarios
+- [x] 12. "Trading in the Zone" (Mark Douglas) - Relevance to Current Scenarios
 - [ ] 13. "Best Loser Wins" (Tom Hougaard) - Comparing concepts in the Current Market
 - [ ] 14. Best Options Strategies for Current Volatility
 - [ ] 15. New SEBI Guidelines and their Effect on Retail Traders
