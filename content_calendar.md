@@ -18,7 +18,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 12. "Trading in the Zone" (Mark Douglas) - Relevance to Current Scenarios
 - [x] 13. "Best Loser Wins" (Tom Hougaard) - Comparing concepts in the Current Market
 - [x] 14. Best Options Strategies for Current Volatility
-- [ ] 15. New SEBI Guidelines and their Effect on Retail Traders
+- [x] 15. New SEBI Guidelines and their Effect on Retail Traders
 - [ ] 16. Spotting Impressive Company Results: Stocks Everyone Wants to Own
 - [ ] 17. Identifying Possible Market Bubbles or Crashes
 - [ ] 18. Why the US is Adopting Crypto (Institutional and Retail Shifts)
