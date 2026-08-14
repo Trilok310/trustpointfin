@@ -26,30 +26,32 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd $GITHUB_WORKSPACE/scripts
           npm install
-          echo "✅ npm install done. node_modules exists: $(ls node_modules | wc -l) packages"
+          echo "✅ npm install done."
 
-      - name: Debug - List workspace files
-        run: |
-          echo "GITHUB_WORKSPACE = $GITHUB_WORKSPACE"
-          echo "--- Root files ---"
-          ls -la $GITHUB_WORKSPACE
-          echo "--- Scripts files ---"
-          ls -la $GITHUB_WORKSPACE/scripts
-
-      - name: Run Article Poster Script
+      - name: Run Article Poster Script (Step 1)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
         run: |
-          cd $GITHUB_WORKSPACE/scripts
           for i in 1 2 3 4 5; do
-            node post-article.js && exit 0 || echo "⚠️ Script crashed (Attempt $i/5). Retrying in 60 seconds..."
+            node scripts/post-article.js && exit 0 || echo "⚠️ Script crashed (Attempt $i/5). Retrying in 60 seconds..."
             sleep 60
           done
           echo "❌ Script failed after 5 attempts."
           exit 1
+
+      - name: Run Presentation Engine (Step 2 - Generate Carousel)
+        run: |
+          node scripts/generate-carousel.js
+
+      - name: Publish to Meta (Step 3 - Auto Publish to IG/FB)
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: |
+          node scripts/post-social.js
 
       - name: Commit and Push New Article
         run: |

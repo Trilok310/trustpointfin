@@ -202,6 +202,49 @@ The article should:
 - Naturally mention Angel One as a great platform to start investing
 - End with a CTA encouraging readers to open a Demat account with Angel One
 
+After the article content, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
+Follow this exact JSON structure for the slides:
+[
+  {
+    "type": "bg-image", // for intro, hook, or key rules
+    "title": "Main heading. Use &lt;span class='highlight'&gt;keyword&lt;/span&gt; for emphasis.",
+    "text": "The sub-text below the title",
+    "image_query": "trading psychology" // used to fetch a background image from Unsplash
+  },
+  {
+    "type": "bg-analytical", // for data visualization
+    "title": "Data heading",
+    "text": "Context for the data",
+    "chart": { // Optional: include a chart
+      "type": "bar", // or "line"
+      "labels": ["Yr 1", "Yr 2", "Yr 3"],
+      "datasets": [
+        {"label": "Retail", "data": [5, 2, -10]},
+        {"label": "Pro", "data": [8, 12, 15]}
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Comparison Matrix",
+    "text": "Comparing two approaches",
+    "table": { // Optional: include a table instead of a chart
+      "headers": ["Factor", "Amateur", "Professional"],
+      "rows": [
+        ["Focus", "Profits", "Execution"],
+        ["Losses", "Panic", "Cut quickly"]
+      ]
+    }
+  },
+  {
+    "type": "bg-image",
+    "title": "Ready to trade with &lt;span class='highlight'&gt;Discipline?&lt;/span&gt;",
+    "text": "Execute your strategies flawlessly with zero brokerage on delivery trades.",
+    "image_query": "success business",
+    "is_cta": true // indicates this is the final Call to Action slide
+  }
+]
+
 Return your response in EXACTLY this format (use the delimiters exactly):
 ---TITLE---
 Your article title here
@@ -228,6 +271,10 @@ Detailed answer to first FAQ
 Second frequently asked question  
 ---FAQ2A---
 Detailed answer to second FAQ
+---SLIDES---
+[
+  // Your JSON array of slides here
+]
 ---END---`;
 
   const articleResponse = await generateContentWithRetry(articlePrompt);
@@ -249,7 +296,17 @@ Detailed answer to second FAQ
   const faq1q = extract(articleText, "---FAQ1Q---", "---FAQ1A---");
   const faq1a = extract(articleText, "---FAQ1A---", "---FAQ2Q---");
   const faq2q = extract(articleText, "---FAQ2Q---", "---FAQ2A---");
-  const faq2a = extract(articleText, "---FAQ2A---", "---END---");
+  const faq2a = extract(articleText, "---FAQ2A---", "---SLIDES---");
+  const slidesRaw = extract(articleText, "---SLIDES---", "---END---");
+
+  let slidesData = [];
+  try {
+      slidesData = JSON.parse(slidesRaw);
+      fs.writeFileSync(path.join(ROOT, "latest_slides.json"), JSON.stringify(slidesData, null, 2), "utf-8");
+      console.log(`✅ Extracted ${slidesData.length} slides to latest_slides.json`);
+  } catch (e) {
+      console.error("⚠️ Failed to parse slides JSON:", e.message);
+  }
 
   const [statNum, statLabel] = statRaw.includes("|")
     ? statRaw.split("|")
