@@ -43,7 +43,7 @@ jobs:
 
       - name: Run Presentation Engine (Step 2 - Generate Carousel)
         run: |
-          npx puppeteer browsers install chrome
+          node node_modules/puppeteer/install.mjs
           node scripts/generate-carousel.js
 
       - name: Commit and Push New Article and Slides (Step 3)
