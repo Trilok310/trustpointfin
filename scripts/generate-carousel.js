@@ -70,6 +70,11 @@ function buildHTML(slides) {
             contentHTML += `\n<div><span class="cta-btn">Link in Bio to Read More</span></div>`;
         }
 
+        let disclaimerHTML = '';
+        if (index === 0 || isLast) {
+            disclaimerHTML = `<div class="slide-disclaimer">Disclaimer: Investments in the securities market are subject to market risks. Read all related documents carefully before investing.</div>`;
+        }
+
         slidesHTML += `
         <div class="slide ${bgClass}" ${bgStyle}>
             <div class="brand-header">
@@ -83,6 +88,7 @@ function buildHTML(slides) {
                 <span class="slide-number">${slideNum} / ${total}</span>
                 <span class="swipe">${swipeText}</span>
             </div>
+            ${disclaimerHTML}
         </div>`;
     });
 
@@ -105,6 +111,7 @@ function buildHTML(slides) {
         .slide-footer { position: absolute; bottom: 50px; left: 50px; right: 50px; display: flex; justify-content: space-between; z-index: 3; font-size: 26px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
         .slide-number { color: rgba(255,255,255,0.4); }
         .swipe { color: #ffb703; }
+        .slide-disclaimer { position: absolute; bottom: 15px; left: 50px; right: 50px; text-align: center; font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.4); z-index: 3; font-family: 'Inter', sans-serif; letter-spacing: 0.5px; }
         h1 { font-family: 'Playfair Display', serif; font-size: 76px; font-weight: 700; line-height: 1.15; margin-top: 120px; margin-bottom: 24px; color: #ffffff; }
         .slide.bg-image h1 { margin-top: 0; }
         .highlight { color: #ffb703; font-style: italic; }
