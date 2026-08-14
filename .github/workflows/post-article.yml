@@ -41,6 +41,7 @@ jobs:
       - name: Run Article Poster Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
         run: |
           cd $GITHUB_WORKSPACE/scripts
           for i in 1 2 3 4 5; do

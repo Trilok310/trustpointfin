@@ -317,8 +317,28 @@ Detailed answer to second FAQ
 
   const slug = slugify(title);
   
-  // Use Pollinations AI to generate a dynamic, zero-cost placeholder image based on the topic
-  const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(topic + " finance stock market corporate photorealistic")}?width=800&height=400&nologo=true`;
+  // --- Image Generation (Unsplash API) ---
+  let imageUrl = "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop"; // Premium fallback image
+  
+  if (process.env.UNSPLASH_API_KEY) {
+    try {
+      console.log("📸 Fetching premium image from Unsplash API...");
+      // Ask Unsplash for a random landscape photo related to finance/markets
+      const unsplashRes = await fetch(`https://api.unsplash.com/photos/random?query=finance,stock-market,business&orientation=landscape&client_id=${process.env.UNSPLASH_API_KEY}`);
+      
+      if (unsplashRes.ok) {
+        const data = await unsplashRes.json();
+        imageUrl = data.urls.regular; // The high-quality image URL
+        console.log("✅ Unsplash image fetched successfully!");
+      } else {
+        console.log(`⚠️ Unsplash API Error: ${unsplashRes.status}. Using fallback image.`);
+      }
+    } catch (err) {
+      console.log(`⚠️ Unsplash network error: ${err.message}. Using fallback image.`);
+    }
+  } else {
+    console.log("⚠️ No UNSPLASH_API_KEY found. Using fallback image.");
+  }
 
   const articleHTML = buildArticleHTML(title, meta, dateStr, fullBodyHTML, faqSchema, slug, imageUrl, topic);
 
