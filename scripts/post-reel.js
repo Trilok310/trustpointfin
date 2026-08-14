@@ -74,9 +74,12 @@ async function main() {
 
     console.log("\n🚀 --- PUBLISHING FACEBOOK REEL ---");
     try {
-        console.log("📦 Uploading to Facebook Page Reels...");
-        // Facebook Page Reels API is slightly different (video_reels endpoint)
-        // We initialize the session
+        console.log("📦 Initializing Facebook Page Reels upload...");
+        
+        const fileStat = fs.statSync(REEL_VIDEO_PATH);
+        const fileData = fs.readFileSync(REEL_VIDEO_PATH);
+
+        // 1. Start Phase
         const initRes = await fetchJSON(`https://graph.facebook.com/${API_VERSION}/${FB_PAGE_ID}/video_reels`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -85,13 +88,45 @@ async function main() {
                 access_token: PAGE_TOKEN
             })
         });
+        
+        const videoId = initRes.video_id;
+        const uploadUrl = initRes.upload_url;
+        console.log(`✅ FB Session Started. Video ID: ${videoId}`);
 
-        // The FB Reels API requires a binary upload in chunk mode, which is complex.
-        // For simplicity, many users just rely on Instagram auto-crossposting to FB Reels.
-        console.log("✅ Initialized FB Reel session:", initRes.video_id);
-        console.log("⚠️ Full binary upload omitted for simplicity. IG auto-share is recommended for FB Reels.");
+        // 2. Upload Phase
+        console.log("📤 Uploading binary video data to Facebook...");
+        const uploadRes = await fetch(uploadUrl, {
+            method: 'POST',
+            headers: {
+                'Authorization': `OAuth ${PAGE_TOKEN}`,
+                'offset': '0',
+                'file_size': fileStat.size.toString()
+            },
+            body: fileData
+        });
+        
+        const uploadJson = await uploadRes.json();
+        if (uploadJson.error) throw new Error(uploadJson.error.message);
+        console.log("✅ Binary upload complete.");
+
+        // 3. Publish Phase
+        console.log("🚀 Publishing Facebook Reel...");
+        const publishRes = await fetchJSON(`https://graph.facebook.com/${API_VERSION}/${FB_PAGE_ID}/video_reels`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                upload_phase: 'finish',
+                access_token: PAGE_TOKEN,
+                video_id: videoId,
+                video_state: 'PUBLISHED',
+                description: caption
+            })
+        });
+        console.log(`🎉 Facebook Reel Published! Success: ${publishRes.success}`);
+
     } catch (err) {
-        console.log(`⚠️ Facebook Reel API init failed: ${err.message}`);
+        console.log(`⚠️ Facebook Reel API failed: ${err.message}`);
+        console.log("💡 Tip: If this fails, the easiest solution is to turn on 'Auto-Share to Facebook' in your Instagram App settings!");
     }
 
     console.log("\n✅ ALL REEL PUBLISHING COMPLETE!");

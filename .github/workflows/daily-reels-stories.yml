@@ -42,8 +42,21 @@ jobs:
 
       - name: Stitch Reel Video with FFmpeg (Step 2)
         run: |
-          # Create a silent audio track and stitch the 3 images together (4 seconds each)
-          ffmpeg -y -framerate 1/4 -i reel_slides/reel_%d.jpg -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -c:v libx264 -c:a aac -r 30 -pix_fmt yuv420p -shortest reel.mp4
+          # Try to use a custom background music file if it exists in the repo, otherwise download a generic one
+          if [ ! -f "bg.mp3" ]; then
+            echo "📥 Downloading royalty-free background music..."
+            wget -qO bg.mp3 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" || true
+          fi
+          
+          # If we successfully have an MP3, use it. Otherwise, fallback to silent audio.
+          if [ -s "bg.mp3" ]; then
+            echo "🎵 Mixing in background music..."
+            # -stream_loop -1 loops the audio. -shortest stops when the video ends (12s).
+            ffmpeg -y -framerate 1/4 -i reel_slides/reel_%d.jpg -stream_loop -1 -i bg.mp3 -c:v libx264 -c:a aac -r 30 -pix_fmt yuv420p -shortest reel.mp4
+          else
+            echo "🔇 No music found. Using silent audio..."
+            ffmpeg -y -framerate 1/4 -i reel_slides/reel_%d.jpg -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -c:v libx264 -c:a aac -r 30 -pix_fmt yuv420p -shortest reel.mp4
+          fi
           echo "✅ Reel video generated successfully."
 
       - name: Commit and Push Assets (Step 3)
