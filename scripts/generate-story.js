@@ -7,12 +7,7 @@ const STORY_IMAGE_PATH = path.join(ROOT, 'story.jpg');
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-async function fetchJSON(url, options = {}) {
-    const res = await fetch(url, options);
-    const data = await res.json();
-    if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
-    return data;
-}
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 async function getQuote() {
     console.log("🤖 Asking Gemini for a daily quote/fact...");
@@ -25,19 +20,11 @@ async function getQuote() {
       "image_query": "1 or 2 word search term for the background image (e.g. 'wallstreet', 'success', 'wealth')"
     }`;
 
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { temperature: 0.9 }
-        })
-    });
+    const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const result = await model.generateContent(prompt);
     
-    const data = await res.json();
-    if (data.error) throw new Error(data.error.message);
-
-    let rawText = data.candidates[0].content.parts[0].text;
+    let rawText = result.response.text();
     rawText = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
     return JSON.parse(rawText);
 }

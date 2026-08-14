@@ -15,12 +15,7 @@ if (!fs.existsSync(REEL_DIR)) {
     });
 }
 
-async function fetchJSON(url, options = {}) {
-    const res = await fetch(url, options);
-    const data = await res.json();
-    if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
-    return data;
-}
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 async function getReelConcept() {
     console.log("🤖 Asking Gemini for a 3-part Reel concept...");
@@ -33,16 +28,11 @@ async function getReelConcept() {
       "image_query": "1 or 2 word search term for the background (e.g. 'chart', 'growth', 'money')"
     }`;
 
-    const res = await fetchJSON(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { temperature: 0.8 }
-        })
-    });
-
-    let rawText = res.candidates[0].content.parts[0].text;
+    const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const result = await model.generateContent(prompt);
+    
+    let rawText = result.response.text();
     rawText = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
     return JSON.parse(rawText);
 }
