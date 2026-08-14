@@ -1,0 +1,66 @@
+name: Auto Post Daily Reel and Story
+
+on:
+  schedule:
+    # 10:00 AM IST (4:30 AM UTC)
+    - cron: '30 4 * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  post-reel-story:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v3
+        with:
+          architecture: ''
+          download-version: 'latest'
+
+      - name: Install Dependencies
+        run: |
+          npm install
+          echo "✅ npm install done."
+
+      - name: Run Generators (Step 1)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node node_modules/puppeteer/install.mjs
+          node scripts/generate-story.js
+          node scripts/generate-reel.js
+
+      - name: Stitch Reel Video with FFmpeg (Step 2)
+        run: |
+          # Create a silent audio track and stitch the 3 images together (4 seconds each)
+          ffmpeg -y -framerate 1/4 -i reel_slides/reel_%d.jpg -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -c:v libx264 -c:a aac -r 30 -pix_fmt yuv420p -shortest reel.mp4
+          echo "✅ Reel video generated successfully."
+
+      - name: Commit and Push Assets (Step 3)
+        run: |
+          git config --global user.name "TrustPointFin AutoBot"
+          git config --global user.email "autobot@trustpointfin.com"
+          git add story.jpg reel.mp4 reel_slides/
+          git diff --staged --quiet || git commit -m "🤖 Auto-post: New Daily Story and Reel"
+          git push
+          echo "⏳ Assets pushed to GitHub! Waiting 5 minutes (300s) for GitHub CDN to update..."
+          sleep 300
+
+      - name: Publish to Meta (Step 4)
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: |
+          node scripts/post-story.js
+          node scripts/post-reel.js
