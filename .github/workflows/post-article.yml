@@ -53,8 +53,8 @@ jobs:
           git add -A
           git diff --staged --quiet || git commit -m "🤖 Auto-post: New Financial Insight"
           git push
-          echo "⏳ Waiting 15 seconds for GitHub raw CDN to update..."
-          sleep 15
+          echo "⏳ Website Post is Live! Waiting 5 minutes (300s) before posting to Social Media..."
+          sleep 300
 
       - name: Publish to Meta (Step 4 - Auto Publish to IG/FB)
         env:
