@@ -1,0 +1,85 @@
+[
+  {
+    "type": "bg-image",
+    "title": "Comparison of <span class='highlight'>World Economies</span> in 2026",
+    "text": "Where should Indian retail investors deploy their capital for maximum returns?",
+    "image_query": "global stock market graph"
+  },
+  {
+    "type": "bg-analytical",
+    "title": "2026 GDP Growth Projections",
+    "text": "India continues to lead major global economies in economic expansion.",
+    "chart": {
+      "type": "bar",
+      "labels": [
+        "India",
+        "China",
+        "US",
+        "Eurozone"
+      ],
+      "datasets": [
+        {
+          "label": "Projected GDP Growth (%)",
+          "data": [
+            6.8,
+            4.2,
+            2.1,
+            1.4
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Global Market Comparison Matrix",
+    "text": "Evaluating growth vs valuation for key investment destinations.",
+    "table": {
+      "headers": [
+        "Economy",
+        "Growth Profile",
+        "Key Advantage",
+        "Risk Level"
+      ],
+      "rows": [
+        [
+          "India",
+          "High (6.8%)",
+          "Earnings & Demographics",
+          "Moderate"
+        ],
+        [
+          "United States",
+          "Moderate (2.1%)",
+          "Tech Innovation & USD",
+          "Low-Moderate"
+        ],
+        [
+          "China",
+          "Muted (4.2%)",
+          "Low Valuations",
+          "High (Regulatory)"
+        ],
+        [
+          "Eurozone",
+          "Low (1.4%)",
+          "Dividend Yields",
+          "Moderate-High"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-image",
+    "title": "The Winning <span class='highlight'>70-20-10 Rule</span>",
+    "text": "70% Core Indian Equities | 20% US/Global Tech Funds | 10% Gold & Debt for Stability",
+    "image_query": "wealth growth finance"
+  },
+  {
+    "type": "bg-image",
+    "title": "Start Investing Today with <span class='highlight'>Angel One</span>",
+    "text": "Open your free Demat account in minutes and access Indian equities & global mutual funds effortlessly.",
+    "image_query": "mobile trading success",
+    "is_cta": true
+  }
+]
