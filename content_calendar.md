@@ -24,7 +24,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 18. Why the US is Adopting Crypto (Institutional and Retail Shifts)
 - [x] 19. Why China has a Different AI Ecosystem
 - [x] 20. Comparison of World Economies: Which is Best to Invest In?
-- [ ] 21. Best Investment Ideas and Megatrends for the Next 10-20 Years
+- [x] 21. Best Investment Ideas and Megatrends for the Next 10-20 Years
 
 ## Social Media Output
 *The scheduled agent will output Facebook, Instagram, and LinkedIn captions for each published article in a separate log file for the user.*

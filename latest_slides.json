@@ -1,30 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Comparison of <span class='highlight'>World Economies</span> in 2026",
-    "text": "Where should Indian retail investors deploy their capital for maximum returns?",
-    "image_query": "global stock market graph"
+    "title": "Megatrends for the Next &lt;span class='highlight'&gt;10-20 Years&lt;/span&gt;",
+    "text": "How Indian retail investors can capture generational wealth during India's economic surge.",
+    "image_query": "future technology city growth"
   },
   {
     "type": "bg-analytical",
-    "title": "2026 GDP Growth Projections",
-    "text": "India continues to lead major global economies in economic expansion.",
+    "title": "India's Economic Expansion Path",
+    "text": "Projected GDP Growth (Trillion USD) through 2035",
     "chart": {
       "type": "bar",
       "labels": [
-        "India",
-        "China",
-        "US",
-        "Eurozone"
+        "2020",
+        "2026",
+        "2030",
+        "2035"
       ],
       "datasets": [
         {
-          "label": "Projected GDP Growth (%)",
+          "label": "Indian GDP ($ Trillion)",
           "data": [
-            6.8,
-            4.2,
-            2.1,
-            1.4
+            2.7,
+            4.1,
+            7,
+            10
           ]
         }
       ]
@@ -32,54 +32,43 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Global Market Comparison Matrix",
-    "text": "Evaluating growth vs valuation for key investment destinations.",
+    "title": "Top 4 Compounding Megatrends",
+    "text": "Key growth catalysts driving the Indian markets",
     "table": {
       "headers": [
-        "Economy",
-        "Growth Profile",
-        "Key Advantage",
-        "Risk Level"
+        "Megatrend",
+        "Key Drivers",
+        "Horizon"
       ],
       "rows": [
         [
-          "India",
-          "High (6.8%)",
-          "Earnings & Demographics",
-          "Moderate"
+          "Clean Energy",
+          "Green H2, Solar, EVs",
+          "15-20 Yrs"
         ],
         [
-          "United States",
-          "Moderate (2.1%)",
-          "Tech Innovation & USD",
-          "Low-Moderate"
+          "High-Tech Mfg",
+          "Semiconductors, Defence",
+          "10-15 Yrs"
         ],
         [
-          "China",
-          "Muted (4.2%)",
-          "Low Valuations",
-          "High (Regulatory)"
+          "Digital & AI",
+          "Data Centers, DPI, SaaS",
+          "10-20 Yrs"
         ],
         [
-          "Eurozone",
-          "Low (1.4%)",
-          "Dividend Yields",
-          "Moderate-High"
+          "Financialization",
+          "SIP Boom, Demat Growth",
+          "15-20 Yrs"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "The Winning <span class='highlight'>70-20-10 Rule</span>",
-    "text": "70% Core Indian Equities | 20% US/Global Tech Funds | 10% Gold & Debt for Stability",
-    "image_query": "wealth growth finance"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Investing Today with <span class='highlight'>Angel One</span>",
-    "text": "Open your free Demat account in minutes and access Indian equities & global mutual funds effortlessly.",
-    "image_query": "mobile trading success",
+    "title": "Start Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Open your zero-cost Demat account today and systematically build your megatrend portfolio.",
+    "image_query": "wealth growth stocks",
     "is_cta": true
   }
 ]
