@@ -45,18 +45,20 @@ jobs:
         run: |
           node scripts/generate-carousel.js
 
-      - name: Publish to Meta (Step 3 - Auto Publish to IG/FB)
-        env:
-          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
-          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-        run: |
-          node scripts/post-social.js
-
-      - name: Commit and Push New Article
+      - name: Commit and Push New Article and Slides (Step 3)
         run: |
           git config --global user.name "TrustPointFin AutoBot"
           git config --global user.email "autobot@trustpointfin.com"
           git add -A
           git diff --staged --quiet || git commit -m "🤖 Auto-post: New Financial Insight"
           git push
+          echo "⏳ Waiting 15 seconds for GitHub raw CDN to update..."
+          sleep 15
+
+      - name: Publish to Meta (Step 4 - Auto Publish to IG/FB)
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: |
+          node scripts/post-social.js

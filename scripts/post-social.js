@@ -21,27 +21,13 @@ async function fetchJSON(url, options = {}) {
     return data;
 }
 
-// Upload a file to a temporary public host so Meta can download it for Instagram
-async function uploadToTempHost(filePath) {
-    console.log(`📤 Uploading ${path.basename(filePath)} to temporary host for IG...`);
-    const fileData = fs.readFileSync(filePath);
-    
-    // We use tmpfiles.org as a temporary bridge to provide Meta with a public URL
-    const formData = new FormData();
-    formData.append('file', new Blob([fileData]), path.basename(filePath));
-    
-    const res = await fetch('https://tmpfiles.org/api/v1/upload', {
-        method: 'POST',
-        body: formData
-    });
-    
-    if (!res.ok) throw new Error("Failed to upload to temp host");
-    
-    const json = await res.json();
-    // Convert regular URL to direct download URL
-    const directUrl = json.data.url.replace('tmpfiles.org/', 'tmpfiles.org/dl/');
-    console.log(`🔗 Got temporary public URL: ${directUrl}`);
-    return directUrl;
+// Get the raw GitHub URL for the slide
+async function getGithubRawUrl(fileName) {
+    // The workflow commits and pushes the slides to the 'main' branch BEFORE this script runs.
+    // We add a timestamp cachebuster to ensure Meta's CDN pulls the freshest version.
+    const url = `https://raw.githubusercontent.com/trilok310/trustpointfin/main/slides/${fileName}?t=${Date.now()}`;
+    console.log(`🔗 Using GitHub Raw URL for IG: ${url}`);
+    return url;
 }
 
 // Upload raw bytes directly to Facebook Pages (Unpublished)
@@ -122,7 +108,7 @@ async function main() {
     const igContainerIds = [];
     
     for (const file of slideFiles) {
-        const publicUrl = await uploadToTempHost(path.join(SLIDES_DIR, file));
+        const publicUrl = await getGithubRawUrl(file);
         
         console.log(`📦 Creating IG Item Container for ${file}...`);
         const containerRes = await fetchJSON(`https://graph.facebook.com/${API_VERSION}/${IG_ACCOUNT_ID}/media?image_url=${encodeURIComponent(publicUrl)}&is_carousel_item=true&access_token=${PAGE_TOKEN}`, {
