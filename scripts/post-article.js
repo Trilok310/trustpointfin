@@ -322,9 +322,15 @@ Detailed answer to second FAQ
   
   if (process.env.UNSPLASH_API_KEY) {
     try {
-      console.log("📸 Fetching premium image from Unsplash API...");
-      // Ask Unsplash for a random landscape photo related to finance/markets
-      const unsplashRes = await fetch(`https://api.unsplash.com/photos/random?query=finance,stock-market,business&orientation=landscape&client_id=${process.env.UNSPLASH_API_KEY}`);
+      console.log(`📸 Fetching premium image from Unsplash API for topic: ${topic}...`);
+      // Ask Unsplash for a random landscape photo related to the specific topic
+      let unsplashRes = await fetch(`https://api.unsplash.com/photos/random?query=${encodeURIComponent(topic + " finance business")}&orientation=landscape&client_id=${process.env.UNSPLASH_API_KEY}`);
+      
+      // Fallback to general finance if the specific topic yields no results
+      if (unsplashRes.status === 404) {
+          console.log("⚠️ No images found for specific topic, falling back to general finance...");
+          unsplashRes = await fetch(`https://api.unsplash.com/photos/random?query=finance,stock-market&orientation=landscape&client_id=${process.env.UNSPLASH_API_KEY}`);
+      }
       
       if (unsplashRes.ok) {
         const data = await unsplashRes.json();
