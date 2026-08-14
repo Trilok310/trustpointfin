@@ -1,0 +1,29 @@
+name: Re-migrate Images
+
+on:
+  push:
+    paths:
+      - '.github/workflows/re-migrate.yml'
+
+jobs:
+  remigrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run Migration Script
+        env:
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
+        run: |
+          cd $GITHUB_WORKSPACE/scripts
+          node re-migrate-images.js
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add ..
+          git commit -m "chore: fetch individual unsplash images per article" || exit 0
+          git push
