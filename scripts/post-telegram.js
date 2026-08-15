@@ -54,15 +54,26 @@ async function postToTelegram(contentData) {
     // Fallback Unsplash URL generator
     const photoUrl = `https://source.unsplash.com/1200x800/?${encodeURIComponent(contentData.image_query)},trading,finance`;
     
-    // Telegram Bot API endpoint for sending a photo with a caption
-    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`;
-    
-    const body = {
+    let url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`;
+    let body = {
         chat_id: TELEGRAM_CHAT_ID,
         photo: photoUrl,
         caption: contentData.caption,
         parse_mode: "HTML"
     };
+
+    // Telegram's strict limit for photo captions is 1024 characters.
+    // If the AI generated something longer, we fallback to a standard message (4096 limit).
+    if (contentData.caption.length > 1000) {
+        console.log("⚠️ Caption is over 1000 characters. Falling back to sendMessage with image preview...");
+        url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+        body = {
+            chat_id: TELEGRAM_CHAT_ID,
+            // The invisible zero-width joiner link forces Telegram to load the image preview!
+            text: `<a href="${photoUrl}">&#8205;</a>\n` + contentData.caption,
+            parse_mode: "HTML"
+        };
+    }
 
     const res = await fetchJSON(url, {
         method: 'POST',
