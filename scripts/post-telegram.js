@@ -31,6 +31,7 @@ Requirements:
 5. Provide a 1-2 word search term for an Unsplash background image (e.g., "stockchart", "bullmarket", "finance").
 6. End the post with this exact call-to-action for opening a Demat account:
 "📈 <i>Analyze this setup yourself with zero brokerage on delivery. Open your AngelOne account here: <a href='${ANGELONE_LINK}'>TrustPointFin Referral</a></i>"
+7. STRICT LENGTH LIMIT: The entire caption MUST be strictly under 800 characters. Keep it concise, punchy, and highly readable.
 
 Return ONLY a raw JSON object (no markdown wrapping) with these keys:
 {
