@@ -51,39 +51,35 @@ Return ONLY a raw JSON object (no markdown wrapping) with these keys:
 async function postToTelegram(contentData) {
     console.log(`📤 Preparing to post to Telegram Chat ID: ${TELEGRAM_CHAT_ID}...`);
     
-    // Unsplash recently deprecated their source API causing redirects that Telegram rejects.
-    // Using Pollinations AI ensures a direct, high-quality image stream that Telegram loves.
+    // Using Pollinations AI ensures a direct, high-quality image stream
     const photoUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(contentData.image_query + " stock market trading chart professional")}?width=1200&height=800&nologo=true`;
     
-    let url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`;
-    let body = {
-        chat_id: TELEGRAM_CHAT_ID,
-        photo: photoUrl,
-        caption: contentData.caption,
-        parse_mode: "HTML"
-    };
-
-    // Telegram's strict limit for photo captions is 1024 characters.
-    if (contentData.caption.length > 1000) {
-        console.log("⚠️ Caption is over 1000 characters. Falling back to sendMessage with image preview...");
-        url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-        body = {
-            chat_id: TELEGRAM_CHAT_ID,
-            // The invisible zero-width joiner link forces Telegram to load the image preview!
-            text: `<a href="${photoUrl}">&#8205;</a>\n` + contentData.caption,
-            parse_mode: "HTML"
-        };
-    }
-
-    const res = await fetchJSON(url, {
+    // To completely bypass all caption length limits and "web page content" errors,
+    // we send the Photo and the Text as two completely separate messages!
+    
+    console.log("📸 Sending Chart Image...");
+    const photoRes = await fetchJSON(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(body)
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            photo: photoUrl
+        })
     });
     
-    console.log(`🎉 Successfully posted to Telegram! Message ID: ${res.result.message_id}`);
+    console.log("📝 Sending Educational Setup Text...");
+    const textRes = await fetchJSON(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            text: contentData.caption,
+            parse_mode: "HTML",
+            disable_web_page_preview: true
+        })
+    });
+    
+    console.log(`🎉 Successfully posted to Telegram! Message ID: ${textRes.result.message_id}`);
 }
 
 async function main() {
