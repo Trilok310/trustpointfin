@@ -49,25 +49,8 @@ Return ONLY a raw JSON object (no markdown wrapping) with these keys:
 }
 
 async function postToTelegram(contentData) {
-    console.log(`📤 Preparing to post to Telegram Chat ID: ${TELEGRAM_CHAT_ID}...`);
+    console.log(`📤 Preparing to post text to Telegram Chat ID: ${TELEGRAM_CHAT_ID}...`);
     
-    // Using Pollinations AI ensures a direct, high-quality image stream
-    const photoUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(contentData.image_query + " stock market trading chart professional")}?width=1200&height=800&nologo=true`;
-    
-    // To completely bypass all caption length limits and "web page content" errors,
-    // we send the Photo and the Text as two completely separate messages!
-    
-    console.log("📸 Sending Chart Image...");
-    const photoRes = await fetchJSON(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            chat_id: TELEGRAM_CHAT_ID,
-            photo: photoUrl
-        })
-    });
-    
-    console.log("📝 Sending Educational Setup Text...");
     const textRes = await fetchJSON(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
