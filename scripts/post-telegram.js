@@ -51,8 +51,9 @@ Return ONLY a raw JSON object (no markdown wrapping) with these keys:
 async function postToTelegram(contentData) {
     console.log(`📤 Preparing to post to Telegram Chat ID: ${TELEGRAM_CHAT_ID}...`);
     
-    // Fallback Unsplash URL generator
-    const photoUrl = `https://source.unsplash.com/1200x800/?${encodeURIComponent(contentData.image_query)},trading,finance`;
+    // Unsplash recently deprecated their source API causing redirects that Telegram rejects.
+    // Using Pollinations AI ensures a direct, high-quality image stream that Telegram loves.
+    const photoUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(contentData.image_query + " stock market trading chart professional")}?width=1200&height=800&nologo=true`;
     
     let url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`;
     let body = {
@@ -63,7 +64,6 @@ async function postToTelegram(contentData) {
     };
 
     // Telegram's strict limit for photo captions is 1024 characters.
-    // If the AI generated something longer, we fallback to a standard message (4096 limit).
     if (contentData.caption.length > 1000) {
         console.log("⚠️ Caption is over 1000 characters. Falling back to sendMessage with image preview...");
         url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
