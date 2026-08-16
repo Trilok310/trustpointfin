@@ -25,6 +25,15 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 19. Why China has a Different AI Ecosystem
 - [x] 20. Comparison of World Economies: Which is Best to Invest In?
 - [x] 21. Best Investment Ideas and Megatrends for the Next 10-20 Years
+- [ ] 22. The Impact of Interest Rate Changes on the Indian Stock Market
+- [ ] 23. Technical Analysis vs Fundamental Analysis: Which works better?
+- [ ] 24. A Beginner's Guide to Futures and Options in India
+- [ ] 25. How to Identify Multi-bagger Stocks Before the Crowd
+- [ ] 26. Sector Rotation: Moving Your Money Where the Growth Is
+- [ ] 27. Dividend Investing: Building Passive Income in the Share Market
+- [ ] 28. Understanding Option Greeks for Retail Traders
+- [ ] 29. The Role of Foreign Institutional Investors (FIIs) in India
+- [ ] 30. Stop Loss and Risk-Reward Ratio: The Holy Grail of Trading
 
 ## Social Media Output
 *The scheduled agent will output Facebook, Instagram, and LinkedIn captions for each published article in a separate log file for the user.*
