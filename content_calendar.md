@@ -25,7 +25,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 19. Why China has a Different AI Ecosystem
 - [x] 20. Comparison of World Economies: Which is Best to Invest In?
 - [x] 21. Best Investment Ideas and Megatrends for the Next 10-20 Years
-- [ ] 22. The Impact of Interest Rate Changes on the Indian Stock Market
+- [x] 22. The Impact of Interest Rate Changes on the Indian Stock Market
 - [ ] 23. Technical Analysis vs Fundamental Analysis: Which works better?
 - [ ] 24. A Beginner's Guide to Futures and Options in India
 - [ ] 25. How to Identify Multi-bagger Stocks Before the Crowd
