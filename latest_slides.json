@@ -1,76 +1,78 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;Interest Rate Cycles&lt;/span&gt; in Indian Equities",
-    "text": "How RBI repo rate decisions create market opportunities for retail investors in 2026.",
-    "image_query": "stock market chart finance"
+    "title": "Technical vs Fundamental Analysis: <span class='highlight'>Which Wins in 2026?</span>",
+    "text": "Discover how combining price action with company financial health yields maximum market returns.",
+    "image_query": "stock market chart financial growth"
   },
   {
     "type": "bg-analytical",
-    "title": "Sectoral Sensitivity to Rate Cuts",
-    "text": "Historical average gain following a 50 bps RBI repo rate cut cycle",
+    "title": "Core Differences <span class='highlight'>At A Glance</span>",
+    "text": "Understanding how both approaches differ across critical parameters.",
+    "table": {
+      "headers": [
+        "Factor",
+        "Fundamental Analysis",
+        "Technical Analysis"
+      ],
+      "rows": [
+        [
+          "Core Focus",
+          "Intrinsic Company Value",
+          "Price Action & Volumes"
+        ],
+        [
+          "Time Horizon",
+          "Months to Years",
+          "Minutes to Weeks"
+        ],
+        [
+          "Primary Goal",
+          "Identify Great Businesses",
+          "Time Entry & Exit Points"
+        ],
+        [
+          "Key Tools",
+          "Balance Sheets, P/E, Cash Flow",
+          "Candlesticks, RSI, Moving Averages"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "The Retail <span class='highlight'>Trader Reality</span>",
+    "text": "SEBI statistics highlight why pure speculative trading without risk management fails.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Realty Index",
-        "Auto Index",
-        "Bank Nifty",
-        "Nifty IT",
-        "FMCG"
+        "F&O Traders",
+        "Intraday Traders",
+        "Long-Term Investors"
       ],
       "datasets": [
         {
-          "label": "Average Rally (%)",
+          "label": "% Profitability Rate",
           "data": [
-            14.2,
-            11.5,
-            8.8,
-            3.2,
-            2.1
+            11,
+            28,
+            74
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Rate Hike vs. Rate Cut Impact",
-    "text": "Key macro metrics across monetary cycles",
-    "table": {
-      "headers": [
-        "Metric",
-        "Rate Cut Cycle",
-        "Rate Hike Cycle"
-      ],
-      "rows": [
-        [
-          "Corporate Borrowing",
-          "Cheaper / Expands",
-          "Costly / Contracts"
-        ],
-        [
-          "Consumer Loans",
-          "Demand Increases",
-          "Demand Softens"
-        ],
-        [
-          "FII Inflows",
-          "Generally Positive",
-          "Outflows / Cautious"
-        ],
-        [
-          "Market Multiples",
-          "PE Expansion",
-          "PE Compression"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "The Winning Formula: <span class='highlight'>Technofundamentals</span>",
+    "text": "1. Use Fundamentals to select WHAT to buy.\n2. Use Technicals to decide WHEN to buy.",
+    "image_query": "financial strategy analytics dashboard"
   },
   {
     "type": "bg-image",
-    "title": "Ready to Invest with &lt;span class='highlight'&gt;Angel One?&lt;/span&gt;",
-    "text": "Track rate-sensitive stocks with powerful analytics and zero brokerage on equity delivery.",
-    "image_query": "financial investment growth",
+    "title": "Trade Smarter with <span class='highlight'>Angel One</span>",
+    "text": "Execute blended strategies with zero brokerage on delivery, advanced TradingView charts, and AI-powered recommendations.",
+    "image_query": "successful stock market trader mobile",
     "is_cta": true
   }
 ]
