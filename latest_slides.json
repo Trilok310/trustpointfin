@@ -1,72 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>Futures & Options</span>",
-    "text": "A realistic guide to navigating Indian derivative markets in 2026.",
-    "image_query": "stock market trading"
+    "title": "Spot &lt;span class='highlight'&gt;Multibagger Stocks&lt;/span&gt; Before the Crowd",
+    "text": "Learn the simple financial framework used by professional investors to catch 10x growth plays early.",
+    "image_query": "stock market research"
   },
   {
     "type": "bg-analytical",
-    "title": "The Retail F&O Reality Check",
-    "text": "SEBI data underscores the vital necessity of strict risk management.",
+    "title": "Smart Money vs. Retail Timing",
+    "text": "How entering during the institutional accumulation phase yields maximum upside.",
+    "table": {
+      "headers": [
+        "Stage",
+        "Smart Money",
+        "Retail Crowd"
+      ],
+      "rows": [
+        [
+          "Accumulation",
+          "Buying quietly at fair value",
+          "Unaware / uninterested"
+        ],
+        [
+          "Breakout",
+          "Holding & adding dips",
+          "FOMO buying at peak"
+        ],
+        [
+          "Valuation",
+          "Re-rating (P/E expands)",
+          "Overpaying for past growth"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "The Power of Earnings & P/E Re-rating",
+    "text": "Combining EPS growth with P/E expansion creates compound multi-fold returns.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Retail Traders",
-        "Institutional Traders"
+        "Year 1 (Entry)",
+        "Year 3 (Growth)",
+        "Year 5 (Multibagger)"
       ],
       "datasets": [
         {
-          "label": "% Making Net Profit",
+          "label": "Stock Price (₹)",
           "data": [
-            7,
-            72
+            100,
+            350,
+            1000
           ]
         },
         {
-          "label": "% Incurring Net Loss",
+          "label": "EPS (₹)",
           "data": [
-            93,
-            28
+            10,
+            25,
+            50
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Futures vs Options Matrix",
-    "text": "Understanding core structural differences before placing a trade.",
-    "table": {
-      "headers": [
-        "Feature",
-        "Futures",
-        "Options (Buying)"
-      ],
-      "rows": [
-        [
-          "Obligation",
-          "Mandatory contract",
-          "Right, no obligation"
-        ],
-        [
-          "Capital Required",
-          "High (Full Margin)",
-          "Low (Premium cost)"
-        ],
-        [
-          "Max Risk",
-          "Unlimited potential loss",
-          "Limited to premium paid"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "4 Non-Negotiable Rules for &lt;span class='highlight'&gt;Multibaggers&lt;/span&gt;",
+    "text": "1. ROCE > 20%\n2. Debt to Equity < 0.5\n3. Increasing DII/FII Stake\n4. Massive Sectoral Tailwind (TAM)",
+    "image_query": "finance growth analysis"
   },
   {
     "type": "bg-image",
-    "title": "Ready to Trade <span class='highlight'>Smartly?</span>",
-    "text": "Open your Demat account with Angel One to access real-time Option Chains and advanced analytical tools.",
-    "image_query": "financial success growth",
+    "title": "Start Investing Today with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Get zero brokerage on delivery trades and advanced stock screeners. Open your account now!",
+    "image_query": "financial freedom",
     "is_cta": true
   }
 ]

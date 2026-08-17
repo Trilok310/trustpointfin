@@ -28,7 +28,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 22. The Impact of Interest Rate Changes on the Indian Stock Market
 - [x] 23. Technical Analysis vs Fundamental Analysis: Which works better?
 - [x] 24. A Beginner's Guide to Futures and Options in India
-- [ ] 25. How to Identify Multi-bagger Stocks Before the Crowd
+- [x] 25. How to Identify Multi-bagger Stocks Before the Crowd
 - [ ] 26. Sector Rotation: Moving Your Money Where the Growth Is
 - [ ] 27. Dividend Investing: Building Passive Income in the Share Market
 - [ ] 28. Understanding Option Greeks for Retail Traders
