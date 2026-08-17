@@ -1,78 +1,72 @@
 [
   {
     "type": "bg-image",
-    "title": "Technical vs Fundamental Analysis: <span class='highlight'>Which Wins in 2026?</span>",
-    "text": "Discover how combining price action with company financial health yields maximum market returns.",
-    "image_query": "stock market chart financial growth"
+    "title": "Mastering <span class='highlight'>Futures & Options</span>",
+    "text": "A realistic guide to navigating Indian derivative markets in 2026.",
+    "image_query": "stock market trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Core Differences <span class='highlight'>At A Glance</span>",
-    "text": "Understanding how both approaches differ across critical parameters.",
-    "table": {
-      "headers": [
-        "Factor",
-        "Fundamental Analysis",
-        "Technical Analysis"
-      ],
-      "rows": [
-        [
-          "Core Focus",
-          "Intrinsic Company Value",
-          "Price Action & Volumes"
-        ],
-        [
-          "Time Horizon",
-          "Months to Years",
-          "Minutes to Weeks"
-        ],
-        [
-          "Primary Goal",
-          "Identify Great Businesses",
-          "Time Entry & Exit Points"
-        ],
-        [
-          "Key Tools",
-          "Balance Sheets, P/E, Cash Flow",
-          "Candlesticks, RSI, Moving Averages"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "The Retail <span class='highlight'>Trader Reality</span>",
-    "text": "SEBI statistics highlight why pure speculative trading without risk management fails.",
+    "title": "The Retail F&O Reality Check",
+    "text": "SEBI data underscores the vital necessity of strict risk management.",
     "chart": {
       "type": "bar",
       "labels": [
-        "F&O Traders",
-        "Intraday Traders",
-        "Long-Term Investors"
+        "Retail Traders",
+        "Institutional Traders"
       ],
       "datasets": [
         {
-          "label": "% Profitability Rate",
+          "label": "% Making Net Profit",
           "data": [
-            11,
-            28,
-            74
+            7,
+            72
+          ]
+        },
+        {
+          "label": "% Incurring Net Loss",
+          "data": [
+            93,
+            28
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "The Winning Formula: <span class='highlight'>Technofundamentals</span>",
-    "text": "1. Use Fundamentals to select WHAT to buy.\n2. Use Technicals to decide WHEN to buy.",
-    "image_query": "financial strategy analytics dashboard"
+    "type": "bg-analytical",
+    "title": "Futures vs Options Matrix",
+    "text": "Understanding core structural differences before placing a trade.",
+    "table": {
+      "headers": [
+        "Feature",
+        "Futures",
+        "Options (Buying)"
+      ],
+      "rows": [
+        [
+          "Obligation",
+          "Mandatory contract",
+          "Right, no obligation"
+        ],
+        [
+          "Capital Required",
+          "High (Full Margin)",
+          "Low (Premium cost)"
+        ],
+        [
+          "Max Risk",
+          "Unlimited potential loss",
+          "Limited to premium paid"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Trade Smarter with <span class='highlight'>Angel One</span>",
-    "text": "Execute blended strategies with zero brokerage on delivery, advanced TradingView charts, and AI-powered recommendations.",
-    "image_query": "successful stock market trader mobile",
+    "title": "Ready to Trade <span class='highlight'>Smartly?</span>",
+    "text": "Open your Demat account with Angel One to access real-time Option Chains and advanced analytical tools.",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
