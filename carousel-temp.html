@@ -32,14 +32,14 @@
 </head>
 <body>
     
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20research,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20charts,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Spot &lt;span class='highlight'&gt;Multibagger Stocks&lt;/span&gt; Before the Crowd</h1>
-<p>Learn the simple financial framework used by professional investors to catch 10x growth plays early.</p>
+                <h1>Master <span class='highlight'>Sector Rotation</span> in 2026</h1>
+<p>How smart money in India shifts capital across economic cycles to outperform Nifty 50.</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">1 / 5</span>
@@ -53,9 +53,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Smart Money vs. Retail Timing</h1>
-<p>How entering during the institutional accumulation phase yields maximum upside.</p>
-<table class="data-table"><tr><th>Stage</th><th>Smart Money</th><th>Retail Crowd</th></tr><tr><td>Accumulation</td><td>Buying quietly at fair value</td><td>Unaware / uninterested</td></tr><tr><td>Breakout</td><td>Holding & adding dips</td><td>FOMO buying at peak</td></tr><tr><td>Valuation</td><td>Re-rating (P/E expands)</td><td>Overpaying for past growth</td></tr></table>
+                <h1>Historical Outperformance</h1>
+<p>Sector rotation strategy alpha vs standard benchmark index across economic phases.</p>
+<div class="chart-container"><canvas id="chart2"></canvas></div>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">2 / 5</span>
@@ -69,9 +69,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>The Power of Earnings & P/E Re-rating</h1>
-<p>Combining EPS growth with P/E expansion creates compound multi-fold returns.</p>
-<div class="chart-container"><canvas id="chart3"></canvas></div>
+                <h1>Sector Playbook Framework</h1>
+<p>Matching macro economic conditions with high-growth sectors.</p>
+<table class="data-table"><tr><th>Macro Phase</th><th>Leading Sector</th><th>Strategy</th></tr><tr><td>Rate Cut Phase</td><td>BFSI & Real Estate</td><td>Aggressive Growth</td></tr><tr><td>Capex Push</td><td>Capital Goods & Defense</td><td>Value / Momentum</td></tr><tr><td>Slowdown / Inflation</td><td>FMCG & Pharma</td><td>Defensive Value</td></tr></table>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">3 / 5</span>
@@ -79,17 +79,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?finance%20growth%20analysis,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20research,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>4 Non-Negotiable Rules for &lt;span class='highlight'&gt;Multibaggers&lt;/span&gt;</h1>
-<p>1. ROCE > 20%
-2. Debt to Equity < 0.5
-3. Increasing DII/FII Stake
-4. Massive Sectoral Tailwind (TAM)</p>
+                <h1>Key Macro Triggers to <span class='highlight'>Track</span></h1>
+<p>Monitor RBI Repo Rates, Government Budget PLI Allocations, and Sectoral Earnings Surprises.</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">4 / 5</span>
@@ -97,14 +94,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20freedom,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?successful%20stock%20trader,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Start Investing Today with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;</h1>
-<p>Get zero brokerage on delivery trades and advanced stock screeners. Open your account now!</p>
+                <h1>Rotate Capital Like a <span class='highlight'>Pro</span></h1>
+<p>Track sector heatmaps, access smart tools, and enjoy zero brokerage on delivery trades with Angel One.</p>
 <div><span class="cta-btn">Link in Bio to Read More</span></div>
             </div>
             <div class="slide-footer">
@@ -118,9 +115,9 @@
         Chart.defaults.font.size = 24;
         Chart.defaults.color = '#94a3b8';
         
-                new Chart(document.getElementById('chart3').getContext('2d'), {
+                new Chart(document.getElementById('chart2').getContext('2d'), {
                     type: 'bar',
-                    data: {"labels":["Year 1 (Entry)","Year 3 (Growth)","Year 5 (Multibagger)"],"datasets":[{"label":"Stock Price (₹)","data":[100,350,1000]},{"label":"EPS (₹)","data":[10,25,50]}]},
+                    data: {"labels":["Expansion","Peak Rate","Recovery"],"datasets":[{"label":"Nifty 50","data":[12,4,10]},{"label":"Rotated Sector Portfolio","data":[24,11,18]}]},
                     options: {
                         responsive: true, maintainAspectRatio: false, animation: false,
                         plugins: { legend: { labels: { color: '#cbd5e1', padding: 10, font: { family: "'Inter', sans-serif" } } } },

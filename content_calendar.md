@@ -29,7 +29,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 23. Technical Analysis vs Fundamental Analysis: Which works better?
 - [x] 24. A Beginner's Guide to Futures and Options in India
 - [x] 25. How to Identify Multi-bagger Stocks Before the Crowd
-- [ ] 26. Sector Rotation: Moving Your Money Where the Growth Is
+- [x] 26. Sector Rotation: Moving Your Money Where the Growth Is
 - [ ] 27. Dividend Investing: Building Passive Income in the Share Market
 - [ ] 28. Understanding Option Greeks for Retail Traders
 - [ ] 29. The Role of Foreign Institutional Investors (FIIs) in India

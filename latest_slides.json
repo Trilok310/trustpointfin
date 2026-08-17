@@ -1,81 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "Spot &lt;span class='highlight'&gt;Multibagger Stocks&lt;/span&gt; Before the Crowd",
-    "text": "Learn the simple financial framework used by professional investors to catch 10x growth plays early.",
-    "image_query": "stock market research"
+    "title": "Master <span class='highlight'>Sector Rotation</span> in 2026",
+    "text": "How smart money in India shifts capital across economic cycles to outperform Nifty 50.",
+    "image_query": "stock market charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Smart Money vs. Retail Timing",
-    "text": "How entering during the institutional accumulation phase yields maximum upside.",
-    "table": {
-      "headers": [
-        "Stage",
-        "Smart Money",
-        "Retail Crowd"
-      ],
-      "rows": [
-        [
-          "Accumulation",
-          "Buying quietly at fair value",
-          "Unaware / uninterested"
-        ],
-        [
-          "Breakout",
-          "Holding & adding dips",
-          "FOMO buying at peak"
-        ],
-        [
-          "Valuation",
-          "Re-rating (P/E expands)",
-          "Overpaying for past growth"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "The Power of Earnings & P/E Re-rating",
-    "text": "Combining EPS growth with P/E expansion creates compound multi-fold returns.",
+    "title": "Historical Outperformance",
+    "text": "Sector rotation strategy alpha vs standard benchmark index across economic phases.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Year 1 (Entry)",
-        "Year 3 (Growth)",
-        "Year 5 (Multibagger)"
+        "Expansion",
+        "Peak Rate",
+        "Recovery"
       ],
       "datasets": [
         {
-          "label": "Stock Price (₹)",
+          "label": "Nifty 50",
           "data": [
-            100,
-            350,
-            1000
+            12,
+            4,
+            10
           ]
         },
         {
-          "label": "EPS (₹)",
+          "label": "Rotated Sector Portfolio",
           "data": [
-            10,
-            25,
-            50
+            24,
+            11,
+            18
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "4 Non-Negotiable Rules for &lt;span class='highlight'&gt;Multibaggers&lt;/span&gt;",
-    "text": "1. ROCE > 20%\n2. Debt to Equity < 0.5\n3. Increasing DII/FII Stake\n4. Massive Sectoral Tailwind (TAM)",
-    "image_query": "finance growth analysis"
+    "type": "bg-analytical",
+    "title": "Sector Playbook Framework",
+    "text": "Matching macro economic conditions with high-growth sectors.",
+    "table": {
+      "headers": [
+        "Macro Phase",
+        "Leading Sector",
+        "Strategy"
+      ],
+      "rows": [
+        [
+          "Rate Cut Phase",
+          "BFSI & Real Estate",
+          "Aggressive Growth"
+        ],
+        [
+          "Capex Push",
+          "Capital Goods & Defense",
+          "Value / Momentum"
+        ],
+        [
+          "Slowdown / Inflation",
+          "FMCG & Pharma",
+          "Defensive Value"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Start Investing Today with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Get zero brokerage on delivery trades and advanced stock screeners. Open your account now!",
-    "image_query": "financial freedom",
+    "title": "Key Macro Triggers to <span class='highlight'>Track</span>",
+    "text": "Monitor RBI Repo Rates, Government Budget PLI Allocations, and Sectoral Earnings Surprises.",
+    "image_query": "financial research"
+  },
+  {
+    "type": "bg-image",
+    "title": "Rotate Capital Like a <span class='highlight'>Pro</span>",
+    "text": "Track sector heatmaps, access smart tools, and enjoy zero brokerage on delivery trades with Angel One.",
+    "image_query": "successful stock trader",
     "is_cta": true
   }
 ]
