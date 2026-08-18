@@ -1,76 +1,66 @@
 [
   {
     "type": "bg-image",
-    "title": "Build <span class='highlight'>Passive Income</span> with Dividend Stocks",
-    "text": "How Indian retail investors can create a predictable cash flow machine in 2026.",
-    "image_query": "wealth growth finance"
+    "title": "Mastering &lt;span class='highlight'&gt;Option Greeks&lt;/span&gt; in 2026",
+    "text": "Stop gambling on Nifty & Bank Nifty. Learn the math behind premium pricing.",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Growth vs Dividend Strategy",
-    "text": "Comparing investment styles for long-term wealth stability.",
+    "title": "The Four Core Option Greeks",
+    "text": "Key metrics every Indian retail trader must track daily",
     "table": {
       "headers": [
-        "Metric",
-        "Dividend Stocks",
-        "Growth Stocks"
+        "Greek",
+        "Measures",
+        "Impact on Premium"
       ],
       "rows": [
         [
-          "Income Source",
-          "Regular Payouts",
-          "Capital Gains"
+          "Delta",
+          "Underlying Price",
+          "Directional gain/loss"
         ],
         [
-          "Volatility",
-          "Low to Moderate",
-          "High"
+          "Gamma",
+          "Speed of Delta",
+          "Expiry day volatility"
         ],
         [
-          "Risk Profile",
-          "Defensive",
-          "Aggressive"
+          "Theta",
+          "Time Decay",
+          "Daily premium erosion"
         ],
         [
-          "Primary Sectors",
-          "PSUs, FMCG, IT",
-          "Tech, EV, Consumer"
+          "Vega",
+          "Implied Volatility",
+          "Sensitivity to India VIX"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Power of Dividend Reinvestment",
-    "text": "Portfolio growth over 10 years (Initial Capital: ₹5 Lakhs)",
+    "title": "Theta Decay vs. Time to Expiry",
+    "text": "Option value erodes exponentially in the final week before expiration",
     "chart": {
       "type": "line",
       "labels": [
-        "Year 1",
-        "Year 3",
-        "Year 5",
-        "Year 8",
-        "Year 10"
+        "30 Days",
+        "20 Days",
+        "10 Days",
+        "5 Days",
+        "0 Days"
       ],
       "datasets": [
         {
-          "label": "Without Reinvestment (₹ L)",
+          "label": "Option Value (%)",
           "data": [
-            5.2,
-            6.1,
-            7.2,
-            8.8,
-            10.5
-          ]
-        },
-        {
-          "label": "With Reinvestment (₹ L)",
-          "data": [
-            5.4,
-            6.9,
-            8.8,
-            12.1,
-            16.2
+            100,
+            85,
+            60,
+            30,
+            0
           ]
         }
       ]
@@ -78,15 +68,9 @@
   },
   {
     "type": "bg-image",
-    "title": "3 Rules for <span class='highlight'>Dividend Success</span>",
-    "text": "1. Target 3%-6% Yields\n2. Check Payout Ratio (<70%)\n3. Verify positive Free Cash Flow",
-    "image_query": "financial checklist"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Investing on <span class='highlight'>Angel One</span>",
-    "text": "Screen high-yield dividend aristocrats and pay zero brokerage on delivery trades.",
-    "image_query": "investing technology mobile app",
+    "title": "Trade Options with &lt;span class='highlight'&gt;Precision&lt;/span&gt;",
+    "text": "Access real-time Option Greeks and low-latency execution with Angel One.",
+    "image_query": "financial analytics desk",
     "is_cta": true
   }
 ]
