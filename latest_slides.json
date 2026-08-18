@@ -1,76 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;Option Greeks&lt;/span&gt; in 2026",
-    "text": "Stop gambling on Nifty & Bank Nifty. Learn the math behind premium pricing.",
+    "title": "Understanding <span class='highlight'>FII Capital Flows</span> in 2026",
+    "text": "How foreign institutional smart money shapes trends, liquidity, and momentum in Indian stock markets.",
     "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "The Four Core Option Greeks",
-    "text": "Key metrics every Indian retail trader must track daily",
-    "table": {
-      "headers": [
-        "Greek",
-        "Measures",
-        "Impact on Premium"
-      ],
-      "rows": [
-        [
-          "Delta",
-          "Underlying Price",
-          "Directional gain/loss"
-        ],
-        [
-          "Gamma",
-          "Speed of Delta",
-          "Expiry day volatility"
-        ],
-        [
-          "Theta",
-          "Time Decay",
-          "Daily premium erosion"
-        ],
-        [
-          "Vega",
-          "Implied Volatility",
-          "Sensitivity to India VIX"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Theta Decay vs. Time to Expiry",
-    "text": "Option value erodes exponentially in the final week before expiration",
+    "title": "Institutional Dominance Shift",
+    "text": "Domestic SIP flows now provide a strong buffer against global FII pullbacks.",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "30 Days",
-        "20 Days",
-        "10 Days",
-        "5 Days",
-        "0 Days"
+        "2022",
+        "2024",
+        "2026"
       ],
       "datasets": [
         {
-          "label": "Option Value (%)",
+          "label": "FII Equity Flow ($B)",
           "data": [
-            100,
-            85,
-            60,
-            30,
-            0
+            -17,
+            12,
+            -4
+          ]
+        },
+        {
+          "label": "DII Equity Flow ($B)",
+          "data": [
+            32,
+            28,
+            38
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Top FII Sector Allocation",
+    "text": "Where foreign institutional funds allocate major equity capital in India.",
+    "table": {
+      "headers": [
+        "Sector",
+        "Typical FII Weight",
+        "Market Impact"
+      ],
+      "rows": [
+        [
+          "Financial Services",
+          "30% - 35%",
+          "High Index Weightage"
+        ],
+        [
+          "IT & Software",
+          "10% - 14%",
+          "Global Growth Sensitive"
+        ],
+        [
+          "Capital Goods",
+          "8% - 12%",
+          "Domestic Capex Play"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Trade Options with &lt;span class='highlight'&gt;Precision&lt;/span&gt;",
-    "text": "Access real-time Option Greeks and low-latency execution with Angel One.",
-    "image_query": "financial analytics desk",
+    "title": "Trade Smart Money Trends with <span class='highlight'>Angel One</span>",
+    "text": "Get real-time institutional flow data, advanced charts, and seamless trade execution.",
+    "image_query": "financial investment success",
     "is_cta": true
   }
 ]
