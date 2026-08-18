@@ -1,81 +1,92 @@
 [
   {
     "type": "bg-image",
-    "title": "Master <span class='highlight'>Sector Rotation</span> in 2026",
-    "text": "How smart money in India shifts capital across economic cycles to outperform Nifty 50.",
-    "image_query": "stock market charts"
+    "title": "Build <span class='highlight'>Passive Income</span> with Dividend Stocks",
+    "text": "How Indian retail investors can create a predictable cash flow machine in 2026.",
+    "image_query": "wealth growth finance"
   },
   {
     "type": "bg-analytical",
-    "title": "Historical Outperformance",
-    "text": "Sector rotation strategy alpha vs standard benchmark index across economic phases.",
+    "title": "Growth vs Dividend Strategy",
+    "text": "Comparing investment styles for long-term wealth stability.",
+    "table": {
+      "headers": [
+        "Metric",
+        "Dividend Stocks",
+        "Growth Stocks"
+      ],
+      "rows": [
+        [
+          "Income Source",
+          "Regular Payouts",
+          "Capital Gains"
+        ],
+        [
+          "Volatility",
+          "Low to Moderate",
+          "High"
+        ],
+        [
+          "Risk Profile",
+          "Defensive",
+          "Aggressive"
+        ],
+        [
+          "Primary Sectors",
+          "PSUs, FMCG, IT",
+          "Tech, EV, Consumer"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Power of Dividend Reinvestment",
+    "text": "Portfolio growth over 10 years (Initial Capital: ₹5 Lakhs)",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "Expansion",
-        "Peak Rate",
-        "Recovery"
+        "Year 1",
+        "Year 3",
+        "Year 5",
+        "Year 8",
+        "Year 10"
       ],
       "datasets": [
         {
-          "label": "Nifty 50",
+          "label": "Without Reinvestment (₹ L)",
           "data": [
-            12,
-            4,
-            10
+            5.2,
+            6.1,
+            7.2,
+            8.8,
+            10.5
           ]
         },
         {
-          "label": "Rotated Sector Portfolio",
+          "label": "With Reinvestment (₹ L)",
           "data": [
-            24,
-            11,
-            18
+            5.4,
+            6.9,
+            8.8,
+            12.1,
+            16.2
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Sector Playbook Framework",
-    "text": "Matching macro economic conditions with high-growth sectors.",
-    "table": {
-      "headers": [
-        "Macro Phase",
-        "Leading Sector",
-        "Strategy"
-      ],
-      "rows": [
-        [
-          "Rate Cut Phase",
-          "BFSI & Real Estate",
-          "Aggressive Growth"
-        ],
-        [
-          "Capex Push",
-          "Capital Goods & Defense",
-          "Value / Momentum"
-        ],
-        [
-          "Slowdown / Inflation",
-          "FMCG & Pharma",
-          "Defensive Value"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "3 Rules for <span class='highlight'>Dividend Success</span>",
+    "text": "1. Target 3%-6% Yields\n2. Check Payout Ratio (<70%)\n3. Verify positive Free Cash Flow",
+    "image_query": "financial checklist"
   },
   {
     "type": "bg-image",
-    "title": "Key Macro Triggers to <span class='highlight'>Track</span>",
-    "text": "Monitor RBI Repo Rates, Government Budget PLI Allocations, and Sectoral Earnings Surprises.",
-    "image_query": "financial research"
-  },
-  {
-    "type": "bg-image",
-    "title": "Rotate Capital Like a <span class='highlight'>Pro</span>",
-    "text": "Track sector heatmaps, access smart tools, and enjoy zero brokerage on delivery trades with Angel One.",
-    "image_query": "successful stock trader",
+    "title": "Start Investing on <span class='highlight'>Angel One</span>",
+    "text": "Screen high-yield dividend aristocrats and pay zero brokerage on delivery trades.",
+    "image_query": "investing technology mobile app",
     "is_cta": true
   }
 ]

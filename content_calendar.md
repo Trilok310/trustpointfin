@@ -30,7 +30,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 24. A Beginner's Guide to Futures and Options in India
 - [x] 25. How to Identify Multi-bagger Stocks Before the Crowd
 - [x] 26. Sector Rotation: Moving Your Money Where the Growth Is
-- [ ] 27. Dividend Investing: Building Passive Income in the Share Market
+- [x] 27. Dividend Investing: Building Passive Income in the Share Market
 - [ ] 28. Understanding Option Greeks for Retail Traders
 - [ ] 29. The Role of Foreign Institutional Investors (FIIs) in India
 - [ ] 30. Stop Loss and Risk-Reward Ratio: The Holy Grail of Trading
