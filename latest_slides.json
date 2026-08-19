@@ -1,62 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering the <span class='highlight'>Holy Grail</span> of Trading",
-    "text": "Why Stop Loss & Risk-Reward Ratio determine long-term success in Indian markets.",
-    "image_query": "stock trading screen"
+    "title": "Beat the Algos in &lt;span class='highlight'&gt;Gold ETFs&lt;/span&gt;",
+    "text": "Protect your investments from high-frequency algorithmic drawdowns and execution traps in 2026.",
+    "image_query": "gold finance stock market"
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Professional Approach",
-    "text": "Comparing how amateur and systematic traders approach risk management.",
+    "title": "Order Type Performance",
+    "text": "Impact of execution type during high-volatility algo spikes on NSE/BSE.",
     "table": {
       "headers": [
-        "Strategy",
-        "Amateur Trader",
-        "Pro Trader"
+        "Order Type",
+        "Execution Speed",
+        "Slippage Risk",
+        "Drawdown Protection"
       ],
       "rows": [
         [
-          "Focus",
-          "Predicting Direction",
-          "Managing Downside"
+          "Market Order",
+          "Instant",
+          "Very High (2-5%)",
+          "Poor"
         ],
         [
-          "Stop Loss",
-          "Mental / None",
-          "Hard Automated SL"
+          "Limit Order (iNAV)",
+          "Controlled",
+          "Near Zero",
+          "Excellent"
         ],
         [
-          "Min RRR",
-          "1:0.5 (Inverted)",
-          "1:2 or higher"
-        ],
-        [
-          "Win Expectancy",
-          "Requires 80%+ Win",
-          "Profitable at 40% Win"
+          "GTT Order",
+          "Automated",
+          "Low",
+          "Strong"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "The Power of 1:2 Risk-Reward Ratio",
-    "text": "Simulating 10 trades risking ₹2,000 per trade to achieve a ₹4,000 target.",
+    "title": "Mitigating Drawdowns",
+    "text": "Comparing retail performance with and without algo-aware strategies.",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "4 Wins (+₹4k)",
-        "6 Losses (-₹2k)",
-        "Net P&L"
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May"
       ],
       "datasets": [
         {
-          "label": "Capital Gains (₹)",
+          "label": "Unprotected Retail",
           "data": [
-            16000,
-            -12000,
-            4000
+            100,
+            94,
+            91,
+            95,
+            92
+          ]
+        },
+        {
+          "label": "Algo-Shielded Strategy",
+          "data": [
+            100,
+            99,
+            98,
+            102,
+            105
           ]
         }
       ]
@@ -64,9 +77,15 @@
   },
   {
     "type": "bg-image",
-    "title": "Ready to Trade with <span class='highlight'>Discipline?</span>",
-    "text": "Set automated GTT orders and trailing stop loss seamlessly on Angel One.",
-    "image_query": "financial analytics phone",
+    "title": "The Golden Rule: &lt;span class='highlight'&gt;Never Use Market Orders&lt;/span&gt;",
+    "text": "Always anchor your orders to the fund's live iNAV to avoid predatory price spikes caused by liquidity voids.",
+    "image_query": "trading technology data"
+  },
+  {
+    "type": "bg-image",
+    "title": "Trade Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Access deep liquidity insights, real-time depth charts, and smart order types. Open your Demat account today!",
+    "image_query": "investment growth mobile",
     "is_cta": true
   }
 ]
