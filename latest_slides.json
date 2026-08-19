@@ -1,81 +1,67 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering Intraday <span class='highlight'>ETF Scalping</span> in a Bull Market",
-    "text": "How modern Indian traders use ETFs to scalp fund baskets with precision.",
-    "image_query": "stock market chart trading"
+    "title": "Mastering &lt;span class='highlight'&gt;Fibonacci Setup&lt;/span&gt; for Mid-Caps",
+    "text": "A proven multi-indicator framework for Indian retail traders in 2026.",
+    "image_query": "stock chart trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Mutual Funds vs. Exchange Traded Funds",
-    "text": "Why ETFs are the mandatory choice for real-time scalping setups.",
-    "table": {
-      "headers": [
-        "Feature",
-        "Mutual Funds",
-        "ETFs (Exchange Traded)"
-      ],
-      "rows": [
-        [
-          "Execution",
-          "EOD Cut-off NAV",
-          "Real-Time Exchange Price"
-        ],
-        [
-          "Order Type",
-          "Lump sum / SIP",
-          "Limit, Market, Stop-Loss"
-        ],
-        [
-          "Scalping Feasible",
-          "No",
-          "Yes (High Liquidity)"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Scalper Performance Metric",
-    "text": "Comparing Win Rates and Risk-to-Reward Ratio in Bull Market Momentum Trades.",
+    "title": "Strategy Performance Comparison",
+    "text": "Historical accuracy of Fibonacci strategies in Indian Mid-cap stocks",
     "chart": {
       "type": "bar",
       "labels": [
-        "Breakout Scalps",
-        "VWAP Pullbacks",
-        "Random Entries"
+        "38.2% Fib Only",
+        "50% Fib + Vol",
+        "61.8% Fib + EMA"
       ],
       "datasets": [
         {
           "label": "Win Rate (%)",
           "data": [
-            68,
-            74,
-            42
-          ]
-        },
-        {
-          "label": "Avg R:R Ratio",
-          "data": [
-            1.5,
-            1.8,
-            0.8
+            42,
+            55,
+            64
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "Key Rule: Never Trade <span class='highlight'>Low Liquidity</span>",
-    "text": "Always select ETFs like Nifty BeES or Bank BeES with sub-0.02% bid-ask spreads to avoid order slippage.",
-    "image_query": "financial analytics desk"
+    "type": "bg-analytical",
+    "title": "The Golden Confluence Rule",
+    "text": "How professionals filter high-probability entries",
+    "table": {
+      "headers": [
+        "Indicator",
+        "Retail Mistake",
+        "Pro Confluence"
+      ],
+      "rows": [
+        [
+          "Fib Zone",
+          "Buys 23.6% early",
+          "Waits for 50%-61.8%"
+        ],
+        [
+          "Volume",
+          "Ignores volume",
+          "Demands buy volume spike"
+        ],
+        [
+          "Stop Loss",
+          "Too tight / None",
+          "Strictly below 78.6% Fib"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Start Scalping with <span class='highlight'>Angel One</span>",
-    "text": "Open your free Demat account today to enjoy low latency, advanced charting tools, and seamless execution.",
-    "image_query": "growth success mobile trading",
+    "title": "Ready to trade with &lt;span class='highlight'&gt;Precision?&lt;/span&gt;",
+    "text": "Open a free Demat account with Angel One and access advanced TradingView tools instantly.",
+    "image_query": "financial growth mobile",
     "is_cta": true
   }
 ]
