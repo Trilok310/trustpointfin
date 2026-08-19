@@ -1,75 +1,65 @@
 [
   {
     "type": "bg-image",
-    "title": "Beat the Algos in &lt;span class='highlight'&gt;Gold ETFs&lt;/span&gt;",
-    "text": "Protect your investments from high-frequency algorithmic drawdowns and execution traps in 2026.",
-    "image_query": "gold finance stock market"
+    "title": "Mastering Intraday <span class='highlight'>ETF Scalping</span> in a Bull Market",
+    "text": "How modern Indian traders use ETFs to scalp fund baskets with precision.",
+    "image_query": "stock market chart trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Order Type Performance",
-    "text": "Impact of execution type during high-volatility algo spikes on NSE/BSE.",
+    "title": "Mutual Funds vs. Exchange Traded Funds",
+    "text": "Why ETFs are the mandatory choice for real-time scalping setups.",
     "table": {
       "headers": [
-        "Order Type",
-        "Execution Speed",
-        "Slippage Risk",
-        "Drawdown Protection"
+        "Feature",
+        "Mutual Funds",
+        "ETFs (Exchange Traded)"
       ],
       "rows": [
         [
-          "Market Order",
-          "Instant",
-          "Very High (2-5%)",
-          "Poor"
+          "Execution",
+          "EOD Cut-off NAV",
+          "Real-Time Exchange Price"
         ],
         [
-          "Limit Order (iNAV)",
-          "Controlled",
-          "Near Zero",
-          "Excellent"
+          "Order Type",
+          "Lump sum / SIP",
+          "Limit, Market, Stop-Loss"
         ],
         [
-          "GTT Order",
-          "Automated",
-          "Low",
-          "Strong"
+          "Scalping Feasible",
+          "No",
+          "Yes (High Liquidity)"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Mitigating Drawdowns",
-    "text": "Comparing retail performance with and without algo-aware strategies.",
+    "title": "Scalper Performance Metric",
+    "text": "Comparing Win Rates and Risk-to-Reward Ratio in Bull Market Momentum Trades.",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May"
+        "Breakout Scalps",
+        "VWAP Pullbacks",
+        "Random Entries"
       ],
       "datasets": [
         {
-          "label": "Unprotected Retail",
+          "label": "Win Rate (%)",
           "data": [
-            100,
-            94,
-            91,
-            95,
-            92
+            68,
+            74,
+            42
           ]
         },
         {
-          "label": "Algo-Shielded Strategy",
+          "label": "Avg R:R Ratio",
           "data": [
-            100,
-            99,
-            98,
-            102,
-            105
+            1.5,
+            1.8,
+            0.8
           ]
         }
       ]
@@ -77,15 +67,15 @@
   },
   {
     "type": "bg-image",
-    "title": "The Golden Rule: &lt;span class='highlight'&gt;Never Use Market Orders&lt;/span&gt;",
-    "text": "Always anchor your orders to the fund's live iNAV to avoid predatory price spikes caused by liquidity voids.",
-    "image_query": "trading technology data"
+    "title": "Key Rule: Never Trade <span class='highlight'>Low Liquidity</span>",
+    "text": "Always select ETFs like Nifty BeES or Bank BeES with sub-0.02% bid-ask spreads to avoid order slippage.",
+    "image_query": "financial analytics desk"
   },
   {
     "type": "bg-image",
-    "title": "Trade Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access deep liquidity insights, real-time depth charts, and smart order types. Open your Demat account today!",
-    "image_query": "investment growth mobile",
+    "title": "Start Scalping with <span class='highlight'>Angel One</span>",
+    "text": "Open your free Demat account today to enjoy low latency, advanced charting tools, and seamless execution.",
+    "image_query": "growth success mobile trading",
     "is_cta": true
   }
 ]
