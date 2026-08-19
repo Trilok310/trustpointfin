@@ -42,7 +42,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 31. Gold ETFs Analysis: To Avoid Massive Drawdowns to Algorithmic Trading
 - [x] 32. Mutual Funds Trading: How to Apply Intraday Scalping in a Bull Market
 - [x] 33. For Retail Traders: The Best Fibonacci Retracements Setup for Mid-cap Stocks
-- [ ] 34. Infosys Trading: How to Apply Breakout Trading in Times of High Inflation
+- [x] 34. Infosys Trading: How to Apply Breakout Trading in Times of High Inflation
 - [ ] 35. Nifty 50 Analysis: For Working Professionals to Volume Profile Analysis
 - [ ] 36. SBI Analysis: For Working Professionals to Straddles and Strangles
 - [ ] 37. Why Moving Average Crossovers is the Key to Upcoming IPOs in Times of High Inflation
