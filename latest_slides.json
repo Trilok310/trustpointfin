@@ -1,36 +1,39 @@
 [
   {
     "type": "bg-image",
-    "title": "SBI Strategy 2026: &lt;span class='highlight'&gt;Equity Wealth to Options Income&lt;/span&gt;",
-    "text": "How working professionals can combine SBI equity compounding with advanced Straddles & Strangles.",
-    "image_query": "stock market trading"
+    "title": "Mastering IPOs in 2026: The &lt;span class='highlight'&gt;EMA Crossover&lt;/span&gt; Edge",
+    "text": "How Indian retail traders navigate post-listing IPO volatility amid high inflation.",
+    "image_query": "stock market chart trading"
   },
   {
     "type": "bg-analytical",
-    "title": "SBI Fundamental Benchmark (2026)",
-    "text": "Strong balance sheet fundamentals make SBI a solid long-term equity anchor.",
+    "title": "Post-IPO Performance in Inflationary Cycles",
+    "text": "Why chasing listing gains without technical entry leads to portfolio drawdown.",
     "chart": {
       "type": "bar",
       "labels": [
-        "FY24",
-        "FY25",
-        "FY26E"
+        "Listing Day",
+        "Day 30",
+        "Day 60",
+        "Day 90"
       ],
       "datasets": [
         {
-          "label": "ROE (%)",
+          "label": "GMP Chasers (Unplanned)",
           "data": [
-            16.8,
-            17.5,
-            18.5
+            18,
+            5,
+            -8,
+            -14
           ]
         },
         {
-          "label": "Gross NPA (%)",
+          "label": "EMA Crossover Traders",
           "data": [
-            2.2,
-            2,
-            1.8
+            0,
+            8,
+            16,
+            24
           ]
         }
       ]
@@ -38,43 +41,44 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Straddle vs. Strangle Strategy Matrix",
-    "text": "Choosing the right options framework for earnings events.",
+    "title": "Tactical Playbook: EMA vs SMA",
+    "text": "Why Exponential Moving Averages outperform in fast-moving market regimes.",
     "table": {
       "headers": [
-        "Factor",
-        "Long Straddle",
-        "Long Strangle"
+        "Feature",
+        "SMA (Simple)",
+        "EMA (Exponential)"
       ],
       "rows": [
         [
-          "Strike Selection",
-          "ATM Call + ATM Put",
-          "OTM Call + OTM Put"
+          "Data Weighting",
+          "Equal across periods",
+          "Heavier on recent price"
         ],
         [
-          "Capital Required",
-          "Higher Premium",
-          "Lower Premium"
+          "Lag Factor",
+          "High lag on fresh charts",
+          "Low lag, fast response"
         ],
         [
-          "Breakeven Distance",
-          "Narrower Move Needed",
-          "Wider Move Needed"
-        ],
-        [
-          "Best Used For",
-          "Extreme Unpredictability",
-          "High Volatility Spikes"
+          "Best Use Case",
+          "Multi-year trends",
+          "IPO secondary entries"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trade SBI Options on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Experience zero brokerage on delivery, real-time Option Greeks, and seamless multi-leg basket orders.",
-    "image_query": "financial analytics phone app",
+    "title": "3 Gold Rules for &lt;span class='highlight'&gt;IPO Trading&lt;/span&gt;",
+    "text": "1. Wait 10-15 days for base formation.\n2. Confirm 9/21 EMA crossover with 1.5x volume.\n3. Keep a strict stop-loss below swing low.",
+    "image_query": "financial strategy success"
+  },
+  {
+    "type": "bg-image",
+    "title": "Ready to Trade with &lt;span class='highlight'&gt;Angel One?&lt;/span&gt;",
+    "text": "Access advanced charting tools, real-time EMA alerts, and zero brokerage on equity delivery.",
+    "image_query": "mobile trading app growth",
     "is_cta": true
   }
 ]
