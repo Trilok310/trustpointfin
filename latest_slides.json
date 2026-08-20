@@ -1,39 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering IPOs in 2026: The &lt;span class='highlight'&gt;EMA Crossover&lt;/span&gt; Edge",
-    "text": "How Indian retail traders navigate post-listing IPO volatility amid high inflation.",
-    "image_query": "stock market chart trading"
+    "title": "Stop Losing Money to &lt;span class='highlight'&gt;Blue-Chip Traps&lt;/span&gt;",
+    "text": "Master Bollinger Bands Squeeze breakouts on Nifty 50 stocks to eliminate massive drawdowns.",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Post-IPO Performance in Inflationary Cycles",
-    "text": "Why chasing listing gains without technical entry leads to portfolio drawdown.",
+    "title": "Unfiltered vs Squeeze-Filtered Breakouts",
+    "text": "Performance comparison across Nifty 50 large-cap stocks over 24 months.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Listing Day",
-        "Day 30",
-        "Day 60",
-        "Day 90"
+        "Win Rate %",
+        "Max Drawdown %",
+        "Profit Factor"
       ],
       "datasets": [
         {
-          "label": "GMP Chasers (Unplanned)",
+          "label": "Unfiltered Touch",
           "data": [
-            18,
-            5,
-            -8,
-            -14
+            38,
+            28,
+            1.1
           ]
         },
         {
-          "label": "EMA Crossover Traders",
+          "label": "Squeeze Confirmed",
           "data": [
-            0,
-            8,
-            16,
-            24
+            68,
+            6,
+            2.7
           ]
         }
       ]
@@ -41,44 +38,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Tactical Playbook: EMA vs SMA",
-    "text": "Why Exponential Moving Averages outperform in fast-moving market regimes.",
+    "title": "Institutional Breakout Matrix",
+    "text": "How professionals filter out false retail breakouts before placing capital.",
     "table": {
       "headers": [
-        "Feature",
-        "SMA (Simple)",
-        "EMA (Exponential)"
+        "Indicator",
+        "False Breakout",
+        "Confirmed Breakout"
       ],
       "rows": [
         [
-          "Data Weighting",
-          "Equal across periods",
-          "Heavier on recent price"
+          "Band Width",
+          "Flat / Contracting",
+          "Expanding Rapidly"
         ],
         [
-          "Lag Factor",
-          "High lag on fresh charts",
-          "Low lag, fast response"
+          "Volume Spike",
+          "Below 20-Day Avg",
+          "> 1.5x 20-Day Volume"
         ],
         [
-          "Best Use Case",
-          "Multi-year trends",
-          "IPO secondary entries"
+          "RSI (14)",
+          "Neutral (45-55)",
+          "Bullish Cross > 60"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "3 Gold Rules for &lt;span class='highlight'&gt;IPO Trading&lt;/span&gt;",
-    "text": "1. Wait 10-15 days for base formation.\n2. Confirm 9/21 EMA crossover with 1.5x volume.\n3. Keep a strict stop-loss below swing low.",
-    "image_query": "financial strategy success"
-  },
-  {
-    "type": "bg-image",
-    "title": "Ready to Trade with &lt;span class='highlight'&gt;Angel One?&lt;/span&gt;",
-    "text": "Access advanced charting tools, real-time EMA alerts, and zero brokerage on equity delivery.",
-    "image_query": "mobile trading app growth",
+    "title": "Ready to Trade with &lt;span class='highlight'&gt;Precision?&lt;/span&gt;",
+    "text": "Open a free Demat account with Angel One today. Access TradingView charts & zero delivery brokerage.",
+    "image_query": "financial investment growth",
     "is_cta": true
   }
 ]
