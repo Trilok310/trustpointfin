@@ -1,75 +1,80 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;Nifty 50&lt;/span&gt; with Volume Profile",
-    "text": "A time-efficient framework for working professionals in 2026.",
-    "image_query": "stock market chart"
+    "title": "SBI Strategy 2026: &lt;span class='highlight'&gt;Equity Wealth to Options Income&lt;/span&gt;",
+    "text": "How working professionals can combine SBI equity compounding with advanced Straddles & Strangles.",
+    "image_query": "stock market trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Volume Profile vs Standard Volume",
-    "text": "Why institutional traders focus on price-based volume distribution.",
-    "table": {
-      "headers": [
-        "Metric",
-        "Standard Volume",
-        "Volume Profile"
-      ],
-      "rows": [
-        [
-          "Dimension",
-          "Plots over Time",
-          "Plots over Price"
-        ],
-        [
-          "Core Metric",
-          "Bar volume per candle",
-          "Volume at specific price (POC)"
-        ],
-        [
-          "Key Benefit",
-          "Shows market momentum",
-          "Reveals institutional buy/sell zones"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Institutional Trading Distribution",
-    "text": "Historical probability of Nifty 50 price reactions at key profile levels.",
+    "title": "SBI Fundamental Benchmark (2026)",
+    "text": "Strong balance sheet fundamentals make SBI a solid long-term equity anchor.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Point of Control",
-        "Value Area Low",
-        "Value Area High",
-        "Low Vol Node"
+        "FY24",
+        "FY25",
+        "FY26E"
       ],
       "datasets": [
         {
-          "label": "Reversal / Reaction Rate (%)",
+          "label": "ROE (%)",
           "data": [
-            74,
-            68,
-            65,
-            22
+            16.8,
+            17.5,
+            18.5
+          ]
+        },
+        {
+          "label": "Gross NPA (%)",
+          "data": [
+            2.2,
+            2,
+            1.8
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "3 Rules for &lt;span class='highlight'&gt;Busy Traders&lt;/span&gt;",
-    "text": "1. Analyze profile levels on weekends. 2. Set price alerts at POC & VAL. 3. Use automated GTT orders to execute stress-free.",
-    "image_query": "laptop work professional"
+    "type": "bg-analytical",
+    "title": "Straddle vs. Strangle Strategy Matrix",
+    "text": "Choosing the right options framework for earnings events.",
+    "table": {
+      "headers": [
+        "Factor",
+        "Long Straddle",
+        "Long Strangle"
+      ],
+      "rows": [
+        [
+          "Strike Selection",
+          "ATM Call + ATM Put",
+          "OTM Call + OTM Put"
+        ],
+        [
+          "Capital Required",
+          "Higher Premium",
+          "Lower Premium"
+        ],
+        [
+          "Breakeven Distance",
+          "Narrower Move Needed",
+          "Wider Move Needed"
+        ],
+        [
+          "Best Used For",
+          "Extreme Unpredictability",
+          "High Volatility Spikes"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Start Trading Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access free TradingView charts with Volume Profile indicators. Open your free Demat account today!",
-    "image_query": "financial success growth",
+    "title": "Trade SBI Options on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Experience zero brokerage on delivery, real-time Option Greeks, and seamless multi-leg basket orders.",
+    "image_query": "financial analytics phone app",
     "is_cta": true
   }
 ]
