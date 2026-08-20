@@ -1,64 +1,59 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;Infosys Breakouts&lt;/span&gt; in 2026",
-    "text": "How to trade IT sector momentum during high inflation regimes.",
+    "title": "Mastering &lt;span class='highlight'&gt;Nifty 50&lt;/span&gt; with Volume Profile",
+    "text": "A time-efficient framework for working professionals in 2026.",
     "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Breakout Confirmation Checklist",
-    "text": "Filter out false traps in volatile macro environments",
+    "title": "Volume Profile vs Standard Volume",
+    "text": "Why institutional traders focus on price-based volume distribution.",
     "table": {
       "headers": [
-        "Indicator",
-        "False Breakout Setup",
-        "High-Probability Setup"
+        "Metric",
+        "Standard Volume",
+        "Volume Profile"
       ],
       "rows": [
         [
-          "Volume Surge",
-          "< 1.2x 20-Day SMA",
-          "> 2.0x 20-Day SMA"
+          "Dimension",
+          "Plots over Time",
+          "Plots over Price"
         ],
         [
-          "RSI (14)",
-          "45 - 55 (Weak)",
-          "> 60 (Strong Expansion)"
+          "Core Metric",
+          "Bar volume per candle",
+          "Volume at specific price (POC)"
         ],
         [
-          "Price Location",
-          "Below 20 & 50 EMA",
-          "Above 20 & 50 EMA"
-        ],
-        [
-          "Execution",
-          "Blind Market Order",
-          "Confirmed Hourly Close / Retest"
+          "Key Benefit",
+          "Shows market momentum",
+          "Reveals institutional buy/sell zones"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "INFY Breakout Success Rate by Volume",
-    "text": "Historical probability of breakout continuation based on volume surge",
+    "title": "Institutional Trading Distribution",
+    "text": "Historical probability of Nifty 50 price reactions at key profile levels.",
     "chart": {
       "type": "bar",
       "labels": [
-        "< 1.0x SMA",
-        "1.5x SMA",
-        "2.0x SMA",
-        "2.5x+ SMA"
+        "Point of Control",
+        "Value Area Low",
+        "Value Area High",
+        "Low Vol Node"
       ],
       "datasets": [
         {
-          "label": "Success Rate (%)",
+          "label": "Reversal / Reaction Rate (%)",
           "data": [
-            22,
-            41,
+            74,
             68,
-            83
+            65,
+            22
           ]
         }
       ]
@@ -66,15 +61,15 @@
   },
   {
     "type": "bg-image",
-    "title": "3 Gold Rules for &lt;span class='highlight'&gt;Risk Control&lt;/span&gt;",
-    "text": "1. Max 1% risk per trade. 2. Use 1.5x ATR trailing stop. 3. Enter on retests, never chase gap-ups.",
-    "image_query": "financial discipline"
+    "title": "3 Rules for &lt;span class='highlight'&gt;Busy Traders&lt;/span&gt;",
+    "text": "1. Analyze profile levels on weekends. 2. Set price alerts at POC & VAL. 3. Use automated GTT orders to execute stress-free.",
+    "image_query": "laptop work professional"
   },
   {
     "type": "bg-image",
-    "title": "Trade Smarter with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Execute GTT breakout orders with TradingView integration & zero delivery brokerage.",
-    "image_query": "mobile trading app",
+    "title": "Start Trading Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Access free TradingView charts with Volume Profile indicators. Open your free Demat account today!",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
