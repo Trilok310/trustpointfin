@@ -1,65 +1,59 @@
 [
   {
     "type": "bg-image",
-    "title": "Profiting from &lt;span class='highlight'&gt;ICICI Bank&lt;/span&gt; in Bear Markets",
-    "text": "How smart retail investors turn market pullbacks into high-yield compounding opportunities.",
-    "image_query": "stock market chart analysis"
+    "title": "Mastering Stop Loss for <span class='highlight'>Multi-bagger Stocks</span>",
+    "text": "Stop getting shaken out of 10x opportunities. Learn institutional trailing techniques.",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Comparison Matrix",
-    "text": "Evaluating retail actions during market downturns",
+    "title": "Why Fixed Stops Fail",
+    "text": "Comparing stop loss techniques on high-growth stock rallies",
     "table": {
       "headers": [
         "Strategy",
-        "Bear Market Impact",
-        "Long-Term Yield"
+        "Shakeout Risk",
+        "Profit Capture"
       ],
       "rows": [
         [
-          "Panic Selling",
-          "Realizes Capital Losses",
+          "Fixed 5% Stop",
+          "Very High (84%)",
+          "Truncated Early"
+        ],
+        [
+          "Fixed 15% Stop",
+          "Moderate",
           "Sub-optimal"
         ],
         [
-          "Lump-Sum Buying",
-          "High Timing Risk",
-          "Moderate"
-        ],
-        [
-          "Valuation Smart-SIP",
-          "Averages Cost Lower",
-          "Superior"
+          "3x ATR Trailing",
+          "Low",
+          "Maximum Upside"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "ICICI Bank Market Resilience",
-    "text": "Historical sector drawdown vs underlying recovery potential",
+    "title": "Trailing Stop Performance Comparison",
+    "text": "Average returns held during a 2-year multi-bagger cycle",
     "chart": {
       "type": "bar",
       "labels": [
-        "2020 Crash",
-        "2022 Hikes",
-        "2024 Correction"
+        "Tight Stop (5%)",
+        "Wide Stop (15%)",
+        "ATR Trailing",
+        "20-Wk EMA"
       ],
       "datasets": [
         {
-          "label": "Nifty Bank Index Drop (%)",
+          "label": "Avg Realized Return %",
           "data": [
-            -38,
-            -18,
-            -12
-          ]
-        },
-        {
-          "label": "ICICI Bank Recovery (%)",
-          "data": [
-            45,
-            28,
-            22
+            35,
+            120,
+            380,
+            420
           ]
         }
       ]
@@ -67,9 +61,15 @@
   },
   {
     "type": "bg-image",
-    "title": "Start Building Wealth with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Open a free Demat account today to execute options hedges & zero-brokerage equity delivery trades.",
-    "image_query": "wealth growth finance mobile",
+    "title": "Golden Rule: <span class='highlight'>De-Risk at 100%</span>",
+    "text": "Book half your capital on a 2x gain. Let remaining 'free shares' ride structural weekly trends.",
+    "image_query": "financial freedom growth"
+  },
+  {
+    "type": "bg-image",
+    "title": "Automate Risk with <span class='highlight'>Angel One</span>",
+    "text": "Set trailing stop losses effortlessly with Smart Orders & zero delivery brokerage. Start today!",
+    "image_query": "mobile trading app tech",
     "is_cta": true
   }
 ]
