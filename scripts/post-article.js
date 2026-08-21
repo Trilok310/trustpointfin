@@ -133,6 +133,22 @@ function addCardToInsights(title, slug, date, summary, imageUrl, topic) {
   fs.writeFileSync(INSIGHTS_PATH, updated, "utf-8");
 }
 
+function updateSitemap(slug) {
+  const sitemapPath = path.join(ROOT, "sitemap.xml");
+  let sitemapXML = fs.readFileSync(sitemapPath, "utf-8");
+  
+  const newUrlBlock = `
+    <url>
+        <loc>https://trustpointfin.org/${slug}.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>`;
+
+  sitemapXML = sitemapXML.replace(/<\/urlset>/i, newUrlBlock);
+  fs.writeFileSync(sitemapPath, sitemapXML, "utf-8");
+}
+
 async function main() {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -413,6 +429,10 @@ Detailed answer to second FAQ
   // --- Update insights.html grid ---
   addCardToInsights(title, slug, dateStr, summary, imageUrl, topic);
   console.log("✅ insights.html updated with new article card");
+
+  // --- Update Sitemap for SEO ---
+  updateSitemap(slug);
+  console.log("✅ sitemap.xml updated for Google Indexing");
 
   // --- Generate Social Media Posts ---
   const socialPrompt = `You are a social media manager for TrustPointFin, an Indian financial advisory firm. 
