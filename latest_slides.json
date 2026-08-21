@@ -1,70 +1,62 @@
 [
   {
     "type": "bg-image",
-    "title": "Master the &lt;span class='highlight'&gt;CAN SLIM Method&lt;/span&gt; for Nifty 50",
-    "text": "The proven growth investing framework tailored for Indian markets to maximize long-term wealth.",
-    "image_query": "stock market chart growth"
+    "title": "Mastering <span class='highlight'>Midcap Nifty</span> Levels",
+    "text": "A step-by-step technical blueprint to trade Indian midcaps in 2026 with precision.",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "The CAN SLIM Acronym",
-    "text": "7 Key pillars for selecting top outperforming stocks",
+    "title": "S&R Analytical Matrix",
+    "text": "Comparing essential technical tools for identifying key Nifty Midcap levels.",
     "table": {
       "headers": [
-        "Pillar",
-        "Criteria",
-        "Indian Context Focus"
+        "Tool",
+        "Best Application",
+        "Reliability"
       ],
       "rows": [
         [
-          "C & A",
-          "EPS & Annual Growth",
-          "YoY Profit Growth > 20%"
+          "Horizontal Zones",
+          "Multi-month Pivots",
+          "High"
         ],
         [
-          "N & S",
-          "New Drivers & Supply/Demand",
-          "Volume surges on Breakouts"
+          "Volume Profile (POC)",
+          "Institutional Demand",
+          "Very High"
         ],
         [
-          "L & I",
-          "Leader & Institutional Support",
-          "RS Rating > 80 & FII/DII Buying"
+          "Fibonacci (0.618)",
+          "Pullback Targets",
+          "High"
         ],
         [
-          "M",
-          "Market Direction",
-          "Nifty 50 Uptrend Confirmation"
+          "50 / 200 EMA",
+          "Trend Direction",
+          "Medium-High"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "CAN SLIM vs Benchmark Returns",
-    "text": "Historical CAGR comparison of disciplined growth filtering vs broad index",
+    "title": "Breakout Success Rate",
+    "text": "Historical probability of Nifty Midcap breakouts backed by high volume vs low volume.",
     "chart": {
       "type": "bar",
       "labels": [
-        "3-Year CAGR",
-        "5-Year CAGR",
-        "Max Drawdown"
+        "Low Vol Breakout",
+        "Avg Vol Breakout",
+        "High Vol + EMA"
       ],
       "datasets": [
         {
-          "label": "Nifty 50 Index",
+          "label": "Success Rate %",
           "data": [
-            13.5,
-            14.2,
-            -24.5
-          ]
-        },
-        {
-          "label": "CAN SLIM Strategy",
-          "data": [
-            28.4,
-            24.1,
-            -12
+            32,
+            58,
+            81
           ]
         }
       ]
@@ -72,15 +64,9 @@
   },
   {
     "type": "bg-image",
-    "title": "Golden Rule: &lt;span class='highlight'&gt;Cut Losses at 7-8%&lt;/span&gt;",
-    "text": "Capital preservation is essential. Never hold a declining trade below strict technical risk levels.",
-    "image_query": "financial risk management"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Investing Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access advanced screeners, institutional flow metrics, and zero delivery brokerage today.",
-    "image_query": "wealth technology mobile phone",
+    "title": "Trade Midcaps with <span class='highlight'>Confidence</span>",
+    "text": "Open your Demat account with Angel One to access advanced charting and execute trades effortlessly.",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
