@@ -1,75 +1,86 @@
 [
   {
     "type": "bg-image",
-    "title": "Stop Losing Money to &lt;span class='highlight'&gt;Blue-Chip Traps&lt;/span&gt;",
-    "text": "Master Bollinger Bands Squeeze breakouts on Nifty 50 stocks to eliminate massive drawdowns.",
-    "image_query": "stock market trading chart"
+    "title": "Master the &lt;span class='highlight'&gt;CAN SLIM Method&lt;/span&gt; for Nifty 50",
+    "text": "The proven growth investing framework tailored for Indian markets to maximize long-term wealth.",
+    "image_query": "stock market chart growth"
   },
   {
     "type": "bg-analytical",
-    "title": "Unfiltered vs Squeeze-Filtered Breakouts",
-    "text": "Performance comparison across Nifty 50 large-cap stocks over 24 months.",
+    "title": "The CAN SLIM Acronym",
+    "text": "7 Key pillars for selecting top outperforming stocks",
+    "table": {
+      "headers": [
+        "Pillar",
+        "Criteria",
+        "Indian Context Focus"
+      ],
+      "rows": [
+        [
+          "C & A",
+          "EPS & Annual Growth",
+          "YoY Profit Growth > 20%"
+        ],
+        [
+          "N & S",
+          "New Drivers & Supply/Demand",
+          "Volume surges on Breakouts"
+        ],
+        [
+          "L & I",
+          "Leader & Institutional Support",
+          "RS Rating > 80 & FII/DII Buying"
+        ],
+        [
+          "M",
+          "Market Direction",
+          "Nifty 50 Uptrend Confirmation"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "CAN SLIM vs Benchmark Returns",
+    "text": "Historical CAGR comparison of disciplined growth filtering vs broad index",
     "chart": {
       "type": "bar",
       "labels": [
-        "Win Rate %",
-        "Max Drawdown %",
-        "Profit Factor"
+        "3-Year CAGR",
+        "5-Year CAGR",
+        "Max Drawdown"
       ],
       "datasets": [
         {
-          "label": "Unfiltered Touch",
+          "label": "Nifty 50 Index",
           "data": [
-            38,
-            28,
-            1.1
+            13.5,
+            14.2,
+            -24.5
           ]
         },
         {
-          "label": "Squeeze Confirmed",
+          "label": "CAN SLIM Strategy",
           "data": [
-            68,
-            6,
-            2.7
+            28.4,
+            24.1,
+            -12
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Institutional Breakout Matrix",
-    "text": "How professionals filter out false retail breakouts before placing capital.",
-    "table": {
-      "headers": [
-        "Indicator",
-        "False Breakout",
-        "Confirmed Breakout"
-      ],
-      "rows": [
-        [
-          "Band Width",
-          "Flat / Contracting",
-          "Expanding Rapidly"
-        ],
-        [
-          "Volume Spike",
-          "Below 20-Day Avg",
-          "> 1.5x 20-Day Volume"
-        ],
-        [
-          "RSI (14)",
-          "Neutral (45-55)",
-          "Bullish Cross > 60"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "Golden Rule: &lt;span class='highlight'&gt;Cut Losses at 7-8%&lt;/span&gt;",
+    "text": "Capital preservation is essential. Never hold a declining trade below strict technical risk levels.",
+    "image_query": "financial risk management"
   },
   {
     "type": "bg-image",
-    "title": "Ready to Trade with &lt;span class='highlight'&gt;Precision?&lt;/span&gt;",
-    "text": "Open a free Demat account with Angel One today. Access TradingView charts & zero delivery brokerage.",
-    "image_query": "financial investment growth",
+    "title": "Start Investing Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Access advanced screeners, institutional flow metrics, and zero delivery brokerage today.",
+    "image_query": "wealth technology mobile phone",
     "is_cta": true
   }
 ]

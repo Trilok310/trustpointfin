@@ -47,7 +47,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 36. SBI Analysis: For Working Professionals to Straddles and Strangles
 - [x] 37. Why Moving Average Crossovers is the Key to Upcoming IPOs in Times of High Inflation
 - [x] 38. To Avoid Massive Drawdowns: Mastering Bollinger Bands Breakouts for Blue-chip Stocks
-- [ ] 39. The CAN SLIM Method Explained: For Long-term Wealth Creation for Trading Nifty 50
+- [x] 39. The CAN SLIM Method Explained: For Long-term Wealth Creation for Trading Nifty 50
 - [ ] 40. Midcap Nifty Analysis: Step-by-Step Blueprint to Support and Resistance Levels
 - [ ] 41. Top Secrets: Profiting from ICICI Bank during a Bear Market
 - [ ] 42. Advanced Tactics: Mastering Stop Loss Placement for Multi-bagger Stocks
