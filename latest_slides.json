@@ -1,72 +1,73 @@
 [
   {
     "type": "bg-image",
-    "title": "Beating Inflation with &lt;span class='highlight'&gt;CAN SLIM &amp; ETFs&lt;/span&gt;",
-    "text": "How Indian retail investors can adapt William O'Neil's strategy to factor ETFs in 2026.",
-    "image_query": "stock market charts"
+    "title": "Navigating &lt;span class='highlight'&gt;Reliance Stock&lt;/span&gt; in Bear Markets",
+    "text": "Why Moving Average Crossovers give retail traders an edge when trading RIL.",
+    "image_query": "stock trading chart analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "CAN SLIM Adapted for Factor ETFs",
-    "text": "Mapping stock growth rules to index funds",
-    "table": {
-      "headers": [
-        "Rule",
-        "Traditional Equity",
-        "Adapted Index ETF"
-      ],
-      "rows": [
-        [
-          "C & A",
-          "Company EPS Growth",
-          "Index Constituent Aggregate EPS"
-        ],
-        [
-          "Leader (L)",
-          "Top Relative Strength Stock",
-          "Nifty Momentum/Alpha ETFs"
-        ],
-        [
-          "Inst. (I)",
-          "FII/DII Buying in Stock",
-          "Net Institutional Inflows to Sector ETF"
-        ],
-        [
-          "Market (M)",
-          "General Trend Filter",
-          "Nifty 50 SMA / Trend Confirmation"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Beat the Inflation Squeeze",
-    "text": "5-Year CAGR Comparison during Inflationary Cycles (2021-2026)",
+    "title": "Strategy Performance vs Passive Holding",
+    "text": "Comparing MA Crossover risk management vs Buy & Hold during historical market pullbacks.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Retail Inflation",
-        "Broad Nifty 50",
-        "Nifty200 Momentum ETF"
+        "2020 Crash",
+        "2022 Correction",
+        "2024 Volatility"
       ],
       "datasets": [
         {
-          "label": "Annual Yield / Rate (%)",
+          "label": "Buy & Hold RIL",
           "data": [
-            5.8,
-            12.4,
-            22.4
+            -28,
+            -14,
+            -8
+          ]
+        },
+        {
+          "label": "50/200 EMA Crossover",
+          "data": [
+            -6,
+            8,
+            11
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Crossover Framework for RIL",
+    "text": "Selecting the right timeframe for your trading style.",
+    "table": {
+      "headers": [
+        "Strategy",
+        "Fast EMA",
+        "Slow EMA",
+        "Target Holding"
+      ],
+      "rows": [
+        [
+          "Swing Trades",
+          "20 EMA",
+          "50 EMA",
+          "2 - 6 Weeks"
+        ],
+        [
+          "Macro Pivots",
+          "50 EMA",
+          "200 EMA",
+          "3 - 12 Months"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Start Building Your ETF Portfolio on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Enjoy zero brokerage on equity delivery, instant sector tracking, and smart orders. Open your Demat account today!",
-    "image_query": "financial technology success",
+    "title": "Trade RIL with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Access free advanced charts, low latency execution, and zero delivery brokerage today.",
+    "image_query": "finance growth mobile app",
     "is_cta": true
   }
 ]

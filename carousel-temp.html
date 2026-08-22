@@ -32,14 +32,14 @@
 </head>
 <body>
     
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20charts,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20trading%20chart%20analysis,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Beating Inflation with &lt;span class='highlight'&gt;CAN SLIM &amp; ETFs&lt;/span&gt;</h1>
-<p>How Indian retail investors can adapt William O'Neil's strategy to factor ETFs in 2026.</p>
+                <h1>Navigating &lt;span class='highlight'&gt;Reliance Stock&lt;/span&gt; in Bear Markets</h1>
+<p>Why Moving Average Crossovers give retail traders an edge when trading RIL.</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">1 / 4</span>
@@ -53,9 +53,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>CAN SLIM Adapted for Factor ETFs</h1>
-<p>Mapping stock growth rules to index funds</p>
-<table class="data-table"><tr><th>Rule</th><th>Traditional Equity</th><th>Adapted Index ETF</th></tr><tr><td>C & A</td><td>Company EPS Growth</td><td>Index Constituent Aggregate EPS</td></tr><tr><td>Leader (L)</td><td>Top Relative Strength Stock</td><td>Nifty Momentum/Alpha ETFs</td></tr><tr><td>Inst. (I)</td><td>FII/DII Buying in Stock</td><td>Net Institutional Inflows to Sector ETF</td></tr><tr><td>Market (M)</td><td>General Trend Filter</td><td>Nifty 50 SMA / Trend Confirmation</td></tr></table>
+                <h1>Strategy Performance vs Passive Holding</h1>
+<p>Comparing MA Crossover risk management vs Buy & Hold during historical market pullbacks.</p>
+<div class="chart-container"><canvas id="chart2"></canvas></div>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">2 / 4</span>
@@ -69,9 +69,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Beat the Inflation Squeeze</h1>
-<p>5-Year CAGR Comparison during Inflationary Cycles (2021-2026)</p>
-<div class="chart-container"><canvas id="chart3"></canvas></div>
+                <h1>Crossover Framework for RIL</h1>
+<p>Selecting the right timeframe for your trading style.</p>
+<table class="data-table"><tr><th>Strategy</th><th>Fast EMA</th><th>Slow EMA</th><th>Target Holding</th></tr><tr><td>Swing Trades</td><td>20 EMA</td><td>50 EMA</td><td>2 - 6 Weeks</td></tr><tr><td>Macro Pivots</td><td>50 EMA</td><td>200 EMA</td><td>3 - 12 Months</td></tr></table>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">3 / 4</span>
@@ -79,14 +79,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20technology%20success,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?finance%20growth%20mobile%20app,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Start Building Your ETF Portfolio on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;</h1>
-<p>Enjoy zero brokerage on equity delivery, instant sector tracking, and smart orders. Open your Demat account today!</p>
+                <h1>Trade RIL with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;</h1>
+<p>Access free advanced charts, low latency execution, and zero delivery brokerage today.</p>
 <div><span class="cta-btn">Link in Bio to Read More</span></div>
             </div>
             <div class="slide-footer">
@@ -100,9 +100,9 @@
         Chart.defaults.font.size = 24;
         Chart.defaults.color = '#94a3b8';
         
-                new Chart(document.getElementById('chart3').getContext('2d'), {
+                new Chart(document.getElementById('chart2').getContext('2d'), {
                     type: 'bar',
-                    data: {"labels":["Retail Inflation","Broad Nifty 50","Nifty200 Momentum ETF"],"datasets":[{"label":"Annual Yield / Rate (%)","data":[5.8,12.4,22.4]}]},
+                    data: {"labels":["2020 Crash","2022 Correction","2024 Volatility"],"datasets":[{"label":"Buy & Hold RIL","data":[-28,-14,-8]},{"label":"50/200 EMA Crossover","data":[-6,8,11]}]},
                     options: {
                         responsive: true, maintainAspectRatio: false, animation: false,
                         plugins: { legend: { labels: { color: '#cbd5e1', padding: 10, font: { family: "'Inter', sans-serif" } } } },
