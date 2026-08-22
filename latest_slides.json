@@ -1,69 +1,86 @@
 [
   {
     "type": "bg-image",
-    "title": "Master <span class='highlight'>Fibonacci Retracements</span> on Expiry Day",
-    "text": "How Indian retail traders can turn penny stock expiry volatility into disciplined, high R:R wins.",
-    "image_query": "stock market trading chart"
+    "title": "Mastering <span class='highlight'>CAN SLIM</span> for Dividend Wealth",
+    "text": "How working professionals in 2026 can combine high income with growth.",
+    "image_query": "wealth business corporate professional"
   },
   {
     "type": "bg-analytical",
-    "title": "Fibonacci Retracement Accuracy",
-    "text": "Key retracement bounce probabilities in high-volatility penny stocks on expiry day.",
+    "title": "Traditional vs Modified CAN SLIM",
+    "text": "Adapting O'Neil's strategy for stable yield & passive income",
+    "table": {
+      "headers": [
+        "Metric",
+        "Classic CAN SLIM",
+        "Modified Dividend CAN SLIM"
+      ],
+      "rows": [
+        [
+          "EPS Growth",
+          "25%+ YoY",
+          "12%-15%+ YoY"
+        ],
+        [
+          "Dividend Yield",
+          "Secondary / Irrelevant",
+          "3.0% to 6.0%+"
+        ],
+        [
+          "Target Profile",
+          "High-Beta Growth",
+          "Blue-Chip & Mid-Cap Growth"
+        ],
+        [
+          "Monitoring",
+          "Daily Active",
+          "1-2 Hours / Weekend"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Total Return Breakdown",
+    "text": "Growth + Dividend Yield outperforming pure yield stocks over 3 years",
     "chart": {
       "type": "bar",
       "labels": [
-        "23.6% Level",
-        "38.2% Level",
-        "50.0% Level",
-        "61.8% Golden"
+        "Year 1",
+        "Year 2",
+        "Year 3"
       ],
       "datasets": [
         {
-          "label": "Bounce Success Rate (%)",
+          "label": "Pure High Yield Trap",
           "data": [
-            32,
-            58,
-            67,
-            82
+            4,
+            -2,
+            -8
+          ]
+        },
+        {
+          "label": "CAN SLIM Dividend Leader",
+          "data": [
+            14,
+            18,
+            22
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Strategy Comparison Matrix",
-    "text": "Comparing breakout chasing versus disciplined Fibonacci entries on expiry day.",
-    "table": {
-      "headers": [
-        "Metric",
-        "Chasing Breakouts",
-        "Fibo Retracement"
-      ],
-      "rows": [
-        [
-          "Risk-to-Reward",
-          "1:1.2",
-          "1:3.5"
-        ],
-        [
-          "Win Rate",
-          "34%",
-          "68%"
-        ],
-        [
-          "Slippage Impact",
-          "High",
-          "Minimal"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "Avoid <span class='highlight'>Dividend Traps</span> easily",
+    "text": "Filter out decaying businesses using Institutional Ownership (I) and Market Direction (M).",
+    "image_query": "financial stock chart analysis"
   },
   {
     "type": "bg-image",
-    "title": "Trade Penny Stocks via <span class='highlight'>Angel One</span>",
-    "text": "Unlock zero delivery brokerage, lightning-fast order execution, and premium charts today.",
-    "image_query": "financial growth mobile app",
+    "title": "Start Investing Smart with <span class='highlight'>Angel One</span>",
+    "text": "Screen high-yield stocks, track DII/FII flows, and set automated GTT orders effortlessly.",
+    "image_query": "mobile phone trading app success",
     "is_cta": true
   }
 ]
