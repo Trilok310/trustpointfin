@@ -1,70 +1,62 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>CAN SLIM</span> for Dividend Wealth",
-    "text": "How working professionals in 2026 can combine high income with growth.",
-    "image_query": "wealth business corporate professional"
+    "title": "Beating Inflation with &lt;span class='highlight'&gt;CAN SLIM &amp; ETFs&lt;/span&gt;",
+    "text": "How Indian retail investors can adapt William O'Neil's strategy to factor ETFs in 2026.",
+    "image_query": "stock market charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Traditional vs Modified CAN SLIM",
-    "text": "Adapting O'Neil's strategy for stable yield & passive income",
+    "title": "CAN SLIM Adapted for Factor ETFs",
+    "text": "Mapping stock growth rules to index funds",
     "table": {
       "headers": [
-        "Metric",
-        "Classic CAN SLIM",
-        "Modified Dividend CAN SLIM"
+        "Rule",
+        "Traditional Equity",
+        "Adapted Index ETF"
       ],
       "rows": [
         [
-          "EPS Growth",
-          "25%+ YoY",
-          "12%-15%+ YoY"
+          "C & A",
+          "Company EPS Growth",
+          "Index Constituent Aggregate EPS"
         ],
         [
-          "Dividend Yield",
-          "Secondary / Irrelevant",
-          "3.0% to 6.0%+"
+          "Leader (L)",
+          "Top Relative Strength Stock",
+          "Nifty Momentum/Alpha ETFs"
         ],
         [
-          "Target Profile",
-          "High-Beta Growth",
-          "Blue-Chip & Mid-Cap Growth"
+          "Inst. (I)",
+          "FII/DII Buying in Stock",
+          "Net Institutional Inflows to Sector ETF"
         ],
         [
-          "Monitoring",
-          "Daily Active",
-          "1-2 Hours / Weekend"
+          "Market (M)",
+          "General Trend Filter",
+          "Nifty 50 SMA / Trend Confirmation"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Total Return Breakdown",
-    "text": "Growth + Dividend Yield outperforming pure yield stocks over 3 years",
+    "title": "Beat the Inflation Squeeze",
+    "text": "5-Year CAGR Comparison during Inflationary Cycles (2021-2026)",
     "chart": {
       "type": "bar",
       "labels": [
-        "Year 1",
-        "Year 2",
-        "Year 3"
+        "Retail Inflation",
+        "Broad Nifty 50",
+        "Nifty200 Momentum ETF"
       ],
       "datasets": [
         {
-          "label": "Pure High Yield Trap",
+          "label": "Annual Yield / Rate (%)",
           "data": [
-            4,
-            -2,
-            -8
-          ]
-        },
-        {
-          "label": "CAN SLIM Dividend Leader",
-          "data": [
-            14,
-            18,
-            22
+            5.8,
+            12.4,
+            22.4
           ]
         }
       ]
@@ -72,15 +64,9 @@
   },
   {
     "type": "bg-image",
-    "title": "Avoid <span class='highlight'>Dividend Traps</span> easily",
-    "text": "Filter out decaying businesses using Institutional Ownership (I) and Market Direction (M).",
-    "image_query": "financial stock chart analysis"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Investing Smart with <span class='highlight'>Angel One</span>",
-    "text": "Screen high-yield stocks, track DII/FII flows, and set automated GTT orders effortlessly.",
-    "image_query": "mobile phone trading app success",
+    "title": "Start Building Your ETF Portfolio on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Enjoy zero brokerage on equity delivery, instant sector tracking, and smart orders. Open your Demat account today!",
+    "image_query": "financial technology success",
     "is_cta": true
   }
 ]
