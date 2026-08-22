@@ -51,7 +51,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 40. Midcap Nifty Analysis: Step-by-Step Blueprint to Support and Resistance Levels
 - [x] 41. Top Secrets: Profiting from ICICI Bank during a Bear Market
 - [x] 42. Advanced Tactics: Mastering Stop Loss Placement for Multi-bagger Stocks
-- [ ] 43. Why Fibonacci Retracements is the Key to Penny Stocks on Expiry Day
+- [x] 43. Why Fibonacci Retracements is the Key to Penny Stocks on Expiry Day
 - [ ] 44. The CAN SLIM Method Explained: For Working Professionals for Trading High Dividend Yield Stocks
 - [ ] 45. The Role of The CAN SLIM Method in Index ETFs in Times of High Inflation
 - [ ] 46. Why Moving Average Crossovers is the Key to Reliance during a Bear Market

@@ -1,75 +1,69 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering Stop Loss for <span class='highlight'>Multi-bagger Stocks</span>",
-    "text": "Stop getting shaken out of 10x opportunities. Learn institutional trailing techniques.",
+    "title": "Master <span class='highlight'>Fibonacci Retracements</span> on Expiry Day",
+    "text": "How Indian retail traders can turn penny stock expiry volatility into disciplined, high R:R wins.",
     "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Why Fixed Stops Fail",
-    "text": "Comparing stop loss techniques on high-growth stock rallies",
-    "table": {
-      "headers": [
-        "Strategy",
-        "Shakeout Risk",
-        "Profit Capture"
-      ],
-      "rows": [
-        [
-          "Fixed 5% Stop",
-          "Very High (84%)",
-          "Truncated Early"
-        ],
-        [
-          "Fixed 15% Stop",
-          "Moderate",
-          "Sub-optimal"
-        ],
-        [
-          "3x ATR Trailing",
-          "Low",
-          "Maximum Upside"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Trailing Stop Performance Comparison",
-    "text": "Average returns held during a 2-year multi-bagger cycle",
+    "title": "Fibonacci Retracement Accuracy",
+    "text": "Key retracement bounce probabilities in high-volatility penny stocks on expiry day.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Tight Stop (5%)",
-        "Wide Stop (15%)",
-        "ATR Trailing",
-        "20-Wk EMA"
+        "23.6% Level",
+        "38.2% Level",
+        "50.0% Level",
+        "61.8% Golden"
       ],
       "datasets": [
         {
-          "label": "Avg Realized Return %",
+          "label": "Bounce Success Rate (%)",
           "data": [
-            35,
-            120,
-            380,
-            420
+            32,
+            58,
+            67,
+            82
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "Golden Rule: <span class='highlight'>De-Risk at 100%</span>",
-    "text": "Book half your capital on a 2x gain. Let remaining 'free shares' ride structural weekly trends.",
-    "image_query": "financial freedom growth"
+    "type": "bg-analytical",
+    "title": "Strategy Comparison Matrix",
+    "text": "Comparing breakout chasing versus disciplined Fibonacci entries on expiry day.",
+    "table": {
+      "headers": [
+        "Metric",
+        "Chasing Breakouts",
+        "Fibo Retracement"
+      ],
+      "rows": [
+        [
+          "Risk-to-Reward",
+          "1:1.2",
+          "1:3.5"
+        ],
+        [
+          "Win Rate",
+          "34%",
+          "68%"
+        ],
+        [
+          "Slippage Impact",
+          "High",
+          "Minimal"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Automate Risk with <span class='highlight'>Angel One</span>",
-    "text": "Set trailing stop losses effortlessly with Smart Orders & zero delivery brokerage. Start today!",
-    "image_query": "mobile trading app tech",
+    "title": "Trade Penny Stocks via <span class='highlight'>Angel One</span>",
+    "text": "Unlock zero delivery brokerage, lightning-fast order execution, and premium charts today.",
+    "image_query": "financial growth mobile app",
     "is_cta": true
   }
 ]

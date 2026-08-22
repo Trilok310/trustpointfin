@@ -38,11 +38,11 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Mastering Stop Loss for <span class='highlight'>Multi-bagger Stocks</span></h1>
-<p>Stop getting shaken out of 10x opportunities. Learn institutional trailing techniques.</p>
+                <h1>Master <span class='highlight'>Fibonacci Retracements</span> on Expiry Day</h1>
+<p>How Indian retail traders can turn penny stock expiry volatility into disciplined, high R:R wins.</p>
             </div>
             <div class="slide-footer">
-                <span class="slide-number">1 / 5</span>
+                <span class="slide-number">1 / 4</span>
                 <span class="swipe">Swipe ➔</span>
             </div>
             <div class="slide-disclaimer">Disclaimer: Investments in the securities market are subject to market risks. Read all related documents carefully before investing.</div>
@@ -53,12 +53,12 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Why Fixed Stops Fail</h1>
-<p>Comparing stop loss techniques on high-growth stock rallies</p>
-<table class="data-table"><tr><th>Strategy</th><th>Shakeout Risk</th><th>Profit Capture</th></tr><tr><td>Fixed 5% Stop</td><td>Very High (84%)</td><td>Truncated Early</td></tr><tr><td>Fixed 15% Stop</td><td>Moderate</td><td>Sub-optimal</td></tr><tr><td>3x ATR Trailing</td><td>Low</td><td>Maximum Upside</td></tr></table>
+                <h1>Fibonacci Retracement Accuracy</h1>
+<p>Key retracement bounce probabilities in high-volatility penny stocks on expiry day.</p>
+<div class="chart-container"><canvas id="chart2"></canvas></div>
             </div>
             <div class="slide-footer">
-                <span class="slide-number">2 / 5</span>
+                <span class="slide-number">2 / 4</span>
                 <span class="swipe">Swipe ➔</span>
             </div>
             
@@ -69,43 +69,28 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Trailing Stop Performance Comparison</h1>
-<p>Average returns held during a 2-year multi-bagger cycle</p>
-<div class="chart-container"><canvas id="chart3"></canvas></div>
+                <h1>Strategy Comparison Matrix</h1>
+<p>Comparing breakout chasing versus disciplined Fibonacci entries on expiry day.</p>
+<table class="data-table"><tr><th>Metric</th><th>Chasing Breakouts</th><th>Fibo Retracement</th></tr><tr><td>Risk-to-Reward</td><td>1:1.2</td><td>1:3.5</td></tr><tr><td>Win Rate</td><td>34%</td><td>68%</td></tr><tr><td>Slippage Impact</td><td>High</td><td>Minimal</td></tr></table>
             </div>
             <div class="slide-footer">
-                <span class="slide-number">3 / 5</span>
+                <span class="slide-number">3 / 4</span>
                 <span class="swipe">Swipe ➔</span>
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20freedom%20growth,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20growth%20mobile%20app,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Golden Rule: <span class='highlight'>De-Risk at 100%</span></h1>
-<p>Book half your capital on a 2x gain. Let remaining 'free shares' ride structural weekly trends.</p>
-            </div>
-            <div class="slide-footer">
-                <span class="slide-number">4 / 5</span>
-                <span class="swipe">Swipe ➔</span>
-            </div>
-            
-        </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?mobile%20trading%20app%20tech,finance');">
-            <div class="brand-header">
-                <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
-                <span class="brand-text">Trust Point Fin</span>
-            </div>
-            <div class="content" style="justify-content: center;">
-                <h1>Automate Risk with <span class='highlight'>Angel One</span></h1>
-<p>Set trailing stop losses effortlessly with Smart Orders & zero delivery brokerage. Start today!</p>
+                <h1>Trade Penny Stocks via <span class='highlight'>Angel One</span></h1>
+<p>Unlock zero delivery brokerage, lightning-fast order execution, and premium charts today.</p>
 <div><span class="cta-btn">Link in Bio to Read More</span></div>
             </div>
             <div class="slide-footer">
-                <span class="slide-number">5 / 5</span>
+                <span class="slide-number">4 / 4</span>
                 <span class="swipe"></span>
             </div>
             <div class="slide-disclaimer">Disclaimer: Investments in the securities market are subject to market risks. Read all related documents carefully before investing.</div>
@@ -115,9 +100,9 @@
         Chart.defaults.font.size = 24;
         Chart.defaults.color = '#94a3b8';
         
-                new Chart(document.getElementById('chart3').getContext('2d'), {
+                new Chart(document.getElementById('chart2').getContext('2d'), {
                     type: 'bar',
-                    data: {"labels":["Tight Stop (5%)","Wide Stop (15%)","ATR Trailing","20-Wk EMA"],"datasets":[{"label":"Avg Realized Return %","data":[35,120,380,420]}]},
+                    data: {"labels":["23.6% Level","38.2% Level","50.0% Level","61.8% Golden"],"datasets":[{"label":"Bounce Success Rate (%)","data":[32,58,67,82]}]},
                     options: {
                         responsive: true, maintainAspectRatio: false, animation: false,
                         plugins: { legend: { labels: { color: '#cbd5e1', padding: 10, font: { family: "'Inter', sans-serif" } } } },
