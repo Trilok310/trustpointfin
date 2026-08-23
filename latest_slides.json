@@ -1,30 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>Mid-Cap Stocks</span> in Bear Markets",
-    "text": "Why disciplined position sizing is your ultimate hedge against market drawdowns.",
-    "image_query": "stock market crash"
+    "title": "Mastering &lt;span class='highlight'&gt;Budget Day Volatility&lt;/span&gt;",
+    "text": "Why Straddles & Strangles are essential strategies for Nifty 50 during Union Budget 2026.",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "The Math of Drawdowns",
-    "text": "As losses mount, the return required to break even grows exponentially.",
+    "title": "Historical Nifty 50 Budget Swings",
+    "text": "Average intraday range vs normal trading session range",
     "chart": {
       "type": "bar",
       "labels": [
-        "-20% Loss",
-        "-30% Loss",
-        "-40% Loss",
-        "-50% Loss"
+        "Normal Day",
+        "Budget 2023",
+        "Budget 2024",
+        "Budget 2025"
       ],
       "datasets": [
         {
-          "label": "% Gain Needed to Break Even",
+          "label": "Nifty Intraday Range (%)",
           "data": [
-            25,
-            42.8,
-            66.6,
-            100
+            0.8,
+            2.4,
+            3.1,
+            2.7
           ]
         }
       ]
@@ -32,39 +32,49 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Allocation Matrix Comparison",
-    "text": "How amateur vs disciplined position sizing impacts total portfolio drawdown.",
+    "title": "Straddle vs. Strangle Matrix",
+    "text": "Comparing key parameters for Budget Day trading",
     "table": {
       "headers": [
-        "Strategy",
-        "Single Stock Size",
-        "50% Drop Portfolio Impact"
+        "Factor",
+        "Long Straddle",
+        "Long Strangle"
       ],
       "rows": [
         [
-          "Over-Concentrated",
-          "15 - 20%",
-          "7.5% - 10.0% Portfolio Loss"
+          "Strikes Used",
+          "ATM Call + ATM Put",
+          "OTM Call + OTM Put"
         ],
         [
-          "Disciplined (Pro)",
-          "3 - 5%",
-          "1.5% - 2.5% Portfolio Loss"
+          "Capital Required",
+          "Higher Premium",
+          "Lower Premium"
+        ],
+        [
+          "Breakeven Distance",
+          "Narrower Move Needed",
+          "Wider Move Needed"
+        ],
+        [
+          "Gamma Sensitivity",
+          "Very High",
+          "Moderate"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Golden Rules for <span class='highlight'>Mid-Cap Risk Sizing</span>",
-    "text": "• Cap single mid-caps at 3-5% of total portfolio\n• Scale in using staggered tranches\n• Use ATR volatility buffering for stop-losses",
-    "image_query": "financial strategy"
+    "title": "Beware of the &lt;span class='highlight'&gt;Post-Speech IV Crush&lt;/span&gt;",
+    "text": "As India VIX drops after the address, option premiums collapse quickly. Timing your exit during the speech is critical.",
+    "image_query": "financial chart downward"
   },
   {
     "type": "bg-image",
-    "title": "Invest Smarter with <span class='highlight'>Angel One</span>",
-    "text": "Execute disciplined trading strategies with advanced risk tools, GTT orders, and low brokerage charges.",
-    "image_query": "investment success",
+    "title": "Trade Volatility Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Execute multi-leg option strategies instantly with real-time Greeks analysis and zero hassle. Open your Demat account today!",
+    "image_query": "investor stock market app phone",
     "is_cta": true
   }
 ]

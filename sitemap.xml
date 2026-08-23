@@ -52,4 +52,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://trustpointfin.org/why-straddles-and-strangles-are-key-to-nifty-50-trading-arou.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

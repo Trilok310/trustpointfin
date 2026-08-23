@@ -32,14 +32,14 @@
 </head>
 <body>
     
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20crash,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20trading%20charts,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Mastering <span class='highlight'>Mid-Cap Stocks</span> in Bear Markets</h1>
-<p>Why disciplined position sizing is your ultimate hedge against market drawdowns.</p>
+                <h1>Mastering &lt;span class='highlight'&gt;Budget Day Volatility&lt;/span&gt;</h1>
+<p>Why Straddles & Strangles are essential strategies for Nifty 50 during Union Budget 2026.</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">1 / 5</span>
@@ -53,8 +53,8 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>The Math of Drawdowns</h1>
-<p>As losses mount, the return required to break even grows exponentially.</p>
+                <h1>Historical Nifty 50 Budget Swings</h1>
+<p>Average intraday range vs normal trading session range</p>
 <div class="chart-container"><canvas id="chart2"></canvas></div>
             </div>
             <div class="slide-footer">
@@ -69,9 +69,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Allocation Matrix Comparison</h1>
-<p>How amateur vs disciplined position sizing impacts total portfolio drawdown.</p>
-<table class="data-table"><tr><th>Strategy</th><th>Single Stock Size</th><th>50% Drop Portfolio Impact</th></tr><tr><td>Over-Concentrated</td><td>15 - 20%</td><td>7.5% - 10.0% Portfolio Loss</td></tr><tr><td>Disciplined (Pro)</td><td>3 - 5%</td><td>1.5% - 2.5% Portfolio Loss</td></tr></table>
+                <h1>Straddle vs. Strangle Matrix</h1>
+<p>Comparing key parameters for Budget Day trading</p>
+<table class="data-table"><tr><th>Factor</th><th>Long Straddle</th><th>Long Strangle</th></tr><tr><td>Strikes Used</td><td>ATM Call + ATM Put</td><td>OTM Call + OTM Put</td></tr><tr><td>Capital Required</td><td>Higher Premium</td><td>Lower Premium</td></tr><tr><td>Breakeven Distance</td><td>Narrower Move Needed</td><td>Wider Move Needed</td></tr><tr><td>Gamma Sensitivity</td><td>Very High</td><td>Moderate</td></tr></table>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">3 / 5</span>
@@ -79,16 +79,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20strategy,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20chart%20downward,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Golden Rules for <span class='highlight'>Mid-Cap Risk Sizing</span></h1>
-<p>• Cap single mid-caps at 3-5% of total portfolio
-• Scale in using staggered tranches
-• Use ATR volatility buffering for stop-losses</p>
+                <h1>Beware of the &lt;span class='highlight'&gt;Post-Speech IV Crush&lt;/span&gt;</h1>
+<p>As India VIX drops after the address, option premiums collapse quickly. Timing your exit during the speech is critical.</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">4 / 5</span>
@@ -96,14 +94,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?investment%20success,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?investor%20stock%20market%20app%20phone,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Invest Smarter with <span class='highlight'>Angel One</span></h1>
-<p>Execute disciplined trading strategies with advanced risk tools, GTT orders, and low brokerage charges.</p>
+                <h1>Trade Volatility Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;</h1>
+<p>Execute multi-leg option strategies instantly with real-time Greeks analysis and zero hassle. Open your Demat account today!</p>
 <div><span class="cta-btn">Link in Bio to Read More</span></div>
             </div>
             <div class="slide-footer">
@@ -119,7 +117,7 @@
         
                 new Chart(document.getElementById('chart2').getContext('2d'), {
                     type: 'bar',
-                    data: {"labels":["-20% Loss","-30% Loss","-40% Loss","-50% Loss"],"datasets":[{"label":"% Gain Needed to Break Even","data":[25,42.8,66.6,100]}]},
+                    data: {"labels":["Normal Day","Budget 2023","Budget 2024","Budget 2025"],"datasets":[{"label":"Nifty Intraday Range (%)","data":[0.8,2.4,3.1,2.7]}]},
                     options: {
                         responsive: true, maintainAspectRatio: false, animation: false,
                         plugins: { legend: { labels: { color: '#cbd5e1', padding: 10, font: { family: "'Inter', sans-serif" } } } },
