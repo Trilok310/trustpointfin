@@ -57,7 +57,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 46. Why Moving Average Crossovers is the Key to Reliance during a Bear Market
 - [x] 47. Why Position Sizing Rules is the Key to Mid-cap Stocks during a Bear Market
 - [x] 48. Why Straddles and Strangles is the Key to Nifty 50 around Budget Day
-- [ ] 49. Combining Hedging Strategies with Auto Sector Analysis
+- [x] 49. Combining Hedging Strategies with Auto Sector Analysis
 - [ ] 50. Combining Bollinger Bands Breakouts with ICICI Bank Analysis
 - [ ] 51. Candlestick Patterns Explained: Top Secrets for Trading Gold ETFs
 - [ ] 52. Indian Banking Sector Analysis: For Long-term Wealth Creation to Growth Investing

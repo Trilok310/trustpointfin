@@ -1,30 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;Budget Day Volatility&lt;/span&gt;",
-    "text": "Why Straddles & Strangles are essential strategies for Nifty 50 during Union Budget 2026.",
-    "image_query": "stock market trading charts"
+    "title": "Hedge Your &lt;span class='highlight'&gt;Auto Sector&lt;/span&gt; Risks in 2026",
+    "text": "Combine fundamental auto sales analysis with modern options hedging.",
+    "image_query": "automobile factory trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Historical Nifty 50 Budget Swings",
-    "text": "Average intraday range vs normal trading session range",
+    "title": "Auto Sector Volatility Surge",
+    "text": "Nifty Auto exhibits high implied volatility spikes during monthly dispatch releases.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Normal Day",
-        "Budget 2023",
-        "Budget 2024",
-        "Budget 2025"
+        "Pre-Sales (28th)",
+        "Release Day (1st)",
+        "Post-Sales (4th)"
       ],
       "datasets": [
         {
-          "label": "Nifty Intraday Range (%)",
+          "label": "Nifty 50 Volatility (%)",
           "data": [
-            0.8,
-            2.4,
-            3.1,
-            2.7
+            12.4,
+            13.1,
+            12.6
+          ]
+        },
+        {
+          "label": "Nifty Auto Volatility (%)",
+          "data": [
+            16.8,
+            28.6,
+            18.2
           ]
         }
       ]
@@ -32,49 +38,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Straddle vs. Strangle Matrix",
-    "text": "Comparing key parameters for Budget Day trading",
+    "title": "Strategy Comparison Matrix",
+    "text": "Selecting the right risk-mitigation model for auto stocks.",
     "table": {
       "headers": [
-        "Factor",
-        "Long Straddle",
-        "Long Strangle"
+        "Strategy",
+        "Cost Impact",
+        "Best Used For"
       ],
       "rows": [
         [
-          "Strikes Used",
-          "ATM Call + ATM Put",
-          "OTM Call + OTM Put"
+          "Protective Put",
+          "High Premium Outlay",
+          "Event Risk (Monthly Sales)"
         ],
         [
-          "Capital Required",
-          "Higher Premium",
-          "Lower Premium"
+          "Zero-Cost Collar",
+          "Net Zero (Cash Neutral)",
+          "Quarterly Earnings / Budget"
         ],
         [
-          "Breakeven Distance",
-          "Narrower Move Needed",
-          "Wider Move Needed"
-        ],
-        [
-          "Gamma Sensitivity",
-          "Very High",
-          "Moderate"
+          "Pairs Trade",
+          "Margin Requirement",
+          "Fundamental Divergence"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Beware of the &lt;span class='highlight'&gt;Post-Speech IV Crush&lt;/span&gt;",
-    "text": "As India VIX drops after the address, option premiums collapse quickly. Timing your exit during the speech is critical.",
-    "image_query": "financial chart downward"
-  },
-  {
-    "type": "bg-image",
-    "title": "Trade Volatility Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Execute multi-leg option strategies instantly with real-time Greeks analysis and zero hassle. Open your Demat account today!",
-    "image_query": "investor stock market app phone",
+    "title": "Hedge Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Execute complex options strategies with zero delivery brokerage and real-time option chain analytics.",
+    "image_query": "financial technology success",
     "is_cta": true
   }
 ]
