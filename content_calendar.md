@@ -55,7 +55,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 44. The CAN SLIM Method Explained: For Working Professionals for Trading High Dividend Yield Stocks
 - [x] 45. The Role of The CAN SLIM Method in Index ETFs in Times of High Inflation
 - [x] 46. Why Moving Average Crossovers is the Key to Reliance during a Bear Market
-- [ ] 47. Why Position Sizing Rules is the Key to Mid-cap Stocks during a Bear Market
+- [x] 47. Why Position Sizing Rules is the Key to Mid-cap Stocks during a Bear Market
 - [ ] 48. Why Straddles and Strangles is the Key to Nifty 50 around Budget Day
 - [ ] 49. Combining Hedging Strategies with Auto Sector Analysis
 - [ ] 50. Combining Bollinger Bands Breakouts with ICICI Bank Analysis

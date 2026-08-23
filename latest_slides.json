@@ -1,36 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Navigating &lt;span class='highlight'&gt;Reliance Stock&lt;/span&gt; in Bear Markets",
-    "text": "Why Moving Average Crossovers give retail traders an edge when trading RIL.",
-    "image_query": "stock trading chart analysis"
+    "title": "Mastering <span class='highlight'>Mid-Cap Stocks</span> in Bear Markets",
+    "text": "Why disciplined position sizing is your ultimate hedge against market drawdowns.",
+    "image_query": "stock market crash"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Performance vs Passive Holding",
-    "text": "Comparing MA Crossover risk management vs Buy & Hold during historical market pullbacks.",
+    "title": "The Math of Drawdowns",
+    "text": "As losses mount, the return required to break even grows exponentially.",
     "chart": {
       "type": "bar",
       "labels": [
-        "2020 Crash",
-        "2022 Correction",
-        "2024 Volatility"
+        "-20% Loss",
+        "-30% Loss",
+        "-40% Loss",
+        "-50% Loss"
       ],
       "datasets": [
         {
-          "label": "Buy & Hold RIL",
+          "label": "% Gain Needed to Break Even",
           "data": [
-            -28,
-            -14,
-            -8
-          ]
-        },
-        {
-          "label": "50/200 EMA Crossover",
-          "data": [
-            -6,
-            8,
-            11
+            25,
+            42.8,
+            66.6,
+            100
           ]
         }
       ]
@@ -38,36 +32,39 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Crossover Framework for RIL",
-    "text": "Selecting the right timeframe for your trading style.",
+    "title": "Allocation Matrix Comparison",
+    "text": "How amateur vs disciplined position sizing impacts total portfolio drawdown.",
     "table": {
       "headers": [
         "Strategy",
-        "Fast EMA",
-        "Slow EMA",
-        "Target Holding"
+        "Single Stock Size",
+        "50% Drop Portfolio Impact"
       ],
       "rows": [
         [
-          "Swing Trades",
-          "20 EMA",
-          "50 EMA",
-          "2 - 6 Weeks"
+          "Over-Concentrated",
+          "15 - 20%",
+          "7.5% - 10.0% Portfolio Loss"
         ],
         [
-          "Macro Pivots",
-          "50 EMA",
-          "200 EMA",
-          "3 - 12 Months"
+          "Disciplined (Pro)",
+          "3 - 5%",
+          "1.5% - 2.5% Portfolio Loss"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trade RIL with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access free advanced charts, low latency execution, and zero delivery brokerage today.",
-    "image_query": "finance growth mobile app",
+    "title": "Golden Rules for <span class='highlight'>Mid-Cap Risk Sizing</span>",
+    "text": "• Cap single mid-caps at 3-5% of total portfolio\n• Scale in using staggered tranches\n• Use ATR volatility buffering for stop-losses",
+    "image_query": "financial strategy"
+  },
+  {
+    "type": "bg-image",
+    "title": "Invest Smarter with <span class='highlight'>Angel One</span>",
+    "text": "Execute disciplined trading strategies with advanced risk tools, GTT orders, and low brokerage charges.",
+    "image_query": "investment success",
     "is_cta": true
   }
 ]
