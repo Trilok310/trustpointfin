@@ -1,36 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Hedge Your &lt;span class='highlight'&gt;Auto Sector&lt;/span&gt; Risks in 2026",
-    "text": "Combine fundamental auto sales analysis with modern options hedging.",
-    "image_query": "automobile factory trading"
+    "title": "Master <span class='highlight'>ICICI Bank Breakouts</span>",
+    "text": "Combine Bollinger Bands with volume analysis for high-probability swing trades in 2026.",
+    "image_query": "stock trading analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Auto Sector Volatility Surge",
-    "text": "Nifty Auto exhibits high implied volatility spikes during monthly dispatch releases.",
+    "title": "Strategy Win Rate vs Indicator Filters",
+    "text": "Adding volume and RSI filters drastically reduces false breakout traps.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Pre-Sales (28th)",
-        "Release Day (1st)",
-        "Post-Sales (4th)"
+        "BB Alone",
+        "BB + Volume",
+        "BB + RSI + Vol"
       ],
       "datasets": [
         {
-          "label": "Nifty 50 Volatility (%)",
+          "label": "Win Rate (%)",
           "data": [
-            12.4,
-            13.1,
-            12.6
+            42,
+            61,
+            74
           ]
         },
         {
-          "label": "Nifty Auto Volatility (%)",
+          "label": "Avg Risk/Reward",
           "data": [
-            16.8,
-            28.6,
-            18.2
+            1.2,
+            1.8,
+            2.5
           ]
         }
       ]
@@ -38,38 +38,44 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Comparison Matrix",
-    "text": "Selecting the right risk-mitigation model for auto stocks.",
+    "title": "Breakout Execution Checklist",
+    "text": "Follow strict technical criteria before taking an entry in ICICI Bank.",
     "table": {
       "headers": [
-        "Strategy",
-        "Cost Impact",
-        "Best Used For"
+        "Indicator",
+        "Bullish Setup",
+        "Bearish Setup"
       ],
       "rows": [
         [
-          "Protective Put",
-          "High Premium Outlay",
-          "Event Risk (Monthly Sales)"
+          "Bollinger Band",
+          "Close above Upper Band",
+          "Close below Lower Band"
         ],
         [
-          "Zero-Cost Collar",
-          "Net Zero (Cash Neutral)",
-          "Quarterly Earnings / Budget"
+          "Volume",
+          "> 1.5x 20-day Avg",
+          "> 1.5x 20-day Avg"
         ],
         [
-          "Pairs Trade",
-          "Margin Requirement",
-          "Fundamental Divergence"
+          "RSI (14)",
+          "Crosses above 60",
+          "Crosses below 40"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Hedge Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Execute complex options strategies with zero delivery brokerage and real-time option chain analytics.",
-    "image_query": "financial technology success",
+    "title": "Risk Management <span class='highlight'>Rule</span>",
+    "text": "Set initial stop-loss at the Middle Band (20 SMA) and trail it as ICICI Bank moves in your favor.",
+    "image_query": "risk management finance"
+  },
+  {
+    "type": "bg-image",
+    "title": "Trade Smarter with <span class='highlight'>Angel One</span>",
+    "text": "Open your Demat account today to access advanced charting, instant order execution, and zero brokerage on delivery trades.",
+    "image_query": "wealth growth success",
     "is_cta": true
   }
 ]
