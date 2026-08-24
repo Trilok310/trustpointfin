@@ -1,42 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Indian Banking Sector: <span class='highlight'>2026 Wealth Guide</span>",
-    "text": "How to navigate core compounders vs. high-growth credit plays for maximum returns.",
-    "image_query": "finance banking"
+    "title": "Mastering &lt;span class='highlight'&gt;Index ETFs&lt;/span&gt; with Volume Profile",
+    "text": "How smart retail traders align price profiles with institutional FII/DII footprints in 2026.",
+    "image_query": "stock market chart overlay"
   },
   {
     "type": "bg-analytical",
-    "title": "Multi-Decade Highs in Asset Quality",
-    "text": "Indian banks enjoy historical low NPAs and strong credit expansion.",
+    "title": "Institutional Flow vs Profile Levels",
+    "text": "Aligning FII/DII Net Flows with Volume Profile zones yields strong signal accuracy.",
     "chart": {
       "type": "bar",
       "labels": [
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026E"
+        "VAL Retest",
+        "POC Retest",
+        "VAH Breakout",
+        "Random Entry"
       ],
       "datasets": [
         {
-          "label": "Gross NPA (%)",
+          "label": "Retail Success Rate (%)",
           "data": [
-            5.8,
-            3.9,
-            2.8,
-            2.3,
-            2.1
-          ]
-        },
-        {
-          "label": "Credit Growth (%)",
-          "data": [
-            9.6,
-            15,
-            16.2,
-            14.1,
-            13.5
+            78,
+            82,
+            71,
+            38
           ]
         }
       ]
@@ -44,43 +32,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Portfolio Strategy: Core vs. Growth",
-    "text": "Structural asset allocation for long-term Indian retail investors.",
+    "title": "Anatomy of Volume Profile",
+    "text": "Key structural zones every ETF trader must monitor daily.",
     "table": {
       "headers": [
-        "Metric",
-        "Core Compounders",
-        "High-Alpha Growth"
+        "Zone",
+        "Definition",
+        "Trader Action"
       ],
       "rows": [
         [
-          "Allocation",
-          "60% - 70%",
-          "30% - 40%"
+          "POC",
+          "Point of Control (Max Volume)",
+          "Fair Value / Institutional Base"
         ],
         [
-          "Target RoE",
-          "15% - 18%",
-          "18% - 22%"
+          "VAL",
+          "Value Area Low (70% Floor)",
+          "High Probability Buying Zone"
         ],
         [
-          "Typical NIM",
-          "3.8% - 4.2%",
-          "5.5% - 8.0%"
-        ],
-        [
-          "Risk Profile",
-          "Low - Moderate",
-          "Moderate - High"
+          "VAH",
+          "Value Area High (70% Ceiling)",
+          "Target Zone or Breakout Level"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Start Investing with <span class='highlight'>Angel One</span>",
-    "text": "Analyze bank metrics, run screeners, and trade with zero brokerage on delivery orders.",
-    "image_query": "investment wealth",
+    "title": "Ready to trade like an &lt;span class='highlight'&gt;Institution?&lt;/span&gt;",
+    "text": "Access institutional charting tools and trade Index ETFs seamlessly with Angel One.",
+    "image_query": "financial technology success",
     "is_cta": true
   }
 ]
