@@ -1,36 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Master <span class='highlight'>ICICI Bank Breakouts</span>",
-    "text": "Combine Bollinger Bands with volume analysis for high-probability swing trades in 2026.",
-    "image_query": "stock trading analysis"
+    "title": "Master &lt;span class='highlight'&gt;Gold ETF&lt;/span&gt; Trading",
+    "text": "Decode secret candlestick patterns to boost your returns in 2026.",
+    "image_query": "gold commodity market"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Win Rate vs Indicator Filters",
-    "text": "Adding volume and RSI filters drastically reduces false breakout traps.",
+    "title": "Indian Gold ETF Growth",
+    "text": "Asset Under Management (AUM) has surged rapidly post-tax rationalization.",
     "chart": {
       "type": "bar",
       "labels": [
-        "BB Alone",
-        "BB + Volume",
-        "BB + RSI + Vol"
+        "2023",
+        "2024",
+        "2025",
+        "2026"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "Gold ETF AUM (₹ Cr)",
           "data": [
-            42,
-            61,
-            74
-          ]
-        },
-        {
-          "label": "Avg Risk/Reward",
-          "data": [
-            1.2,
-            1.8,
-            2.5
+            21500,
+            31200,
+            39800,
+            48000
           ]
         }
       ]
@@ -38,44 +32,49 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Breakout Execution Checklist",
-    "text": "Follow strict technical criteria before taking an entry in ICICI Bank.",
+    "title": "Top Patterns for Gold ETFs",
+    "text": "Proven candlestick setups for timing entries and exits.",
     "table": {
       "headers": [
-        "Indicator",
-        "Bullish Setup",
-        "Bearish Setup"
+        "Pattern",
+        "Signal",
+        "Success Rate"
       ],
       "rows": [
         [
-          "Bollinger Band",
-          "Close above Upper Band",
-          "Close below Lower Band"
+          "Bullish Engulfing",
+          "Reversal Buy",
+          "High"
         ],
         [
-          "Volume",
-          "> 1.5x 20-day Avg",
-          "> 1.5x 20-day Avg"
+          "Hammer at Support",
+          "Bottom Pick",
+          "Very High"
         ],
         [
-          "RSI (14)",
-          "Crosses above 60",
-          "Crosses below 40"
+          "Morning Star",
+          "Trend Reversal",
+          "High"
+        ],
+        [
+          "Doji at Resistance",
+          "Indecision/Exit",
+          "Moderate"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Risk Management <span class='highlight'>Rule</span>",
-    "text": "Set initial stop-loss at the Middle Band (20 SMA) and trail it as ICICI Bank moves in your favor.",
-    "image_query": "risk management finance"
+    "title": "Always Confirm With &lt;span class='highlight'&gt;Volume&lt;/span&gt;",
+    "text": "Never trade a candlestick pattern without institutional volume validation.",
+    "image_query": "stock trading chart"
   },
   {
     "type": "bg-image",
-    "title": "Trade Smarter with <span class='highlight'>Angel One</span>",
-    "text": "Open your Demat account today to access advanced charting, instant order execution, and zero brokerage on delivery trades.",
-    "image_query": "wealth growth success",
+    "title": "Start Trading Gold ETFs on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Enjoy zero brokerage on delivery trades and advanced TradingView charts.",
+    "image_query": "financial growth team",
     "is_cta": true
   }
 ]
