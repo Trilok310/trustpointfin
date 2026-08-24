@@ -1,30 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;Index ETFs&lt;/span&gt; with Volume Profile",
-    "text": "How smart retail traders align price profiles with institutional FII/DII footprints in 2026.",
-    "image_query": "stock market chart overlay"
+    "title": "FinNifty Trading: Avoid &lt;span class='highlight'&gt;Massive Drawdowns&lt;/span&gt;",
+    "text": "How quantitative strategies protect retail capital in high-volatility derivative markets.",
+    "image_query": "stock market data"
   },
   {
     "type": "bg-analytical",
-    "title": "Institutional Flow vs Profile Levels",
-    "text": "Aligning FII/DII Net Flows with Volume Profile zones yields strong signal accuracy.",
+    "title": "Drawdown Comparison",
+    "text": "Maximum drawdown percentage across market regimes in FinNifty options.",
     "chart": {
       "type": "bar",
       "labels": [
-        "VAL Retest",
-        "POC Retest",
-        "VAH Breakout",
-        "Random Entry"
+        "Normal Market",
+        "High Volatility",
+        "Expiry Day Shock"
       ],
       "datasets": [
         {
-          "label": "Retail Success Rate (%)",
+          "label": "Discretionary Trading",
           "data": [
-            78,
-            82,
-            71,
-            38
+            -15,
+            -35,
+            -55
+          ]
+        },
+        {
+          "label": "Quantitative Strategy",
+          "data": [
+            -4,
+            -8,
+            -12
           ]
         }
       ]
@@ -32,38 +38,49 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Anatomy of Volume Profile",
-    "text": "Key structural zones every ETF trader must monitor daily.",
+    "title": "Discretionary vs Quant",
+    "text": "Structural differences in trading execution and capital preservation.",
     "table": {
       "headers": [
-        "Zone",
-        "Definition",
-        "Trader Action"
+        "Parameter",
+        "Discretionary",
+        "Quantitative"
       ],
       "rows": [
         [
-          "POC",
-          "Point of Control (Max Volume)",
-          "Fair Value / Institutional Base"
+          "Position Sizing",
+          "Gut Feeling",
+          "Volatility Adjusted"
         ],
         [
-          "VAL",
-          "Value Area Low (70% Floor)",
-          "High Probability Buying Zone"
+          "Stop Loss",
+          "Moved Emotionally",
+          "Hard Code / Algo"
         ],
         [
-          "VAH",
-          "Value Area High (70% Ceiling)",
-          "Target Zone or Breakout Level"
+          "Max Drawdown",
+          "Uncontrolled (>40%)",
+          "Capped (<15%)"
+        ],
+        [
+          "Execution",
+          "Manual Delay",
+          "Instant via API"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade like an &lt;span class='highlight'&gt;Institution?&lt;/span&gt;",
-    "text": "Access institutional charting tools and trade Index ETFs seamlessly with Angel One.",
-    "image_query": "financial technology success",
+    "title": "3 Quant Rules for &lt;span class='highlight'&gt;FinNifty Success&lt;/span&gt;",
+    "text": "1. Scale down position size when India VIX spikes.\n2. Enforce absolute daily risk limits.\n3. Implement hard time-based option exits.",
+    "image_query": "financial chart risk"
+  },
+  {
+    "type": "bg-image",
+    "title": "Trade Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Execute backtested quant strategies effortlessly. Open your free Demat account via TrustPointFin today!",
+    "image_query": "successful trader laptop",
     "is_cta": true
   }
 ]
