@@ -1,30 +1,42 @@
 [
   {
     "type": "bg-image",
-    "title": "Master &lt;span class='highlight'&gt;Gold ETF&lt;/span&gt; Trading",
-    "text": "Decode secret candlestick patterns to boost your returns in 2026.",
-    "image_query": "gold commodity market"
+    "title": "Indian Banking Sector: <span class='highlight'>2026 Wealth Guide</span>",
+    "text": "How to navigate core compounders vs. high-growth credit plays for maximum returns.",
+    "image_query": "finance banking"
   },
   {
     "type": "bg-analytical",
-    "title": "Indian Gold ETF Growth",
-    "text": "Asset Under Management (AUM) has surged rapidly post-tax rationalization.",
+    "title": "Multi-Decade Highs in Asset Quality",
+    "text": "Indian banks enjoy historical low NPAs and strong credit expansion.",
     "chart": {
       "type": "bar",
       "labels": [
+        "2022",
         "2023",
         "2024",
         "2025",
-        "2026"
+        "2026E"
       ],
       "datasets": [
         {
-          "label": "Gold ETF AUM (₹ Cr)",
+          "label": "Gross NPA (%)",
           "data": [
-            21500,
-            31200,
-            39800,
-            48000
+            5.8,
+            3.9,
+            2.8,
+            2.3,
+            2.1
+          ]
+        },
+        {
+          "label": "Credit Growth (%)",
+          "data": [
+            9.6,
+            15,
+            16.2,
+            14.1,
+            13.5
           ]
         }
       ]
@@ -32,49 +44,43 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Top Patterns for Gold ETFs",
-    "text": "Proven candlestick setups for timing entries and exits.",
+    "title": "Portfolio Strategy: Core vs. Growth",
+    "text": "Structural asset allocation for long-term Indian retail investors.",
     "table": {
       "headers": [
-        "Pattern",
-        "Signal",
-        "Success Rate"
+        "Metric",
+        "Core Compounders",
+        "High-Alpha Growth"
       ],
       "rows": [
         [
-          "Bullish Engulfing",
-          "Reversal Buy",
-          "High"
+          "Allocation",
+          "60% - 70%",
+          "30% - 40%"
         ],
         [
-          "Hammer at Support",
-          "Bottom Pick",
-          "Very High"
+          "Target RoE",
+          "15% - 18%",
+          "18% - 22%"
         ],
         [
-          "Morning Star",
-          "Trend Reversal",
-          "High"
+          "Typical NIM",
+          "3.8% - 4.2%",
+          "5.5% - 8.0%"
         ],
         [
-          "Doji at Resistance",
-          "Indecision/Exit",
-          "Moderate"
+          "Risk Profile",
+          "Low - Moderate",
+          "Moderate - High"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Always Confirm With &lt;span class='highlight'&gt;Volume&lt;/span&gt;",
-    "text": "Never trade a candlestick pattern without institutional volume validation.",
-    "image_query": "stock trading chart"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Trading Gold ETFs on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Enjoy zero brokerage on delivery trades and advanced TradingView charts.",
-    "image_query": "financial growth team",
+    "title": "Start Investing with <span class='highlight'>Angel One</span>",
+    "text": "Analyze bank metrics, run screeners, and trade with zero brokerage on delivery orders.",
+    "image_query": "investment wealth",
     "is_cta": true
   }
 ]
