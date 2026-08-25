@@ -1,86 +1,73 @@
 [
   {
     "type": "bg-image",
-    "title": "FinNifty Trading: Avoid &lt;span class='highlight'&gt;Massive Drawdowns&lt;/span&gt;",
-    "text": "How quantitative strategies protect retail capital in high-volatility derivative markets.",
-    "image_query": "stock market data"
+    "title": "Mastering &lt;span class='highlight'&gt;FinNifty&lt;/span&gt; Post-RBI Policy",
+    "text": "How to use MACD strategies to profit from monetary policy swings in 2026.",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Drawdown Comparison",
-    "text": "Maximum drawdown percentage across market regimes in FinNifty options.",
+    "title": "Post-RBI FinNifty Volatility Matrix",
+    "text": "Historical movement in FinNifty within 48 hours of policy announcement",
+    "table": {
+      "headers": [
+        "Policy Action",
+        "Avg Index Shift",
+        "Best Strategy"
+      ],
+      "rows": [
+        [
+          "Rate Cut / Dovish",
+          "+1.8% to +2.5%",
+          "MACD Zero-Line Long"
+        ],
+        [
+          "Rate Hike / Hawkish",
+          "-1.5% to -2.2%",
+          "MACD Bearish Crossover"
+        ],
+        [
+          "Unchanged / Neutral",
+          "±0.8% (IV Drop)",
+          "MACD Divergence Selling"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "MACD Strategy Performance Comparison",
+    "text": "Win rates across various MACD filter combinations post-announcement",
     "chart": {
       "type": "bar",
       "labels": [
-        "Normal Market",
-        "High Volatility",
-        "Expiry Day Shock"
+        "Standalone MACD",
+        "MACD + 200 EMA",
+        "MACD + Divergence"
       ],
       "datasets": [
         {
-          "label": "Discretionary Trading",
+          "label": "Win Rate (%)",
           "data": [
-            -15,
-            -35,
-            -55
-          ]
-        },
-        {
-          "label": "Quantitative Strategy",
-          "data": [
-            -4,
-            -8,
-            -12
+            48,
+            62,
+            68
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Discretionary vs Quant",
-    "text": "Structural differences in trading execution and capital preservation.",
-    "table": {
-      "headers": [
-        "Parameter",
-        "Discretionary",
-        "Quantitative"
-      ],
-      "rows": [
-        [
-          "Position Sizing",
-          "Gut Feeling",
-          "Volatility Adjusted"
-        ],
-        [
-          "Stop Loss",
-          "Moved Emotionally",
-          "Hard Code / Algo"
-        ],
-        [
-          "Max Drawdown",
-          "Uncontrolled (>40%)",
-          "Capped (<15%)"
-        ],
-        [
-          "Execution",
-          "Manual Delay",
-          "Instant via API"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "Rule #1: Avoid the &lt;span class='highlight'&gt;First 30 Mins&lt;/span&gt;",
+    "text": "Let initial speech reaction and IV crush settle before taking MACD post-policy entries.",
+    "image_query": "financial clock wall street"
   },
   {
     "type": "bg-image",
-    "title": "3 Quant Rules for &lt;span class='highlight'&gt;FinNifty Success&lt;/span&gt;",
-    "text": "1. Scale down position size when India VIX spikes.\n2. Enforce absolute daily risk limits.\n3. Implement hard time-based option exits.",
-    "image_query": "financial chart risk"
-  },
-  {
-    "type": "bg-image",
-    "title": "Trade Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Execute backtested quant strategies effortlessly. Open your free Demat account via TrustPointFin today!",
-    "image_query": "successful trader laptop",
+    "title": "Trade FinNifty Options with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Execute systematic options strategies seamlessly with advanced charting and zero delivery brokerage.",
+    "image_query": "trader using mobile app",
     "is_cta": true
   }
 ]
