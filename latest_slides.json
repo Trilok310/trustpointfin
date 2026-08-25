@@ -1,73 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;FinNifty&lt;/span&gt; Post-RBI Policy",
-    "text": "How to use MACD strategies to profit from monetary policy swings in 2026.",
-    "image_query": "stock market trading charts"
+    "title": "Mastering &lt;span class='highlight'&gt;HDFC Bank&lt;/span&gt; Trades",
+    "text": "How position sizing rules protect your portfolio during persistent inflation.",
+    "image_query": "stock market chart volatility"
   },
   {
     "type": "bg-analytical",
-    "title": "Post-RBI FinNifty Volatility Matrix",
-    "text": "Historical movement in FinNifty within 48 hours of policy announcement",
-    "table": {
-      "headers": [
-        "Policy Action",
-        "Avg Index Shift",
-        "Best Strategy"
-      ],
-      "rows": [
-        [
-          "Rate Cut / Dovish",
-          "+1.8% to +2.5%",
-          "MACD Zero-Line Long"
-        ],
-        [
-          "Rate Hike / Hawkish",
-          "-1.5% to -2.2%",
-          "MACD Bearish Crossover"
-        ],
-        [
-          "Unchanged / Neutral",
-          "±0.8% (IV Drop)",
-          "MACD Divergence Selling"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "MACD Strategy Performance Comparison",
-    "text": "Win rates across various MACD filter combinations post-announcement",
+    "title": "Drawdown Recovery Mathematics",
+    "text": "Why limiting risk per trade is essential during high-volatility market cycles.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Standalone MACD",
-        "MACD + 200 EMA",
-        "MACD + Divergence"
+        "10% Loss",
+        "20% Loss",
+        "30% Loss",
+        "50% Loss"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "Gain Needed to Break Even (%)",
           "data": [
-            48,
-            62,
-            68
+            11.1,
+            25,
+            42.8,
+            100
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "Rule #1: Avoid the &lt;span class='highlight'&gt;First 30 Mins&lt;/span&gt;",
-    "text": "Let initial speech reaction and IV crush settle before taking MACD post-policy entries.",
-    "image_query": "financial clock wall street"
+    "type": "bg-analytical",
+    "title": "Position Sizing Matrix",
+    "text": "Fixed Capital vs Risk-Based Volatility Allocation",
+    "table": {
+      "headers": [
+        "Metric",
+        "Static Allocation",
+        "ATR Volatility Sizing"
+      ],
+      "rows": [
+        [
+          "Risk Exposure",
+          "Unpredictable",
+          "Strictly Controlled"
+        ],
+        [
+          "Market Noise",
+          "Triggers early exits",
+          "Accounted for in stop-loss"
+        ],
+        [
+          "Capital Utilization",
+          "Inflexible",
+          "Adapts to market conditions"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Trade FinNifty Options with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Execute systematic options strategies seamlessly with advanced charting and zero delivery brokerage.",
-    "image_query": "trader using mobile app",
+    "title": "Golden Rule of &lt;span class='highlight'&gt;Risk Control&lt;/span&gt;",
+    "text": "Never risk more than 1% to 1.5% of total portfolio equity on any single trade.",
+    "image_query": "finance management risk"
+  },
+  {
+    "type": "bg-image",
+    "title": "Trade with Precision on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Execute position sizing strategies flawlessly with advanced tools and zero brokerage on equity delivery.",
+    "image_query": "mobile trading app finance",
     "is_cta": true
   }
 ]

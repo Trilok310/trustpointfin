@@ -64,7 +64,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 53. The Role of Volume Profile Analysis in Index ETFs based on FII/DII Data
 - [x] 54. FinNifty Analysis: To Avoid Massive Drawdowns to Quantitative Analysis
 - [x] 55. The Role of MACD Strategies in FinNifty following RBI Policy Changes
-- [ ] 56. The Role of Position Sizing Rules in HDFC Bank in Times of High Inflation
+- [x] 56. The Role of Position Sizing Rules in HDFC Bank in Times of High Inflation
 - [ ] 57. For Working Professionals: The Best Breakout Trading Setup for Indian IT Sector
 - [ ] 58. How to use Support and Resistance Levels during Pre-Election Rallies to Trade ITC
 - [ ] 59. How to use Candlestick Patterns based on FII/DII Data to Trade FMCG Stocks
