@@ -1,51 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;IT Sector Breakouts&lt;/span&gt; for 9-to-5 Professionals",
-    "text": "Trade high-momentum Indian IT stocks without quitting your full-time job or staring at screens all day.",
-    "image_query": "stock market trading charts"
+    "title": "Trading ITC in &lt;span class='highlight'&gt;Pre-Election Rallies&lt;/span&gt;",
+    "text": "How Indian retail investors can use Support & Resistance levels for high win-rate trades.",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "EOD Breakout Performance vs Buy & Hold",
-    "text": "Strategy performance in Nifty IT Midcap constituents over a 24-month backtest.",
+    "title": "Pre-Election Blue-Chip Volatility",
+    "text": "Average price swings in defensive large-caps prior to major political events.",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "Q1",
-        "Q2",
-        "Q3",
-        "Q4",
-        "Q5",
-        "Q6",
-        "Q7",
-        "Q8"
+        "6 Months Prior",
+        "3 Months Prior",
+        "1 Month Prior",
+        "Election Week"
       ],
       "datasets": [
         {
-          "label": "EOD RS Breakout Setup (%)",
+          "label": "Average Swing Volatility (%)",
           "data": [
-            8,
-            18,
-            24,
-            39,
-            45,
-            58,
-            67,
-            74
-          ]
-        },
-        {
-          "label": "Nifty IT Benchmark (%)",
-          "data": [
-            2,
-            5,
-            -3,
-            8,
-            12,
-            10,
-            19,
-            22
+            8.2,
+            14.5,
+            22.1,
+            28.4
           ]
         }
       ]
@@ -53,43 +32,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Comparison Matrix",
-    "text": "Why EOD Swing Trading outperforms Intraday trading for busy professionals.",
+    "title": "Retail Mistake vs Pro Strategy",
+    "text": "Key differences in handling key levels during pre-election rallies.",
     "table": {
       "headers": [
-        "Factor",
-        "Intraday Trading",
-        "EOD IT Breakouts"
+        "Execution Factor",
+        "Amateur Trader",
+        "Professional Trader"
       ],
       "rows": [
         [
-          "Time Required",
-          "6+ Hours Daily",
-          "20 Mins Evening"
+          "Entry Point",
+          "Chasing near resistance",
+          "Buying at support zone"
         ],
         [
-          "Workplace Stress",
-          "Very High",
-          "Zero (Automated GTT)"
+          "Breakout Validation",
+          "Ignores volume profile",
+          "Requires 1.5x volume spike"
         ],
         [
-          "Win Rate Focus",
-          "40-50% (High noise)",
-          "65-75% (Clean trends)"
-        ],
-        [
-          "Execution",
-          "Manual intraday clicks",
-          "Pre-set GTT Orders"
+          "Risk Control",
+          "No stop-loss placed",
+          "ATR-based trailing stop"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Automate Your Trades with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Enjoy zero brokerage on delivery, advanced TradingView charts, and GTT smart orders.",
-    "image_query": "financial growth phone app",
+    "title": "Trade Key Levels with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Access professional TradingView tools, instant order execution, and zero delivery brokerage.",
+    "image_query": "financial technology app",
     "is_cta": true
   }
 ]

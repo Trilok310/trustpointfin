@@ -1,57 +1,52 @@
 # Social Media Posts
-*Generated on 25 August 2026 for article: "For Working Professionals: The Best Breakout Trading Setup for Indian IT Sector (2026 Guide)"*
+*Generated on 25 August 2026 for article: "How to Use Support and Resistance Levels During Pre-Election Rallies to Trade ITC"*
 
 ---
 
 ## 📸 Instagram Caption
 
-Are you a working professional wanting to trade the Indian stock market without staring at chart screens all day? 💻📈 The IT sector is gearing up for major momentum heading into 2026, and breakout trading might just be your secret weapon! 🚀
+Are you ready to navigate the pre-election volatility with ITC? 📈🇮🇳
 
-At TrustPointFin, we understand that balancing a 9-to-5 while timing the market is tough. That’s why we’ve simplified the ultimate Breakout Trading Setup specifically designed for busy corporate schedules. Learn how to spot high-probability price resistance levels, set automated end-of-day orders, and capture big price swings in top IT stocks like TCS, Infosys, and HCL Tech—without sacrificing your workplace productivity! 📊💡
+With political elections right around the corner, Indian markets often witness sharp pre-election rallies and sudden price swings. If you're looking to trade blue-chip giants like ITC Limited, technical analysis—specifically Support and Resistance levels—can be your ultimate roadmap! 🧭📊
 
-Here is what’s inside our complete 2026 Guide:
-✅ Identifying true price breakouts vs. fakeouts
-✅ Risk management tailored for part-time traders
-✅ Strategic stop-loss & profit target positioning
+Key takeaways to supercharge your trading strategy:
+1️⃣ Identify Key Support: Spot historical demand zones where buyers step in, limiting downside risk during market dips. 🛡️
+2️⃣ Map Resistance Levels: Pinpoint profit-booking zones where selling pressure usually kicks in during election hype. 🎯
+3️⃣ Confirm with Volume: Ensure breakouts past key resistance levels are backed by strong trading volume before entering positions! 🚀
 
-Stop stress-trading during office hours. Master a systematic strategy that works around your professional routine! 🧠✨
+Don't let election fever blindside your portfolio! Master these technical levels to make calculated, data-backed trades instead of emotional decisions. 💡
 
-🔗 Tap the link in our bio to read the full guide now!
+👉 Click the link in our bio to read our complete step-by-step trading guide!
 
-#TrustPointFin #IndianStockMarket #BreakoutTrading #ITSector #NiftyIT #TradingForProfessionals #StockMarketIndia #FinancialFreedom #WealthManagement #TradingStrategy
+#TrustPointFin #ITC #TechnicalAnalysis #StockMarketIndia #IndianShareMarket #SupportAndResistance #PreElectionRally #TradingStrategy #NSE #BSE #WealthManagement #InvestingIndia
 
 ---
 
 ## 👥 Facebook Post
 
-Balancing a full-time job while trying to actively trade the Indian stock market can feel overwhelming. But what if you didn't have to watch tick-by-tick price movements all day to stay profitable?
+Election season always brings excitement—and volatility—to the Indian stock market! As pre-election rallies start shaping up, heavyweights like ITC Limited often become hot targets for smart traders. But how do you separate market noise from real trading opportunities? 
 
-Our latest article at TrustPointFin breaks down "The Best Breakout Trading Setup for the Indian IT Sector (2026 Guide)" specifically tailored for working professionals. 
+The secret lies in mastering Support and Resistance levels. By tracking historical price floors and ceilings, you can identify high-probability entry and exit points, manage your risk effectively, and avoid buying at peak FOMO during election hype. Whether you are aiming for short-term swing trades or protecting your portfolio, understanding technical charts is your best defense against market turbulence.
 
-With the Nifty IT index preparing for its next major growth cycle, breakout setups allow you to analyze charts after office hours, execute using pre-set trigger orders, and capture significant upside while managing risk effectively. You don't need eight hours a day at a desk—just a clear, rules-based framework.
-
-Read the complete guide on our website today to upgrade your trading routine!
-
-Which IT stock are you currently tracking for a potential breakout in 2026—TCS, Infosys, or Wipro? Let us know in the comments below! 👇
+Have you ever traded ITC during an election year, or are you holding it long-term? Let us know your strategy in the comments below! 👇
 
 ---
 
 ## 💼 LinkedIn Post
 
-The Indian IT sector (Nifty IT) is positioned for a strategic structural shift heading into 2026, driven by renewed global enterprise tech spending and AI integration. However, for corporate working professionals, execution remains the single biggest hurdle due to severe market-hour time constraints.
+Pre-election cycles in India historically introduce heightened volatility across key market indices, presenting both strategic opportunities and risk management challenges. For institutional and retail traders focusing on defensive-yet-dynamic assets like ITC Limited, technical indicators serve as vital risk-mitigation tools.
 
-At TrustPointFin, we analyzed multi-year consolidation patterns across mega-cap and mid-cap IT equities to construct a quantitative, rules-based Breakout Trading Framework optimized for part-time market participants.
+In our latest research publication, TrustPointFin breaks down how traders can leverage Support and Resistance (S&R) levels to navigate pre-election price action effectively:
 
-Key framework takeaways from our 2026 Strategy Guide:
-🔹 **Post-Market Screening:** Utilizing weekly and daily price consolidation zones to plan precise trade setups outside of corporate working hours.
-🔹 **Asymmetric Risk Management:** Structuring positions with a minimum 1:2.5 risk-to-reward ratio to ensure long-term statistical expectancy.
-🔹 **Automated Execution:** Leveraging GTT (Good Till Triggered) order mechanics to eliminate intraday emotional bias and screen-time dependency.
+🔹 Structural Risk Management: Defining precise support zones to set disciplined stop-losses during unexpected market-wide corrections.
+🔹 Breakout Validation: Distinguishing between false rallies and sustained, volume-backed resistance breakouts during political momentum phases.
+🔹 Tactical Positioning: Utilizing historical price-action metrics to optimize entry points for favorable risk-to-reward ratios.
 
-Successful trading does not require sacrificing your professional career—it requires a disciplined, systematic framework.
+Navigating macro-political events requires a disciplined, quantitative framework rather than speculative sentiment. Understanding price action fundamentals ensures capital preservation while positioning your portfolio to capitalize on structural market trends.
 
-Read the full 2026 Guide on our insights portal today.
+Read our full analysis on the website today to refine your desk's trading strategy ahead of the election momentum.
 
-#TrustPointFin #NiftyIT #IndianMarkets #BreakoutTrading #TechnicalAnalysis #StockMarketIndia #WealthCreation #FinancialAdvisory
+#TrustPointFin #EquityResearch #TechnicalAnalysis #ITCLimited #IndianMarkets #StockMarketAnalysis #TradingStrategy #FinancialAdvisory #NIFTY50 #RiskManagement
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/for-working-professionals-the-best-breakout-trading-setup-fo.html*
+*Article URL: https://trilok310.github.io/trustpointfin/how-to-use-support-and-resistance-levels-during-pre-election.html*
