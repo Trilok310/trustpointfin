@@ -1,30 +1,51 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;HDFC Bank&lt;/span&gt; Trades",
-    "text": "How position sizing rules protect your portfolio during persistent inflation.",
-    "image_query": "stock market chart volatility"
+    "title": "Mastering &lt;span class='highlight'&gt;IT Sector Breakouts&lt;/span&gt; for 9-to-5 Professionals",
+    "text": "Trade high-momentum Indian IT stocks without quitting your full-time job or staring at screens all day.",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Drawdown Recovery Mathematics",
-    "text": "Why limiting risk per trade is essential during high-volatility market cycles.",
+    "title": "EOD Breakout Performance vs Buy & Hold",
+    "text": "Strategy performance in Nifty IT Midcap constituents over a 24-month backtest.",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "10% Loss",
-        "20% Loss",
-        "30% Loss",
-        "50% Loss"
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
       ],
       "datasets": [
         {
-          "label": "Gain Needed to Break Even (%)",
+          "label": "EOD RS Breakout Setup (%)",
           "data": [
-            11.1,
-            25,
-            42.8,
-            100
+            8,
+            18,
+            24,
+            39,
+            45,
+            58,
+            67,
+            74
+          ]
+        },
+        {
+          "label": "Nifty IT Benchmark (%)",
+          "data": [
+            2,
+            5,
+            -3,
+            8,
+            12,
+            10,
+            19,
+            22
           ]
         }
       ]
@@ -32,44 +53,43 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Position Sizing Matrix",
-    "text": "Fixed Capital vs Risk-Based Volatility Allocation",
+    "title": "Strategy Comparison Matrix",
+    "text": "Why EOD Swing Trading outperforms Intraday trading for busy professionals.",
     "table": {
       "headers": [
-        "Metric",
-        "Static Allocation",
-        "ATR Volatility Sizing"
+        "Factor",
+        "Intraday Trading",
+        "EOD IT Breakouts"
       ],
       "rows": [
         [
-          "Risk Exposure",
-          "Unpredictable",
-          "Strictly Controlled"
+          "Time Required",
+          "6+ Hours Daily",
+          "20 Mins Evening"
         ],
         [
-          "Market Noise",
-          "Triggers early exits",
-          "Accounted for in stop-loss"
+          "Workplace Stress",
+          "Very High",
+          "Zero (Automated GTT)"
         ],
         [
-          "Capital Utilization",
-          "Inflexible",
-          "Adapts to market conditions"
+          "Win Rate Focus",
+          "40-50% (High noise)",
+          "65-75% (Clean trends)"
+        ],
+        [
+          "Execution",
+          "Manual intraday clicks",
+          "Pre-set GTT Orders"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Golden Rule of &lt;span class='highlight'&gt;Risk Control&lt;/span&gt;",
-    "text": "Never risk more than 1% to 1.5% of total portfolio equity on any single trade.",
-    "image_query": "finance management risk"
-  },
-  {
-    "type": "bg-image",
-    "title": "Trade with Precision on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Execute position sizing strategies flawlessly with advanced tools and zero brokerage on equity delivery.",
-    "image_query": "mobile trading app finance",
+    "title": "Automate Your Trades with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Enjoy zero brokerage on delivery, advanced TradingView charts, and GTT smart orders.",
+    "image_query": "financial growth phone app",
     "is_cta": true
   }
 ]
