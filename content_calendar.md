@@ -67,7 +67,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 56. The Role of Position Sizing Rules in HDFC Bank in Times of High Inflation
 - [x] 57. For Working Professionals: The Best Breakout Trading Setup for Indian IT Sector
 - [x] 58. How to use Support and Resistance Levels during Pre-Election Rallies to Trade ITC
-- [ ] 59. How to use Candlestick Patterns based on FII/DII Data to Trade FMCG Stocks
+- [x] 59. How to use Candlestick Patterns based on FII/DII Data to Trade FMCG Stocks
 - [ ] 60. The Ultimate Strategy: Mastering Options Buying for Multi-bagger Stocks
 - [ ] 61. Midcap Nifty Trading: How to Apply Options Selling based on FII/DII Data
 - [ ] 62. Why Sector Rotation is the Key to TCS based on FII/DII Data

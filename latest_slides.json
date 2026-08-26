@@ -1,30 +1,28 @@
 [
   {
     "type": "bg-image",
-    "title": "Trading ITC in &lt;span class='highlight'&gt;Pre-Election Rallies&lt;/span&gt;",
-    "text": "How Indian retail investors can use Support & Resistance levels for high win-rate trades.",
-    "image_query": "stock market chart"
+    "title": "Mastering FMCG Trades with &lt;span class='highlight'&gt;Smart Money Flow&lt;/span&gt;",
+    "text": "Combine FII/DII institutional cash data with candlestick patterns to spot institutional trend shifts in Indian stocks.",
+    "image_query": "stock market data trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Pre-Election Blue-Chip Volatility",
-    "text": "Average price swings in defensive large-caps prior to major political events.",
+    "title": "Strategy Success Comparison",
+    "text": "Historical win-rate when trading FMCG setups in Indian equity markets.",
     "chart": {
       "type": "bar",
       "labels": [
-        "6 Months Prior",
-        "3 Months Prior",
-        "1 Month Prior",
-        "Election Week"
+        "Pure Technicals",
+        "Volume + Candlesticks",
+        "FII/DII + Candlesticks"
       ],
       "datasets": [
         {
-          "label": "Average Swing Volatility (%)",
+          "label": "Win Rate (%)",
           "data": [
-            8.2,
-            14.5,
-            22.1,
-            28.4
+            48,
+            62,
+            78
           ]
         }
       ]
@@ -32,37 +30,37 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Retail Mistake vs Pro Strategy",
-    "text": "Key differences in handling key levels during pre-election rallies.",
+    "title": "Institutional Strategy Matrix",
+    "text": "Aligning price action signals with big money flows.",
     "table": {
       "headers": [
-        "Execution Factor",
-        "Amateur Trader",
-        "Professional Trader"
+        "Candlestick Pattern",
+        "FII / DII Net Activity",
+        "Trade Action"
       ],
       "rows": [
         [
-          "Entry Point",
-          "Chasing near resistance",
-          "Buying at support zone"
+          "Bullish Engulfing",
+          "FII Net Buyers (> ₹500 Cr)",
+          "Strong Swing Buy"
         ],
         [
-          "Breakout Validation",
-          "Ignores volume profile",
-          "Requires 1.5x volume spike"
+          "Hammer at 200-EMA",
+          "DII Net Buying Absorption",
+          "Accumulate Dip"
         ],
         [
-          "Risk Control",
-          "No stop-loss placed",
-          "ATR-based trailing stop"
+          "Shooting Star",
+          "Persistent FII Selling",
+          "Exit / Hedge Position"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trade Key Levels with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access professional TradingView tools, instant order execution, and zero delivery brokerage.",
+    "title": "Trade FMCG Stocks Like a &lt;span class='highlight'&gt;Pro On Angel One&lt;/span&gt;",
+    "text": "Track real-time institutional metrics, access advanced charts, and enjoy zero brokerage on equity delivery trades.",
     "image_query": "financial technology app",
     "is_cta": true
   }
