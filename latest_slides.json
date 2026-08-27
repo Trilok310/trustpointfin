@@ -1,62 +1,57 @@
 [
   {
     "type": "bg-image",
-    "title": "Master <span class='highlight'>Midcap Nifty</span> Option Selling",
-    "text": "How tracking institutional FII/DII flow gives option writers a winning statistical edge.",
-    "image_query": "stock trading chart analysis"
+    "title": "Mastering <span class='highlight'>TCS Trades</span> via Institutional Data",
+    "text": "How FII & DII sector rotation patterns dictate Tata Consultancy Services returns.",
+    "image_query": "stock market chart analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Institutional Bias Matrix",
-    "text": "Match your options writing strategy to daily FII/DII net positions",
+    "title": "Institutional Flow Matrix for TCS",
+    "text": "Understanding market direction based on institutional behavior",
     "table": {
       "headers": [
-        "FII Data Signal",
-        "Market Outlook",
-        "Recommended Strategy"
+        "FII Action",
+        "DII Action",
+        "TCS Stock Trend"
       ],
       "rows": [
         [
-          "Net Long > 65%",
-          "Bullish Drift",
-          "Bull Put Credit Spread"
+          "Net Buyers",
+          "Net Buyers",
+          "Aggressive Multi-Quarter Rally"
         ],
         [
-          "Net Short > 65%",
-          "Bearish Pressure",
-          "Bear Call Credit Spread"
+          "Net Sellers",
+          "Net Buyers",
+          "Range-Bound / Floor Support"
         ],
         [
-          "Neutral / Mixed",
-          "Consolidation",
-          "Iron Condor / Short Strangle"
+          "Net Sellers",
+          "Net Sellers",
+          "Cyclical Valuation Breakdown"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Win Rate Comparison",
-    "text": "Options selling performance across 100 trading sessions",
+    "title": "Historical Sector Rotation Dynamics",
+    "text": "Institutional IT Inflows vs Average TCS Share Return",
     "chart": {
       "type": "bar",
       "labels": [
-        "Pure Technicals",
-        "With FII/DII Data"
+        "Sector Rotation Out",
+        "Neutral Allocation",
+        "Sector Rotation In"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "TCS Avg Return (%)",
           "data": [
-            52,
-            74
-          ]
-        },
-        {
-          "label": "Max Drawdown (%)",
-          "data": [
-            24,
-            11
+            -8,
+            4,
+            22
           ]
         }
       ]
@@ -64,15 +59,9 @@
   },
   {
     "type": "bg-image",
-    "title": "3 Non-Negotiable <span class='highlight'>Risk Rules</span>",
-    "text": "1. Never trade unhedged naked options on expiry day.\n2. Keep stop-loss at max 1.5x of premium collected.\n3. Verify FII derivative positions before market open.",
-    "image_query": "financial risk discipline"
-  },
-  {
-    "type": "bg-image",
-    "title": "Trade Midcap Nifty on <span class='highlight'>Angel One</span>",
-    "text": "Access real-time options analytics, basket orders, and lightning-fast execution.",
-    "image_query": "mobile trading success",
+    "title": "Trade Smart with <span class='highlight'>Angel One</span>",
+    "text": "Track smart money trends, access institutional research, and invest with zero delivery brokerage.",
+    "image_query": "financial technology app",
     "is_cta": true
   }
 ]
