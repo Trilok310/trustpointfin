@@ -32,14 +32,14 @@
 </head>
 <body>
     
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20chart%20analysis,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20trading%20chart,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Mastering <span class='highlight'>TCS Trades</span> via Institutional Data</h1>
-<p>How FII & DII sector rotation patterns dictate Tata Consultancy Services returns.</p>
+                <h1>Mastering &lt;span class='highlight'&gt;Small-Cap Psychology&lt;/span&gt;</h1>
+<p>Why emotional discipline beats technical analysis in high-volatility trading.</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">1 / 4</span>
@@ -53,9 +53,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Institutional Flow Matrix for TCS</h1>
-<p>Understanding market direction based on institutional behavior</p>
-<table class="data-table"><tr><th>FII Action</th><th>DII Action</th><th>TCS Stock Trend</th></tr><tr><td>Net Buyers</td><td>Net Buyers</td><td>Aggressive Multi-Quarter Rally</td></tr><tr><td>Net Sellers</td><td>Net Buyers</td><td>Range-Bound / Floor Support</td></tr><tr><td>Net Sellers</td><td>Net Sellers</td><td>Cyclical Valuation Breakdown</td></tr></table>
+                <h1>3-Year Performance vs Mindset</h1>
+<p>Disciplined execution yields superior returns over impulse trading in micro-caps.</p>
+<div class="chart-container"><canvas id="chart2"></canvas></div>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">2 / 4</span>
@@ -69,9 +69,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Historical Sector Rotation Dynamics</h1>
-<p>Institutional IT Inflows vs Average TCS Share Return</p>
-<div class="chart-container"><canvas id="chart3"></canvas></div>
+                <h1>Amateur vs Professional Approach</h1>
+<p>Key psychological differences in handling small-cap volatility.</p>
+<table class="data-table"><tr><th>Aspect</th><th>Amateur Retail</th><th>Disciplined Trader</th></tr><tr><td>Upper Circuits</td><td>Buys due to FOMO</td><td>Waits for retest</td></tr><tr><td>Stop-Loss</td><td>Ignores or cancels</td><td>Strict auto-execution</td></tr><tr><td>Position Size</td><td>All-in on tips</td><td>1-3% risk per trade</td></tr></table>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">3 / 4</span>
@@ -79,14 +79,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20technology%20app,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20success%20growth,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Trade Smart with <span class='highlight'>Angel One</span></h1>
-<p>Track smart money trends, access institutional research, and invest with zero delivery brokerage.</p>
+                <h1>Trade Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;</h1>
+<p>Automate your exit strategies with GTT orders and trade with zero brokerage on delivery.</p>
 <div><span class="cta-btn">Link in Bio to Read More</span></div>
             </div>
             <div class="slide-footer">
@@ -100,9 +100,9 @@
         Chart.defaults.font.size = 24;
         Chart.defaults.color = '#94a3b8';
         
-                new Chart(document.getElementById('chart3').getContext('2d'), {
+                new Chart(document.getElementById('chart2').getContext('2d'), {
                     type: 'bar',
-                    data: {"labels":["Sector Rotation Out","Neutral Allocation","Sector Rotation In"],"datasets":[{"label":"TCS Avg Return (%)","data":[-8,4,22]}]},
+                    data: {"labels":["Year 1","Year 2","Year 3"],"datasets":[{"label":"Emotional Trader","data":[12,-18,-25]},{"label":"Disciplined Trader","data":[18,22,35]}]},
                     options: {
                         responsive: true, maintainAspectRatio: false, animation: false,
                         plugins: { legend: { labels: { color: '#cbd5e1', padding: 10, font: { family: "'Inter', sans-serif" } } } },

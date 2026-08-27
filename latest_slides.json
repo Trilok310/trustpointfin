@@ -1,67 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>TCS Trades</span> via Institutional Data",
-    "text": "How FII & DII sector rotation patterns dictate Tata Consultancy Services returns.",
-    "image_query": "stock market chart analysis"
+    "title": "Mastering &lt;span class='highlight'&gt;Small-Cap Psychology&lt;/span&gt;",
+    "text": "Why emotional discipline beats technical analysis in high-volatility trading.",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Institutional Flow Matrix for TCS",
-    "text": "Understanding market direction based on institutional behavior",
-    "table": {
-      "headers": [
-        "FII Action",
-        "DII Action",
-        "TCS Stock Trend"
-      ],
-      "rows": [
-        [
-          "Net Buyers",
-          "Net Buyers",
-          "Aggressive Multi-Quarter Rally"
-        ],
-        [
-          "Net Sellers",
-          "Net Buyers",
-          "Range-Bound / Floor Support"
-        ],
-        [
-          "Net Sellers",
-          "Net Sellers",
-          "Cyclical Valuation Breakdown"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Historical Sector Rotation Dynamics",
-    "text": "Institutional IT Inflows vs Average TCS Share Return",
+    "title": "3-Year Performance vs Mindset",
+    "text": "Disciplined execution yields superior returns over impulse trading in micro-caps.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Sector Rotation Out",
-        "Neutral Allocation",
-        "Sector Rotation In"
+        "Year 1",
+        "Year 2",
+        "Year 3"
       ],
       "datasets": [
         {
-          "label": "TCS Avg Return (%)",
+          "label": "Emotional Trader",
           "data": [
-            -8,
-            4,
-            22
+            12,
+            -18,
+            -25
+          ]
+        },
+        {
+          "label": "Disciplined Trader",
+          "data": [
+            18,
+            22,
+            35
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Amateur vs Professional Approach",
+    "text": "Key psychological differences in handling small-cap volatility.",
+    "table": {
+      "headers": [
+        "Aspect",
+        "Amateur Retail",
+        "Disciplined Trader"
+      ],
+      "rows": [
+        [
+          "Upper Circuits",
+          "Buys due to FOMO",
+          "Waits for retest"
+        ],
+        [
+          "Stop-Loss",
+          "Ignores or cancels",
+          "Strict auto-execution"
+        ],
+        [
+          "Position Size",
+          "All-in on tips",
+          "1-3% risk per trade"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Trade Smart with <span class='highlight'>Angel One</span>",
-    "text": "Track smart money trends, access institutional research, and invest with zero delivery brokerage.",
-    "image_query": "financial technology app",
+    "title": "Trade Smart with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Automate your exit strategies with GTT orders and trade with zero brokerage on delivery.",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]

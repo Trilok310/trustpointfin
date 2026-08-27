@@ -71,7 +71,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 60. The Ultimate Strategy: Mastering Options Buying for Multi-bagger Stocks
 - [x] 61. Midcap Nifty Trading: How to Apply Options Selling based on FII/DII Data
 - [x] 62. Why Sector Rotation is the Key to TCS based on FII/DII Data
-- [ ] 63. The Ultimate Strategy: Mastering Trading Psychology for Small-cap Stocks
+- [x] 63. The Ultimate Strategy: Mastering Trading Psychology for Small-cap Stocks
 - [ ] 64. Advanced Tactics: Mastering Risk Management for BankNifty
 - [ ] 65. Why Sector Rotation is the Key to BankNifty Before Expiry Day
 - [ ] 66. Combining Intraday Scalping with FinNifty Analysis
