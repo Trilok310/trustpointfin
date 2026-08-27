@@ -1,28 +1,28 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering FMCG Trades with &lt;span class='highlight'&gt;Smart Money Flow&lt;/span&gt;",
-    "text": "Combine FII/DII institutional cash data with candlestick patterns to spot institutional trend shifts in Indian stocks.",
-    "image_query": "stock market data trading"
+    "title": "Mastering Stock Options Buying for <span class='highlight'>Multi-Bagger Gains</span>",
+    "text": "Stop gambling on daily exspiries. Learn how to ride multi-month momentum stocks with defined risk.",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Success Comparison",
-    "text": "Historical win-rate when trading FMCG setups in Indian equity markets.",
+    "title": "The Retail Trap vs. Professional Strategy",
+    "text": "SEBI data proves retail option buyers lose heavily due to cheap OTM calls.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Pure Technicals",
-        "Volume + Candlesticks",
-        "FII/DII + Candlesticks"
+        "Cheap OTM Calls",
+        "Index Scalping",
+        "Deep ITM Stock Calls"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "Loss Percentage (%)",
           "data": [
-            48,
-            62,
-            78
+            93,
+            89,
+            32
           ]
         }
       ]
@@ -30,38 +30,43 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Institutional Strategy Matrix",
-    "text": "Aligning price action signals with big money flows.",
+    "title": "Strike Selection Matrix",
+    "text": "Why institutional traders favor high Delta ITM contracts.",
     "table": {
       "headers": [
-        "Candlestick Pattern",
-        "FII / DII Net Activity",
-        "Trade Action"
+        "Metric",
+        "OTM Calls",
+        "Deep ITM Calls"
       ],
       "rows": [
         [
-          "Bullish Engulfing",
-          "FII Net Buyers (> ₹500 Cr)",
-          "Strong Swing Buy"
+          "Delta (Price Sensitivity)",
+          "0.10 - 0.25",
+          "0.70 - 0.85"
         ],
         [
-          "Hammer at 200-EMA",
-          "DII Net Buying Absorption",
-          "Accumulate Dip"
+          "Theta Decay Impact",
+          "Severe",
+          "Minimal / Low"
         ],
         [
-          "Shooting Star",
-          "Persistent FII Selling",
-          "Exit / Hedge Position"
+          "Win Rate Potential",
+          "< 15%",
+          "55% - 65%"
+        ],
+        [
+          "Risk Profile",
+          "High Decay Loss",
+          "Capped Premium"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trade FMCG Stocks Like a &lt;span class='highlight'&gt;Pro On Angel One&lt;/span&gt;",
-    "text": "Track real-time institutional metrics, access advanced charts, and enjoy zero brokerage on equity delivery trades.",
-    "image_query": "financial technology app",
+    "title": "Trade Options Like a Pro with <span class='highlight'>Angel One</span>",
+    "text": "Access fast order execution, real-time option chains, and zero brokerage on delivery trades. Open your Demat account today!",
+    "image_query": "financial technology app trading",
     "is_cta": true
   }
 ]
