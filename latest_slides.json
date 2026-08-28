@@ -1,92 +1,71 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering &lt;span class='highlight'&gt;BankNifty Risk&lt;/span&gt; in 2026",
-    "text": "Advanced tactics to protect your capital and trade derivatives like an institutional professional.",
-    "image_query": "stock market trading chart"
+    "title": "Master &lt;span class='highlight'&gt;BankNifty Expiry&lt;/span&gt; via Sector Rotation",
+    "text": "Understand how institutional capital shifts between Private and PSU banks to predict explosive option moves.",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Amateur vs Professional Execution",
-    "text": "How retail mindsets differ from institutional risk frameworks in BankNifty F&O.",
-    "table": {
-      "headers": [
-        "Parameter",
-        "Retail Trader",
-        "Pro Trader"
-      ],
-      "rows": [
-        [
-          "Position Size",
-          "Fixed Lot Counts",
-          "Volatility Adjusted (ATR)"
-        ],
-        [
-          "Risk Cap",
-          "Undefined / Emotional",
-          "Strict 1% Portfolio Rule"
-        ],
-        [
-          "Strategy",
-          "Naked Options",
-          "Defined-Risk Spreads"
-        ],
-        [
-          "Execution",
-          "Manual Market Orders",
-          "Algorithmic / Trailing SL"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Risk-Reward Impact on Equity Curve",
-    "text": "Simulated portfolio performance based on strict risk control versus unmanaged trading.",
+    "title": "BankNifty Index Weightage Breakdown",
+    "text": "Two banking giants control over 50% of the index's direction on expiry day.",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "Trade 1",
-        "Trade 5",
-        "Trade 10",
-        "Trade 15",
-        "Trade 20"
+        "HDFC Bank",
+        "ICICI Bank",
+        "Axis Bank",
+        "SBI",
+        "Kotak Bank"
       ],
       "datasets": [
         {
-          "label": "Managed Risk (1% Cap)",
+          "label": "Approx. Index Weight (%)",
           "data": [
-            100,
-            104,
-            102,
-            108,
-            115
-          ]
-        },
-        {
-          "label": "Unmanaged Sizing",
-          "data": [
-            100,
-            112,
-            90,
-            75,
-            42
+            31,
+            24,
+            10,
+            9,
+            9
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "The Golden Rule: &lt;span class='highlight'&gt;1% Risk Cap&lt;/span&gt;",
-    "text": "Never risk more than 1% of total trading equity on a single BankNifty setup, regardless of conviction.",
-    "image_query": "financial graph risk management"
+    "type": "bg-analytical",
+    "title": "Rotation Matrix: Spotting the Move",
+    "text": "Identify market conditions before buying BankNifty options.",
+    "table": {
+      "headers": [
+        "Market Condition",
+        "Bank Alignment",
+        "Best Strategy"
+      ],
+      "rows": [
+        [
+          "Divergent Rotation",
+          "Private UP / PSU DOWN",
+          "Option Selling / Strangle"
+        ],
+        [
+          "Convergent Rally",
+          "Private UP / PSU UP",
+          "ATM Call Buying (Gamma)"
+        ],
+        [
+          "Convergent Breakdown",
+          "Private DOWN / PSU DOWN",
+          "ATM Put Buying (Gamma)"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Trade BankNifty Smarter with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access ultra-low latency execution, direct chart trading, and advanced risk management tools today.",
-    "image_query": "mobile trading app finance",
+    "title": "Trade Expiry Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Get low-latency execution, real-time heatmaps, and zero brokerage on equity delivery trades. Open your account today!",
+    "image_query": "financial investment growth",
     "is_cta": true
   }
 ]

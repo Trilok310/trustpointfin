@@ -73,7 +73,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 62. Why Sector Rotation is the Key to TCS based on FII/DII Data
 - [x] 63. The Ultimate Strategy: Mastering Trading Psychology for Small-cap Stocks
 - [x] 64. Advanced Tactics: Mastering Risk Management for BankNifty
-- [ ] 65. Why Sector Rotation is the Key to BankNifty Before Expiry Day
+- [x] 65. Why Sector Rotation is the Key to BankNifty Before Expiry Day
 - [ ] 66. Combining Intraday Scalping with FinNifty Analysis
 - [ ] 67. Top Secrets: The Best Price Action Trading Setup for Reliance
 - [ ] 68. Why Hedging Strategies is the Key to Auto Sector based on FII/DII Data
