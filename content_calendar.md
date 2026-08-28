@@ -75,7 +75,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 64. Advanced Tactics: Mastering Risk Management for BankNifty
 - [x] 65. Why Sector Rotation is the Key to BankNifty Before Expiry Day
 - [x] 66. Combining Intraday Scalping with FinNifty Analysis
-- [ ] 67. Top Secrets: The Best Price Action Trading Setup for Reliance
+- [x] 67. Top Secrets: The Best Price Action Trading Setup for Reliance
 - [ ] 68. Why Hedging Strategies is the Key to Auto Sector based on FII/DII Data
 - [ ] 69. HDFC Bank Analysis: For Long-term Wealth Creation to Fibonacci Retracements
 - [ ] 70. Emotional Discipline Explained: For Working Professionals for Trading Indian IT Sector

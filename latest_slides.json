@@ -1,72 +1,67 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>FinNifty Scalping</span>",
-    "text": "Capture swift intraday moves in India's top financial index with precision.",
-    "image_query": "stock trading analysis"
+    "title": "Mastering <span class='highlight'>Reliance Price Action</span>",
+    "text": "Discover the high-probability price action setup tailored for India's market heavyweight in 2026.",
+    "image_query": "stock trading screen analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Scalping vs Swing Matrix",
-    "text": "Key execution differences for FinNifty options traders.",
-    "table": {
-      "headers": [
-        "Factor",
-        "Intraday Scalping",
-        "Position Swing"
-      ],
-      "rows": [
-        [
-          "Hold Time",
-          "30 Secs - 3 Mins",
-          "1 - 5 Days"
-        ],
-        [
-          "Target Gain",
-          "5 - 15 Premium Pts",
-          "50 - 150 Pts"
-        ],
-        [
-          "Key Risk",
-          "Execution Slippage",
-          "Overnight Gaps"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Discipline Win Rates",
-    "text": "Retail profit probabilities based on strict risk-reward rules.",
+    "title": "Strategy Performance Comparison",
+    "text": "Backtested 1-year intraday win rates on Reliance stock across common strategies.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Disciplined Scalpers",
-        "Unplanned Retail"
+        "RSI Overbought",
+        "EMA Crossover",
+        "CPR + ORB Setup"
       ],
       "datasets": [
         {
-          "label": "Win Rate %",
+          "label": "Win Rate (%)",
           "data": [
-            68,
-            24
-          ]
-        },
-        {
-          "label": "Avg Profit/Loss Ratio",
-          "data": [
-            1.6,
-            0.5
+            42,
+            48,
+            68
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Trader Approach Breakdown",
+    "text": "How retail vs. institutional traders handle Reliance price setups.",
+    "table": {
+      "headers": [
+        "Aspect",
+        "Retail Trader",
+        "Pro Trader"
+      ],
+      "rows": [
+        [
+          "Entry",
+          "Chases breakouts",
+          "Waits for VWAP pullback"
+        ],
+        [
+          "Timeframe",
+          "1-minute noise",
+          "15-min + CPR levels"
+        ],
+        [
+          "Risk/Reward",
+          "1:1 or negative",
+          "Strict 1:2 minimum"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Trade FinNifty with <span class='highlight'>Angel One</span>",
-    "text": "Experience ultra-fast execution, zero delivery brokerage, and pro-grade charting.",
-    "image_query": "financial success growth",
+    "title": "Trade Heavyweights Like a <span class='highlight'>Pro</span>",
+    "text": "Open your free Demat account with Angel One today for zero delivery brokerage and lightning-fast charting.",
+    "image_query": "financial success growth chart",
     "is_cta": true
   }
 ]
