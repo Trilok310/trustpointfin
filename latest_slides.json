@@ -1,71 +1,72 @@
 [
   {
     "type": "bg-image",
-    "title": "Master &lt;span class='highlight'&gt;BankNifty Expiry&lt;/span&gt; via Sector Rotation",
-    "text": "Understand how institutional capital shifts between Private and PSU banks to predict explosive option moves.",
-    "image_query": "stock market trading charts"
+    "title": "Mastering <span class='highlight'>FinNifty Scalping</span>",
+    "text": "Capture swift intraday moves in India's top financial index with precision.",
+    "image_query": "stock trading analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "BankNifty Index Weightage Breakdown",
-    "text": "Two banking giants control over 50% of the index's direction on expiry day.",
+    "title": "Scalping vs Swing Matrix",
+    "text": "Key execution differences for FinNifty options traders.",
+    "table": {
+      "headers": [
+        "Factor",
+        "Intraday Scalping",
+        "Position Swing"
+      ],
+      "rows": [
+        [
+          "Hold Time",
+          "30 Secs - 3 Mins",
+          "1 - 5 Days"
+        ],
+        [
+          "Target Gain",
+          "5 - 15 Premium Pts",
+          "50 - 150 Pts"
+        ],
+        [
+          "Key Risk",
+          "Execution Slippage",
+          "Overnight Gaps"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Discipline Win Rates",
+    "text": "Retail profit probabilities based on strict risk-reward rules.",
     "chart": {
       "type": "bar",
       "labels": [
-        "HDFC Bank",
-        "ICICI Bank",
-        "Axis Bank",
-        "SBI",
-        "Kotak Bank"
+        "Disciplined Scalpers",
+        "Unplanned Retail"
       ],
       "datasets": [
         {
-          "label": "Approx. Index Weight (%)",
+          "label": "Win Rate %",
           "data": [
-            31,
-            24,
-            10,
-            9,
-            9
+            68,
+            24
+          ]
+        },
+        {
+          "label": "Avg Profit/Loss Ratio",
+          "data": [
+            1.6,
+            0.5
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Rotation Matrix: Spotting the Move",
-    "text": "Identify market conditions before buying BankNifty options.",
-    "table": {
-      "headers": [
-        "Market Condition",
-        "Bank Alignment",
-        "Best Strategy"
-      ],
-      "rows": [
-        [
-          "Divergent Rotation",
-          "Private UP / PSU DOWN",
-          "Option Selling / Strangle"
-        ],
-        [
-          "Convergent Rally",
-          "Private UP / PSU UP",
-          "ATM Call Buying (Gamma)"
-        ],
-        [
-          "Convergent Breakdown",
-          "Private DOWN / PSU DOWN",
-          "ATM Put Buying (Gamma)"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Trade Expiry Like a Pro on &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Get low-latency execution, real-time heatmaps, and zero brokerage on equity delivery trades. Open your account today!",
-    "image_query": "financial investment growth",
+    "title": "Trade FinNifty with <span class='highlight'>Angel One</span>",
+    "text": "Experience ultra-fast execution, zero delivery brokerage, and pro-grade charting.",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
