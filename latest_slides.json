@@ -1,68 +1,73 @@
 [
   {
     "type": "bg-image",
-    "title": "IT Sector में <span class='highlight'>Trading</span> करते वक्त Emotional Mistakes?",
-    "text": "9-to-5 Job के साथ Smart Trading कैसे करें, जानिए इस post में।",
-    "image_query": "trading psychology"
+    "title": "Value Investing + Index ETFs = &lt;span class='highlight'&gt;Smart Wealth!&lt;/span&gt;",
+    "text": "क्या आप भी High Valuations पर blind SIP कर रहे हैं? जानिए Value Principles से Returns multiply करने का सही तरीका।",
+    "image_query": "stock market growth technology"
   },
   {
     "type": "bg-analytical",
-    "title": "Amateur vs Pro Trader",
-    "text": "IT Stocks में Emotional Discipline का फर्क",
+    "title": "Vanilla Index vs Value Factor ETF",
+    "text": "दोनों Strategies का side-by-side Comparison",
     "table": {
       "headers": [
-        "Factor",
-        "Amateur Trader",
-        "Pro Trader"
+        "Metric",
+        "Standard Nifty 50 ETF",
+        "Value Factor ETF (NV20)"
       ],
       "rows": [
         [
-          "Earnings News",
-          "Panic Selling / FOMO",
-          "Pre-planned Strategy"
+          "Stock Selection",
+          "Market Cap Weightage",
+          "P/E, P/B & ROE Filters"
         ],
         [
-          "Market Hours",
-          "Constant Chart Watching",
-          "GTT Orders & Alerts"
+          "Downside Risk",
+          "Moderate to High",
+          "Lower (Margin of Safety)"
         ],
         [
-          "Risk Control",
-          "No Stop Loss",
-          "Strict Risk Management"
+          "Expense Ratio",
+          "Very Low (~0.05%)",
+          "Low (~0.15%)"
+        ],
+        [
+          "Long-term Alpha",
+          "Benchmark Average",
+          "Historically Higher"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Discipline का Impact on Returns",
-    "text": "Rule-based Trading vs Emotional Trading Over Time",
+    "title": "Valuation Dip vs Regular SIP Returns",
+    "text": "Market P/E drop होने पर Extra Investment करने से Portfolio Value पर असर",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "Q1",
-        "Q2",
-        "Q3",
-        "Q4"
+        "Year 1",
+        "Year 3",
+        "Year 5",
+        "Year 10"
       ],
       "datasets": [
         {
-          "label": "Emotional Trader",
+          "label": "Regular SIP",
           "data": [
-            -12,
-            -5,
-            -18,
-            -25
+            10,
+            35,
+            75,
+            180
           ]
         },
         {
-          "label": "Disciplined Trader",
+          "label": "Value-Triggered SIP",
           "data": [
-            5,
-            8,
-            14,
-            22
+            12,
+            45,
+            95,
+            240
           ]
         }
       ]
@@ -70,9 +75,9 @@
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
-    "text": "Angel One के साथ Free Demat Account खोलें और Smart Trading Tools का लाभ उठाएं।",
-    "image_query": "success business",
+    "title": "Start Smart ETF Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Advanced Analytics और Zero Delivery Brokerage के साथ आज ही अपना Demat Account open करें।",
+    "image_query": "mobile finance application investment",
     "is_cta": true
   }
 ]
