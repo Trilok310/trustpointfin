@@ -1,75 +1,78 @@
 [
   {
     "type": "bg-image",
-    "title": "HDFC Bank Analysis: &lt;span class='highlight'&gt;2026 Outlook&lt;/span&gt;",
-    "text": "From long-term fundamental strength to precise Fibonacci entry zones.",
-    "image_query": "stock chart analysis banking"
+    "title": "IT Sector में <span class='highlight'>Trading</span> करते वक्त Emotional Mistakes?",
+    "text": "9-to-5 Job के साथ Smart Trading कैसे करें, जानिए इस post में।",
+    "image_query": "trading psychology"
   },
   {
     "type": "bg-analytical",
-    "title": "Post-Merger Fundamentals",
-    "text": "Key financial indicators showing balance sheet stabilization in 2026.",
+    "title": "Amateur vs Pro Trader",
+    "text": "IT Stocks में Emotional Discipline का फर्क",
+    "table": {
+      "headers": [
+        "Factor",
+        "Amateur Trader",
+        "Pro Trader"
+      ],
+      "rows": [
+        [
+          "Earnings News",
+          "Panic Selling / FOMO",
+          "Pre-planned Strategy"
+        ],
+        [
+          "Market Hours",
+          "Constant Chart Watching",
+          "GTT Orders & Alerts"
+        ],
+        [
+          "Risk Control",
+          "No Stop Loss",
+          "Strict Risk Management"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Discipline का Impact on Returns",
+    "text": "Rule-based Trading vs Emotional Trading Over Time",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "NIM (%)",
-        "Credit Growth (%)",
-        "Deposit Growth (%)"
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
       ],
       "datasets": [
         {
-          "label": "2024 Phase",
+          "label": "Emotional Trader",
           "data": [
-            3.4,
-            16,
-            12
+            -12,
+            -5,
+            -18,
+            -25
           ]
         },
         {
-          "label": "2026 Target",
+          "label": "Disciplined Trader",
           "data": [
-            3.8,
-            14.5,
-            15
+            5,
+            8,
+            14,
+            22
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Fibonacci Retracement Levels",
-    "text": "Key institutional buying zones on multi-year technical charts.",
-    "table": {
-      "headers": [
-        "Fib Level",
-        "Zone Type",
-        "Investor Strategy"
-      ],
-      "rows": [
-        [
-          "38.2%",
-          "Tactical Support",
-          "Initiate SIP / First Tranche"
-        ],
-        [
-          "50.0%",
-          "Value Line",
-          "Increase Allocation"
-        ],
-        [
-          "61.8%",
-          "Golden Level",
-          "Aggressive Long-term Buy"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Start Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Access advanced Fibonacci charts and enjoy zero brokerage on delivery trades.",
-    "image_query": "financial success growth",
+    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
+    "text": "Angel One के साथ Free Demat Account खोलें और Smart Trading Tools का लाभ उठाएं।",
+    "image_query": "success business",
     "is_cta": true
   }
 ]
