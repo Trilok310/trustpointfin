@@ -69,7 +69,7 @@ function buildReelHTML(slides) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;700;900&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;700;900&family=Outfit:wght@700&family=Noto+Sans+Devanagari:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; padding: 0; background: #f8fafc; display: flex; flex-direction: row; }
         .slide { width: 1080px; height: 1920px; position: relative; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; padding: 80px; box-sizing: border-box; flex-shrink: 0; }
@@ -81,13 +81,13 @@ function buildReelHTML(slides) {
         
         .content { position: relative; z-index: 2; text-align: center; margin-top: -100px; }
         
-        .step-badge { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 36px; color: #ffffff; background: #2563eb; padding: 10px 30px; border-radius: 100px; display: inline-block; margin-bottom: 40px; letter-spacing: 2px; }
-        .title { font-family: 'Playfair Display', serif; font-size: 90px; font-weight: 700; line-height: 1.2; color: #0f172a; margin-bottom: 30px; text-shadow: 0 4px 20px rgba(255,255,255,0.8); }
-        .text { font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 400; color: #334155; line-height: 1.5; padding: 0 40px; }
+        .step-badge { font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; font-weight: 900; font-size: 36px; color: #ffffff; background: #2563eb; padding: 10px 30px; border-radius: 100px; display: inline-block; margin-bottom: 40px; letter-spacing: 2px; }
+        .title { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; font-size: 90px; font-weight: 700; line-height: 1.2; color: #0f172a; margin-bottom: 30px; text-shadow: 0 4px 20px rgba(255,255,255,0.8); }
+        .text { font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; font-size: 40px; font-weight: 400; color: #334155; line-height: 1.5; padding: 0 40px; }
         
         .progress-bar { position: absolute; bottom: 120px; left: 80px; right: 80px; height: 10px; background: rgba(255,255,255,0.2); border-radius: 10px; z-index: 3; overflow: hidden; }
         .progress-fill { height: 100%; background: #ffb703; border-radius: 10px; }
-        .disclaimer { position: absolute; bottom: 30px; left: 50px; right: 50px; text-align: center; font-size: 16px; color: rgba(255,255,255,0.4); z-index: 3; font-family: 'Inter', sans-serif; }
+        .disclaimer { position: absolute; bottom: 30px; left: 50px; right: 50px; text-align: center; font-size: 16px; color: rgba(255,255,255,0.4); z-index: 3; font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; }
     </style>
 </head>
 <body>

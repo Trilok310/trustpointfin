@@ -96,10 +96,10 @@ function buildHTML(slides) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&family=Outfit:wght@700&family=Noto+Sans+Devanagari:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body { background-color: #f8fafc; color: white; font-family: 'Inter', sans-serif; margin: 0; padding: 0; display: flex; flex-direction: row; }
+        body { background-color: #f8fafc; color: white; font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; margin: 0; padding: 0; display: flex; flex-direction: row; }
         .slide { width: 1080px; height: 1080px; position: relative; box-sizing: border-box; padding: 70px; display: flex; flex-direction: column; overflow: hidden; flex-shrink: 0; }
         .slide.bg-analytical { background-color: #f8fafc; background-image: linear-gradient(rgba(0, 0, 0, 0.05) 2px, transparent 2px), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 2px, transparent 2px); background-size: 40px 40px; }
         .slide.bg-image { background-size: cover; background-position: center; justify-content: center; }
@@ -111,11 +111,11 @@ function buildHTML(slides) {
         .slide-footer { position: absolute; bottom: 50px; left: 50px; right: 50px; display: flex; justify-content: space-between; z-index: 3; font-size: 26px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
         .slide-number { color: rgba(0,0,0,0.4); }
         .swipe { color: #2563eb; }
-        .slide-disclaimer { position: absolute; bottom: 15px; left: 50px; right: 50px; text-align: center; font-size: 14px; font-weight: 400; color: rgba(0,0,0,0.4); z-index: 3; font-family: 'Inter', sans-serif; letter-spacing: 0.5px; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 76px; font-weight: 700; line-height: 1.15; margin-top: 120px; margin-bottom: 24px; color: #0f172a; }
+        .slide-disclaimer { position: absolute; bottom: 15px; left: 50px; right: 50px; text-align: center; font-size: 14px; font-weight: 400; color: rgba(0,0,0,0.4); z-index: 3; font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; letter-spacing: 0.5px; }
+        h1 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; font-size: 76px; font-weight: 700; line-height: 1.15; margin-top: 120px; margin-bottom: 24px; color: #0f172a; }
         .slide.bg-image h1 { margin-top: 0; }
         .highlight { color: #2563eb; font-style: italic; }
-        p { font-family: 'Inter', sans-serif; font-size: 32px; line-height: 1.5; color: #334155; margin-top: 0; margin-bottom: 30px; }
+        p { font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; font-size: 32px; line-height: 1.5; color: #334155; margin-top: 0; margin-bottom: 30px; }
         .data-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 28px; background: rgba(0, 0, 0, 0.03); border-radius: 16px; overflow: hidden; }
         .data-table th, .data-table td { padding: 24px 32px; text-align: left; border-bottom: 2px solid rgba(0,0,0,0.08); }
         .data-table th { color: #2563eb; font-weight: 600; text-transform: uppercase; font-size: 24px; letter-spacing: 2px; background: rgba(0,0,0,0.05); }

@@ -219,7 +219,7 @@ The article should:
   - End with a CTA encouraging readers to open a Demat account with Angel One
   
   After the article content, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
-  CRITICAL: The slides content MUST be written in 'Hinglish' (Hindi language written in English script mixed with English). Use common English financial terms like "Invest", "Market", "Profit", "Loss" instead of pure Hindi words like "Nivesh" or "Poonji". Make it relatable to the young Indian audience.
+  CRITICAL: The slides content MUST be written in actual Hindi (Devanagari script) mixed with English words. Use the Hindi script for grammar and connecting words, but KEEP all common financial terms in pure English (Latin script) like "Invest", "Market", "Profit", "Loss", "Compounding", "Equity". DO NOT translate financial terms into Hindi (do not use "Nivesh", "Poonji", etc.). Make it highly engaging for the Indian youth audience.
 Follow this exact JSON structure for the slides:
 [
   {
@@ -438,7 +438,7 @@ Detailed answer to second FAQ
   // --- Generate Social Media Posts ---
   const socialPrompt = `You are a social media manager for TrustPointFin, an Indian financial advisory firm. 
 Based on this article title: "${title}" and topic: "${topic}", write engaging social media posts.
-  CRITICAL: The social media posts MUST be written in 'Hinglish' (Hindi language written in English script mixed with English). Use common English financial terms like "Invest", "Market", "Profit", "Loss" instead of pure Hindi words like "Nivesh". Make it highly engaging and relatable to Indian youth.
+  CRITICAL: The social media posts MUST be written in actual Hindi (Devanagari script) mixed with English words. Use the Hindi script for grammar and connecting words, but KEEP all common financial terms in pure English (Latin script) like "Invest", "Market", "Profit", "Loss", "Compounding", "Equity". DO NOT translate financial terms into Hindi (do not use "Nivesh"). Make it highly engaging and relatable to Indian youth.
   
   Format EXACTLY as follows:
 ---INSTAGRAM---
