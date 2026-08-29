@@ -120,8 +120,11 @@
         </div>
     </section>
 
-    <!-- Market Pulse Ticker -->
-    <section style="background:#fff; border-bottom:1px solid var(--color-border);">
+        <!-- Market Pulse Ticker -->
+    <section style="background:#fff; border-bottom:1px solid var(--color-border); padding: 8px 0; font-size: 0.8rem; color: #64748b; text-align: center;">
+        <div class="container">
+            <span style="display:inline-block; margin-bottom: 4px;"><i class="fas fa-info-circle"></i> Market Snapshot (Prices delayed by 15 minutes as per exchange rules)</span>
+        </div>
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget"></div>
@@ -258,7 +261,7 @@
                           <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
                           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
                           {
-                          "symbol": "NSE:NIFTY",
+                          "symbol": "BSE:SENSEX",
                           "width": "100%",
                           "height": "100%",
                           "locale": "en",
@@ -575,3 +578,4 @@
 
 </body>
 </html>
+
