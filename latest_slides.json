@@ -1,42 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>Auto Sector Volatility</span> with FII/DII Data",
-    "text": "How smart hedging protects retail portfolios during institutional tug-of-wars.",
-    "image_query": "automotive assembly line trading"
+    "title": "HDFC Bank Analysis: &lt;span class='highlight'&gt;2026 Outlook&lt;/span&gt;",
+    "text": "From long-term fundamental strength to precise Fibonacci entry zones.",
+    "image_query": "stock chart analysis banking"
   },
   {
     "type": "bg-analytical",
-    "title": "Institutional Flow Divergence",
-    "text": "FII vs DII cumulative impact on Nifty Auto Index",
+    "title": "Post-Merger Fundamentals",
+    "text": "Key financial indicators showing balance sheet stabilization in 2026.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Q1 2025",
-        "Q2 2025",
-        "Q3 2025",
-        "Q4 2025",
-        "Q1 2026"
+        "NIM (%)",
+        "Credit Growth (%)",
+        "Deposit Growth (%)"
       ],
       "datasets": [
         {
-          "label": "FII Inflows (₹ Cr)",
+          "label": "2024 Phase",
           "data": [
-            -4200,
-            -6100,
-            -1800,
-            3200,
-            -5400
+            3.4,
+            16,
+            12
           ]
         },
         {
-          "label": "DII Inflows (₹ Cr)",
+          "label": "2026 Target",
           "data": [
-            5100,
-            7800,
-            4300,
-            1200,
-            6200
+            3.8,
+            14.5,
+            15
           ]
         }
       ]
@@ -44,38 +38,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Unhedged vs Hedged Performance",
-    "text": "Comparing portfolio returns during auto down-cycles",
+    "title": "Fibonacci Retracement Levels",
+    "text": "Key institutional buying zones on multi-year technical charts.",
     "table": {
       "headers": [
-        "Market Scenario",
-        "Unhedged Portfolio",
-        "Hedged (Put Spread)"
+        "Fib Level",
+        "Zone Type",
+        "Investor Strategy"
       ],
       "rows": [
         [
-          "5% Auto Sector Selloff",
-          "-5.0% Loss",
-          "-0.8% Loss"
+          "38.2%",
+          "Tactical Support",
+          "Initiate SIP / First Tranche"
         ],
         [
-          "12% FII Selling Panic",
-          "-12.0% Loss",
-          "-2.2% Loss"
+          "50.0%",
+          "Value Line",
+          "Increase Allocation"
         ],
         [
-          "8% Sector Rally",
-          "+8.0% Gain",
-          "+6.2% Gain"
+          "61.8%",
+          "Golden Level",
+          "Aggressive Long-term Buy"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Confidence?</span>",
-    "text": "Execute multi-leg options hedging strategies easily with advanced analytics on Angel One.",
-    "image_query": "financial dashboard analytics",
+    "title": "Start Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Access advanced Fibonacci charts and enjoy zero brokerage on delivery trades.",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
