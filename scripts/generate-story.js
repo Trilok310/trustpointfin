@@ -38,21 +38,21 @@ function buildStoryHTML(data) {
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; padding: 0; background: #0f172a; color: white; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; }
+        body { margin: 0; padding: 0; background: #f8fafc; color: white; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; }
         .story { width: 1080px; height: 1920px; position: relative; background-image: url('${bgUrl}'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; padding: 80px; box-sizing: border-box; }
-        .story::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.95)); z-index: 1; }
+        .story::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95)); z-index: 1; }
         .content { position: relative; z-index: 2; text-align: center; }
         
         .brand-header { position: absolute; top: 80px; left: 0; right: 0; z-index: 3; display: flex; justify-content: center; align-items: center; gap: 20px; }
         .brand-logo { height: 70px; border-radius: 12px; background: white; padding: 4px; }
-        .brand-text { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; color: #ffb703; letter-spacing: 2px; text-transform: uppercase; }
+        .brand-text { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; color: #2563eb; letter-spacing: 2px; text-transform: uppercase; }
         
         .quote-icon { font-family: 'Playfair Display', serif; font-size: 150px; color: rgba(255,183,3,0.5); line-height: 0; margin-bottom: 60px; }
         .text { font-family: 'Playfair Display', serif; font-size: 80px; font-weight: 700; line-height: 1.3; color: #ffffff; }
         .author { font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 400; color: #ffb703; margin-top: 50px; text-transform: uppercase; letter-spacing: 4px; }
         
         .cta { position: absolute; bottom: 100px; left: 0; right: 0; z-index: 3; text-align: center; }
-        .cta-btn { background: #ffb703; color: #0f172a; padding: 24px 60px; font-weight: 700; display: inline-block; border-radius: 100px; font-size: 36px; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(255,183,3,0.3); }
+        .cta-btn { background: #2563eb; color: #ffffff; padding: 24px 60px; font-weight: 700; display: inline-block; border-radius: 100px; font-size: 36px; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(255,183,3,0.3); }
         .disclaimer { position: absolute; bottom: 30px; left: 50px; right: 50px; text-align: center; font-size: 16px; color: rgba(255,255,255,0.4); z-index: 3; }
     </style>
 </head>

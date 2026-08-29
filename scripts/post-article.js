@@ -209,16 +209,17 @@ async function main() {
 Write a detailed, GEO-optimized financial insights article about the following topic: "${topic}"
 
 The article should:
-- Be highly relevant to Indian retail investors in ${now.getFullYear()}
-- Include real data, statistics, and actionable insights
-- Have a strong SEO meta description (max 160 chars)
-- Include a Key Takeaways section (3-5 bullet points)
-- Have 3-4 main sections with H2 headings
-- Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL)
-- Naturally mention Angel One as a great platform to start investing
-- End with a CTA encouraging readers to open a Demat account with Angel One
-
-After the article content, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
+  - Be highly relevant to Indian retail investors in ${now.getFullYear()}
+  - Include real data, statistics, and actionable insights
+  - Have a strong SEO meta description (max 160 chars)
+  - Include a Key Takeaways section (3-5 bullet points)
+  - Have 3-4 main sections with H2 headings
+  - Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL)
+  - Naturally mention Angel One as a great platform to start investing
+  - End with a CTA encouraging readers to open a Demat account with Angel One
+  
+  After the article content, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
+  CRITICAL: The slides content MUST be written in 'Hinglish' (Hindi language written in English script mixed with English). Use common English financial terms like "Invest", "Market", "Profit", "Loss" instead of pure Hindi words like "Nivesh" or "Poonji". Make it relatable to the young Indian audience.
 Follow this exact JSON structure for the slides:
 [
   {
@@ -437,8 +438,9 @@ Detailed answer to second FAQ
   // --- Generate Social Media Posts ---
   const socialPrompt = `You are a social media manager for TrustPointFin, an Indian financial advisory firm. 
 Based on this article title: "${title}" and topic: "${topic}", write engaging social media posts.
-
-Format EXACTLY as follows:
+  CRITICAL: The social media posts MUST be written in 'Hinglish' (Hindi language written in English script mixed with English). Use common English financial terms like "Invest", "Market", "Profit", "Loss" instead of pure Hindi words like "Nivesh". Make it highly engaging and relatable to Indian youth.
+  
+  Format EXACTLY as follows:
 ---INSTAGRAM---
 Your Instagram caption here (use emojis, 150-200 words, include hashtags)
 ---FACEBOOK---

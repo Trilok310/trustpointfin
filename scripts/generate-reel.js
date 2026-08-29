@@ -71,19 +71,19 @@ function buildReelHTML(slides) {
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;700;900&family=Outfit:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; padding: 0; background: #0f172a; display: flex; flex-direction: row; }
+        body { margin: 0; padding: 0; background: #f8fafc; display: flex; flex-direction: row; }
         .slide { width: 1080px; height: 1920px; position: relative; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; padding: 80px; box-sizing: border-box; flex-shrink: 0; }
-        .slide::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.95)); z-index: 1; }
+        .slide::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95)); z-index: 1; }
         
         .brand-header { position: absolute; top: 80px; left: 0; right: 0; z-index: 3; display: flex; justify-content: center; align-items: center; gap: 20px; }
         .brand-logo { height: 70px; border-radius: 12px; background: white; padding: 4px; }
-        .brand-text { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; color: #ffb703; letter-spacing: 2px; text-transform: uppercase; }
+        .brand-text { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; color: #2563eb; letter-spacing: 2px; text-transform: uppercase; }
         
         .content { position: relative; z-index: 2; text-align: center; margin-top: -100px; }
         
-        .step-badge { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 36px; color: #0f172a; background: #ffb703; padding: 10px 30px; border-radius: 100px; display: inline-block; margin-bottom: 40px; letter-spacing: 2px; }
-        .title { font-family: 'Playfair Display', serif; font-size: 90px; font-weight: 700; line-height: 1.2; color: #ffffff; margin-bottom: 30px; text-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-        .text { font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 400; color: #cbd5e1; line-height: 1.5; padding: 0 40px; }
+        .step-badge { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 36px; color: #ffffff; background: #2563eb; padding: 10px 30px; border-radius: 100px; display: inline-block; margin-bottom: 40px; letter-spacing: 2px; }
+        .title { font-family: 'Playfair Display', serif; font-size: 90px; font-weight: 700; line-height: 1.2; color: #0f172a; margin-bottom: 30px; text-shadow: 0 4px 20px rgba(255,255,255,0.8); }
+        .text { font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 400; color: #334155; line-height: 1.5; padding: 0 40px; }
         
         .progress-bar { position: absolute; bottom: 120px; left: 80px; right: 80px; height: 10px; background: rgba(255,255,255,0.2); border-radius: 10px; z-index: 3; overflow: hidden; }
         .progress-fill { height: 100%; background: #ffb703; border-radius: 10px; }
