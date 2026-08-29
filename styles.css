@@ -1176,3 +1176,95 @@ img {
         padding-bottom: 80px; 
     }
 }
+/* --- Article Page Layout --- */
+.article-layout {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+.article-main {
+    flex: 1;
+    max-width: 800px;
+}
+.article-sidebar {
+    width: 320px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 120px;
+}
+@media (max-width: 992px) {
+    .article-layout {
+        flex-direction: column;
+    }
+    .article-sidebar {
+        width: 100%;
+        position: static;
+        margin-top: 48px;
+    }
+}
+.article-header {
+    margin-bottom: 40px;
+}
+.article-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: var(--color-text-main);
+}
+.article-meta {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+.article-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+}
+.article-content p {
+    margin-bottom: 24px;
+}
+.article-content h2 {
+    font-size: 1.8rem;
+    color: var(--color-text-main);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.article-content h3 {
+    font-size: 1.4rem;
+    color: var(--color-text-main);
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.article-content ul, .article-content ol {
+    margin-bottom: 24px;
+    padding-left: 24px;
+}
+.article-content li {
+    margin-bottom: 12px;
+}
+.article-cta {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    padding: 32px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 64px;
+}
+/* Floating Contact Widget CSS */
+.floating-contact { position: fixed; bottom: 24px; right: 24px; z-index: 1000; display: flex; flex-direction: column-reverse; align-items: center; gap: 12px; }
+.fab-main { width: 56px; height: 56px; border-radius: 50%; background: var(--color-primary); color: white; border: none; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: transform 0.2s; display: flex; align-items: center; justify-content: center; }
+.fab-main:hover { transform: scale(1.05); }
+.fab-menu { display: flex; flex-direction: column; gap: 12px; opacity: 0; pointer-events: none; transform: translateY(20px); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.fab-menu.active { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.fab-item { width: 48px; height: 48px; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: transform 0.2s; }
+.fab-item:hover { transform: scale(1.1); }
+.fab-item.whatsapp { background: #25D366; }
+.fab-item.phone { background: #34b7f1; }
+.fab-item.email { background: #EA4335; }
+.fab-item.telegram { background: #0088cc; }
+.contact-links-list li a { display: flex; align-items: center; gap: 8px; }
+@media (max-width: 768px) {
+    .mobile-sticky-cta { padding-right: 90px; }
+}
