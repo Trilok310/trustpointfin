@@ -1,28 +1,42 @@
 [
   {
     "type": "bg-image",
-    "title": "Mastering <span class='highlight'>Reliance Price Action</span>",
-    "text": "Discover the high-probability price action setup tailored for India's market heavyweight in 2026.",
-    "image_query": "stock trading screen analysis"
+    "title": "Mastering <span class='highlight'>Auto Sector Volatility</span> with FII/DII Data",
+    "text": "How smart hedging protects retail portfolios during institutional tug-of-wars.",
+    "image_query": "automotive assembly line trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Performance Comparison",
-    "text": "Backtested 1-year intraday win rates on Reliance stock across common strategies.",
+    "title": "Institutional Flow Divergence",
+    "text": "FII vs DII cumulative impact on Nifty Auto Index",
     "chart": {
       "type": "bar",
       "labels": [
-        "RSI Overbought",
-        "EMA Crossover",
-        "CPR + ORB Setup"
+        "Q1 2025",
+        "Q2 2025",
+        "Q3 2025",
+        "Q4 2025",
+        "Q1 2026"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "FII Inflows (₹ Cr)",
           "data": [
-            42,
-            48,
-            68
+            -4200,
+            -6100,
+            -1800,
+            3200,
+            -5400
+          ]
+        },
+        {
+          "label": "DII Inflows (₹ Cr)",
+          "data": [
+            5100,
+            7800,
+            4300,
+            1200,
+            6200
           ]
         }
       ]
@@ -30,38 +44,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Trader Approach Breakdown",
-    "text": "How retail vs. institutional traders handle Reliance price setups.",
+    "title": "Unhedged vs Hedged Performance",
+    "text": "Comparing portfolio returns during auto down-cycles",
     "table": {
       "headers": [
-        "Aspect",
-        "Retail Trader",
-        "Pro Trader"
+        "Market Scenario",
+        "Unhedged Portfolio",
+        "Hedged (Put Spread)"
       ],
       "rows": [
         [
-          "Entry",
-          "Chases breakouts",
-          "Waits for VWAP pullback"
+          "5% Auto Sector Selloff",
+          "-5.0% Loss",
+          "-0.8% Loss"
         ],
         [
-          "Timeframe",
-          "1-minute noise",
-          "15-min + CPR levels"
+          "12% FII Selling Panic",
+          "-12.0% Loss",
+          "-2.2% Loss"
         ],
         [
-          "Risk/Reward",
-          "1:1 or negative",
-          "Strict 1:2 minimum"
+          "8% Sector Rally",
+          "+8.0% Gain",
+          "+6.2% Gain"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trade Heavyweights Like a <span class='highlight'>Pro</span>",
-    "text": "Open your free Demat account with Angel One today for zero delivery brokerage and lightning-fast charting.",
-    "image_query": "financial success growth chart",
+    "title": "Ready to trade with <span class='highlight'>Confidence?</span>",
+    "text": "Execute multi-leg options hedging strategies easily with advanced analytics on Angel One.",
+    "image_query": "financial dashboard analytics",
     "is_cta": true
   }
 ]
