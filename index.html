@@ -20,7 +20,7 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -28,8 +28,7 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PDZXLQK6');</script>
-    <!-- End Google Tag Manager -->
-
+    
     <!-- Organization Schema -->
     <script type="application/ld+json">
     {
@@ -42,10 +41,7 @@
     </script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDZXLQK6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDZXLQK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -73,7 +69,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero bg-alt">
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>Start Your Investment Journey Today</h1>
@@ -84,31 +80,38 @@
                 </div>
             </div>
             
-            <!-- Abstract CSS Dashboard Visual -->
-            <div class="hero-visual" aria-hidden="true">
-                <div class="ui-header">
-                    <div class="ui-skeleton-title"></div>
-                    <div class="ui-skeleton-avatar"></div>
+            <!-- Live Market Visual (TradingView) -->
+            <div class="hero-visual" style="padding:0; overflow:hidden;">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="height:100%; width:100%;">
+                  <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                  {
+                  "width": "100%",
+                  "height": "100%",
+                  "symbol": "BSE:SENSEX",
+                  "interval": "D",
+                  "timezone": "Asia/Kolkata",
+                  "theme": "light",
+                  "style": "2",
+                  "locale": "en",
+                  "backgroundColor": "rgba(255, 255, 255, 1)",
+                  "hide_top_toolbar": true,
+                  "hide_legend": true,
+                  "save_image": false,
+                  "calendar": false,
+                  "hide_volume": true,
+                  "support_host": "https://www.tradingview.com"
+                }
+                  </script>
                 </div>
-                <div class="ui-chart-area">
-                    <div class="ui-chart-line"></div>
-                </div>
-                <div class="ui-cards">
-                    <div class="ui-card">
-                        <div class="ui-skeleton-line"></div>
-                        <div class="ui-skeleton-line short green"></div>
-                    </div>
-                    <div class="ui-card">
-                        <div class="ui-skeleton-line"></div>
-                        <div class="ui-skeleton-line short green"></div>
-                    </div>
-                </div>
+                <!-- TradingView Widget END -->
             </div>
         </div>
     </section>
 
     <!-- Trust Bar -->
-    <section class="trust-bar">
+    <section class="trust-bar" style="background:var(--color-bg-base);">
         <div class="container trust-bar-grid">
             <div class="trust-item"><i class="fas fa-certificate"></i> Angel One Authorized Partner</div>
             <div class="trust-item"><i class="fas fa-mobile-alt"></i> 100% Digital Account Opening</div>
@@ -116,8 +119,33 @@
         </div>
     </section>
 
+    <!-- Market Pulse Ticker -->
+    <section style="background:#fff; border-bottom:1px solid var(--color-border);">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+          "symbols": [
+            { "proName": "BSE:SENSEX", "title": "SENSEX" },
+            { "proName": "NSE:NIFTY", "title": "NIFTY 50" },
+            { "proName": "NSE:BANKNIFTY", "title": "BANK NIFTY" },
+            { "proName": "BSE:RELIANCE", "title": "RELIANCE" },
+            { "proName": "BSE:HDFCBANK", "title": "HDFC BANK" }
+          ],
+          "showSymbolLogo": true,
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "colorTheme": "light",
+          "locale": "en"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </section>
+
     <!-- About / Entity Section -->
-    <section id="about" class="section-padding bg-alt">
+    <section id="about" class="section-padding">
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title">Who is TrustPointFin?</h2>
@@ -126,6 +154,53 @@
             <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.125rem; color: var(--color-text-muted);">
                 <p style="margin-bottom: 24px;">TrustPointFin is an official <strong>Authorized partner Angel one</strong>. Our mission is to facilitate a seamless onboarding experience for retail investors, traders, and beginners across India.</p>
                 <p>By opening your Demat account through TrustPointFin, you gain access to Angel One's robust technological ecosystem, including zero account opening charges, competitive brokerage rates, and an advanced trading suite, while receiving dedicated onboarding support from our team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investments / Services Section -->
+    <section id="services" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">One Platform. Multiple Opportunities.</h2>
+                <p class="section-subtitle">Diversify your portfolio with a single Demat account.</p>
+            </div>
+            <div class="invest-grid">
+                <div class="invest-card" style="position:relative; overflow:hidden;">
+                    <div class="invest-icon" style="z-index:2; position:relative;"><i class="fas fa-chart-line"></i></div>
+                    <div class="invest-info" style="z-index:2; position:relative;">
+                        <h3>Stocks & Delivery</h3>
+                        <p>Invest in Indian equities for the long term.</p>
+                    </div>
+                    <i class="fas fa-chart-line" style="position:absolute; right:-20px; bottom:-20px; font-size:8rem; opacity:0.03; z-index:1;"></i>
+                </div>
+                <div class="invest-card" style="position:relative; overflow:hidden;">
+                    <div class="invest-icon" style="z-index:2; position:relative;"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="invest-info" style="z-index:2; position:relative;">
+                        <h3>Mutual Funds & SIP</h3>
+                        <p>Build wealth systematically over time.</p>
+                    </div>
+                    <i class="fas fa-piggy-bank" style="position:absolute; right:-20px; bottom:-20px; font-size:8rem; opacity:0.03; z-index:1;"></i>
+                </div>
+                <div class="invest-card" style="position:relative; overflow:hidden;">
+                    <div class="invest-icon" style="z-index:2; position:relative;"><i class="fas fa-rocket"></i></div>
+                    <div class="invest-info" style="z-index:2; position:relative;">
+                        <h3>IPO Applications</h3>
+                        <p>Apply for new listings seamlessly via UPI.</p>
+                    </div>
+                    <i class="fas fa-rocket" style="position:absolute; right:-20px; bottom:-20px; font-size:8rem; opacity:0.03; z-index:1;"></i>
+                </div>
+                <div class="invest-card" style="position:relative; overflow:hidden;">
+                    <div class="invest-icon" style="z-index:2; position:relative;"><i class="fas fa-coins"></i></div>
+                    <div class="invest-info" style="z-index:2; position:relative;">
+                        <h3>Commodities (MCX)</h3>
+                        <p>Trade in gold, silver, and energy markets.</p>
+                    </div>
+                    <i class="fas fa-coins" style="position:absolute; right:-20px; bottom:-20px; font-size:8rem; opacity:0.03; z-index:1;"></i>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Explore All Products</a>
             </div>
         </div>
     </section>
@@ -149,11 +224,6 @@
                     <p>As our client, you receive dedicated assistance for account queries and technical onboarding.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-icon"><i class="fas fa-layer-group"></i></div>
-                    <h3>Multiple Options</h3>
-                    <p>Access everything: Delivery, Intraday, F&O, Mutual Funds, and Sovereign Gold Bonds (SGBs).</p>
-                </div>
-                <div class="why-card">
                     <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Trusted Platform</h3>
                     <p>Backed by Angel One, one of India's largest and most trusted retail broking houses.</p>
@@ -162,59 +232,45 @@
         </div>
     </section>
 
-    <!-- Investments / Services Section -->
-    <section id="services" class="section-padding bg-alt">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">One Platform. Multiple Opportunities.</h2>
-                <p class="section-subtitle">Diversify your portfolio with a single Demat account.</p>
-            </div>
-            <div class="invest-grid">
-                <div class="invest-card">
-                    <div class="invest-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="invest-info">
-                        <h3>Stocks & Delivery</h3>
-                        <p>Invest in Indian equities for the long term.</p>
-                    </div>
-                </div>
-                <div class="invest-card">
-                    <div class="invest-icon"><i class="fas fa-piggy-bank"></i></div>
-                    <div class="invest-info">
-                        <h3>Mutual Funds & SIP</h3>
-                        <p>Build wealth systematically over time.</p>
-                    </div>
-                </div>
-                <div class="invest-card">
-                    <div class="invest-icon"><i class="fas fa-rocket"></i></div>
-                    <div class="invest-info">
-                        <h3>IPO Applications</h3>
-                        <p>Apply for new listings seamlessly via UPI.</p>
-                    </div>
-                </div>
-                <div class="invest-card">
-                    <div class="invest-icon"><i class="fas fa-coins"></i></div>
-                    <div class="invest-info">
-                        <h3>Commodities (MCX)</h3>
-                        <p>Trade in gold, silver, and energy markets.</p>
-                    </div>
-                </div>
-                <div class="invest-card">
-                    <div class="invest-icon"><i class="fas fa-layer-group"></i></div>
-                    <div class="invest-info">
-                        <h3>Exchange Traded Funds</h3>
-                        <p>Invest in broad market indices easily.</p>
-                    </div>
-                </div>
-                <div class="invest-card">
-                    <div class="invest-icon"><i class="fas fa-chart-bar"></i></div>
-                    <div class="invest-info">
-                        <h3>Futures & Options</h3>
-                        <p>Advanced derivative trading instruments.</p>
-                    </div>
+    <!-- Platform Section -->
+    <section class="platform-section">
+        <div class="container platform-grid">
+            <div class="platform-content">
+                <h2>Powerful Tools for Smarter Investing</h2>
+                <p>By opening your account with us, you unlock access to the Angel One Super App, engineered for speed, reliability, and deep market insights.</p>
+                <ul class="platform-features">
+                    <li><i class="fas fa-check"></i> Advanced Charting (TradingView Integration)</li>
+                    <li><i class="fas fa-check"></i> SmartAPI for Algorithmic Trading</li>
+                    <li><i class="fas fa-check"></i> Zero Brokerage on Equity Delivery</li>
+                    <li><i class="fas fa-check"></i> Real-time Market Data & Alerts</li>
+                </ul>
+                <div style="margin-top: 40px;">
+                    <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Get the App</a>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 48px;">
-                <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Explore All Products</a>
+            <div class="platform-visual">
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen" style="padding:40px 0 0 0;">
+                        <!-- Embed Tradingview mobile widget to look like an app -->
+                        <div class="tradingview-widget-container" style="height:100%; width:100%;">
+                          <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                          {
+                          "symbol": "NSE:NIFTY",
+                          "width": "100%",
+                          "height": "100%",
+                          "locale": "en",
+                          "dateRange": "1D",
+                          "colorTheme": "dark",
+                          "isTransparent": true,
+                          "autosize": true,
+                          "largeChartUrl": ""
+                        }
+                          </script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -248,103 +304,62 @@
                     <p>Log into the Angel One app and fund your account.</p>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Start Process Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Platform Section -->
-    <section class="platform-section">
-        <div class="container platform-grid">
-            <div class="platform-content">
-                <h2>Powerful Tools for Smarter Investing</h2>
-                <p>By opening your account with us, you unlock access to the Angel One Super App, engineered for speed, reliability, and deep market insights.</p>
-                <ul class="platform-features">
-                    <li><i class="fas fa-check"></i> Advanced Charting (TradingView Integration)</li>
-                    <li><i class="fas fa-check"></i> SmartAPI for Algorithmic Trading</li>
-                    <li><i class="fas fa-check"></i> Zero Brokerage on Equity Delivery</li>
-                    <li><i class="fas fa-check"></i> Real-time Market Data & Alerts</li>
-                </ul>
-                <div style="margin-top: 40px;">
-                    <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Get the App</a>
-                </div>
-            </div>
-            <div class="platform-visual">
-                <div class="phone-mockup">
-                    <div class="phone-notch"></div>
-                    <div class="phone-screen">
-                        <div class="ui-header">
-                            <div class="ui-skeleton-title" style="background:#334155; width:80px;"></div>
-                            <div class="ui-skeleton-avatar" style="background:#334155;"></div>
-                        </div>
-                        <div style="margin-top: 20px; font-family:var(--font-heading); font-size:1.5rem;">Portfolio</div>
-                        <div class="ui-skeleton-line" style="background:#334155; width:50%; height:12px;"></div>
-                        <div class="ui-chart-area" style="background:transparent; border-bottom:none; margin-top:20px; height:200px;">
-                            <div class="ui-chart-line" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 100 50\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0,50 L0,40 C20,30 30,45 50,20 C70,5 80,25 100,10 L100,50 Z\" fill=\"%2310B981\" opacity=\"0.2\"/><path d=\"M0,40 C20,30 30,45 50,20 C70,5 80,25 100,10\" fill=\"none\" stroke=\"%2310B981\" stroke-width=\"2\"/></svg>');"></div>
-                        </div>
-                        <div class="ui-card" style="background:#334155;">
-                            <div class="ui-skeleton-line" style="background:#475569;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- IPO Discovery Section -->
-    <section class="section-padding">
-        <div class="container text-center" style="max-width: 700px;">
-            <i class="fas fa-rocket text-primary" style="font-size: 3rem; margin-bottom: 24px;"></i>
-            <h2 class="section-title">Discover New IPO Opportunities</h2>
-            <p class="section-subtitle" style="margin-bottom: 32px;">Stay ahead of the curve. Read our latest analyses on upcoming Indian IPOs and learn how to apply seamlessly using UPI directly from your Angel One dashboard.</p>
-            <a href="insights.html" class="btn btn-outline btn-lg">Read Our IPO Analysis</a>
         </div>
     </section>
 
     <!-- Blog Teaser Section -->
     <section class="section-padding bg-alt">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header text-center">
                 <h2 class="section-title">Insights & Market Education</h2>
-                <p class="section-subtitle" style="margin: 0;">Learn how to navigate the markets with our latest research.</p>
+                <p class="section-subtitle">Learn how to navigate the markets with our latest research.</p>
             </div>
-            <div class="blog-grid">
-                <!-- Static placeholders for homepage. In a dynamic setup, a script injects these. -->
-                <div class="blog-card">
-                    <div class="blog-thumb">
-                        <span class="blog-category">Investing Basics</span>
+            
+            <!-- We use .insight-grid and .insight-card to maintain compatibility with the blog generator CSS -->
+            <div class="insight-grid">
+                
+                <!-- Preserved Featured Article Style -->
+                <a href="insights.html" class="insight-card">
+                    <div class="insight-thumb">
+                        <span class="insight-category">Investing Basics</span>
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=600&auto=format&fit=crop" alt="Investing">
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">August 2026 • By TrustPointFin</div>
+                    <div class="insight-content">
+                        <div class="insight-meta">August 2026 • By TrustPointFin</div>
                         <h3>Building Long-Term Wealth in 2026: The Power of SIPs</h3>
                         <p>Discover why Systematic Investment Plans are the cornerstone of a disciplined portfolio.</p>
-                        <a href="building-long-term-wealth-in-2026-the-power-of-sips-investin.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        <span class="read-more">Read Article &rarr;</span>
                     </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-thumb">
-                        <span class="blog-category">Options Trading</span>
+                </a>
+                
+                <a href="insights.html" class="insight-card">
+                    <div class="insight-thumb">
+                        <span class="insight-category">Options Trading</span>
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=600&auto=format&fit=crop" alt="Options">
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">August 2026 • By TrustPointFin</div>
+                    <div class="insight-content">
+                        <div class="insight-meta">August 2026 • By TrustPointFin</div>
                         <h3>Understanding Option Greeks: A Retail Guide</h3>
                         <p>Learn how Delta, Theta, and Vega impact your options pricing in the Indian market.</p>
-                        <a href="understanding-option-greeks-a-retail-traders-guide-to-winnin.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        <span class="read-more">Read Article &rarr;</span>
                     </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-thumb">
-                        <span class="blog-category">Market Trends</span>
+                </a>
+                
+                <a href="insights.html" class="insight-card">
+                    <div class="insight-thumb">
+                        <span class="insight-category">Market Trends</span>
+                        <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=600&auto=format&fit=crop" alt="Market">
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">August 2026 • By TrustPointFin</div>
+                    <div class="insight-content">
+                        <div class="insight-meta">August 2026 • By TrustPointFin</div>
                         <h3>Indian Market Overview & Trends 2026</h3>
                         <p>A comprehensive look at the macroeconomic factors driving the Nifty 50 this year.</p>
-                        <a href="indian-market-overview-trends-2026-growth-drivers-sectoral-o.html" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        <span class="read-more">Read Article &rarr;</span>
                     </div>
-                </div>
+                </a>
+                
             </div>
+            
             <div class="text-center" style="margin-top: 48px;">
                 <a href="insights.html" class="btn btn-outline">View All Articles</a>
             </div>

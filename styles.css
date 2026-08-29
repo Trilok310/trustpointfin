@@ -597,13 +597,13 @@ img {
 }
 
 /* --- Blog/Insights Teaser --- */
-.blog-grid {
+.insight-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
 }
 
-.blog-card {
+.insight-card {
     background: var(--color-bg-base);
     border: 1px solid var(--color-border);
     border-radius: 12px;
@@ -613,24 +613,24 @@ img {
     flex-direction: column;
 }
 
-.blog-card:hover {
+.insight-card:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
 }
 
-.blog-thumb {
+.insight-thumb {
     height: 200px;
     background: var(--color-bg-alt-2);
     position: relative;
 }
 
-.blog-thumb img {
+.insight-thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.blog-category {
+.insight-category {
     position: absolute;
     top: 16px;
     left: 16px;
@@ -640,35 +640,37 @@ img {
     border-radius: 50px;
     font-size: 0.75rem;
     font-weight: 600;
+    z-index: 2;
 }
 
-.blog-content {
+.insight-content {
     padding: 24px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.blog-meta {
+.insight-meta {
     font-size: 0.85rem;
     color: var(--color-text-light);
     margin-bottom: 12px;
 }
 
-.blog-content h3 {
+.insight-content h3 {
     font-size: 1.25rem;
     margin-bottom: 12px;
     line-height: 1.4;
+    color: var(--color-text-main);
 }
 
-.blog-content p {
+.insight-content p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin-bottom: 24px;
     flex-grow: 1;
 }
 
-.blog-link {
+.read-more {
     color: var(--color-primary);
     font-weight: 600;
     display: inline-flex;
@@ -676,8 +678,45 @@ img {
     gap: 8px;
 }
 
-.blog-link:hover {
+.read-more:hover {
     color: var(--color-primary-dark);
+}
+
+/* Featured Article Style (Only applies on insights.html where grid is full width) */
+.insights-grid .insight-card:first-child {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    min-height: 400px;
+}
+
+.insights-grid .insight-card:first-child .insight-thumb {
+    width: 60%;
+    height: auto;
+}
+
+.insights-grid .insight-card:first-child .insight-content {
+    width: 40%;
+    padding: 48px;
+    justify-content: center;
+}
+
+.insights-grid .insight-card:first-child .insight-content h3 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+    .insights-grid .insight-card:first-child {
+        flex-direction: column;
+    }
+    .insights-grid .insight-card:first-child .insight-thumb {
+        width: 100%;
+        height: 250px;
+    }
+    .insights-grid .insight-card:first-child .insight-content {
+        width: 100%;
+        padding: 24px;
+    }
 }
 
 /* --- FAQ Section --- */
