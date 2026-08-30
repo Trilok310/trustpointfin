@@ -1,36 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Index ETF Trading में <span class='highlight'>Stop Loss</span> कैसे लगाएं?",
-    "text": "Capital protect करने और Maximum Profit बनाने के Top Secrets।",
-    "image_query": "trading charts screen"
+    "title": "Bank Portfolio में <span class='highlight'>Massive Drawdown</span> से कैसे बचें?",
+    "text": "Indian Banking Sector में High Profits के साथ High Volatility आती है। जानिए Perfect Position Sizing Rules!",
+    "image_query": "stock market trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Stop Loss Vs No Stop Loss",
-    "text": "Market Volatility में Account Survival Rate का Reality Check.",
+    "title": "Retail vs Pro <span class='highlight'>Capital Exposure</span>",
+    "text": "Retail traders Banking sector में Over-concentrate करके Portfolio Risk बढ़ा लेते हैं।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Year 1",
-        "Year 2",
-        "Year 3"
+        "Max Sector Exposure",
+        "Risk Per Trade",
+        "Max Portfolio Drawdown"
       ],
       "datasets": [
         {
-          "label": "Without SL",
+          "label": "Retail Trader",
           "data": [
-            45,
-            20,
-            8
+            50,
+            5,
+            35
           ]
         },
         {
-          "label": "With SL Strategy",
+          "label": "Pro Trader",
           "data": [
-            85,
-            78,
-            82
+            20,
+            1,
+            10
           ]
         }
       ]
@@ -38,44 +38,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Stop Loss Strategy Matrix",
-    "text": "अपने Trading Style के हिसाब से सही Method चुनें।",
+    "title": "3 Golden Rules for <span class='highlight'>Risk Management</span>",
+    "text": "अपने Capital को Save करने के लिए इन Rules को Follow करें।",
     "table": {
       "headers": [
-        "Method",
-        "Best For",
-        "Risk Level"
+        "Strategy",
+        "Rule Setup",
+        "Main Benefit"
       ],
       "rows": [
         [
-          "Fixed %",
-          "Beginners",
-          "Moderate"
+          "Sector Cap",
+          "Max 20-25% Capital",
+          "Avoid Systemic Risk"
         ],
         [
-          "ATR Based",
-          "Swing Traders",
-          "Low"
+          "1% Risk Rule",
+          "Risk 1% per Trade",
+          "Prevent Big Losses"
         ],
         [
-          "Market Structure",
-          "Pro Traders",
-          "Very Low"
+          "ATR Sizing",
+          "Volatility Adjusted",
+          "Protection from Gaps"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Avoid <span class='highlight'>Liquidity Hunts</span>",
-    "text": "Round numbers (जैसे 25,000) पर Exact Stop Loss कभी न लगाएं। Institutional Algos वहां Liquidity hunt करते हैं!",
-    "image_query": "stock market analysis"
-  },
-  {
-    "type": "bg-image",
-    "title": "<span class='highlight'>Angel One</span> पर Smart Trading शुरू करें!",
-    "text": "GTT Orders और Lightning Fast Execution के साथ Disciplined Trading करें। आज ही Free Demat Account खोलें!",
-    "image_query": "financial freedom success",
+    "title": "Trade with Discipline on <span class='highlight'>Angel One</span>",
+    "text": "Advanced tools और Smart Risk Management के साथ अपने Trades Execute करें। Open Free Demat Account today!",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]

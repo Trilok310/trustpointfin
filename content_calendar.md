@@ -83,7 +83,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 72. For Long-term Wealth Creation: The Best Trading Psychology Setup for Midcap Nifty
 - [x] 73. The Ultimate Strategy: The Best Algorithmic Trading Setup for Tata Motors
 - [x] 74. Stop Loss Placement Explained: Top Secrets for Trading Index ETFs
-- [ ] 75. To Avoid Massive Drawdowns: The Best Position Sizing Rules Setup for Indian Banking Sector
+- [x] 75. To Avoid Massive Drawdowns: The Best Position Sizing Rules Setup for Indian Banking Sector
 - [ ] 76. The Role of The CAN SLIM Method in Multi-bagger Stocks during Pre-Election Rallies
 - [ ] 77. What Every Investor Needs to Know: The Best Risk Management Setup for HDFC Bank
 - [ ] 78. Blue-chip Stocks Analysis: Advanced Tactics to Emotional Discipline
