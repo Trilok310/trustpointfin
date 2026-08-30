@@ -1,33 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Midcap Nifty में <span class='highlight'>Trading Psychology</span> का Coded Formula!",
-    "text": "Long-term Wealth create करने के लिए Mindset और Discipline ही सब कुछ है।",
-    "image_query": "stock market psychological discipline"
+    "title": "Tata Motors में &lt;span class='highlight'&gt;Algorithmic Trading&lt;/span&gt; कैसे करें?",
+    "text": "Manual trading के emotions और errors छोड़ कर systematically Profit earn करो!",
+    "image_query": "trading charts analytics"
   },
   {
     "type": "bg-analytical",
-    "title": "CAGR vs Volatility Check",
-    "text": "Midcaps में Returns ज्यादा होते हैं, पर Drawdowns भी deep होते हैं!",
+    "title": "Strategy Backtest Performance",
+    "text": "Tata Motors Intraday Setup: Manual execution vs Automated Algo rules.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Nifty 50",
-        "Midcap 150"
+        "Win Rate (%)",
+        "Risk:Reward Ratio",
+        "Max Drawdown (%)"
       ],
       "datasets": [
         {
-          "label": "10-Yr CAGR (%)",
+          "label": "Manual Trading",
           "data": [
-            14.2,
-            24.8
+            42,
+            1.2,
+            18
           ]
         },
         {
-          "label": "Max Drawdown (%)",
+          "label": "Algo Setup",
           "data": [
-            -18,
-            -32
+            68,
+            2.4,
+            7
           ]
         }
       ]
@@ -35,44 +38,44 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Pro Investor Setup",
-    "text": "Midcap Volatility को handle करने का सही तरीका सीखें:",
+    "title": "Manual Trading vs Algo Execution",
+    "text": "Tata Motors momentum breakouts को capture करने का सही तरीका।",
     "table": {
       "headers": [
-        "Scenario",
-        "Retail Mindset",
-        "Pro Investor"
+        "Factor",
+        "Manual Trading",
+        "Algo Trading"
       ],
       "rows": [
         [
-          "20% Market Dip",
-          "Panic Sell",
-          "Rule-based Buying"
+          "Execution Speed",
+          "2-5 Seconds",
+          "< 100ms"
         ],
         [
-          "Market Focus",
-          "Daily Profit/Loss",
-          "5-Year Compounding"
+          "Emotional Bias",
+          "High (FOMO)",
+          "Zero"
         ],
         [
-          "Execution",
-          "Emotional FOMO",
-          "Disciplined System"
+          "Slippage Risk",
+          "High",
+          "Minimal"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "3 Gold Rules for <span class='highlight'>Midcap Success</span>",
-    "text": "1. Position Sizing strictly follow करें।\n2. Short-term Price Volatility से न डरें।\n3. Pre-defined System-based Trading ही अपनाएं।",
-    "image_query": "trader financial growth charts"
+    "title": "&lt;span class='highlight'&gt;Winning Strategy&lt;/span&gt; Rules",
+    "text": "20/50 EMA Crossover + VWAP Volume Filter + RSI (55-70) + ATR Stop-loss set करो।",
+    "image_query": "financial stock market chart"
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
-    "text": "Angel One पर free Demat Account खोलें और Zero Delivery Brokerage के साथ अपनी Investing Journey शुरू करें!",
-    "image_query": "financial freedom success",
+    "title": "Angel One SmartAPI के साथ &lt;span class='highlight'&gt;Algo Start करें&lt;/span&gt;",
+    "text": "Free Demat account खोलने और zero cost SmartAPI के साथ Tata Motors में Algorithmic Trading start करें!",
+    "image_query": "success growth trading",
     "is_cta": true
   }
 ]
