@@ -1,36 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Tata Motors में &lt;span class='highlight'&gt;Algorithmic Trading&lt;/span&gt; कैसे करें?",
-    "text": "Manual trading के emotions और errors छोड़ कर systematically Profit earn करो!",
-    "image_query": "trading charts analytics"
+    "title": "Index ETF Trading में <span class='highlight'>Stop Loss</span> कैसे लगाएं?",
+    "text": "Capital protect करने और Maximum Profit बनाने के Top Secrets।",
+    "image_query": "trading charts screen"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Backtest Performance",
-    "text": "Tata Motors Intraday Setup: Manual execution vs Automated Algo rules.",
+    "title": "Stop Loss Vs No Stop Loss",
+    "text": "Market Volatility में Account Survival Rate का Reality Check.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Win Rate (%)",
-        "Risk:Reward Ratio",
-        "Max Drawdown (%)"
+        "Year 1",
+        "Year 2",
+        "Year 3"
       ],
       "datasets": [
         {
-          "label": "Manual Trading",
+          "label": "Without SL",
           "data": [
-            42,
-            1.2,
-            18
+            45,
+            20,
+            8
           ]
         },
         {
-          "label": "Algo Setup",
+          "label": "With SL Strategy",
           "data": [
-            68,
-            2.4,
-            7
+            85,
+            78,
+            82
           ]
         }
       ]
@@ -38,44 +38,44 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Manual Trading vs Algo Execution",
-    "text": "Tata Motors momentum breakouts को capture करने का सही तरीका।",
+    "title": "Stop Loss Strategy Matrix",
+    "text": "अपने Trading Style के हिसाब से सही Method चुनें।",
     "table": {
       "headers": [
-        "Factor",
-        "Manual Trading",
-        "Algo Trading"
+        "Method",
+        "Best For",
+        "Risk Level"
       ],
       "rows": [
         [
-          "Execution Speed",
-          "2-5 Seconds",
-          "< 100ms"
+          "Fixed %",
+          "Beginners",
+          "Moderate"
         ],
         [
-          "Emotional Bias",
-          "High (FOMO)",
-          "Zero"
+          "ATR Based",
+          "Swing Traders",
+          "Low"
         ],
         [
-          "Slippage Risk",
-          "High",
-          "Minimal"
+          "Market Structure",
+          "Pro Traders",
+          "Very Low"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "&lt;span class='highlight'&gt;Winning Strategy&lt;/span&gt; Rules",
-    "text": "20/50 EMA Crossover + VWAP Volume Filter + RSI (55-70) + ATR Stop-loss set करो।",
-    "image_query": "financial stock market chart"
+    "title": "Avoid <span class='highlight'>Liquidity Hunts</span>",
+    "text": "Round numbers (जैसे 25,000) पर Exact Stop Loss कभी न लगाएं। Institutional Algos वहां Liquidity hunt करते हैं!",
+    "image_query": "stock market analysis"
   },
   {
     "type": "bg-image",
-    "title": "Angel One SmartAPI के साथ &lt;span class='highlight'&gt;Algo Start करें&lt;/span&gt;",
-    "text": "Free Demat account खोलने और zero cost SmartAPI के साथ Tata Motors में Algorithmic Trading start करें!",
-    "image_query": "success growth trading",
+    "title": "<span class='highlight'>Angel One</span> पर Smart Trading शुरू करें!",
+    "text": "GTT Orders और Lightning Fast Execution के साथ Disciplined Trading करें। आज ही Free Demat Account खोलें!",
+    "image_query": "financial freedom success",
     "is_cta": true
   }
 ]
