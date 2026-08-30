@@ -1,83 +1,78 @@
 [
   {
     "type": "bg-image",
-    "title": "Value Investing + Index ETFs = &lt;span class='highlight'&gt;Smart Wealth!&lt;/span&gt;",
-    "text": "क्या आप भी High Valuations पर blind SIP कर रहे हैं? जानिए Value Principles से Returns multiply करने का सही तरीका।",
-    "image_query": "stock market growth technology"
+    "title": "Midcap Nifty में <span class='highlight'>Trading Psychology</span> का Coded Formula!",
+    "text": "Long-term Wealth create करने के लिए Mindset और Discipline ही सब कुछ है।",
+    "image_query": "stock market psychological discipline"
   },
   {
     "type": "bg-analytical",
-    "title": "Vanilla Index vs Value Factor ETF",
-    "text": "दोनों Strategies का side-by-side Comparison",
-    "table": {
-      "headers": [
-        "Metric",
-        "Standard Nifty 50 ETF",
-        "Value Factor ETF (NV20)"
-      ],
-      "rows": [
-        [
-          "Stock Selection",
-          "Market Cap Weightage",
-          "P/E, P/B & ROE Filters"
-        ],
-        [
-          "Downside Risk",
-          "Moderate to High",
-          "Lower (Margin of Safety)"
-        ],
-        [
-          "Expense Ratio",
-          "Very Low (~0.05%)",
-          "Low (~0.15%)"
-        ],
-        [
-          "Long-term Alpha",
-          "Benchmark Average",
-          "Historically Higher"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Valuation Dip vs Regular SIP Returns",
-    "text": "Market P/E drop होने पर Extra Investment करने से Portfolio Value पर असर",
+    "title": "CAGR vs Volatility Check",
+    "text": "Midcaps में Returns ज्यादा होते हैं, पर Drawdowns भी deep होते हैं!",
     "chart": {
       "type": "bar",
       "labels": [
-        "Year 1",
-        "Year 3",
-        "Year 5",
-        "Year 10"
+        "Nifty 50",
+        "Midcap 150"
       ],
       "datasets": [
         {
-          "label": "Regular SIP",
+          "label": "10-Yr CAGR (%)",
           "data": [
-            10,
-            35,
-            75,
-            180
+            14.2,
+            24.8
           ]
         },
         {
-          "label": "Value-Triggered SIP",
+          "label": "Max Drawdown (%)",
           "data": [
-            12,
-            45,
-            95,
-            240
+            -18,
+            -32
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Retail vs Pro Investor Setup",
+    "text": "Midcap Volatility को handle करने का सही तरीका सीखें:",
+    "table": {
+      "headers": [
+        "Scenario",
+        "Retail Mindset",
+        "Pro Investor"
+      ],
+      "rows": [
+        [
+          "20% Market Dip",
+          "Panic Sell",
+          "Rule-based Buying"
+        ],
+        [
+          "Market Focus",
+          "Daily Profit/Loss",
+          "5-Year Compounding"
+        ],
+        [
+          "Execution",
+          "Emotional FOMO",
+          "Disciplined System"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Start Smart ETF Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Advanced Analytics और Zero Delivery Brokerage के साथ आज ही अपना Demat Account open करें।",
-    "image_query": "mobile finance application investment",
+    "title": "3 Gold Rules for <span class='highlight'>Midcap Success</span>",
+    "text": "1. Position Sizing strictly follow करें।\n2. Short-term Price Volatility से न डरें।\n3. Pre-defined System-based Trading ही अपनाएं।",
+    "image_query": "trader financial growth charts"
+  },
+  {
+    "type": "bg-image",
+    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
+    "text": "Angel One पर free Demat Account खोलें और Zero Delivery Brokerage के साथ अपनी Investing Journey शुरू करें!",
+    "image_query": "financial freedom success",
     "is_cta": true
   }
 ]
