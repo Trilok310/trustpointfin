@@ -1,75 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "Blue-chip Stocks में &lt;span class='highlight'&gt;Emotional Discipline&lt;/span&gt; कैसे लाएं?",
-    "text": "Market Volatility के दौरान Discipline ही आपके Long-term Wealth का असली Engine है।",
+    "title": "SBI में <span class='highlight'>Bollinger Bands</span> Breakout Strategy!",
+    "text": "Market correction के दौरान SBI stock में massive Profit कैसे बनाएं? आइए समझते हैं simple step-by-step strategy.",
     "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Pro Investor Behavior",
-    "text": "Market Correction के समय Emotional bias का Result:",
+    "title": "Key Indicators for SBI Entry",
+    "text": "False breakouts से बचने के लिए इन Rules को follow करें:",
+    "table": {
+      "headers": [
+        "Factor",
+        "Amateur Trader",
+        "Pro Strategy"
+      ],
+      "rows": [
+        [
+          "Band Touch",
+          "Buy/Sell blindly",
+          "Wait for Volatility Expansion"
+        ],
+        [
+          "Volume Filter",
+          "Ignore Volume",
+          "Confirm >1.5x 20-day Avg Volume"
+        ],
+        [
+          "RSI Divergence",
+          "Not checked",
+          "Confirm Bullish Divergence > 40"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Historical Breakout Success Rate",
+    "text": "SBI stock correction के बाद Return Statistics:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Panic Sell",
-        "Hold",
-        "Buy Dip"
+        "Pullback 1",
+        "Pullback 2",
+        "Pullback 3"
       ],
       "datasets": [
         {
-          "label": "Retail",
+          "label": "Target Met %",
           "data": [
-            65,
-            25,
-            10
+            14,
+            18,
+            12
           ]
         },
         {
-          "label": "Pro Investors",
+          "label": "Stop Loss Hit %",
           "data": [
-            5,
-            35,
-            60
+            3,
+            4,
+            2
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Amateur vs Disciplined Trader",
-    "text": "Blue-chip Equity Strategy में असली फर्क समझें",
-    "table": {
-      "headers": [
-        "Aspect",
-        "Emotional Trader",
-        "Disciplined Investor"
-      ],
-      "rows": [
-        [
-          "Market Drop",
-          "Panic Selling",
-          "Systematic Buying"
-        ],
-        [
-          "Target",
-          "Daily Profit",
-          "Long-term Compounding"
-        ],
-        [
-          "Decision",
-          "Social Media Hype",
-          "Fundamental Analysis"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Smart &amp; Disciplined &lt;span class='highlight'&gt;Investing&lt;/span&gt; शुरू करें",
-    "text": "Angel One के साथ Demat Account खोलें और Zero Brokerage on Delivery Trades का लाभ उठाएं!",
-    "image_query": "financial freedom",
+    "title": "Start Trading with <span class='highlight'>Angel One</span> Today!",
+    "text": "Zero brokerage on Delivery Trades और Advanced Charting Tools के साथ अपना Demat Account open करें!",
+    "image_query": "trading financial growth",
     "is_cta": true
   }
 ]
