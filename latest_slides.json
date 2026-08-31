@@ -1,65 +1,65 @@
 [
   {
     "type": "bg-image",
-    "title": "Pre-Election Rally में <span class='highlight'>Multi-bagger Stocks</span> कैसे खोजें?",
-    "text": "CAN SLIM Strategy से Market के Master बनें!",
-    "image_query": "stock market trading chart"
+    "title": "HDFC Bank में <span class='highlight'>Risk Management</span> का Perfect Setup!",
+    "text": "Retail Investors के लिए 2026 की सबसे powerful Portfolio Strategy.",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "CAN SLIM Formula क्या है?",
-    "text": "High Growth Equities को Identify करने का System:",
+    "title": "Swing vs Long-Term <span class='highlight'>Risk Rules</span>",
+    "text": "HDFC Bank में Capital Protection के सही तरीक़े",
     "table": {
       "headers": [
-        "Letter",
-        "Meaning",
-        "Focus Point"
+        "Parameters",
+        "Swing Trader",
+        "Long-Term Investor"
       ],
       "rows": [
         [
-          "C & A",
-          "Current & Annual Earnings",
-          "25%+ Profit Growth"
+          "Max Allocation",
+          "5-7% of Capital",
+          "10-15% of Portfolio"
         ],
         [
-          "N & S",
-          "New Highs & Supply",
-          "Breakout & High Volume"
+          "Stop Loss",
+          "4-6% Trailing",
+          "200-Week EMA Breach"
         ],
         [
-          "L, I, M",
-          "Leader, Institutional, Market",
-          "FII Support & Uptrend"
+          "Hedging",
+          "Bank Nifty Put",
+          "Cash Hold (10-15%)"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Pre-Election Returns Comparison",
-    "text": "Nifty Index vs CAN SLIM Multi-baggers",
+    "title": "<span class='highlight'>Risk Management</span> vs No Strategy",
+    "text": "3-Year Returns Comparison on Portfolio Equity",
     "chart": {
       "type": "bar",
       "labels": [
-        "Cycle 1",
-        "Cycle 2",
-        "Cycle 3"
+        "Year 1",
+        "Year 2",
+        "Year 3"
       ],
       "datasets": [
         {
-          "label": "Nifty Index",
+          "label": "Disciplined Risk",
           "data": [
+            14,
             18,
-            15,
             22
           ]
         },
         {
-          "label": "CAN SLIM Stocks",
+          "label": "No Stop Loss",
           "data": [
-            120,
-            95,
-            150
+            -10,
+            5,
+            -12
           ]
         }
       ]
@@ -67,9 +67,9 @@
   },
   {
     "type": "bg-image",
-    "title": "आज ही अपना <span class='highlight'>Demat Account</span> खोलें!",
-    "text": "Angel One के Powerful Tools के साथ Smart Investing स्टार्ट करें और Delivery Trades पर Zero Brokerage का फायदा उठाएं।",
-    "image_query": "financial success growth",
+    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
+    "text": "Angel One पर Demat Account खोलें और Smart Risk Management Tools का फ़ायदा उठाएं।",
+    "image_query": "financial freedom success",
     "is_cta": true
   }
 ]
