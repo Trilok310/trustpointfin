@@ -86,7 +86,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 75. To Avoid Massive Drawdowns: The Best Position Sizing Rules Setup for Indian Banking Sector
 - [x] 76. The Role of The CAN SLIM Method in Multi-bagger Stocks during Pre-Election Rallies
 - [x] 77. What Every Investor Needs to Know: The Best Risk Management Setup for HDFC Bank
-- [ ] 78. Blue-chip Stocks Analysis: Advanced Tactics to Emotional Discipline
+- [x] 78. Blue-chip Stocks Analysis: Advanced Tactics to Emotional Discipline
 - [ ] 79. The Role of Bollinger Bands Breakouts in SBI during Market Corrections
 - [ ] 80. How to use Stop Loss Placement amidst Global Market Sell-offs to Trade BankNifty
 - [ ] 81. For Working Professionals: Mastering Sector Rotation for Small-cap Stocks

@@ -1,75 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "HDFC Bank में <span class='highlight'>Risk Management</span> का Perfect Setup!",
-    "text": "Retail Investors के लिए 2026 की सबसे powerful Portfolio Strategy.",
-    "image_query": "stock market trading charts"
+    "title": "Blue-chip Stocks में &lt;span class='highlight'&gt;Emotional Discipline&lt;/span&gt; कैसे लाएं?",
+    "text": "Market Volatility के दौरान Discipline ही आपके Long-term Wealth का असली Engine है।",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Swing vs Long-Term <span class='highlight'>Risk Rules</span>",
-    "text": "HDFC Bank में Capital Protection के सही तरीक़े",
-    "table": {
-      "headers": [
-        "Parameters",
-        "Swing Trader",
-        "Long-Term Investor"
-      ],
-      "rows": [
-        [
-          "Max Allocation",
-          "5-7% of Capital",
-          "10-15% of Portfolio"
-        ],
-        [
-          "Stop Loss",
-          "4-6% Trailing",
-          "200-Week EMA Breach"
-        ],
-        [
-          "Hedging",
-          "Bank Nifty Put",
-          "Cash Hold (10-15%)"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "<span class='highlight'>Risk Management</span> vs No Strategy",
-    "text": "3-Year Returns Comparison on Portfolio Equity",
+    "title": "Retail vs Pro Investor Behavior",
+    "text": "Market Correction के समय Emotional bias का Result:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Year 1",
-        "Year 2",
-        "Year 3"
+        "Panic Sell",
+        "Hold",
+        "Buy Dip"
       ],
       "datasets": [
         {
-          "label": "Disciplined Risk",
+          "label": "Retail",
           "data": [
-            14,
-            18,
-            22
+            65,
+            25,
+            10
           ]
         },
         {
-          "label": "No Stop Loss",
+          "label": "Pro Investors",
           "data": [
-            -10,
             5,
-            -12
+            35,
+            60
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Amateur vs Disciplined Trader",
+    "text": "Blue-chip Equity Strategy में असली फर्क समझें",
+    "table": {
+      "headers": [
+        "Aspect",
+        "Emotional Trader",
+        "Disciplined Investor"
+      ],
+      "rows": [
+        [
+          "Market Drop",
+          "Panic Selling",
+          "Systematic Buying"
+        ],
+        [
+          "Target",
+          "Daily Profit",
+          "Long-term Compounding"
+        ],
+        [
+          "Decision",
+          "Social Media Hype",
+          "Fundamental Analysis"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
-    "text": "Angel One पर Demat Account खोलें और Smart Risk Management Tools का फ़ायदा उठाएं।",
-    "image_query": "financial freedom success",
+    "title": "Smart &amp; Disciplined &lt;span class='highlight'&gt;Investing&lt;/span&gt; शुरू करें",
+    "text": "Angel One के साथ Demat Account खोलें और Zero Brokerage on Delivery Trades का लाभ उठाएं!",
+    "image_query": "financial freedom",
     "is_cta": true
   }
 ]
