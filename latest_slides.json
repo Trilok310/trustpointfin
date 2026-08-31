@@ -1,74 +1,74 @@
 [
   {
     "type": "bg-image",
-    "title": "Bank Portfolio में <span class='highlight'>Massive Drawdown</span> से कैसे बचें?",
-    "text": "Indian Banking Sector में High Profits के साथ High Volatility आती है। जानिए Perfect Position Sizing Rules!",
-    "image_query": "stock market trading"
+    "title": "Pre-Election Rally में <span class='highlight'>Multi-bagger Stocks</span> कैसे खोजें?",
+    "text": "CAN SLIM Strategy से Market के Master बनें!",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Pro <span class='highlight'>Capital Exposure</span>",
-    "text": "Retail traders Banking sector में Over-concentrate करके Portfolio Risk बढ़ा लेते हैं।",
+    "title": "CAN SLIM Formula क्या है?",
+    "text": "High Growth Equities को Identify करने का System:",
+    "table": {
+      "headers": [
+        "Letter",
+        "Meaning",
+        "Focus Point"
+      ],
+      "rows": [
+        [
+          "C & A",
+          "Current & Annual Earnings",
+          "25%+ Profit Growth"
+        ],
+        [
+          "N & S",
+          "New Highs & Supply",
+          "Breakout & High Volume"
+        ],
+        [
+          "L, I, M",
+          "Leader, Institutional, Market",
+          "FII Support & Uptrend"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Pre-Election Returns Comparison",
+    "text": "Nifty Index vs CAN SLIM Multi-baggers",
     "chart": {
       "type": "bar",
       "labels": [
-        "Max Sector Exposure",
-        "Risk Per Trade",
-        "Max Portfolio Drawdown"
+        "Cycle 1",
+        "Cycle 2",
+        "Cycle 3"
       ],
       "datasets": [
         {
-          "label": "Retail Trader",
+          "label": "Nifty Index",
           "data": [
-            50,
-            5,
-            35
+            18,
+            15,
+            22
           ]
         },
         {
-          "label": "Pro Trader",
+          "label": "CAN SLIM Stocks",
           "data": [
-            20,
-            1,
-            10
+            120,
+            95,
+            150
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "3 Golden Rules for <span class='highlight'>Risk Management</span>",
-    "text": "अपने Capital को Save करने के लिए इन Rules को Follow करें।",
-    "table": {
-      "headers": [
-        "Strategy",
-        "Rule Setup",
-        "Main Benefit"
-      ],
-      "rows": [
-        [
-          "Sector Cap",
-          "Max 20-25% Capital",
-          "Avoid Systemic Risk"
-        ],
-        [
-          "1% Risk Rule",
-          "Risk 1% per Trade",
-          "Prevent Big Losses"
-        ],
-        [
-          "ATR Sizing",
-          "Volatility Adjusted",
-          "Protection from Gaps"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Trade with Discipline on <span class='highlight'>Angel One</span>",
-    "text": "Advanced tools और Smart Risk Management के साथ अपने Trades Execute करें। Open Free Demat Account today!",
+    "title": "आज ही अपना <span class='highlight'>Demat Account</span> खोलें!",
+    "text": "Angel One के Powerful Tools के साथ Smart Investing स्टार्ट करें और Delivery Trades पर Zero Brokerage का फायदा उठाएं।",
     "image_query": "financial success growth",
     "is_cta": true
   }
