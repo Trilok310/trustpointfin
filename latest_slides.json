@@ -1,33 +1,39 @@
 [
   {
     "type": "bg-image",
-    "title": "Global Market Sell-off में <span class='highlight'>BankNifty</span> Trade कैसे करें?",
-    "text": "गलत Stop Loss placement से Capital wipeout हो सकता है। सीखें Smart risk management!",
-    "image_query": "stock market chart volatility"
+    "title": "Small-cap <span class='highlight'>Sector Rotation</span> से Profit कैसे कमाएं?",
+    "text": "Working Professionals के लिए 2026 की सबसे powerful strategy जो job के साथ manage हो सकती है।",
+    "image_query": "wealth accumulation"
   },
   {
     "type": "bg-analytical",
-    "title": "Fixed vs Dynamic Stop Loss",
-    "text": "High VIX Market में Fixed Points का Stop Loss बार-बार Hit होता है।",
+    "title": "<span class='highlight'>Sector Rotation</span> का Magic!",
+    "text": "देखिए कैसे सही time पर Sector shift करने से returns multiply होते हैं vs regular index tracking.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Normal Market",
-        "Global Sell-off"
+        "Auto Sector",
+        "Defense Sector",
+        "Power Infrastructure",
+        "IT Sector"
       ],
       "datasets": [
         {
-          "label": "Fixed Stop Loss Stopouts (%)",
+          "label": "Index Return",
           "data": [
-            22,
-            68
+            12,
+            18,
+            15,
+            8
           ]
         },
         {
-          "label": "ATR Dynamic Stopouts (%)",
+          "label": "Rotation Profit",
           "data": [
-            14,
-            21
+            35,
+            62,
+            48,
+            22
           ]
         }
       ]
@@ -35,44 +41,44 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Smart Risk Matrix",
-    "text": "Global Volatility में इन Execution Rules को फॉलो करें:",
+    "title": "Amateur vs Pro Investor",
+    "text": "Small-cap stocks में trade करने का सही difference समझें:",
     "table": {
       "headers": [
-        "Factor",
-        "Amateur Trader",
-        "Disciplined Trader"
+        "Strategy",
+        "Amateur Approach",
+        "Pro Strategy"
       ],
       "rows": [
         [
-          "Position Size",
-          "100% Lot Size",
-          "50% Reduced Lots"
+          "Buying",
+          "FOMO में peak पर Portfolio block करना",
+          "Early Sector Breakout पर Buy करना"
         ],
         [
-          "Stop Loss Type",
-          "Fixed Points",
-          "ATR (1.5x) Volatility Buffer"
+          "Risk",
+          "बिना Stop Loss trade करना",
+          "Strict GTT Stop Loss का use करना"
         ],
         [
-          "Overnight Position",
-          "Naked Futures/Options",
-          "Hedged Option Spreads"
+          "Exit",
+          "Loss होने पर hold रखना",
+          "Target hit होते ही disciplined Exit"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trailing <span class='highlight'>Stop Loss</span> का सही Use",
-    "text": "जैसे ही Market आपके Target की तरफ बढ़े, Stop Loss को Lock-in Profits के लिए Trail करें।",
-    "image_query": "financial analytics trading"
+    "title": "क्या आप Ready हैं?",
+    "text": "बिना daily screen tracking के Automation और GTT orders का use करके smart way में Invest करें।",
+    "image_query": "laptop screen trading charts"
   },
   {
     "type": "bg-image",
-    "title": "Angel One के साथ <span class='highlight'>Smart Trading</span> शुरू करें!",
-    "text": "Fast execution, Advanced Charting और GTT Orders के साथ आज ही अपना Demat Account खोलें।",
-    "image_query": "trader winning business",
+    "title": "<span class='highlight'>Angel One</span> के साथ शुरुआत करें!",
+    "text": "आज ही अपना Demat Account खोलें और market rotation का maximum advantage उठाएं।",
+    "image_query": "indian stock market trading on phone",
     "is_cta": true
   }
 ]
