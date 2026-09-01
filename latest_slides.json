@@ -1,39 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "Small-cap <span class='highlight'>Sector Rotation</span> से Profit कैसे कमाएं?",
-    "text": "Working Professionals के लिए 2026 की सबसे powerful strategy जो job के साथ manage हो सकती है।",
-    "image_query": "wealth accumulation"
+    "title": "Market Crash में &lt;span class='highlight'&gt;Panic Sell&lt;/span&gt; क्यों करते हैं?",
+    "text": "Index ETF में Trading Psychology का सही use करके Market Corrections में Wealth कैसे बनाएं?",
+    "image_query": "stock market crash"
   },
   {
     "type": "bg-analytical",
-    "title": "<span class='highlight'>Sector Rotation</span> का Magic!",
-    "text": "देखिए कैसे सही time पर Sector shift करने से returns multiply होते हैं vs regular index tracking.",
+    "title": "Panic Selling vs SIP Retention",
+    "text": "Corrections में Nifty 50 Index ETF hold करने वालों का 5-Yr CAGR Return comparison.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Auto Sector",
-        "Defense Sector",
-        "Power Infrastructure",
-        "IT Sector"
+        "2020 Crash",
+        "2022 Dip",
+        "2024 Correction"
       ],
       "datasets": [
         {
-          "label": "Index Return",
+          "label": "Panic Seller CAGR %",
           "data": [
-            12,
-            18,
-            15,
-            8
+            4.2,
+            6.1,
+            5.8
           ]
         },
         {
-          "label": "Rotation Profit",
+          "label": "Disciplined SIP CAGR %",
           "data": [
-            35,
-            62,
-            48,
-            22
+            16.8,
+            14.2,
+            13.9
           ]
         }
       ]
@@ -41,44 +38,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Amateur vs Pro Investor",
-    "text": "Small-cap stocks में trade करने का सही difference समझें:",
+    "title": "Psychology Comparison Matrix",
+    "text": "Amateur retail vs Disciplined pro investors during Market Corrections",
     "table": {
       "headers": [
-        "Strategy",
-        "Amateur Approach",
-        "Pro Strategy"
+        "Behavior",
+        "Panic Investor",
+        "Disciplined Investor"
       ],
       "rows": [
         [
-          "Buying",
-          "FOMO में peak पर Portfolio block करना",
-          "Early Sector Breakout पर Buy करना"
+          "Market Dip",
+          "SIP Stop & Sell",
+          "SIP Top-Up & Buy"
         ],
         [
-          "Risk",
-          "बिना Stop Loss trade करना",
-          "Strict GTT Stop Loss का use करना"
+          "Focus",
+          "Daily Price Volatility",
+          "Long-term Compounding"
         ],
         [
-          "Exit",
-          "Loss होने पर hold रखना",
-          "Target hit होते ही disciplined Exit"
+          "Emotion",
+          "Fear & Regret",
+          "Opportunity & Growth"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "क्या आप Ready हैं?",
-    "text": "बिना daily screen tracking के Automation और GTT orders का use करके smart way में Invest करें।",
-    "image_query": "laptop screen trading charts"
-  },
-  {
-    "type": "bg-image",
-    "title": "<span class='highlight'>Angel One</span> के साथ शुरुआत करें!",
-    "text": "आज ही अपना Demat Account खोलें और market rotation का maximum advantage उठाएं।",
-    "image_query": "indian stock market trading on phone",
+    "title": "Ready to trade with &lt;span class='highlight'&gt;Discipline?&lt;/span&gt;",
+    "text": "Angel One के साथ free Demat Account खोलें और Zero Brokerage के साथ Index ETF SIP start करें!",
+    "image_query": "financial freedom",
     "is_cta": true
   }
 ]
