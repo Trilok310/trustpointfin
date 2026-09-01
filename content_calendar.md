@@ -88,7 +88,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 77. What Every Investor Needs to Know: The Best Risk Management Setup for HDFC Bank
 - [x] 78. Blue-chip Stocks Analysis: Advanced Tactics to Emotional Discipline
 - [x] 79. The Role of Bollinger Bands Breakouts in SBI during Market Corrections
-- [ ] 80. How to use Stop Loss Placement amidst Global Market Sell-offs to Trade BankNifty
+- [x] 80. How to use Stop Loss Placement amidst Global Market Sell-offs to Trade BankNifty
 - [ ] 81. For Working Professionals: Mastering Sector Rotation for Small-cap Stocks
 - [ ] 82. The Role of Trading Psychology in Index ETFs during Market Corrections
 - [ ] 83. RSI Divergence Explained: For Working Professionals for Trading Sensex

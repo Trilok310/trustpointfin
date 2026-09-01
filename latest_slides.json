@@ -1,75 +1,78 @@
 [
   {
     "type": "bg-image",
-    "title": "SBI में <span class='highlight'>Bollinger Bands</span> Breakout Strategy!",
-    "text": "Market correction के दौरान SBI stock में massive Profit कैसे बनाएं? आइए समझते हैं simple step-by-step strategy.",
-    "image_query": "stock market chart"
+    "title": "Global Market Sell-off में <span class='highlight'>BankNifty</span> Trade कैसे करें?",
+    "text": "गलत Stop Loss placement से Capital wipeout हो सकता है। सीखें Smart risk management!",
+    "image_query": "stock market chart volatility"
   },
   {
     "type": "bg-analytical",
-    "title": "Key Indicators for SBI Entry",
-    "text": "False breakouts से बचने के लिए इन Rules को follow करें:",
-    "table": {
-      "headers": [
-        "Factor",
-        "Amateur Trader",
-        "Pro Strategy"
-      ],
-      "rows": [
-        [
-          "Band Touch",
-          "Buy/Sell blindly",
-          "Wait for Volatility Expansion"
-        ],
-        [
-          "Volume Filter",
-          "Ignore Volume",
-          "Confirm >1.5x 20-day Avg Volume"
-        ],
-        [
-          "RSI Divergence",
-          "Not checked",
-          "Confirm Bullish Divergence > 40"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Historical Breakout Success Rate",
-    "text": "SBI stock correction के बाद Return Statistics:",
+    "title": "Fixed vs Dynamic Stop Loss",
+    "text": "High VIX Market में Fixed Points का Stop Loss बार-बार Hit होता है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Pullback 1",
-        "Pullback 2",
-        "Pullback 3"
+        "Normal Market",
+        "Global Sell-off"
       ],
       "datasets": [
         {
-          "label": "Target Met %",
+          "label": "Fixed Stop Loss Stopouts (%)",
           "data": [
-            14,
-            18,
-            12
+            22,
+            68
           ]
         },
         {
-          "label": "Stop Loss Hit %",
+          "label": "ATR Dynamic Stopouts (%)",
           "data": [
-            3,
-            4,
-            2
+            14,
+            21
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Smart Risk Matrix",
+    "text": "Global Volatility में इन Execution Rules को फॉलो करें:",
+    "table": {
+      "headers": [
+        "Factor",
+        "Amateur Trader",
+        "Disciplined Trader"
+      ],
+      "rows": [
+        [
+          "Position Size",
+          "100% Lot Size",
+          "50% Reduced Lots"
+        ],
+        [
+          "Stop Loss Type",
+          "Fixed Points",
+          "ATR (1.5x) Volatility Buffer"
+        ],
+        [
+          "Overnight Position",
+          "Naked Futures/Options",
+          "Hedged Option Spreads"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Start Trading with <span class='highlight'>Angel One</span> Today!",
-    "text": "Zero brokerage on Delivery Trades और Advanced Charting Tools के साथ अपना Demat Account open करें!",
-    "image_query": "trading financial growth",
+    "title": "Trailing <span class='highlight'>Stop Loss</span> का सही Use",
+    "text": "जैसे ही Market आपके Target की तरफ बढ़े, Stop Loss को Lock-in Profits के लिए Trail करें।",
+    "image_query": "financial analytics trading"
+  },
+  {
+    "type": "bg-image",
+    "title": "Angel One के साथ <span class='highlight'>Smart Trading</span> शुरू करें!",
+    "text": "Fast execution, Advanced Charting और GTT Orders के साथ आज ही अपना Demat Account खोलें।",
+    "image_query": "trader winning business",
     "is_cta": true
   }
 ]
