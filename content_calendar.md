@@ -91,7 +91,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 80. How to use Stop Loss Placement amidst Global Market Sell-offs to Trade BankNifty
 - [x] 81. For Working Professionals: Mastering Sector Rotation for Small-cap Stocks
 - [x] 82. The Role of Trading Psychology in Index ETFs during Market Corrections
-- [ ] 83. RSI Divergence Explained: For Working Professionals for Trading Sensex
+- [x] 83. RSI Divergence Explained: For Working Professionals for Trading Sensex
 - [ ] 84. Why MACD Strategies is the Key to Indian Banking Sector during a Bear Market
 - [ ] 85. HDFC Bank Trading: How to Apply Covered Call Strategies around Budget Day
 - [ ] 86. Step-by-Step Blueprint: The Best Fibonacci Retracements Setup for Infosys

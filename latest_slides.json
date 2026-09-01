@@ -1,75 +1,85 @@
 [
   {
     "type": "bg-image",
-    "title": "Market Crash में &lt;span class='highlight'&gt;Panic Sell&lt;/span&gt; क्यों करते हैं?",
-    "text": "Index ETF में Trading Psychology का सही use करके Market Corrections में Wealth कैसे बनाएं?",
-    "image_query": "stock market crash"
+    "title": "Sensex में Trading करना है? Start with &lt;span class='highlight'&gt;RSI Divergence&lt;/span&gt;",
+    "text": "9-to-5 job के साथ Profit कमाने का सबसे smart तरीका।",
+    "image_query": "trading charts"
+  },
+  {
+    "type": "bg-image",
+    "title": "What is &lt;span class='highlight'&gt;RSI Divergence?&lt;/span&gt;",
+    "text": "जब Price और RSI Indicator अलग दिशा में move करते हैं, तो Trend Reversal का strong Signal मिलता है।",
+    "image_query": "finance analytics"
   },
   {
     "type": "bg-analytical",
-    "title": "Panic Selling vs SIP Retention",
-    "text": "Corrections में Nifty 50 Index ETF hold करने वालों का 5-Yr CAGR Return comparison.",
+    "title": "Divergence Types",
+    "text": "Market Trend change होने से पहले Entry और Exit plan करने का exact Rule:",
+    "table": {
+      "headers": [
+        "Type",
+        "Price Trend",
+        "RSI Trend",
+        "Trade Action"
+      ],
+      "rows": [
+        [
+          "Bullish",
+          "Lower Lows",
+          "Higher Lows",
+          "Buy / Long"
+        ],
+        [
+          "Bearish",
+          "Higher Highs",
+          "Lower Highs",
+          "Sell / Exit"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "&lt;span class='highlight'&gt;Timeframe&lt;/span&gt; Selection",
+    "text": "Working Professionals के लिए Daily charts best होते हैं ताकि Screen Time minimal रहे।",
     "chart": {
       "type": "bar",
       "labels": [
-        "2020 Crash",
-        "2022 Dip",
-        "2024 Correction"
+        "Intraday (5M)",
+        "Swing (4H)",
+        "Positional (1D)"
       ],
       "datasets": [
         {
-          "label": "Panic Seller CAGR %",
+          "label": "Screen Time (Hours)",
           "data": [
-            4.2,
-            6.1,
-            5.8
+            6,
+            1,
+            0.25
           ]
         },
         {
-          "label": "Disciplined SIP CAGR %",
+          "label": "Stress Level (1-10)",
           "data": [
-            16.8,
-            14.2,
-            13.9
+            9,
+            4,
+            2
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Psychology Comparison Matrix",
-    "text": "Amateur retail vs Disciplined pro investors during Market Corrections",
-    "table": {
-      "headers": [
-        "Behavior",
-        "Panic Investor",
-        "Disciplined Investor"
-      ],
-      "rows": [
-        [
-          "Market Dip",
-          "SIP Stop & Sell",
-          "SIP Top-Up & Buy"
-        ],
-        [
-          "Focus",
-          "Daily Price Volatility",
-          "Long-term Compounding"
-        ],
-        [
-          "Emotion",
-          "Fear & Regret",
-          "Opportunity & Growth"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "Automate with &lt;span class='highlight'&gt;GTT Orders&lt;/span&gt;",
+    "text": "Live Market देखने की ज़रूरत नहीं। Post-market charts analyze करें और GTT order set करें।",
+    "image_query": "businessman using mobile phone"
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade with &lt;span class='highlight'&gt;Discipline?&lt;/span&gt;",
-    "text": "Angel One के साथ free Demat Account खोलें और Zero Brokerage के साथ Index ETF SIP start करें!",
-    "image_query": "financial freedom",
+    "title": "Ready to trade on &lt;span class='highlight'&gt;Angel One?&lt;/span&gt;",
+    "text": "आज ही अपना Demat Account open करें और discipline के साथ smart Trading start करें।",
+    "image_query": "success stock market",
     "is_cta": true
   }
 ]
