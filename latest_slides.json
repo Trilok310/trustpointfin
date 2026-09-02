@@ -1,32 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "Infosys में <span class='highlight'>Trading</span> का Best Setup!",
-    "text": "अगर आप stock Market में accurate entry और exit points ढूंढना चाहते हैं, तो Fibonacci Retracements को use करें।",
-    "image_query": "stock market analysis"
+    "title": "Airtel में <span class='highlight'>Invest</span> करने का सही Formula!",
+    "text": "बिना Emotional Discipline के Market में Profit कमाना मुश्किल है। सीखें सही Strategy।",
+    "image_query": "trading psychology"
   },
   {
     "type": "bg-analytical",
-    "title": "61.8% Fibonacci Level की Power",
-    "text": "History गवाह है कि INFY stock अक्सर 61.8% level से strong Support लेकर high Profit की तरफ bounce करता है।",
+    "title": "Airtel ARPU (Average Revenue Per User) का दम",
+    "text": "जैसे-जैसे ARPU बढ़ेगा, वैसे ही Compounding का जादू दिखेगा। Panic में Sell करने से बचें।",
     "chart": {
       "type": "line",
       "labels": [
-        "Swing Low",
-        "38.2% Retrace",
-        "50% Retrace",
-        "61.8% Bounce",
-        "New High"
+        "FY24",
+        "FY25",
+        "FY26 (Est)",
+        "FY27 (Proj)"
       ],
       "datasets": [
         {
-          "label": "INFY Price Trend",
+          "label": "ARPU (INR)",
           "data": [
-            1400,
-            1550,
-            1500,
-            1480,
-            1750
+            209,
+            233,
+            265,
+            300
           ]
         }
       ]
@@ -34,38 +32,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Amateur vs Pro Strategy",
-    "text": "FOMO में buy करने के बजाय, structural pullback का wait करें।",
+    "title": "Emotional vs Disciplined Investor",
+    "text": "Market Volatility के दौरान अपना Mindset बदलें।",
     "table": {
       "headers": [
-        "Strategy",
-        "Amateur Trader",
-        "Pro Fibonacci Trader"
+        "Situation",
+        "Emotional Trader",
+        "Disciplined Investor"
       ],
       "rows": [
         [
-          "Entry Point",
-          "At the absolute peak (FOMO)",
-          "At 50% - 61.8% Retracement"
+          "Market Correction",
+          "Panic-selling में Loss",
+          "Quality Equity Accumulation"
         ],
         [
-          "Risk Management",
-          "No Stop-Loss",
-          "Strict Stop-Loss below 78.6%"
+          "Tariff Hike News",
+          "FOMO Buying at Peak",
+          "Calculated Valuation Entry"
         ],
         [
-          "Trading Outcome",
-          "High Loss, low confidence",
-          "High-probability long-term Profit"
+          "Portfolio Drop",
+          "Stress & Anxiety",
+          "Trusting the Compounding Thesis"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Start your <span class='highlight'>Trading Journey</span> Today!",
-    "text": "Angel One के साथ open करें Free Demat Account और advanced charting features का use करके smart decisions लें।",
-    "image_query": "successful business trading",
+    "title": "बनाएं अपनी <span class='highlight'>Wealth</span>!",
+    "text": "Angel One के साथ आज ही Demat Account खोलें और अपनी Disciplined Investing यात्रा शुरू करें।",
+    "image_query": "happy young professional",
     "is_cta": true
   }
 ]

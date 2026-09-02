@@ -95,7 +95,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 84. Why MACD Strategies is the Key to Indian Banking Sector during a Bear Market
 - [x] 85. HDFC Bank Trading: How to Apply Covered Call Strategies around Budget Day
 - [x] 86. Step-by-Step Blueprint: The Best Fibonacci Retracements Setup for Infosys
-- [ ] 87. Combining Emotional Discipline with Bharti Airtel Analysis
+- [x] 87. Combining Emotional Discipline with Bharti Airtel Analysis
 - [ ] 88. Gold ETFs Analysis: Common Mistakes to Avoid to Risk Management
 - [ ] 89. The Role of Emotional Discipline in Indian Banking Sector based on FII/DII Data
 - [ ] 90. The Role of Straddles and Strangles in FinNifty in a Sideways Market
