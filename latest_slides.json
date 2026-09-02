@@ -1,69 +1,57 @@
 [
   {
     "type": "bg-image",
-    "title": "Sensex में Trading करना है? Start with &lt;span class='highlight'&gt;RSI Divergence&lt;/span&gt;",
-    "text": "9-to-5 job के साथ Profit कमाने का सबसे smart तरीका।",
-    "image_query": "trading charts"
-  },
-  {
-    "type": "bg-image",
-    "title": "What is &lt;span class='highlight'&gt;RSI Divergence?&lt;/span&gt;",
-    "text": "जब Price और RSI Indicator अलग दिशा में move करते हैं, तो Trend Reversal का strong Signal मिलता है।",
-    "image_query": "finance analytics"
+    "title": "Bear Market में <span class='highlight'>Bank Nifty</span> को कैसे Trade करें?",
+    "text": "MACD Strategy का सही use करके Trend Reversal और Entry Points पहचानें।",
+    "image_query": "stock market crash trading graph"
   },
   {
     "type": "bg-analytical",
-    "title": "Divergence Types",
-    "text": "Market Trend change होने से पहले Entry और Exit plan करने का exact Rule:",
+    "title": "Retail vs Smart Traders in Bear Market",
+    "text": "Bear Market में Systemic Rules का use ही आपका Capital protect करता है।",
     "table": {
       "headers": [
-        "Type",
-        "Price Trend",
-        "RSI Trend",
-        "Trade Action"
+        "Strategy Factor",
+        "Retail Traders",
+        "Smart Traders"
       ],
       "rows": [
         [
-          "Bullish",
-          "Lower Lows",
-          "Higher Lows",
-          "Buy / Long"
+          "Approach",
+          "Emotional Buying",
+          "MACD Indicator Rules"
         ],
         [
-          "Bearish",
-          "Higher Highs",
-          "Lower Highs",
-          "Sell / Exit"
+          "Bear Market Entry",
+          "Catching Falling Knife",
+          "Wait for Divergence"
+        ],
+        [
+          "Risk Control",
+          "No Stop Loss",
+          "Strict Cut Loss Rules"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "&lt;span class='highlight'&gt;Timeframe&lt;/span&gt; Selection",
-    "text": "Working Professionals के लिए Daily charts best होते हैं ताकि Screen Time minimal रहे।",
+    "title": "MACD Zero-Line Filter Success Rate",
+    "text": "Bank Nifty Trades में Fake Rallies से बचने के लिए Filtered Performance.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Intraday (5M)",
-        "Swing (4H)",
-        "Positional (1D)"
+        "Standard MACD",
+        "MACD + Zero Line",
+        "MACD + 200 EMA"
       ],
       "datasets": [
         {
-          "label": "Screen Time (Hours)",
+          "label": "Trade Accuracy %",
           "data": [
-            6,
-            1,
-            0.25
-          ]
-        },
-        {
-          "label": "Stress Level (1-10)",
-          "data": [
-            9,
-            4,
-            2
+            42,
+            68,
+            79
           ]
         }
       ]
@@ -71,15 +59,9 @@
   },
   {
     "type": "bg-image",
-    "title": "Automate with &lt;span class='highlight'&gt;GTT Orders&lt;/span&gt;",
-    "text": "Live Market देखने की ज़रूरत नहीं। Post-market charts analyze करें और GTT order set करें।",
-    "image_query": "businessman using mobile phone"
-  },
-  {
-    "type": "bg-image",
-    "title": "Ready to trade on &lt;span class='highlight'&gt;Angel One?&lt;/span&gt;",
-    "text": "आज ही अपना Demat Account open करें और discipline के साथ smart Trading start करें।",
-    "image_query": "success stock market",
+    "title": "Angel One पर शुरू करें <span class='highlight'>Smart Trading!</span>",
+    "text": "Advanced TradingView Charts और Low Brokerage के साथ अपने MACD Strategies Execute करें। Free Demat Account खोलें!",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]

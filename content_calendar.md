@@ -92,7 +92,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 81. For Working Professionals: Mastering Sector Rotation for Small-cap Stocks
 - [x] 82. The Role of Trading Psychology in Index ETFs during Market Corrections
 - [x] 83. RSI Divergence Explained: For Working Professionals for Trading Sensex
-- [ ] 84. Why MACD Strategies is the Key to Indian Banking Sector during a Bear Market
+- [x] 84. Why MACD Strategies is the Key to Indian Banking Sector during a Bear Market
 - [ ] 85. HDFC Bank Trading: How to Apply Covered Call Strategies around Budget Day
 - [ ] 86. Step-by-Step Blueprint: The Best Fibonacci Retracements Setup for Infosys
 - [ ] 87. Combining Emotional Discipline with Bharti Airtel Analysis
