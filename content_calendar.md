@@ -93,7 +93,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 82. The Role of Trading Psychology in Index ETFs during Market Corrections
 - [x] 83. RSI Divergence Explained: For Working Professionals for Trading Sensex
 - [x] 84. Why MACD Strategies is the Key to Indian Banking Sector during a Bear Market
-- [ ] 85. HDFC Bank Trading: How to Apply Covered Call Strategies around Budget Day
+- [x] 85. HDFC Bank Trading: How to Apply Covered Call Strategies around Budget Day
 - [ ] 86. Step-by-Step Blueprint: The Best Fibonacci Retracements Setup for Infosys
 - [ ] 87. Combining Emotional Discipline with Bharti Airtel Analysis
 - [ ] 88. Gold ETFs Analysis: Common Mistakes to Avoid to Risk Management

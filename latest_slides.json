@@ -1,57 +1,68 @@
 [
   {
     "type": "bg-image",
-    "title": "Bear Market में <span class='highlight'>Bank Nifty</span> को कैसे Trade करें?",
-    "text": "MACD Strategy का सही use करके Trend Reversal और Entry Points पहचानें।",
-    "image_query": "stock market crash trading graph"
+    "title": "Budget Day पर <span class='highlight'>HDFC Bank Trading</span> की बेस्ट Strategy!",
+    "text": "High IV के टाइम Extra Profit earn करने के लिए Covered Call Strategy का यूज़ कैसे करें?",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Smart Traders in Bear Market",
-    "text": "Bear Market में Systemic Rules का use ही आपका Capital protect करता है।",
+    "title": "Budget से पहले vs Budget के बाद",
+    "text": "Implied Volatility (IV) और Option Premiums का Behaviour:",
     "table": {
       "headers": [
-        "Strategy Factor",
-        "Retail Traders",
-        "Smart Traders"
+        "Metric",
+        "Pre-Budget",
+        "Post-Budget"
       ],
       "rows": [
         [
-          "Approach",
-          "Emotional Buying",
-          "MACD Indicator Rules"
+          "IV Level",
+          "High (28%-35%)",
+          "IV Crush (14%-16%)"
         ],
         [
-          "Bear Market Entry",
-          "Catching Falling Knife",
-          "Wait for Divergence"
+          "Call Premium",
+          "Inflated / High",
+          "Rapid Decay"
         ],
         [
-          "Risk Control",
-          "No Stop Loss",
-          "Strict Cut Loss Rules"
+          "Strategy Benefit",
+          "Sell at High Premium",
+          "Buy Back Cheap"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "MACD Zero-Line Filter Success Rate",
-    "text": "Bank Nifty Trades में Fake Rallies से बचने के लिए Filtered Performance.",
+    "title": "Covered Call का <span class='highlight'>Payout Profile</span>",
+    "text": "HDFC Bank Stock holding के साथ extra Income generate करें.",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "Standard MACD",
-        "MACD + Zero Line",
-        "MACD + 200 EMA"
+        "₹1600",
+        "₹1650",
+        "₹1700 (Strike)",
+        "₹1750"
       ],
       "datasets": [
         {
-          "label": "Trade Accuracy %",
+          "label": "Direct Equity",
           "data": [
-            42,
-            68,
-            79
+            -100,
+            -50,
+            0,
+            50
+          ]
+        },
+        {
+          "label": "Covered Call",
+          "data": [
+            -70,
+            -20,
+            30,
+            30
           ]
         }
       ]
@@ -59,9 +70,9 @@
   },
   {
     "type": "bg-image",
-    "title": "Angel One पर शुरू करें <span class='highlight'>Smart Trading!</span>",
-    "text": "Advanced TradingView Charts और Low Brokerage के साथ अपने MACD Strategies Execute करें। Free Demat Account खोलें!",
-    "image_query": "financial success growth",
+    "title": "Ready to trade with <span class='highlight'>Angel One?</span>",
+    "text": "Advanced Option Chain analytics और low Brokerage के साथ आज ही अपना Demat Account open करें!",
+    "image_query": "wealth financial growth",
     "is_cta": true
   }
 ]
