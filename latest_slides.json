@@ -1,78 +1,71 @@
 [
   {
     "type": "bg-image",
-    "title": "Budget Day पर <span class='highlight'>HDFC Bank Trading</span> की बेस्ट Strategy!",
-    "text": "High IV के टाइम Extra Profit earn करने के लिए Covered Call Strategy का यूज़ कैसे करें?",
-    "image_query": "stock market trading chart"
+    "title": "Infosys में <span class='highlight'>Trading</span> का Best Setup!",
+    "text": "अगर आप stock Market में accurate entry और exit points ढूंढना चाहते हैं, तो Fibonacci Retracements को use करें।",
+    "image_query": "stock market analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Budget से पहले vs Budget के बाद",
-    "text": "Implied Volatility (IV) और Option Premiums का Behaviour:",
-    "table": {
-      "headers": [
-        "Metric",
-        "Pre-Budget",
-        "Post-Budget"
-      ],
-      "rows": [
-        [
-          "IV Level",
-          "High (28%-35%)",
-          "IV Crush (14%-16%)"
-        ],
-        [
-          "Call Premium",
-          "Inflated / High",
-          "Rapid Decay"
-        ],
-        [
-          "Strategy Benefit",
-          "Sell at High Premium",
-          "Buy Back Cheap"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Covered Call का <span class='highlight'>Payout Profile</span>",
-    "text": "HDFC Bank Stock holding के साथ extra Income generate करें.",
+    "title": "61.8% Fibonacci Level की Power",
+    "text": "History गवाह है कि INFY stock अक्सर 61.8% level से strong Support लेकर high Profit की तरफ bounce करता है।",
     "chart": {
       "type": "line",
       "labels": [
-        "₹1600",
-        "₹1650",
-        "₹1700 (Strike)",
-        "₹1750"
+        "Swing Low",
+        "38.2% Retrace",
+        "50% Retrace",
+        "61.8% Bounce",
+        "New High"
       ],
       "datasets": [
         {
-          "label": "Direct Equity",
+          "label": "INFY Price Trend",
           "data": [
-            -100,
-            -50,
-            0,
-            50
-          ]
-        },
-        {
-          "label": "Covered Call",
-          "data": [
-            -70,
-            -20,
-            30,
-            30
+            1400,
+            1550,
+            1500,
+            1480,
+            1750
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Amateur vs Pro Strategy",
+    "text": "FOMO में buy करने के बजाय, structural pullback का wait करें।",
+    "table": {
+      "headers": [
+        "Strategy",
+        "Amateur Trader",
+        "Pro Fibonacci Trader"
+      ],
+      "rows": [
+        [
+          "Entry Point",
+          "At the absolute peak (FOMO)",
+          "At 50% - 61.8% Retracement"
+        ],
+        [
+          "Risk Management",
+          "No Stop-Loss",
+          "Strict Stop-Loss below 78.6%"
+        ],
+        [
+          "Trading Outcome",
+          "High Loss, low confidence",
+          "High-probability long-term Profit"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Angel One?</span>",
-    "text": "Advanced Option Chain analytics और low Brokerage के साथ आज ही अपना Demat Account open करें!",
-    "image_query": "wealth financial growth",
+    "title": "Start your <span class='highlight'>Trading Journey</span> Today!",
+    "text": "Angel One के साथ open करें Free Demat Account और advanced charting features का use करके smart decisions लें।",
+    "image_query": "successful business trading",
     "is_cta": true
   }
 ]
