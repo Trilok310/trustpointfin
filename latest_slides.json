@@ -1,69 +1,73 @@
 [
   {
     "type": "bg-image",
-    "title": "Gold ETF में <span class='highlight'>Invest</span> करने का सही तरीका?",
-    "text": "2026 में Market Volatility से बचने के लिए Portfolio Diversification ज़रूरी है। जानिए 3 बड़ी गलतियाँ जो आपको Avoid करनी हैं।",
-    "image_query": "gold bullion"
+    "title": "Banking Sector में <span class='highlight'>FII vs DII</span> Data का सच!",
+    "text": "जब FIIs Panic Selling करते हैं, क्या आप Fear में आकर Loss book करते हैं? जानिए Discipline का Secret Formula!",
+    "image_query": "stock market trading floor"
   },
   {
     "type": "bg-analytical",
-    "title": "<span class='highlight'>Expense Ratio</span> को Ignore मत करो!",
-    "text": "High Expense Ratio और Tracking Error आपके Portfolio के Net Profit को चुपके से कम कर देते हैं। हमेशा Low Cost ETF चुनें।",
-    "table": {
-      "headers": [
-        "Metric",
-        "Low Cost ETF",
-        "High Cost ETF"
-      ],
-      "rows": [
-        [
-          "Expense Ratio",
-          "0.15% - 0.30%",
-          "0.50% - 1.00%"
-        ],
-        [
-          "Tracking Error",
-          "बहुत कम (Ideal)",
-          "ज़्यादा (Not Recommended)"
-        ],
-        [
-          "Long-term Return",
-          "High Return",
-          "Drag on Returns"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Optimal <span class='highlight'>Asset Allocation</span>",
-    "text": "Experts के अनुसार, अपने Portfolio में Risk Management के लिए Gold ETF का हिस्सा 5% से 10% के बीच ही रखें।",
+    "title": "Institutional Flow Comparison",
+    "text": "देखिये कैसे DIIs Retail SIP Money से Market को Stability देते हैं:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Equity",
-        "Debt",
-        "Gold ETF",
-        "Cash"
+        "FII Selling",
+        "DII Buying",
+        "Net Effect"
       ],
       "datasets": [
         {
-          "label": "Recommended Allocation %",
+          "label": "Capital Flow (Cr)",
           "data": [
-            60,
-            30,
-            8,
-            2
+            -15000,
+            18000,
+            3000
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Retail Trader vs Pro Trader Mindset",
+    "text": "Market Volatility में कैसे React करें?",
+    "table": {
+      "headers": [
+        "Scenario",
+        "Amateur Trader",
+        "Disciplined Pro"
+      ],
+      "rows": [
+        [
+          "FII Sell-off",
+          "Panic Selling & Loss",
+          "Data Check & Dip Buy"
+        ],
+        [
+          "Bank Nifty Spike",
+          "FOMO Buying at Top",
+          "Profit Booking at Resistance"
+        ],
+        [
+          "Market News",
+          "Emotional Overreaction",
+          "Fundamental Analysis"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Angel One के साथ <span class='highlight'>Smart Investing</span>",
-    "text": "बिना किसी Storage Risk और High Liquidity के साथ आज ही अपना Demat Account खोलें और Gold ETF में SIP शुरू करें।",
-    "image_query": "trading screen wealth",
+    "title": "3 Rules for <span class='highlight'>Banking Stocks</span>",
+    "text": "1. FII/DII Data देखें, Emotions नहीं। 2. Quality Banks में Invest करें। 3. Compounding पर Focus रखें।",
+    "image_query": "financial analytics chart"
+  },
+  {
+    "type": "bg-image",
+    "title": "Start Investing with <span class='highlight'>Angel One</span>",
+    "text": "Zero Brokerage on Delivery Trades के साथ आज ही अपना Demat Account खोलें और Smart Investing शुरू करें!",
+    "image_query": "successful stock investor mobile app",
     "is_cta": true
   }
 ]

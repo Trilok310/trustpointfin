@@ -97,7 +97,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 86. Step-by-Step Blueprint: The Best Fibonacci Retracements Setup for Infosys
 - [x] 87. Combining Emotional Discipline with Bharti Airtel Analysis
 - [x] 88. Gold ETFs Analysis: Common Mistakes to Avoid to Risk Management
-- [ ] 89. The Role of Emotional Discipline in Indian Banking Sector based on FII/DII Data
+- [x] 89. The Role of Emotional Discipline in Indian Banking Sector based on FII/DII Data
 - [ ] 90. The Role of Straddles and Strangles in FinNifty in a Sideways Market
 - [ ] 91. How to use The CAN SLIM Method during High Volatility (India VIX) to Trade Reliance
 - [ ] 92. The Role of Fibonacci Retracements in Midcap Nifty in Times of High Inflation
