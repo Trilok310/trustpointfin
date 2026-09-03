@@ -1,69 +1,69 @@
 [
   {
     "type": "bg-image",
-    "title": "Airtel में <span class='highlight'>Invest</span> करने का सही Formula!",
-    "text": "बिना Emotional Discipline के Market में Profit कमाना मुश्किल है। सीखें सही Strategy।",
-    "image_query": "trading psychology"
+    "title": "Gold ETF में <span class='highlight'>Invest</span> करने का सही तरीका?",
+    "text": "2026 में Market Volatility से बचने के लिए Portfolio Diversification ज़रूरी है। जानिए 3 बड़ी गलतियाँ जो आपको Avoid करनी हैं।",
+    "image_query": "gold bullion"
   },
   {
     "type": "bg-analytical",
-    "title": "Airtel ARPU (Average Revenue Per User) का दम",
-    "text": "जैसे-जैसे ARPU बढ़ेगा, वैसे ही Compounding का जादू दिखेगा। Panic में Sell करने से बचें।",
+    "title": "<span class='highlight'>Expense Ratio</span> को Ignore मत करो!",
+    "text": "High Expense Ratio और Tracking Error आपके Portfolio के Net Profit को चुपके से कम कर देते हैं। हमेशा Low Cost ETF चुनें।",
+    "table": {
+      "headers": [
+        "Metric",
+        "Low Cost ETF",
+        "High Cost ETF"
+      ],
+      "rows": [
+        [
+          "Expense Ratio",
+          "0.15% - 0.30%",
+          "0.50% - 1.00%"
+        ],
+        [
+          "Tracking Error",
+          "बहुत कम (Ideal)",
+          "ज़्यादा (Not Recommended)"
+        ],
+        [
+          "Long-term Return",
+          "High Return",
+          "Drag on Returns"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Optimal <span class='highlight'>Asset Allocation</span>",
+    "text": "Experts के अनुसार, अपने Portfolio में Risk Management के लिए Gold ETF का हिस्सा 5% से 10% के बीच ही रखें।",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "FY24",
-        "FY25",
-        "FY26 (Est)",
-        "FY27 (Proj)"
+        "Equity",
+        "Debt",
+        "Gold ETF",
+        "Cash"
       ],
       "datasets": [
         {
-          "label": "ARPU (INR)",
+          "label": "Recommended Allocation %",
           "data": [
-            209,
-            233,
-            265,
-            300
+            60,
+            30,
+            8,
+            2
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Emotional vs Disciplined Investor",
-    "text": "Market Volatility के दौरान अपना Mindset बदलें।",
-    "table": {
-      "headers": [
-        "Situation",
-        "Emotional Trader",
-        "Disciplined Investor"
-      ],
-      "rows": [
-        [
-          "Market Correction",
-          "Panic-selling में Loss",
-          "Quality Equity Accumulation"
-        ],
-        [
-          "Tariff Hike News",
-          "FOMO Buying at Peak",
-          "Calculated Valuation Entry"
-        ],
-        [
-          "Portfolio Drop",
-          "Stress & Anxiety",
-          "Trusting the Compounding Thesis"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "बनाएं अपनी <span class='highlight'>Wealth</span>!",
-    "text": "Angel One के साथ आज ही Demat Account खोलें और अपनी Disciplined Investing यात्रा शुरू करें।",
-    "image_query": "happy young professional",
+    "title": "Angel One के साथ <span class='highlight'>Smart Investing</span>",
+    "text": "बिना किसी Storage Risk और High Liquidity के साथ आज ही अपना Demat Account खोलें और Gold ETF में SIP शुरू करें।",
+    "image_query": "trading screen wealth",
     "is_cta": true
   }
 ]
