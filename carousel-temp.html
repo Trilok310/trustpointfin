@@ -32,14 +32,14 @@
 </head>
 <body>
     
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20trading%20floor,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?stock%20market%20trading%20chart,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Banking Sector में <span class='highlight'>FII vs DII</span> Data का सच!</h1>
-<p>जब FIIs Panic Selling करते हैं, क्या आप Fear में आकर Loss book करते हैं? जानिए Discipline का Secret Formula!</p>
+                <h1>FinNifty में <span class='highlight'>Sideways Market</span> से Profit कैसे बनाएं?</h1>
+<p>Short Straddle और Short Strangle Strategy का सही Rules सीखें।</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">1 / 5</span>
@@ -53,9 +53,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Institutional Flow Comparison</h1>
-<p>देखिये कैसे DIIs Retail SIP Money से Market को Stability देते हैं:</p>
-<div class="chart-container"><canvas id="chart2"></canvas></div>
+                <h1>Straddle vs Strangle Matrix</h1>
+<p>दोनों Strategies का quick comparison:</p>
+<table class="data-table"><tr><th>Factor</th><th>Short Straddle</th><th>Short Strangle</th></tr><tr><td>Strike Selection</td><td>ATM Options</td><td>OTM Options</td></tr><tr><td>Premium Collected</td><td>High</td><td>Moderate</td></tr><tr><td>Profit Band</td><td>Narrow</td><td>Wide Cushion</td></tr><tr><td>Winning Probability</td><td>Moderate (50%)</td><td>High (70%+)</td></tr></table>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">2 / 5</span>
@@ -69,9 +69,9 @@
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" >
-                <h1>Retail Trader vs Pro Trader Mindset</h1>
-<p>Market Volatility में कैसे React करें?</p>
-<table class="data-table"><tr><th>Scenario</th><th>Amateur Trader</th><th>Disciplined Pro</th></tr><tr><td>FII Sell-off</td><td>Panic Selling & Loss</td><td>Data Check & Dip Buy</td></tr><tr><td>Bank Nifty Spike</td><td>FOMO Buying at Top</td><td>Profit Booking at Resistance</td></tr><tr><td>Market News</td><td>Emotional Overreaction</td><td>Fundamental Analysis</td></tr></table>
+                <h1>FinNifty Tuesday Expiry Premium Decay</h1>
+<p>Time Value (Theta) Decay curve over Expiry Day hours:</p>
+<div class="chart-container"><canvas id="chart3"></canvas></div>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">3 / 5</span>
@@ -79,14 +79,16 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?financial%20analytics%20chart,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?trading%20financial%20psychology,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>3 Rules for <span class='highlight'>Banking Stocks</span></h1>
-<p>1. FII/DII Data देखें, Emotions नहीं। 2. Quality Banks में Invest करें। 3. Compounding पर Focus रखें।</p>
+                <h1><span class='highlight'>Risk Management</span> के Golden Rules</h1>
+<p>1. Stop Loss हमेशा 150% पर set करें
+2. High IV Percentile में ही Sell करें
+3. Delta Adjustments समय पर करें</p>
             </div>
             <div class="slide-footer">
                 <span class="slide-number">4 / 5</span>
@@ -94,14 +96,14 @@
             </div>
             
         </div>
-        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?successful%20stock%20investor%20mobile%20app,finance');">
+        <div class="slide bg-image" style="background-image: url('https://source.unsplash.com/1080x1080/?success%20growth%20finance,finance');">
             <div class="brand-header">
                 <img src="https://trilok310.github.io/trustpointfin/logo.jpg" class="brand-logo" alt="Logo" onerror="this.style.display='none'">
                 <span class="brand-text">Trust Point Fin</span>
             </div>
             <div class="content" style="justify-content: center;">
-                <h1>Start Investing with <span class='highlight'>Angel One</span></h1>
-<p>Zero Brokerage on Delivery Trades के साथ आज ही अपना Demat Account खोलें और Smart Investing शुरू करें!</p>
+                <h1>Angel One पर <span class='highlight'>Fast Execution</span> पाएं!</h1>
+<p>Basket Orders और Super-Fast Execution के साथ FinNifty Options Trade करें। आज ही Free Demat Account खोलें!</p>
 <div><span class="cta-btn">Link in Bio to Read More</span></div>
             </div>
             <div class="slide-footer">
@@ -115,9 +117,9 @@
         Chart.defaults.font.size = 24;
         Chart.defaults.color = '#64748b';
         
-                new Chart(document.getElementById('chart2').getContext('2d'), {
-                    type: 'bar',
-                    data: {"labels":["FII Selling","DII Buying","Net Effect"],"datasets":[{"label":"Capital Flow (Cr)","data":[-15000,18000,3000]}]},
+                new Chart(document.getElementById('chart3').getContext('2d'), {
+                    type: 'line',
+                    data: {"labels":["09:30 AM","11:30 AM","01:30 PM","03:00 PM"],"datasets":[{"label":"Straddle Premium (₹)","data":[180,125,65,12]},{"label":"Strangle Premium (₹)","data":[85,55,22,4]}]},
                     options: {
                         responsive: true, maintainAspectRatio: false, animation: false,
                         plugins: { legend: { labels: { color: '#334155', padding: 10, font: { family: "'Inter', sans-serif" } } } },

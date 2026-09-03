@@ -1,73 +1,89 @@
 [
   {
     "type": "bg-image",
-    "title": "Banking Sector में <span class='highlight'>FII vs DII</span> Data का सच!",
-    "text": "जब FIIs Panic Selling करते हैं, क्या आप Fear में आकर Loss book करते हैं? जानिए Discipline का Secret Formula!",
-    "image_query": "stock market trading floor"
+    "title": "FinNifty में <span class='highlight'>Sideways Market</span> से Profit कैसे बनाएं?",
+    "text": "Short Straddle और Short Strangle Strategy का सही Rules सीखें।",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Institutional Flow Comparison",
-    "text": "देखिये कैसे DIIs Retail SIP Money से Market को Stability देते हैं:",
+    "title": "Straddle vs Strangle Matrix",
+    "text": "दोनों Strategies का quick comparison:",
+    "table": {
+      "headers": [
+        "Factor",
+        "Short Straddle",
+        "Short Strangle"
+      ],
+      "rows": [
+        [
+          "Strike Selection",
+          "ATM Options",
+          "OTM Options"
+        ],
+        [
+          "Premium Collected",
+          "High",
+          "Moderate"
+        ],
+        [
+          "Profit Band",
+          "Narrow",
+          "Wide Cushion"
+        ],
+        [
+          "Winning Probability",
+          "Moderate (50%)",
+          "High (70%+)"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "FinNifty Tuesday Expiry Premium Decay",
+    "text": "Time Value (Theta) Decay curve over Expiry Day hours:",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "FII Selling",
-        "DII Buying",
-        "Net Effect"
+        "09:30 AM",
+        "11:30 AM",
+        "01:30 PM",
+        "03:00 PM"
       ],
       "datasets": [
         {
-          "label": "Capital Flow (Cr)",
+          "label": "Straddle Premium (₹)",
           "data": [
-            -15000,
-            18000,
-            3000
+            180,
+            125,
+            65,
+            12
+          ]
+        },
+        {
+          "label": "Strangle Premium (₹)",
+          "data": [
+            85,
+            55,
+            22,
+            4
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Retail Trader vs Pro Trader Mindset",
-    "text": "Market Volatility में कैसे React करें?",
-    "table": {
-      "headers": [
-        "Scenario",
-        "Amateur Trader",
-        "Disciplined Pro"
-      ],
-      "rows": [
-        [
-          "FII Sell-off",
-          "Panic Selling & Loss",
-          "Data Check & Dip Buy"
-        ],
-        [
-          "Bank Nifty Spike",
-          "FOMO Buying at Top",
-          "Profit Booking at Resistance"
-        ],
-        [
-          "Market News",
-          "Emotional Overreaction",
-          "Fundamental Analysis"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "<span class='highlight'>Risk Management</span> के Golden Rules",
+    "text": "1. Stop Loss हमेशा 150% पर set करें\n2. High IV Percentile में ही Sell करें\n3. Delta Adjustments समय पर करें",
+    "image_query": "trading financial psychology"
   },
   {
     "type": "bg-image",
-    "title": "3 Rules for <span class='highlight'>Banking Stocks</span>",
-    "text": "1. FII/DII Data देखें, Emotions नहीं। 2. Quality Banks में Invest करें। 3. Compounding पर Focus रखें।",
-    "image_query": "financial analytics chart"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Investing with <span class='highlight'>Angel One</span>",
-    "text": "Zero Brokerage on Delivery Trades के साथ आज ही अपना Demat Account खोलें और Smart Investing शुरू करें!",
-    "image_query": "successful stock investor mobile app",
+    "title": "Angel One पर <span class='highlight'>Fast Execution</span> पाएं!",
+    "text": "Basket Orders और Super-Fast Execution के साथ FinNifty Options Trade करें। आज ही Free Demat Account खोलें!",
+    "image_query": "success growth finance",
     "is_cta": true
   }
 ]
