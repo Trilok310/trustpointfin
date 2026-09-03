@@ -1,73 +1,70 @@
 [
   {
     "type": "bg-image",
-    "title": "FinNifty में <span class='highlight'>Sideways Market</span> से Profit कैसे बनाएं?",
-    "text": "Short Straddle और Short Strangle Strategy का सही Rules सीखें।",
+    "title": "High <span class='highlight'>India VIX</span> में Reliance Trade कैसे करें?",
+    "text": "सीखिए William O'Neil का प्रसिद्ध CAN SLIM Strategy और Manage कीजिए अपना Risk.",
     "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Straddle vs Strangle Matrix",
-    "text": "दोनों Strategies का quick comparison:",
+    "title": "CAN SLIM Criteria for Reliance",
+    "text": "Reliance Industries का Fundamental & Technical Analysis",
     "table": {
       "headers": [
-        "Factor",
-        "Short Straddle",
-        "Short Strangle"
+        "CAN SLIM Factor",
+        "Reliance Metrics",
+        "Status"
       ],
       "rows": [
         [
-          "Strike Selection",
-          "ATM Options",
-          "OTM Options"
+          "Quarterly Earnings (C)",
+          "Strong YoY Growth in Retail/Jio",
+          "Passed"
         ],
         [
-          "Premium Collected",
-          "High",
-          "Moderate"
+          "New Catalysts (N)",
+          "Green Energy & IPO Value Unlock",
+          "Passed"
         ],
         [
-          "Profit Band",
-          "Narrow",
-          "Wide Cushion"
+          "Institutional Support (I)",
+          "Top Holding by DIIs & FPIs",
+          "Passed"
         ],
         [
-          "Winning Probability",
-          "Moderate (50%)",
-          "High (70%+)"
+          "Market Leader (L)",
+          "Nifty 50 Heavyweight",
+          "Passed"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "FinNifty Tuesday Expiry Premium Decay",
-    "text": "Time Value (Theta) Decay curve over Expiry Day hours:",
+    "title": "Breakout Success vs India VIX",
+    "text": "VIX Level के हिसाब से Breakout Success Rate का Data",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "09:30 AM",
-        "11:30 AM",
-        "01:30 PM",
-        "03:00 PM"
+        "VIX < 15 (Normal)",
+        "VIX 15-20 (Moderate)",
+        "VIX > 20 (High)"
       ],
       "datasets": [
         {
-          "label": "Straddle Premium (₹)",
+          "label": "Breakout Success %",
           "data": [
-            180,
-            125,
-            65,
-            12
+            75,
+            58,
+            35
           ]
         },
         {
-          "label": "Strangle Premium (₹)",
+          "label": "CAN SLIM Filtered %",
           "data": [
-            85,
-            55,
-            22,
-            4
+            88,
+            76,
+            62
           ]
         }
       ]
@@ -75,15 +72,9 @@
   },
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Risk Management</span> के Golden Rules",
-    "text": "1. Stop Loss हमेशा 150% पर set करें\n2. High IV Percentile में ही Sell करें\n3. Delta Adjustments समय पर करें",
-    "image_query": "trading financial psychology"
-  },
-  {
-    "type": "bg-image",
-    "title": "Angel One पर <span class='highlight'>Fast Execution</span> पाएं!",
-    "text": "Basket Orders और Super-Fast Execution के साथ FinNifty Options Trade करें। आज ही Free Demat Account खोलें!",
-    "image_query": "success growth finance",
+    "title": "Ready to trade with <span class='highlight'>Angel One?</span>",
+    "text": "Angel One पर Free Demat Account खोलें और Zero Brokerage Delivery Trades का लाभ उठाएं।",
+    "image_query": "financial growth mobile app",
     "is_cta": true
   }
 ]

@@ -99,7 +99,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 88. Gold ETFs Analysis: Common Mistakes to Avoid to Risk Management
 - [x] 89. The Role of Emotional Discipline in Indian Banking Sector based on FII/DII Data
 - [x] 90. The Role of Straddles and Strangles in FinNifty in a Sideways Market
-- [ ] 91. How to use The CAN SLIM Method during High Volatility (India VIX) to Trade Reliance
+- [x] 91. How to use The CAN SLIM Method during High Volatility (India VIX) to Trade Reliance
 - [ ] 92. The Role of Fibonacci Retracements in Midcap Nifty in Times of High Inflation
 - [ ] 93. Growth Investing Explained: Advanced Tactics for Trading Infosys
 - [ ] 94. FMCG Stocks Trading: How to Apply Options Buying in Times of High Inflation
