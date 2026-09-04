@@ -101,7 +101,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 90. The Role of Straddles and Strangles in FinNifty in a Sideways Market
 - [x] 91. How to use The CAN SLIM Method during High Volatility (India VIX) to Trade Reliance
 - [x] 92. The Role of Fibonacci Retracements in Midcap Nifty in Times of High Inflation
-- [ ] 93. Growth Investing Explained: Advanced Tactics for Trading Infosys
+- [x] 93. Growth Investing Explained: Advanced Tactics for Trading Infosys
 - [ ] 94. FMCG Stocks Trading: How to Apply Options Buying in Times of High Inflation
 - [ ] 95. For Long-term Wealth Creation: Mastering Position Sizing Rules for Upcoming IPOs
 - [ ] 96. Combining Swing Trading Setups with FinNifty Analysis

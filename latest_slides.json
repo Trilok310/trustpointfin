@@ -1,69 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "High Inflation में <span class='highlight'>Midcap Nifty</span> का Secret Weapon!",
-    "text": "Fibonacci Retracements का सही use करके Support और Resistance पहचानें।",
-    "image_query": "stock market chart analysis"
+    "title": "Infosys में <span class='highlight'>Growth Investing</span> से Maximum Returns कैसे कमाएं?",
+    "text": "Simple strategies जो Indian Retail Traders को 2026 में फॉलो करनी चाहिए।",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "<span class='highlight'>Fibonacci Levels</span> Reversal Accuracy",
-    "text": "High Inflation market में key levels का Reversal Probability Rate.",
+    "title": "Growth vs Value Approach",
+    "text": "Infosys stock के analysis का comparison",
+    "table": {
+      "headers": [
+        "Factor",
+        "Growth Strategy",
+        "Value Strategy"
+      ],
+      "rows": [
+        [
+          "Target",
+          "Future Earnings & AI",
+          "Low P/E Ratio"
+        ],
+        [
+          "Key Metric",
+          "PEG Ratio & TCV",
+          "P/B & Dividend Yield"
+        ],
+        [
+          "Execution",
+          "Trend & Breakout",
+          "Long Term Deep Value"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Infosys TCV Deal Win Trend",
+    "text": "Strong future Growth का primary indicator",
     "chart": {
       "type": "bar",
       "labels": [
-        "23.6% Level",
-        "38.2% Level",
-        "50.0% Level",
-        "61.8% Golden"
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
       ],
       "datasets": [
         {
-          "label": "Reversal Success (%)",
+          "label": "TCV ($ Billion)",
           "data": [
-            25,
-            42,
-            58,
-            76
+            2.4,
+            3.1,
+            2.8,
+            3.5
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "<span class='highlight'>Trading Strategy</span> Matrix",
-    "text": "Normal vs High Inflation Market Execution",
-    "table": {
-      "headers": [
-        "Factor",
-        "Normal Market",
-        "High Inflation"
-      ],
-      "rows": [
-        [
-          "Key Level",
-          "38.2% Fib",
-          "61.8% Fib"
-        ],
-        [
-          "Risk Strategy",
-          "Standard SL",
-          "Tight Stop Loss"
-        ],
-        [
-          "Target Expectation",
-          "Breakout High",
-          "Quick Target Booking"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "200-Day EMA <span class='highlight'>Pullback Rule</span>",
+    "text": "जब Quality Growth Stocks 200-Day EMA पर Dips दें, तब Best Entry Opportunity बनती है।",
+    "image_query": "financial chart analysis"
   },
   {
     "type": "bg-image",
-    "title": "Ready to Trade with <span class='highlight'>Angel One?</span>",
-    "text": "Advanced Charting और zero brokerage on delivery trades के साथ आज ही अपना Demat Account खोलें!",
-    "image_query": "financial investment smart phone",
+    "title": "Ready to Start <span class='highlight'>Investing?</span>",
+    "text": "Angel One के साथ आज ही अपना Free Demat Account खोलें और Zero Brokerage पर Trade करें!",
+    "image_query": "wealth stock market growth",
     "is_cta": true
   }
 ]
