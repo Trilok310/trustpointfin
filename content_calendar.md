@@ -103,7 +103,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 92. The Role of Fibonacci Retracements in Midcap Nifty in Times of High Inflation
 - [x] 93. Growth Investing Explained: Advanced Tactics for Trading Infosys
 - [x] 94. FMCG Stocks Trading: How to Apply Options Buying in Times of High Inflation
-- [ ] 95. For Long-term Wealth Creation: Mastering Position Sizing Rules for Upcoming IPOs
+- [x] 95. For Long-term Wealth Creation: Mastering Position Sizing Rules for Upcoming IPOs
 - [ ] 96. Combining Swing Trading Setups with FinNifty Analysis
 - [ ] 97. How to use Intraday Scalping for the Upcoming Quarter to Trade Gold ETFs
 - [ ] 98. Mid-cap Stocks Analysis: For Long-term Wealth Creation to RSI Divergence

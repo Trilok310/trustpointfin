@@ -1,81 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "High <span class='highlight'>Inflation</span> में <span class='highlight'>FMCG Stocks</span> से <span class='highlight'>Profit</span> कैसे बनाएं?",
-    "text": "जब Market में Inflation बढ़ता है, तब FMCG Options Buying एक शानदार Trading Strategy बन सकती है। आइये इसे आसान शब्दों में समझते हैं!",
-    "image_query": "indian market"
+    "title": "IPO में blind Invest कर रहे हो? <span class='highlight'>Position Sizing</span> सीखो!",
+    "text": "हर upcoming IPO में All-in जाना आपके Portfolio के लिए जोखिम भरा हो सकता है।",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Inflation vs <span class='highlight'>Nifty FMCG</span>",
-    "text": "High Inflation के दौरान FMCG Sector अक्सर Nifty 50 को Outperform करता है क्योंकि इन Companies के पास Pricing Power होती है।",
+    "title": "Amateur vs Pro IPO Allocation",
+    "text": "सफल Investor और आम Retail Investor में सोच का फर्क:",
+    "table": {
+      "headers": [
+        "Parameter",
+        "Amateur Investor",
+        "Pro Investor"
+      ],
+      "rows": [
+        [
+          "IPO Capital",
+          "100% in 1 IPO",
+          "Max 5% Portfolio Capital"
+        ],
+        [
+          "Strategy",
+          "Pure Listing Pop",
+          "Long-term Compounding"
+        ],
+        [
+          "Risk Plan",
+          "No Risk Management",
+          "Staged Entry (Pyramiding)"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Listing Pop Reality Check",
+    "text": "Data दिखाता है कि Overhyped IPOs समय के साथ Listing Gains खो देते हैं:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Normal CPI",
-        "High Inflation Q1",
-        "High Inflation Q2"
+        "Listing Day",
+        "6 Months",
+        "12 Months"
       ],
       "datasets": [
         {
-          "label": "Nifty 50 Return %",
+          "label": "Overhyped IPOs",
           "data": [
-            8,
-            3,
-            2
+            45,
+            -10,
+            -25
           ]
         },
         {
-          "label": "Nifty FMCG Return %",
+          "label": "Quality Stocks",
           "data": [
-            9,
-            7,
-            8
+            15,
+            30,
+            65
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "सही Strategy का Selection करें",
-    "text": "Market Conditions के हिसाब से अपनी Options Buying Strategy चुनें:",
-    "table": {
-      "headers": [
-        "Market Condition",
-        "Best Strategy",
-        "Risk Level"
-      ],
-      "rows": [
-        [
-          "Clear Breakout",
-          "Long Call Buying",
-          "High Risk"
-        ],
-        [
-          "High Volatility",
-          "Bull Call Spread",
-          "Moderate Risk"
-        ],
-        [
-          "Rangebound Market",
-          "Avoid Trading",
-          "No Risk"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "Golden Rule: <span class='highlight'>5% Allocation Limit</span>",
+    "text": "किसी भी 1 IPO में अपने Total Equity Portfolio का 5% से ज़्यादा Capital कभी Block मत कीजिए।",
+    "image_query": "wealth management success"
   },
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Options Buying</span> के 3 Golden Rules",
-    "text": "1. Liquid Stocks जैसे HUL और ITC ही चुनें।\n2. Strike Price हमेशा Near-the-Money (NTM) रखें।\n3. Stop Loss को कड़ाई से Follow करें और Risk Manage करें।",
-    "image_query": "discipline finance"
-  },
-  {
-    "type": "bg-image",
-    "title": "Ready to Trade with <span class='highlight'>Angel One?</span>",
-    "text": "Angel One के साथ Open करें अपना Demat Account और पाएं Advanced Charting Tools, Real-time Option Chain, और Fast Execution!",
-    "image_query": "mobile stock trading",
+    "title": "Ready to Invest with <span class='highlight'>Angel One?</span>",
+    "text": "Fast IPO Applications और Smooth Trading Experience के लिए आज ही Demat Account खोलें!",
+    "image_query": "financial growth mobile",
     "is_cta": true
   }
 ]
