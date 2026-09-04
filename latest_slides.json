@@ -1,75 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "Infosys में <span class='highlight'>Growth Investing</span> से Maximum Returns कैसे कमाएं?",
-    "text": "Simple strategies जो Indian Retail Traders को 2026 में फॉलो करनी चाहिए।",
-    "image_query": "stock market trading charts"
+    "title": "High <span class='highlight'>Inflation</span> में <span class='highlight'>FMCG Stocks</span> से <span class='highlight'>Profit</span> कैसे बनाएं?",
+    "text": "जब Market में Inflation बढ़ता है, तब FMCG Options Buying एक शानदार Trading Strategy बन सकती है। आइये इसे आसान शब्दों में समझते हैं!",
+    "image_query": "indian market"
   },
   {
     "type": "bg-analytical",
-    "title": "Growth vs Value Approach",
-    "text": "Infosys stock के analysis का comparison",
-    "table": {
-      "headers": [
-        "Factor",
-        "Growth Strategy",
-        "Value Strategy"
-      ],
-      "rows": [
-        [
-          "Target",
-          "Future Earnings & AI",
-          "Low P/E Ratio"
-        ],
-        [
-          "Key Metric",
-          "PEG Ratio & TCV",
-          "P/B & Dividend Yield"
-        ],
-        [
-          "Execution",
-          "Trend & Breakout",
-          "Long Term Deep Value"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Infosys TCV Deal Win Trend",
-    "text": "Strong future Growth का primary indicator",
+    "title": "Inflation vs <span class='highlight'>Nifty FMCG</span>",
+    "text": "High Inflation के दौरान FMCG Sector अक्सर Nifty 50 को Outperform करता है क्योंकि इन Companies के पास Pricing Power होती है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Q1",
-        "Q2",
-        "Q3",
-        "Q4"
+        "Normal CPI",
+        "High Inflation Q1",
+        "High Inflation Q2"
       ],
       "datasets": [
         {
-          "label": "TCV ($ Billion)",
+          "label": "Nifty 50 Return %",
           "data": [
-            2.4,
-            3.1,
-            2.8,
-            3.5
+            8,
+            3,
+            2
+          ]
+        },
+        {
+          "label": "Nifty FMCG Return %",
+          "data": [
+            9,
+            7,
+            8
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "200-Day EMA <span class='highlight'>Pullback Rule</span>",
-    "text": "जब Quality Growth Stocks 200-Day EMA पर Dips दें, तब Best Entry Opportunity बनती है।",
-    "image_query": "financial chart analysis"
+    "type": "bg-analytical",
+    "title": "सही Strategy का Selection करें",
+    "text": "Market Conditions के हिसाब से अपनी Options Buying Strategy चुनें:",
+    "table": {
+      "headers": [
+        "Market Condition",
+        "Best Strategy",
+        "Risk Level"
+      ],
+      "rows": [
+        [
+          "Clear Breakout",
+          "Long Call Buying",
+          "High Risk"
+        ],
+        [
+          "High Volatility",
+          "Bull Call Spread",
+          "Moderate Risk"
+        ],
+        [
+          "Rangebound Market",
+          "Avoid Trading",
+          "No Risk"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Ready to Start <span class='highlight'>Investing?</span>",
-    "text": "Angel One के साथ आज ही अपना Free Demat Account खोलें और Zero Brokerage पर Trade करें!",
-    "image_query": "wealth stock market growth",
+    "title": "<span class='highlight'>Options Buying</span> के 3 Golden Rules",
+    "text": "1. Liquid Stocks जैसे HUL और ITC ही चुनें।\n2. Strike Price हमेशा Near-the-Money (NTM) रखें।\n3. Stop Loss को कड़ाई से Follow करें और Risk Manage करें।",
+    "image_query": "discipline finance"
+  },
+  {
+    "type": "bg-image",
+    "title": "Ready to Trade with <span class='highlight'>Angel One?</span>",
+    "text": "Angel One के साथ Open करें अपना Demat Account और पाएं Advanced Charting Tools, Real-time Option Chain, और Fast Execution!",
+    "image_query": "mobile stock trading",
     "is_cta": true
   }
 ]
