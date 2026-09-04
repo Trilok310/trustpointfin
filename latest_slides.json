@@ -1,80 +1,69 @@
 [
   {
     "type": "bg-image",
-    "title": "High <span class='highlight'>India VIX</span> में Reliance Trade कैसे करें?",
-    "text": "सीखिए William O'Neil का प्रसिद्ध CAN SLIM Strategy और Manage कीजिए अपना Risk.",
-    "image_query": "stock market trading chart"
+    "title": "High Inflation में <span class='highlight'>Midcap Nifty</span> का Secret Weapon!",
+    "text": "Fibonacci Retracements का सही use करके Support और Resistance पहचानें।",
+    "image_query": "stock market chart analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "CAN SLIM Criteria for Reliance",
-    "text": "Reliance Industries का Fundamental & Technical Analysis",
-    "table": {
-      "headers": [
-        "CAN SLIM Factor",
-        "Reliance Metrics",
-        "Status"
-      ],
-      "rows": [
-        [
-          "Quarterly Earnings (C)",
-          "Strong YoY Growth in Retail/Jio",
-          "Passed"
-        ],
-        [
-          "New Catalysts (N)",
-          "Green Energy & IPO Value Unlock",
-          "Passed"
-        ],
-        [
-          "Institutional Support (I)",
-          "Top Holding by DIIs & FPIs",
-          "Passed"
-        ],
-        [
-          "Market Leader (L)",
-          "Nifty 50 Heavyweight",
-          "Passed"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Breakout Success vs India VIX",
-    "text": "VIX Level के हिसाब से Breakout Success Rate का Data",
+    "title": "<span class='highlight'>Fibonacci Levels</span> Reversal Accuracy",
+    "text": "High Inflation market में key levels का Reversal Probability Rate.",
     "chart": {
       "type": "bar",
       "labels": [
-        "VIX < 15 (Normal)",
-        "VIX 15-20 (Moderate)",
-        "VIX > 20 (High)"
+        "23.6% Level",
+        "38.2% Level",
+        "50.0% Level",
+        "61.8% Golden"
       ],
       "datasets": [
         {
-          "label": "Breakout Success %",
+          "label": "Reversal Success (%)",
           "data": [
-            75,
+            25,
+            42,
             58,
-            35
-          ]
-        },
-        {
-          "label": "CAN SLIM Filtered %",
-          "data": [
-            88,
-            76,
-            62
+            76
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "<span class='highlight'>Trading Strategy</span> Matrix",
+    "text": "Normal vs High Inflation Market Execution",
+    "table": {
+      "headers": [
+        "Factor",
+        "Normal Market",
+        "High Inflation"
+      ],
+      "rows": [
+        [
+          "Key Level",
+          "38.2% Fib",
+          "61.8% Fib"
+        ],
+        [
+          "Risk Strategy",
+          "Standard SL",
+          "Tight Stop Loss"
+        ],
+        [
+          "Target Expectation",
+          "Breakout High",
+          "Quick Target Booking"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Angel One?</span>",
-    "text": "Angel One पर Free Demat Account खोलें और Zero Brokerage Delivery Trades का लाभ उठाएं।",
-    "image_query": "financial growth mobile app",
+    "title": "Ready to Trade with <span class='highlight'>Angel One?</span>",
+    "text": "Advanced Charting और zero brokerage on delivery trades के साथ आज ही अपना Demat Account खोलें!",
+    "image_query": "financial investment smart phone",
     "is_cta": true
   }
 ]
