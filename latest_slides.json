@@ -1,65 +1,73 @@
 [
   {
     "type": "bg-image",
-    "title": "FinNifty के साथ <span class='highlight'>Swing Trading</span> Master करें!",
-    "text": "Financial sector के trends को decode करके Profits boost करने की proven strategy.",
-    "image_query": "stock market chart"
+    "title": "Gold ETF में <span class='highlight'>Intraday Scalping</span> कैसे करें?",
+    "text": "Upcoming Quarter में Quick Trades से daily Profit कमाने की actionable Strategy।",
+    "image_query": "trading charts gold"
   },
   {
     "type": "bg-analytical",
-    "title": "Index Alignment vs Success Rate",
-    "text": "FinNifty Trend के साथ Trade करने पर Win Rate में जबरदस्त उछाल मिलता है.",
+    "title": "Gold ETF vs Futures",
+    "text": "Retail Traders के लिए Scalping का Best Choice",
+    "table": {
+      "headers": [
+        "Feature",
+        "Gold ETF",
+        "MCX Futures"
+      ],
+      "rows": [
+        [
+          "Capital Required",
+          "Low (₹1,000+)",
+          "High (₹1 Lakh+)"
+        ],
+        [
+          "Overnight Risk",
+          "None in Intraday",
+          "High Leverage Risk"
+        ],
+        [
+          "Execution Speed",
+          "Ultra Fast",
+          "Margin Sensitive"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Scalping Technical Setup",
+    "text": "5-Minute Chart पर High Win Rate Strategy",
     "chart": {
       "type": "bar",
       "labels": [
-        "Random Trades",
-        "Sector Aligned"
+        "VWAP Breakout",
+        "RSI Cross (55)",
+        "Supertrend Shift"
       ],
       "datasets": [
         {
           "label": "Win Rate (%)",
           "data": [
-            42,
-            74
+            68,
+            62,
+            65
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Amateur vs Pro Strategy",
-    "text": "Top Swing Traders का Execution Matrix.",
-    "table": {
-      "headers": [
-        "Execution Step",
-        "Amateur Trader",
-        "Pro Swing Trader"
-      ],
-      "rows": [
-        [
-          "Sector Analysis",
-          "Ignore करते हैं",
-          "FinNifty Trend confirm करते हैं"
-        ],
-        [
-          "Stock Selection",
-          "Random tips",
-          "Relative Strength filters"
-        ],
-        [
-          "Risk Control",
-          "No Stop Loss",
-          "Strict Risk-Reward (1:2+)"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "3 Important <span class='highlight'>Risk Rules</span>",
+    "text": "1. Stop Loss हमेशा 0.20% पर सेट करें।\n2. Over-trading से बचें।\n3. High Volume ETFs जैसे GOLDBEES ही Select करें।",
+    "image_query": "stock market risk"
   },
   {
     "type": "bg-image",
-    "title": "Ready for <span class='highlight'>Smart Trading?</span>",
-    "text": "Angel One के advanced charts और fast execution के साथ आज ही अपना Demat Account open करें!",
-    "image_query": "trader looking at monitor",
+    "title": "Trade Faster with <span class='highlight'>Angel One</span>",
+    "text": "Fast order execution और Smart Charting के साथ अपना Trading journey शुरू करें। Open Demat Account now!",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
