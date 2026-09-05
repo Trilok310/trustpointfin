@@ -1,73 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "Gold ETF में <span class='highlight'>Intraday Scalping</span> कैसे करें?",
-    "text": "Upcoming Quarter में Quick Trades से daily Profit कमाने की actionable Strategy।",
-    "image_query": "trading charts gold"
+    "title": "Mid-cap Stocks में &lt;span class='highlight'&gt;Long-term Wealth&lt;/span&gt; कैसे बनाएं?",
+    "text": "Fundamental Screening और RSI Divergence के साथ Right Time पर Invest करना सीखें।",
+    "image_query": "stock market growth chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Gold ETF vs Futures",
-    "text": "Retail Traders के लिए Scalping का Best Choice",
-    "table": {
-      "headers": [
-        "Feature",
-        "Gold ETF",
-        "MCX Futures"
-      ],
-      "rows": [
-        [
-          "Capital Required",
-          "Low (₹1,000+)",
-          "High (₹1 Lakh+)"
-        ],
-        [
-          "Overnight Risk",
-          "None in Intraday",
-          "High Leverage Risk"
-        ],
-        [
-          "Execution Speed",
-          "Ultra Fast",
-          "Margin Sensitive"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Scalping Technical Setup",
-    "text": "5-Minute Chart पर High Win Rate Strategy",
+    "title": "Large-cap vs Mid-cap Returns",
+    "text": "Historical Data दिखाता है कि Mid-caps में Multi-bagger Returns देने की Capability ज्यादा होती है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "VWAP Breakout",
-        "RSI Cross (55)",
-        "Supertrend Shift"
+        "3 Years",
+        "5 Years",
+        "10 Years"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "Nifty 50 CAGR (%)",
           "data": [
-            68,
-            62,
-            65
+            12,
+            14,
+            14
+          ]
+        },
+        {
+          "label": "Nifty Midcap 150 CAGR (%)",
+          "data": [
+            18,
+            20,
+            21
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "3 Important <span class='highlight'>Risk Rules</span>",
-    "text": "1. Stop Loss हमेशा 0.20% पर सेट करें।\n2. Over-trading से बचें।\n3. High Volume ETFs जैसे GOLDBEES ही Select करें।",
-    "image_query": "stock market risk"
+    "type": "bg-analytical",
+    "title": "Mid-cap Selection Checklist",
+    "text": "गिरावट में Quality Stocks Identify करने का Easy Framework",
+    "table": {
+      "headers": [
+        "Metric",
+        "Target Standard",
+        "Why It Matters"
+      ],
+      "rows": [
+        [
+          "ROCE",
+          "> 18%",
+          "High Capital Efficiency"
+        ],
+        [
+          "PEG Ratio",
+          "< 1.2",
+          "Undervalued Growth"
+        ],
+        [
+          "Debt/Equity",
+          "< 0.5",
+          "Low Financial Risk"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Trade Faster with <span class='highlight'>Angel One</span>",
-    "text": "Fast order execution और Smart Charting के साथ अपना Trading journey शुरू करें। Open Demat Account now!",
-    "image_query": "financial success growth",
+    "title": "RSI Divergence: &lt;span class='highlight'&gt;Smart Money&lt;/span&gt; Signal",
+    "text": "जब Price Lower Low बनाता है लेकिन RSI Indicator Higher Low दिखाता है, तो यह Bullish Reversal का strong Signal है।",
+    "image_query": "financial trading charts screen"
+  },
+  {
+    "type": "bg-image",
+    "title": "Start Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
+    "text": "Free Demat Account open करें, Advanced TradingView charts यूज करें और Zero Delivery Brokerage पर Invest करें।",
+    "image_query": "happy mobile investor success",
     "is_cta": true
   }
 ]

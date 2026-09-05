@@ -106,7 +106,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 95. For Long-term Wealth Creation: Mastering Position Sizing Rules for Upcoming IPOs
 - [x] 96. Combining Swing Trading Setups with FinNifty Analysis
 - [x] 97. How to use Intraday Scalping for the Upcoming Quarter to Trade Gold ETFs
-- [ ] 98. Mid-cap Stocks Analysis: For Long-term Wealth Creation to RSI Divergence
+- [x] 98. Mid-cap Stocks Analysis: For Long-term Wealth Creation to RSI Divergence
 - [ ] 99. Price Action Trading Explained: The Ultimate Strategy for Trading ITC
 - [ ] 100. Top Secrets: Mastering Volume Profile Analysis for ITC
 - [ ] 101. To Avoid Massive Drawdowns: Mastering Growth Investing for Penny Stocks
