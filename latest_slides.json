@@ -1,81 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "Mid-cap Stocks में &lt;span class='highlight'&gt;Long-term Wealth&lt;/span&gt; कैसे बनाएं?",
-    "text": "Fundamental Screening और RSI Divergence के साथ Right Time पर Invest करना सीखें।",
-    "image_query": "stock market growth chart"
+    "title": "ITC में <span class='highlight'>Price Action</span> से Profit कैसे बनाएं?",
+    "text": "Lagging Indicators छोड़ो और pure Chart Reading सीखो!",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Large-cap vs Mid-cap Returns",
-    "text": "Historical Data दिखाता है कि Mid-caps में Multi-bagger Returns देने की Capability ज्यादा होती है।",
+    "title": "Price Action vs Indicators",
+    "text": "ITC stock पर कौन सी Strategy बेहतर काम करती है?",
+    "table": {
+      "headers": [
+        "Factor",
+        "Price Action",
+        "Indicators"
+      ],
+      "rows": [
+        [
+          "Entry Speed",
+          "Early Signal",
+          "Lagging Signal"
+        ],
+        [
+          "Risk:Reward Ratio",
+          "1:2.5+",
+          "1:1"
+        ],
+        [
+          "Win Rate",
+          "High",
+          "Moderate"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Strategy Execution Comparison",
+    "text": "Retail Trader vs Professional Execution in Market",
     "chart": {
       "type": "bar",
       "labels": [
-        "3 Years",
-        "5 Years",
-        "10 Years"
+        "Breakout Entry",
+        "Retest Entry",
+        "Stop Loss Discipline"
       ],
       "datasets": [
         {
-          "label": "Nifty 50 CAGR (%)",
+          "label": "Retail",
           "data": [
-            12,
-            14,
-            14
+            80,
+            20,
+            30
           ]
         },
         {
-          "label": "Nifty Midcap 150 CAGR (%)",
+          "label": "Pro Trader",
           "data": [
-            18,
-            20,
-            21
+            30,
+            80,
+            95
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Mid-cap Selection Checklist",
-    "text": "गिरावट में Quality Stocks Identify करने का Easy Framework",
-    "table": {
-      "headers": [
-        "Metric",
-        "Target Standard",
-        "Why It Matters"
-      ],
-      "rows": [
-        [
-          "ROCE",
-          "> 18%",
-          "High Capital Efficiency"
-        ],
-        [
-          "PEG Ratio",
-          "< 1.2",
-          "Undervalued Growth"
-        ],
-        [
-          "Debt/Equity",
-          "< 0.5",
-          "Low Financial Risk"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "<span class='highlight'>Support & Resistance</span> का Power",
+    "text": "ITC के key Breakout levels पर Entry लो और Stop Loss हमेशा strictly follow करो।",
+    "image_query": "financial candle chart"
   },
   {
     "type": "bg-image",
-    "title": "RSI Divergence: &lt;span class='highlight'&gt;Smart Money&lt;/span&gt; Signal",
-    "text": "जब Price Lower Low बनाता है लेकिन RSI Indicator Higher Low दिखाता है, तो यह Bullish Reversal का strong Signal है।",
-    "image_query": "financial trading charts screen"
-  },
-  {
-    "type": "bg-image",
-    "title": "Start Investing with &lt;span class='highlight'&gt;Angel One&lt;/span&gt;",
-    "text": "Free Demat Account open करें, Advanced TradingView charts यूज करें और Zero Delivery Brokerage पर Invest करें।",
-    "image_query": "happy mobile investor success",
+    "title": "Ready to Trade with <span class='highlight'>Angel One?</span>",
+    "text": "Angel One पर Free Demat Account खोलें और Advanced Charting Tools का फायदा उठाएं!",
+    "image_query": "success business device",
     "is_cta": true
   }
 ]
