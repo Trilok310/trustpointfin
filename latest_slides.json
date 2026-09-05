@@ -1,81 +1,65 @@
 [
   {
     "type": "bg-image",
-    "title": "IPO में blind Invest कर रहे हो? <span class='highlight'>Position Sizing</span> सीखो!",
-    "text": "हर upcoming IPO में All-in जाना आपके Portfolio के लिए जोखिम भरा हो सकता है।",
-    "image_query": "stock market trading chart"
+    "title": "FinNifty के साथ <span class='highlight'>Swing Trading</span> Master करें!",
+    "text": "Financial sector के trends को decode करके Profits boost करने की proven strategy.",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Amateur vs Pro IPO Allocation",
-    "text": "सफल Investor और आम Retail Investor में सोच का फर्क:",
-    "table": {
-      "headers": [
-        "Parameter",
-        "Amateur Investor",
-        "Pro Investor"
-      ],
-      "rows": [
-        [
-          "IPO Capital",
-          "100% in 1 IPO",
-          "Max 5% Portfolio Capital"
-        ],
-        [
-          "Strategy",
-          "Pure Listing Pop",
-          "Long-term Compounding"
-        ],
-        [
-          "Risk Plan",
-          "No Risk Management",
-          "Staged Entry (Pyramiding)"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Listing Pop Reality Check",
-    "text": "Data दिखाता है कि Overhyped IPOs समय के साथ Listing Gains खो देते हैं:",
+    "title": "Index Alignment vs Success Rate",
+    "text": "FinNifty Trend के साथ Trade करने पर Win Rate में जबरदस्त उछाल मिलता है.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Listing Day",
-        "6 Months",
-        "12 Months"
+        "Random Trades",
+        "Sector Aligned"
       ],
       "datasets": [
         {
-          "label": "Overhyped IPOs",
+          "label": "Win Rate (%)",
           "data": [
-            45,
-            -10,
-            -25
-          ]
-        },
-        {
-          "label": "Quality Stocks",
-          "data": [
-            15,
-            30,
-            65
+            42,
+            74
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "Golden Rule: <span class='highlight'>5% Allocation Limit</span>",
-    "text": "किसी भी 1 IPO में अपने Total Equity Portfolio का 5% से ज़्यादा Capital कभी Block मत कीजिए।",
-    "image_query": "wealth management success"
+    "type": "bg-analytical",
+    "title": "Amateur vs Pro Strategy",
+    "text": "Top Swing Traders का Execution Matrix.",
+    "table": {
+      "headers": [
+        "Execution Step",
+        "Amateur Trader",
+        "Pro Swing Trader"
+      ],
+      "rows": [
+        [
+          "Sector Analysis",
+          "Ignore करते हैं",
+          "FinNifty Trend confirm करते हैं"
+        ],
+        [
+          "Stock Selection",
+          "Random tips",
+          "Relative Strength filters"
+        ],
+        [
+          "Risk Control",
+          "No Stop Loss",
+          "Strict Risk-Reward (1:2+)"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Ready to Invest with <span class='highlight'>Angel One?</span>",
-    "text": "Fast IPO Applications और Smooth Trading Experience के लिए आज ही Demat Account खोलें!",
-    "image_query": "financial growth mobile",
+    "title": "Ready for <span class='highlight'>Smart Trading?</span>",
+    "text": "Angel One के advanced charts और fast execution के साथ आज ही अपना Demat Account open करें!",
+    "image_query": "trader looking at monitor",
     "is_cta": true
   }
 ]
