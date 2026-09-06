@@ -108,7 +108,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 97. How to use Intraday Scalping for the Upcoming Quarter to Trade Gold ETFs
 - [x] 98. Mid-cap Stocks Analysis: For Long-term Wealth Creation to RSI Divergence
 - [x] 99. Price Action Trading Explained: The Ultimate Strategy for Trading ITC
-- [ ] 100. Top Secrets: Mastering Volume Profile Analysis for ITC
+- [x] 100. Top Secrets: Mastering Volume Profile Analysis for ITC
 - [ ] 101. To Avoid Massive Drawdowns: Mastering Growth Investing for Penny Stocks
 - [ ] 102. Why Sector Rotation is the Key to ITC during a Bear Market
 - [ ] 103. Why The CAN SLIM Method is the Key to FMCG Stocks based on FII/DII Data

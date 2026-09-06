@@ -364,4 +364,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://trustpointfin.org/top-secrets-mastering-volume-profile-analysis-for-itc.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

@@ -1,65 +1,57 @@
 [
   {
     "type": "bg-image",
-    "title": "ITC में <span class='highlight'>Price Action</span> से Profit कैसे बनाएं?",
-    "text": "Lagging Indicators छोड़ो और pure Chart Reading सीखो!",
-    "image_query": "stock market chart"
+    "title": "ITC में <span class='highlight'>Volume Profile</span> से hidden levels ढूंढिए!",
+    "text": "Retail traders सिर्फ Price Action देखते हैं, लेकिन Professionals Volume Profile के साथ smart entry लेते हैं।",
+    "image_query": "stock market chart analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Price Action vs Indicators",
-    "text": "ITC stock पर कौन सी Strategy बेहतर काम करती है?",
+    "title": "Traditional vs Volume Profile Analysis",
+    "text": "ITC Stock में दोनों approach की performance comparision:",
     "table": {
       "headers": [
-        "Factor",
-        "Price Action",
-        "Indicators"
+        "Metric",
+        "Standard Volume",
+        "Volume Profile"
       ],
       "rows": [
         [
-          "Entry Speed",
-          "Early Signal",
-          "Lagging Signal"
+          "Support Accuracy",
+          "55%",
+          "82%"
         ],
         [
-          "Risk:Reward Ratio",
-          "1:2.5+",
-          "1:1"
+          "Breakout Target",
+          "Unclear",
+          "High Precision"
         ],
         [
-          "Win Rate",
+          "False Signals",
           "High",
-          "Moderate"
+          "Low"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Execution Comparison",
-    "text": "Retail Trader vs Professional Execution in Market",
+    "title": "ITC Point of Control (POC) Success Rate",
+    "text": "Key Value Area levels पर price reaction win-rate:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Breakout Entry",
-        "Retest Entry",
-        "Stop Loss Discipline"
+        "HVN Support",
+        "POC Bounce",
+        "LVN Breakout"
       ],
       "datasets": [
         {
-          "label": "Retail",
+          "label": "Win Rate (%)",
           "data": [
-            80,
-            20,
-            30
-          ]
-        },
-        {
-          "label": "Pro Trader",
-          "data": [
-            30,
-            80,
-            95
+            78,
+            85,
+            72
           ]
         }
       ]
@@ -67,15 +59,9 @@
   },
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Support & Resistance</span> का Power",
-    "text": "ITC के key Breakout levels पर Entry लो और Stop Loss हमेशा strictly follow करो।",
-    "image_query": "financial candle chart"
-  },
-  {
-    "type": "bg-image",
-    "title": "Ready to Trade with <span class='highlight'>Angel One?</span>",
-    "text": "Angel One पर Free Demat Account खोलें और Advanced Charting Tools का फायदा उठाएं!",
-    "image_query": "success business device",
+    "title": "Ready to trade <span class='highlight'>ITC</span> like a Pro?",
+    "text": "Angel One पर Free Demat Account खोलें और Advanced Charting & Zero Brokerage का लाभ उठाएं!",
+    "image_query": "financial success trading",
     "is_cta": true
   }
 ]
