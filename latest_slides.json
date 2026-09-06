@@ -1,57 +1,57 @@
 [
   {
     "type": "bg-image",
-    "title": "ITC में <span class='highlight'>Volume Profile</span> से hidden levels ढूंढिए!",
-    "text": "Retail traders सिर्फ Price Action देखते हैं, लेकिन Professionals Volume Profile के साथ smart entry लेते हैं।",
-    "image_query": "stock market chart analysis"
+    "title": "Penny Stocks में <span class='highlight'>Massive Drawdowns</span> से कैसे बचें?",
+    "text": "High Return के चक्कर में Capital Wipeout मत होने दो। Follow these Growth Rules!",
+    "image_query": "stock market crash chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Traditional vs Volume Profile Analysis",
-    "text": "ITC Stock में दोनों approach की performance comparision:",
+    "title": "Retail vs Pro Trader Approach",
+    "text": "Micro-cap Trading में Risk Management ही Winner डिसाइड करता है।",
     "table": {
       "headers": [
-        "Metric",
-        "Standard Volume",
-        "Volume Profile"
+        "Factor",
+        "Amateur Retail",
+        "Pro Investor"
       ],
       "rows": [
         [
-          "Support Accuracy",
-          "55%",
-          "82%"
+          "Stop Loss",
+          "Ignore करते हैं",
+          "Strict Cut-off"
         ],
         [
-          "Breakout Target",
-          "Unclear",
-          "High Precision"
+          "Position Size",
+          "100% Capital",
+          "Max 2-3% Per Stock"
         ],
         [
-          "False Signals",
-          "High",
-          "Low"
+          "Analysis",
+          "Tip Based",
+          "Cash Flow & Growth"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "ITC Point of Control (POC) Success Rate",
-    "text": "Key Value Area levels पर price reaction win-rate:",
+    "title": "Drawdown Recovery Mathematics",
+    "text": "जितना बड़ा Loss, Break-even करना उतना ही मुश्किल!",
     "chart": {
       "type": "bar",
       "labels": [
-        "HVN Support",
-        "POC Bounce",
-        "LVN Breakout"
+        "-20% Loss",
+        "-50% Loss",
+        "-80% Loss"
       ],
       "datasets": [
         {
-          "label": "Win Rate (%)",
+          "label": "Required Gain for Break-even (%)",
           "data": [
-            78,
-            85,
-            72
+            25,
+            100,
+            400
           ]
         }
       ]
@@ -59,9 +59,15 @@
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade <span class='highlight'>ITC</span> like a Pro?",
-    "text": "Angel One पर Free Demat Account खोलें और Advanced Charting & Zero Brokerage का लाभ उठाएं!",
-    "image_query": "financial success trading",
+    "title": "Golden Filters for <span class='highlight'>Penny Stocks</span>",
+    "text": "1. Debt to Equity < 0.5\n2. Positive Operating Cash Flow\n3. Promoter Holding > 50%",
+    "image_query": "financial analytics chart dashboard"
+  },
+  {
+    "type": "bg-image",
+    "title": "Ready to Trade with <span class='highlight'>Discipline?</span>",
+    "text": "Angel One के साथ फ्री Demat Account खोलें और Smart Trading Tools का यूज़ करें!",
+    "image_query": "trading smartphone app",
     "is_cta": true
   }
 ]
