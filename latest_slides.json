@@ -1,73 +1,84 @@
 [
   {
     "type": "bg-image",
-    "title": "Penny Stocks में <span class='highlight'>Massive Drawdowns</span> से कैसे बचें?",
-    "text": "High Return के चक्कर में Capital Wipeout मत होने दो। Follow these Growth Rules!",
-    "image_query": "stock market crash chart"
+    "title": "Bear Market में <span class='highlight'>Sector Rotation</span> क्यों जरूरी है?",
+    "text": "जब Market गिरे, तब FMCG Titan ITC जैसा Defensive Stock आपके Portfolio को Bouncing Back Ability देता है।",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Pro Trader Approach",
-    "text": "Micro-cap Trading में Risk Management ही Winner डिसाइड करता है।",
-    "table": {
-      "headers": [
-        "Factor",
-        "Amateur Retail",
-        "Pro Investor"
-      ],
-      "rows": [
-        [
-          "Stop Loss",
-          "Ignore करते हैं",
-          "Strict Cut-off"
-        ],
-        [
-          "Position Size",
-          "100% Capital",
-          "Max 2-3% Per Stock"
-        ],
-        [
-          "Analysis",
-          "Tip Based",
-          "Cash Flow & Growth"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Drawdown Recovery Mathematics",
-    "text": "जितना बड़ा Loss, Break-even करना उतना ही मुश्किल!",
+    "title": "Drawdown Comparison: Nifty 50 vs ITC",
+    "text": "Bear Market के दौरान ITC का Relative Outperformance",
     "chart": {
       "type": "bar",
       "labels": [
-        "-20% Loss",
-        "-50% Loss",
-        "-80% Loss"
+        "2018 Correction",
+        "2020 Crash",
+        "2022 Inflation",
+        "2024 Volatility"
       ],
       "datasets": [
         {
-          "label": "Required Gain for Break-even (%)",
+          "label": "Nifty 50 Drawdown (%)",
           "data": [
-            25,
-            100,
-            400
+            -15,
+            -38,
+            -12,
+            -9
+          ]
+        },
+        {
+          "label": "ITC Return (%)",
+          "data": [
+            4,
+            -18,
+            24,
+            11
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "Golden Filters for <span class='highlight'>Penny Stocks</span>",
-    "text": "1. Debt to Equity < 0.5\n2. Positive Operating Cash Flow\n3. Promoter Holding > 50%",
-    "image_query": "financial analytics chart dashboard"
+    "type": "bg-analytical",
+    "title": "ITC: Fundamental Defensive Profile",
+    "text": "High Beta Stocks vs ITC Defensive Engine",
+    "table": {
+      "headers": [
+        "Metric",
+        "High Beta Stocks",
+        "ITC Defensive"
+      ],
+      "rows": [
+        [
+          "Dividend Yield",
+          "< 1.2%",
+          "3.5% - 4.2%"
+        ],
+        [
+          "Beta (Volatility)",
+          "> 1.2",
+          "0.65"
+        ],
+        [
+          "Cash Flow Stability",
+          "Unpredictable",
+          "Highly Consistent"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Ready to Trade with <span class='highlight'>Discipline?</span>",
-    "text": "Angel One के साथ फ्री Demat Account खोलें और Smart Trading Tools का यूज़ करें!",
-    "image_query": "trading smartphone app",
+    "title": "<span class='highlight'>Tactical Asset Allocation</span> की Strategy",
+    "text": "High Beta Sectors से FMCG में Smoothly Shift करने के लिए Data-Driven Tools का use करें।",
+    "image_query": "wealth growth trading"
+  },
+  {
+    "type": "bg-image",
+    "title": "Angel One पर Smartly <span class='highlight'>Invest</span> करें!",
+    "text": "Zero Brokerage on Delivery Trades के साथ आज ही अपना Free Demat Account खोलें।",
+    "image_query": "trading mobile app",
     "is_cta": true
   }
 ]
