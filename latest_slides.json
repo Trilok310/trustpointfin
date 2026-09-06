@@ -1,84 +1,84 @@
 [
   {
     "type": "bg-image",
-    "title": "Bear Market में <span class='highlight'>Sector Rotation</span> क्यों जरूरी है?",
-    "text": "जब Market गिरे, तब FMCG Titan ITC जैसा Defensive Stock आपके Portfolio को Bouncing Back Ability देता है।",
-    "image_query": "stock market chart"
+    "title": "FMCG Stocks में <span class='highlight'>Smart Investment</span> का Secret!",
+    "text": "CAN SLIM Strategy और FII/DII Data का Combination सीखें।",
+    "image_query": "stock market chart analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Drawdown Comparison: Nifty 50 vs ITC",
-    "text": "Bear Market के दौरान ITC का Relative Outperformance",
+    "title": "Strategy Comparison Matrix",
+    "text": "Traditional Stock Picking vs CAN SLIM Approach",
+    "table": {
+      "headers": [
+        "Metric",
+        "Traditional",
+        "CAN SLIM"
+      ],
+      "rows": [
+        [
+          "Earnings Growth",
+          "Ignored",
+          "Quarterly > 20%"
+        ],
+        [
+          "Institutional Role",
+          "Guesswork",
+          "Track FII/DII Buying"
+        ],
+        [
+          "Market Direction",
+          "Emotional",
+          "Trend Following"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Institutional Inflow Impact",
+    "text": "Strong FII/DII Inflow से Stock Prices में massive Growth मिलती है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "2018 Correction",
-        "2020 Crash",
-        "2022 Inflation",
-        "2024 Volatility"
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
       ],
       "datasets": [
         {
-          "label": "Nifty 50 Drawdown (%)",
+          "label": "FII/DII Inflow (Cr)",
           "data": [
-            -15,
-            -38,
-            -12,
-            -9
+            1200,
+            2500,
+            3800,
+            5100
           ]
         },
         {
-          "label": "ITC Return (%)",
+          "label": "Stock Return (%)",
           "data": [
-            4,
-            -18,
-            24,
-            11
+            8,
+            18,
+            29,
+            42
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "ITC: Fundamental Defensive Profile",
-    "text": "High Beta Stocks vs ITC Defensive Engine",
-    "table": {
-      "headers": [
-        "Metric",
-        "High Beta Stocks",
-        "ITC Defensive"
-      ],
-      "rows": [
-        [
-          "Dividend Yield",
-          "< 1.2%",
-          "3.5% - 4.2%"
-        ],
-        [
-          "Beta (Volatility)",
-          "> 1.2",
-          "0.65"
-        ],
-        [
-          "Cash Flow Stability",
-          "Unpredictable",
-          "Highly Consistent"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "Always Follow the <span class='highlight'>Big Money!</span>",
+    "text": "FII और DII accumulation वाले Stocks में Risk काफी Low रहता है।",
+    "image_query": "wealth growth finance"
   },
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Tactical Asset Allocation</span> की Strategy",
-    "text": "High Beta Sectors से FMCG में Smoothly Shift करने के लिए Data-Driven Tools का use करें।",
-    "image_query": "wealth growth trading"
-  },
-  {
-    "type": "bg-image",
-    "title": "Angel One पर Smartly <span class='highlight'>Invest</span> करें!",
-    "text": "Zero Brokerage on Delivery Trades के साथ आज ही अपना Free Demat Account खोलें।",
-    "image_query": "trading mobile app",
+    "title": "Ready to Start Your <span class='highlight'>Wealth Journey?</span>",
+    "text": "Angel One पर Free Demat Account खोलें और Zero Delivery Brokerage का Benefit उठाएं!",
+    "image_query": "trading app smartphone success",
     "is_cta": true
   }
 ]
