@@ -1,78 +1,78 @@
 [
   {
     "type": "bg-image",
-    "title": "Nifty IT Sector में <span class='highlight'>Price Action</span> से Profit कैसे बनाएं?",
-    "text": "2026 में Trading के लिए सबसे effective Setup और Strategy सीखें।",
-    "image_query": "stock market trading chart"
+    "title": "Reliance में <span class='highlight'>Breakout Trading</span> कैसे करें?",
+    "text": "Beginners के लिए Complete Technical Breakdown और Profitable Setup guide!",
+    "image_query": "stock chart trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Price Action Setup: Breakout vs Retest Entry",
-    "text": "Retest Entry चुनकर आप Risk कम कर सकते हैं और Risk-Reward Ratio बढ़ा सकते हैं।",
+    "title": "Breakout Confirmation के Rules",
+    "text": "False Breakout और Traps से बचने के लिए हमेशा इन 3 Factors को Verify करें:",
+    "table": {
+      "headers": [
+        "Factor",
+        "Fake Breakout",
+        "Real Breakout"
+      ],
+      "rows": [
+        [
+          "Volume",
+          "Low / Average",
+          "2x Average Volume"
+        ],
+        [
+          "Candle Close",
+          "Wick above Resistance",
+          "Solid Body Close"
+        ],
+        [
+          "RSI Level",
+          "Below 50",
+          "Above 60"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Risk Management & Profit",
+    "text": "Strict Stop Loss और Discipline के साथ Market में Compound Returns बनाएं:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Breakout Chasing",
-        "Retest Entry"
+        "Trade 1",
+        "Trade 2",
+        "Trade 3",
+        "Net Capital"
       ],
       "datasets": [
         {
-          "label": "Win Rate %",
+          "label": "Without SL (Amateur)",
           "data": [
-            42,
-            68
+            -5,
+            -10,
+            12,
+            -3
           ]
         },
         {
-          "label": "Avg Risk-Reward",
+          "label": "With SL (Pro Trader)",
           "data": [
-            1.2,
-            2.6
+            -2,
+            -2,
+            10,
+            6
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Amateur vs Pro Price Action Strategy",
-    "text": "Indian IT Stocks में Trade करते समय disciplined Execution ही success देता है।",
-    "table": {
-      "headers": [
-        "Factor",
-        "Amateur Trader",
-        "Pro Price Action Trader"
-      ],
-      "rows": [
-        [
-          "Entry Point",
-          "Breakout के peak पर",
-          "20-EMA Retest होने पर"
-        ],
-        [
-          "Stop Loss",
-          "Random / No Stop Loss",
-          "Swing Low के नीचे Strict SL"
-        ],
-        [
-          "Risk-Reward",
-          "Unplanned",
-          "Minimum 1:2.5 Ratio"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Rule #1: <span class='highlight'>Volume Confirmation</span> हमेशा चेक करें",
-    "text": "बिना High Volume के Breakout पर Entry कभी न लें। Fakeouts से बचने का यही Golden Rule है।",
-    "image_query": "candlestick chart technical analysis"
-  },
-  {
-    "type": "bg-image",
-    "title": "Angel One के साथ <span class='highlight'>Trading Journey</span> शुरू करें!",
-    "text": "Advanced TradingView Charts और fast order execution का लाभ उठाएं। आज ही Angel One पर Demat Account open करें!",
-    "image_query": "financial success mobile trading app",
+    "title": "Start Your Trading Journey with <span class='highlight'>Angel One</span>",
+    "text": "आज ही Angel One पर Free Demat Account खोलो और Charting Tools के साथ Smart Trading शुरू करो!",
+    "image_query": "financial success smartphone",
     "is_cta": true
   }
 ]
