@@ -1,84 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "FMCG Stocks में <span class='highlight'>Smart Investment</span> का Secret!",
-    "text": "CAN SLIM Strategy और FII/DII Data का Combination सीखें।",
-    "image_query": "stock market chart analysis"
+    "title": "HDFC Bank में <span class='highlight'>Quantitative Analysis</span> क्यों जरूरी है?",
+    "text": "Upcoming Quarter में Profit कमाने के लिए सही Data देखना सीखें।",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Comparison Matrix",
-    "text": "Traditional Stock Picking vs CAN SLIM Approach",
-    "table": {
-      "headers": [
-        "Metric",
-        "Traditional",
-        "CAN SLIM"
-      ],
-      "rows": [
-        [
-          "Earnings Growth",
-          "Ignored",
-          "Quarterly > 20%"
-        ],
-        [
-          "Institutional Role",
-          "Guesswork",
-          "Track FII/DII Buying"
-        ],
-        [
-          "Market Direction",
-          "Emotional",
-          "Trend Following"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Institutional Inflow Impact",
-    "text": "Strong FII/DII Inflow से Stock Prices में massive Growth मिलती है।",
+    "title": "Quantitative vs Qualitative Approach",
+    "text": "Market में emotions के बजाए pure Data और Numbers पर ध्यान दें।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Q1",
-        "Q2",
-        "Q3",
-        "Q4"
+        "Accuracy",
+        "Risk Control",
+        "Returns"
       ],
       "datasets": [
         {
-          "label": "FII/DII Inflow (Cr)",
+          "label": "Gut Feeling",
           "data": [
-            1200,
-            2500,
-            3800,
-            5100
+            40,
+            30,
+            45
           ]
         },
         {
-          "label": "Stock Return (%)",
+          "label": "Quant Model",
           "data": [
-            8,
-            18,
-            29,
-            42
+            85,
+            80,
+            78
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "Always Follow the <span class='highlight'>Big Money!</span>",
-    "text": "FII और DII accumulation वाले Stocks में Risk काफी Low रहता है।",
-    "image_query": "wealth growth finance"
+    "type": "bg-analytical",
+    "title": "HDFC Bank के 3 Critical Quant Metrics",
+    "text": "इस Quarter में इन Key Metrics को Track करें:",
+    "table": {
+      "headers": [
+        "Metric",
+        "Target Value",
+        "Impact"
+      ],
+      "rows": [
+        [
+          "LDR Ratio",
+          "< 85%",
+          "Bullish Signal"
+        ],
+        [
+          "NIM Margin",
+          "> 3.45%",
+          "Margin Expansion"
+        ],
+        [
+          "CASA Ratio",
+          "> 38%",
+          "Low Cost Deposit"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Ready to Start Your <span class='highlight'>Wealth Journey?</span>",
-    "text": "Angel One पर Free Demat Account खोलें और Zero Delivery Brokerage का Benefit उठाएं!",
-    "image_query": "trading app smartphone success",
+    "title": "Smart Investing की शुरुआत <span class='highlight'>Angel One</span> के साथ करें!",
+    "text": "Zero Brokerage on Delivery Trades और Advanced Charts के साथ आज ही Demat Account खोलें।",
+    "image_query": "financial growth software",
     "is_cta": true
   }
 ]

@@ -112,7 +112,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 101. To Avoid Massive Drawdowns: Mastering Growth Investing for Penny Stocks
 - [x] 102. Why Sector Rotation is the Key to ITC during a Bear Market
 - [x] 103. Why The CAN SLIM Method is the Key to FMCG Stocks based on FII/DII Data
-- [ ] 104. Why Quantitative Analysis is the Key to HDFC Bank for the Upcoming Quarter
+- [x] 104. Why Quantitative Analysis is the Key to HDFC Bank for the Upcoming Quarter
 - [ ] 105. How to use Algorithmic Trading around Budget Day to Trade Gold ETFs
 - [ ] 106. What Every Investor Needs to Know: The Best Price Action Trading Setup for Indian IT Sector
 - [ ] 107. Reliance Analysis: A Beginner's Guide to Breakout Trading
