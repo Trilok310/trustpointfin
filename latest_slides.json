@@ -1,30 +1,33 @@
 [
   {
     "type": "bg-image",
-    "title": "Budget Day पर <span class='highlight'>Gold ETFs</span> में Algo Trading कैसे करें?",
-    "text": "Union Budget की Volatility को Smart Strategy और Discipline के साथ Trade करने की Guide.",
-    "image_query": "gold stock trading"
+    "title": "Nifty IT Sector में <span class='highlight'>Price Action</span> से Profit कैसे बनाएं?",
+    "text": "2026 में Trading के लिए सबसे effective Setup और Strategy सीखें।",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Budget Day Volatility Impact",
-    "text": "Budget announcements के दौरान Gold ETFs में Intraday Price Swings काफी तेज़ हो जाते हैं।",
+    "title": "Price Action Setup: Breakout vs Retest Entry",
+    "text": "Retest Entry चुनकर आप Risk कम कर सकते हैं और Risk-Reward Ratio बढ़ा सकते हैं।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Normal Day",
-        "Budget 2024",
-        "Budget 2025",
-        "Budget 2026 Est."
+        "Breakout Chasing",
+        "Retest Entry"
       ],
       "datasets": [
         {
-          "label": "Avg Intraday Volatility (%)",
+          "label": "Win Rate %",
           "data": [
-            0.6,
-            2.8,
-            3.1,
-            3.5
+            42,
+            68
+          ]
+        },
+        {
+          "label": "Avg Risk-Reward",
+          "data": [
+            1.2,
+            2.6
           ]
         }
       ]
@@ -32,38 +35,44 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Manual vs Algo Execution",
-    "text": "High Volatility में Discipline और Execution Speed का Comparison:",
+    "title": "Amateur vs Pro Price Action Strategy",
+    "text": "Indian IT Stocks में Trade करते समय disciplined Execution ही success देता है।",
     "table": {
       "headers": [
-        "Metric",
-        "Manual Trading",
-        "Algo Trading"
+        "Factor",
+        "Amateur Trader",
+        "Pro Price Action Trader"
       ],
       "rows": [
         [
-          "Execution Speed",
-          "3-5 Seconds",
-          "< 50 Milliseconds"
+          "Entry Point",
+          "Breakout के peak पर",
+          "20-EMA Retest होने पर"
         ],
         [
-          "Emotional Bias",
-          "High Panic",
-          "Zero Bias"
+          "Stop Loss",
+          "Random / No Stop Loss",
+          "Swing Low के नीचे Strict SL"
         ],
         [
-          "Stop-Loss Discipline",
-          "Often Delayed",
-          "Strict & Automated"
+          "Risk-Reward",
+          "Unplanned",
+          "Minimum 1:2.5 Ratio"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Trade Automation के लिए Ready हैं?",
-    "text": "Angel One के SmartAPI और Zero Brokerage के साथ आज ही अपना Free Demat Account खोलें!",
-    "image_query": "trading growth success",
+    "title": "Rule #1: <span class='highlight'>Volume Confirmation</span> हमेशा चेक करें",
+    "text": "बिना High Volume के Breakout पर Entry कभी न लें। Fakeouts से बचने का यही Golden Rule है।",
+    "image_query": "candlestick chart technical analysis"
+  },
+  {
+    "type": "bg-image",
+    "title": "Angel One के साथ <span class='highlight'>Trading Journey</span> शुरू करें!",
+    "text": "Advanced TradingView Charts और fast order execution का लाभ उठाएं। आज ही Angel One पर Demat Account open करें!",
+    "image_query": "financial success mobile trading app",
     "is_cta": true
   }
 ]
