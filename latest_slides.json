@@ -1,36 +1,30 @@
 [
   {
     "type": "bg-image",
-    "title": "HDFC Bank में <span class='highlight'>Quantitative Analysis</span> क्यों जरूरी है?",
-    "text": "Upcoming Quarter में Profit कमाने के लिए सही Data देखना सीखें।",
-    "image_query": "stock market chart"
+    "title": "Budget Day पर <span class='highlight'>Gold ETFs</span> में Algo Trading कैसे करें?",
+    "text": "Union Budget की Volatility को Smart Strategy और Discipline के साथ Trade करने की Guide.",
+    "image_query": "gold stock trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Quantitative vs Qualitative Approach",
-    "text": "Market में emotions के बजाए pure Data और Numbers पर ध्यान दें।",
+    "title": "Budget Day Volatility Impact",
+    "text": "Budget announcements के दौरान Gold ETFs में Intraday Price Swings काफी तेज़ हो जाते हैं।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Accuracy",
-        "Risk Control",
-        "Returns"
+        "Normal Day",
+        "Budget 2024",
+        "Budget 2025",
+        "Budget 2026 Est."
       ],
       "datasets": [
         {
-          "label": "Gut Feeling",
+          "label": "Avg Intraday Volatility (%)",
           "data": [
-            40,
-            30,
-            45
-          ]
-        },
-        {
-          "label": "Quant Model",
-          "data": [
-            85,
-            80,
-            78
+            0.6,
+            2.8,
+            3.1,
+            3.5
           ]
         }
       ]
@@ -38,38 +32,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "HDFC Bank के 3 Critical Quant Metrics",
-    "text": "इस Quarter में इन Key Metrics को Track करें:",
+    "title": "Manual vs Algo Execution",
+    "text": "High Volatility में Discipline और Execution Speed का Comparison:",
     "table": {
       "headers": [
         "Metric",
-        "Target Value",
-        "Impact"
+        "Manual Trading",
+        "Algo Trading"
       ],
       "rows": [
         [
-          "LDR Ratio",
-          "< 85%",
-          "Bullish Signal"
+          "Execution Speed",
+          "3-5 Seconds",
+          "< 50 Milliseconds"
         ],
         [
-          "NIM Margin",
-          "> 3.45%",
-          "Margin Expansion"
+          "Emotional Bias",
+          "High Panic",
+          "Zero Bias"
         ],
         [
-          "CASA Ratio",
-          "> 38%",
-          "Low Cost Deposit"
+          "Stop-Loss Discipline",
+          "Often Delayed",
+          "Strict & Automated"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Smart Investing की शुरुआत <span class='highlight'>Angel One</span> के साथ करें!",
-    "text": "Zero Brokerage on Delivery Trades और Advanced Charts के साथ आज ही Demat Account खोलें।",
-    "image_query": "financial growth software",
+    "title": "Trade Automation के लिए Ready हैं?",
+    "text": "Angel One के SmartAPI और Zero Brokerage के साथ आज ही अपना Free Demat Account खोलें!",
+    "image_query": "trading growth success",
     "is_cta": true
   }
 ]
