@@ -1,67 +1,81 @@
 [
   {
     "type": "bg-image",
-    "title": "Blue-chip Stocks में <span class='highlight'>Growth Strategy</span> कैसे बनाएं?",
-    "text": "2026 में Safely Wealth Create करने का Master Guide.",
-    "image_query": "stock market growth graph"
+    "title": "Market Correction में <span class='highlight'>Smart Investing</span> कैसे करें?",
+    "text": "Volume Profile analysis से जानें Mutual Funds में lump-sum Invest करने के बेस्ट Zones!",
+    "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Compounding Power Comparison",
-    "text": "10 Years में ₹1 Lakh Investment की growth potential:",
+    "title": "Price Chart vs Volume Profile",
+    "text": "सामान्य price charts केवल time दिखाते हैं, लेकिन Volume Profile असल institutional demand उजागर करता है।",
+    "table": {
+      "headers": [
+        "Feature",
+        "Normal Price Chart",
+        "Volume Profile"
+      ],
+      "rows": [
+        [
+          "Focus",
+          "Price over Time",
+          "Volume over Price"
+        ],
+        [
+          "Support Zone",
+          "Guessed Levels",
+          "Point of Control (POC)"
+        ],
+        [
+          "Institutional Footprint",
+          "Hidden",
+          "Clearly Visible"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "SIP + Tactical Top-Up Impact",
+    "text": "High Volume Nodes पर tactical lump-sum Invest करने से portfolio XIRR बूस्ट होता है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Traditional FD",
-        "Nifty 50 Avg",
-        "Blue-chip Growth"
+        "3 Years",
+        "5 Years",
+        "10 Years"
       ],
       "datasets": [
         {
-          "label": "Returns Growth Rate (CAGR)",
+          "label": "Standard SIP Returns (%)",
           "data": [
-            6.5,
-            12,
-            18.4
+            11.5,
+            13.2,
+            14.5
+          ]
+        },
+        {
+          "label": "SIP + Volume Profile Top-up (%)",
+          "data": [
+            14.2,
+            16.5,
+            18.2
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Growth Checklist Selection Matrix",
-    "text": "High-Growth Blue-chip identify करने के 3 Gold Rules:",
-    "table": {
-      "headers": [
-        "Metric",
-        "Target Value",
-        "Key Benefit"
-      ],
-      "rows": [
-        [
-          "ROCE",
-          "> 18%",
-          "High Capital Efficiency"
-        ],
-        [
-          "Earnings Growth",
-          "> 15% YoY",
-          "Consistent Profits Expansion"
-        ],
-        [
-          "PEG Ratio",
-          "< 1.5",
-          "Fair and Smart Valuation"
-        ]
-      ]
-    }
+    "type": "bg-image",
+    "title": "3-Step Correction Strategy",
+    "text": "1. Regular SIP चालू रखें\n2. Nifty/Indices पर POC levels track करें\n3. High Volume Support पर lump-sum Invest करें",
+    "image_query": "financial growth chart"
   },
   {
     "type": "bg-image",
-    "title": "Ready to Master <span class='highlight'>Growth Investing?</span>",
-    "text": "Angel One के साथ Free Demat Account खोलो और Zero Brokerage on Delivery Trades का फ़ायदा उठाओ!",
-    "image_query": "financial success mobile trading",
+    "title": "Start your <span class='highlight'>Smart Investing</span> journey!",
+    "text": "Angel One के साथ free Demat Account ओपन करें और advanced charting tools से Market में dominate करें।",
+    "image_query": "mobile trading app finance",
     "is_cta": true
   }
 ]
