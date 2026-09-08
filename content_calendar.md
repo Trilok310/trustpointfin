@@ -116,7 +116,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 105. How to use Algorithmic Trading around Budget Day to Trade Gold ETFs
 - [x] 106. What Every Investor Needs to Know: The Best Price Action Trading Setup for Indian IT Sector
 - [x] 107. Reliance Analysis: A Beginner's Guide to Breakout Trading
-- [ ] 108. What Every Investor Needs to Know: Mastering Growth Investing for Blue-chip Stocks
+- [x] 108. What Every Investor Needs to Know: Mastering Growth Investing for Blue-chip Stocks
 - [ ] 109. Why Volume Profile Analysis is the Key to Mutual Funds during Market Corrections
 - [ ] 110. Why Risk Management is the Key to HDFC Bank during a Bear Market
 - [ ] 111. Why Volume Profile Analysis is the Key to Reliance around Budget Day

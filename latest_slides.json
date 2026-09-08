@@ -1,78 +1,67 @@
 [
   {
     "type": "bg-image",
-    "title": "Reliance में <span class='highlight'>Breakout Trading</span> कैसे करें?",
-    "text": "Beginners के लिए Complete Technical Breakdown और Profitable Setup guide!",
-    "image_query": "stock chart trading"
+    "title": "Blue-chip Stocks में <span class='highlight'>Growth Strategy</span> कैसे बनाएं?",
+    "text": "2026 में Safely Wealth Create करने का Master Guide.",
+    "image_query": "stock market growth graph"
   },
   {
     "type": "bg-analytical",
-    "title": "Breakout Confirmation के Rules",
-    "text": "False Breakout और Traps से बचने के लिए हमेशा इन 3 Factors को Verify करें:",
-    "table": {
-      "headers": [
-        "Factor",
-        "Fake Breakout",
-        "Real Breakout"
-      ],
-      "rows": [
-        [
-          "Volume",
-          "Low / Average",
-          "2x Average Volume"
-        ],
-        [
-          "Candle Close",
-          "Wick above Resistance",
-          "Solid Body Close"
-        ],
-        [
-          "RSI Level",
-          "Below 50",
-          "Above 60"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Risk Management & Profit",
-    "text": "Strict Stop Loss और Discipline के साथ Market में Compound Returns बनाएं:",
+    "title": "Compounding Power Comparison",
+    "text": "10 Years में ₹1 Lakh Investment की growth potential:",
     "chart": {
       "type": "bar",
       "labels": [
-        "Trade 1",
-        "Trade 2",
-        "Trade 3",
-        "Net Capital"
+        "Traditional FD",
+        "Nifty 50 Avg",
+        "Blue-chip Growth"
       ],
       "datasets": [
         {
-          "label": "Without SL (Amateur)",
+          "label": "Returns Growth Rate (CAGR)",
           "data": [
-            -5,
-            -10,
+            6.5,
             12,
-            -3
-          ]
-        },
-        {
-          "label": "With SL (Pro Trader)",
-          "data": [
-            -2,
-            -2,
-            10,
-            6
+            18.4
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Growth Checklist Selection Matrix",
+    "text": "High-Growth Blue-chip identify करने के 3 Gold Rules:",
+    "table": {
+      "headers": [
+        "Metric",
+        "Target Value",
+        "Key Benefit"
+      ],
+      "rows": [
+        [
+          "ROCE",
+          "> 18%",
+          "High Capital Efficiency"
+        ],
+        [
+          "Earnings Growth",
+          "> 15% YoY",
+          "Consistent Profits Expansion"
+        ],
+        [
+          "PEG Ratio",
+          "< 1.5",
+          "Fair and Smart Valuation"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Start Your Trading Journey with <span class='highlight'>Angel One</span>",
-    "text": "आज ही Angel One पर Free Demat Account खोलो और Charting Tools के साथ Smart Trading शुरू करो!",
-    "image_query": "financial success smartphone",
+    "title": "Ready to Master <span class='highlight'>Growth Investing?</span>",
+    "text": "Angel One के साथ Free Demat Account खोलो और Zero Brokerage on Delivery Trades का फ़ायदा उठाओ!",
+    "image_query": "financial success mobile trading",
     "is_cta": true
   }
 ]
