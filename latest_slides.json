@@ -1,78 +1,90 @@
 [
   {
     "type": "bg-image",
-    "title": "Bear Market में <span class='highlight'>Risk Management</span> क्यों जरूरी है?",
-    "text": "HDFC Bank का Underwriting Formula जो हर Market Crash में Portfolio को संभालता है।",
-    "image_query": "stock market graph down"
+    "title": "Reliance में <span class='highlight'>Budget Day</span> Trading का Secret Hack!",
+    "text": "क्या आप भी high volatility के डर से trade नहीं करते? Let's decode the institutional strategy using Volume Profile.",
+    "image_query": "stock market trading"
+  },
+  {
+    "type": "bg-image",
+    "title": "Traditional Indicators क्यों fail होते हैं?",
+    "text": "Volume and Price dynamic को समझे बिना normal indicators lag करते हैं। Budget Day पर normal charts काम नहीं आते।",
+    "image_query": "frustrated trader"
+  },
+  {
+    "type": "bg-image",
+    "title": "<span class='highlight'>Volume Profile</span> क्या है?",
+    "text": "यह Price-by-Volume analysis है जो दिखाता है कि institutional players ने किस exact price point पर सबसे ज़्यादा buy या sell किया है।",
+    "image_query": "financial analytics"
   },
   {
     "type": "bg-analytical",
-    "title": "Asset Quality Consistency",
-    "text": "Bear Market के दौरान HDFC Bank का Net NPA हमेशा Controlled रहता है।",
+    "title": "Price-by-Time vs Price-by-Volume",
+    "text": "Budget Day trading के लिए right approach चुनें।",
+    "table": {
+      "headers": [
+        "Feature",
+        "Normal Volume",
+        "Volume Profile"
+      ],
+      "rows": [
+        [
+          "Dimension",
+          "Only Time based",
+          "Price based distribution"
+        ],
+        [
+          "Big Players",
+          "Hard to spot",
+          "Shows Point of Control (POC)"
+        ],
+        [
+          "Accuracy",
+          "Low during volatility",
+          "High reliability levels"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Reliance Trading का Real-time Distribution",
+    "text": "Point of Control (POC) के पास major institutional volume build-up होता है।",
     "chart": {
-      "type": "bar",
+      "type": "line",
       "labels": [
-        "2023",
-        "2024",
-        "2025",
-        "2026E"
+        "Before POC",
+        "At POC Node",
+        "Above VAH",
+        "Below VAL"
       ],
       "datasets": [
         {
-          "label": "HDFC Bank Net NPA (%)",
+          "label": "Retail Volatility",
           "data": [
-            0.33,
-            0.38,
-            0.41,
-            0.43
+            80,
+            20,
+            90,
+            70
           ]
         },
         {
-          "label": "Industry Avg Net NPA (%)",
+          "label": "Institutional Volume",
           "data": [
-            1.2,
-            1.1,
-            1,
-            0.95
+            10,
+            95,
+            15,
+            25
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Strategy Matrix for Investors",
-    "text": "Market Correction में Amateur vs Professional Approach",
-    "table": {
-      "headers": [
-        "Factor",
-        "Amateur Investor",
-        "Pro Investor"
-      ],
-      "rows": [
-        [
-          "Bear Market Action",
-          "Panic Sell quality stocks",
-          "Accumulate via Equity SIP"
-        ],
-        [
-          "Risk Focus",
-          "Short term Profit",
-          "Asset Quality & NPAs"
-        ],
-        [
-          "Platform Choice",
-          "High fee brokers",
-          "Angel One for smooth execution"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Ready to Start <span class='highlight'>Investments?</span>",
-    "text": "Angel One पर Free Demat Account खोलें और Disciplined Investing शुरू करें।",
-    "image_query": "growth chart financial success",
+    "title": "Ready to trade with <span class='highlight'>Angel One?</span>",
+    "text": "Free Demat Account खोलें और premium Volume Profile tools का free access पाएं।",
+    "image_query": "wealth success",
     "is_cta": true
   }
 ]
