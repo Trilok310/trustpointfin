@@ -1,81 +1,78 @@
 [
   {
     "type": "bg-image",
-    "title": "Market Correction में <span class='highlight'>Smart Investing</span> कैसे करें?",
-    "text": "Volume Profile analysis से जानें Mutual Funds में lump-sum Invest करने के बेस्ट Zones!",
-    "image_query": "stock market trading chart"
+    "title": "Bear Market में <span class='highlight'>Risk Management</span> क्यों जरूरी है?",
+    "text": "HDFC Bank का Underwriting Formula जो हर Market Crash में Portfolio को संभालता है।",
+    "image_query": "stock market graph down"
   },
   {
     "type": "bg-analytical",
-    "title": "Price Chart vs Volume Profile",
-    "text": "सामान्य price charts केवल time दिखाते हैं, लेकिन Volume Profile असल institutional demand उजागर करता है।",
-    "table": {
-      "headers": [
-        "Feature",
-        "Normal Price Chart",
-        "Volume Profile"
-      ],
-      "rows": [
-        [
-          "Focus",
-          "Price over Time",
-          "Volume over Price"
-        ],
-        [
-          "Support Zone",
-          "Guessed Levels",
-          "Point of Control (POC)"
-        ],
-        [
-          "Institutional Footprint",
-          "Hidden",
-          "Clearly Visible"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "SIP + Tactical Top-Up Impact",
-    "text": "High Volume Nodes पर tactical lump-sum Invest करने से portfolio XIRR बूस्ट होता है।",
+    "title": "Asset Quality Consistency",
+    "text": "Bear Market के दौरान HDFC Bank का Net NPA हमेशा Controlled रहता है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "3 Years",
-        "5 Years",
-        "10 Years"
+        "2023",
+        "2024",
+        "2025",
+        "2026E"
       ],
       "datasets": [
         {
-          "label": "Standard SIP Returns (%)",
+          "label": "HDFC Bank Net NPA (%)",
           "data": [
-            11.5,
-            13.2,
-            14.5
+            0.33,
+            0.38,
+            0.41,
+            0.43
           ]
         },
         {
-          "label": "SIP + Volume Profile Top-up (%)",
+          "label": "Industry Avg Net NPA (%)",
           "data": [
-            14.2,
-            16.5,
-            18.2
+            1.2,
+            1.1,
+            1,
+            0.95
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "3-Step Correction Strategy",
-    "text": "1. Regular SIP चालू रखें\n2. Nifty/Indices पर POC levels track करें\n3. High Volume Support पर lump-sum Invest करें",
-    "image_query": "financial growth chart"
+    "type": "bg-analytical",
+    "title": "Strategy Matrix for Investors",
+    "text": "Market Correction में Amateur vs Professional Approach",
+    "table": {
+      "headers": [
+        "Factor",
+        "Amateur Investor",
+        "Pro Investor"
+      ],
+      "rows": [
+        [
+          "Bear Market Action",
+          "Panic Sell quality stocks",
+          "Accumulate via Equity SIP"
+        ],
+        [
+          "Risk Focus",
+          "Short term Profit",
+          "Asset Quality & NPAs"
+        ],
+        [
+          "Platform Choice",
+          "High fee brokers",
+          "Angel One for smooth execution"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Start your <span class='highlight'>Smart Investing</span> journey!",
-    "text": "Angel One के साथ free Demat Account ओपन करें और advanced charting tools से Market में dominate करें।",
-    "image_query": "mobile trading app finance",
+    "title": "Ready to Start <span class='highlight'>Investments?</span>",
+    "text": "Angel One पर Free Demat Account खोलें और Disciplined Investing शुरू करें।",
+    "image_query": "growth chart financial success",
     "is_cta": true
   }
 ]

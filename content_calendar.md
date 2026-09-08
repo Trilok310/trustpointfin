@@ -118,7 +118,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 107. Reliance Analysis: A Beginner's Guide to Breakout Trading
 - [x] 108. What Every Investor Needs to Know: Mastering Growth Investing for Blue-chip Stocks
 - [x] 109. Why Volume Profile Analysis is the Key to Mutual Funds during Market Corrections
-- [ ] 110. Why Risk Management is the Key to HDFC Bank during a Bear Market
+- [x] 110. Why Risk Management is the Key to HDFC Bank during a Bear Market
 - [ ] 111. Why Volume Profile Analysis is the Key to Reliance around Budget Day
 - [ ] 112. Gold ETFs Trading: How to Apply Stop Loss Placement for the Upcoming Quarter
 - [ ] 113. Bharti Airtel Analysis: For Working Professionals to Options Selling
