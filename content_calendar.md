@@ -121,7 +121,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 110. Why Risk Management is the Key to HDFC Bank during a Bear Market
 - [x] 111. Why Volume Profile Analysis is the Key to Reliance around Budget Day
 - [x] 112. Gold ETFs Trading: How to Apply Stop Loss Placement for the Upcoming Quarter
-- [ ] 113. Bharti Airtel Analysis: For Working Professionals to Options Selling
+- [x] 113. Bharti Airtel Analysis: For Working Professionals to Options Selling
 - [ ] 114. For Retail Traders: The Best Sector Rotation Setup for L&T
 - [ ] 115. Value Investing Principles Explained: Top Secrets for Trading Indian Banking Sector
 - [ ] 116. Common Mistakes to Avoid: Mastering Volume Profile Analysis for Blue-chip Stocks

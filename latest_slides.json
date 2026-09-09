@@ -1,73 +1,67 @@
 [
   {
     "type": "bg-image",
-    "title": "Gold ETFs में <span class='highlight'>Stop Loss</span> क्यों ज़रूरी है?",
-    "text": "2026 की Market Volatility में अपने Profits को Protect करने के Best Execution Strategies।",
-    "image_query": "gold chart stock market"
+    "title": "Bharti Airtel: <span class='highlight'>Smart Investment</span> & Income",
+    "text": "Working Professionals के लिए Equity Compounding और Options Selling का Master Guide.",
+    "image_query": "stock market trading professional"
   },
   {
     "type": "bg-analytical",
-    "title": "Stop Loss Strategy Comparison",
-    "text": "अपने Trading Style के मुताबिक सही Risk Control choose करें।",
-    "table": {
-      "headers": [
-        "Strategy",
-        "Risk Level",
-        "Best Used For"
-      ],
-      "rows": [
-        [
-          "Fixed % SL",
-          "High",
-          "Beginners"
-        ],
-        [
-          "ATR-Based SL",
-          "Low",
-          "Swing Traders"
-        ],
-        [
-          "Trailing SL",
-          "Medium",
-          "Bull Cycles"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Impact of Smart Stop Loss",
-    "text": "Disciplined Risk Management से Long-term Returns बढ़ जाते हैं।",
+    "title": "Strong <span class='highlight'>ARPU Expansion</span>",
+    "text": "Indian Telecom Market में Tariff Hikes से Airtel की Cash Flow stability जबरदस्त बढ़ी है.",
     "chart": {
       "type": "bar",
       "labels": [
-        "Without SL",
-        "Fixed % SL",
-        "ATR Trailing SL"
+        "FY24",
+        "FY25",
+        "FY26 Projected"
       ],
       "datasets": [
         {
-          "label": "Net Portfolio Returns %",
+          "label": "ARPU (in ₹)",
           "data": [
-            8,
-            14,
-            22
+            209,
+            235,
+            265
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "3 Golden Rules for <span class='highlight'>Risk Control</span>",
-    "text": "1. 14-day ATR buffer यूज़ करें।\n2. USD/INR Movement का ध्यान रखें।\n3. Angel One पर GTT Orders set करें।",
-    "image_query": "trading desk chart analysis"
+    "type": "bg-analytical",
+    "title": "Strategy Comparison Matrix",
+    "text": "Airtel Stock से Double Return कमाने का Framework.",
+    "table": {
+      "headers": [
+        "Strategy",
+        "Primary Goal",
+        "Expected Edge"
+      ],
+      "rows": [
+        [
+          "Equity SIP",
+          "Long-term Compounding",
+          "Low Beta Growth"
+        ],
+        [
+          "Covered Call",
+          "Extra Monthly Yield",
+          "Option Time Decay"
+        ],
+        [
+          "Cash-Secured Put",
+          "Discount Buying",
+          "Premium Harvesting"
+        ]
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Discipline?</span>",
-    "text": "Angel One पर Free Demat Account खोलें और Smart GTT Orders के साथ seamless Trading शुरू करें।",
-    "image_query": "financial success mobile app",
+    "title": "Ready to Start <span class='highlight'>Smart Trading?</span>",
+    "text": "Angel One पर Free Demat Account खोलें और Zero Delivery Brokerage के साथ Trade करें!",
+    "image_query": "financial success growth",
     "is_cta": true
   }
 ]
