@@ -448,4 +448,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://trustpointfin.org/lt-sector-rotation-strategy-2026-how-retail-traders-can-ride.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
