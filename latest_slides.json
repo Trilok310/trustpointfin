@@ -1,78 +1,80 @@
 [
   {
     "type": "bg-image",
-    "title": "L&T में &lt;span class='highlight'&gt;Sector Rotation&lt;/span&gt; Setup",
-    "text": "2026 में India के Capital Expenditure boom से Profit कमाने का Retail Traders के लिए perfect plan.",
-    "image_query": "indian infrastructure"
+    "title": "Banking Sector में <span class='highlight'>Value Investing</span> के Secrets!",
+    "text": "क्या आप सही Bank Stocks खोज रहे हैं? जानिए कैसे hidden gems ढूँढें।",
+    "image_query": "indian stock market finance"
   },
   {
     "type": "bg-analytical",
-    "title": "Why L&T is the Market Leader?",
-    "text": "FIIs और DIIs जब भी Defensive sectors से exit करते हैं, उनका Capital सीधे Capital Goods के Market leader L&T में flow होता है।",
+    "title": "Banking Metrics Checklist",
+    "text": "Bank Stocks evaluate करते समय इन levels का ध्यान रखें:",
+    "table": {
+      "headers": [
+        "Metric",
+        "Good Value",
+        "Warning Sign"
+      ],
+      "rows": [
+        [
+          "P/B Ratio",
+          "1.0x - 2.0x",
+          "> 3.5x"
+        ],
+        [
+          "Gross NPA",
+          "< 3.0%",
+          "> 5.0%"
+        ],
+        [
+          "NIM",
+          "> 3.5%",
+          "< 2.5%"
+        ],
+        [
+          "RoE",
+          "> 15.0%",
+          "< 10.0%"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "bg-analytical",
+    "title": "Amateur vs Pro Investor Strategy",
+    "text": "Banking cycle में Value Investing का तरीका",
     "chart": {
-      "type": "line",
+      "type": "bar",
       "labels": [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr"
+        "Fundamental Research",
+        "Patience",
+        "Long-term Return"
       ],
       "datasets": [
         {
-          "label": "L&T Momentum",
+          "label": "Amateur",
           "data": [
-            100,
-            120,
-            145,
-            180
+            3,
+            2,
+            4
           ]
         },
         {
-          "label": "Nifty 50",
+          "label": "Pro Investor",
           "data": [
-            100,
-            102,
-            105,
-            108
+            9,
+            9,
+            9
           ]
         }
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Retail vs Smart Money Strategy",
-    "text": "Sector Rotation को trade करने का सही और ग़लत तरीक़ा समझें।",
-    "table": {
-      "headers": [
-        "Strategy",
-        "Amateur Trader",
-        "Smart Money"
-      ],
-      "rows": [
-        [
-          "Timing",
-          "FOMO में high price पर Buying",
-          "Early Sector Rotation entry"
-        ],
-        [
-          "Risk Management",
-          "No Stop Loss structure",
-          "Strict Risk-to-Reward ratio"
-        ],
-        [
-          "Platform",
-          "Slow execution apps",
-          "Fast Trading via Angel One"
-        ]
-      ]
-    }
-  },
-  {
     "type": "bg-image",
-    "title": "Supercharge your &lt;span class='highlight'&gt;Trading Journey&lt;/span&gt;",
-    "text": "Angel One के advanced charts और lightning-fast execution के साथ L&T में perfect trade setups execute करें। आज ही Demat Account खोलें!",
-    "image_query": "wealth success",
+    "title": "Start your <span class='highlight'>Value Investing</span> Journey!",
+    "text": "Angel One पर free Demat Account खोलें और Zero Brokerage on Delivery Trades का फायदा उठाएं।",
+    "image_query": "wealth accumulation business",
     "is_cta": true
   }
 ]
