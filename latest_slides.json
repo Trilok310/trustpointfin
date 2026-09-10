@@ -1,75 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "ITC में <span class='highlight'>Volume Profile</span> का Magic!",
-    "text": "Long-term Wealth Creation के लिए Institutional Investors का secret formula समझें।",
-    "image_query": "stock market trading charts"
+    "title": "TCS <span class='highlight'>Earnings Season</span> में Emotional Discipline कैसे रखें?",
+    "text": "Panic Trading और FOMO से बचकर Profit बनाना सीखें।",
+    "image_query": "stock market trading psychology"
   },
   {
     "type": "bg-analytical",
-    "title": "Volume Profile के 3 Key Terms",
-    "text": "ITC Stock में Best Entry Points पहचानें:",
-    "table": {
-      "headers": [
-        "Term",
-        "Meaning",
-        "Strategy"
-      ],
-      "rows": [
-        [
-          "POC",
-          "Max Volume Price",
-          "Core Value Support Zone"
-        ],
-        [
-          "VAL",
-          "Value Area Low",
-          "Best Buying Opportunity"
-        ],
-        [
-          "VAH",
-          "Value Area High",
-          "Profit Target Area"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Standard Volume vs Volume Profile",
-    "text": "Smart Money movement पकड़ने में बेहतर कौन?",
+    "title": "Earnings Day Performance",
+    "text": "Amateur vs Professional Traders का Risk Control",
     "chart": {
       "type": "bar",
       "labels": [
-        "Accuracy",
-        "Entry Precision",
-        "Risk Control"
+        "Over-leveraging",
+        "No Stop Loss",
+        "Hedged Options"
       ],
       "datasets": [
         {
-          "label": "Standard Volume",
+          "label": "Retail Loss Rate (%)",
           "data": [
-            45,
-            50,
-            40
+            85,
+            78,
+            22
           ]
         },
         {
-          "label": "Volume Profile",
+          "label": "Pro Success Rate (%)",
           "data": [
-            85,
-            90,
-            80
+            15,
+            22,
+            78
           ]
         }
       ]
     }
   },
   {
+    "type": "bg-analytical",
+    "title": "Strategy Comparison",
+    "text": "Earnings Day पर सही Strategy चुनें",
+    "table": {
+      "headers": [
+        "Strategy",
+        "Risk Level",
+        "Emotional Trap"
+      ],
+      "rows": [
+        [
+          "Naked Options Buying",
+          "Very High",
+          "FOMO & IV Crush"
+        ],
+        [
+          "Spread Strategies",
+          "Defined & Low",
+          "Calculated Risk"
+        ],
+        [
+          "GTT Stop Loss",
+          "Controlled",
+          "Zero Panic Exits"
+        ]
+      ]
+    }
+  },
+  {
     "type": "bg-image",
-    "title": "Start your <span class='highlight'>Wealth Journey</span> today!",
-    "text": "Angel One पर Free Demat Account खोलें और Advanced Volume Profile Charts का उपयोग करके ITC में Invest करें।",
-    "image_query": "financial success investor",
+    "title": "<span class='highlight'>Angel One</span> के साथ Smart Trade करें!",
+    "text": "Open free Demat account with zero delivery brokerage and advanced charting tools.",
+    "image_query": "financial investment chart app",
     "is_cta": true
   }
 ]
