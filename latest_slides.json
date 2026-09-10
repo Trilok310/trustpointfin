@@ -1,67 +1,50 @@
 [
   {
     "type": "bg-image",
-    "title": "Blue-chip Stocks में <span class='highlight'>Volume Profile</span> की 3 बड़ी गलतियां!",
-    "text": "क्या आप भी Nifty 50 Stocks में गलत Levels पर Entry ले रहे हैं? जानिए सही Strategy.",
-    "image_query": "stock market chart"
+    "title": "<span class='highlight'>Bear Market</span> में Profit कैसे बनाएं?",
+    "text": "FMCG Stocks और Volume Profile की super strategy जो big players इस्तेमाल करते हैं।",
+    "image_query": "stock market trading"
   },
   {
     "type": "bg-analytical",
-    "title": "Retail vs Pro Trader Strategy",
-    "text": "Blue-chip Market में Volume Profile का इस्तेमाल कैसे बदलता है Results.",
+    "title": "Normal Volume vs Volume Profile",
+    "text": "दोनों indicators के बीच का अंतर समझिए",
     "table": {
       "headers": [
-        "Factor",
-        "Retail Trader",
-        "Pro Trader"
+        "Feature",
+        "Normal Volume",
+        "Volume Profile"
       ],
       "rows": [
         [
-          "Volume Focus",
-          "Bottom Volume Bars",
-          "Volume Profile (POC)"
+          "Dimension",
+          "Time-based",
+          "Price-based"
         ],
         [
-          "Key Levels",
-          "Generic Support",
-          "HVN & LVN Zones"
+          "Utility",
+          "Activity level shows",
+          "Exact Support/Resistance shows"
         ],
         [
-          "Execution",
-          "FOMO Entry",
-          "Value Area Validation"
+          "Accuracy",
+          "Moderate",
+          "Extremely High"
         ]
       ]
     }
   },
   {
-    "type": "bg-analytical",
-    "title": "Point of Control (POC) Success Rate",
-    "text": "HVN और LVN Zones पर Trades का Accuracy Rate",
-    "chart": {
-      "type": "bar",
-      "labels": [
-        "HVN Support",
-        "LVN Breakout",
-        "Random Level"
-      ],
-      "datasets": [
-        {
-          "label": "Success Rate %",
-          "data": [
-            78,
-            65,
-            32
-          ]
-        }
-      ]
-    }
+    "type": "bg-image",
+    "title": "3 Key Levels जो <span class='highlight'>Smart Traders</span> ट्रैक करते हैं",
+    "text": "POC (Point of Control), VAH (Value Area High), और VAL (Value Area Low) से सही Entry ढूंढें।",
+    "image_query": "financial charts"
   },
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Angel One</span> के साथ शुरू करें Smart Trading!",
-    "text": "Free Demat Account खोलें और Advanced Charting & Zero Brokerage का फायदा उठाएं.",
-    "image_query": "financial growth technology",
+    "title": "Ready to Invest with <span class='highlight'>Angel One?</span>",
+    "text": "आज ही अपना Demat Account open करें और advanced indicators का मुफ़्त फ़ायदा उठाएं!",
+    "image_query": "wealth management",
     "is_cta": true
   }
 ]
