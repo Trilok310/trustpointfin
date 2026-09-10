@@ -126,7 +126,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 115. Value Investing Principles Explained: Top Secrets for Trading Indian Banking Sector
 - [x] 116. Common Mistakes to Avoid: Mastering Volume Profile Analysis for Blue-chip Stocks
 - [x] 117. The Role of Volume Profile Analysis in FMCG Stocks during a Bear Market
-- [ ] 118. Volume Profile Analysis Explained: For Long-term Wealth Creation for Trading ITC
+- [x] 118. Volume Profile Analysis Explained: For Long-term Wealth Creation for Trading ITC
 - [ ] 119. TCS Trading: How to Apply Emotional Discipline in Earnings Season
 - [ ] 120. How to use Covered Call Strategies based on FII/DII Data to Trade Mutual Funds
 - [ ] 121. What Every Investor Needs to Know: The Best Covered Call Strategies Setup for Upcoming IPOs

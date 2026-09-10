@@ -1,50 +1,75 @@
 [
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Bear Market</span> में Profit कैसे बनाएं?",
-    "text": "FMCG Stocks और Volume Profile की super strategy जो big players इस्तेमाल करते हैं।",
-    "image_query": "stock market trading"
+    "title": "ITC में <span class='highlight'>Volume Profile</span> का Magic!",
+    "text": "Long-term Wealth Creation के लिए Institutional Investors का secret formula समझें।",
+    "image_query": "stock market trading charts"
   },
   {
     "type": "bg-analytical",
-    "title": "Normal Volume vs Volume Profile",
-    "text": "दोनों indicators के बीच का अंतर समझिए",
+    "title": "Volume Profile के 3 Key Terms",
+    "text": "ITC Stock में Best Entry Points पहचानें:",
     "table": {
       "headers": [
-        "Feature",
-        "Normal Volume",
-        "Volume Profile"
+        "Term",
+        "Meaning",
+        "Strategy"
       ],
       "rows": [
         [
-          "Dimension",
-          "Time-based",
-          "Price-based"
+          "POC",
+          "Max Volume Price",
+          "Core Value Support Zone"
         ],
         [
-          "Utility",
-          "Activity level shows",
-          "Exact Support/Resistance shows"
+          "VAL",
+          "Value Area Low",
+          "Best Buying Opportunity"
         ],
         [
-          "Accuracy",
-          "Moderate",
-          "Extremely High"
+          "VAH",
+          "Value Area High",
+          "Profit Target Area"
         ]
       ]
     }
   },
   {
-    "type": "bg-image",
-    "title": "3 Key Levels जो <span class='highlight'>Smart Traders</span> ट्रैक करते हैं",
-    "text": "POC (Point of Control), VAH (Value Area High), और VAL (Value Area Low) से सही Entry ढूंढें।",
-    "image_query": "financial charts"
+    "type": "bg-analytical",
+    "title": "Standard Volume vs Volume Profile",
+    "text": "Smart Money movement पकड़ने में बेहतर कौन?",
+    "chart": {
+      "type": "bar",
+      "labels": [
+        "Accuracy",
+        "Entry Precision",
+        "Risk Control"
+      ],
+      "datasets": [
+        {
+          "label": "Standard Volume",
+          "data": [
+            45,
+            50,
+            40
+          ]
+        },
+        {
+          "label": "Volume Profile",
+          "data": [
+            85,
+            90,
+            80
+          ]
+        }
+      ]
+    }
   },
   {
     "type": "bg-image",
-    "title": "Ready to Invest with <span class='highlight'>Angel One?</span>",
-    "text": "आज ही अपना Demat Account open करें और advanced indicators का मुफ़्त फ़ायदा उठाएं!",
-    "image_query": "wealth management",
+    "title": "Start your <span class='highlight'>Wealth Journey</span> today!",
+    "text": "Angel One पर Free Demat Account खोलें और Advanced Volume Profile Charts का उपयोग करके ITC में Invest करें।",
+    "image_query": "financial success investor",
     "is_cta": true
   }
 ]
