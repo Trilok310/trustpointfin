@@ -1,70 +1,57 @@
 [
   {
     "type": "bg-image",
-    "title": "Banking Sector में <span class='highlight'>Value Investing</span> के Secrets!",
-    "text": "क्या आप सही Bank Stocks खोज रहे हैं? जानिए कैसे hidden gems ढूँढें।",
-    "image_query": "indian stock market finance"
+    "title": "Blue-chip Stocks में <span class='highlight'>Volume Profile</span> की 3 बड़ी गलतियां!",
+    "text": "क्या आप भी Nifty 50 Stocks में गलत Levels पर Entry ले रहे हैं? जानिए सही Strategy.",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Banking Metrics Checklist",
-    "text": "Bank Stocks evaluate करते समय इन levels का ध्यान रखें:",
+    "title": "Retail vs Pro Trader Strategy",
+    "text": "Blue-chip Market में Volume Profile का इस्तेमाल कैसे बदलता है Results.",
     "table": {
       "headers": [
-        "Metric",
-        "Good Value",
-        "Warning Sign"
+        "Factor",
+        "Retail Trader",
+        "Pro Trader"
       ],
       "rows": [
         [
-          "P/B Ratio",
-          "1.0x - 2.0x",
-          "> 3.5x"
+          "Volume Focus",
+          "Bottom Volume Bars",
+          "Volume Profile (POC)"
         ],
         [
-          "Gross NPA",
-          "< 3.0%",
-          "> 5.0%"
+          "Key Levels",
+          "Generic Support",
+          "HVN & LVN Zones"
         ],
         [
-          "NIM",
-          "> 3.5%",
-          "< 2.5%"
-        ],
-        [
-          "RoE",
-          "> 15.0%",
-          "< 10.0%"
+          "Execution",
+          "FOMO Entry",
+          "Value Area Validation"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Amateur vs Pro Investor Strategy",
-    "text": "Banking cycle में Value Investing का तरीका",
+    "title": "Point of Control (POC) Success Rate",
+    "text": "HVN और LVN Zones पर Trades का Accuracy Rate",
     "chart": {
       "type": "bar",
       "labels": [
-        "Fundamental Research",
-        "Patience",
-        "Long-term Return"
+        "HVN Support",
+        "LVN Breakout",
+        "Random Level"
       ],
       "datasets": [
         {
-          "label": "Amateur",
+          "label": "Success Rate %",
           "data": [
-            3,
-            2,
-            4
-          ]
-        },
-        {
-          "label": "Pro Investor",
-          "data": [
-            9,
-            9,
-            9
+            78,
+            65,
+            32
           ]
         }
       ]
@@ -72,9 +59,9 @@
   },
   {
     "type": "bg-image",
-    "title": "Start your <span class='highlight'>Value Investing</span> Journey!",
-    "text": "Angel One पर free Demat Account खोलें और Zero Brokerage on Delivery Trades का फायदा उठाएं।",
-    "image_query": "wealth accumulation business",
+    "title": "<span class='highlight'>Angel One</span> के साथ शुरू करें Smart Trading!",
+    "text": "Free Demat Account खोलें और Advanced Charting & Zero Brokerage का फायदा उठाएं.",
+    "image_query": "financial growth technology",
     "is_cta": true
   }
 ]

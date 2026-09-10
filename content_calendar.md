@@ -124,7 +124,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 113. Bharti Airtel Analysis: For Working Professionals to Options Selling
 - [x] 114. For Retail Traders: The Best Sector Rotation Setup for L&T
 - [x] 115. Value Investing Principles Explained: Top Secrets for Trading Indian Banking Sector
-- [ ] 116. Common Mistakes to Avoid: Mastering Volume Profile Analysis for Blue-chip Stocks
+- [x] 116. Common Mistakes to Avoid: Mastering Volume Profile Analysis for Blue-chip Stocks
 - [ ] 117. The Role of Volume Profile Analysis in FMCG Stocks during a Bear Market
 - [ ] 118. Volume Profile Analysis Explained: For Long-term Wealth Creation for Trading ITC
 - [ ] 119. TCS Trading: How to Apply Emotional Discipline in Earnings Season
