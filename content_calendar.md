@@ -129,7 +129,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 118. Volume Profile Analysis Explained: For Long-term Wealth Creation for Trading ITC
 - [x] 119. TCS Trading: How to Apply Emotional Discipline in Earnings Season
 - [x] 120. How to use Covered Call Strategies based on FII/DII Data to Trade Mutual Funds
-- [ ] 121. What Every Investor Needs to Know: The Best Covered Call Strategies Setup for Upcoming IPOs
+- [x] 121. What Every Investor Needs to Know: The Best Covered Call Strategies Setup for Upcoming IPOs
 - [ ] 122. Bharti Airtel Analysis: A Beginner's Guide to Swing Trading Setups
 - [ ] 123. To Generate Consistent Income: The Best Candlestick Patterns Setup for HDFC Bank
 - [ ] 124. Why Intraday Scalping is the Key to TCS in a Bull Market

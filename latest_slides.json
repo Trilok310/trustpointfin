@@ -1,28 +1,36 @@
 [
   {
     "type": "bg-image",
-    "title": "FII/DII Data से Mutual Funds का &lt;span class='highlight'&gt;Extra Yield&lt;/span&gt; कैसे निकालें?",
-    "text": "Covered Call Strategy का simple rules और implementation guide।",
-    "image_query": "stock market chart analysis"
+    "title": "Upcoming IPOs से <span class='highlight'>Covered Call Income</span> कैसे कमाएं?",
+    "text": "2026 में Retail Investors के लिए Portfolio Monetization की सबसे असरदार Strategy।",
+    "image_query": "stock market growth"
   },
   {
     "type": "bg-analytical",
-    "title": "FII Positioning और Win Rate",
-    "text": "FII Ratio कम होने पर Covered Call सबसे ज़्यादा Profit देता है।",
+    "title": "Strategy Comparison: <span class='highlight'>Returns Analysis</span>",
+    "text": "Covered Call Strategy से Volatile Market में भी Consistent Yield मिलता है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Ratio < 20%",
-        "Ratio 50%",
-        "Ratio > 70%"
+        "Normal Hold",
+        "Covered Call Setup",
+        "Bear Market Buffer"
       ],
       "datasets": [
         {
-          "label": "Strategy Win Rate (%)",
+          "label": "Traditional Equity Return %",
           "data": [
-            85,
-            60,
-            30
+            12,
+            12,
+            -10
+          ]
+        },
+        {
+          "label": "Covered Call Total Return %",
+          "data": [
+            18,
+            17,
+            -3
           ]
         }
       ]
@@ -30,38 +38,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Execution Matrix",
-    "text": "Institutional Data को Options Trading के साथ combine करने का तरीका।",
+    "title": "Optimal Option Strike <span class='highlight'>Matrix</span>",
+    "text": "सही Delta और Strike Price Select करके Risk Manage करें।",
     "table": {
       "headers": [
-        "Signal",
-        "Market View",
-        "Execution Action"
+        "Metric",
+        "Conservative",
+        "Aggressive"
       ],
       "rows": [
         [
-          "FII Long < 25%",
-          "Consolidation",
-          "Sell OTM Call Option"
+          "Strike Selection",
+          "8-10% OTM",
+          "3-5% OTM"
         ],
         [
-          "DII Cash Buy",
-          "Support Intact",
-          "Hold Mutual Funds"
+          "Delta Value",
+          "0.20 Delta",
+          "0.35 Delta"
         ],
         [
-          "FII Long > 70%",
-          "Strong Bullish",
-          "Avoid Call Selling"
+          "Downside Buffer",
+          "Moderate",
+          "High Premium"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Ready to boost your &lt;span class='highlight'&gt;Portfolio Yield?&lt;/span&gt;",
-    "text": "Angel One के साथ real-time FII/DII Data track करें और effortless Options Execution पाएं।",
-    "image_query": "trader looking at financial growth graph",
+    "title": "Start Option Trading with <span class='highlight'>Angel One</span>",
+    "text": "Angel One Super App पर Smooth Execution और Margin Benefits का लाभ उठाएं। Demat Account आज ही खोलें!",
+    "image_query": "trading phone app",
     "is_cta": true
   }
 ]
