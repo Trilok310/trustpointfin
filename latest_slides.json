@@ -1,36 +1,28 @@
 [
   {
     "type": "bg-image",
-    "title": "TCS <span class='highlight'>Earnings Season</span> में Emotional Discipline कैसे रखें?",
-    "text": "Panic Trading और FOMO से बचकर Profit बनाना सीखें।",
-    "image_query": "stock market trading psychology"
+    "title": "FII/DII Data से Mutual Funds का &lt;span class='highlight'&gt;Extra Yield&lt;/span&gt; कैसे निकालें?",
+    "text": "Covered Call Strategy का simple rules और implementation guide।",
+    "image_query": "stock market chart analysis"
   },
   {
     "type": "bg-analytical",
-    "title": "Earnings Day Performance",
-    "text": "Amateur vs Professional Traders का Risk Control",
+    "title": "FII Positioning और Win Rate",
+    "text": "FII Ratio कम होने पर Covered Call सबसे ज़्यादा Profit देता है।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Over-leveraging",
-        "No Stop Loss",
-        "Hedged Options"
+        "Ratio < 20%",
+        "Ratio 50%",
+        "Ratio > 70%"
       ],
       "datasets": [
         {
-          "label": "Retail Loss Rate (%)",
+          "label": "Strategy Win Rate (%)",
           "data": [
             85,
-            78,
-            22
-          ]
-        },
-        {
-          "label": "Pro Success Rate (%)",
-          "data": [
-            15,
-            22,
-            78
+            60,
+            30
           ]
         }
       ]
@@ -38,38 +30,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Strategy Comparison",
-    "text": "Earnings Day पर सही Strategy चुनें",
+    "title": "Strategy Execution Matrix",
+    "text": "Institutional Data को Options Trading के साथ combine करने का तरीका।",
     "table": {
       "headers": [
-        "Strategy",
-        "Risk Level",
-        "Emotional Trap"
+        "Signal",
+        "Market View",
+        "Execution Action"
       ],
       "rows": [
         [
-          "Naked Options Buying",
-          "Very High",
-          "FOMO & IV Crush"
+          "FII Long < 25%",
+          "Consolidation",
+          "Sell OTM Call Option"
         ],
         [
-          "Spread Strategies",
-          "Defined & Low",
-          "Calculated Risk"
+          "DII Cash Buy",
+          "Support Intact",
+          "Hold Mutual Funds"
         ],
         [
-          "GTT Stop Loss",
-          "Controlled",
-          "Zero Panic Exits"
+          "FII Long > 70%",
+          "Strong Bullish",
+          "Avoid Call Selling"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "<span class='highlight'>Angel One</span> के साथ Smart Trade करें!",
-    "text": "Open free Demat account with zero delivery brokerage and advanced charting tools.",
-    "image_query": "financial investment chart app",
+    "title": "Ready to boost your &lt;span class='highlight'&gt;Portfolio Yield?&lt;/span&gt;",
+    "text": "Angel One के साथ real-time FII/DII Data track करें और effortless Options Execution पाएं।",
+    "image_query": "trader looking at financial growth graph",
     "is_cta": true
   }
 ]
