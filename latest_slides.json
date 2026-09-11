@@ -1,28 +1,28 @@
 [
   {
     "type": "bg-image",
-    "title": "Bharti Airtel me <span class='highlight'>Swing Trading</span> Setups!",
-    "text": "2026 me telecom boom ka fayda uthayein aur high-probability trades execute karein.",
+    "title": "HDFC Bank से <span class='highlight'>Consistent Income</span> कैसे बनाएं?",
+    "text": "Simple Candlestick Patterns जो 2026 के Market में काम करते हैं।",
     "image_query": "stock market trading chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Airtel ARPU Growth Story",
-    "text": "Rising ARPU se stock me strong fundamental momentum bana rehta hai.",
+    "title": "Pattern Win Rates in HDFC Bank",
+    "text": "Daily Charts पर Historical Data का High Probability Analysis",
     "chart": {
       "type": "bar",
       "labels": [
-        "FY24",
-        "FY25",
-        "FY26"
+        "Morning Star",
+        "Bullish Engulfing",
+        "Hammer"
       ],
       "datasets": [
         {
-          "label": "ARPU (in ₹)",
+          "label": "Win Rate (%)",
           "data": [
-            200,
-            225,
-            252
+            68,
+            64,
+            59
           ]
         }
       ]
@@ -30,38 +30,38 @@
   },
   {
     "type": "bg-analytical",
-    "title": "Swing Trading Rules Matrix",
-    "text": "Amateur vs Professional Execution in Swing Trades",
+    "title": "Amateur vs Pro Trading Setup",
+    "text": "Execution और Discipline का अंतर",
     "table": {
       "headers": [
-        "Parameter",
+        "Factor",
         "Amateur Trader",
-        "Pro Swing Trader"
+        "Pro Trader"
       ],
       "rows": [
         [
-          "Entry",
-          "FOMO Buying at Top",
-          "50-EMA Pullback / Breakout"
+          "Entry Trigger",
+          "FOMO Buying",
+          "Candle Close Confirm"
         ],
         [
-          "Risk Control",
-          "No Stop Loss",
-          "Strict 1.5% Stop Loss"
+          "Stop Loss",
+          "Random / No SL",
+          "Strict Structural SL"
         ],
         [
-          "Target",
-          "Random Exit",
-          "1:2 or 1:3 Risk-Reward"
+          "Risk Reward",
+          "1:1 or Negative",
+          "Minimum 1:2 Ratio"
         ]
       ]
     }
   },
   {
     "type": "bg-image",
-    "title": "Ready to trade with <span class='highlight'>Angel One?</span>",
-    "text": "Free Demat Account kholein aur advanced Charting tools ka use karke Market me Smart Trades execute karein!",
-    "image_query": "financial growth mobile app",
+    "title": "Start Trading with <span class='highlight'>Angel One</span> Today",
+    "text": "Advanced Charts और Free Demat Account के साथ अपने Trades Executed करें।",
+    "image_query": "trader looking at stock market charts",
     "is_cta": true
   }
 ]
