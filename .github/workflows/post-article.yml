@@ -3,10 +3,8 @@ name: Auto Post Financial Insight
 on:
   schedule:
     # All times in UTC (IST = UTC + 5:30)
+    # Changed to 1 post per day per user request
     - cron: '20 3 * * *'   # 8:50 AM IST
-    - cron: '50 3 * * *'   # 9:20 AM IST
-    - cron: '30 11 * * *'  # 5:00 PM IST
-    - cron: '30 14 * * *'  # 8:00 PM IST
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
