@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "puppeteer": "^25.7.0"
+    "puppeteer": "^25.7.0",
+    "@google/generative-ai": "^0.1.1"
   }
 }

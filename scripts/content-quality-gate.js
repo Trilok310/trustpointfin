@@ -39,20 +39,31 @@ If it fails any criteria, respond with "FAIL:" followed by a short explanation o
 ` + content + `
 ---------------------------`;
 
-    try {
-        const result = await model.generateContent(prompt);
-        const responseText = result.response.text().trim();
+    let attempts = 0;
+    while (attempts < 3) {
+        try {
+            const result = await model.generateContent(prompt);
+            const responseText = result.response.text().trim();
 
-        if (responseText.startsWith("PASS")) {
-            return { valid: true, reason: "Passed all quality checks." };
-        } else {
-            return { valid: false, reason: responseText };
+            if (responseText.startsWith("PASS")) {
+                return { valid: true, reason: "Passed all quality checks." };
+            } else {
+                return { valid: false, reason: responseText };
+            }
+        } catch (e) {
+            attempts++;
+            if (e.message.includes("429") || e.message.includes("503")) {
+                console.warn(`⚠️ Rate limit hit in Quality Gate. Waiting 10 seconds (Attempt ${attempts}/3)...`);
+                await new Promise(resolve => setTimeout(resolve, 10000));
+                if (attempts === 3) {
+                    return { valid: false, reason: "Quality Gate API Error (Rate Limit Exhausted)" };
+                }
+            } else {
+                console.error("⚠️ Quality Gate AI check failed, assuming invalid to be safe:", e.message);
+                return { valid: false, reason: "Quality Gate API Error" };
+            }
         }
-    } catch (e) {
-        console.error("?? Quality Gate AI check failed, assuming invalid to be safe:", e.message);
-        return { valid: false, reason: "Quality Gate API Error" };
     }
 }
 
 module.exports = { validateSocialContent };
-
