@@ -53,6 +53,10 @@ OUTPUT RAW JSON:
             console.log("Quality Gate Failed:", qg.reason);
         } catch (e) {
             console.log("Generation error:", e.message);
+            if (e.message.includes("429") || e.message.includes("503")) {
+                console.log(`⚠️ Rate limit hit. Waiting 50 seconds before retry ${attempts}/3...`);
+                await new Promise(resolve => setTimeout(resolve, 50000));
+            }
         }
     }
     throw new Error("Failed to generate valid content after 3 attempts.");
