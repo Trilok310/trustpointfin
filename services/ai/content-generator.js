@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const { validateSocialContent } = require("./quality-gate.js");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "dummy_key");
-const modelName = process.env.CONTENT_GENERATOR_MODEL || "gemini-3.6-pro";
+const modelName = process.env.CONTENT_GENERATOR_MODEL || "gemini-3.6-flash";
 const model = genAI.getGenerativeModel({ model: modelName });
 
 async function generateSocialContent(topic) {

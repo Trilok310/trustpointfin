@@ -167,7 +167,7 @@ async function main() {
   console.log(`📝 Writing article about: "${topic}"`);
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const primaryModel = genAI.getGenerativeModel({ model: "gemini-3.6-pro" });
+  const primaryModel = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
   const fallbackModel = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
 
   // Robust retry wrapper for Gemini API calls to handle 503 and 429 errors
