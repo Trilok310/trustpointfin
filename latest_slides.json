@@ -1,71 +1,45 @@
-[
-  {
-    "type": "bg-image",
-    "title": "Penny Stocks से <span class='highlight'>Wealth</span> कैसे बनाएं?",
-    "text": "Value Investing के 4 मुख्य Blueprint जो आपके Portfolio को multifold बढ़ा सकते हैं।",
-    "image_query": "stock market chart"
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Gambling vs Value Investing",
-    "text": "Micro-cap Stocks में सही Strategy चुनना अत्यंत आवश्यक है।",
-    "table": {
-      "headers": [
-        "Factor",
-        "Gambling",
-        "Value Investor"
-      ],
-      "rows": [
-        [
-          "Research",
-          "Social Tips",
-          "Balance Sheet"
-        ],
-        [
-          "Risk Control",
-          "Zero Stop Loss",
-          "Position Sizing"
-        ],
-        [
-          "Focus",
-          "Quick Money",
-          "Long-term Return"
-        ]
-      ]
+{
+  "topic": "Rule of 72 & Compounding",
+  "teaching_objective": "Teach the concept of compounding through visual metaphors.",
+  "format": "METAPHOR",
+  "visual_style": "Hand-drawn educational",
+  "slides": [
+    {
+      "headline": "दोगुना पैसा कब होगा?",
+      "core_explanation": "क्या आप जानते हैं कि आपका पैसा कब double होगा? 'Rule of 72' नाम का एक जादुई formula है जो आपको तुरंत बता सकता है।",
+      "visual_spec": {
+        "visual_concept": "A glowing 72 with gold coins"
+      },
+      "annotation": "Swipe to see the math!",
+      "cta": null
+    },
+    {
+      "headline": "Patience is Key",
+      "core_explanation": "Compounding एक पेड़ की तरह है। जब आप बीज बोते हैं, तो कुछ नहीं दिखता। लेकिन सालों बाद, यह एक विशाल पेड़ बन जाता है।",
+      "visual_spec": {
+        "visual_concept": "Young man confused by a seedling, giant tree in background"
+      },
+      "annotation": "Don't dig up the seed to see if it's growing.",
+      "cta": null
+    },
+    {
+      "headline": "FD vs Mutual Funds",
+      "core_explanation": "FD आपको safe but slow returns (Snail) देती है। Mutual Funds risk के साथ fast returns (Rocket) देते हैं।",
+      "visual_spec": {
+        "visual_concept": "Snail with bank vault shell vs Rocket with stock graph"
+      },
+      "annotation": "Inflation eats slow money.",
+      "cta": null
+    },
+    {
+      "headline": "The Final Harvest",
+      "core_explanation": "जो लोग 15-20 साल तक SIP चलाते हैं, वो अंत में compounding का असली मज़ा लेते हैं। Time makes money.",
+      "visual_spec": {
+        "visual_concept": "Older wealthy man watering a money tree"
+      },
+      "annotation": "",
+      "cta": "Save this post to stay motivated!"
     }
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Operating Cash Flow का असर",
-    "text": "Positive Cash Flow वाली Penny Stocks ही टिक पाती हैं।",
-    "chart": {
-      "type": "bar",
-      "labels": [
-        "Negative OCF",
-        "Positive OCF"
-      ],
-      "datasets": [
-        {
-          "label": "Average 3-Yr Return %",
-          "data": [
-            -65,
-            140
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "type": "bg-image",
-    "title": "<span class='highlight'>Margin of Safety</span> भूलना मत!",
-    "text": "हमेशा Intrinsic Value से 30%-40% Discount पर ही Invest करें।",
-    "image_query": "financial calculation"
-  },
-  {
-    "type": "bg-image",
-    "title": "Ready to Start your <span class='highlight'>Investing Journey?</span>",
-    "text": "Angel One के साथ free Demat Account खोलें और Smart Screeners से Best Stocks ढूंढें!",
-    "image_query": "growth success",
-    "is_cta": true
-  }
-]
+  ],
+  "caption": "The secret to wealth is patience and time! 🌱🌳"
+}

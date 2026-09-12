@@ -134,6 +134,11 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 123. To Generate Consistent Income: The Best Candlestick Patterns Setup for HDFC Bank
 - [x] 124. Why Intraday Scalping is the Key to TCS in a Bull Market
 - [x] 125. Step-by-Step Blueprint: Mastering Value Investing Principles for Penny Stocks
+- [ ] 991. Stock Market 101: What is a Demat Account?
+- [ ] 992. Myth: You need ₹1 Lakh to start investing.
+- [ ] 993. The Rule of 72: How long to double your money?
+- [ ] 994. Quiz: Which asset gave the highest return in 10 years?
+- [ ] 995. What is P/E Ratio and why does it matter?
 - [ ] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30,000 Salary
 - [ ] 127. Why FDs Are Keeping You Poor: The Hidden Tax of Inflation
 - [ ] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5,000?
