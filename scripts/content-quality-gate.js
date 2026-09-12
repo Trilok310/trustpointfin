@@ -18,7 +18,7 @@ async function validateSocialContent(content) {
     }
 
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
 
     const prompt = `You are the Chief Compliance Officer and Managing Editor at TrustPointFin.
 Evaluate the following generated financial article and social media content based on these criteria:
