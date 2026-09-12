@@ -1,7 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs = require("fs");
 const path = require("path");
-const { validateSocialContent } = require("./content-quality-gate.js");
 
 // --- CONFIG ---
 // GITHUB_WORKSPACE is always set by GitHub Actions to the repo root.
