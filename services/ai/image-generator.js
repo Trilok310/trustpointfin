@@ -25,10 +25,36 @@ class ImageGenerator {
         
         // --- PROVIDER ABSTRACTION ---
         if (this.provider === 'DALLE') {
-            // Implementation for OpenAI DALL-E 3 API
-            // const response = await openai.images.generate({ prompt: visualSpec.image_generation_prompt, ... });
-            // fs.writeFileSync(cachePath, response.data);
-            throw new Error("DALL-E provider not configured with API keys yet.");
+            if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is missing!");
+            
+            console.log(`[Image Generator] Calling DALL-E 3 API...`);
+            const response = await fetch("https://api.openai.com/v1/images/generations", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+                },
+                body: JSON.stringify({
+                    model: "dall-e-3",
+                    prompt: visualSpec.image_generation_prompt,
+                    n: 1,
+                    size: "1024x1024" // DALL-E 3 default, will be cropped/scaled by renderer CSS
+                })
+            });
+            
+            const data = await response.json();
+            if (data.error) throw new Error(`DALL-E API Error: ${data.error.message}`);
+            
+            const imageUrl = data.data[0].url;
+            
+            // Download the image and save to cache
+            const imageRes = await fetch(imageUrl);
+            const buffer = await imageRes.arrayBuffer();
+            fs.writeFileSync(cachePath, Buffer.from(buffer));
+            
+            console.log(`[Image Generator] Successfully generated and cached image from DALL-E 3.`);
+            return cachePath;
+            
         } else if (this.provider === 'IMAGEN') {
             // Implementation for Google Imagen API
             throw new Error("Imagen provider not configured with API keys yet.");

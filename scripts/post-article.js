@@ -442,7 +442,7 @@ Detailed answer to second FAQ
       fs.writeFileSync(SLIDES_JSON_PATH, JSON.stringify(socialData, null, 2), "utf-8");
       
       // Generate/Fetch images for the slides
-      const imageGen = new ImageGenerator('MOCK');
+      const imageGen = new ImageGenerator(process.env.IMAGE_PROVIDER || 'MOCK');
       const SLIDES_DIR = path.join(ROOT, 'slides');
       if (!fs.existsSync(SLIDES_DIR)) fs.mkdirSync(SLIDES_DIR);
 
