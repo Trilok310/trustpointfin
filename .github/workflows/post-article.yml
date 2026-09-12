@@ -49,7 +49,11 @@ jobs:
           node node_modules/puppeteer/install.mjs
           node scripts/generate-carousel.js
 
-      - name: Commit and Push New Article and Slides (Step 3)
+      - name: Finalize and Mark Topic Complete (Step 4 - Validation Success Gate)
+        run: |
+          node scripts/mark-complete.js
+
+      - name: Commit and Push New Article and Slides (Step 5)
         run: |
           git config --global user.name "TrustPointFin AutoBot"
           git config --global user.email "autobot@trustpointfin.com"

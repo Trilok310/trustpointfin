@@ -67,9 +67,15 @@ OUTPUT RAW JSON:
             console.log("Quality Gate Failed:", qg.reason);
         } catch (e) {
             console.log("Generation error:", e.message);
+            if (e.message.includes("limit: 20") || e.message.includes("quota")) {
+                console.error("❌ CRITICAL ERROR: Daily free-tier API quota exhausted. Halting pipeline permanently.");
+                throw e; // Do NOT retry, fail immediately
+            }
             if (e.message.includes("429") || e.message.includes("503")) {
-                console.log(`⚠️ Rate limit hit. Waiting 50 seconds before retry ${attempts}/3...`);
+                console.log(`⚠️ Rate limit hit (transient). Waiting 50 seconds before retry ${attempts}/3...`);
                 await new Promise(resolve => setTimeout(resolve, 50000));
+            } else {
+                throw e; // Throw any other unexpected errors immediately
             }
         }
     }

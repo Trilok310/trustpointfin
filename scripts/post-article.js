@@ -436,11 +436,11 @@ Detailed answer to second FAQ
   updateSitemap(slug);
   console.log("✅ sitemap.xml updated for Google Indexing");
 
-  // --- Mark topic complete in calendar ---
-  markTopicComplete(lines, lineIndex);
-  console.log(`✅ Topic "${topic}" marked as complete in content_calendar.md`);
+  // --- Save topic for final completion step ---
+  fs.writeFileSync(path.join(ROOT, '.current_topic_state.json'), JSON.stringify({topic, lineIndex}), "utf-8");
+  console.log(`⏳ Topic "${topic}" staged for completion (will be marked complete after visual validation succeeds)`);
 
-  console.log("\n🎉 All done! Article posted successfully.");
+  console.log("\n🚀 Website Article Generation Phase Complete.");
 }
 
 main().catch((err) => {
