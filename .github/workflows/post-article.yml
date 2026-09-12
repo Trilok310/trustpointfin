@@ -36,7 +36,15 @@ jobs:
         run: |
           node scripts/post-article.js
 
-      - name: Run Presentation Engine (Step 2 - Generate Carousel)
+      - name: Prepare Social Source and Generate Content (Step 2 - Social Selection)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
+        run: |
+          node scripts/prepare-social.js
+
+      - name: Run Presentation Engine (Step 3 - Generate Carousel)
         run: |
           node node_modules/puppeteer/install.mjs
           node scripts/generate-carousel.js

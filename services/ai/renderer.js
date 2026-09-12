@@ -54,9 +54,9 @@ async function renderCarousel(jsonData, imagesMap, outputDir) {
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Comic+Neue:wght@700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: ${theme.bg}; --text: ${theme.text}; --accent: ${theme.accent}; --font: ${theme.font}; }
+        :root { --bg: ${theme.bg}; --text: ${theme.text}; --accent: ${theme.accent}; --font: 'Comic Neue', 'Outfit', 'Noto Sans Devanagari', sans-serif; }
         body { margin: 0; padding: 0; display: flex; font-family: var(--font); background: var(--bg); color: var(--text); }
         
         .slide { 
@@ -78,7 +78,7 @@ async function renderCarousel(jsonData, imagesMap, outputDir) {
         
         .visual-full-width { 
             width: 100%;
-            height: auto; /* Mathematically ensures NO empty space above/below the artwork */
+            height: auto;
             max-height: 600px;
             border-radius: 24px; 
             object-fit: contain;
@@ -98,10 +98,24 @@ async function renderCarousel(jsonData, imagesMap, outputDir) {
 </html>`;
 
     fs.writeFileSync(HTML_OUT_PATH, fullHTML, 'utf-8');
-    const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox'] });
+    const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox', '--disable-setuid-sandbox'] });
     const page = await browser.newPage();
     await page.setViewport({ width: 1080 * slides.length, height: 1080, deviceScaleFactor: 1 });
     await page.goto('file://' + HTML_OUT_PATH, { waitUntil: 'networkidle0' });
+    
+    // Ensure fonts are fully loaded before rendering
+    await page.evaluateHandle('document.fonts.ready');
+
+    // Pre-publish validation for missing glyphs (tofu boxes)
+    const hasTofu = await page.evaluate(() => {
+        const text = document.body.innerText;
+        return text.includes('\uFFFD') || text.includes('\u25A1') || text.includes('\u25AF');
+    });
+
+    if (hasTofu) {
+        await browser.close();
+        throw new Error("PRE-PUBLISH VALIDATION FAILED: Missing-glyph/tofu characters detected in the rendering. Fonts may not be loading correctly.");
+    }
 
     for (let i = 0; i < slides.length; i++) {
         const slidePath = path.join(outputDir, `final_slide_${i + 1}.jpg`);

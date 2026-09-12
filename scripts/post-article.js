@@ -436,44 +436,6 @@ Detailed answer to second FAQ
   updateSitemap(slug);
   console.log("✅ sitemap.xml updated for Google Indexing");
 
-  // --- Generate Social Media Posts (V11 Architecture) ---
-  console.log("🚀 Switching to V11 Visual Architecture for Social Media...");
-  
-  const { generateSocialContent } = require("../services/ai/content-generator.js");
-  const { ImageGenerator } = require("../services/ai/image-generator.js");
-
-  try {
-      const socialData = await generateSocialContent(topic);
-      
-      // Save the generated JSON for the generate-carousel.js step
-      const SLIDES_JSON_PATH = path.join(ROOT, 'latest_slides.json');
-      fs.writeFileSync(SLIDES_JSON_PATH, JSON.stringify(socialData, null, 2), "utf-8");
-      
-      // Generate/Fetch images for the slides
-      const imageGen = new ImageGenerator(process.env.IMAGE_PROVIDER || 'MOCK');
-      const SLIDES_DIR = path.join(ROOT, 'slides');
-      if (!fs.existsSync(SLIDES_DIR)) fs.mkdirSync(SLIDES_DIR);
-
-      for (let i = 0; i < socialData.slides.length; i++) {
-          const slide = socialData.slides[i];
-          const slideNum = i + 1;
-          
-          if (slide.visual_spec) {
-              const imgPath = await imageGen.generateIllustration(slide.visual_spec, topic, slideNum);
-              // Copy to slides dir so generate-carousel.js finds it
-              fs.copyFileSync(imgPath, path.join(SLIDES_DIR, `slide_${slideNum}_illustration.jpg`));
-          }
-      }
-      console.log("✅ V11 Social JSON and Illustrations prepared.");
-
-      const socialMarkdown = `# Social Media Posts\n*Generated on ${dateStr} for article: "${title}"*\n\n---\n\n## 📸 Caption\n\n${socialData.caption}\n\n---\n*Article URL: https://trilok310.github.io/trustpointfin/${slug}.html*\n`;
-      fs.writeFileSync(SOCIAL_PATH, socialMarkdown, "utf-8");
-      console.log("✅ Social media captions saved to latest_social_media.md");
-
-  } catch (err) {
-      console.error("⚠️ Failed to generate V11 social content:", err.message);
-  }
-
   // --- Mark topic complete in calendar ---
   markTopicComplete(lines, lineIndex);
   console.log(`✅ Topic "${topic}" marked as complete in content_calendar.md`);
