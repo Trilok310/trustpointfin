@@ -1,62 +1,55 @@
 [
   {
     "type": "bg-image",
-    "title": "TCS में <span class='highlight'>Intraday Scalping</span> की Power!",
-    "text": "Bull Market में बड़ी Capital ब्लॉक किए बिना daily quick Profits कमाएं।",
-    "image_query": "stock trading chart"
+    "title": "Penny Stocks से <span class='highlight'>Wealth</span> कैसे बनाएं?",
+    "text": "Value Investing के 4 मुख्य Blueprint जो आपके Portfolio को multifold बढ़ा सकते हैं।",
+    "image_query": "stock market chart"
   },
   {
     "type": "bg-analytical",
-    "title": "Delivery vs Intraday Scalping",
-    "text": "TCS जैसे Large-Cap Stock में सही Strategy चुनें",
+    "title": "Gambling vs Value Investing",
+    "text": "Micro-cap Stocks में सही Strategy चुनना अत्यंत आवश्यक है।",
     "table": {
       "headers": [
         "Factor",
-        "Delivery Trading",
-        "Intraday Scalping"
+        "Gambling",
+        "Value Investor"
       ],
       "rows": [
         [
-          "Holding Time",
-          "Days / Months",
-          "1 to 5 Minutes"
+          "Research",
+          "Social Tips",
+          "Balance Sheet"
         ],
         [
-          "Overnight Risk",
-          "High Gap-Risk",
-          "Zero Overnight Risk"
+          "Risk Control",
+          "Zero Stop Loss",
+          "Position Sizing"
         ],
         [
-          "Target Profit",
-          "5% - 10%",
-          "0.3% - 0.8% Quick Gains"
+          "Focus",
+          "Quick Money",
+          "Long-term Return"
         ]
       ]
     }
   },
   {
     "type": "bg-analytical",
-    "title": "Scalping Success Metrics",
-    "text": "Bull Market में Execution Speed और Discipline का Impact",
+    "title": "Operating Cash Flow का असर",
+    "text": "Positive Cash Flow वाली Penny Stocks ही टिक पाती हैं।",
     "chart": {
       "type": "bar",
       "labels": [
-        "Manual Execution",
-        "Smart API / Fast App"
+        "Negative OCF",
+        "Positive OCF"
       ],
       "datasets": [
         {
-          "label": "Win Rate %",
+          "label": "Average 3-Yr Return %",
           "data": [
-            42,
-            68
-          ]
-        },
-        {
-          "label": "Avg Risk/Reward",
-          "data": [
-            1.1,
-            1.8
+            -65,
+            140
           ]
         }
       ]
@@ -64,9 +57,15 @@
   },
   {
     "type": "bg-image",
-    "title": "Ready for Fast <span class='highlight'>Execution?</span>",
-    "text": "Angel One के साथ Free Demat Account खोलें और Zero Brokerage delivery तथा fast Trading का लाभ उठाएं!",
-    "image_query": "financial success mobile",
+    "title": "<span class='highlight'>Margin of Safety</span> भूलना मत!",
+    "text": "हमेशा Intrinsic Value से 30%-40% Discount पर ही Invest करें।",
+    "image_query": "financial calculation"
+  },
+  {
+    "type": "bg-image",
+    "title": "Ready to Start your <span class='highlight'>Investing Journey?</span>",
+    "text": "Angel One के साथ free Demat Account खोलें और Smart Screeners से Best Stocks ढूंढें!",
+    "image_query": "growth success",
     "is_cta": true
   }
 ]
