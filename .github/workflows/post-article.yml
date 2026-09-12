@@ -34,12 +34,7 @@ jobs:
           IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          for i in 1 2 3 4 5; do
-            node scripts/post-article.js && exit 0 || echo "⚠️ Script crashed (Attempt $i/5). Retrying in 60 seconds..."
-            sleep 60
-          done
-          echo "❌ Script failed after 5 attempts."
-          exit 1
+          node scripts/post-article.js
 
       - name: Run Presentation Engine (Step 2 - Generate Carousel)
         run: |
