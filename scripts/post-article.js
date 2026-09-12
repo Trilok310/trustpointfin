@@ -1,6 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs = require("fs");
 const path = require("path");
+const { validateSocialContent } = require("./content-quality-gate.js");
 
 // --- CONFIG ---
 // GITHUB_WORKSPACE is always set by GitHub Actions to the repo root.
@@ -215,10 +216,11 @@ The article should:
   - Include a Key Takeaways section (3-5 bullet points)
   - Have 3-4 main sections with H2 headings
   - Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL)
-  - Naturally mention Angel One as a great platform to start investing
-  - End with a CTA encouraging readers to open a Demat account with Angel One
+  - Mention Angel One only when contextually relevant (do not force it).
+  - Do not promise returns or manufacture statistics.
   
-  After the article content, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
+  After the article content, you MUST end with:
+  ---END---, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
   CRITICAL: The slides content MUST be written in actual Hindi (Devanagari script) mixed with English words. Use the Hindi script for grammar and connecting words, but KEEP all common financial terms in pure English (Latin script) like "Invest", "Market", "Profit", "Loss", "Compounding", "Equity". DO NOT translate financial terms into Hindi (do not use "Nivesh", "Poonji", etc.). Make it highly engaging for the Indian youth audience.
 Follow this exact JSON structure for the slides:
 [
@@ -313,17 +315,8 @@ Detailed answer to second FAQ
   const faq1q = extract(articleText, "---FAQ1Q---", "---FAQ1A---");
   const faq1a = extract(articleText, "---FAQ1A---", "---FAQ2Q---");
   const faq2q = extract(articleText, "---FAQ2Q---", "---FAQ2A---");
-  const faq2a = extract(articleText, "---FAQ2A---", "---SLIDES---");
-  const slidesRaw = extract(articleText, "---SLIDES---", "---END---");
-
-  let slidesData = [];
-  try {
-      slidesData = JSON.parse(slidesRaw);
-      fs.writeFileSync(path.join(ROOT, "latest_slides.json"), JSON.stringify(slidesData, null, 2), "utf-8");
-      console.log(`✅ Extracted ${slidesData.length} slides to latest_slides.json`);
-  } catch (e) {
-      console.error("⚠️ Failed to parse slides JSON:", e.message);
-  }
+  const faq2a = extract(articleText, "---FAQ2A---", "---END---");
+  
 
   const [statNum, statLabel] = statRaw.includes("|")
     ? statRaw.split("|")
@@ -435,54 +428,43 @@ Detailed answer to second FAQ
   updateSitemap(slug);
   console.log("✅ sitemap.xml updated for Google Indexing");
 
-  // --- Generate Social Media Posts ---
-  const socialPrompt = `You are a social media manager for TrustPointFin, an Indian financial advisory firm. 
-Based on this article title: "${title}" and topic: "${topic}", write engaging social media posts.
-  CRITICAL: The social media posts MUST be written in actual Hindi (Devanagari script) mixed with English words. Use the Hindi script for grammar and connecting words, but KEEP all common financial terms in pure English (Latin script) like "Invest", "Market", "Profit", "Loss", "Compounding", "Equity". DO NOT translate financial terms into Hindi (do not use "Nivesh"). Make it highly engaging and relatable to Indian youth.
+  // --- Generate Social Media Posts (V11 Architecture) ---
+  console.log("🚀 Switching to V11 Visual Architecture for Social Media...");
   
-  Format EXACTLY as follows:
----INSTAGRAM---
-Your Instagram caption here (use emojis, 150-200 words, include hashtags)
----FACEBOOK---
-Your Facebook post here (conversational, 100-150 words, include a question to drive engagement)
----LINKEDIN---
-Your LinkedIn post here (professional, data-driven, 150-200 words, include hashtags)
----END---`;
+  const { generateSocialContent } = require("../services/ai/content-generator.js");
+  const { ImageGenerator } = require("../services/ai/image-generator.js");
 
-  const socialResponse = await generateContentWithRetry(socialPrompt);
-  const socialText = socialResponse.response.text();
+  try {
+      const socialData = await generateSocialContent(topic);
+      
+      // Save the generated JSON for the generate-carousel.js step
+      const SLIDES_JSON_PATH = path.join(ROOT, 'latest_slides.json');
+      fs.writeFileSync(SLIDES_JSON_PATH, JSON.stringify(socialData, null, 2), "utf-8");
+      
+      // Generate/Fetch images for the slides
+      const imageGen = new ImageGenerator('MOCK');
+      const SLIDES_DIR = path.join(ROOT, 'slides');
+      if (!fs.existsSync(SLIDES_DIR)) fs.mkdirSync(SLIDES_DIR);
 
-  const instagram = extract(socialText, "---INSTAGRAM---", "---FACEBOOK---");
-  const facebook = extract(socialText, "---FACEBOOK---", "---LINKEDIN---");
-  const linkedin = extract(socialText, "---LINKEDIN---", "---END---");
+      for (let i = 0; i < socialData.slides.length; i++) {
+          const slide = socialData.slides[i];
+          const slideNum = i + 1;
+          
+          if (slide.visual_spec) {
+              const imgPath = await imageGen.generateIllustration(slide.visual_spec, topic, slideNum);
+              // Copy to slides dir so generate-carousel.js finds it
+              fs.copyFileSync(imgPath, path.join(SLIDES_DIR, `slide_${slideNum}_illustration.jpg`));
+          }
+      }
+      console.log("✅ V11 Social JSON and Illustrations prepared.");
 
-  const socialMarkdown = `# Social Media Posts
-*Generated on ${dateStr} for article: "${title}"*
+      const socialMarkdown = `# Social Media Posts\n*Generated on ${dateStr} for article: "${title}"*\n\n---\n\n## 📸 Caption\n\n${socialData.caption}\n\n---\n*Article URL: https://trilok310.github.io/trustpointfin/${slug}.html*\n`;
+      fs.writeFileSync(SOCIAL_PATH, socialMarkdown, "utf-8");
+      console.log("✅ Social media captions saved to latest_social_media.md");
 
----
-
-## 📸 Instagram Caption
-
-${instagram}
-
----
-
-## 👥 Facebook Post
-
-${facebook}
-
----
-
-## 💼 LinkedIn Post
-
-${linkedin}
-
----
-*Article URL: https://trilok310.github.io/trustpointfin/${slug}.html*
-`;
-
-  fs.writeFileSync(SOCIAL_PATH, socialMarkdown, "utf-8");
-  console.log("✅ Social media captions saved to latest_social_media.md");
+  } catch (err) {
+      console.error("⚠️ Failed to generate V11 social content:", err.message);
+  }
 
   // --- Mark topic complete in calendar ---
   markTopicComplete(lines, lineIndex);

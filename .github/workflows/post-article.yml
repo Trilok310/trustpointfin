@@ -31,6 +31,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
+          IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           for i in 1 2 3 4 5; do
             node scripts/post-article.js && exit 0 || echo "⚠️ Script crashed (Attempt $i/5). Retrying in 60 seconds..."
