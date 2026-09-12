@@ -1,6 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs = require("fs");
 const path = require("path");
+const { validateSocialContent } = require("./content-quality-gate.js");
 
 // --- CONFIG ---
 // GITHUB_WORKSPACE is always set by GitHub Actions to the repo root.
@@ -297,6 +298,14 @@ Detailed answer to second FAQ
 
   const articleResponse = await generateContentWithRetry(articlePrompt);
   const articleText = articleResponse.response.text();
+
+  console.log("🔍 Running content quality gate checks...");
+  const validationResult = await validateSocialContent(articleText);
+  if (!validationResult.valid) {
+      console.error("❌ Quality Gate Failed:", validationResult.reason);
+      throw new Error(`Content Quality Gate Rejected the Article: ${validationResult.reason}`);
+  }
+  console.log("✅ Quality gate passed successfully.");
 
   // --- Parse the response ---
   function extract(text, startTag, endTag) {
