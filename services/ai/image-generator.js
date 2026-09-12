@@ -59,13 +59,10 @@ class ImageGenerator {
             // Implementation for Google Imagen API
             throw new Error("Imagen provider not configured with API keys yet.");
         } else {
-            // MOCK PROVIDER (For CI/CD and testing until API keys are added)
-            // It just creates a dummy image file or uses an existing one.
-            console.log(`[Image Generator] MOCK provider active. Outputting placeholder/cache.`);
-            // In a real mock, we would copy a blank image. 
-            // For this test, we assume the agent has pre-populated the cache.
+            // MOCK PROVIDER (For CI/CD and testing)
+            console.log(`[Image Generator] MOCK provider active. Outputting placeholder.`);
             if (!fs.existsSync(cachePath)) {
-                 fs.writeFileSync(cachePath, "MOCK IMAGE DATA"); // Dummy file
+                 fs.copyFileSync(path.join(process.cwd(), 'mock_image.jpg'), cachePath);
             }
             return cachePath;
         }

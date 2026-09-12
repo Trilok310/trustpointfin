@@ -7,28 +7,42 @@ const model = genAI.getGenerativeModel({ model: modelName });
 
 async function generateSocialContent(topic) {
     const prompt = `You are the Chief Financial Educator and Art Director for TrustPointFin.
-OBJECTIVE: Create an illustrated financial mini-lesson. The visual must occupy 65% of the space.
-TOPIC: ${topic}
+OBJECTIVE: Create an illustrated financial mini-lesson using a rich, NotebookLM-style educational visual system.
 
-Use visual metaphors (e.g. tree for compounding, snail/rocket for FD/Stocks, multiple baskets for diversification).
+TARGET QUALITY:
+- Rich illustrated storytelling with actual characters, scenes, objects, and visual metaphors.
+- Educational diagrams, relationships, and charts/graphs when the topic benefits from them.
+- Format must adapt to the topic. Select from:
+  * STORY (characters + scene + speech bubbles logic)
+  * COMPARISON (two visual worlds + comparison structure)
+  * CALCULATION (illustrated objects + formula + worked example)
+  * PROCESS (step-by-step visual journey)
+  * RISK (scenario/decision illustration)
+  * MARKET_CONCEPT (chart + illustrated explanation)
+  * MYTH_VS_REALITY (contrasting scenes)
+  * PSYCHOLOGY (character conversation/internal conflict)
+  * TIMELINE (visual progression)
+  * BEGINNER_CONCEPT (everyday-life analogy)
+- DO NOT use the same generic format for every slide.
+
+TOPIC: ${topic}
 
 OUTPUT RAW JSON:
 {
   "topic": "${topic}",
   "teaching_objective": "...",
-  "format": "STORY|METAPHOR|COMPARISON|DIAGRAM",
-  "visual_style": "Hand-drawn educational|Modern editorial",
+  "format": "STORY|COMPARISON|CALCULATION|PROCESS|RISK|MARKET_CONCEPT|MYTH_VS_REALITY|PSYCHOLOGY|TIMELINE|BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Main text",
-      "core_explanation": "Supporting text",
+      "headline": "Main text (Hindi/Hinglish)",
+      "core_explanation": "Supporting text (Mobile-readable, Hindi/Hinglish)",
       "visual_spec": {
-          "visual_concept": "Describe the core visual idea, distributed from left to right",
-          "image_generation_prompt": "Prompt for AI image generator. MUST INCLUDE: Use a full-width illustrated composition with substantial vertical depth (3:2 or 4:3 landscape ratio). Do NOT generate a thin horizontal banner. The illustration must occupy 90-95% of the width and ~60% of the height, containing rich vertical storytelling (foreground, characters, background). Distribute elements across LEFT, CENTER, and RIGHT. Maintain NotebookLM-style richness. Use light, soft, airy pastel colors. CRITICAL: Do NOT generate ANY text, labels, financial numbers, percentages, or guaranteed returns inside the image. The image must be completely text-free. "
+          "visual_concept": "Describe the core visual idea (e.g. 'Two contrasting worlds: a calm investor in a storm vs a panicked trader')",
+          "image_generation_prompt": "Prompt for DALL-E 3. MUST INCLUDE: 'NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free.'"
       },
-      "annotation": "A small tip",
+      "annotation": "A small tip or arrow annotation",
       "cta": null
     }
   ],

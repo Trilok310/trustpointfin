@@ -72,26 +72,26 @@ async function renderCarousel(jsonData, imagesMap, outputDir) {
         
         .slide-content { flex: 1; display: flex; flex-direction: column; height: 880px; width: 100%; }
         
-        .illustration-layout-v5 { display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: center; gap: 30px; }
+        .illustration-layout-v5 { display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: space-between; padding-bottom: 20px; }
         
-        .text-top { flex: 0 0 auto; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+        .text-top { flex: 0 0 auto; display: flex; flex-direction: column; justify-content: flex-start; text-align: center; margin-top: 10px; }
         
         .visual-full-width { 
             width: 100%;
-            height: auto;
-            max-height: 600px;
+            height: 560px; /* ~52% of the 1080px canvas */
             border-radius: 24px; 
-            object-fit: contain;
+            object-fit: cover; /* Eliminates all horizontal whitespace */
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.05);
         }
         
-        .text-bottom { flex: 0 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .text-bottom { flex: 0 0 auto; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; margin-bottom: 10px; }
         
-        .headline { font-size: 56px; font-weight: 900; line-height: 1.1; margin: 0 0 15px 0; color: var(--accent); }
-        .core-explanation { font-size: 32px; line-height: 1.4; font-weight: 600; opacity: 0.9; margin: 0; max-width: 900px; margin: 0 auto; }
+        .headline { font-size: 56px; font-weight: 900; line-height: 1.1; margin: 0 0 15px 0; color: var(--accent); text-wrap: balance; }
+        .core-explanation { font-size: 32px; line-height: 1.4; font-weight: 600; opacity: 0.9; margin: 0 auto; max-width: 950px; text-wrap: pretty; }
         
-        .annotation-box { background: rgba(0,0,0,0.05); padding: 15px 25px; border-radius: 100px; font-size: 28px; font-weight: 700; color: var(--text); border: 2px solid var(--accent); display: inline-block; }
-        .slide-cta { background: var(--accent); color: var(--bg); font-size: 32px; font-weight: 900; padding: 20px 40px; border-radius: 100px; text-align: center; text-transform: uppercase; margin-top: 10px; }
+        .annotation-box { background: rgba(0,0,0,0.05); padding: 15px 30px; border-radius: 100px; font-size: 28px; font-weight: 700; color: var(--text); border: 2px solid var(--accent); display: inline-block; }
+        .slide-cta { background: var(--accent); color: var(--bg); font-size: 32px; font-weight: 900; padding: 20px 50px; border-radius: 100px; text-align: center; text-transform: uppercase; margin-top: 15px; box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3); }
     </style>
 </head>
 <body>${slidesHTML}</body>
@@ -106,15 +106,32 @@ async function renderCarousel(jsonData, imagesMap, outputDir) {
     // Ensure fonts are fully loaded before rendering
     await page.evaluateHandle('document.fonts.ready');
 
-    // Pre-publish validation for missing glyphs (tofu boxes)
-    const hasTofu = await page.evaluate(() => {
+    // Pre-publish validation for missing glyphs (tofu boxes) and sparse layouts
+    const validationErrors = await page.evaluate(() => {
+        const errors = [];
         const text = document.body.innerText;
-        return text.includes('\uFFFD') || text.includes('\u25A1') || text.includes('\u25AF');
+        
+        if (text.includes('\uFFFD') || text.includes('\u25A1') || text.includes('\u25AF')) {
+            errors.push("Missing-glyph/tofu characters detected");
+        }
+        
+        const images = document.querySelectorAll('.visual-full-width');
+        images.forEach((img, i) => {
+            if (img.clientWidth < 900) errors.push(`Image ${i+1} width is too small (${img.clientWidth}px), violating the 90-95% canvas rule`);
+            if (img.clientHeight < 400) errors.push(`Image ${i+1} height is too small (${img.clientHeight}px), violating the 50-60% canvas rule`);
+        });
+
+        const headlines = document.querySelectorAll('.headline');
+        headlines.forEach((hl, i) => {
+            if (!hl.innerText.trim()) errors.push(`Slide ${i+1} has an empty headline, resulting in a sparse layout`);
+        });
+
+        return errors;
     });
 
-    if (hasTofu) {
+    if (validationErrors.length > 0) {
         await browser.close();
-        throw new Error("PRE-PUBLISH VALIDATION FAILED: Missing-glyph/tofu characters detected in the rendering. Fonts may not be loading correctly.");
+        throw new Error("PRE-PUBLISH VALIDATION FAILED:\n" + validationErrors.join("\n"));
     }
 
     for (let i = 0; i < slides.length; i++) {
