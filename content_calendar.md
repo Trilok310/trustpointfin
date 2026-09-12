@@ -132,7 +132,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 121. What Every Investor Needs to Know: The Best Covered Call Strategies Setup for Upcoming IPOs
 - [x] 122. Bharti Airtel Analysis: A Beginner's Guide to Swing Trading Setups
 - [x] 123. To Generate Consistent Income: The Best Candlestick Patterns Setup for HDFC Bank
-- [ ] 124. Why Intraday Scalping is the Key to TCS in a Bull Market
+- [x] 124. Why Intraday Scalping is the Key to TCS in a Bull Market
 - [ ] 125. Step-by-Step Blueprint: Mastering Value Investing Principles for Penny Stocks
 - [ ] 126. Combining Breakout Trading with Small-cap Stocks Analysis
 - [ ] 127. TCS Trading: How to Apply Growth Investing on Expiry Day
