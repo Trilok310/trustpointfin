@@ -44,7 +44,12 @@ class ImageGenerator {
             });
             
             const data = await response.json();
-            if (data.error) throw new Error(`DALL-E API Error: ${data.error.message}`);
+            if (data.error) {
+                if (data.error.message.includes("does not exist")) {
+                    throw new Error(`DALL-E API Error: Your OpenAI API key does not have access to DALL-E 3. Please ensure you have added prepaid billing credits (minimum $5) at platform.openai.com (Note: ChatGPT Plus subscription does not cover API usage).`);
+                }
+                throw new Error(`DALL-E API Error: ${data.error.message}`);
+            }
             
             const imageUrl = data.data[0].url;
             
