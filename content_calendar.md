@@ -1,6 +1,6 @@
 # TrustPointFin Content Calendar
 
-This calendar drives the automated GEO Insights Hub. The scheduled background agent will pick the next available topic from this list, research it, write the article, publish it to the website, and generate the accompanying social media posts.
+This calendar drives the automated GEO Insights Hub. The scheduled background agent will pick the next available topic from this listRs.  research itRs.  write the articleRs.  publish it to the websiteRs.  and generate the accompanying social media posts.
 
 ## Topic Queue
 
@@ -10,7 +10,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 4. Behavioral Finance: Understanding Investor Psychology
 - [x] 5. Relevance of Classic Financial Books to the Current Market Situation
 - [x] 6. "Princes of the Yen" - Relevance to the Current Global Economy
-- [x] 7. CAN SLIM Technique: Finding Top Stocks for Proper Entry, SL, and Target
+- [x] 7. CAN SLIM Technique: Finding Top Stocks for Proper EntryRs.  SLRs.  and Target
 - [x] 8. Trading Markets: Daily Insights based on Classic Trading Literature
 - [x] 9. Historical Market Crashes and their Relevance in the Current Situation
 - [x] 10. The Long-Term Benefits of Investing / SIP / Trading
@@ -36,7 +36,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 30. Stop Loss and Risk-Reward Ratio: The Holy Grail of Trading
 
 ## Social Media Output
-*The scheduled agent will output Facebook, Instagram, and LinkedIn captions for each published article in a separate log file for the user.*
+*The scheduled agent will output FacebookRs.  InstagramRs.  and LinkedIn captions for each published article in a separate log file for the user.*
 ## Automated Topic Queue (2000 Topics)
 
 - [x] 31. Gold ETFs Analysis: To Avoid Massive Drawdowns to Algorithmic Trading
@@ -139,11 +139,11 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [ ] 993. The Rule of 72: How long to double your money?
 - [ ] 994. Quiz: Which asset gave the highest return in 10 years?
 - [ ] 995. What is P/E Ratio and why does it matter?
-- [ ] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30,000 Salary
+- [ ] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30Rs. 000 Salary
 - [ ] 127. Why FDs Are Keeping You Poor: The Hidden Tax of Inflation
-- [ ] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5,000?
+- [ ] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5Rs. 000?
 - [ ] 129. What is a SIP and Why It's the Cheat Code for Indian Millennials
-- [ ] 130. The Compounding Magic: How ₹2,000 a Month Can Make You a Crorepati
+- [ ] 130. The Compounding Magic: How ₹2Rs. 000 a Month Can Make You a Crorepati
 - [ ] 131. Renting vs. Buying a Home in India: The Financial Truth
 - [ ] 132. The Power of Index Funds: Why Warren Buffett Recommends Them
 - [ ] 133. How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know
@@ -151,7 +151,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [ ] 135. Options Trading 101: Is It Gambling or a Real Strategy?
 - [ ] 136. How FIIs and DIIs Move the Indian Stock Market
 - [ ] 137. Why You Need Health Insurance Before You Start Investing
-- [ ] 138. Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46,800
+- [ ] 138. Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46Rs. 800
 - [ ] 139. Debt vs. Equity: Finding the Right Balance for Your Age
 - [ ] 140. What is the Nifty Bank Index and How Does It Affect the Economy?
 - [ ] 141. Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?
