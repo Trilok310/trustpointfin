@@ -24,7 +24,8 @@ class ImageGenerator {
         console.log(`[Image Generator] Generating image for slide ${slideIndex} via ${this.provider}...`);
         
         // --- PROVIDER ABSTRACTION ---
-        if (this.provider === 'DALLE') {
+        const providerUpper = this.provider.toUpperCase();
+        if (providerUpper === 'DALLE' || providerUpper === 'OPENAI') {
             if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is missing!");
             
             console.log(`[Image Generator] Calling DALL-E 3 API...`);

@@ -136,7 +136,24 @@ async function main() {
     });
     console.log(`🎉 Instagram Carousel Published Successfully! IG Media ID: ${publishRes.id}`);
 
-    console.log("\n✅ ALL SOCIAL MEDIA PUBLISHING COMPLETE!");
+    console.log("\n🚀 --- STARTING INSTAGRAM STORY PUBLISHING ---");
+    const storyUrl = await getGithubRawUrl(slideFiles[0]);
+    console.log(`📦 Creating IG Story Container using the first slide (${slideFiles[0]})...`);
+    const storyContainerRes = await fetchJSON(`https://graph.facebook.com/${API_VERSION}/${IG_ACCOUNT_ID}/media?image_url=${encodeURIComponent(storyUrl)}&media_type=STORIES&access_token=${PAGE_TOKEN}`, {
+        method: 'POST'
+    });
+    console.log(`✅ IG Story Container Created: ${storyContainerRes.id}`);
+    
+    console.log("⏳ Waiting 5 seconds for Meta backend processing...");
+    await new Promise(r => setTimeout(r, 5000));
+    
+    console.log("🚀 Publishing Story to Instagram...");
+    const storyPublishRes = await fetchJSON(`https://graph.facebook.com/${API_VERSION}/${IG_ACCOUNT_ID}/media_publish?creation_id=${storyContainerRes.id}&access_token=${PAGE_TOKEN}`, {
+        method: 'POST'
+    });
+    console.log(`🎉 Instagram Story Published Successfully! IG Media ID: ${storyPublishRes.id}`);
+
+    console.log("\n✅ ALL SOCIAL MEDIA PUBLISHING COMPLETE (Facebook, IG Feed, and IG Story)!");
 }
 
 main().catch(err => {
