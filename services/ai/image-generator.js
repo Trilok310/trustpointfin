@@ -28,9 +28,10 @@ class ImageGenerator {
         if (providerUpper === 'DALLE' || providerUpper === 'OPENAI') {
             if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is missing!");
             
-            console.log(`[Image Generator] Calling DALL-E API...`);
+            const modelName = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-2.5-sunburst';
+            console.log(`[Image Generator] Calling OpenAI API with model: ${modelName}...`);
             
-            const makeRequest = async (modelName) => {
+            const makeRequest = async (modelToUse) => {
                 return await fetch("https://api.openai.com/v1/images/generations", {
                     method: "POST",
                     headers: {
@@ -38,25 +39,23 @@ class ImageGenerator {
                         "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
                     },
                     body: JSON.stringify({
-                        model: modelName,
-                        prompt: visualSpec.image_generation_prompt.substring(0, 1000), // Enforce DALL-E 2 length limits just in case
+                        model: modelToUse,
+                        prompt: visualSpec.image_generation_prompt.substring(0, 4000), // Updated for modern limits
                         n: 1,
                         size: "1024x1024"
                     })
                 });
             };
 
-            let response = await makeRequest("dall-e-3");
+            let response = await makeRequest(modelName);
             let data = await response.json();
             
             if (data.error && data.error.message.includes("does not exist")) {
-                console.log(`?O WARNING: API Key lacks DALL-E 3 access. Automatically falling back to DALL-E 2...`);
-                response = await makeRequest("dall-e-2");
-                data = await response.json();
+                console.log(`?? WARNING: Model '${modelName}' not found. Falling back to safe-mode...`);
             }
 
             if (data.error) {
-                console.log(`?O CRITICAL: DALL-E API FAILED completely: ${data.error.message}`);
+                console.log(`?? CRITICAL: OpenAI Image API FAILED completely: ${data.error.message}`);
                 console.log(`?? Forcing ultimate safe-mode fallback to local placeholder so the pipeline can finish...`);
                 if (!fs.existsSync(cachePath)) {
                      fs.copyFileSync(path.join(process.cwd(), 'mock_image.jpg'), cachePath);
@@ -71,7 +70,7 @@ class ImageGenerator {
             const buffer = await imageRes.arrayBuffer();
             fs.writeFileSync(cachePath, Buffer.from(buffer));
             
-            console.log(`[Image Generator] Successfully generated and cached image from DALL-E 3.`);
+            console.log(`[Image Generator] Successfully generated and cached image using ${modelName}.`);
             return cachePath;
             
         } else if (this.provider === 'IMAGEN') {
