@@ -171,7 +171,7 @@ async function main() {
   const fallbackModel = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
 
   // Robust retry wrapper for Gemini API calls to handle 503 and 429 errors
-  async function generateContentWithRetry(prompt, retries = 4, delayMs = 10000) {
+  async function generateContentWithRetry(prompt, retries = 4, delayMs = 30000) {
     let currentModel = primaryModel;
     for (let i = 0; i < retries; i++) {
       try {

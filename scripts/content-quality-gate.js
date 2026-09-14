@@ -52,9 +52,9 @@ If it fails any criteria, respond with "FAIL:" followed by a short explanation o
             }
         } catch (e) {
             attempts++;
-            if (e.message.includes("429") || e.message.includes("503")) {
-                console.warn(`⚠️ Rate limit hit in Quality Gate. Waiting 10 seconds (Attempt ${attempts}/3)...`);
-                await new Promise(resolve => setTimeout(resolve, 10000));
+            if (e.message.includes("429") || e.message.includes("503") || e.message.includes("quota")) {
+                console.warn(`?? Rate limit hit in Quality Gate. Waiting 35 seconds to clear 1-minute window (Attempt ${attempts}/3)...`);
+                await new Promise(resolve => setTimeout(resolve, 35000));
                 if (attempts === 3) {
                     return { valid: false, reason: "Quality Gate API Error (Rate Limit Exhausted)" };
                 }
