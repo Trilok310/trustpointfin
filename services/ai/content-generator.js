@@ -43,10 +43,10 @@ OUTPUT RAW JSON:
           "image_generation_prompt": "Prompt for DALL-E 3. MUST INCLUDE: 'NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free.'"
       },
       "annotation": "A small tip or arrow annotation",
-      "cta": null
+      "cta": "Short call to action text (max 3 words). If you include a website, ALWAYS use TRUSTPOINTFIN.ORG (never .com). Can be null."
     }
   ],
-  "caption": "Instagram caption..."
+  "caption": "Instagram/Facebook caption with relevant hashtags. Always mention TrustPointFin.org in the bio/text."
 }`;
 
     if (!process.env.GEMINI_API_KEY) {

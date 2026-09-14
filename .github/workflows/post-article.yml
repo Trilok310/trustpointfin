@@ -56,7 +56,7 @@ jobs:
       - name: Commit and Push New Article and Slides (Step 5)
         run: |
           git config --global user.name "TrustPointFin AutoBot"
-          git config --global user.email "autobot@trustpointfin.com"
+          git config --global user.email "autobot@trustpointfin.org"
           git add -A
           git diff --staged --quiet || git commit -m "🤖 Auto-post: New Financial Insight"
           git push
