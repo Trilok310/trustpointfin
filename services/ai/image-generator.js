@@ -28,26 +28,34 @@ class ImageGenerator {
         if (providerUpper === 'DALLE' || providerUpper === 'OPENAI') {
             if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is missing!");
             
-            console.log(`[Image Generator] Calling DALL-E 3 API...`);
-            const response = await fetch("https://api.openai.com/v1/images/generations", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
-                },
-                body: JSON.stringify({
-                    model: "dall-e-3",
-                    prompt: visualSpec.image_generation_prompt,
-                    n: 1,
-                    size: "1024x1024" // DALL-E 3 default, will be cropped/scaled by renderer CSS
-                })
-            });
+            console.log(`[Image Generator] Calling DALL-E API...`);
             
-            const data = await response.json();
+            const makeRequest = async (modelName) => {
+                return await fetch("https://api.openai.com/v1/images/generations", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        model: modelName,
+                        prompt: visualSpec.image_generation_prompt.substring(0, 1000), // Enforce DALL-E 2 length limits just in case
+                        n: 1,
+                        size: "1024x1024"
+                    })
+                });
+            };
+
+            let response = await makeRequest("dall-e-3");
+            let data = await response.json();
+            
+            if (data.error && data.error.message.includes("does not exist")) {
+                console.log(`?O WARNING: API Key lacks DALL-E 3 access. Automatically falling back to DALL-E 2...`);
+                response = await makeRequest("dall-e-2");
+                data = await response.json();
+            }
+
             if (data.error) {
-                if (data.error.message.includes("does not exist")) {
-                    throw new Error(`DALL-E API Error: Your OpenAI API key does not have access to DALL-E 3. Please ensure you have added prepaid billing credits (minimum $5) at platform.openai.com (Note: ChatGPT Plus subscription does not cover API usage).`);
-                }
                 throw new Error(`DALL-E API Error: ${data.error.message}`);
             }
             
