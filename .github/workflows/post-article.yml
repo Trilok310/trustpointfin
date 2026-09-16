@@ -34,6 +34,7 @@ jobs:
           key: staging-state-${{ github.run_id }}
           restore-keys: |
             staging-state-
+          save-always: true
 
       - name: Install Dependencies
         run: |

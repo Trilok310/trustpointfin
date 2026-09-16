@@ -187,7 +187,13 @@ async function main() {
   // Recovery Scenario: STAGED NOT COMMITTED (Restored from GH Actions Cache)
   if (fs.existsSync(stagedHtmlPath) && fs.existsSync(stagedPendingPath)) {
       const stagedHtml = fs.readFileSync(stagedHtmlPath, "utf-8");
-      if (isHtmlComplete(stagedHtml)) {
+      const stagedPending = JSON.parse(fs.readFileSync(stagedPendingPath, "utf-8"));
+
+      if (stagedPending.topic !== currentTopic || stagedPending.filename !== (expectedSlug + ".html")) {
+          console.log(`\n[WARNING] Found STALE staging cache for unrelated topic "${stagedPending.topic}". Purging.`);
+          fs.rmSync(STAGING_DIR, { recursive: true, force: true });
+          fs.mkdirSync(STAGING_DIR);
+      } else if (isHtmlComplete(stagedHtml)) {
           console.log(`\n[RECOVERY] Found complete ${expectedSlug}.tmp.html in .staging cache.`);
           console.log("This indicates Gemini succeeded previously but runner died before Git Push.");
           currentState = "STAGED";

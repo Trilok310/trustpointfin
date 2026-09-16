@@ -75,7 +75,7 @@ console.log("✅ Scenario H (Recovery: Committed but incomplete state) passed.")
 resetEnv();
 fs.mkdirSync(STAGING_DIR);
 fs.writeFileSync(path.join(STAGING_DIR, "test-topic-a.tmp.html"), completeHtml, "utf-8");
-fs.writeFileSync(path.join(STAGING_DIR, ".pending_article.json"), JSON.stringify({ staged: true }), "utf-8");
+fs.writeFileSync(path.join(STAGING_DIR, ".pending_article.json"), JSON.stringify({ staged: true, topic: "Test Topic A", filename: "test-topic-a.html" }), "utf-8");
 out = runScript({ GEMINI_API_KEY: "dummy_key" });
 assert(out.includes("[RECOVERY] Found complete test-topic-a.tmp.html in .staging cache"), "Should detect staging cache");
 assert(fs.existsSync(path.join(ROOT, "test-topic-a.html")), "Should move file to root");
