@@ -25,15 +25,23 @@ let lastErrorClass = "NONE";
 function printLedger(finalResult) {
     console.log("\n======================================");
     console.log("[PIPELINE FINAL RESULT]");
-    console.log(`RUN ID: ${runId}`);
-    console.log(`TOPIC: ${currentTopic}`);
-    console.log(`EXPECTED SLUG: ${expectedSlug}`);
-    console.log(`FINAL STATE: ${currentState}`);
-    console.log(`AI PROVIDER: gemini_paid`);
-    console.log(`AI MODEL: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
-    console.log(`ATTEMPTS: ${attempts}`);
-    console.log(`LAST ERROR: ${lastErrorClass}`);
-    console.log(`RESULT: ${finalResult}`);
+    if (currentState === "DEFERRED") {
+        console.log(`Status: DEFERRED`);
+        console.log(`Reason: Gemini provider temporarily unavailable`);
+        console.log(`Publication: NOT PUBLISHED`);
+        console.log(`Topic state: NOT ADVANCED`);
+        console.log(`Model: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
+    } else {
+        console.log(`RUN ID: ${runId}`);
+        console.log(`TOPIC: ${currentTopic}`);
+        console.log(`EXPECTED SLUG: ${expectedSlug}`);
+        console.log(`FINAL STATE: ${currentState}`);
+        console.log(`AI PROVIDER: gemini_paid`);
+        console.log(`AI MODEL: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
+        console.log(`ATTEMPTS: ${attempts}`);
+        console.log(`LAST ERROR: ${lastErrorClass}`);
+        console.log(`RESULT: ${finalResult}`);
+    }
     console.log("======================================\n");
 }
 
@@ -299,15 +307,27 @@ Detailed answer to second FAQ
 ---END---`;
 
   let articleText = "";
-  const maxRetries = 4;
-  const baseDelayMs = 60000;
+  const maxRetries = 3;
   let success = false;
+  const GENERATION_BUDGET_MS = 240000; // 4 minutes max wall-clock budget
+  const startTime = Date.now();
 
   for (let i = 0; i < maxRetries; i++) {
     attempts++;
     try {
       console.log(`\n[AI REQUEST] Attempt ${attempts}/${maxRetries}`);
-      const result = await primaryModel.generateContent(articlePrompt);
+      
+      const remainingBudget = GENERATION_BUDGET_MS - (Date.now() - startTime);
+      if (remainingBudget <= 0) {
+          throw new Error("Hard wall-clock budget for Gemini generation exhausted.");
+      }
+
+      // Enforce absolute wall-clock timeout
+      const result = await Promise.race([
+          primaryModel.generateContent(articlePrompt),
+          new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout: Gemini API request exceeded budget.")), remainingBudget))
+      ]);
+
       console.log("[AI RESPONSE] HTTP status: 200 (Success)");
       articleText = result.response.text();
       success = true;
@@ -317,6 +337,9 @@ Detailed answer to second FAQ
       if (apiKey) safeMessage = safeMessage.split(apiKey).join("[REDACTED_API_KEY]");
       
       lastErrorClass = classifyError(safeMessage);
+      if (safeMessage.includes("Timeout:") || safeMessage.includes("Hard wall-clock budget")) {
+          lastErrorClass = "TRANSIENT_TIMEOUT";
+      }
 
       console.log("\n[AI ERROR]");
       console.log(`Type: ${lastErrorClass}`);
@@ -325,12 +348,21 @@ Detailed answer to second FAQ
       const isTransient = lastErrorClass.startsWith("TRANSIENT");
       
       if (isTransient && i < maxRetries - 1) {
-        const jitter = Math.floor(Math.random() * 5000);
-        const delayMs = baseDelayMs * Math.pow(2, i) + jitter;
+        // Attempt 1 fails -> wait ~30-45s, Attempt 2 fails -> wait ~60-90s
+        const delayMs = i === 0 ? 30000 + Math.random() * 15000 : 60000 + Math.random() * 30000;
+        
+        const nextBudget = GENERATION_BUDGET_MS - (Date.now() - startTime) - delayMs;
+        if (nextBudget <= 0) {
+            console.log("[WARNING] Not enough time budget left for retry. Deferring.");
+            currentState = "DEFERRED";
+            exitSafely(1, "Gemini provider temporarily unavailable (Budget exhausted)");
+        }
+
         console.log(`[RETRY] Waiting ${Math.round(delayMs / 1000)}s before next attempt...`);
         await new Promise(res => setTimeout(res, delayMs));
       } else if (isTransient && i === maxRetries - 1) {
-        exitSafely(1, "Gemini provider temporarily unavailable; pipeline halted safely without publication.");
+        currentState = "DEFERRED";
+        exitSafely(1, "Gemini provider temporarily unavailable (Max attempts exhausted)");
       } else {
         exitSafely(1, `Permanent error encountered: ${lastErrorClass}. Pipeline halted.`);
       }
