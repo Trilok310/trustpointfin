@@ -7,9 +7,14 @@ on:
     - cron: '20 3 * * *'   # 8:50 AM IST
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
+concurrency:
+  group: "production-article-pipeline"
+  cancel-in-progress: false
+
 jobs:
   post-article:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
 
@@ -22,9 +27,17 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Setup Durable Staging State
+        uses: actions/cache@v4
+        with:
+          path: .staging/
+          key: staging-state-${{ github.run_id }}
+          restore-keys: |
+            staging-state-
+
       - name: Install Dependencies
         run: |
-          npm install
+          npm install --no-fund --no-audit --loglevel=error
           echo "✅ npm install done."
 
       - name: Generate Website Article (Step 1)
@@ -37,6 +50,17 @@ jobs:
           GEMINI_FREE_MODEL: gemini-3.6-flash
         run: |
           node scripts/post-article.js
+
+      - name: Upload Debug Artifacts on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-state
+          path: |
+            .staging/
+            *.tmp.html
+            *.tmp.xml
+            .pending_article.json
 
       - name: Commit and Push Website Article (Step 2)
         run: |
