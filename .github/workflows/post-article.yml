@@ -28,13 +28,12 @@ jobs:
           node-version: '22'
 
       - name: Setup Durable Staging State
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: .staging/
           key: staging-state-${{ github.run_id }}
           restore-keys: |
             staging-state-
-          save-always: true
 
       - name: Install Dependencies
         run: |
@@ -113,3 +112,10 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
         run: |
           node scripts/post-social.js
+
+      - name: Save Durable Staging State (Always)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .staging/
+          key: staging-state-${{ github.run_id }}-${{ github.run_attempt }}
