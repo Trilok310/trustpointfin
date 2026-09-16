@@ -98,7 +98,11 @@ async function renderCarousel(jsonData, imagesMap, outputDir) {
 </html>`;
 
     fs.writeFileSync(HTML_OUT_PATH, fullHTML, 'utf-8');
-    const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const launchOptions = { headless: "new", args: ['--no-sandbox', '--disable-setuid-sandbox'] };
+    if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+        launchOptions.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+    }
+    const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
     await page.setViewport({ width: 1080 * slides.length, height: 1080, deviceScaleFactor: 1 });
     await page.goto('file://' + HTML_OUT_PATH, { waitUntil: 'networkidle0' });

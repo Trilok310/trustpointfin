@@ -20,8 +20,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Install Puppeteer Chrome
-        run: npx puppeteer browsers install chrome
+      - name: Check Puppeteer & System Chrome
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+        run: node scripts/check-puppeteer.js
 
       - name: Prepare Social Content & AI Images
         env:
@@ -32,6 +34,8 @@ jobs:
         run: node scripts/prepare-social.js
 
       - name: Render Carousel Slides
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         run: node scripts/generate-carousel.js
 
       - name: Commit Preview to Repository
