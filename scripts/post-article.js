@@ -218,6 +218,7 @@ The article should:
   - Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL)
   - Mention Angel One only when contextually relevant (do not force it).
   - Do not promise returns or manufacture statistics.
+  - CRITICAL: Do not use LaTeX (e.g., \\frac), MathJax, or complex markdown math formatting. Write all formulas simply as plain text (e.g., 72 / Expected Return).
   
   After the article content, you MUST end with:
   ---END---, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
