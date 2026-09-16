@@ -1,0 +1,20 @@
+{
+  "topic": "Stop Loss in Risk Management",
+  "teaching_objective": "Explain the concept of a Stop Loss visually.",
+  "format": "RISK",
+  "slides": [
+    {
+      "slide_number": 1,
+      "purpose": "context",
+      "headline": "Stop Loss: बड़े नुकसान से बचाव",
+      "core_explanation": "Stop Loss एक सुरक्षा जाल (safety net) की तरह है। यदि बाज़ार गिरता है, तो यह आपके नुकसान को एक तय सीमा पर रोक देता है।",
+      "visual_spec": {
+        "visual_concept": "A safety net catching a falling object before it hits the ground.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with scenes and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). A conceptual scene showing a steep cliff or falling chart line. A glowing, sturdy high-tech safety net catches a falling glowing sphere (representing capital) safely before it hits the jagged rocks below. An investor stands safely on the cliff watching. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "रिस्क मैनेजमेंट का पहला नियम",
+      "cta": "trustpointfin.org"
+    }
+  ],
+  "caption": "ट्रेडिंग में स्टॉप लॉस (Stop Loss) आपका सबसे अच्छा दोस्त है। 🛡️\n\n#RiskManagement #Trading #TrustPointFin"
+}

@@ -1,0 +1,13 @@
+{
+  "topic": "Mastering Risk Management",
+  "slides": [
+    {
+      "slide_number": 1,
+      "headline": "मार्केट में रिस्क को कैसे समझें?",
+      "core_explanation": "जब बाज़ार में भारी उतार-चढ़ाव होता है, तो एक शांत निवेशक और घबराए हुए ट्रेडर के बीच का अंतर ही असली मुनाफा तय करता है।",
+      "visual_spec": { "visual_concept": "dummy", "image_generation_prompt": "dummy" },
+      "annotation": "शुरुआती टिप: हमेशा Stop Loss का प्रयोग करें",
+      "cta": "TRUSTPOINTFIN"
+    }
+  ]
+}

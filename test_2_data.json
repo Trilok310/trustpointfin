@@ -1,0 +1,20 @@
+{
+  "topic": "FD vs Mutual Funds",
+  "teaching_objective": "Compare Fixed Deposits and Mutual Funds visually.",
+  "format": "COMPARISON",
+  "slides": [
+    {
+      "slide_number": 1,
+      "purpose": "context",
+      "headline": "FD या Mutual Funds: आपके लिए क्या सही है?",
+      "core_explanation": "FD आपको सुरक्षा और तय रिटर्न देता है, जबकि Mutual Funds बाजार के साथ तेज़ी से बढ़ने का मौका देते हैं।",
+      "visual_spec": {
+        "visual_concept": "Two contrasting visual worlds side-by-side: a calm, secure bank vault vs a dynamic, growing garden of wealth.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with scenes and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Split screen comparison. Left side: a highly secure, peaceful traditional bank vault with a steady, slow-growing plant. Right side: a dynamic, bright, modern greenhouse with diverse, rapidly growing plants representing diversified portfolios. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "तुलना: सुरक्षा बनाम ग्रोथ",
+      "cta": null
+    }
+  ],
+  "caption": "FD और Mutual Funds के बीच का अंतर समझें। 🚀\n\n#MutualFunds #FixedDeposit #TrustPointFin"
+}

@@ -48,31 +48,54 @@ class ImageGenerator {
             };
 
             let response = await makeRequest(modelName);
-            let data = await response.json();
+            let data;
             
-            if (data.error && data.error.message.includes("does not exist")) {
-                console.log(`?? WARNING: Model '${modelName}' not found. Falling back to safe-mode...`);
+            try {
+                data = await response.json();
+            } catch (e) {
+                throw new Error(`OpenAI Image API returned invalid JSON (HTTP ${response.status} ${response.statusText}).`);
             }
+            
+            console.log(`[Image Generator] OpenAI HTTP Status: ${response.status} ${response.statusText}`);
+            
+            // Redacted logging of response structure
+            const safeData = { ...data };
+            if (safeData.data && Array.isArray(safeData.data)) {
+                safeData.data = safeData.data.map(item => {
+                    const safeItem = { ...item };
+                    if (safeItem.b64_json) safeItem.b64_json = "[REDACTED_BASE64_STRING]";
+                    return safeItem;
+                });
+            }
+            console.log(`[Image Generator] OpenAI Response Structure: ${JSON.stringify(safeData, null, 2)}`);
 
-            if (data.error || !data.data || !data.data[0] || !data.data[0].url) {
-                const errorMsg = data.error ? data.error.message : "Invalid response format (missing data.data[0].url)";
-                console.log(`?? CRITICAL: OpenAI Image API FAILED or returned unexpected format: ${errorMsg}`);
-                console.log(`?? Forcing ultimate safe-mode fallback to local placeholder so the pipeline can finish...`);
-                if (!fs.existsSync(cachePath)) {
-                     fs.copyFileSync(path.join(process.cwd(), 'mock_image.jpg'), cachePath);
-                }
-                return cachePath;
+            if (data.error) {
+                throw new Error(`OpenAI Image API Error: ${data.error.message || JSON.stringify(data.error)}`);
             }
             
-            const imageUrl = data.data[0].url;
+            if (!data.data || !data.data[0]) {
+                throw new Error("OpenAI Image API returned unexpected format (missing data.data[0]).");
+            }
             
-            // Download the image and save to cache
-            const imageRes = await fetch(imageUrl);
-            const buffer = await imageRes.arrayBuffer();
-            fs.writeFileSync(cachePath, Buffer.from(buffer));
+            const item = data.data[0];
             
-            console.log(`[Image Generator] Successfully generated and cached image using ${modelName}.`);
-            return cachePath;
+            if (item.b64_json) {
+                const buffer = Buffer.from(item.b64_json, 'base64');
+                fs.writeFileSync(cachePath, buffer);
+                console.log(`[Image Generator] Successfully decoded and cached base64 image from ${modelName}.`);
+                return cachePath;
+            } else if (item.url) {
+                const imageRes = await fetch(item.url);
+                if (!imageRes.ok) {
+                    throw new Error(`Failed to download image from OpenAI URL (HTTP ${imageRes.status})`);
+                }
+                const buffer = await imageRes.arrayBuffer();
+                fs.writeFileSync(cachePath, Buffer.from(buffer));
+                console.log(`[Image Generator] Successfully downloaded and cached image using ${modelName}.`);
+                return cachePath;
+            } else {
+                throw new Error("OpenAI Image API response contained neither 'url' nor 'b64_json'.");
+            }
             
         } else if (this.provider === 'IMAGEN') {
             // Implementation for Google Imagen API

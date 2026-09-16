@@ -1,0 +1,44 @@
+{
+  "topic": "HDFC Bank Analysis: From Long-Term Wealth Creation to Fibonacci Retracements",
+  "teaching_objective": "Explain how to combine fundamental analysis with technical Fibonacci levels for entering a long-term position, using HDFC Bank as an educational case study.",
+  "format": "MARKET_CONCEPT",
+  "slides": [
+    {
+      "slide_number": 1,
+      "purpose": "context",
+      "headline": "HDFC Bank: Fundamentals + Technicals (Case Study)",
+      "core_explanation": "When investing in a giant compounder like HDFC Bank, finding the right entry point matters. By combining strong fundamentals (like post-merger stabilizing NIMs) with Fibonacci Retracements, you can spot high-probability accumulation zones. This is an educational analysis, not a buy/sell recommendation.",
+      "visual_spec": {
+        "visual_concept": "A conceptual blueprint of a bank building superimposed on a glowing golden ratio/Fibonacci spiral, showing the intersection of solid foundation (fundamentals) and mathematical timing (technicals).",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with scenes and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. A majestic, modern Indian banking tower foundation being built, overlaid with a glowing, precise golden Fibonacci spiral. Deep blue and gold pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "Educational Case Study 📚",
+      "cta": null
+    },
+    {
+      "slide_number": 2,
+      "purpose": "core_explanation",
+      "headline": "The 50% & 61.8% Golden Zones",
+      "core_explanation": "Fibonacci retracement levels (like 50% and 61.8%) act as natural support during a market pullback. Instead of chasing the stock at an all-time high, smart money waits for the price to 'retrace' to these golden zones before accumulating.",
+      "visual_spec": {
+        "visual_concept": "A mountain climber resting at a clearly marked basecamp halfway down a steep slope, preparing for the next upward push.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with scenes and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Wide edge-to-edge landscape. An adventurous mountain climber resting comfortably at a glowing, secure basecamp situated halfway down a steep, abstract geometric mountain slope. The scene conveys resting at a support level before the next climb. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "Buy the pullback, not the peak.",
+      "cta": null
+    },
+    {
+      "slide_number": 3,
+      "purpose": "actionable_advice",
+      "headline": "The 'Wait and Watch' Strategy",
+      "core_explanation": "No indicator is 100% accurate. If HDFC breaks below the 61.8% level, the trend may be reversing. Always combine Fibonacci with volume profile analysis and overall market conditions. Learn to wait patiently for your setup.",
+      "visual_spec": {
+        "visual_concept": "A watchful owl or a focused observer looking through a glowing geometric lens at a complex, shifting landscape.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with scenes and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). A wise, stylized owl wearing modern augmented reality glasses, perched on a branch, observing a shifting landscape of abstract waves. Represents patience and careful observation. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "Patience pays in investing.",
+      "cta": "trustpointfin.org"
+    }
+  ],
+  "caption": "How do you combine fundamentals with technical timing? Let's use HDFC Bank as a case study. 🏦📈\n\n#HDFCBank #StockMarket #Investing #TechnicalAnalysis #TrustPointFin"
+}

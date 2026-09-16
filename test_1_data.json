@@ -1,0 +1,20 @@
+{
+  "topic": "शेयर बाजार क्या है?",
+  "teaching_objective": "Explain the stock market using a simple beginner concept analogy.",
+  "format": "BEGINNER_CONCEPT",
+  "slides": [
+    {
+      "slide_number": 1,
+      "purpose": "context",
+      "headline": "शेयर बाज़ार क्या है?",
+      "core_explanation": "कल्पना कीजिए कि शेयर बाज़ार एक सुपरमार्केट है, लेकिन यहाँ सामान की जगह कंपनियों के हिस्से (shares) खरीदे और बेचे जाते हैं।",
+      "visual_spec": {
+        "visual_concept": "A bustling conceptual supermarket where stalls represent different businesses, and investors are looking at business ownership certificates.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters and scenes. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. A vibrant, conceptual marketplace or supermarket scene where modern Indian characters are interacting with glowing puzzle pieces that form large corporate buildings, symbolizing buying pieces of a business. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "शुरुआती टिप: शेयर खरीदना मतलब कंपनी में हिस्सेदारी खरीदना।",
+      "cta": null
+    }
+  ],
+  "caption": "शेयर बाज़ार को समझना बहुत आसान है! 📈\n\n#StockMarket #Investing #TrustPointFin #HindiFinance"
+}
