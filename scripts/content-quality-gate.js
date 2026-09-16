@@ -64,11 +64,19 @@ Readability: [SCORE]
     let attempts = 0;
     while (attempts < 3) {
         try {
+            console.log("\n[AI REQUEST] (Quality Gate)");
+            console.log("Request started");
+            
             const result = await model.generateContent(prompt);
+            
+            console.log("\n[AI RESPONSE] (Quality Gate)");
+            console.log("HTTP status: 200 (Success)");
+            console.log("Response received: true");
+            
             const responseText = result.response.text().trim();
             
             let scores = {};
-            const lines = responseText.split('\\n');
+            const lines = responseText.split('\n');
             for (const line of lines) {
                 const match = line.match(/(Content|Accuracy|Visuals|Readability):\s*([\d\.]+)/i);
                 if (match) {
@@ -77,7 +85,7 @@ Readability: [SCORE]
             }
 
             if (scores.content === undefined || scores.accuracy === undefined || scores.visuals === undefined || scores.readability === undefined) {
-                return { valid: false, reason: "AI Gate Error: Failed to parse scores." };
+                return { valid: false, reason: `AI Gate Error: Failed to parse scores. Raw response was: ${responseText.substring(0, 100)}...` };
             }
 
             console.log(`📊 AI Quality Scores - Content: ${scores.content}, Accuracy: ${scores.accuracy}, Visuals: ${scores.visuals}, Readability: ${scores.readability}`);
@@ -90,16 +98,31 @@ Readability: [SCORE]
             return { valid: true, reason: "Passed all quality checks and minimum score thresholds." };
             
         } catch (e) {
+            console.log("\n[AI ERROR] (Quality Gate)");
+            console.log(`Type: ${e.name || "Error"}`);
+            console.log(`Status: ${e.status || e.statusText || e.code || "Unknown (Check message)"}`);
+            
+            let safeMessage = e.stack || e.message || String(e);
+            if (apiKey) safeMessage = safeMessage.split(apiKey).join("[REDACTED_API_KEY]");
+            console.log(`Message: ${safeMessage}`);
+            
             attempts++;
-            if (e.message.includes("429") || e.message.includes("503") || e.message.includes("quota")) {
-                console.warn(`⚠️ Rate limit hit in Quality Gate. Waiting 35 seconds to clear 1-minute window (Attempt ${attempts}/3)...`);
+            const isTransientError = safeMessage.includes("503") || safeMessage.includes("429") || safeMessage.includes("500") || safeMessage.includes("fetch");
+            
+            if (isTransientError && attempts < 3) {
+                console.log("\n[RETRY] (Quality Gate)");
+                console.log(`Attempt ${attempts}/3`);
+                console.log("Waiting 35s before next attempt...");
                 await new Promise(resolve => setTimeout(resolve, 35000));
-                if (attempts === 3) {
-                    return { valid: false, reason: "Quality Gate API Error (Rate Limit Exhausted)" };
-                }
+            } else if (attempts === 3) {
+                console.log("\n[FATAL] (Quality Gate)");
+                console.log("Free tier Gemini generation failed after 3 attempts.");
+                console.log("Pipeline halted safely.");
+                return { valid: false, reason: "Quality Gate API Error (Persistent Failure)" };
             } else {
-                console.error("⚠️ Quality Gate AI check failed, assuming invalid to be safe:", e.message);
-                return { valid: false, reason: "Quality Gate API Error" };
+                console.log("\n[FATAL] (Quality Gate)");
+                console.log("Non-transient error encountered.");
+                return { valid: false, reason: `Quality Gate API Error: ${e.message}` };
             }
         }
     }

@@ -166,31 +166,51 @@ async function main() {
   const { topic, lineIndex, lines } = result;
   console.log(`📝 Writing article about: "${topic}"`);
 
+  const paidModelName = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
   const genAI = new GoogleGenerativeAI(apiKey);
-  const primaryModel = genAI.getGenerativeModel({ model: process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash" });
-  const fallbackModel = genAI.getGenerativeModel({ model: process.env.GEMINI_FREE_MODEL || "gemini-3.6-flash" });
+  const primaryModel = genAI.getGenerativeModel({ model: paidModelName });
+
+  console.log("\n[AI CONFIG]");
+  console.log("Provider: gemini_paid");
+  console.log(`Model: ${paidModelName}`);
+  console.log(`API key configured: ${!!apiKey}`);
 
   // Robust retry wrapper for Gemini API calls to handle 503 and 429 errors
   async function generateContentWithRetry(prompt, retries = 4, delayMs = 30000) {
-    let currentModel = primaryModel;
     for (let i = 0; i < retries; i++) {
       try {
-        return await currentModel.generateContent(prompt);
+        console.log("\n[AI REQUEST]");
+        console.log("Request started");
+        
+        const result = await primaryModel.generateContent(prompt);
+        
+        console.log("\n[AI RESPONSE]");
+        console.log("HTTP status: 200 (Success)");
+        console.log("Response received: true");
+        return result;
       } catch (error) {
-        const isTransientError = error.message.includes("503") || error.message.includes("429") || error.message.includes("500");
+        console.log("\n[AI ERROR]");
+        console.log(`Type: ${error.name || "Error"}`);
+        console.log(`Status: ${error.status || error.statusText || error.code || "Unknown (Check message)"}`);
+        
+        // Ensure no API keys leak in the stack trace or message
+        let safeMessage = error.stack || error.message || String(error);
+        if (apiKey) safeMessage = safeMessage.split(apiKey).join("[REDACTED_API_KEY]");
+        console.log(`Message: ${safeMessage}`);
+
+        const isTransientError = safeMessage.includes("503") || safeMessage.includes("429") || safeMessage.includes("500") || safeMessage.includes("fetch");
         
         if (isTransientError && i < retries - 1) {
-          console.log(`⚠️ Gemini API error (${error.message.substring(0, 50)}...). Retrying in ${delayMs / 1000}s... (Attempt ${i + 1}/${retries})`);
+          console.log("\n[RETRY]");
+          console.log(`Attempt ${i + 1}/${retries}`);
+          console.log(`Waiting ${delayMs / 1000}s before next attempt...`);
           await new Promise(res => setTimeout(res, delayMs));
-          
-          // Fallback to stable model on the 3rd attempt if primary is persistently busy
-          if (i === 1) {
-            console.log("🔄 Falling back to stable free tier model");
-            currentModel = fallbackModel;
-          }
-          
-          delayMs += 5000; // linear backoff to avoid waiting too long on actions
+          delayMs += 5000; // linear backoff
         } else {
+          console.log("\n[FATAL]");
+          console.log(`Paid Gemini generation failed after ${i + 1} attempts.`);
+          console.log("No fallback performed.");
+          console.log("Pipeline halted safely.");
           throw error;
         }
       }
@@ -299,6 +319,19 @@ Detailed answer to second FAQ
 
   const articleResponse = await generateContentWithRetry(articlePrompt);
   const articleText = articleResponse.response.text();
+
+  if (!articleText || articleText.trim().length < 500) {
+      console.log("\n[FATAL]");
+      console.log("Article Generation Failure");
+      console.log("Model returned empty, invalid, or extremely short output.");
+      throw new Error("ARTICLE GENERATION FAILURE: No valid article content generated.");
+  }
+  if (!articleText.includes("---TITLE---") || !articleText.includes("---BODY---")) {
+      console.log("\n[FATAL]");
+      console.log("Article Generation Failure");
+      console.log("Model output is missing required structural delimiters.");
+      throw new Error("ARTICLE GENERATION FAILURE: Output does not match required schema.");
+  }
 
   console.log("🔍 Running content quality gate checks...");
   const validationResult = await validateSocialContent(articleText);
