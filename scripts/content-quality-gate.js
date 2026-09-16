@@ -82,17 +82,17 @@ Readability: [SCORE]
 
             console.log(`📊 AI Quality Scores - Content: ${scores.content}, Accuracy: ${scores.accuracy}, Visuals: ${scores.visuals}, Readability: ${scores.readability}`);
 
-            if (scores.content < 8.5) return { valid: false, reason: \`Score too low: Content (\${scores.content} < 8.5)\` };
-            if (scores.accuracy < 9.0) return { valid: false, reason: \`Score too low: Accuracy (\${scores.accuracy} < 9.0)\` };
-            if (scores.visuals < 8.0) return { valid: false, reason: \`Score too low: Visuals (\${scores.visuals} < 8.0)\` };
-            if (scores.readability < 8.5) return { valid: false, reason: \`Score too low: Readability (\${scores.readability} < 8.5)\` };
+            if (scores.content < 8.5) return { valid: false, reason: `Score too low: Content (${scores.content} < 8.5)` };
+            if (scores.accuracy < 9.0) return { valid: false, reason: `Score too low: Accuracy (${scores.accuracy} < 9.0)` };
+            if (scores.visuals < 8.0) return { valid: false, reason: `Score too low: Visuals (${scores.visuals} < 8.0)` };
+            if (scores.readability < 8.5) return { valid: false, reason: `Score too low: Readability (${scores.readability} < 8.5)` };
 
             return { valid: true, reason: "Passed all quality checks and minimum score thresholds." };
             
         } catch (e) {
             attempts++;
             if (e.message.includes("429") || e.message.includes("503") || e.message.includes("quota")) {
-                console.warn(\`⚠️ Rate limit hit in Quality Gate. Waiting 35 seconds to clear 1-minute window (Attempt \${attempts}/3)...\`);
+                console.warn(`⚠️ Rate limit hit in Quality Gate. Waiting 35 seconds to clear 1-minute window (Attempt ${attempts}/3)...`);
                 await new Promise(resolve => setTimeout(resolve, 35000));
                 if (attempts === 3) {
                     return { valid: false, reason: "Quality Gate API Error (Rate Limit Exhausted)" };
