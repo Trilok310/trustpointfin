@@ -167,8 +167,8 @@ async function main() {
   console.log(`📝 Writing article about: "${topic}"`);
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const primaryModel = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
-  const fallbackModel = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
+  const primaryModel = genAI.getGenerativeModel({ model: process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash" });
+  const fallbackModel = genAI.getGenerativeModel({ model: process.env.GEMINI_FREE_MODEL || "gemini-3.6-flash" });
 
   // Robust retry wrapper for Gemini API calls to handle 503 and 429 errors
   async function generateContentWithRetry(prompt, retries = 4, delayMs = 30000) {
@@ -183,9 +183,9 @@ async function main() {
           console.log(`⚠️ Gemini API error (${error.message.substring(0, 50)}...). Retrying in ${delayMs / 1000}s... (Attempt ${i + 1}/${retries})`);
           await new Promise(res => setTimeout(res, delayMs));
           
-          // Fallback to 3.5-flash on the 3rd attempt if 3.6 is persistently busy
+          // Fallback to stable model on the 3rd attempt if primary is persistently busy
           if (i === 1) {
-            console.log("🔄 Falling back to stable model: gemini-3.5-flash");
+            console.log("🔄 Falling back to stable free tier model");
             currentModel = fallbackModel;
           }
           
@@ -214,10 +214,10 @@ The article should:
   - Include real data, statistics, and actionable insights
   - Have a strong SEO meta description (max 160 chars)
   - Include a Key Takeaways section (3-5 bullet points)
-  - Have 3-4 main sections with H2 headings
+  - Have 3-4 main sections with H2 headings. Under each heading, use short educational statements (2-4 concise bullet points or short sentences). Do NOT write dense, long paragraphs.
   - Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL)
   - Mention Angel One only when contextually relevant (do not force it).
-  - Do not promise returns or manufacture statistics.
+  - Do not promise returns, manufacture statistics, or make absolute claims (e.g., "guaranteed", "100%"). Use neutral educational language (e.g., "may offer a margin of safety" rather than "reduces downside risk").
   - CRITICAL: Do not use LaTeX (e.g., \\frac), MathJax, or complex markdown math formatting. Write all formulas simply as plain text (e.g., 72 / Expected Return).
   
   After the article content, you MUST end with:
@@ -437,9 +437,17 @@ Detailed answer to second FAQ
   updateSitemap(slug);
   console.log("✅ sitemap.xml updated for Google Indexing");
 
-  // --- Save topic for final completion step ---
-  fs.writeFileSync(path.join(ROOT, '.current_topic_state.json'), JSON.stringify({topic, lineIndex}), "utf-8");
-  console.log(`⏳ Topic "${topic}" staged for completion (will be marked complete after visual validation succeeds)`);
+  // --- Save pending state for Git push confirmation ---
+  const pendingState = {
+      filename: slug + ".html",
+      title: title,
+      topic: topic,
+      lineIndex: lineIndex,
+      publication_status: "PENDING",
+      timestamp: new Date().toISOString()
+  };
+  fs.writeFileSync(path.join(ROOT, '.pending_article.json'), JSON.stringify(pendingState, null, 2), "utf-8");
+  console.log(`⏳ Article "${title}" staged as PENDING. Will become official source for social media after Git commit and push succeeds.`);
 
   console.log("\n🚀 Website Article Generation Phase Complete.");
 }

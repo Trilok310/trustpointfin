@@ -11,29 +11,51 @@ async function validateSocialContent(content) {
         return { valid: false, reason: "Content is completely empty." };
     }
 
+    // 1. DETERMINISTIC COMPLIANCE CHECKS
+    const contentLower = content.toLowerCase();
+    const bannedPhrases = [
+        "100% profit", "guaranteed", "sure shot", "eliminate risk", "will definitely go up", 
+        "cannot lose", "zero risk", "risk-free"
+    ];
+    
+    for (const phrase of bannedPhrases) {
+        if (contentLower.includes(phrase)) {
+            return { valid: false, reason: `DETERMINISTIC COMPLIANCE FAILURE: Found banned absolute claim ("${phrase}").` };
+        }
+    }
+    
+    // Check for excessive text density (heuristic: paragraphs shouldn't be extremely long)
+    const paragraphs = content.split('\n').filter(p => p.trim().length > 0);
+    for (const p of paragraphs) {
+        if (p.length > 800) {
+            return { valid: false, reason: "TEXT DENSITY FAILURE: Found excessively long, dense paragraph block." };
+        }
+    }
+
+    // 2. AI MODEL SCORING
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
-        console.warn("?? No GEMINI_API_KEY available for quality gate. Skipping rigorous AI check.");
-        return { valid: true, reason: "Skipped due to missing key" };
+        console.warn("⚠️ No GEMINI_API_KEY available for quality gate. Skipping rigorous AI check.");
+        return { valid: true, reason: "Passed deterministic checks (AI skipped due to missing key)" };
     }
 
     const genAI = new GoogleGenerativeAI(apiKey);
-    const modelName = process.env.QUALITY_GATE_MODEL || "gemini-3.6-flash";
+    const modelName = process.env.GEMINI_FREE_MODEL || "gemini-3.6-flash";
     const model = genAI.getGenerativeModel({ model: modelName });
 
     const prompt = `You are the Chief Compliance Officer and Managing Editor at TrustPointFin.
-Evaluate the following generated financial article and social media content based on these criteria:
-1. educational value: Does it teach the reader something useful?
-2. visual quality / storytelling: Is the structure engaging and easy to read?
-3. originality: Does it avoid generic fluff?
-4. financial accuracy: Are the concepts mathematically and financially sound?
-5. compliance: Does it avoid promising guaranteed returns or 100% profits?
-6. Hindi/Hinglish quality: Is the Hindi natural and engaging for Indian youth?
-7. beginner usefulness: Can a beginner understand this?
-8. overall content quality: Is this ready for production?
+Evaluate the following generated financial article based on 4 criteria. You must be extremely strict.
 
-If the content passes ALL criteria, respond with exactly: "PASS".
-If it fails any criteria, respond with "FAIL:" followed by a short explanation of what is wrong.
+1. Content (0-10): Does it provide educational value using short, concise points?
+2. Accuracy (0-10): Is it financially sound, compliant, and free of overly broad/unsupported claims?
+3. Visuals (0-10): Is the structure engaging, visual, and highly readable (no dense blocks)?
+4. Readability (0-10): Is the Hindi/Hinglish natural and easy for beginners to understand?
+
+OUTPUT STRICTLY IN THIS EXACT FORMAT (nothing else):
+Content: [SCORE]
+Accuracy: [SCORE]
+Visuals: [SCORE]
+Readability: [SCORE]
 
 --- CONTENT TO EVALUATE ---
 ` + content + `
@@ -44,16 +66,33 @@ If it fails any criteria, respond with "FAIL:" followed by a short explanation o
         try {
             const result = await model.generateContent(prompt);
             const responseText = result.response.text().trim();
-
-            if (responseText.startsWith("PASS")) {
-                return { valid: true, reason: "Passed all quality checks." };
-            } else {
-                return { valid: false, reason: responseText };
+            
+            let scores = {};
+            const lines = responseText.split('\\n');
+            for (const line of lines) {
+                const match = line.match(/(Content|Accuracy|Visuals|Readability):\s*([\d\.]+)/i);
+                if (match) {
+                    scores[match[1].toLowerCase()] = parseFloat(match[2]);
+                }
             }
+
+            if (scores.content === undefined || scores.accuracy === undefined || scores.visuals === undefined || scores.readability === undefined) {
+                return { valid: false, reason: "AI Gate Error: Failed to parse scores." };
+            }
+
+            console.log(`📊 AI Quality Scores - Content: ${scores.content}, Accuracy: ${scores.accuracy}, Visuals: ${scores.visuals}, Readability: ${scores.readability}`);
+
+            if (scores.content < 8.5) return { valid: false, reason: \`Score too low: Content (\${scores.content} < 8.5)\` };
+            if (scores.accuracy < 9.0) return { valid: false, reason: \`Score too low: Accuracy (\${scores.accuracy} < 9.0)\` };
+            if (scores.visuals < 8.0) return { valid: false, reason: \`Score too low: Visuals (\${scores.visuals} < 8.0)\` };
+            if (scores.readability < 8.5) return { valid: false, reason: \`Score too low: Readability (\${scores.readability} < 8.5)\` };
+
+            return { valid: true, reason: "Passed all quality checks and minimum score thresholds." };
+            
         } catch (e) {
             attempts++;
             if (e.message.includes("429") || e.message.includes("503") || e.message.includes("quota")) {
-                console.warn(`?? Rate limit hit in Quality Gate. Waiting 35 seconds to clear 1-minute window (Attempt ${attempts}/3)...`);
+                console.warn(\`⚠️ Rate limit hit in Quality Gate. Waiting 35 seconds to clear 1-minute window (Attempt \${attempts}/3)...\`);
                 await new Promise(resolve => setTimeout(resolve, 35000));
                 if (attempts === 3) {
                     return { valid: false, reason: "Quality Gate API Error (Rate Limit Exhausted)" };

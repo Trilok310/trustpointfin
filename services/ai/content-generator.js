@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const { validateSocialContent } = require("./quality-gate.js");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "dummy_key");
-const modelName = process.env.CONTENT_GENERATOR_MODEL || "gemini-3.6-flash";
+const modelName = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
 const model = genAI.getGenerativeModel({ model: modelName });
 
 async function generateSocialContent(topic) {
@@ -36,8 +36,8 @@ OUTPUT RAW JSON:
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Main text (Hindi/Hinglish)",
-      "core_explanation": "Supporting text (Mobile-readable, Hindi/Hinglish)",
+      "headline": "Short main text (Hindi/Hinglish)",
+      "core_explanation": "Short educational statement (Max 2-4 points, visually structured). CRITICAL: NO dense paragraph blocks. Mobile-readable, Hindi/Hinglish",
       "visual_spec": {
           "visual_concept": "Describe the core visual idea (e.g. 'Two contrasting worlds: a calm investor in a storm vs a panicked trader')",
           "image_generation_prompt": "Prompt for DALL-E 3. MUST INCLUDE: 'NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free.'"

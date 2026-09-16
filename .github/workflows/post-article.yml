@@ -3,7 +3,7 @@ name: Auto Post Financial Insight
 on:
   schedule:
     # All times in UTC (IST = UTC + 5:30)
-    # Changed to 1 post per day per user request
+    # 1 post per day per user request
     - cron: '20 3 * * *'   # 8:50 AM IST
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
@@ -27,20 +27,36 @@ jobs:
           npm install
           echo "✅ npm install done."
 
-      - name: Run Article Poster Script (Step 1)
+      - name: Generate Website Article (Step 1)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
           IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_PAID_MODEL: gemini-3.8-flash
+          GEMINI_FREE_MODEL: gemini-3.6-flash
         run: |
           node scripts/post-article.js
 
-      - name: Prepare Social Source and Generate Content (Step 2 - Social Selection)
+      - name: Commit and Push Website Article (Step 2)
+        run: |
+          git config --global user.name "TrustPointFin AutoBot"
+          git config --global user.email "autobot@trustpointfin.org"
+          git add *.html insights.html sitemap.xml .pending_article.json
+          git diff --staged --quiet || git commit -m "🤖 Auto-post: New Financial Insight Published"
+          git push
+
+      - name: Confirm Publication & Write State (Step 3)
+        run: |
+          node scripts/confirm-publish.js
+
+      - name: Prepare Social Source and Generate Content (Step 4)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
+          GEMINI_PAID_MODEL: gemini-3.8-flash
+          GEMINI_FREE_MODEL: gemini-3.6-flash
         run: |
           node scripts/prepare-social.js
 
@@ -49,27 +65,23 @@ jobs:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         run: node scripts/check-puppeteer.js
 
-      - name: Run Presentation Engine (Step 3 - Generate Carousel)
+      - name: Render Carousel Slides (Step 5)
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         run: |
           node scripts/generate-carousel.js
 
-      - name: Finalize and Mark Topic Complete (Step 4 - Validation Success Gate)
-        run: |
-          node scripts/mark-complete.js
-
-      - name: Commit and Push New Article and Slides (Step 5)
+      - name: Commit and Push Social Assets and Calendar (Step 6)
         run: |
           git config --global user.name "TrustPointFin AutoBot"
           git config --global user.email "autobot@trustpointfin.org"
-          git add -A
-          git diff --staged --quiet || git commit -m "🤖 Auto-post: New Financial Insight"
+          git add slides/ content_calendar.md latest_social_media.md latest_slides.json .current_topic_state.json
+          git diff --staged --quiet || git commit -m "📸 Auto-post: Social Media Assets & Calendar Update"
           git push
-          echo "⏳ Website Post is Live! Waiting 5 minutes (300s) before posting to Social Media..."
+          echo "⏳ Assets Pushed! Waiting 5 minutes (300s) before posting to Meta to ensure GitHub Pages deployment is live..."
           sleep 300
 
-      - name: Publish to Meta (Step 4 - Auto Publish to IG/FB)
+      - name: Publish to Meta (Step 7)
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}

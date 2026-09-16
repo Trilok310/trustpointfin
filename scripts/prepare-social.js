@@ -22,25 +22,31 @@ if (!fs.existsSync(SLIDES_DIR)) {
 }
 
 async function selectSourceArticle() {
-    // Exclude system html files
-    const exclude = ['index.html', 'insights.html', 'privacy.html', 'sample-insight.html', 'carousel-temp.html', 'old_index.html'];
-    const files = fs.readdirSync(ROOT).filter(f => f.endsWith('.html') && !exclude.includes(f));
+    const statePath = path.join(ROOT, '.current_topic_state.json');
     
-    if (files.length === 0) throw new Error("No eligible articles found for social generation.");
+    if (!fs.existsSync(statePath)) {
+        throw new Error("No .current_topic_state.json found! Cannot proceed with social generation. Article publishing must succeed first.");
+    }
     
-    // Select a random article
-    const selectedFile = files[Math.floor(Math.random() * files.length)];
-    const html = fs.readFileSync(path.join(ROOT, selectedFile), 'utf-8');
-    
-    let titleMatch = html.match(/<title>(.*?)<\/title>/);
-    let title = titleMatch ? titleMatch[1].replace(' - TrustPointFin', '').trim() : selectedFile.replace('.html', '').replace(/-/g, ' ');
+    const state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+    if (state.publication_status !== "SUCCESS") {
+        throw new Error(`Article publication status is '${state.publication_status}', expected 'SUCCESS'! Halting social generation.`);
+    }
+
+    const selectedFile = state.filename;
+    const title = state.title;
+
+    if (!fs.existsSync(path.join(ROOT, selectedFile))) {
+        throw new Error(`The verified article file ${selectedFile} is missing from disk!`);
+    }
 
     console.log(`\n==========================================`);
-    console.log(`📌 SOCIAL SOURCE SELECTION`);
+    console.log(`📌 STRICT SOCIAL SOURCE SELECTION`);
     console.log(`==========================================`);
     console.log(`- SOURCE FILE: ${selectedFile}`);
     console.log(`- SOURCE TITLE: ${title}`);
     console.log(`- SOURCE PATH: /${selectedFile}`);
+    console.log(`- PUBLICATION STATUS: ${state.publication_status}`);
     console.log(`==========================================\n`);
 
     return { filename: selectedFile, title };
