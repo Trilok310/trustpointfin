@@ -2,5 +2,9 @@
   "dependencies": {
     "puppeteer": "^25.7.0",
     "@google/generative-ai": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"No tests defined yet\" && exit 0",
+    "build": "echo \"No build steps defined yet\" && exit 0"
   }
 }

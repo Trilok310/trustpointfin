@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install Dependencies
         run: |
@@ -46,7 +46,7 @@ jobs:
 
       - name: Run Presentation Engine (Step 3 - Generate Carousel)
         run: |
-          node node_modules/puppeteer/install.mjs
+          npx puppeteer browsers install chrome
           node scripts/generate-carousel.js
 
       - name: Finalize and Mark Topic Complete (Step 4 - Validation Success Gate)

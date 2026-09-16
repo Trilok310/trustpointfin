@@ -54,7 +54,8 @@ OUTPUT RAW JSON:
     }
 
     let attempts = 0;
-    while (attempts < 3) {
+    let backoffDelay = 5000;
+    while (attempts < 5) {
         attempts++;
         try {
             const result = await model.generateContent(prompt);
@@ -66,20 +67,24 @@ OUTPUT RAW JSON:
             if (qg.valid) return parsed;
             console.log("Quality Gate Failed:", qg.reason);
         } catch (e) {
-            console.log("Generation error:", e.message);
+            console.log(`Generation error on attempt ${attempts}:`, e.message);
             if (e.message.includes("limit: 20") || e.message.includes("quota")) {
-                console.error("❌ CRITICAL ERROR: Daily free-tier API quota exhausted. Halting pipeline permanently.");
-                throw e; // Do NOT retry, fail immediately
+                console.error("❌ CRITICAL ERROR: Daily API quota exhausted. Halting pipeline permanently.");
+                throw e; 
             }
-            if (e.message.includes("429") || e.message.includes("503")) {
-                console.log(`⚠️ Rate limit hit (transient). Waiting 50 seconds before retry ${attempts}/3...`);
-                await new Promise(resolve => setTimeout(resolve, 50000));
+            if (e.message.includes("429") || e.message.includes("503") || e.message.includes("overloaded") || e.message.includes("unavailable")) {
+                if (attempts >= 5) {
+                    throw new Error(`Failed to generate content after 5 attempts due to API limits. Last error: ${e.message}`);
+                }
+                console.log(`⚠️ Rate limit / 503 hit (transient). Waiting ${backoffDelay/1000}s before retry...`);
+                await new Promise(resolve => setTimeout(resolve, backoffDelay));
+                backoffDelay *= 2; // exponential backoff
             } else {
-                throw e; // Throw any other unexpected errors immediately
+                if (attempts >= 5) throw e;
             }
         }
     }
-    throw new Error("Failed to generate valid content after 3 attempts.");
+    throw new Error("Failed to generate valid content after max attempts.");
 }
 
 module.exports = { generateSocialContent };
