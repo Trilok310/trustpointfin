@@ -164,6 +164,30 @@ async function main() {
   }
 
   const { topic, lineIndex, lines } = result;
+  const expectedSlug = slugify(topic);
+
+  // --- IDEMPOTENCY CHECK ---
+  if (fs.existsSync(path.join(ROOT, `${expectedSlug}.html`))) {
+      console.log(`\n[IDEMPOTENCY] Article for topic "${topic}" already exists at ${expectedSlug}.html.`);
+      console.log("Bypassing Gemini generation to prevent duplicates and API waste.");
+      
+      const html = fs.readFileSync(path.join(ROOT, `${expectedSlug}.html`), "utf-8");
+      const titleMatch = html.match(/<title>(.*?) \| TrustPointFin Insights<\/title>/);
+      const existingTitle = titleMatch ? titleMatch[1] : topic;
+      
+      const pendingState = {
+          filename: expectedSlug + ".html",
+          title: existingTitle,
+          topic: topic,
+          lineIndex: lineIndex,
+          publication_status: "PENDING",
+          timestamp: new Date().toISOString()
+      };
+      fs.writeFileSync(path.join(ROOT, '.pending_article.json'), JSON.stringify(pendingState, null, 2), "utf-8");
+      console.log(`⏳ Article "${existingTitle}" restaged as PENDING from existing disk file.`);
+      process.exit(0); // Exit successfully so workflow can proceed to Git Commit
+  }
+
   console.log(`📝 Writing article about: "${topic}"`);
 
   const paidModelName = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
@@ -175,8 +199,22 @@ async function main() {
   console.log(`Model: ${paidModelName}`);
   console.log(`API key configured: ${!!apiKey}`);
 
+  function classifyError(safeMessage) {
+      const msg = safeMessage.toLowerCase();
+      if (msg.includes("429")) return "TRANSIENT_429";
+      if (msg.includes("503") || msg.includes("500") || msg.includes("overloaded") || msg.includes("high demand")) return "TRANSIENT_503";
+      if (msg.includes("fetch failed") || msg.includes("network") || msg.includes("timeout") || msg.includes("econnreset")) return "TRANSIENT_NETWORK";
+      
+      if (msg.includes("400")) return "PERMANENT_BAD_REQUEST";
+      if (msg.includes("401") || msg.includes("403")) return "PERMANENT_AUTH";
+      if (msg.includes("404")) return "PERMANENT_NOT_FOUND";
+      
+      return "UNKNOWN";
+  }
+
   // Robust retry wrapper for Gemini API calls to handle 503 and 429 errors
-  async function generateContentWithRetry(prompt, retries = 4, delayMs = 30000) {
+  async function generateContentWithRetry(prompt, retries = 4) {
+    const baseDelayMs = 60000; // ~60s initial backoff
     for (let i = 0; i < retries; i++) {
       try {
         console.log("\n[AI REQUEST]");
@@ -189,26 +227,34 @@ async function main() {
         console.log("Response received: true");
         return result;
       } catch (error) {
-        console.log("\n[AI ERROR]");
-        console.log(`Type: ${error.name || "Error"}`);
-        console.log(`Status: ${error.status || error.statusText || error.code || "Unknown (Check message)"}`);
-        
-        // Ensure no API keys leak in the stack trace or message
         let safeMessage = error.stack || error.message || String(error);
         if (apiKey) safeMessage = safeMessage.split(apiKey).join("[REDACTED_API_KEY]");
+        
+        const errorType = classifyError(safeMessage);
+
+        console.log("\n[AI ERROR]");
+        console.log(`Type: ${errorType}`);
+        console.log(`Status: ${error.status || error.statusText || error.code || "Check message"}`);
         console.log(`Message: ${safeMessage}`);
 
-        const isTransientError = safeMessage.includes("503") || safeMessage.includes("429") || safeMessage.includes("500") || safeMessage.includes("fetch");
+        const isTransient = errorType.startsWith("TRANSIENT");
         
-        if (isTransientError && i < retries - 1) {
+        if (isTransient && i < retries - 1) {
+          const jitter = Math.floor(Math.random() * 5000); // 0-5s jitter
+          const delayMs = baseDelayMs * Math.pow(2, i) + jitter;
+          
           console.log("\n[RETRY]");
           console.log(`Attempt ${i + 1}/${retries}`);
-          console.log(`Waiting ${delayMs / 1000}s before next attempt...`);
+          console.log(`Waiting ${Math.round(delayMs / 1000)}s before next attempt...`);
           await new Promise(res => setTimeout(res, delayMs));
-          delayMs += 5000; // linear backoff
+        } else if (isTransient && i === retries - 1) {
+          console.log("\n[FATAL]");
+          console.log("Gemini provider temporarily unavailable; article was not published.");
+          console.log("Pipeline halted safely.");
+          throw error;
         } else {
           console.log("\n[FATAL]");
-          console.log(`Paid Gemini generation failed after ${i + 1} attempts.`);
+          console.log(`Permanent error encountered: ${errorType}.`);
           console.log("No fallback performed.");
           console.log("Pipeline halted safely.");
           throw error;
@@ -424,7 +470,7 @@ Detailed answer to second FAQ
     ],
   }, null, 2);
 
-  const slug = slugify(title);
+  const slug = expectedSlug;
   
   // --- Image Generation (Unsplash API) ---
   let imageUrl = "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop"; // Premium fallback image
