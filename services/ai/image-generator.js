@@ -54,8 +54,9 @@ class ImageGenerator {
                 console.log(`?? WARNING: Model '${modelName}' not found. Falling back to safe-mode...`);
             }
 
-            if (data.error) {
-                console.log(`?? CRITICAL: OpenAI Image API FAILED completely: ${data.error.message}`);
+            if (data.error || !data.data || !data.data[0] || !data.data[0].url) {
+                const errorMsg = data.error ? data.error.message : "Invalid response format (missing data.data[0].url)";
+                console.log(`?? CRITICAL: OpenAI Image API FAILED or returned unexpected format: ${errorMsg}`);
                 console.log(`?? Forcing ultimate safe-mode fallback to local placeholder so the pipeline can finish...`);
                 if (!fs.existsSync(cachePath)) {
                      fs.copyFileSync(path.join(process.cwd(), 'mock_image.jpg'), cachePath);
