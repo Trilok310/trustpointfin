@@ -1,0 +1,44 @@
+name: Preview Carousel Generation
+
+on:
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Prepare Social Content & AI Images
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IMAGE_PROVIDER: OPENAI
+          OPENAI_IMAGE_MODEL: gpt-image-2.5-sunburst
+        run: node scripts/prepare-social.js
+
+      - name: Render Carousel Slides
+        run: node scripts/generate-carousel.js
+
+      - name: Commit Preview to Repository
+        run: |
+          mkdir -p preview_output
+          # Move generated slides into the preview directory
+          cp slides/*.jpg preview_output/ 2>/dev/null || true
+          
+          git config --global user.name 'TrustPointFin Preview Bot'
+          git config --global user.email 'bot@trustpointfin.org'
+          git add preview_output/
+          git commit -m "chore: generate preview carousel slides for review [skip ci]" || echo "No changes to commit"
+          git push
