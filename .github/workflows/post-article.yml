@@ -46,7 +46,7 @@ jobs:
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
           IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GEMINI_PAID_MODEL: gemini-3.8-flash
+          GEMINI_PAID_MODEL: gemini-3.7-flash
           GEMINI_FREE_MODEL: gemini-3.6-flash
         run: |
           node scripts/post-article.js
@@ -79,7 +79,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
-          GEMINI_PAID_MODEL: gemini-3.8-flash
+          GEMINI_PAID_MODEL: gemini-3.7-flash
           GEMINI_FREE_MODEL: gemini-3.6-flash
         run: |
           node scripts/prepare-social.js

@@ -30,14 +30,14 @@ function printLedger(finalResult) {
         console.log(`Reason: Gemini provider temporarily unavailable`);
         console.log(`Publication: NOT PUBLISHED`);
         console.log(`Topic state: NOT ADVANCED`);
-        console.log(`Model: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
+        console.log(`Model: ${process.env.GEMINI_PAID_MODEL || "gemini-3.7-flash"}`);
     } else {
         console.log(`RUN ID: ${runId}`);
         console.log(`TOPIC: ${currentTopic}`);
         console.log(`EXPECTED SLUG: ${expectedSlug}`);
         console.log(`FINAL STATE: ${currentState}`);
         console.log(`AI PROVIDER: gemini_paid`);
-        console.log(`AI MODEL: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
+        console.log(`AI MODEL: ${process.env.GEMINI_PAID_MODEL || "gemini-3.7-flash"}`);
         console.log(`ATTEMPTS: ${attempts}`);
         console.log(`LAST ERROR: ${lastErrorClass}`);
         console.log(`RESULT: ${finalResult}`);
@@ -221,7 +221,7 @@ async function main() {
 
   // 3. STATE: GENERATING
   currentState = "GENERATING";
-  const paidModelName = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
+  const paidModelName = process.env.GEMINI_PAID_MODEL || "gemini-3.7-flash";
   const genAI = new GoogleGenerativeAI(apiKey);
   const primaryModel = genAI.getGenerativeModel({ model: paidModelName });
 
