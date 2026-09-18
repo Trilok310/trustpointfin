@@ -4,7 +4,7 @@ on:
   schedule:
     # All times in UTC (IST = UTC + 5:30)
     # 1 post per day per user request
-    - cron: '20 3 * * *'   # 8:50 AM IST
+    - cron: '25 3 * * *'   # 8:55 AM IST
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 concurrency:
