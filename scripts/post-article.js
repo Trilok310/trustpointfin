@@ -384,10 +384,14 @@ Detailed answer to second FAQ
   const GENERATION_BUDGET_MS = 240000; // 4 minutes max wall-clock budget
   const startTime = Date.now();
 
-  for (let i = 0; i < maxRetries; i++) {
-    attempts++;
-    try {
-      console.log(`\n[AI REQUEST] Attempt ${attempts}/${maxRetries}`);
+  if (process.env.TEST_MOCK_ARTICLE_TEXT) {
+      articleText = process.env.TEST_MOCK_ARTICLE_TEXT;
+      success = true;
+  } else {
+      for (let i = 0; i < maxRetries; i++) {
+        attempts++;
+        try {
+          console.log(`\n[AI REQUEST] Attempt ${attempts}/${maxRetries}`);
       
       const remainingBudget = GENERATION_BUDGET_MS - (Date.now() - startTime);
       if (remainingBudget <= 0) {
@@ -445,7 +449,8 @@ Detailed answer to second FAQ
         }
       }
     }
-  }
+  } // end of for loop
+  } // end of else block
 
   if (!success) exitSafely(1, "Unreachable: Loop completed without success or exit.");
 
@@ -460,6 +465,25 @@ Detailed answer to second FAQ
   console.log("\n🔍 Running content quality gate checks...");
   const validationResult = await validateSocialContent(articleText);
   if (!validationResult.valid) {
+      // Clean up previous diagnostic artifacts
+      const files = fs.readdirSync(STAGING_DIR);
+      for (const file of files) {
+          if (file.startsWith("rejected_") && file.endsWith(".html")) {
+              fs.unlinkSync(path.join(STAGING_DIR, file));
+          }
+      }
+      
+      // Defense in depth: Redact API keys in case model hallucinated them
+      let safeArticleText = articleText;
+      const k1 = process.env.OPENAI_API_KEY;
+      const k2 = process.env.GEMINI_API_KEY;
+      if (k1) safeArticleText = safeArticleText.split(k1).join("[REDACTED_API_KEY]");
+      if (k2) safeArticleText = safeArticleText.split(k2).join("[REDACTED_API_KEY]");
+
+      const rejectedPath = path.join(STAGING_DIR, `rejected_${runId}.html`);
+      fs.writeFileSync(rejectedPath, safeArticleText, "utf-8");
+      console.log(`\n[DIAGNOSTIC] Rejected article saved to ${rejectedPath} for analysis.`);
+      
       lastErrorClass = "QUALITY_GATE_FAILED";
       exitSafely(1, `Content Quality Gate Rejected the Article: ${validationResult.reason}`);
   }

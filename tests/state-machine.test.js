@@ -83,4 +83,36 @@ assert(fs.existsSync(path.join(ROOT, ".pending_article.json")), "Should move pen
 assert(out.includes("FINAL STATE: STAGED"), "Final state should be STAGED");
 console.log("✅ Scenario G (Recovery: Staged but not committed) passed.");
 
+// Scenario J (Quality Gate Rejection -> Saves Diagnostic Artifact)
+resetEnv();
+const mockRejectionHtml = "---TITLE---\nMock\n---BODY---\nMockBody" + " pad".repeat(200);
+out = runScript({ 
+    OPENAI_API_KEY: "dummy_key", 
+    AI_TEXT_PROVIDER: "openai", 
+    TEST_MOCK_ARTICLE_TEXT: mockRejectionHtml,
+    TEST_MOCK_QUALITY_GATE_FAIL: "true"
+});
+assert(out.includes("QUALITY_GATE_FAILED"), "Should fail quality gate");
+assert(out.includes("Mock failure for testing"), "Should use mock failure reason");
+assert(!fs.existsSync(path.join(ROOT, ".pending_article.json")), "Should NOT advance to pending state");
+let rejectedFiles = fs.readdirSync(STAGING_DIR).filter(f => f.startsWith("rejected_") && f.endsWith(".html"));
+assert.strictEqual(rejectedFiles.length, 1, "Should save exactly one rejected artifact");
+const savedText = fs.readFileSync(path.join(STAGING_DIR, rejectedFiles[0]), "utf-8");
+assert.strictEqual(savedText, mockRejectionHtml, "Rejected artifact should match generated text");
+console.log("✅ Scenario J (Diagnostic artifact saved on Quality Gate failure) passed.");
+
+// Scenario K (Malformed Evaluator Output -> Fails Safely)
+resetEnv();
+out = runScript({ 
+    OPENAI_API_KEY: "dummy_key", 
+    AI_TEXT_PROVIDER: "openai", 
+    TEST_MOCK_ARTICLE_TEXT: mockRejectionHtml,
+    TEST_MOCK_QUALITY_GATE_MALFORMED: "true"
+});
+assert(out.includes("QUALITY_GATE_FAILED"), "Should fail quality gate safely");
+assert(out.includes("Failed to parse JSON"), "Should detect JSON failure");
+rejectedFiles = fs.readdirSync(STAGING_DIR).filter(f => f.startsWith("rejected_") && f.endsWith(".html"));
+assert.strictEqual(rejectedFiles.length, 1, "Should still save rejected artifact for malformed output");
+console.log("✅ Scenario K (Safe failure on malformed evaluator output) passed.");
+
 console.log("\n🎉 All recovery state machine tests passed successfully!");

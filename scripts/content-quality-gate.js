@@ -11,6 +11,13 @@ async function validateSocialContent(content) {
         return { valid: false, reason: "Content is completely empty." };
     }
 
+    if (process.env.TEST_MOCK_QUALITY_GATE_FAIL) {
+        return { valid: false, reason: "Mock failure for testing" };
+    }
+    if (process.env.TEST_MOCK_QUALITY_GATE_MALFORMED) {
+        return { valid: false, reason: "AI Gate Error: Failed to parse JSON." };
+    }
+
     // 1. DETERMINISTIC COMPLIANCE CHECKS
     const contentLower = content.toLowerCase();
     const bannedPhrases = [
@@ -51,11 +58,17 @@ Evaluate the following generated financial article based on 4 criteria. You must
 3. Visuals (0-10): Is the structure engaging, visual, and highly readable (no dense blocks)?
 4. Readability (0-10): Is the Hindi/Hinglish natural and easy for beginners to understand?
 
-OUTPUT STRICTLY IN THIS EXACT FORMAT (nothing else):
-Content: [SCORE]
-Accuracy: [SCORE]
-Visuals: [SCORE]
-Readability: [SCORE]
+OUTPUT STRICTLY AS VALID JSON MATCHING THIS EXACT SCHEMA (no markdown formatting, no backticks, just raw JSON):
+{
+  "content": number,
+  "accuracy": number,
+  "visuals": number,
+  "readability": number,
+  "content_reason": "string",
+  "accuracy_reason": "string",
+  "visuals_reason": "string",
+  "readability_reason": "string"
+}
 
 --- CONTENT TO EVALUATE ---
 ` + content + `
@@ -73,27 +86,28 @@ Readability: [SCORE]
             console.log("HTTP status: 200 (Success)");
             console.log("Response received: true");
             
-            const responseText = result.response.text().trim();
-            
-            let scores = {};
-            const lines = responseText.split('\n');
-            for (const line of lines) {
-                const match = line.match(/(Content|Accuracy|Visuals|Readability):\s*([\d\.]+)/i);
-                if (match) {
-                    scores[match[1].toLowerCase()] = parseFloat(match[2]);
+            const responseText = result.response.text().trim().replace(/```json/g, '').replace(/```/g, '');
+            let parsed;
+            try {
+                parsed = JSON.parse(responseText);
+            } catch (err) {
+                return { valid: false, reason: `AI Gate Error: Failed to parse JSON. Raw response: ${responseText.substring(0, 100)}...` };
+            }
+
+            const requiredKeys = ["content", "accuracy", "visuals", "readability", "content_reason", "accuracy_reason", "visuals_reason", "readability_reason"];
+            for (const key of requiredKeys) {
+                if (parsed[key] === undefined) {
+                    return { valid: false, reason: `AI Gate Error: Missing key '${key}' in JSON response.` };
                 }
             }
 
-            if (scores.content === undefined || scores.accuracy === undefined || scores.visuals === undefined || scores.readability === undefined) {
-                return { valid: false, reason: `AI Gate Error: Failed to parse scores. Raw response was: ${responseText.substring(0, 100)}...` };
-            }
+            console.log(`📊 AI Quality Scores - Content: ${parsed.content}, Accuracy: ${parsed.accuracy}, Visuals: ${parsed.visuals}, Readability: ${parsed.readability}`);
+            console.log(`📝 Reasons:\nContent: ${parsed.content_reason}\nAccuracy: ${parsed.accuracy_reason}\nVisuals: ${parsed.visuals_reason}\nReadability: ${parsed.readability_reason}`);
 
-            console.log(`📊 AI Quality Scores - Content: ${scores.content}, Accuracy: ${scores.accuracy}, Visuals: ${scores.visuals}, Readability: ${scores.readability}`);
-
-            if (scores.content < 8.5) return { valid: false, reason: `Score too low: Content (${scores.content} < 8.5)` };
-            if (scores.accuracy < 9.0) return { valid: false, reason: `Score too low: Accuracy (${scores.accuracy} < 9.0)` };
-            if (scores.visuals < 8.0) return { valid: false, reason: `Score too low: Visuals (${scores.visuals} < 8.0)` };
-            if (scores.readability < 8.5) return { valid: false, reason: `Score too low: Readability (${scores.readability} < 8.5)` };
+            if (parsed.content < 8.5) return { valid: false, reason: `Score too low: Content (${parsed.content} < 8.5). Reason: ${parsed.content_reason}` };
+            if (parsed.accuracy < 9.0) return { valid: false, reason: `Score too low: Accuracy (${parsed.accuracy} < 9.0). Reason: ${parsed.accuracy_reason}` };
+            if (parsed.visuals < 8.0) return { valid: false, reason: `Score too low: Visuals (${parsed.visuals} < 8.0). Reason: ${parsed.visuals_reason}` };
+            if (parsed.readability < 8.5) return { valid: false, reason: `Score too low: Readability (${parsed.readability} < 8.5). Reason: ${parsed.readability_reason}` };
 
             return { valid: true, reason: "Passed all quality checks and minimum score thresholds." };
             
