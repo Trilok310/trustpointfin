@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#1E3A8A" stroke-width="1.5" rx="8"/>
+
+  <!-- Header -->
+  <rect x="25" y="18" width="160" height="22" rx="11" fill="#1E3A8A" fill-opacity="0.6"/>
+  <text x="35" y="33" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">LESSON 11 • CAS STATEMENT</text>
+  
+  <text x="25" y="62" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800">Understanding Your Demat Holding Statement (CAS)</text>
+  <text x="25" y="80" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">कंसोलिडेटेड अकाउंट स्टेटमेंट (CAS): NSDL और CDSL का आधिकारिक बहीखाता</text>
+
+  <!-- Content Graphic -->
+  <g transform="translate(0, 35)">
+    
+    <!-- Card 1 -->
+    <rect x="25" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="25" y="70" width="235" height="35" rx="8" fill="#0052FF" fill-opacity="0.2"/>
+    <text x="40" y="93" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">16-DIGIT BO ID</text>
+    <text x="40" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">विशिष्ट डीमैट खाता संख्या</text>
+    <foreignObject x="38" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        • NSDL: IN300... (अल्फा-न्यूमेरिक)<br/>• CDSL: 120... (शुद्ध 16 अंक)<br/>• आपके स्थायी पैन (PAN) से सीधे लिंक<br/>• देश भर में आपकी आधिकारिक पहचान
+      </div>
+    </foreignObject>
+
+    <!-- Card 2 -->
+    <rect x="282" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#34D399" stroke-width="1.5"/>
+    <rect x="282" y="70" width="235" height="35" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="297" y="93" fill="#34D399" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">ISIN & HOLDINGS</text>
+    <text x="297" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">प्रतिभूतियों का अनूठा कोड</text>
+    <foreignObject x="295" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        • हर शेयर का अंतर्राष्ट्रीय ISIN कोड<br/>• (उदा. INE002A01018)<br/>• कुल मुक्त शेयर्स और लॉक्ड शेयर्स<br/>• किसी भी ब्रोकर के हस्तक्षेप से स्वतंत्र
+      </div>
+    </foreignObject>
+
+    <!-- Card 3 -->
+    <rect x="540" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#FBBF24" stroke-width="1.5"/>
+    <rect x="540" y="70" width="235" height="35" rx="8" fill="#D97706" fill-opacity="0.2"/>
+    <text x="555" y="93" fill="#FBBF24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">MONTHLY CAS (SMS/Email)</text>
+    <text x="555" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">सीधे डिपॉजिटरी से मासिक रिपोर्ट</text>
+    <foreignObject x="553" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        • NSDL/CDSL से सीधे ईमेल पर स्टेटमेंट<br/>• सभी ब्रोकर्स के सभी शेयरों का संयुक्त विवरण<br/>• ब्रोकर द्वारा किसी अनधिकृत लेन-देन का तुरंत पता<br/>• 100% निवेशक पारदर्शिता
+      </div>
+    </foreignObject>
+  
+  </g>
+
+  <!-- Footer Watermark -->
+  <line x1="25" y1="422" x2="775" y2="422" stroke="#1E293B" stroke-width="1"/>
+  <text x="25" y="437" fill="#64748B" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5">TrustPoint Finance Academy • Architectural Educational Series • Verified Benchmark</text>
+  <text x="775" y="437" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="end" font-weight="600">SEBI / Regulatory Compliant</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pieBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080C16" />
+    </linearGradient>
+    <linearGradient id="cardGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="founderSliceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="investorSliceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="pieShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#pieBgGrad)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="600" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    इक्विटी डाइल्यूशन का गणित (The Mathematics of Equity Dilution)
+  </text>
+  <text x="600" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#94A3B8">
+    100% का भ्रम बनाम बड़ी कंपनी में 75% की वास्तविक संपदा (100% of a Small Pie vs 75% of a Big Pie)
+  </text>
+
+  <!-- LEFT: STAGE 1 (BOOTSTRAPPED) -->
+  <g transform="translate(60, 95)" filter="url(#pieShadow)">
+    <rect width="500" height="285" rx="14" fill="url(#cardGradL)" stroke="#3B82F6" stroke-width="1.5" />
+    <rect width="500" height="40" rx="14" fill="#1E293B" />
+    <rect y="28" width="500" height="12" fill="#1E293B" />
+    <text x="250" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" text-anchor="middle" fill="#60A5FA">
+      चरण 1: शून्य इक्विटी फंडिंग (100% हिस्सेदारी)
+    </text>
+
+    <!-- Visual: 100% Single Circle -->
+    <circle cx="120" cy="145" r="65" fill="url(#founderSliceGrad)" stroke="#60A5FA" stroke-width="2.5" />
+    <text x="120" y="142" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      100%
+    </text>
+    <text x="120" y="160" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#BFDBFE">
+      फाउंडर
+    </text>
+
+    <!-- Metrics List -->
+    <g transform="translate(220, 65)">
+      <rect width="255" height="55" rx="8" fill="#0B1329" stroke="#334155" stroke-width="1" />
+      <text x="15" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8">कंपनी वैल्यूएशन (Valuation):</text>
+      <text x="15" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">₹10,00,000 (10 लाख)</text>
+
+      <rect y="68" width="255" height="55" rx="8" fill="#0B1329" stroke="#334155" stroke-width="1" />
+      <text x="15" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8">फाउंडर का हिस्सा (Share):</text>
+      <text x="15" y="113" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#60A5FA">100%</text>
+
+      <rect y="136" width="255" height="60" rx="8" fill="#1E3A8A" fill-opacity="0.3" stroke="#3B82F6" stroke-width="1.5" />
+      <text x="15" y="158" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#93C5FD">फाउंडर की कुल संपदा (Net Value):</text>
+      <text x="15" y="182" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#60A5FA">₹10,00,000</text>
+    </g>
+    <text x="250" y="272" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">
+      नियंत्रण पूरा है, लेकिन विकास पूंजी (Growth Capital) सीमित है।
+    </text>
+  </g>
+
+  <!-- ARROW / GROWTH CONNECTOR -->
+  <g transform="translate(565, 215)">
+    <circle cx="35" cy="0" r="22" fill="#1E293B" stroke="#10B981" stroke-width="2" />
+    <path d="M 28 -7 L 42 0 L 28 7" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="35" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#34D399">
+      + ₹25L Equity
+    </text>
+  </g>
+
+  <!-- RIGHT: STAGE 2 (AFTER DILUTION & EXPANSION) -->
+  <g transform="translate(640, 95)" filter="url(#pieShadow)">
+    <rect width="500" height="285" rx="14" fill="url(#cardGradL)" stroke="#10B981" stroke-width="1.5" />
+    <rect width="500" height="40" rx="14" fill="#064E3B" fill-opacity="0.6" />
+    <rect y="28" width="500" height="12" fill="#064E3B" fill-opacity="0.6" />
+    <text x="250" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" text-anchor="middle" fill="#34D399">
+      चरण 2: 25% डाइल्यूशन के बाद 10x विस्तार
+    </text>
+
+    <!-- Visual: 75% / 25% Pie Chart (Radius 65, center at 120, 145) -->
+    <!-- 75% slice from angle -90 to 180 (founder) -->
+    <!-- 25% slice from angle 180 to 270 (investor) -->
+    <!-- Arc for 25%: from (120, 80) to (55, 145) => angle 270 to 180 -->
+    <!-- Let's draw clear pie sectors -->
+    <!-- Center (120, 145) -->
+    <path d="M 120 145 L 120 80 A 65 65 0 1 1 55 145 Z" fill="url(#founderSliceGrad)" stroke="#1E293B" stroke-width="2" />
+    <path d="M 120 145 L 55 145 A 65 65 0 0 1 120 80 Z" fill="url(#investorSliceGrad)" stroke="#1E293B" stroke-width="2" />
+
+    <text x="145" y="160" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">75%</text>
+    <text x="85" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" text-anchor="middle" fill="#FFFFFF">25%</text>
+
+    <!-- Metrics List -->
+    <g transform="translate(220, 65)">
+      <rect width="255" height="55" rx="8" fill="#0B1329" stroke="#334155" stroke-width="1" />
+      <text x="15" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8">नया कंपनी वैल्यूएशन (Valuation):</text>
+      <text x="15" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#34D399">₹1,00,00,000 (1 करोड़)</text>
+
+      <rect y="68" width="255" height="55" rx="8" fill="#0B1329" stroke="#334155" stroke-width="1" />
+      <text x="15" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8">फाउंडर का हिस्सा (Diluted):</text>
+      <text x="15" y="113" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#60A5FA">75% (प्रतिशत कम हुआ)</text>
+
+      <rect y="136" width="255" height="60" rx="8" fill="#064E3B" fill-opacity="0.3" stroke="#10B981" stroke-width="1.5" />
+      <text x="15" y="158" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#6EE7B7">फाउंडर की नई संपदा (75% of ₹1 Cr):</text>
+      <text x="15" y="182" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#34D399">₹75,00,000 (7.5x वृद्धि!)</text>
+    </g>
+    <text x="250" y="272" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#34D399">
+      प्रतिशत घटा, लेकिन पाई (Pie) का आकार 10 गुना बड़ा हो गया!
+    </text>
+  </g>
+</svg>

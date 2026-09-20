@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="flowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="revGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676" />
+      <stop offset="100%" stop-color="#00A854" />
+    </linearGradient>
+    <linearGradient id="costGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+    <linearGradient id="profitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Step 1: Customers -->
+  <g transform="translate(40, 60)" filter="url(#shadow)">
+    <rect width="180" height="180" rx="20" fill="url(#flowGrad1)" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="90" cy="55" r="28" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="90" y="63" font-size="28" text-anchor="middle" fill="#38BDF8">👥</text>
+    <text x="90" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#FFFFFF">ग्राहक</text>
+    <text x="90" y="145" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" text-anchor="middle" fill="#94A3B8">Customers</text>
+    <text x="90" y="168" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#38BDF8">समस्या लेकर आते हैं</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 235 150 L 265 150" stroke="#4DA8DA" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+  <polygon points="265,142 277,150 265,158" fill="#4DA8DA" />
+
+  <!-- Step 2: Product & Sales -->
+  <g transform="translate(290, 60)" filter="url(#shadow)">
+    <rect width="180" height="180" rx="20" fill="url(#flowGrad1)" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="90" cy="55" r="28" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="90" y="63" font-size="28" text-anchor="middle" fill="#38BDF8">📦</text>
+    <text x="90" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#FFFFFF">उत्पाद व बिक्री</text>
+    <text x="90" y="145" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" text-anchor="middle" fill="#94A3B8">Product &amp; Sales</text>
+    <text x="90" y="168" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#38BDF8">मूल्य का समाधान</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <polygon points="515,142 527,150 515,158" fill="#4DA8DA" />
+  <path d="M 485 150 L 515 150" stroke="#4DA8DA" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Step 3: Revenue -->
+  <g transform="translate(540, 60)" filter="url(#shadow)">
+    <rect width="180" height="180" rx="20" fill="url(#flowGrad1)" stroke="#00E676" stroke-width="2.5" />
+    <circle cx="90" cy="55" r="28" fill="rgba(0, 230, 118, 0.15)" />
+    <text x="90" y="63" font-size="28" text-anchor="middle" fill="#00E676">💰</text>
+    <text x="90" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#00E676">Revenue</text>
+    <text x="90" y="145" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">कुल बिक्री (Top-line)</text>
+    <text x="90" y="168" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#A7F3D0">कुल नकदी प्राप्ति</text>
+  </g>
+
+  <!-- Minus Symbol -->
+  <circle cx="760" cy="150" r="18" fill="rgba(239, 68, 68, 0.2)" stroke="#EF4444" stroke-width="2" />
+  <text x="760" y="157" font-family="Arial, sans-serif" font-size="24" font-weight="900" text-anchor="middle" fill="#EF4444">−</text>
+
+  <!-- Step 4: Costs -->
+  <g transform="translate(800, 60)" filter="url(#shadow)">
+    <rect width="160" height="180" rx="20" fill="url(#flowGrad1)" stroke="#EF4444" stroke-width="2" />
+    <circle cx="80" cy="55" r="28" fill="rgba(239, 68, 68, 0.15)" />
+    <text x="80" y="63" font-size="28" text-anchor="middle" fill="#EF4444">🧾</text>
+    <text x="80" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#EF4444">Costs</text>
+    <text x="80" y="145" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">लागत व खर्च</text>
+    <text x="80" y="168" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#FCA5A5">वेतन, माल, किराया</text>
+  </g>
+
+  <!-- Equals Symbol -->
+  <circle cx="995" cy="150" r="18" fill="rgba(56, 189, 248, 0.2)" stroke="#38BDF8" stroke-width="2" />
+  <text x="995" y="158" font-family="Arial, sans-serif" font-size="24" font-weight="900" text-anchor="middle" fill="#38BDF8">=</text>
+
+  <!-- Step 5: Profit -->
+  <g transform="translate(1030, 45)" filter="url(#shadow)">
+    <rect width="140" height="210" rx="22" fill="url(#profitGrad)" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="70" cy="55" r="30" fill="rgba(255, 255, 255, 0.2)" />
+    <text x="70" y="65" font-size="32" text-anchor="middle" fill="#FFFFFF">💎</text>
+    <text x="70" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#FFFFFF">PROFIT</text>
+    <text x="70" y="155" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#FFFFFF">शुद्ध लाभ</text>
+    <text x="70" y="185" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#E0F2FE">Bottom-line</text>
+  </g>
+</svg>

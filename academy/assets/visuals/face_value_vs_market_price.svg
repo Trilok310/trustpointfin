@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradFv" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080C16" />
+    </linearGradient>
+    <linearGradient id="fvGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="bvGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="mpGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="shadowFv" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGradFv)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="600" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    शेयर मूल्यांकन के 3 स्तर: Face Value बनाम Market Price
+  </text>
+  <text x="600" y="64" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#94A3B8">
+    अंकित मूल्य (Nominal Value), किताबी मूल्य (Book Value) और वास्तविक बाजार भाव का स्पष्ट तुलनात्मक विश्लेषण
+  </text>
+
+  <!-- CARD 1: FACE VALUE -->
+  <g transform="translate(60, 95)" filter="url(#shadowFv)">
+    <rect width="330" height="285" rx="12" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5" />
+    <rect width="330" height="40" rx="12" fill="url(#fvGrad)" />
+    <rect y="28" width="330" height="12" fill="url(#fvGrad)" />
+    <text x="165" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      1. Face Value (अंकित मूल्य / Nominal)
+    </text>
+
+    <text x="165" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" text-anchor="middle" fill="#60A5FA">
+      ₹10
+    </text>
+    <text x="165" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">
+      कंपनी के चार्टर में तय सांकेतिक मूल्य
+    </text>
+
+    <g transform="translate(20, 115)">
+      <text x="0" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">
+        • केवल कानूनी/लेखांकन डिनॉमिनेशन:
+      </text>
+      <text x="12" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">
+        कंपनी गठन के समय शेयर कैपिटल बांटने के लिए तय की गई आधारभूत राशि।
+      </text>
+
+      <text x="0" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">
+        • लाभांश की गणना का आधार:
+      </text>
+      <text x="12" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">
+        जब कंपनी "100% Dividend" कहती है, तो उसका अर्थ Face Value का 100% (₹10) होता है।
+      </text>
+    </g>
+
+    <rect x="20" y="235" width="290" height="34" rx="6" fill="#172554" stroke="#3B82F6" stroke-width="1" />
+    <text x="165" y="256" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#93C5FD">
+      बाजार मूल्य या कंपनी वैल्यूएशन तय नहीं करता!
+    </text>
+  </g>
+
+  <!-- CARD 2: BOOK VALUE -->
+  <g transform="translate(435, 95)" filter="url(#shadowFv)">
+    <rect width="330" height="285" rx="12" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect width="330" height="40" rx="12" fill="url(#bvGrad)" />
+    <rect y="28" width="330" height="12" fill="url(#bvGrad)" />
+    <text x="165" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      2. Book Value (किताबी मूल्य प्रति शेयर)
+    </text>
+
+    <text x="165" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" text-anchor="middle" fill="#FBBF24">
+      ₹60
+    </text>
+    <text x="165" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">
+      नेट वर्थ (Net Worth) ÷ कुल शेयर्स
+    </text>
+
+    <g transform="translate(20, 115)">
+      <text x="0" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">
+        • बैलेंस शीट पर वास्तविक संपदा:
+      </text>
+      <text x="12" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">
+        कंपनी की कुल संपत्तियों (Assets) में से देनदारियां (Liabilities) घटाने पर बची किताबी वैल्यू।
+      </text>
+
+      <text x="0" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">
+        • संचित लाभ का प्रभाव:
+      </text>
+      <text x="12" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">
+        वर्षों का बचाया गया मुनाफा (Retained Earnings) जुड़ने से यह Face Value से अधिक होता है।
+      </text>
+    </g>
+
+    <rect x="20" y="235" width="290" height="34" rx="6" fill="#451A03" stroke="#F59E0B" stroke-width="1" />
+    <text x="165" y="256" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#FDE68A">
+      कंपनी का शुद्ध किताबी आधार
+    </text>
+  </g>
+
+  <!-- CARD 3: MARKET PRICE -->
+  <g transform="translate(810, 95)" filter="url(#shadowFv)">
+    <rect width="330" height="285" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect width="330" height="40" rx="12" fill="url(#mpGrad)" />
+    <rect y="28" width="330" height="12" fill="url(#mpGrad)" />
+    <text x="165" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      3. Market Price (बाजार भाव / Actual)
+    </text>
+
+    <text x="165" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" text-anchor="middle" fill="#34D399">
+      ₹250
+    </text>
+    <text x="165" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">
+      एक्सचेंज पर खरीदार और विक्रेता द्वारा तय
+    </text>
+
+    <g transform="translate(20, 115)">
+      <text x="0" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">
+        • भविष्य की कमाई का वर्तमान मूल्य:
+      </text>
+      <text x="12" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">
+        बाजार कंपनी के भविष्य के विकास, लाभप्रदता और प्रबंधन क्षमता के लिए प्रीमियम देता है।
+      </text>
+
+      <text x="0" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">
+        • मार्केट कैप का आधार:
+      </text>
+      <text x="12" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8">
+        कुल मार्केट कैप = कुल शेयर्स × Market Price (1 लाख × ₹250 = ₹2.5 करोड़)।
+      </text>
+    </g>
+
+    <rect x="20" y="235" width="290" height="34" rx="6" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+    <text x="165" y="256" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#6EE7B7">
+      यही वास्तविक लेन-देन और संपत्ति का मूल्य है
+    </text>
+  </g>
+</svg>

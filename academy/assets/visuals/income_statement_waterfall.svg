@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#DC2626" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Title Header -->
+  <text x="600" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    राजस्व से शुद्ध लाभ का जलप्रपात (The Financial Waterfall)
+  </text>
+  <text x="600" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#94A3B8">
+    Top-line (Revenue) से Bottom-line (Net Profit) तक प्रत्येक खर्च का चरणबद्ध प्रभाव
+  </text>
+
+  <!-- Step 1: Revenue (Top-line) -->
+  <g transform="translate(40, 100)" filter="url(#shadow)">
+    <rect width="200" height="260" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-width="2" />
+    <rect width="200" height="38" rx="14" fill="url(#greenGrad)" />
+    <rect y="24" width="200" height="14" fill="url(#greenGrad)" />
+    <text x="100" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">1. REVENUE (Top-line)</text>
+    <text x="100" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" text-anchor="middle">💰</text>
+    <text x="100" y="112" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#34D399">कुल बिक्री</text>
+    <text x="100" y="136" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#CBD5E1">ग्राहकों से कुल आवक</text>
+    <line x1="20" y1="152" x2="180" y2="152" stroke="#334155" stroke-width="1" />
+    <text x="100" y="178" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#94A3B8">काल्पनिक आधार:</text>
+    <text x="100" y="202" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#FFFFFF">₹1,00,00,000</text>
+    <rect x="30" y="220" width="140" height="24" rx="6" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1" />
+    <text x="100" y="236" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#34D399">100% आधार</text>
+  </g>
+
+  <!-- Minus COGS Arrow -->
+  <g transform="translate(252, 210)">
+    <circle cx="15" cy="15" r="15" fill="#EF4444" />
+    <text x="15" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="#FFFFFF">−</text>
+    <text x="15" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#FCA5A5">COGS</text>
+    <text x="15" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" text-anchor="middle" fill="#EF4444">(₹50 Lakh)</text>
+  </g>
+
+  <!-- Step 2: Gross Profit -->
+  <g transform="translate(295, 100)" filter="url(#shadow)">
+    <rect width="180" height="260" rx="14" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.8" />
+    <rect width="180" height="38" rx="14" fill="url(#blueGrad)" />
+    <rect y="24" width="180" height="14" fill="url(#blueGrad)" />
+    <text x="90" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#FFFFFF">2. GROSS PROFIT</text>
+    <text x="90" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" text-anchor="middle">📦</text>
+    <text x="90" y="112" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#38BDF8">सकल लाभ</text>
+    <text x="90" y="134" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" text-anchor="middle" fill="#CBD5E1">Revenue − COGS</text>
+    <line x1="20" y1="152" x2="160" y2="152" stroke="#334155" stroke-width="1" />
+    <text x="90" y="178" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#94A3B8">कच्चा माल घटाने पर:</text>
+    <text x="90" y="202" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#38BDF8">₹50,00,000</text>
+    <rect x="25" y="220" width="130" height="24" rx="6" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1" />
+    <text x="90" y="236" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#7DD3FC">सकल मार्जिन 50%</text>
+  </g>
+
+  <!-- Minus OpEx Arrow -->
+  <g transform="translate(487, 210)">
+    <circle cx="15" cy="15" r="15" fill="#EF4444" />
+    <text x="15" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="#FFFFFF">−</text>
+    <text x="15" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#FCA5A5">OpEx</text>
+    <text x="15" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" text-anchor="middle" fill="#EF4444">(₹25 Lakh)</text>
+  </g>
+
+  <!-- Step 3: Operating Profit (EBITDA) -->
+  <g transform="translate(530, 100)" filter="url(#shadow)">
+    <rect width="180" height="260" rx="14" fill="url(#cardGrad)" stroke="#FBBF24" stroke-width="1.8" />
+    <rect width="180" height="38" rx="14" fill="url(#amberGrad)" />
+    <rect y="24" width="180" height="14" fill="url(#amberGrad)" />
+    <text x="90" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#FFFFFF">3. OPERATING PROFIT</text>
+    <text x="90" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" text-anchor="middle">⚙️</text>
+    <text x="90" y="112" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#FBBF24">परिचालन लाभ</text>
+    <text x="90" y="134" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" text-anchor="middle" fill="#CBD5E1">Gross − OpEx</text>
+    <line x1="20" y1="152" x2="160" y2="152" stroke="#334155" stroke-width="1" />
+    <text x="90" y="178" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#94A3B8">वेतन, किराया घटाकर:</text>
+    <text x="90" y="202" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#FBBF24">₹25,00,000</text>
+    <rect x="25" y="220" width="130" height="24" rx="6" fill="rgba(251, 191, 36, 0.15)" stroke="#FBBF24" stroke-width="1" />
+    <text x="90" y="236" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#FDE68A">ऑपरेटिंग मार्जिन 25%</text>
+  </g>
+
+  <!-- Minus Tax & Int Arrow -->
+  <g transform="translate(722, 210)">
+    <circle cx="15" cy="15" r="15" fill="#EF4444" />
+    <text x="15" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="#FFFFFF">−</text>
+    <text x="15" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#FCA5A5">Tax/Depr</text>
+    <text x="15" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" text-anchor="middle" fill="#EF4444">(₹10 Lakh)</text>
+  </g>
+
+  <!-- Step 4: Net Profit (Bottom-line) -->
+  <g transform="translate(765, 95)" filter="url(#shadow)">
+    <rect width="230" height="270" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-width="3" />
+    <rect width="230" height="42" rx="14" fill="url(#greenGrad)" />
+    <rect y="28" width="230" height="14" fill="url(#greenGrad)" />
+    <text x="115" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">4. NET PROFIT (Bottom-line)</text>
+    <text x="115" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" text-anchor="middle">🏆</text>
+    <text x="115" y="118" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle" fill="#34D399">शुद्ध लाभ</text>
+    <text x="115" y="142" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" text-anchor="middle" fill="#CBD5E1">शेयरधारकों का असली धन</text>
+    <line x1="20" y1="158" x2="210" y2="158" stroke="#334155" stroke-width="1" />
+    <text x="115" y="184" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle" fill="#94A3B8">सभी खर्चों के बाद बचा:</text>
+    <text x="115" y="212" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" text-anchor="middle" fill="#10B981">₹15,00,000</text>
+    <rect x="35" y="228" width="160" height="26" rx="6" fill="rgba(16, 185, 129, 0.2)" stroke="#10B981" stroke-width="1.5" />
+    <text x="115" y="246" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" text-anchor="middle" fill="#6EE7B7">नेट प्रॉफिट मार्जिन: 15.0%</text>
+  </g>
+
+  <!-- Summary Footer Note -->
+  <g transform="translate(1010, 130)">
+    <rect width="150" height="200" rx="10" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <text x="75" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#38BDF8">📌 मुख्य नियम</text>
+    <text x="15" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8" width="120">
+      <tspan x="15" dy="0">• Top-line केवल</tspan>
+      <tspan x="15" dy="16">आकार दिखाता है।</tspan>
+      <tspan x="15" dy="24">• Bottom-line</tspan>
+      <tspan x="15" dy="16">असली कमाई और</tspan>
+      <tspan x="15" dy="16">सेहत दर्शाती है।</tspan>
+      <tspan x="15" dy="24">• बिना Net Profit</tspan>
+      <tspan x="15" dy="16">कंपनी टिकाऊ नहीं।</tspan>
+    </text>
+  </g>
+</svg>

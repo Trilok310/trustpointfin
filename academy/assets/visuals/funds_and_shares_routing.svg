@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#1E3A8A" stroke-width="1.5" rx="8"/>
+
+  <!-- Header -->
+  <rect x="25" y="18" width="160" height="22" rx="11" fill="#1E3A8A" fill-opacity="0.6"/>
+  <text x="35" y="33" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">LESSON 11 • ROUTING</text>
+  
+  <text x="25" y="62" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800">Digital Routing of Funds & Shares on Buy/Sell</text>
+  <text x="25" y="80" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">खरीदने पर बैंक से डीमैट तक और बेचने पर डीमैट से बैंक तक का स्पष्ट मार्ग</text>
+
+  <!-- Content Graphic -->
+  <g transform="translate(0, 35)">
+    
+    <!-- Card 1 -->
+    <rect x="25" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#34D399" stroke-width="1.5"/>
+    <rect x="25" y="70" width="235" height="35" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="40" y="93" fill="#34D399" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">BUY TRANSACTION</text>
+    <text x="40" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">शेयर खरीदने की यात्रा</text>
+    <foreignObject x="38" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        1. बैंक से ट्रेडिंग खाते में फंड पे-इन<br/>2. ट्रेडिंग ऐप से एक्सचेंज पर ऑर्डर<br/>3. सौदा मैच होने पर क्लियरिंग पे-इन<br/>4. T+1 पर डीमैट में शेयर क्रेडिट!
+      </div>
+    </foreignObject>
+
+    <!-- Card 2 -->
+    <rect x="282" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="282" y="70" width="235" height="35" rx="8" fill="#0052FF" fill-opacity="0.2"/>
+    <text x="297" y="93" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">EXCHANGE CLEARING HOUSE</text>
+    <text x="297" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">पूंजी और शेयर की अदला-बदली</text>
+    <foreignObject x="295" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        <div style="text-align:center; padding:15px 0;"><span style="color:#38BDF8; font-size:13px; font-weight:700;">NSCCL / ICCL Clearing</span><br/><span style="color:#94A3B8; font-size:11px;">शून्य काउंटरपार्टी रिस्क</span></div>शेयर और पैसा कभी एक साथ एक जगह नहीं फंसते।
+      </div>
+    </foreignObject>
+
+    <!-- Card 3 -->
+    <rect x="540" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#FBBF24" stroke-width="1.5"/>
+    <rect x="540" y="70" width="235" height="35" rx="8" fill="#D97706" fill-opacity="0.2"/>
+    <text x="555" y="93" fill="#FBBF24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">SELL TRANSACTION</text>
+    <text x="555" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">शेयर बेचने की यात्रा</text>
+    <foreignObject x="553" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        1. डीमैट से शेयर का ई-डिस्क डेबिट (T+1)<br/>2. एक्सचेंज से ब्रोकर को फंड पे-आउट<br/>3. ट्रेडिंग खाते में मार्जिन क्रेडिट<br/>4. विथड्रॉल रिक्वेस्ट से बैंक खाते में नकद!
+      </div>
+    </foreignObject>
+  
+  </g>
+
+  <!-- Footer Watermark -->
+  <line x1="25" y1="422" x2="775" y2="422" stroke="#1E293B" stroke-width="1"/>
+  <text x="25" y="437" fill="#64748B" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5">TrustPoint Finance Academy • Architectural Educational Series • Verified Benchmark</text>
+  <text x="775" y="437" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="end" font-weight="600">SEBI / Regulatory Compliant</text>
+</svg>

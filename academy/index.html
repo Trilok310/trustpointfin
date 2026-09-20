@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="hi" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 01: Business & Capital | TrustPoint Finance Academy</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="TrustPoint Finance Academy — भारतीय शेयर बाजार की बुनियादी समझ (Module 01: Lesson 01). एक सफल बिजनेस कैसे काम करता है और उसे कैपिटल की आवश्यकता क्यों होती है?">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6.4.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Core Academy Player Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="academy-nav">
+    <a href="../index.html" class="nav-brand" title="TrustPoint Finance Home">
+      <img src="assets/logo.jpg" alt="TrustPoint Finance Logo" class="brand-logo">
+      <div class="brand-text">
+        <h1>TrustPoint Finance</h1>
+        <span>Learning Academy</span>
+      </div>
+    </a>
+
+    <div class="nav-center">
+      <div class="lesson-indicator">
+        MODULE 01 • <span>LESSON 01: Business &amp; Capital</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <div id="candidate-auth-status" class="candidate-status" style="display: none;">
+        <span id="candidate-mobile-display" class="candidate-mobile"></span>
+        <button id="btn-logout" class="btn-logout" title="लॉग आउट"><i class="fa-solid fa-right-from-bracket"></i></button>
+      </div>
+      <div class="screen-step" id="step-indicator">Screen 1 of 12</div>
+      <button class="btn-icon" id="btn-curriculum" title="पाठ्यक्रम सूची देखें">
+        <i class="fa-solid fa-bars-staggered"></i>
+        <span>पाठ्यक्रम (20 Lessons)</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Presentation Viewport -->
+  <main class="player-container">
+    <div id="screen-viewport">
+      <!-- Dynamically populated by player.js -->
+      <div style="text-align: center; padding: 100px 0; color: #94A3B8;">
+        <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2rem; color: #00E676; margin-bottom: 16px;"></i>
+        <p>लोड हो रहा है (Loading Lesson)...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Fixed Bottom Navigation Bar -->
+  <footer class="player-bottom-bar">
+    <button class="nav-btn btn-prev" id="btn-prev" disabled>
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>पिछला (Previous)</span>
+    </button>
+
+    <div class="screen-dots" id="screen-dots">
+      <!-- Dynamically generated dots -->
+    </div>
+
+    <button class="nav-btn btn-next" id="btn-next">
+      <span>अगला (Next)</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </footer>
+
+  <!-- Curriculum Drawer Modal -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="curriculum-drawer" id="curriculum-drawer">
+    <div class="drawer-header">
+      <div>
+        <h3 style="font-size: 1.15rem; color: #FFFFFF; font-weight: 700;">Module 01: Foundations</h3>
+        <span style="font-size: 0.8rem; color: #38BDF8;">20 Substantial Lessons (~2.5–3 Hours)</span>
+      </div>
+      <button class="drawer-close" id="btn-close-drawer">&times;</button>
+    </div>
+    <div class="drawer-list" id="drawer-list">
+      <!-- Dynamically populated by player.js -->
+    </div>
+  </aside>
+ 
+  <!-- Candidate OTP Authentication Modal -->
+  <div class="auth-modal-backdrop" id="auth-modal-backdrop" style="display: none;">
+    <div class="auth-modal-card" id="auth-modal-card">
+      <div class="auth-header">
+        <img src="assets/logo.jpg" alt="TrustPoint Finance Logo" class="auth-logo">
+        <h2>TrustPoint Finance Academy</h2>
+        <p>उम्मीदवार प्रमाणीकरण (Candidate Login)</p>
+      </div>
+
+      <div class="auth-body">
+        <!-- Step 1: Enter Mobile -->
+        <div id="auth-step-mobile" class="auth-step-section">
+          <label for="input-mobile" class="auth-label">अपना 10-अंकीय मोबाइल नंबर दर्ज करें (Enter Mobile Number)</label>
+          <div class="input-mobile-group">
+            <span class="country-prefix">+91</span>
+            <input type="tel" id="input-mobile" class="auth-input" placeholder="9876543210" maxlength="10" autocomplete="tel">
+          </div>
+          <button id="btn-request-otp" class="btn-auth-primary" onclick="window.player.requestOtp()">
+            <span>ओटीपी प्राप्त करें (Get OTP)</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Step 2: Enter OTP -->
+        <div id="auth-step-otp" class="auth-step-section" style="display: none;">
+          <div class="otp-sent-info">
+            <span>ओटीपी भेजा गया: <strong id="display-sent-mobile"></strong></span>
+            <button id="btn-change-mobile" class="btn-link" onclick="window.player.switchAuthStep('mobile')">नंबर बदलें</button>
+          </div>
+          <label for="input-otp" class="auth-label">6-अंकीय ओटीपी दर्ज करें (Enter 6-Digit OTP)</label>
+          <input type="text" id="input-otp" class="auth-input otp-code-input" placeholder="123456" maxlength="6" autocomplete="one-time-code">
+          <div class="otp-timer-row">
+            <span id="otp-timer-text">समय शेष: <strong id="otp-seconds">30s</strong></span>
+            <button id="btn-resend-otp" class="btn-link" style="display: none;" onclick="window.player.requestOtp()">पुनः भेजें (Resend OTP)</button>
+          </div>
+          <button id="btn-verify-otp" class="btn-auth-primary" onclick="window.player.verifyOtp()">
+            <span>सत्यापित करें और शुरू करें (Verify &amp; Start)</span>
+            <i class="fa-solid fa-shield-halved"></i>
+          </button>
+        </div>
+
+        <div id="auth-error-box" class="auth-error" style="display: none;"></div>
+      </div>
+      <div class="auth-footer">
+        <small>सुरक्षित एवं SEBI-अनुपालित व्यावसायिक प्रशिक्षण • आपकी प्रगति क्लाउड पर सुरक्षित है</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embedded fallback JSON for direct local execution without web server -->
+  <script>
+    window.FALLBACK_LESSON_01 = {
+      "meta": {
+        "lessonId": "M01_L01",
+        "moduleNumber": "01",
+        "lessonNumber": "01",
+        "title": "Business & Capital (व्यवसाय और पूंजी)",
+        "subtitle": "एक सफल Business कैसे काम करता है और उसे Capital की आवश्यकता क्यों होती है?",
+        "language": "hi",
+        "estimatedMinutes": 9
+      },
+      "objective": {
+        "headline": "इस पाठ का मुख्य उद्देश्य:",
+        "points": [
+          "समझना कि एक Business का वास्तविक स्वरूप क्या है और यह ग्राहकों के लिए मूल्य (Value) कैसे बनाता है।",
+          "Revenue (राजस्व), Costs (लागत) और Net Profit (शुद्ध लाभ) के बुनियादी वित्तीय गणित में महारत हासिल करना।",
+          "यह पहचानना कि किसी भी सफल व्यवसाय को संचालन और विस्तार के लिए पूंजी (Capital) की अनिवार्य आवश्यकता क्यों होती है।"
+        ]
+      },
+      "screens": [
+        {
+          "screenId": "s01",
+          "type": "TITLE",
+          "title": "Business & Capital की बुनियादी समझ",
+          "badge": "MODULE 01 • LESSON 01",
+          "content": {
+            "tagline": "स्टॉक मार्केट में सफल होने की पहली सीढ़ी: व्यवसाय को समझना",
+            "description": "शेयर बाजार में निवेश करने का मतलब किसी कंप्यूटर स्क्रीन पर रंग-बिरंगे नंबर्स के पीछे भागना नहीं है। इसका असली अर्थ है देश के वास्तविक, जीवित व्यवसायों में हिस्सेदार बनना। यदि आप यह नहीं समझते कि एक सामान्य दुकान या कंपनी पैसे कैसे कमाती है, तो आप कभी भी स्टॉक मार्केट को सही ढंग से नहीं समझ सकते।",
+            "keyHighlight": "हर शेयर के पीछे एक असली कंपनी होती है जो असली उत्पाद बनाती है, ग्राहकों की सेवा करती है और लाभ कमाने के लिए संघर्ष करती है।"
+          }
+        },
+        {
+          "screenId": "s02",
+          "type": "CONCEPT",
+          "title": "एक Business असल में क्या होता है?",
+          "badge": "मूल अवधारणा",
+          "content": {
+            "coreConcept": "Business = समस्याओं का समाधान + मूल्य निर्माण (Value Creation) + वित्तीय लाभ",
+            "leadText": "चाहे वह आपके घर के पास की एक छोटी चाय की दुकान हो या भारत की सबसे बड़ी कंपनी टाटा मोटर्स—सभी का मूल सिद्धांत एक ही है:",
+            "revealCards": [
+              { "id": "rc1", "icon": "fa-users", "title": "1. ग्राहक (Customers)", "text": "लोगों की कोई वास्तविक आवश्यकता या समस्या होती है (जैसे भूख, परिवहन, कपड़े, सॉफ्टवेयर)।" },
+              { "id": "rc2", "icon": "fa-box-open", "title": "2. उत्पाद / सेवा (Product / Service)", "text": "कंपनी उस आवश्यकता को पूरा करने के लिए एक उपयोगी उत्पाद या उच्च गुणवत्ता वाली सेवा तैयार करती है।" },
+              { "id": "rc3", "icon": "fa-hand-holding-dollar", "title": "3. लेन-देन (Transaction)", "text": "संतुष्ट ग्राहक उस समाधान के बदले स्वेच्छा से पैसा चुकाते हैं, जिससे व्यापार में नकदी का प्रवाह शुरू होता है।" }
+            ],
+            "takeaway": "यदि कोई कंपनी ग्राहकों की समस्या का हल नहीं निकाल सकती, तो वह लंबे समय तक अस्तित्व में नहीं रह सकती।"
+          }
+        },
+        {
+          "screenId": "s03",
+          "type": "FLOW",
+          "title": "कमाई का चक्र: Revenue Engine कैसे काम करता है?",
+          "badge": "प्रक्रिया प्रवाह",
+          "content": {
+            "description": "एक स्वस्थ व्यवसाय में नकदी का प्रवाह एक निश्चित क्रम में आगे बढ़ता है। नीचे दिए गए प्रवाह को ध्यान से देखें:",
+            "formula": "Profit = Revenue - Total Costs"
+          }
+        },
+        {
+          "screenId": "s04",
+          "type": "NUMERICAL_EXAMPLE",
+          "title": "संख्यात्मक उदाहरण: Revenue, Costs और Profit का गणित",
+          "badge": "इंटरएक्टिव कैलकुलेटर",
+          "content": {
+            "notice": "Illustrative Example — Not Actual Company Data (काल्पनिक शैक्षणिक उदाहरण)",
+            "intro": "मान लीजिए 'अरोमा चाय' नामक एक रिटेल आउटलेट है। नीचे दिए गए स्लाइडर्स को बदलकर देखें कि बिक्री और लागत बदलने पर शुद्ध मुनाफे (Profit) पर क्या प्रभाव पड़ता है:",
+            "calculator": {
+              "defaultRevenue": 1000000,
+              "minRevenue": 200000,
+              "maxRevenue": 3000000,
+              "stepRevenue": 50000,
+              "defaultCosts": 700000,
+              "minCosts": 100000,
+              "maxCosts": 2500000,
+              "stepCosts": 50000
+            }
+          }
+        },
+        {
+          "screenId": "s05",
+          "type": "CONCEPT",
+          "title": "पूंजी (Capital) क्या है और यह क्यों जरूरी है?",
+          "badge": "व्यापार का ईंधन",
+          "content": {
+            "leadText": "Capital वह धन या वित्तीय संसाधन है जो किसी व्यवसाय को शुरू करने, उसे सुचारू रूप से चलाने और आगे बढ़ाने के लिए अनिवार्य होता है।",
+            "quote": "जैसे बिना पेट्रोल के सबसे आधुनिक कार भी आगे नहीं बढ़ सकती, वैसे ही बिना पर्याप्त Capital के सबसे बेहतरीन बिजनेस आइडिया भी ठप हो जाता है।"
+          }
+        },
+        {
+          "screenId": "s06",
+          "type": "SCENARIO",
+          "title": "केस स्टडी: रमेश की चाय दुकान का विस्तार संकट",
+          "badge": "इंटरएक्टिव परिदृश्य",
+          "content": {
+            "context": "रमेश की एक चाय दुकान पुणे में बहुत सफल है। वह हर महीने ₹30,000 का शुद्ध लाभ (Net Profit) कमाता है। अब वह पूरे शहर में 5 नई दुकानें खोलना चाहता है।",
+            "mathBox": {
+              "currentMonthlyProfit": "₹30,000 प्रति माह",
+              "annualSavings": "लगभग ₹3.6 लाख प्रति वर्ष",
+              "expansionRequirement": "5 दुकानों हेतु ₹15 लाख (डिपॉजिट, उपकरण, स्टॉक)",
+              "timeNeededSelfFunded": "लगभग 4 से 5 साल की पूरी बचत!"
+            },
+            "question": "रमेश अपनी वर्तमान दुकान की कमाई से तुरंत नई 5 दुकानें क्यों नहीं खोल सकता?",
+            "options": [
+              { "id": "opt1", "text": "क्योंकि उसकी चाय की मांग बाजार में घट गई है।", "isCorrect": false, "feedback": "गलत। मांग बहुत अच्छी है, समस्या मांग की नहीं बल्कि नकदी की कमी की है।" },
+              { "id": "opt2", "text": "क्योंकि उसकी मासिक बचत विस्तार की तुरंत लागत (₹15 लाख) से बहुत कम है (Capital Constraint)।", "isCorrect": true, "feedback": "बिल्कुल सही! इसे Capital Constraint कहते हैं। आंतरिक कमाई से इतना बड़ा पैसा जुटाने में सालों लग जाएंगे और तब तक कोई प्रतिस्पर्धी बाजार पर कब्जा कर लेगा।" },
+              { "id": "opt3", "text": "क्योंकि कानूनन एक व्यक्ति केवल एक ही दुकान खोल सकता है।", "isCorrect": false, "feedback": "गलत। भारतीय कानून में व्यापार विस्तार पर कोई ऐसी रोक नहीं है।" }
+            ]
+          }
+        },
+        {
+          "screenId": "s07",
+          "type": "COMPARISON",
+          "title": "पूंजी जुटाने के रास्ते (एक संक्षिप्त पूर्वावलोकन)",
+          "badge": "भविष्य की रूपरेखा",
+          "content": {
+            "lead": "जब रमेश जैसे उद्यमी को बड़ा काम करना होता है, तो वह बाहर से Capital जुटाता है। इसके दो मुख्य रास्ते होते हैं:",
+            "columns": [
+              {
+                "type": "Debt",
+                "title": "रास्ता A: Debt (कर्ज / बैंक लोन)",
+                "features": [
+                  "बैंक या वित्तीय संस्थान से निश्चित रकम उधार लेना।",
+                  "मुनाफा हो या घाटा—हर महीने निश्चित ब्याज व EMI चुकानी होगी।",
+                  "कंपनी की ओनरशिप 100% आपके पास ही रहती है।"
+                ],
+                "riskNote": "जोखिम: यदि व्यापार मंदा रहा तो EMI न चुकाने पर दिवालिया होने का खतरा।"
+              },
+              {
+                "type": "Equity",
+                "title": "रास्ता B: Equity (हिस्सेदारी / शेयर)",
+                "features": [
+                  "किसी इन्वेस्टर या जनता को कंपनी में भागीदार बनाना।",
+                  "कोई निश्चित मासिक EMI या ब्याज नहीं देना पड़ता।",
+                  "इन्वेस्टर भविष्य के मुनाफे और कंपनी की ओनरशिप में हिस्सा लेता है।"
+                ],
+                "riskNote": "लाभ: रिस्क साझा होता है; कंपनी डूबी तो इन्वेस्टर का पैसा भी डूबा।"
+              }
+            ],
+            "previewNote": "📌 महत्वपूर्ण नोट: Debt और Equity के बीच विस्तृत तुलना और गणित को हम Lesson 03 में गहराई से समझेंगे। यहाँ केवल यह समझना आवश्यक है कि बाहरी पूंजी से ही व्यवसाय बड़े बनते हैं।"
+          }
+        },
+        {
+          "screenId": "s08",
+          "type": "MYTH_VS_FACT",
+          "title": "शुरुआती निवेशकों के आम भ्रम बनाम हकीकत",
+          "badge": "आम गलतियाँ",
+          "content": {
+            "items": [
+              {
+                "myth": "भ्रम 1: जिस कंपनी का Revenue बहुत बड़ा है, वह हमेशा एक बेहतरीन और सुरक्षित कंपनी है।",
+                "fact": "हकीकत: Revenue (Top-line) केवल बिक्री दर्शाता है। असली सेहत Net Profit (Bottom-line) से पता चलती है। यदि लागत Revenue से अधिक है, तो कंपनी धीरे-धीरे खत्म हो रही है।"
+              },
+              {
+                "myth": "भ्रम 2: Speculation vs Investment — शेयर बाजार केवल त्वरित मुनाफे के लिए एक Speculation का मंच है।",
+                "fact": "हकीकत: Stock Market में बिना अध्ययन केवल Price Movement पर त्वरित लाभ कमाने का प्रयास Speculation कहलाता है, जबकि वास्तविक Investment कंपनियों के Business, Fundamentals, Risk और दीर्घकालिक Growth को समझकर ओनरशिप लेने में होता है। व्यापार में लाभ के साथ जोखिम (Risk) भी होता है, इसलिए Fundamentals को समझना अनिवार्य है।"
+              },
+              {
+                "myth": "भ्रम 3: एक बार कंपनी मुनाफे में आ जाए, तो उसे कभी अतिरिक्त पूंजी की जरूरत नहीं पड़ती।",
+                "fact": "हकीकत: नए बाजार में उतरने, रिसर्च करने और बड़े पैमाने पर मुकाबला करने के लिए सबसे बड़ी कंपनियों को भी लगातार नई पूंजी जुटानी पड़ती है।"
+              }
+            ]
+          }
+        },
+        {
+          "screenId": "s09",
+          "type": "RECAP",
+          "title": "Lesson 01 के मुख्य सबक (Golden Takeaways)",
+          "badge": "सारांश",
+          "content": {
+            "takeaways": [
+              { "number": "01", "heading": "बिजनेस = समस्याओं का समाधान", "text": "स्टॉक मार्केट में निवेश करने से पहले समझें कि कंपनी क्या बनाती है और उसके ग्राहक कौन हैं।" },
+              { "number": "02", "heading": "लाभ का सूत्र (Profit Equation)", "text": "Profit = Revenue − Total Costs। केवल बिक्री नहीं, जेब में बचने वाला शुद्ध लाभ सबसे महत्वपूर्ण है।" },
+              { "number": "03", "heading": "Capital = विकास का अनिवार्य ईंधन", "text": "दुकान शुरू करने, दिन-प्रतिदिन चलाने और बड़े स्तर पर विस्तार के लिए पूंजी आवश्यक है।" },
+              { "number": "04", "heading": "शेयर = कंपनी की ओनरशिप", "text": "जब कंपनियां विस्तार के लिए जनता से पूंजी जुटाती हैं, तो बदले में शेयर्स देती हैं।" }
+            ],
+            "nextTeaser": {
+              "label": "अगला पाठ (Lesson 02)",
+              "title": "Revenue, Costs & Net Profit: व्यापार का Financial Structure"
+            }
+          }
+        },
+        {
+          "screenId": "s10",
+          "type": "KNOWLEDGE_CHECK",
+          "title": "त्वरित ज्ञान परख (Quick Checkpoint)",
+          "badge": "अभ्यास",
+          "content": {
+            "question": "मान लीजिए एक कंपनी साल में ₹50 लाख का सामान बेचती है (Revenue)। उसका कच्चा माल ₹20 लाख और कर्मचारियों का वेतन व किराया ₹20 लाख है। कंपनी का उस वर्ष का Net Profit कितना है?",
+            "options": [
+              { "id": "kc_a", "text": "₹50 लाख", "isCorrect": false },
+              { "id": "kc_b", "text": "₹30 लाख", "isCorrect": false },
+              { "id": "kc_c", "text": "₹10 लाख", "isCorrect": true },
+              { "id": "kc_d", "text": "शून्य (Zero)", "isCorrect": false }
+            ],
+            "explanation": "Net Profit = Revenue (₹50 लाख) - कच्चा माल (₹20 लाख) - वेतन व किराया (₹20 लाख) = ₹10 लाख।"
+          }
+        },
+        {
+          "screenId": "s11",
+          "type": "QUIZ",
+          "title": "Lesson 01 अंतिम मूल्यांकन परीक्षा (Final Quiz)",
+          "badge": "5 प्रश्न • 70% उत्तीर्ण अंक",
+          "content": {
+            "questions": [
+              {
+                "id": "q1",
+                "type": "CONCEPTUAL",
+                "question": "वित्तीय और व्यावसायिक संदर्भ में 'पूंजी' (Capital) की सबसे सटीक परिभाषा क्या है?",
+                "options": [
+                  "वह शुद्ध लाभ जो कंपनी टैक्स भरने के बाद पूरी तरह अपने पास रखती है।",
+                  "वह वित्तीय संसाधन या धन जो व्यवसाय शुरू करने, चलाने और विस्तार करने के लिए आवश्यक होता है।",
+                  "वह भौतिक इमारत जहाँ कंपनी का ऑफिस या फैक्ट्री स्थित होती है।",
+                  "कंपनी में काम करने वाले कर्मचारियों की कुल संख्या।"
+                ],
+                "hint": "सोचिए कि किसी व्यापार को आगे बढ़ाने के लिए 'ईंधन' के रूप में क्या काम करता है।"
+              },
+              {
+                "id": "q2",
+                "type": "NUMERICAL",
+                "question": "एक गारमेंट्स मैन्युफैक्चरर का वार्षिक विवरण इस प्रकार है: कुल बिक्री (Revenue) = ₹80,00,000, कपड़ा व धागा लागत = ₹40,00,000, फैक्ट्री किराया व मजदूरी = ₹25,00,000। इस कंपनी का शुद्ध परिचालन लाभ (Profit) क्या होगा?",
+                "options": [
+                  "₹40,00,000",
+                  "₹25,00,000",
+                  "₹15,00,000",
+                  "₹80,00,000"
+                ],
+                "hint": "कुल बिक्री में से सभी परिचालन खर्चों को घटाएं: Profit = Revenue - Costs."
+              },
+              {
+                "id": "q3",
+                "type": "SCENARIO",
+                "question": "एक सफल इलेक्ट्रॉनिक्स दुकान का मालिक शहर में 3 नई शाखाएं खोलना चाहता है, लेकिन उसकी वर्तमान दुकान की मासिक बचत बहुत कम है। इस स्थिति को व्यावसायिक भाषा में क्या कहा जाता है?",
+                "options": [
+                  "कैपिटल की कमी / बाधा (Capital Constraint)",
+                  "बाजार में मांग की कमी (Demand Deficit)",
+                  "कानूनी प्रतिबंध (Regulatory Embargo)",
+                  "टैक्स डिफ़ॉल्ट (Tax Default)"
+                ],
+                "hint": "जब व्यापार के पास विस्तार के बेहतरीन अवसर हों लेकिन पैसा कम पड़े, तो उसे क्या कहते हैं?"
+              },
+              {
+                "id": "q4",
+                "type": "INTERPRETATION",
+                "question": "यदि किसी स्टार्टअप कंपनी का Revenue ₹100 करोड़ है, लेकिन उसके सालभर के कुल खर्चे ₹120 करोड़ हैं, तो वित्तीय दृष्टिकोण से कंपनी की स्थिति क्या है?",
+                "options": [
+                  "कंपनी बहुत मजबूत है क्योंकि उसका Revenue ₹100 करोड़ का है।",
+                  "कंपनी ₹20 करोड़ के घाटे (Loss) में है और पूंजी नष्ट कर रही है।",
+                  "कंपनी को तुरंत अपने सभी शेयरधारकों को डिविडेंड बांटना चाहिए।",
+                  "कंपनी पर कोई भी वित्तीय जोखिम नहीं है।"
+                ],
+                "hint": "जब खर्च आमदनी से अधिक हो जाता है, तो क्या होता है?"
+              },
+              {
+                "id": "q5",
+                "type": "CONCEPTUAL",
+                "question": "स्टॉक मार्केट (शेयर बाजार) का वास्तविक और सबसे मौलिक उद्देश्य क्या है?",
+                "options": [
+                  "लोगों को बिना किसी काम के रातों-रात अमीर बनाना।",
+                  "केवल इंट्राडे सट्टेबाजी और लॉटरी टिकट बेचने का केंद्र बनना।",
+                  "सक्षम व्यवसायों को विकास हेतु पूंजी उपलब्ध कराना और निवेशकों को उनके मुनाफे में हिस्सेदार बनाना।",
+                  "कंपनियों के प्रोडक्ट्स पर सरकारी डिस्काउंट तय करना।"
+                ],
+                "hint": "अर्थव्यवस्था में कंपनियों और निवेशकों के बीच के संबंध को याद करें।"
+              }
+            ]
+          }
+        },
+        {
+          "screenId": "s12",
+          "type": "COMPLETION",
+          "title": "बधाई हो! आपने Lesson 01 सफलतापूर्वक पूरा कर लिया है",
+          "badge": "अध्याय 01 संपन्न",
+          "content": {
+            "congratulations": "शानदार! आपने स्टॉक मार्केट की सबसे पहली और सबसे महत्वपूर्ण नींव—'Business और Capital' को गहराई से समझ लिया है।",
+            "unlockMessage": "अगला अध्याय (Lesson 02: Revenue, Costs & Net Profit) अब आपके लिए अनलॉक हो चुका है।",
+            "downloads": [
+              { "label": "डाउनलोड करें: Lesson 01 विस्तृत नोट्स (PDF)", "file": "../../pdf/hi/M01_L01_Lesson_Notes.pdf" },
+              { "label": "डाउनलोड करें: 1-पेज त्वरित रिवीज़न चीटशीट (PDF)", "file": "../../cheatsheets/hi/M01_L01_Cheatsheet.pdf" }
+            ]
+          }
+        }
+      ]
+    };
+  </script>
+
+  <!-- Player Script Engine -->
+  <script src="player.js"></script>
+</body>
+</html>

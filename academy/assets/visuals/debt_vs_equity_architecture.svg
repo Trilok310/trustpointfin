@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080C16" />
+    </linearGradient>
+    <linearGradient id="debtCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#151D2C" />
+    </linearGradient>
+    <linearGradient id="equityCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0E241B" />
+    </linearGradient>
+    <linearGradient id="debtHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+    <linearGradient id="equityHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="dropShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgCanvas)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="600" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    पूंजी जुटाने के दो मौलिक रास्ते (Debt vs Equity Architecture)
+  </text>
+  <text x="600" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#94A3B8">
+    कर्ज और हिस्सेदारी के बीच वित्तीय दायित्व, नियंत्रण और जोखिम का मूलभूत संतुलन
+  </text>
+
+  <!-- Left Card: DEBT (कर्ज / ऋण) -->
+  <g transform="translate(50, 95)" filter="url(#dropShadow)">
+    <rect width="510" height="285" rx="14" fill="url(#debtCardGrad)" stroke="#EF4444" stroke-width="2" />
+    <rect width="510" height="42" rx="14" fill="url(#debtHeader)" />
+    <rect y="28" width="510" height="14" fill="url(#debtHeader)" />
+    <text x="255" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      🏦 RASTA A: DEBT (बैंक लोन / डिबेंचर / कर्ज)
+    </text>
+
+    <!-- Key Attributes -->
+    <text x="30" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#FCA5A5">
+      1. संबंध: ऋणदाता और ऋणी (Lender &amp; Borrower)
+    </text>
+    <text x="30" y="96" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      बैंक या लेंडर को केवल अपना मूलधन (Principal) और तय ब्याज (Interest) वापस चाहिए।
+    </text>
+
+    <text x="30" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#FCA5A5">
+      2. अनिवार्य दायित्व (Fixed Monthly Obligation):
+    </text>
+    <text x="30" y="151" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      कंपनी को मुनाफा हो या भारी घाटा—मासिक EMI हर हाल में समय पर भरनी ही होगी।
+    </text>
+
+    <text x="30" y="185" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#FCA5A5">
+      3. मालिकाना हक (Ownership Control):
+    </text>
+    <text x="30" y="206" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      बैंक कंपनी का मालिक नहीं बनता। 100% ओनरशिप और वोटिंग राइट्स प्रमोटर के पास रहते हैं।
+    </text>
+
+    <!-- Risk Badge -->
+    <rect x="25" y="228" width="460" height="38" rx="8" fill="rgba(239, 68, 68, 0.15)" stroke="#EF4444" stroke-width="1" />
+    <text x="255" y="252" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#FCA5A5">
+      ⚠️ मुख्य जोखिम: यदि व्यापार मंदा रहा और EMI न चुकाई, तो बैंक संपत्ति जब्त कर सकता है।
+    </text>
+  </g>
+
+  <!-- Center VS Badge -->
+  <circle cx="600" cy="235" r="26" fill="#0F172A" stroke="#FBBF24" stroke-width="2.5" />
+  <text x="600" y="242" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" text-anchor="middle" fill="#FBBF24">VS</text>
+
+  <!-- Right Card: EQUITY (हिस्सेदारी / शेयर) -->
+  <g transform="translate(640, 95)" filter="url(#dropShadow)">
+    <rect width="510" height="285" rx="14" fill="url(#equityCardGrad)" stroke="#10B981" stroke-width="2" />
+    <rect width="510" height="42" rx="14" fill="url(#equityHeader)" />
+    <rect y="28" width="510" height="14" fill="url(#equityHeader)" />
+    <text x="255" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      🤝 RASTA B: EQUITY (शेयर / हिस्सेदारी / ओनरशिप)
+    </text>
+
+    <!-- Key Attributes -->
+    <text x="30" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#6EE7B7">
+      1. संबंध: सह-मालिक और साझेदार (Co-Owner / Shareholder)
+    </text>
+    <text x="30" y="96" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      इन्वेस्टर कंपनी में स्थायी हिस्सेदारी खरीदता है और भविष्य के मुनाफे व वृद्धि में भाग लेता है।
+    </text>
+
+    <text x="30" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#6EE7B7">
+      2. शून्य मासिक ईएमआई (No Fixed Obligation):
+    </text>
+    <text x="30" y="151" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      कोई मासिक ब्याज या ऋण वापसी का दबाव नहीं। घाटा होने पर इन्वेस्टर भी घाटा झेलता है।
+    </text>
+
+    <text x="30" y="185" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#6EE7B7">
+      3. ओनरशिप डाइल्यूशन (Ownership Dilution):
+    </text>
+    <text x="30" y="206" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      संस्थापक को अपनी कंपनी का कुछ प्रतिशत हिस्सा (Shares) नए इन्वेस्टर को देना पड़ता है।
+    </text>
+
+    <!-- Success Badge -->
+    <rect x="25" y="228" width="460" height="38" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1" />
+    <text x="255" y="252" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#A7F3D0">
+      ✨ मुख्य लाभ: रिस्क साझा होता है; कंपनी को बिना दिवालियापन के खुलकर बढ़ने की आजादी मिलती है।
+    </text>
+  </g>
+</svg>

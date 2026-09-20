@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrustPoint Finance — Universal Wealth & Order Flow Terminal</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-logo"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="brand-text">
+        <span class="brand-title">TrustPoint</span>
+        <span class="brand-subtitle">Finance</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <button class="nav-tab active" data-tab="dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard</button>
+      <button class="nav-tab" data-tab="sip-planner"><i class="fa-solid fa-piggy-bank"></i> Goal SIP</button>
+      <button class="nav-tab" data-tab="optimizer"><i class="fa-solid fa-scale-balanced"></i> Portfolio Optimizer</button>
+      <button class="nav-tab" data-tab="analytics"><i class="fa-solid fa-chart-pie"></i> Trade Analytics</button>
+      <button class="nav-tab" data-tab="insurance"><i class="fa-solid fa-heart-pulse"></i> Smart Insurance</button>
+    </nav>
+    <div class="nav-actions">
+      <div class="api-status">
+        <span class="status-dot green"></span>
+        <span class="status-text">BSE StAR / Angel One Live</span>
+      </div>
+      <button class="btn btn-primary btn-unlock-all"><i class="fa-solid fa-key"></i> Unlock Premium</button>
+    </div>
+  </header>
+
+  <!-- Main Application Container -->
+  <main class="app-container">
+
+    <!-- ── TAB: DASHBOARD & CRM ── -->
+    <section id="dashboard" class="tab-content active">
+      <div class="welcome-banner">
+        <div class="welcome-text">
+          <h1>Welcome to TrustPoint Finance Terminal</h1>
+          <p>Your institutional-grade trading, mutual fund, and protection cockpit.</p>
+        </div>
+        <div class="welcome-stats">
+          <div class="mini-stat">
+            <span class="label">BSE MFD Status</span>
+            <span class="value green-text">Active (ARN-Mapped)</span>
+          </div>
+          <div class="mini-stat">
+            <span class="label">Angel One Franchise</span>
+            <span class="value green-text">Active (Sub-Broker)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Cards -->
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="icon-wrap green-bg"><i class="fa-solid fa-coins"></i></div>
+          <div class="metric-data">
+            <span class="label">AUM Under Advisory</span>
+            <span class="value">₹1,48,50,000</span>
+            <span class="trend up"><i class="fa-solid fa-arrow-up"></i> +12.4% MoM</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="icon-wrap blue-bg"><i class="fa-solid fa-users"></i></div>
+          <div class="metric-data">
+            <span class="label">Total Mapped Clients</span>
+            <span class="value">142</span>
+            <span class="trend up"><i class="fa-solid fa-arrow-up"></i> +8 new this week</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="icon-wrap purple-bg"><i class="fa-solid fa-wallet"></i></div>
+          <div class="metric-data">
+            <span class="label">Est. Trail Revenue</span>
+            <span class="value">₹12,375 / mo</span>
+            <span class="trend up"><i class="fa-solid fa-arrow-up"></i> Recurring</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="icon-wrap orange-bg"><i class="fa-solid fa-shield-heart"></i></div>
+          <div class="metric-data">
+            <span class="label">Active Policies (Turtlemint)</span>
+            <span class="value">48 Policies</span>
+            <span class="trend"><i class="fa-solid fa-circle-check"></i> 100% Retained</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2-3">
+        <!-- Live System Logs -->
+        <div class="panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-terminal"></i> Terminal System Console</h3>
+            <span class="badge">Live</span>
+          </div>
+          <div class="terminal-body" id="system-logs">
+            <div class="log-line"><span class="log-time">[14:31:02]</span> <span class="log-tag tag-system">[SYSTEM]</span> TrustPoint Terminal initializing...</div>
+            <div class="log-line"><span class="log-time">[14:31:03]</span> <span class="log-tag tag-system">[SYSTEM]</span> Standard credentials verified. Secure cookie instantiated.</div>
+            <div class="log-line"><span class="log-time">[14:31:04]</span> <span class="log-tag tag-bse">[BSE_StAR]</span> UCC endpoint live. Token expires in 4 hours 58 min.</div>
+            <div class="log-line"><span class="log-time">[14:31:05]</span> <span class="log-tag tag-angel">[ANGEL_ONE]</span> SmartAPI handshake successful. Latency: 14ms.</div>
+            <div class="log-line"><span class="log-time">[14:31:06]</span> <span class="log-tag tag-turtle">[TURTLEMINT]</span> POSP validation active. 14 insurers online.</div>
+            <div class="log-line"><span class="log-time">[14:35:00]</span> <span class="log-tag tag-system">[SYSTEM]</span> Ready to process client requests. Welcome back, advisor!</div>
+          </div>
+        </div>
+
+        <!-- CRM Lead Board -->
+        <div class="panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-address-book"></i> Active Client Pipelines</h3>
+            <button class="btn btn-secondary btn-sm" id="btn-add-lead"><i class="fa-solid fa-plus"></i> New Lead</button>
+          </div>
+          <div class="crm-table-wrapper">
+            <table class="crm-table">
+              <thead>
+                <tr>
+                  <th>Client Name</th>
+                  <th>Contact</th>
+                  <th>Angel One Code</th>
+                  <th>BSE UCC</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="crm-lead-body">
+                <tr>
+                  <td><strong>Rohan Sharma</strong></td>
+                  <td>+91 98765 43210</td>
+                  <td><span class="client-code">ROHA4322</span></td>
+                  <td><span class="client-code">UCC-90812</span></td>
+                  <td><span class="badge badge-success">Fully Mapped</span></td>
+                  <td><button class="btn btn-secondary btn-xs btn-view-analytics" data-client="Rohan Sharma"><i class="fa-solid fa-chart-simple"></i> Analytics</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Priya Patel</strong></td>
+                  <td>+91 87654 32109</td>
+                  <td><span class="client-code">PRIY8901</span></td>
+                  <td><span class="badge badge-warning">UCC Pending</span></td>
+                  <td><span class="badge badge-info">Only F&O</span></td>
+                  <td><button class="btn btn-secondary btn-xs btn-view-analytics" data-client="Priya Patel"><i class="fa-solid fa-chart-simple"></i> Analytics</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Amit Verma</strong></td>
+                  <td>+91 76543 21098</td>
+                  <td><span class="badge badge-danger">Not Mapped</span></td>
+                  <td><span class="badge badge-danger">Not Mapped</span></td>
+                  <td><span class="badge badge-danger">Locked</span></td>
+                  <td><button class="btn btn-primary btn-xs btn-trigger-lock"><i class="fa-solid fa-lock"></i> Map Client</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TAB: GOAL SIP PLANNER ── -->
+    <section id="sip-planner" class="tab-content">
+      <div class="grid-2">
+        <div class="panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-sliders"></i> Goal-Based Compound SIP Calculator</h3>
+          </div>
+          <div class="calculator-body">
+            <div class="control-group">
+              <label>Select Financial Goal</label>
+              <div class="goal-buttons">
+                <button class="btn btn-secondary btn-goal active" data-rate="14" data-target="20000000">🏡 Buy Home (₹2 Cr)</button>
+                <button class="btn btn-secondary btn-goal" data-rate="16" data-target="50000000">🚀 Early Retirement (₹5 Cr)</button>
+                <button class="btn btn-secondary btn-goal" data-rate="12" data-target="5000000">🎓 Child Education (₹50L)</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="slider-label">
+                <span>Monthly SIP Amount</span>
+                <span class="slider-val" id="sip-amt-val">₹15,000</span>
+              </div>
+              <input type="range" id="sip-amt-slider" class="range-slider" min="1000" max="100000" step="1000" value="15000">
+            </div>
+
+            <div class="control-group">
+              <div class="slider-label">
+                <span>Duration (Years)</span>
+                <span class="slider-val" id="sip-years-val">15 Years</span>
+              </div>
+              <input type="range" id="sip-years-slider" class="range-slider" min="1" max="30" step="1" value="15">
+            </div>
+
+            <div class="control-group">
+              <div class="slider-label">
+                <span>Expected Annual Return</span>
+                <span class="slider-val" id="sip-return-val">14%</span>
+              </div>
+              <input type="range" id="sip-return-slider" class="range-slider" min="8" max="22" step="0.5" value="14">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel glass-panel result-panel green-glow">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-chart-pie"></i> Projections & BSE StAR Execution</h3>
+          </div>
+          <div class="result-body">
+            <div class="result-stats">
+              <div class="stat-box">
+                <span class="label">Total Invested</span>
+                <span class="value" id="res-invested">₹27,00,000</span>
+              </div>
+              <div class="stat-box">
+                <span class="label">Wealth Gained</span>
+                <span class="value green-text" id="res-gained">₹64,92,308</span>
+              </div>
+              <div class="stat-box highlighted-stat">
+                <span class="label">Expected Maturity Capital</span>
+                <span class="value" id="res-total">₹91,92,308</span>
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <div class="progress-fill" id="res-progress-fill" style="width: 30%;"></div>
+            </div>
+
+            <div class="goal-milestone" id="res-milestone-text">
+              <i class="fa-solid fa-triangle-exclamation orange-text"></i> You are at 45.9% of your ₹2 Crore Home goal. Increase SIP to <strong>₹32,600</strong> to reach it in 15 years.
+            </div>
+
+            <div class="action-footer">
+              <button class="btn btn-primary btn-block btn-execute-sip"><i class="fa-solid fa-bolt"></i> 1-Click Execute SIP (BSE StAR MF)</button>
+              <p class="footer-note"><i class="fa-solid fa-lock"></i> Auto-registers UCC and triggers online mandate approval links.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TAB: PORTFOLIO OPTIMIZER ── -->
+    <section id="optimizer" class="tab-content">
+      <div class="grid-2">
+        <div class="panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-sliders"></i> Adjust Portfolio Asset Weight</h3>
+          </div>
+          <div class="calculator-body">
+            <p class="panel-description">Adjust your current allocation weights to see how our Markowitz optimization engine can maximize your Sharpe Ratio.</p>
+            
+            <div class="control-group">
+              <div class="slider-label">
+                <span>Mutual Funds (Large/MidCap)</span>
+                <span class="slider-val" id="opt-mf-val">50%</span>
+              </div>
+              <input type="range" id="opt-mf-slider" class="range-slider" min="0" max="100" step="5" value="50">
+            </div>
+
+            <div class="control-group">
+              <div class="slider-label">
+                <span>Direct Equities (High-beta)</span>
+                <span class="slider-val" id="opt-eq-val">40%</span>
+              </div>
+              <input type="range" id="opt-eq-slider" class="range-slider" min="0" max="100" step="5" value="40">
+            </div>
+
+            <div class="control-group">
+              <div class="slider-label">
+                <span>Gold & Debt (Defense)</span>
+                <span class="slider-val" id="opt-gold-val">10%</span>
+              </div>
+              <input type="range" id="opt-gold-slider" class="range-slider" min="0" max="100" step="5" value="10">
+            </div>
+
+            <div class="weight-check-error" id="opt-weight-error" style="display: none;">
+              <i class="fa-solid fa-circle-exclamation"></i> Total weight must equal exactly 100%! Current total: <strong id="opt-weight-total">100%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel glass-panel result-panel position-relative">
+          <!-- Blurry Value Gate Overlay -->
+          <div class="gate-overlay" id="optimizer-gate">
+            <div class="gate-card">
+              <div class="gate-icon"><i class="fa-solid fa-lock"></i></div>
+              <h3>Modern Portfolio Optimizer</h3>
+              <p>Unlock the efficient frontier mathematical engine, correlation matrices, and 1-click rebalancing tool by mapping your credentials.</p>
+              <div class="gate-buttons">
+                <button class="btn btn-primary btn-sm btn-action-unlock"><i class="fa-solid fa-key"></i> Unlock for Free</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-scale-balanced"></i> Efficient Frontier Optimization</h3>
+          </div>
+          <div class="result-body">
+            <div class="allocation-comparison">
+              <div class="alloc-box">
+                <h4>Your Current Portfolio</h4>
+                <div class="pie-chart-mock" id="chart-current">
+                  <div class="pie-slice mf" style="--val: 50;"></div>
+                  <div class="pie-slice eq" style="--val: 40; --offset: 50;"></div>
+                  <div class="pie-slice gold" style="--val: 10; --offset: 90;"></div>
+                  <div class="pie-center"><span>Risk: High</span></div>
+                </div>
+                <div class="alloc-stats">
+                  <p>Est. Volatility: <strong>18.4%</strong></p>
+                  <p>Sharpe Ratio: <strong>0.82</strong></p>
+                </div>
+              </div>
+
+              <div class="alloc-box highlighted-alloc">
+                <h4>Max Sharpe Optimized</h4>
+                <div class="pie-chart-mock" id="chart-optimized">
+                  <div class="pie-slice mf" style="--val: 65;"></div>
+                  <div class="pie-slice eq" style="--val: 20; --offset: 65;"></div>
+                  <div class="pie-slice gold" style="--val: 15; --offset: 85;"></div>
+                  <div class="pie-center"><span>Risk: Optimal</span></div>
+                </div>
+                <div class="alloc-stats">
+                  <p>Est. Volatility: <strong>13.2%</strong> <span class="green-text">(-28%)</span></p>
+                  <p>Sharpe Ratio: <strong>1.45</strong> <span class="green-text">(+76%)</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="action-footer">
+              <button class="btn btn-primary btn-block btn-rebalance"><i class="fa-solid fa-rotate"></i> Execute 1-Click Optimal Rebalance</button>
+              <p class="footer-note"><i class="fa-solid fa-code-fork"></i> Buy/Sells 65% BSE MFs + 20% Angel One Stocks + 15% Gold ETFs automatically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TAB: TRADE ANALYTICS (P&L DRAG-AND-DROP) ── -->
+    <section id="analytics" class="tab-content">
+      <div class="grid-1-3">
+        <!-- Sidebar controls & drag/drop -->
+        <div class="panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-file-excel"></i> Drag & Drop Trade Ledger</h3>
+          </div>
+          <div class="calculator-body">
+            <p class="panel-description">Upload your Zerodha Console Tax P&L, Upstox Ledger, or Angel One trade book file to calculate advanced stats instantly.</p>
+            
+            <!-- Drag & Drop Zone -->
+            <div class="drag-drop-zone" id="drop-zone">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <h4>Drag & drop trade sheet here</h4>
+              <p>Supports .csv, .xlsx, .xls</p>
+              <span class="or-separator">OR</span>
+              <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-folder-open"></i> Browse Files</button>
+              <input type="file" id="ledger-file-input" style="display: none;" accept=".csv,.xlsx,.xls">
+            </div>
+
+            <div class="demo-data-section">
+              <p>Don't have a ledger sheet ready? Load standard mock trade data to experience the engine:</p>
+              <button class="btn btn-secondary btn-block" id="btn-load-mock-trades"><i class="fa-solid fa-database"></i> Load Mock Zerodha Ledger</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Analytics Dashboard -->
+        <div class="panel glass-panel result-panel position-relative">
+          <!-- Blurry Value Gate Overlay -->
+          <div class="gate-overlay" id="analytics-gate">
+            <div class="gate-card">
+              <div class="gate-icon"><i class="fa-solid fa-lock"></i></div>
+              <h3>Universal Trade Analytics Cockpit</h3>
+              <p>Unlock deep drawdown calculations, profit factor analytics, and trade expectancy meters by linking your broker account.</p>
+              <div class="gate-buttons">
+                <button class="btn btn-primary btn-sm btn-action-unlock"><i class="fa-solid fa-key"></i> Unlock for Free</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-chart-line"></i> Institutional Performance Intelligence</h3>
+            <span class="badge badge-success" id="ledger-status-badge">Waiting for File</span>
+          </div>
+          <div class="result-body">
+            <!-- Row of Metrics -->
+            <div class="grid-4 mb-20">
+              <div class="mini-stat-card">
+                <span class="label">Total Closed Trades</span>
+                <span class="value" id="stats-total-trades">-</span>
+              </div>
+              <div class="mini-stat-card">
+                <span class="label">Win Rate</span>
+                <span class="value green-text" id="stats-win-rate">-</span>
+              </div>
+              <div class="mini-stat-card">
+                <span class="label">Profit Factor</span>
+                <span class="value" id="stats-profit-factor">-</span>
+              </div>
+              <div class="mini-stat-card">
+                <span class="label">Max Drawdown</span>
+                <span class="value red-text" id="stats-max-drawdown">-</span>
+              </div>
+            </div>
+
+            <!-- Chart Canvas -->
+            <div class="chart-wrapper">
+              <canvas id="pnl-chart" height="180"></canvas>
+            </div>
+
+            <!-- Secondary Stats Grid -->
+            <div class="grid-2 mt-20">
+              <div class="sub-stats-list">
+                <h4>Aggressive Metrics</h4>
+                <div class="sub-stat-line"><span>Gross Profit</span><strong class="green-text" id="stats-gross-profit">-</strong></div>
+                <div class="sub-stat-line"><span>Gross Loss</span><strong class="red-text" id="stats-gross-loss">-</strong></div>
+                <div class="sub-stat-line"><span>Net Realized P&L</span><strong id="stats-net-pnl">-</strong></div>
+              </div>
+              <div class="sub-stats-list">
+                <h4>Expectancy & Risks</h4>
+                <div class="sub-stat-line"><span>Average Winning Trade</span><strong class="green-text" id="stats-avg-win">-</strong></div>
+                <div class="sub-stat-line"><span>Average Losing Trade</span><strong class="red-text" id="stats-avg-loss">-</strong></div>
+                <div class="sub-stat-line"><span>Risk-Reward Ratio</span><strong id="stats-rr-ratio">-</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TAB: SMART INSURANCE (TURTLEMINT HLV) ── -->
+    <section id="insurance" class="tab-content">
+      <div class="grid-2">
+        <div class="panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-heart-pulse"></i> Human Life Value (HLV) Protection Audit</h3>
+          </div>
+          <div class="calculator-body">
+            <p class="panel-description">Calculate the exact term and health coverage needed to secure your family's financial future completely.</p>
+            
+            <div class="control-group">
+              <label>Current Monthly Expense (Your family spends)</label>
+              <div class="input-with-symbol">
+                <span class="symbol">₹</span>
+                <input type="number" id="ins-expense" class="form-control" value="50000" min="5000" max="1000000">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label>Existing Outstanding Liabilities (Loans, Mortgages, etc.)</label>
+              <div class="input-with-symbol">
+                <span class="symbol">₹</span>
+                <input type="number" id="ins-loans" class="form-control" value="2500000" min="0" max="100000000">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label>Active Term Life Insurance Cover (If any)</label>
+              <div class="input-with-symbol">
+                <span class="symbol">₹</span>
+                <input type="number" id="ins-current-cover" class="form-control" value="5000000" min="0" max="100000000">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label>Select Target Age (Till when you want to protect)</label>
+              <select id="ins-target-age" class="form-control">
+                <option value="60">Age 60 (Standard retirement)</option>
+                <option value="65" selected>Age 65 (Recommended)</option>
+                <option value="75">Age 75 (Extended protection)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel glass-panel result-panel orange-glow">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-shield-heart"></i> Protection Gap Audit & Turtlemint Quotes</h3>
+          </div>
+          <div class="result-body">
+            <div class="result-stats">
+              <div class="stat-box">
+                <span class="label">Total HLV Requirement</span>
+                <span class="value" id="ins-hlv-req">₹1,45,00,000</span>
+              </div>
+              <div class="stat-box">
+                <span class="label">Existing Protection</span>
+                <span class="value green-text" id="ins-curr-prot">₹50,00,000</span>
+              </div>
+              <div class="stat-box highlighted-stat orange-glow">
+                <span class="label">Net Protection Deficit (Your Gap)</span>
+                <span class="value red-text" id="ins-deficit">₹95,00,000</span>
+              </div>
+            </div>
+
+            <div class="insurance-warning-message" id="ins-milestone-text">
+              <i class="fa-solid fa-shield-catastrophic red-text"></i> Your family is **dangerously under-protected** by <strong>₹95,00,000</strong>. If something happens, your current cover will only support them for 8.3 years.
+            </div>
+
+            <div class="action-footer">
+              <button class="btn btn-primary btn-block btn-fetch-quotes"><i class="fa-solid fa-heart-pulse"></i> Compare Term Insurance Plans (Turtlemint)</button>
+              <p class="footer-note"><i class="fa-solid fa-lock"></i> Compares 14 top Indian insurers instantly using your Turtlemint POSP licensing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── MODAL: VALUE-GATE PREMIUM UNLOCK MODULE ── -->
+  <div class="modal-backdrop" id="unlock-modal">
+    <div class="modal-card glass-panel">
+      <div class="modal-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></div>
+      <div class="modal-header">
+        <div class="brand-logo"><i class="fa-solid fa-key"></i></div>
+        <h2>Unlock TrustPoint Premium</h2>
+        <p>Gain unlimited access to modern portfolio optimization, drag-and-drop ledger analysis, and algorithmic rebalancing tools.</p>
+      </div>
+      <div class="modal-body">
+        
+        <div class="gate-options-grid">
+          <!-- Option 1: Angel One Account Opening -->
+          <div class="gate-option-card">
+            <div class="option-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h3>1. Open Free Trading Account</h3>
+            <p>Onboard with India's largest broker (Angel One) under our elite franchise. Zero account opening fee.</p>
+            <a href="https://web.angelone.in" target="_blank" class="btn btn-primary btn-sm btn-map-confirm" data-type="AngelOne"><i class="fa-solid fa-user-plus"></i> Open Free Account</a>
+          </div>
+
+          <!-- Option 2: Start a Mutual Fund SIP -->
+          <div class="gate-option-card">
+            <div class="option-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>2. Start Mutual Fund SIP</h3>
+            <p>Start a monthly investment SIP of ₹1,000 or more in our curated BSE StAR MF baskets.</p>
+            <button class="btn btn-primary btn-sm btn-map-confirm" data-type="BSE"><i class="fa-solid fa-play"></i> Start SIP (₹1000+)</button>
+          </div>
+
+          <!-- Option 3: Direct Subscription -->
+          <div class="gate-option-card">
+            <div class="option-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <h3>3. Pay SaaS Subscription</h3>
+            <p>Keep your existing broker (Zerodha/Upstox) and pay a small software maintenance fee.</p>
+            <button class="btn btn-secondary btn-sm btn-map-confirm" data-type="SaaS"><i class="fa-solid fa-lock-open"></i> Unlock for ₹199/mo</button>
+          </div>
+        </div>
+
+        <div class="manual-code-verification">
+          <h4>Already opened an account? Map your client code directly:</h4>
+          <div class="manual-form">
+            <input type="text" id="mapping-client-code" placeholder="Enter Angel One Code (e.g., ROHA4322) or PAN" class="form-control">
+            <button class="btn btn-primary" id="btn-submit-mapping"><i class="fa-solid fa-circle-check"></i> Verify & Unlock</button>
+          </div>
+          <p id="mapping-error-message" class="red-text mt-10" style="display: none;"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="terminal-footer">
+    <p>⚡ Brand Owned by <strong>TrustPoint Finance</strong> | MFD AMFI ARN: Registered | Corporate Agent (Turtlemint): POSP-Registered | Equity Partner: Angel One Sub-Broker</p>
+    <p class="disclaimer">Disclaimer: Mutual Fund investments are subject to market risks. Read all scheme related documents carefully before investing. Direct equities and F&O trading involve high financial risk.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

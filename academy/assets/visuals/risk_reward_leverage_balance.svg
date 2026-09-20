@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080C16" />
+    </linearGradient>
+    <linearGradient id="debtPillar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+    <linearGradient id="balancePillar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="equityPillar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="boxShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#chartBg)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Title & Subtitle -->
+  <text x="600" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    पूंजी संरचना और जोखिम संतुलन (Capital Structure &amp; Risk Spectrum)
+  </text>
+  <text x="600" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#94A3B8">
+    मंदी (Recession) और तेज़ी (Boom) में कर्ज (Leverage) और इक्विटी (Safety) का तुलनात्मक व्यवहार
+  </text>
+
+  <!-- CARD 1: 100% DEBT FINANCED -->
+  <g transform="translate(60, 95)" filter="url(#boxShadow)">
+    <rect width="330" height="285" rx="12" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect width="330" height="38" rx="12" fill="url(#debtPillar)" />
+    <rect y="26" width="330" height="12" fill="url(#debtPillar)" />
+    <text x="165" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      अत्यधिक कर्ज (High Debt / Overleveraged)
+    </text>
+
+    <!-- Metrics -->
+    <text x="20" y="65" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FCA5A5">
+      🔴 निश्चित लागत (Fixed Commitment):
+    </text>
+    <text x="20" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      कमाई हो या न हो, ब्याज देना अनिवार्य।
+    </text>
+
+    <text x="20" y="120" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FCA5A5">
+      🔴 मंदी में असर (Downside Risk):
+    </text>
+    <text x="20" y="140" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      रेवेन्यू गिरते ही दिवालियापन (Insolvency / Default) का भीषण खतरा।
+    </text>
+
+    <text x="20" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FCA5A5">
+      🟢 तेज़ी में असर (Upside Leverage):
+    </text>
+    <text x="20" y="195" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      शेयरधारकों का रिटर्न बहुत तेजी से बढ़ता है क्योंकि ब्याज दर तय होती है।
+    </text>
+
+    <rect x="20" y="225" width="290" height="42" rx="6" fill="#450A0A" stroke="#EF4444" stroke-width="1" />
+    <text x="165" y="250" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#FCA5A5">
+      कमजोर कैश फ्लो वाली कंपनियों के लिए घातक!
+    </text>
+  </g>
+
+  <!-- CARD 2: OPTIMAL BALANCED MIX (D/E ~ 0.5 - 1.0) -->
+  <g transform="translate(435, 95)" filter="url(#boxShadow)">
+    <rect width="330" height="285" rx="12" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5" />
+    <rect width="330" height="38" rx="12" fill="url(#balancePillar)" />
+    <rect y="26" width="330" height="12" fill="url(#balancePillar)" />
+    <text x="165" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      संतुलित मॉडल (Balanced Mix)
+    </text>
+
+    <!-- Metrics -->
+    <text x="20" y="65" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#93C5FD">
+      🔵 पूंजी की लागत (Optimal Cost of Capital):
+    </text>
+    <text x="20" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      सस्ते कर्ज का लाभ + इक्विटी का सुरक्षा कवच (Safety Net)।
+    </text>
+
+    <text x="20" y="120" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#93C5FD">
+      🔵 ब्याज कवरेज (Interest Coverage):
+    </text>
+    <text x="20" y="140" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      कमाया गया ऑपरेटिंग प्रॉफिट ब्याज से 4-5 गुना अधिक रहता है।
+    </text>
+
+    <text x="20" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#93C5FD">
+      🔵 शेयरधारक मूल्य (Shareholder Value):
+    </text>
+    <text x="20" y="195" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      कंपनी स्थिर गति से बिना अस्तित्व खोए बढ़ती रहती है।
+    </text>
+
+    <rect x="20" y="225" width="290" height="42" rx="6" fill="#172554" stroke="#3B82F6" stroke-width="1" />
+    <text x="165" y="250" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#93C5FD">
+      उद्योग मानक: नियंत्रित रिस्क और कुशल विकास
+    </text>
+  </g>
+
+  <!-- CARD 3: 100% PURE EQUITY (ZERO DEBT) -->
+  <g transform="translate(810, 95)" filter="url(#boxShadow)">
+    <rect width="330" height="285" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect width="330" height="38" rx="12" fill="url(#equityPillar)" />
+    <rect y="26" width="330" height="12" fill="url(#equityPillar)" />
+    <text x="165" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      ऋण-मुक्त (Zero Debt / Pure Equity)
+    </text>
+
+    <!-- Metrics -->
+    <text x="20" y="65" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#A7F3D0">
+      🟢 शून्य दिवालिया जोखिम (Zero Default Risk):
+    </text>
+    <text x="20" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      कोई बैंक लेनदार नहीं, कोई अनिवार्य EMI नहीं।
+    </text>
+
+    <text x="20" y="120" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#A7F3D0">
+      🟢 आर्थिक मंदी में मजबूती (Recession Proof):
+    </text>
+    <text x="20" y="140" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      कमाई शून्य होने पर भी कंपनी कानूनी रूप से बंद नहीं हो सकती।
+    </text>
+
+    <text x="20" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#A7F3D0">
+      🟡 डाइल्यूशन की लागत (High Dilution Cost):
+    </text>
+    <text x="20" y="195" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E2E8F0">
+      सस्ते कर्ज के स्थान पर हमेशा इक्विटी बेचनी पड़ती है।
+    </text>
+
+    <rect x="20" y="225" width="290" height="42" rx="6" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+    <text x="165" y="250" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#6EE7B7">
+      अत्यधिक सुरक्षित, लंबी अवधि के निवेशकों की पसंद
+    </text>
+  </g>
+</svg>
