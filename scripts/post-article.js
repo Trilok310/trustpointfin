@@ -395,18 +395,21 @@ Detailed answer to second FAQ
       }
 
       // Enforce absolute wall-clock timeout
-      const result = await Promise.race([
+      const resultText = await Promise.race([
           primaryModel.generateContent(articlePrompt),
-          new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout: Gemini API request exceeded budget.")), remainingBudget))
+          new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout: AI API request exceeded budget.")), remainingBudget))
       ]);
 
       console.log("[AI RESPONSE] HTTP status: 200 (Success)");
-      articleText = result.response.text();
+      articleText = resultText;
       success = true;
       break; // break retry loop
     } catch (error) {
       let safeMessage = error.stack || error.message || String(error);
-      if (apiKey) safeMessage = safeMessage.split(apiKey).join("[REDACTED_API_KEY]");
+      const k1 = process.env.OPENAI_API_KEY;
+      const k2 = process.env.GEMINI_API_KEY;
+      if (k1) safeMessage = safeMessage.split(k1).join("[REDACTED_API_KEY]");
+      if (k2) safeMessage = safeMessage.split(k2).join("[REDACTED_API_KEY]");
       
       lastErrorClass = classifyError(safeMessage);
       if (safeMessage.includes("Timeout:") || safeMessage.includes("Hard wall-clock budget")) {
@@ -427,16 +430,19 @@ Detailed answer to second FAQ
         if (nextBudget <= 0) {
             console.log("[WARNING] Not enough time budget left for retry. Deferring.");
             currentState = "DEFERRED";
-            exitSafely(1, "Gemini provider temporarily unavailable (Budget exhausted)");
+            exitSafely(1, "AI provider temporarily unavailable (Budget exhausted)");
         }
 
         console.log(`[RETRY] Waiting ${Math.round(delayMs / 1000)}s before next attempt...`);
-        await new Promise(res => setTimeout(res, delayMs));
-      } else if (isTransient && i === maxRetries - 1) {
-        currentState = "DEFERRED";
-        exitSafely(1, "Gemini provider temporarily unavailable (Max attempts exhausted)");
+        await new Promise(resolve => setTimeout(resolve, delayMs));
       } else {
-        exitSafely(1, `Permanent error encountered: ${lastErrorClass}. Pipeline halted.`);
+        if (isTransient) {
+            currentState = "DEFERRED";
+            console.log("\n❌ AI provider temporarily unavailable (Max attempts exhausted)");
+            exitSafely(1, "AI provider temporarily unavailable");
+        } else {
+            exitSafely(1, `Permanent error encountered: ${lastErrorClass}. Pipeline halted.`);
+        }
       }
     }
   }
