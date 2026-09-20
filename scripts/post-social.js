@@ -75,11 +75,11 @@ async function main() {
 
     const socialMdContent = fs.readFileSync(SOCIAL_MD, 'utf-8');
     
-    const igMatch = socialMdContent.match(/## 📸 Instagram Caption\n\n([\s\S]*?)\n\n---/);
-    const fbMatch = socialMdContent.match(/## 👥 Facebook Post\n\n([\s\S]*?)\n\n---/);
+    const captionMatch = socialMdContent.match(/## 📝 Caption\n\n([\s\S]*?)\n\n---/);
+    const captionText = captionMatch ? captionMatch[1].trim() : "New Insights from TrustPointFin!";
     
-    const igCaption = igMatch ? igMatch[1].trim() : "New Insights from TrustPointFin!";
-    const fbCaption = fbMatch ? fbMatch[1].trim() : "Check out our latest insights.";
+    const igCaption = captionText;
+    const fbCaption = captionText;
 
     console.log("Found", slideFiles.length, "slides to publish.");
 
