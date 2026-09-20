@@ -324,13 +324,14 @@ STRUCTURE & FORMATTING (CRITICAL):
 
 BEGINNER EDUCATION:
 - Explain what it means, show practical interpretation, and mention limitations/caveats.
-- For formulas (like Rule of 72), explain it, give a numerical example, and state clearly that it is an approximation, not a guaranteed outcome.
-- Do NOT invent statistics or historical returns.
+- SEPARATE ASSUMPTIONS: For every numerical example, make it clear if it is a formula, an assumption, an illustration, or an actual outcome.
+- RULE OF 72: NEVER present it as exact. Avoid "सटीक जवाब" or "exact answer". You MUST use "≈" and words like "एक आसान अनुमान" or "लगभग कितने साल". Format it like: "72 ÷ annual return (%) ≈ approximate doubling time".
+- HYPOTHETICAL RETURNS: Never present them as expected or guaranteed. DO NOT write "Equity Fund (12%): 72 ÷ 12 = 6 साल". Instead, explicitly label it: "यदि annual return 12% मानें: 72 ÷ 12 ≈ 6 साल" or "Illustrative 12% annual return". Add "Actual returns vary." Do not imply equity predictably delivers 12%.
+- INFLATION: Avoid absolute/sensational wording like "महंगाई आपके पैसे को आधा कर रही है". Prefer "महंगाई आपकी Purchasing Power घटाती है" and "6% inflation पर purchasing power लगभग 12 साल में आधी हो सकती है".
 
 FINANCIAL SAFETY & COMPLIANCE:
-- NEVER make guaranteed-return claims.
-- Banned phrases: "guaranteed return", "sure-shot", "निश्चित लाभ", "पक्का profit", "risk-free return".
-- When discussing estimates, explicitly distinguish approximation from actual outcomes (e.g., "यह actual return की guarantee नहीं देता").
+- NEVER generate guaranteed-return claims, "sure-shot", "risk-free return", "निश्चित लाभ", "पक्का profit", or exact future-return claims.
+- However, legitimate educational negations like "यह actual return की guarantee नहीं देता" MUST be used to teach beginners about market risks.
 
 SEO & MISC:
 - Include a strong SEO meta description (max 160 chars).

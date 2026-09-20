@@ -20,14 +20,49 @@ async function validateSocialContent(content) {
 
     // 1. DETERMINISTIC COMPLIANCE CHECKS
     const contentLower = content.toLowerCase();
+
+    // Strip legitimate educational negations before checking banned phrases
+    const safeContent = contentLower
+        .replace(/actual return की guarantee नहीं/g, '')
+        .replace(/no guarantee/g, '')
+        .replace(/not guaranteed/g, '')
+        .replace(/without guarantee/g, '')
+        .replace(/guarantee नहीं/g, '')
+        .replace(/guaranteed नहीं/g, '')
+        .replace(/does not guarantee/g, '');
+
     const bannedPhrases = [
-        "100% profit", "guaranteed", "sure shot", "eliminate risk", "will definitely go up", 
-        "cannot lose", "zero risk", "risk-free"
+        "100% profit", "guaranteed", "guarantee", "sure shot", "eliminate risk", "will definitely go up", 
+        "cannot lose", "zero risk", "risk-free", "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
     ];
     
     for (const phrase of bannedPhrases) {
-        if (contentLower.includes(phrase)) {
+        if (safeContent.includes(phrase)) {
             return { valid: false, reason: `DETERMINISTIC COMPLIANCE FAILURE: Found banned absolute claim ("${phrase}").` };
+        }
+    }
+
+    // Rule of 72 Approximation Check
+    if (contentLower.includes("rule of 72") || contentLower.includes("72 ÷") || contentLower.includes("72 /")) {
+        const hasApprox = contentLower.includes("≈") || contentLower.includes("approx") || contentLower.includes("लगभग") || contentLower.includes("अनुमान");
+        if (!hasApprox) {
+             return { valid: false, reason: "COMPLIANCE FAILURE: Rule of 72 or formula is not described as approximate (missing ≈ or लगभग)." };
+        }
+    }
+
+    // Hypothetical Return/Inflation Check
+    if (contentLower.includes("inflation") || contentLower.includes("महंगाई")) {
+        if (contentLower.includes("पैसे को आधा कर रही है") || contentLower.includes("half your money")) {
+             return { valid: false, reason: "COMPLIANCE FAILURE: Inflation described with sensational/absolute language." };
+        }
+    }
+    
+    // Check for clearly labelled hypothetical returns (if equity returns mentioned without labeling)
+    // To keep it simple deterministically: if it mentions specific high returns, ensure it has illustrative words
+    if (contentLower.match(/\b(1[0-9]|2[0-9])\s*%\s*(return|cagr)/)) {
+        const hasLabel = contentLower.includes("hypothetical") || contentLower.includes("illustrative") || contentLower.includes("मानें") || contentLower.includes("यदि") || contentLower.includes("example") || contentLower.includes("उदाहरण");
+        if (!hasLabel) {
+             return { valid: false, reason: "COMPLIANCE FAILURE: Numerical return assumption without 'hypothetical/illustrative' labeling." };
         }
     }
     

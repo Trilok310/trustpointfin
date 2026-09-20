@@ -4,7 +4,7 @@
     "@google/generative-ai": "^0.1.1"
   },
   "scripts": {
-    "test": "node tests/state-machine.test.js",
+    "test": "node tests/state-machine.test.js && node tests/compliance.test.js",
     "build": "echo \"No build steps defined yet\" && exit 0"
   }
 }
