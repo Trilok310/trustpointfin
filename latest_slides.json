@@ -1,45 +1,68 @@
 {
-  "topic": "Rule of 72 & Compounding",
-  "teaching_objective": "Teach the concept of compounding through visual metaphors.",
-  "format": "METAPHOR",
-  "visual_style": "Hand-drawn educational",
+  "topic": "The Rule of 72: आपका पैसा कितने समय में Double होगा?",
+  "teaching_objective": "Explain the practical mental math of Rule of 72 to estimate money doubling time across different asset classes and the hidden impact of inflation.",
+  "format": "CALCULATION",
   "slides": [
     {
-      "headline": "दोगुना पैसा कब होगा?",
-      "core_explanation": "क्या आप जानते हैं कि आपका पैसा कब double होगा? 'Rule of 72' नाम का एक जादुई formula है जो आपको तुरंत बता सकता है।",
+      "slide_number": 1,
+      "purpose": "context",
+      "headline": "पैसा 2x कब होगा? जानिए 5 सेकंड का सीक्रेट!",
+      "core_explanation": "• हर निवेशक का पहला सवाल: मेरा पैसा डबल कब होगा?\n• किसी भारी कैलकुलेटर या एक्सेल शीट की जरूरत नहीं।\n• 'Rule of 72' देता है पलक झपकते ही सटीक जवाब।",
       "visual_spec": {
-        "visual_concept": "A glowing 72 with gold coins"
+        "visual_concept": "An inquisitive young Indian professional looking at a small sprouting sapling that mirrors a larger, lush twin tree in the reflection of a calm water pond.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A curious young professional observing a golden sprouting plant in rich soil that casts a reflection into a tranquil lake showing two fully grown, bountiful fruit trees. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
       },
-      "annotation": "Swipe to see the math!",
-      "cta": null
+      "annotation": "Mental Math का सबसे आसान नियम",
+      "cta": "Swipe Next ➔"
     },
     {
-      "headline": "Patience is Key",
-      "core_explanation": "Compounding एक पेड़ की तरह है। जब आप बीज बोते हैं, तो कुछ नहीं दिखता। लेकिन सालों बाद, यह एक विशाल पेड़ बन जाता है।",
+      "slide_number": 2,
+      "purpose": "concept",
+      "headline": "The Formula: 72 ÷ Interest Rate = साल",
+      "core_explanation": "• 72 को अपने सालाना रिटर्न (CAGR%) से भाग दें।\n• नतीजा बताएगा कि पूंजी दोगुनी होने में कितने साल लगेंगे।\n• Example: 72 ÷ Expected Return Rate = Doubling Time.",
       "visual_spec": {
-        "visual_concept": "Young man confused by a seedling, giant tree in background"
+        "visual_concept": "A vintage mechanical balance scale in a sunlit wooden study room; on one side sits a glowing golden orb of wealth, balanced by neat hourglasses representing time.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. An elegant brass balance scale placed upon a clean wooden desk near a sunlit window. One pan holds a glowing golden seed and the other pan holds clean, glass sand timers. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
       },
-      "annotation": "Don't dig up the seed to see if it's growing.",
-      "cta": null
+      "annotation": "Simple Division, Big Clarity",
+      "cta": "See Comparison"
     },
     {
-      "headline": "FD vs Mutual Funds",
-      "core_explanation": "FD आपको safe but slow returns (Snail) देती है। Mutual Funds risk के साथ fast returns (Rocket) देते हैं।",
+      "slide_number": 3,
+      "purpose": "comparison",
+      "headline": "FD vs Mutual Funds: जमीन-आसमान का अंतर",
+      "core_explanation": "• Bank FD (6%): 72 ÷ 6 = 12 साल लगेंगे डबल होने में।\n• Equity Fund (12%): 72 ÷ 12 = सिर्फ 6 साल में डबल!\n• Return दोगुना होने पर समय आधा हो जाता है।",
       "visual_spec": {
-        "visual_concept": "Snail with bank vault shell vs Rocket with stock graph"
+        "visual_concept": "Two parallel winding garden paths side-by-side; one path has steady tortoise-paced growth, while the other shows vibrant fast-blooming blossoms reaching full height.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A split landscape depicting two garden pathways side-by-side. The left path has small, slowly growing green hedges, while the right path features vigorous, tall blooming sunflowers and lush fruit canopies glowing in morning light. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
       },
-      "annotation": "Inflation eats slow money.",
-      "cta": null
+      "annotation": "Power of Compounding",
+      "cta": "Watch Out ➔"
     },
     {
-      "headline": "The Final Harvest",
-      "core_explanation": "जो लोग 15-20 साल तक SIP चलाते हैं, वो अंत में compounding का असली मज़ा लेते हैं। Time makes money.",
+      "slide_number": 4,
+      "purpose": "risk",
+      "headline": "The Dark Side: महंगाई आपके पैसे को आधा कर रही है!",
+      "core_explanation": "• Rule of 72 महंगाई (Inflation) पर भी लागू होता है।\n• 6% Inflation दर पर आपकी Purchasing Power 12 साल में आधी!\n• सिर्फ Savings Account में रखा पैसा असल में घट रहा है।",
       "visual_spec": {
-        "visual_concept": "Older wealthy man watering a money tree"
+        "visual_concept": "A coin block or block of ice gently melting away under warm desert sunlight while a shadowy cloud consumes purchasing value.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A metaphorical concept showing a neat stack of golden clay coins slowly eroding and dissolving into mist under a gentle, hazy sunbeam, representing the quiet erosion of value over time. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
       },
-      "annotation": "",
-      "cta": "Save this post to stay motivated!"
+      "annotation": "Inflation = Silent Thief",
+      "cta": "Take Action ➔"
+    },
+    {
+      "slide_number": 5,
+      "purpose": "action",
+      "headline": "Wealth Create करने का Golden Rule",
+      "core_explanation": "• हमेशा Inflation-beating एसेट्स (Equities, Mutual Funds) चुनें।\n• जितनी जल्दी शुरू करेंगे, उतनी बार पैसा 2x, 4x, 8x होगा।\n• Smart वित्तीय समझ के लिए TrustPointFin से जुड़ें।",
+      "visual_spec": {
+        "visual_concept": "A confident person resting comfortably under the shade of an expansive, healthy orchard, enjoying the shade and picking fresh ripe fruit.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A relaxed investor sitting under a majestic, lush canopy of an ancient shade tree with abundant ripe fruit, looking outward toward a horizon of calm rolling hills bathed in warm golden twilight. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+      },
+      "annotation": "Invest Early & Stay Invested",
+      "cta": "Visit TrustPointFin.org"
     }
   ],
-  "caption": "The secret to wealth is patience and time! 🌱🌳"
+  "caption": "क्या आप जानते हैं कि आपका पैसा वास्तव में कितने सालों में दोगुना होगा? 📈\n\n'Rule of 72' पर्सनल फाइनेंस का सबसे आसान और जादुई नियम है:\n72 ÷ Return Rate = समय (साल)\n\n👉 6% FD में: 12 साल\n👉 12% Equity/SIP में: 6 साल\n\nलेकिन याद रखें, यही नियम 6% की दर से आपकी क्रय शक्ति (Purchasing Power) को भी 12 साल में आधा कर देता है! इसलिए सही जगह निवेश करना जरूरी है।\n\nवित्तीय साक्षरता और स्मार्ट इन्वेस्टिंग के लिए विजिट करें: TrustPointFin.org\n\n#RuleOf72 #PersonalFinance #InvestingTips #TrustPointFin #Compounding #FinancialEducation #MutualFundsSahiHai #SmartMoney"
 }
