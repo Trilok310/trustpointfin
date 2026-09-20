@@ -22,22 +22,77 @@ let currentState = "INITIALIZING";
 let attempts = 0;
 let lastErrorClass = "NONE";
 
+// --- AI PROVIDER ABSTRACTION ---
+class TextGenerationProvider {
+    async generateContent(prompt) { throw new Error("Not implemented"); }
+    get providerName() { return "UNKNOWN"; }
+    get modelName() { return "UNKNOWN"; }
+}
+
+class GeminiTextProvider extends TextGenerationProvider {
+    constructor(apiKey, modelName) {
+        super();
+        this.genAI = new GoogleGenerativeAI(apiKey);
+        this.model = this.genAI.getGenerativeModel({ model: modelName });
+        this._modelName = modelName;
+    }
+    async generateContent(prompt) {
+        const result = await this.model.generateContent(prompt);
+        return result.response.text();
+    }
+    get providerName() { return "gemini_paid"; }
+    get modelName() { return this._modelName; }
+}
+
+class OpenAITextProvider extends TextGenerationProvider {
+    constructor(apiKey, modelName) {
+        super();
+        this.apiKey = apiKey;
+        this._modelName = modelName;
+    }
+    async generateContent(prompt) {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${this.apiKey}`
+            },
+            body: JSON.stringify({
+                model: this._modelName,
+                messages: [{ role: "user", content: prompt }]
+            })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+            throw new Error(`OpenAI API Error (HTTP ${response.status}): ${data.error?.message || JSON.stringify(data)}`);
+        }
+        if (!data.choices || data.choices.length === 0) {
+            throw new Error("OpenAI returned no text choices.");
+        }
+        return data.choices[0].message.content;
+    }
+    get providerName() { return "openai"; }
+    get modelName() { return this._modelName; }
+}
+
+let aiProvider = null; // Global for ledger access
+
 function printLedger(finalResult) {
     console.log("\n======================================");
     console.log("[PIPELINE FINAL RESULT]");
     if (currentState === "DEFERRED") {
         console.log(`Status: DEFERRED`);
-        console.log(`Reason: Gemini provider temporarily unavailable`);
+        console.log(`Reason: AI provider temporarily unavailable`);
         console.log(`Publication: NOT PUBLISHED`);
         console.log(`Topic state: NOT ADVANCED`);
-        console.log(`Model: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
+        console.log(`Model: ${aiProvider ? aiProvider.modelName : "UNKNOWN"}`);
     } else {
         console.log(`RUN ID: ${runId}`);
         console.log(`TOPIC: ${currentTopic}`);
         console.log(`EXPECTED SLUG: ${expectedSlug}`);
         console.log(`FINAL STATE: ${currentState}`);
-        console.log(`AI PROVIDER: gemini_paid`);
-        console.log(`AI MODEL: ${process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash"}`);
+        console.log(`AI PROVIDER: ${aiProvider ? aiProvider.providerName : "UNKNOWN"}`);
+        console.log(`AI MODEL: ${aiProvider ? aiProvider.modelName : "UNKNOWN"}`);
         console.log(`ATTEMPTS: ${attempts}`);
         console.log(`LAST ERROR: ${lastErrorClass}`);
         console.log(`RESULT: ${finalResult}`);
@@ -136,12 +191,12 @@ function updateSitemapAtomic(slug) {
 
 function classifyError(safeMessage) {
     const msg = safeMessage.toLowerCase();
-    if (msg.includes("429")) return "TRANSIENT_429";
-    if (msg.includes("503") || msg.includes("500") || msg.includes("overloaded") || msg.includes("high demand")) return "TRANSIENT_503";
+    if (msg.includes("429") || msg.includes("too many requests")) return "TRANSIENT_429";
+    if (msg.includes("503") || msg.includes("500") || msg.includes("502") || msg.includes("504") || msg.includes("overloaded") || msg.includes("high demand") || msg.includes("server error")) return "TRANSIENT_SERVER";
     if (msg.includes("fetch failed") || msg.includes("network") || msg.includes("timeout") || msg.includes("econnreset")) return "TRANSIENT_NETWORK";
     
     if (msg.includes("400")) return "PERMANENT_BAD_REQUEST";
-    if (msg.includes("401") || msg.includes("403")) return "PERMANENT_AUTH";
+    if (msg.includes("401") || msg.includes("403") || msg.includes("invalid_api_key")) return "PERMANENT_AUTH";
     if (msg.includes("404")) return "PERMANENT_NOT_FOUND";
     
     return "UNKNOWN";
@@ -150,11 +205,7 @@ function classifyError(safeMessage) {
 async function main() {
   // 1. STATE: SELECTED
   currentState = "SELECTED";
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-      lastErrorClass = "PERMANENT_AUTH";
-      exitSafely(1, "GEMINI_API_KEY is not set!");
-  }
+
 
   const result = getNextTopic();
   if (!result) exitSafely(0, "All topics in the content calendar are complete!");
@@ -221,13 +272,34 @@ async function main() {
 
   // 3. STATE: GENERATING
   currentState = "GENERATING";
-  const paidModelName = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const primaryModel = genAI.getGenerativeModel({ model: paidModelName });
+  
+  const providerType = (process.env.AI_TEXT_PROVIDER || "openai").toLowerCase();
+
+  let paidModelName;
+  if (providerType === "openai") {
+      const apiKeyToUse = process.env.OPENAI_API_KEY;
+      if (!apiKeyToUse) {
+          lastErrorClass = "PERMANENT_AUTH";
+          exitSafely(1, "OPENAI_API_KEY is not set!");
+      }
+      const model = process.env.OPENAI_TEXT_MODEL || "gpt-5.6-luna";
+      aiProvider = new OpenAITextProvider(apiKeyToUse, model);
+      paidModelName = model;
+  } else {
+      const apiKeyToUse = process.env.GEMINI_API_KEY;
+      if (!apiKeyToUse) {
+          lastErrorClass = "PERMANENT_AUTH";
+          exitSafely(1, "GEMINI_API_KEY is not set!");
+      }
+      const model = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
+      aiProvider = new GeminiTextProvider(apiKeyToUse, model);
+      paidModelName = model;
+  }
+  const primaryModel = aiProvider;
 
   console.log("\n[AI CONFIG]");
-  console.log("Provider: gemini_paid");
-  console.log(`Model: ${paidModelName}`);
+  console.log(`Provider: ${aiProvider.providerName}`);
+  console.log(`Model: ${aiProvider.modelName}`);
 
   const now = new Date();
   const dateStr = now.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });

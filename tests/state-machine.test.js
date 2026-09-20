@@ -41,9 +41,9 @@ console.log("🧪 Starting State Machine Tests...\n");
 
 // Scenario D (Missing API Key / Auth failure)
 resetEnv();
-let out = runScript({ GEMINI_API_KEY: "" });
-assert(out.includes("GEMINI_API_KEY is not set"), "Should fail on missing API key");
-assert(out.includes("FINAL STATE: SELECTED"), "State should be SELECTED");
+let out = runScript({ OPENAI_API_KEY: "", AI_TEXT_PROVIDER: "openai" });
+assert(out.includes("OPENAI_API_KEY is not set"), "Should fail on missing API key");
+assert(out.includes("FINAL STATE: GENERATING"), "State should be GENERATING");
 assert(out.includes("LAST ERROR: PERMANENT_AUTH"), "Error should be PERMANENT_AUTH");
 console.log("✅ Scenario D (Auth Failure) passed.");
 
@@ -51,7 +51,7 @@ console.log("✅ Scenario D (Auth Failure) passed.");
 resetEnv();
 const partialHtml = "<html><body><h1>Oops... crashed";
 fs.writeFileSync(path.join(ROOT, "test-topic-a.html"), partialHtml, "utf-8");
-out = runScript({ GEMINI_API_KEY: "dummy_key" }); 
+out = runScript({ OPENAI_API_KEY: "dummy_key", AI_TEXT_PROVIDER: "openai" }); 
 if (fs.existsSync(path.join(ROOT, "test-topic-a.html"))) {
     console.error("Test Failed! Script output was:\n" + out);
 }
@@ -63,7 +63,7 @@ console.log("✅ Scenario I (Partial HTML handling) passed.");
 resetEnv();
 const completeHtml = "<html><title>Test Title | TrustPointFin Insights</title><body><h1>Done</h1></body></html>";
 fs.writeFileSync(path.join(ROOT, "test-topic-a.html"), completeHtml, "utf-8");
-out = runScript({ GEMINI_API_KEY: "dummy_key" });
+out = runScript({ OPENAI_API_KEY: "dummy_key", AI_TEXT_PROVIDER: "openai" });
 assert(out.includes("[RECOVERY] Found complete test-topic-a.html"), "Should detect complete file");
 assert(fs.existsSync(path.join(ROOT, ".pending_article.json")), "Should generate pending state");
 const state = JSON.parse(fs.readFileSync(path.join(ROOT, ".pending_article.json"), "utf-8"));
@@ -76,7 +76,7 @@ resetEnv();
 fs.mkdirSync(STAGING_DIR);
 fs.writeFileSync(path.join(STAGING_DIR, "test-topic-a.tmp.html"), completeHtml, "utf-8");
 fs.writeFileSync(path.join(STAGING_DIR, ".pending_article.json"), JSON.stringify({ staged: true, topic: "Test Topic A", filename: "test-topic-a.html" }), "utf-8");
-out = runScript({ GEMINI_API_KEY: "dummy_key" });
+out = runScript({ OPENAI_API_KEY: "dummy_key", AI_TEXT_PROVIDER: "openai" });
 assert(out.includes("[RECOVERY] Found complete test-topic-a.tmp.html in .staging cache"), "Should detect staging cache");
 assert(fs.existsSync(path.join(ROOT, "test-topic-a.html")), "Should move file to root");
 assert(fs.existsSync(path.join(ROOT, ".pending_article.json")), "Should move pending state to root");
