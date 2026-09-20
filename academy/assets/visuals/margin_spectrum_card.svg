@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="specDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#0A0E1A" />
+    </linearGradient>
+    <linearGradient id="specCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#131D31" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="1100" height="320" rx="16" fill="url(#specDark)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="550" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    उद्योगों में लाभ मार्जिन का स्पेक्ट्रम (Net Profit Margin Spectrum)
+  </text>
+  <text x="550" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" text-anchor="middle" fill="#94A3B8">
+    प्रत्येक ₹100 की बिक्री पर कंपनी की जेब में कितना बचता है? (काल्पनिक शैक्षणिक तुलना)
+  </text>
+
+  <!-- Pillar 1: Thin Margin / High Volume (e.g. Retail Grocery) -->
+  <g transform="translate(45, 85)" filter="url(#cardShadow)">
+    <rect width="310" height="200" rx="12" fill="url(#specCard)" stroke="#F59E0B" stroke-width="1.8" />
+    <rect width="310" height="32" rx="12" fill="#D97706" />
+    <rect y="20" width="310" height="12" fill="#D97706" />
+    <text x="155" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      🛒 THIN MARGIN (कम मार्जिन, भारी बिक्री)
+    </text>
+    <text x="155" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#FBBF24">2% – 5%</text>
+    <text x="155" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#CBD5E1">किराना, सुपरमार्केट व रिटेल</text>
+    <line x1="20" y1="106" x2="290" y2="106" stroke="#334155" stroke-width="1" />
+    <text x="155" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" text-anchor="middle" fill="#94A3B8">
+      ₹100 की बिक्री पर मात्र ₹2 से ₹5 बचते हैं।
+    </text>
+    <text x="155" y="152" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#CBD5E1">
+      कमाई का रहस्य: <tspan fill="#FBBF24" font-weight="700">भारी मात्रा (Huge Volume)</tspan>
+    </text>
+    <rect x="25" y="165" width="260" height="22" rx="4" fill="rgba(245, 158, 11, 0.12)" />
+    <text x="155" y="180" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#FDE68A">
+      थोड़ा भी खर्च बढ़ा तो कंपनी घाटे में जा सकती है।
+    </text>
+  </g>
+
+  <!-- Pillar 2: Moderate Margin (Manufacturing / Auto) -->
+  <g transform="translate(395, 85)" filter="url(#cardShadow)">
+    <rect width="310" height="200" rx="12" fill="url(#specCard)" stroke="#38BDF8" stroke-width="1.8" />
+    <rect width="310" height="32" rx="12" fill="#0284C7" />
+    <rect y="20" width="310" height="12" fill="#0284C7" />
+    <text x="155" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      🏭 MODERATE MARGIN (मध्यम मार्जिन)
+    </text>
+    <text x="155" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#38BDF8">8% – 14%</text>
+    <text x="155" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#CBD5E1">ऑटोमोबाइल्स व विनिर्माण</text>
+    <line x1="20" y1="106" x2="290" y2="106" stroke="#334155" stroke-width="1" />
+    <text x="155" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" text-anchor="middle" fill="#94A3B8">
+      ₹100 की बिक्री पर ₹8 से ₹14 बचते हैं।
+    </text>
+    <text x="155" y="152" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#CBD5E1">
+      कच्चे माल (स्टील, रबर) के भाव पर निर्भरता।
+    </text>
+    <rect x="25" y="165" width="260" height="22" rx="4" fill="rgba(56, 189, 248, 0.12)" />
+    <text x="155" y="180" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#BAE6FD">
+      संतुलित पूंजी व स्थिर कैश फ्लो की मांग।
+    </text>
+  </g>
+
+  <!-- Pillar 3: High Margin (Software / IT / Specialty) -->
+  <g transform="translate(745, 85)" filter="url(#cardShadow)">
+    <rect width="310" height="200" rx="12" fill="url(#specCard)" stroke="#10B981" stroke-width="2" />
+    <rect width="310" height="32" rx="12" fill="#059669" />
+    <rect y="20" width="310" height="12" fill="#059669" />
+    <text x="155" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      💻 HIGH MARGIN (उच्च मार्जिन / बौद्धिक संपदा)
+    </text>
+    <text x="155" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#10B981">20% – 30%+</text>
+    <text x="155" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#CBD5E1">सॉफ्टवेयर, IT सर्विसेज व फार्मा</text>
+    <line x1="20" y1="106" x2="290" y2="106" stroke="#334155" stroke-width="1" />
+    <text x="155" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" text-anchor="middle" fill="#94A3B8">
+      ₹100 की बिक्री पर ₹20 से ₹30+ शुद्ध बचते हैं।
+    </text>
+    <text x="155" y="152" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" fill="#CBD5E1">
+      कच्चे माल का खर्च नगण्य; मुख्य खर्च कुशल प्रतिभा।
+    </text>
+    <rect x="25" y="165" width="260" height="22" rx="4" fill="rgba(16, 185, 129, 0.15)" />
+    <text x="155" y="180" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#A7F3D0">
+      मजबूत सुरक्षा कवच (Moat) और उच्च नकदी।
+    </text>
+  </g>
+</svg>

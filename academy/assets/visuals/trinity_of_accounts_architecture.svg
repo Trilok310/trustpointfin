@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#1E3A8A" stroke-width="1.5" rx="8"/>
+
+  <!-- Header -->
+  <rect x="25" y="18" width="160" height="22" rx="11" fill="#1E3A8A" fill-opacity="0.6"/>
+  <text x="35" y="33" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">LESSON 11 • TRINITY</text>
+  
+  <text x="25" y="62" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800">The Trinity of Accounts: Bank, Trading & Demat Flow</text>
+  <text x="25" y="80" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">नकदी का घर, ऑर्डर का प्लेटफॉर्म, और शेयरों की डिजिटल तिजोरी की संपूर्ण पाइपलाइन</text>
+
+  <!-- Content Graphic -->
+  <g transform="translate(0, 35)">
+    
+    <!-- Card 1 -->
+    <rect x="25" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="25" y="70" width="235" height="35" rx="8" fill="#0052FF" fill-opacity="0.2"/>
+    <text x="40" y="93" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">1. BANK ACCOUNT</text>
+    <text x="40" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">नकदी का भंडार (INR Funds)</text>
+    <foreignObject x="38" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        • RBI-विनियमित बैंक खाता<br/>• आपके भारतीय रुपये केवल यहीं रहते हैं<br/>• ट्रेडिंग खाते में फंड ट्रांसफर का स्रोत<br/>• डिविडेंड की नकदी सीधे यहीं जमा होती है
+      </div>
+    </foreignObject>
+
+    <!-- Card 2 -->
+    <rect x="282" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#FBBF24" stroke-width="1.5"/>
+    <rect x="282" y="70" width="235" height="35" rx="8" fill="#D97706" fill-opacity="0.2"/>
+    <text x="297" y="93" fill="#FBBF24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">2. TRADING ACCOUNT</text>
+    <text x="297" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">ऑर्डर निष्पादन इंटरफेस</text>
+    <foreignObject x="295" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        • स्टॉक ब्रोकर का सॉफ्टवेयर प्लेटफॉर्म<br/>• केवल खरीद/बिक्री के निर्देश भेजने का पुल<br/>• कोई शेयर इसमें कभी नहीं रखे जाते<br/>• केवल मार्जिन और लेन-देन का लेजर
+      </div>
+    </foreignObject>
+
+    <!-- Card 3 -->
+    <rect x="540" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#34D399" stroke-width="1.5"/>
+    <rect x="540" y="70" width="235" height="35" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="555" y="93" fill="#34D399" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">3. DEMAT ACCOUNT</text>
+    <text x="555" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">शेयरों का इलेक्ट्रॉनिक लॉकर</text>
+    <foreignObject x="553" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        • NSDL / CDSL के पास सुरक्षित खाता<br/>• केवल शेयर्स, ईटीएफ और बांड्स रखे जाते हैं<br/>• इसमें ₹0 नकद रुपया रहता है<br/>• आपकी कानूनी संपत्ति का सुरक्षित प्रमाण
+      </div>
+    </foreignObject>
+  
+  </g>
+
+  <!-- Footer Watermark -->
+  <line x1="25" y1="422" x2="775" y2="422" stroke="#1E293B" stroke-width="1"/>
+  <text x="25" y="437" fill="#64748B" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5">TrustPoint Finance Academy • Architectural Educational Series • Verified Benchmark</text>
+  <text x="775" y="437" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="end" font-weight="600">SEBI / Regulatory Compliant</text>
+</svg>

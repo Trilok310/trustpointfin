@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#1E3A8A" stroke-width="1.5" rx="8"/>
+
+  <!-- Header -->
+  <rect x="25" y="18" width="160" height="22" rx="11" fill="#1E3A8A" fill-opacity="0.6"/>
+  <text x="35" y="33" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">LESSON 14 • SLIPPAGE</text>
+  
+  <text x="25" y="62" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800">Slippage Risk in Illiquid Stocks & Fast Markets</text>
+  <text x="25" y="80" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">मार्केट ऑर्डर की गुप्त लागत: स्क्रीन पर दिखे भाव और वास्तविक सौदे का अंतर</text>
+
+  <!-- Content Graphic -->
+  <g transform="translate(0, 35)">
+    
+    <!-- Card 1 -->
+    <rect x="25" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="25" y="70" width="235" height="35" rx="8" fill="#0052FF" fill-opacity="0.2"/>
+    <text x="40" y="93" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">EXPECTED LTP</text>
+    <text x="40" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">स्क्रीन पर दिखा अंतिम भाव</text>
+    <foreignObject x="38" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        ट्रेडर ने स्क्रीन पर ₹100 का भाव देखकर 1,000 शेयर का मार्केट ऑर्डर लगाया। उसे लगा कि कुल ₹1,00,000 खर्च होंगे।
+      </div>
+    </foreignObject>
+
+    <!-- Card 2 -->
+    <rect x="282" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#EF4444" stroke-width="1.5"/>
+    <rect x="282" y="70" width="235" height="35" rx="8" fill="#DC2626" fill-opacity="0.2"/>
+    <text x="297" y="93" fill="#EF4444" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">ORDER BOOK DEPTH GAP</text>
+    <text x="297" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">विक्रेताओं की वास्तविक कीमतें</text>
+    <foreignObject x="295" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        200 शेयर मिले @ ₹100.00<br/>300 शेयर मिले @ ₹101.50<br/>500 शेयर मिले @ ₹103.00<br/><br/><b>वास्तविक औसत भाव = ₹101.95</b>
+      </div>
+    </foreignObject>
+
+    <!-- Card 3 -->
+    <rect x="540" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#FBBF24" stroke-width="1.5"/>
+    <rect x="540" y="70" width="235" height="35" rx="8" fill="#D97706" fill-opacity="0.2"/>
+    <text x="555" y="93" fill="#FBBF24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">HIDDEN SLIPPAGE LOSS</text>
+    <text x="555" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">बिना सोचे लगाया गया अतिरिक्त खर्च</text>
+    <foreignObject x="553" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        ट्रेडर को बिना किसी वजह के ₹1,950 का अतिरिक्त नुकसान हुआ। सबक: हमेशा पर्याप्त लिक्विडिटी वाले शेयरों में ही ट्रेड करें और लिमिट ऑर्डर्स को प्राथमिकता दें।
+      </div>
+    </foreignObject>
+  
+  </g>
+
+  <!-- Footer Watermark -->
+  <line x1="25" y1="422" x2="775" y2="422" stroke="#1E293B" stroke-width="1"/>
+  <text x="25" y="437" fill="#64748B" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5">TrustPoint Finance Academy • Architectural Educational Series • Verified Benchmark</text>
+  <text x="775" y="437" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="end" font-weight="600">SEBI / Regulatory Compliant</text>
+</svg>

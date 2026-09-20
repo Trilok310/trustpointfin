@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panelDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <linearGradient id="cardAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="boxShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="1100" height="380" rx="16" fill="url(#panelDark)" stroke="#1E3A8A" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="550" y="40" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+    Accounting Profit (किताबी लाभ) बनाम Cash Flow (वास्तविक नकदी प्रवाह)
+  </text>
+  <text x="550" y="66" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" fill="#94A3B8">
+    कंपनी बहीखातों में मुनाफे में दिख सकती है, फिर भी बैंक में नकदी खत्म होने से दिवालिया हो सकती है!
+  </text>
+
+  <!-- Left Side: Accounting Profit -->
+  <g transform="translate(50, 95)" filter="url(#boxShadow)">
+    <rect width="460" height="250" rx="14" fill="url(#cardAcc)" stroke="#38BDF8" stroke-width="1.8" />
+    <rect width="460" height="38" rx="14" fill="#0284C7" />
+    <rect y="24" width="460" height="14" fill="#0284C7" />
+    <text x="230" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      📄 ACCRUAL ACCOUNTING (किताबी मुनाफा)
+    </text>
+
+    <!-- Point 1 -->
+    <text x="25" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#38BDF8">
+      1. बिल बनते ही Revenue दर्ज (Sales on Credit):
+    </text>
+    <text x="25" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      कंपनी ने ₹10 लाख का सामान 90 दिन के उधार पर बेचा। P&amp;L खाते में ₹10 लाख Revenue जुड़ गया।
+    </text>
+
+    <!-- Point 2 -->
+    <text x="25" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#38BDF8">
+      2. कागजों पर शुद्ध लाभ (Net Profit on Paper):
+    </text>
+    <text x="25" y="147" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      लागत ₹7 लाख घटाकर P&amp;L में <tspan fill="#34D399" font-weight="700">₹3 लाख का Net Profit</tspan> दिखाई देता है।
+    </text>
+
+    <!-- Danger Box -->
+    <rect x="25" y="170" width="410" height="55" rx="8" fill="rgba(239, 68, 68, 0.12)" stroke="#EF4444" stroke-width="1" />
+    <text x="40" y="193" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FCA5A5">
+      ⚠️ चेतावनी: बैंक खाते में वास्तविक नकदी ₹0 है!
+    </text>
+    <text x="40" y="212" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#F87171">
+      ग्राहक से 90 दिनों तक पैसा नहीं मिलेगा, लेकिन कर्मचारियों को कल ही वेतन देना है।
+    </text>
+  </g>
+
+  <!-- Center VS Badge -->
+  <circle cx="550" cy="220" r="26" fill="#0F172A" stroke="#FBBF24" stroke-width="2.5" />
+  <text x="550" y="227" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" text-anchor="middle" fill="#FBBF24">VS</text>
+
+  <!-- Right Side: Real Cash Flow -->
+  <g transform="translate(590, 95)" filter="url(#boxShadow)">
+    <rect width="460" height="250" rx="14" fill="url(#cardAcc)" stroke="#10B981" stroke-width="1.8" />
+    <rect width="460" height="38" rx="14" fill="#059669" />
+    <rect y="24" width="460" height="14" fill="#059669" />
+    <text x="230" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+      💵 CASH FLOW (वास्तविक नकदी प्रवाह)
+    </text>
+
+    <!-- Point 1 -->
+    <text x="25" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#34D399">
+      1. नकदी आने पर ही बैंक बैलेंस बढ़ता है:
+    </text>
+    <text x="25" y="92" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      जब ग्राहक चेक जमा करता है या UPI/RTGS से भुगतान करता है, तभी कंपनी के बैंक में पैसा आता है।
+    </text>
+
+    <!-- Point 2 -->
+    <text x="25" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#34D399">
+      2. वास्तविक खर्चे नकदी से चुकता होते हैं:
+    </text>
+    <text x="25" y="147" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">
+      किराया, कच्चा माल और बिजली का बिल किताबी लाभ से नहीं, केवल हार्ड कैश से चुकाया जा सकता है।
+    </text>
+
+    <!-- Success Box -->
+    <rect x="25" y="170" width="410" height="55" rx="8" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1" />
+    <text x="40" y="193" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#6EE7B7">
+      ✨ गोल्डन रूल: "Profit is Vanity, Cash is Sanity"
+    </text>
+    <text x="40" y="212" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#A7F3D0">
+      कंपनी वही स्वस्थ मानी जाती है जो मुनाफे को समय पर वास्तविक बैंक नकदी (Operating Cash) में बदल सके।
+    </text>
+  </g>
+</svg>

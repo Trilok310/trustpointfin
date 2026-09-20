@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#1E3A8A" stroke-width="1.5" rx="8"/>
+
+  <!-- Header -->
+  <rect x="25" y="18" width="160" height="22" rx="11" fill="#1E3A8A" fill-opacity="0.6"/>
+  <text x="35" y="33" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">LESSON 05 • MECHANICS</text>
+  
+  <text x="25" y="62" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800">Continuous Double Auction: Order Book Mechanics</text>
+  <text x="25" y="80" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">एक्सचेंज की इलेक्ट्रॉनिक ऑर्डर बुक: बिड (खरीदार) और आस्क (विक्रेता) का मिलान</text>
+
+  <!-- Content Graphic -->
+  <g transform="translate(0, 35)">
+    
+    <!-- Card 1 -->
+    <rect x="25" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#34D399" stroke-width="1.5"/>
+    <rect x="25" y="70" width="235" height="35" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="40" y="93" fill="#34D399" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">BUY ORDERS (Bids)</text>
+    <text x="40" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">खरीदारों की कतार (उच्चतम से निम्नतम)</text>
+    <foreignObject x="38" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        <b>Bid Qty &nbsp;|&nbsp; Bid Price</b><br/>500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp; ₹499.50<br/>1,200 &nbsp;&nbsp;|&nbsp; ₹499.00<br/>3,000 &nbsp;&nbsp;|&nbsp; ₹498.50<br/><br/>खरीदार कम से कम भाव पर खरीदना चाहते हैं। आक्रामक खरीदार आस्क पर तुरंत खरीदते हैं।
+      </div>
+    </foreignObject>
+
+    <!-- Card 2 -->
+    <rect x="282" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="282" y="70" width="235" height="35" rx="8" fill="#0052FF" fill-opacity="0.2"/>
+    <text x="297" y="93" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">LTP MATCHING ENGINE</text>
+    <text x="297" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">Last Traded Price (अंतिम भाव)</text>
+    <foreignObject x="295" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        <div style="text-align:center; padding:15px 0;"><span style="font-size:20px; color:#38BDF8; font-weight:800;">₹500.00</span><br/><span style="color:#34D399; font-size:11px;">MATCHED EXECUTION</span></div>जब उच्चतम Bid और न्यूनतम Ask मिलते हैं, तो सौदा पक्का होता है। स्क्रीन का भाव यही होता है।
+      </div>
+    </foreignObject>
+
+    <!-- Card 3 -->
+    <rect x="540" y="70" width="235" height="295" rx="8" fill="url(#cardGrad)" stroke="#EF4444" stroke-width="1.5"/>
+    <rect x="540" y="70" width="235" height="35" rx="8" fill="#DC2626" fill-opacity="0.2"/>
+    <text x="555" y="93" fill="#EF4444" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">SELL ORDERS (Asks)</text>
+    <text x="555" y="130" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">विक्रेताओं की कतार (निम्नतम से उच्चतम)</text>
+    <foreignObject x="553" y="145" width="210" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#94A3B8; font-family:'Segoe UI', sans-serif; font-size:10.5px; line-height:1.5;">
+        <b>Ask Price &nbsp;|&nbsp; Ask Qty</b><br/>₹500.00 &nbsp;|&nbsp; 800<br/>₹500.50 &nbsp;|&nbsp; 1,500<br/>₹501.00 &nbsp;|&nbsp; 4,000<br/><br/>विक्रेता अधिकतम भाव चाहते हैं। पैनिक में विक्रेता तुरंत बिड पर बेचते हैं जिससे भाव गिरता है।
+      </div>
+    </foreignObject>
+  
+  </g>
+
+  <!-- Footer Watermark -->
+  <line x1="25" y1="422" x2="775" y2="422" stroke="#1E293B" stroke-width="1"/>
+  <text x="25" y="437" fill="#64748B" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5">TrustPoint Finance Academy • Architectural Educational Series • Verified Benchmark</text>
+  <text x="775" y="437" fill="#38BDF8" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="end" font-weight="600">SEBI / Regulatory Compliant</text>
+</svg>
