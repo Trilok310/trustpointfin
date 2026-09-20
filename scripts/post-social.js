@@ -61,7 +61,7 @@ async function main() {
     }
 
     const slideFiles = fs.readdirSync(SLIDES_DIR)
-        .filter(f => f.endsWith('.jpg'))
+        .filter(f => f.startsWith('final_slide_') && f.endsWith('.jpg'))
         .sort((a, b) => {
             const numA = parseInt(a.replace(/\D/g, ''));
             const numB = parseInt(b.replace(/\D/g, ''));
