@@ -191,7 +191,7 @@ function updateSitemapAtomic(slug) {
 
 function classifyError(safeMessage) {
     const msg = safeMessage.toLowerCase();
-    if (msg.includes("429") || msg.includes("too many requests")) return "TRANSIENT_429";
+    if (msg.includes(" 429") || msg.includes("too many requests")) return "TRANSIENT_429";
     if (msg.includes("503") || msg.includes("500") || msg.includes("502") || msg.includes("504") || msg.includes("overloaded") || msg.includes("high demand") || msg.includes("server error")) return "TRANSIENT_SERVER";
     if (msg.includes("fetch failed") || msg.includes("network") || msg.includes("timeout") || msg.includes("econnreset")) return "TRANSIENT_NETWORK";
     
@@ -306,22 +306,45 @@ async function main() {
 
   const articlePrompt = `You are a senior financial analyst and content writer for TrustPointFin, an Indian financial advisory and Demat account referral platform. 
 
-Write a detailed, GEO-optimized financial insights article about the following topic: "${currentTopic}"
+Write a detailed, high-quality financial insights article about: "${currentTopic}"
 
-The article should:
-  - Be highly relevant to Indian retail investors in ${now.getFullYear()}
-  - Include real data, statistics, and actionable insights
-  - Have a strong SEO meta description (max 160 chars)
-  - Include a Key Takeaways section (3-5 bullet points)
-  - Have 3-4 main sections with H2 headings. Under each heading, use short educational statements.
-  - Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL)
-  - Mention Angel One only when contextually relevant.
-  - Do not promise returns, manufacture statistics, or make absolute claims.
-  - CRITICAL: Do not use LaTeX (e.g., \\frac), MathJax, or complex markdown math formatting. Write formulas simply as plain text.
-  
-  After the article content, you MUST end with:
-  ---END---, you MUST generate a JSON array of 3 to 10 slides that will be automatically turned into an Instagram/Facebook carousel post.
-  CRITICAL: The slides content MUST be written in actual Hindi (Devanagari script) mixed with English words. KEEP all common financial terms in pure English (Latin script) like "Invest", "Market", "Profit", "Loss", "Compounding", "Equity". DO NOT translate financial terms into Hindi.
+TARGET AUDIENCE & LANGUAGE (CRITICAL):
+- Audience: Hindi-speaking Indian beginners.
+- Language: Natural conversational Hindi/Hinglish throughout the ENTIRE MAIN BODY (not just slides).
+- Use Devanagari Hindi naturally for explanations (e.g. "Stock market में निवेश करने से पहले...").
+- Keep standard financial terms in English (e.g., Stock, Market, Return, Interest, Inflation, Investment, Debt, Equity, CAGR, Rule of 72). Do NOT translate these awkwardly.
+- The tone should feel like a knowledgeable Indian educator speaking naturally. Avoid pure English walls of text.
+
+STRUCTURE & FORMATTING (CRITICAL):
+- Write for HIGH INFORMATION VALUE + HIGH SCANNABILITY. 
+- AVOID "walls of text". Prefer 1-3 sentences per paragraph maximum.
+- Break explanations down using bullet points (<ul>), numbered steps (<ol>), and comparison tables (<table>) where useful.
+- Use simple examples. For numerical concepts, show the calculation clearly.
+- Preferred flow per concept: Concept -> Simple Example -> Calculation -> Interpretation -> Takeaway.
+
+BEGINNER EDUCATION:
+- Explain what it means, show practical interpretation, and mention limitations/caveats.
+- For formulas (like Rule of 72), explain it, give a numerical example, and state clearly that it is an approximation, not a guaranteed outcome.
+- Do NOT invent statistics or historical returns.
+
+FINANCIAL SAFETY & COMPLIANCE:
+- NEVER make guaranteed-return claims.
+- Banned phrases: "guaranteed return", "sure-shot", "निश्चित लाभ", "पक्का profit", "risk-free return".
+- When discussing estimates, explicitly distinguish approximation from actual outcomes (e.g., "यह actual return की guarantee नहीं देता").
+
+SEO & MISC:
+- Include a strong SEO meta description (max 160 chars).
+- Include one impressive statistic in a callout box (format: STAT_NUMBER|STAT_LABEL).
+- Mention Angel One only when contextually relevant.
+- CRITICAL: Do not use LaTeX or MathJax. Write formulas simply as plain text.
+
+QUALITY TARGETS:
+- Your response MUST target Content: 9+/10, Accuracy: 9+/10, Visual suitability: 9+/10, Readability: 9+/10.
+
+CAROUSEL SLIDES:
+- After the article content, you MUST end with a JSON array of 3 to 10 slides for Instagram/Facebook.
+- CRITICAL: The slides content MUST be written in actual Hindi (Devanagari script) mixed with English words. Keep common financial terms in pure English.
+
 Follow this exact JSON structure for the slides:
 [
   {
@@ -363,7 +386,11 @@ One sentence summary for the article card (max 120 chars)
 150M+|Active Demat Accounts in India
 ---BODY---
 <h2>Section 1 Title</h2>
-<p>Paragraph content...</p>
+<p>Short conversational Hinglish paragraph here...</p>
+<ul>
+  <li><strong>Bullet Point:</strong> Explanation...</li>
+</ul>
+<table>...</table>
 ---FAQ1Q---
 First frequently asked question
 ---FAQ1A---
@@ -399,10 +426,19 @@ Detailed answer to second FAQ
       }
 
       // Enforce absolute wall-clock timeout
-      const resultText = await Promise.race([
-          primaryModel.generateContent(articlePrompt),
-          new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout: AI API request exceeded budget.")), remainingBudget))
-      ]);
+      let timeoutId;
+      const timeoutPromise = new Promise((_, reject) => {
+          timeoutId = setTimeout(() => reject(new Error("Timeout: AI API request exceeded budget.")), remainingBudget);
+      });
+      let resultText;
+      try {
+          resultText = await Promise.race([
+              primaryModel.generateContent(articlePrompt),
+              timeoutPromise
+          ]);
+      } finally {
+          clearTimeout(timeoutId);
+      }
 
       console.log("[AI RESPONSE] HTTP status: 200 (Success)");
       articleText = resultText;
