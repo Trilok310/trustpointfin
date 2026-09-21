@@ -4,6 +4,7 @@
 // Server-Authoritative Candidate Authentication, Quiz Grading, Progression & Route Protection
 
 const http   = require('node:http');
+const https  = require('node:https');
 const fs     = require('node:fs');
 const path   = require('node:path');
 const url    = require('node:url');
@@ -378,53 +379,101 @@ function getAuthoritativeCandidateState(candidateId) {
   };
 }
 
-// ── OTP Provider Abstraction (Prepared for Production SMS Gateway) ──
+// ── OTP Provider Abstraction (Fast2SMS Production Adapter) ──
 class OtpProvider {
   static async sendOtp(mobile, otp) {
     const isProd = process.env.NODE_ENV === 'production';
     const provider = (process.env.SMS_PROVIDER || '').toLowerCase();
 
-    // 1. Staging / Non-Production / Mock mode: log to server stdout
+    // 1. Non-Production / Staging / Mock mode:
+    // If not in production, or if no provider / mock / console is configured:
+    // Retain mock OTP behavior for staging QA and automated testing.
     if (!isProd || !provider || provider === 'mock' || provider === 'console') {
-      console.log(`[OTP DISPATCH] (${isProd ? 'PRODUCTION MOCK' : 'STAGING'} Mode) Destination: +91 ${mobile} | Code: ${otp} (Valid 10 min)`);
-      return { success: true, mode: isProd ? 'production-mock' : 'staging-mock' };
+      console.log(`[OTP DISPATCH] (STAGING Mode) Destination: +91 ${mobile} | Code: ${otp} (Valid 10 min)`);
+      return { success: true, mode: 'staging-mock' };
     }
 
-    // 2. Production Gateway Architecture (Configured via Environment Variables)
-    const apiKey = process.env.SMS_API_KEY;
-    const senderId = process.env.SMS_SENDER_ID;
-    const templateId = process.env.SMS_TEMPLATE_ID;
+    // 2. Production Fast2SMS Adapter
+    if (provider === 'fast2sms') {
+      const apiKey = process.env.SMS_API_KEY;
+      const senderId = process.env.SMS_SENDER_ID;
+      const templateId = process.env.SMS_TEMPLATE_ID;
 
-    if (!apiKey) {
-      console.error(`[OTP ERROR] Production SMS provider '${provider}' configured but SMS_API_KEY is missing.`);
-      return { success: false, error: 'SMS gateway authentication missing.' };
-    }
-
-    try {
-      if (provider === 'fast2sms') {
-        // Fast2SMS API integration template (Prepared)
-        console.log(`[OTP DISPATCH] Fast2SMS gateway ready for +91 ${mobile} (Sender: ${senderId || 'Default'})`);
-        return { success: true, provider: 'fast2sms' };
-      } else if (provider === 'twilio') {
-        // Twilio API integration template (Prepared)
-        console.log(`[OTP DISPATCH] Twilio gateway ready for +91 ${mobile} (From: ${senderId || 'Default'})`);
-        return { success: true, provider: 'twilio' };
-      } else if (provider === 'msg91') {
-        // MSG91 API integration template (Prepared)
-        console.log(`[OTP DISPATCH] MSG91 gateway ready for +91 ${mobile} (Sender: ${senderId || 'Default'})`);
-        return { success: true, provider: 'msg91' };
-      } else if (provider === 'webhook' && process.env.SMS_ENDPOINT_URL) {
-        // Custom HTTPS webhook (Prepared)
-        console.log(`[OTP DISPATCH] Custom webhook ready for +91 ${mobile}`);
-        return { success: true, provider: 'webhook' };
-      } else {
-        console.warn(`[OTP WARNING] Unrecognized SMS_PROVIDER '${provider}'. Falling back to log-only.`);
-        return { success: true, mode: 'unrecognized-fallback' };
+      if (!apiKey || !senderId || !templateId) {
+        console.error('[OTP ERROR] Fast2SMS dispatch aborted: Missing required SMS_API_KEY, SMS_SENDER_ID, or SMS_TEMPLATE_ID.');
+        return { success: false, error: 'SMS gateway configuration incomplete.' };
       }
-    } catch (err) {
-      console.error('[OTP ERROR] Gateway dispatch failed:', err.message);
-      return { success: false, error: err.message };
+
+      // Security: Mask mobile number for production logs (e.g. +91 98******10)
+      const maskedMobile = (typeof mobile === 'string' && mobile.length === 10)
+        ? `${mobile.substring(0, 2)}******${mobile.substring(8)}`
+        : '**********';
+      console.log(`[OTP DISPATCH] Fast2SMS request initiated for destination +91 ${maskedMobile}`);
+
+      const postPayload = JSON.stringify({
+        route: 'dlt',
+        sender_id: senderId,
+        message: templateId,
+        variables_values: String(otp),
+        numbers: String(mobile),
+        flash: 0
+      });
+
+      return new Promise((resolve) => {
+        const reqOpts = {
+          hostname: 'www.fast2sms.com',
+          path: '/dev/bulkV2',
+          method: 'POST',
+          timeout: 8000,
+          headers: {
+            'authorization': apiKey,
+            'Content-Type': 'application/json',
+            'Content-Length': Buffer.byteLength(postPayload)
+          }
+        };
+
+        const clientReq = https.request(reqOpts, (clientRes) => {
+          let rawData = '';
+          clientRes.on('data', (chunk) => { rawData += chunk; });
+          clientRes.on('end', () => {
+            try {
+              const resJson = JSON.parse(rawData);
+              if (clientRes.statusCode === 200 && resJson && resJson.return === true) {
+                console.log(`[OTP DISPATCH] Fast2SMS dispatch succeeded (Request ID: ${resJson.request_id || 'OK'})`);
+                resolve({ success: true, provider: 'fast2sms', requestId: resJson.request_id });
+              } else {
+                const errMsg = resJson && resJson.message
+                  ? (Array.isArray(resJson.message) ? resJson.message.join(', ') : String(resJson.message))
+                  : `Gateway returned status ${clientRes.statusCode}`;
+                console.error(`[OTP ERROR] Fast2SMS gateway rejection: ${errMsg}`);
+                resolve({ success: false, error: errMsg });
+              }
+            } catch (parseErr) {
+              console.error('[OTP ERROR] Fast2SMS response parsing failed (malformed JSON).');
+              resolve({ success: false, error: 'Malformed response from SMS provider.' });
+            }
+          });
+        });
+
+        clientReq.on('timeout', () => {
+          clientReq.destroy();
+          console.error('[OTP ERROR] Fast2SMS gateway request timed out (8s limit).');
+          resolve({ success: false, error: 'SMS provider request timed out.' });
+        });
+
+        clientReq.on('error', (netErr) => {
+          console.error(`[OTP ERROR] Fast2SMS network error: ${netErr.message}`);
+          resolve({ success: false, error: 'Network communication failure with SMS provider.' });
+        });
+
+        clientReq.write(postPayload);
+        clientReq.end();
+      });
     }
+
+    // 3. Fallback for unrecognized provider in production
+    console.error(`[OTP ERROR] Unsupported SMS_PROVIDER '${provider}' in production environment.`);
+    return { success: false, error: `Unsupported SMS provider '${provider}'.` };
   }
 }
 
@@ -597,12 +646,20 @@ const server = http.createServer(async (req, res) => {
       const otp = String(crypto.randomInt(100000, 999999));
 
       // Insert OTP record (valid 10 minutes)
-      db.prepare(`
+      const insertResult = db.prepare(`
         INSERT INTO candidate_otps (mobile, otp, attempts, expires_at, verified)
         VALUES (?, ?, 0, datetime('now', '+10 minutes'), 0)
       `).run(cleanMobile, otp);
 
-      await OtpProvider.sendOtp(cleanMobile, otp);
+      const dispatchResult = await OtpProvider.sendOtp(cleanMobile, otp);
+      if (!dispatchResult || !dispatchResult.success) {
+        // Rollback unverified OTP record if provider dispatch failed
+        db.prepare('DELETE FROM candidate_otps WHERE id = ?').run(insertResult.lastInsertRowid);
+        return sendJson(res, 502, {
+          success: false,
+          error: dispatchResult && dispatchResult.error ? dispatchResult.error : 'Failed to dispatch OTP SMS. Please try again later.'
+        }, {}, req);
+      }
 
       const responsePayload = {
         success: true,

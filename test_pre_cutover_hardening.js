@@ -6,6 +6,7 @@
 // 4. SMS OTP Provider Environment Configuration & Staging OTP Suppression
 
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
@@ -199,13 +200,31 @@ async function runTests() {
   const mockResult = await OtpProvider.sendOtp('9876543210', '123456');
   assert(mockResult.success === true && mockResult.mode === 'staging-mock', 'OtpProvider mock mode operates in staging');
 
-  // Prepared gateway interface test (without external network call)
+  // Fast2SMS production adapter mock test
+  const origHttpsReq = https.request;
+  https.request = function (opts, cb) {
+    const mockRes = new (require('events').EventEmitter)();
+    mockRes.statusCode = 200;
+    const reqMock = new (require('events').EventEmitter)();
+    reqMock.write = function () {};
+    reqMock.end = function () {
+      process.nextTick(() => {
+        cb(mockRes);
+        mockRes.emit('data', JSON.stringify({ return: true, request_id: 'req_123' }));
+        mockRes.emit('end');
+      });
+    };
+    return reqMock;
+  };
+
   process.env.NODE_ENV = 'production';
   process.env.SMS_PROVIDER = 'fast2sms';
   process.env.SMS_API_KEY = 'test_key_placeholder';
   process.env.SMS_SENDER_ID = 'TRSTPT';
+  process.env.SMS_TEMPLATE_ID = '110716...';
   const fast2smsResult = await OtpProvider.sendOtp('9876543210', '654321');
-  assert(fast2smsResult.success === true && fast2smsResult.provider === 'fast2sms', 'OtpProvider handles Fast2SMS prepared hook');
+  assert(fast2smsResult.success === true && fast2smsResult.provider === 'fast2sms', 'OtpProvider handles Fast2SMS dispatch');
+  https.request = origHttpsReq;
 
   stagingServer.kill();
 
