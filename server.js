@@ -88,7 +88,54 @@ db.exec(`
     submitted_answers TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
+
+  CREATE TABLE IF NOT EXISTS advisors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    status TEXT DEFAULT 'active',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
+
+  CREATE TABLE IF NOT EXISTS advisor_sessions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    advisor_id INTEGER NOT NULL,
+    token TEXT UNIQUE NOT NULL,
+    expires_at DATETIME NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (advisor_id) REFERENCES advisors(id)
+  );
 `);
+
+// Password hashing utilities using Node.js built-in crypto (scrypt)
+function hashPassword(password) {
+  const salt = crypto.randomBytes(16).toString('hex');
+  const derivedKey = crypto.scryptSync(password, salt, 64);
+  return `${salt}:${derivedKey.toString('hex')}`;
+}
+
+function verifyPassword(password, storedHash) {
+  if (!storedHash || !storedHash.includes(':')) return false;
+  const [salt, key] = storedHash.split(':');
+  const derivedKey = crypto.scryptSync(password, salt, 64);
+  const keyBuffer = Buffer.from(key, 'hex');
+  if (keyBuffer.length !== derivedKey.length) return false;
+  return crypto.timingSafeEqual(keyBuffer, derivedKey);
+}
+
+// Provision initial staging advisor account if not present
+const defaultAdvisorUser = process.env.STAGING_ADVISOR_USERNAME || 'advisor_staging';
+const defaultAdvisorPass = process.env.STAGING_ADVISOR_PASSWORD || 'StagingAdvisor2026!Sec';
+const existingAdvisor = db.prepare('SELECT id FROM advisors WHERE username = ?').get(defaultAdvisorUser);
+if (!existingAdvisor) {
+  const hash = hashPassword(defaultAdvisorPass);
+  db.prepare(`
+    INSERT INTO advisors (username, password_hash, status)
+    VALUES (?, ?, 'active')
+  `).run(defaultAdvisorUser, hash);
+  console.log(`[ADVISOR] Initialized secure staging advisor account: '${defaultAdvisorUser}'`);
+}
 
 // Pre-populate default leads if empty
 const leadCountRow = db.prepare('SELECT COUNT(*) AS count FROM leads').get();
@@ -310,6 +357,34 @@ function getAuthenticatedCandidate(req) {
     }
   } catch (e) {
     console.error('[AUTH ERROR] Session verification failed:', e.message);
+  }
+  return null;
+}
+
+function getAuthenticatedAdvisor(req) {
+  try {
+    const cookies = parseCookies(req);
+    let token = cookies['tpf_advisor_session'];
+    if (!token && req.headers['authorization']) {
+      const authHeader = req.headers['authorization'];
+      if (authHeader.startsWith('Bearer ')) {
+        token = authHeader.substring(7).trim();
+      }
+    }
+    if (!token) return null;
+
+    const row = db.prepare(`
+      SELECT a.id, a.username, a.status, s.token, s.expires_at
+      FROM advisor_sessions s
+      JOIN advisors a ON a.id = s.advisor_id
+      WHERE s.token = ? AND a.status = 'active' AND datetime(s.expires_at) > datetime('now')
+    `).get(token);
+
+    if (row) {
+      return { id: row.id, username: row.username, status: row.status };
+    }
+  } catch (e) {
+    console.error('[ADVISOR AUTH ERROR] Session verification failed:', e.message);
   }
   return null;
 }
@@ -537,6 +612,94 @@ const server = http.createServer(async (req, res) => {
   }
 
   // ══════════════════════════════════════════════════════════════════════════
+  // ADVISOR AUTHENTICATION ROUTES (Institutional Wealth Terminal)
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // 1. GET /advisor/login
+  if (method === 'GET' && pathname === '/advisor/login') {
+    const advisor = getAuthenticatedAdvisor(req);
+    if (advisor) {
+      res.writeHead(302, { 'Location': '/dashboard/' });
+      return res.end();
+    }
+    const loginPath = path.join(__dirname, 'advisor', 'login.html');
+    if (fs.existsSync(loginPath)) {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      return fs.createReadStream(loginPath).pipe(res);
+    }
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    return res.end('Advisor Login Page Not Found');
+  }
+
+  // 2. POST /api/advisor/login
+  if (method === 'POST' && pathname === '/api/advisor/login') {
+    try {
+      const body = await parseBody(req);
+      const username = String(body.username || '').trim();
+      const password = String(body.password || '');
+
+      if (!username || !password) {
+        return sendJson(res, 400, { success: false, error: 'Advisor username and password are required.' }, {}, req);
+      }
+
+      const advisor = db.prepare('SELECT * FROM advisors WHERE username = ? AND status = ?').get(username, 'active');
+      if (!advisor || !verifyPassword(password, advisor.password_hash)) {
+        return sendJson(res, 401, { success: false, error: 'Invalid advisor credentials.' }, {}, req);
+      }
+
+      // Generate 256-bit cryptographically secure session token
+      const sessionToken = crypto.randomBytes(32).toString('hex');
+      db.prepare(`
+        INSERT INTO advisor_sessions (advisor_id, token, expires_at)
+        VALUES (?, ?, datetime('now', '+24 hours'))
+      `).run(advisor.id, sessionToken);
+
+      const isHttps = (req.headers && req.headers['x-forwarded-proto'] === 'https') || (req.socket && req.socket.encrypted);
+      const secureFlag = isHttps ? '; Secure' : '';
+      const cookieVal = `tpf_advisor_session=${sessionToken}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400${secureFlag}`;
+
+      return sendJson(res, 200, {
+        success: true,
+        message: 'Advisor authentication successful.',
+        advisor: { id: advisor.id, username: advisor.username },
+        token: sessionToken
+      }, { 'Set-Cookie': cookieVal }, req);
+    } catch (e) {
+      return sendJson(res, 500, { success: false, error: e.message }, {}, req);
+    }
+  }
+
+  // 3. GET /api/advisor/me
+  if (method === 'GET' && pathname === '/api/advisor/me') {
+    const advisor = getAuthenticatedAdvisor(req);
+    if (advisor) {
+      return sendJson(res, 200, {
+        authenticated: true,
+        advisor: { id: advisor.id, username: advisor.username, status: advisor.status }
+      }, {}, req);
+    } else {
+      return sendJson(res, 200, { authenticated: false }, {}, req);
+    }
+  }
+
+  // 4. POST /api/advisor/logout
+  if (method === 'POST' && pathname === '/api/advisor/logout') {
+    try {
+      const cookies = parseCookies(req);
+      const token = cookies['tpf_advisor_session'];
+      if (token) {
+        db.prepare('DELETE FROM advisor_sessions WHERE token = ?').run(token);
+      }
+      const isHttps = (req.headers && req.headers['x-forwarded-proto'] === 'https') || (req.socket && req.socket.encrypted);
+      const secureFlag = isHttps ? '; Secure' : '';
+      const clearCookie = `tpf_advisor_session=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secureFlag}`;
+      return sendJson(res, 200, { success: true, message: 'Advisor logged out successfully.' }, { 'Set-Cookie': clearCookie }, req);
+    } catch (e) {
+      return sendJson(res, 500, { success: false, error: e.message }, {}, req);
+    }
+  }
+
+  // ══════════════════════════════════════════════════════════════════════════
   // ACADEMY API ROUTES (Server-Authoritative Progression & Content Gating)
   // ══════════════════════════════════════════════════════════════════════════
 
@@ -743,11 +906,25 @@ const server = http.createServer(async (req, res) => {
   }
 
   // ══════════════════════════════════════════════════════════════════════════
-  // EXISTING CRM ROUTES (Preserved 100%)
+  // ADVISOR CRM ROUTES (Strict Server-Side Authorization Enforced)
   // ══════════════════════════════════════════════════════════════════════════
 
-  // 1. Fetch all leads
+  // 1. Fetch all leads (Requires Advisor Session)
   if (method === 'GET' && pathname === '/api/leads') {
+    const candidate = getAuthenticatedCandidate(req);
+    if (candidate) {
+      return sendJson(res, 403, {
+        success: false,
+        error: 'Forbidden: Academy candidates are not authorized to access CRM pipelines.'
+      }, {}, req);
+    }
+    const advisor = getAuthenticatedAdvisor(req);
+    if (!advisor) {
+      return sendJson(res, 401, {
+        success: false,
+        error: 'Unauthorized: Advisor authentication required to view client records.'
+      }, {}, req);
+    }
     try {
       const list = db.prepare('SELECT * FROM leads ORDER BY id DESC').all();
       return sendJson(res, 200, { success: true, count: list.length, data: list }, {}, req);
@@ -756,8 +933,22 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
-  // 2. Insert new lead
+  // 2. Insert new lead (Requires Advisor Session)
   if (method === 'POST' && pathname === '/api/leads') {
+    const candidate = getAuthenticatedCandidate(req);
+    if (candidate) {
+      return sendJson(res, 403, {
+        success: false,
+        error: 'Forbidden: Academy candidates are not authorized to manage CRM leads.'
+      }, {}, req);
+    }
+    const advisor = getAuthenticatedAdvisor(req);
+    if (!advisor) {
+      return sendJson(res, 401, {
+        success: false,
+        error: 'Unauthorized: Advisor authentication required to add leads.'
+      }, {}, req);
+    }
     try {
       const body = await parseBody(req);
       const { name, contact } = body;
@@ -775,8 +966,22 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
-  // 3. Map client
+  // 3. Map client (Requires Advisor Session)
   if (method === 'POST' && pathname === '/api/leads/map') {
+    const candidate = getAuthenticatedCandidate(req);
+    if (candidate) {
+      return sendJson(res, 403, {
+        success: false,
+        error: 'Forbidden: Academy candidates are not authorized to map clients.'
+      }, {}, req);
+    }
+    const advisor = getAuthenticatedAdvisor(req);
+    if (!advisor) {
+      return sendJson(res, 401, {
+        success: false,
+        error: 'Unauthorized: Advisor authentication required to map client codes.'
+      }, {}, req);
+    }
     try {
       const body = await parseBody(req);
       const { id, angel_code, bse_ucc, status } = body;
@@ -802,6 +1007,7 @@ const server = http.createServer(async (req, res) => {
       status: 'online',
       brand: 'TrustPoint Finance',
       academySecurity: 'ACTIVE (Server-Authoritative V3.0)',
+      advisorSecurity: 'ACTIVE (Separate Advisor Session & Gating)',
       time: new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' }),
       database: 'SQLite (node:sqlite) Active'
     }, {}, req);
@@ -834,13 +1040,37 @@ const server = http.createServer(async (req, res) => {
     return res.end('404 Not Found (Academy)');
   }
 
-  // 2. Dashboard redirects & static assets (Internal Wealth Cockpit)
-  if (pathname === '/dashboard') {
-    res.writeHead(302, { 'Location': '/dashboard/' });
-    return res.end();
-  }
+  // 2. Dashboard redirects & static assets (Protected Institutional Cockpit)
+  if (pathname === '/dashboard' || pathname === '/dashboard/' || pathname.startsWith('/dashboard/')) {
+    // 1. Check if an authenticated Academy Candidate is attempting access -> 403 Forbidden
+    const candidate = getAuthenticatedCandidate(req);
+    if (candidate) {
+      return sendJson(res, 403, {
+        success: false,
+        error: 'Forbidden: Academy candidates are not authorized to access the Wealth Terminal.'
+      }, {}, req);
+    }
 
-  if (pathname.startsWith('/dashboard/')) {
+    // 2. Check if authenticated Advisor
+    const advisor = getAuthenticatedAdvisor(req);
+    if (!advisor) {
+      const acceptHeader = req.headers['accept'] || '';
+      if (acceptHeader.includes('text/html')) {
+        res.writeHead(302, { 'Location': '/advisor/login' });
+        return res.end();
+      }
+      return sendJson(res, 401, {
+        success: false,
+        error: 'Unauthorized: Advisor authentication required to access Wealth Terminal.'
+      }, {}, req);
+    }
+
+    // 3. Authorized Advisor -> Serve Dashboard
+    if (pathname === '/dashboard') {
+      res.writeHead(302, { 'Location': '/dashboard/' });
+      return res.end();
+    }
+
     const dashSub = pathname.replace(/^\/dashboard/, '');
     const dashFile = (dashSub === '' || dashSub === '/') ? 'index.html' : dashSub.replace(/^\//, '');
     const filePath = path.join(__dirname, 'dashboard', dashFile);

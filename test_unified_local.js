@@ -160,22 +160,33 @@ async function runTests() {
     assert(homeRes.rawBody.includes('t.me'), 'Telegram community CTA present');
     assert(homeRes.rawBody.includes('angelone.in') || homeRes.rawBody.includes('Angel One') || homeRes.rawBody.includes('ROHA4322'), 'Angel One partner CTA present');
 
-    // ── GROUP 5: Dashboard Terminal Routing ──
-    console.log('\n▶ [5/6] Verifying Relocated Wealth Terminal (/dashboard/)...');
-    const dashRedirect = await makeRequest('GET', '/dashboard');
-    assert(dashRedirect.statusCode === 302, 'GET /dashboard redirects (302) to /dashboard/');
-    assert(dashRedirect.headers['location'] === '/dashboard/', 'Redirect target is /dashboard/');
+    // ── GROUP 5: Dashboard Terminal Routing (Protected Advisor Cockpit) ──
+    console.log('\n▶ [5/6] Verifying Protected Wealth Terminal (/dashboard/)...');
+    const unauthDash = await makeRequest('GET', '/dashboard', { Accept: 'text/html' });
+    assert(unauthDash.statusCode === 302, 'Unauthenticated GET /dashboard redirects (302) to /advisor/login');
+    assert(unauthDash.headers['location'] === '/advisor/login', 'Redirect target is /advisor/login');
 
-    const dashRes = await makeRequest('GET', '/dashboard/');
-    assert(dashRes.statusCode === 200, 'GET /dashboard/ returns 200 OK');
+    // Authenticate as advisor
+    const advLogin = await makeRequest('POST', '/api/advisor/login', {}, {
+      username: 'advisor_staging',
+      password: 'StagingAdvisor2026!Sec'
+    });
+    assert(advLogin.statusCode === 200, 'Advisor login succeeds with 200');
+    const advCookie = Array.isArray(advLogin.headers['set-cookie']) 
+      ? advLogin.headers['set-cookie'].find(c => c.startsWith('tpf_advisor_session=')).split(';')[0]
+      : advLogin.headers['set-cookie'].split(';')[0];
+    const advHeaders = { Cookie: advCookie };
+
+    const dashRes = await makeRequest('GET', '/dashboard/', advHeaders);
+    assert(dashRes.statusCode === 200, 'Authorized advisor GET /dashboard/ returns 200 OK');
     assert(dashRes.headers['content-type'].includes('text/html'), 'GET /dashboard/ is text/html');
     assert(dashRes.rawBody.includes('Universal Wealth & Order Flow Terminal'), 'GET /dashboard/ contains Cockpit Terminal title');
 
-    const dashCss = await makeRequest('GET', '/dashboard/index.css');
+    const dashCss = await makeRequest('GET', '/dashboard/index.css', advHeaders);
     assert(dashCss.statusCode === 200, 'GET /dashboard/index.css returns 200 OK');
     assert(dashCss.headers['content-type'].includes('text/css'), 'GET /dashboard/index.css is text/css');
 
-    const dashJs = await makeRequest('GET', '/dashboard/index.js');
+    const dashJs = await makeRequest('GET', '/dashboard/index.js', advHeaders);
     assert(dashJs.statusCode === 200, 'GET /dashboard/index.js returns 200 OK');
     assert(dashJs.headers['content-type'].includes('javascript'), 'GET /dashboard/index.js is application/javascript');
 

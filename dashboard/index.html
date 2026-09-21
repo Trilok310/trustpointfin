@@ -35,6 +35,7 @@
         <span class="status-dot green"></span>
         <span class="status-text">BSE StAR / Angel One Live</span>
       </div>
+      <button class="btn btn-secondary btn-sm" id="btn-advisor-logout" style="margin-right: 8px;"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
       <button class="btn btn-primary btn-unlock-all"><i class="fa-solid fa-key"></i> Unlock Premium</button>
     </div>
   </header>
@@ -105,12 +106,8 @@
             <span class="badge">Live</span>
           </div>
           <div class="terminal-body" id="system-logs">
-            <div class="log-line"><span class="log-time">[14:31:02]</span> <span class="log-tag tag-system">[SYSTEM]</span> TrustPoint Terminal initializing...</div>
-            <div class="log-line"><span class="log-time">[14:31:03]</span> <span class="log-tag tag-system">[SYSTEM]</span> Standard credentials verified. Secure cookie instantiated.</div>
-            <div class="log-line"><span class="log-time">[14:31:04]</span> <span class="log-tag tag-bse">[BSE_StAR]</span> UCC endpoint live. Token expires in 4 hours 58 min.</div>
-            <div class="log-line"><span class="log-time">[14:31:05]</span> <span class="log-tag tag-angel">[ANGEL_ONE]</span> SmartAPI handshake successful. Latency: 14ms.</div>
-            <div class="log-line"><span class="log-time">[14:31:06]</span> <span class="log-tag tag-turtle">[TURTLEMINT]</span> POSP validation active. 14 insurers online.</div>
-            <div class="log-line"><span class="log-time">[14:35:00]</span> <span class="log-tag tag-system">[SYSTEM]</span> Ready to process client requests. Welcome back, advisor!</div>
+            <div class="log-line"><span class="log-time">[SYSTEM]</span> TrustPoint Wealth Terminal initialized.</div>
+            <div class="log-line"><span class="log-time">[SYSTEM]</span> Authenticated advisor session active.</div>
           </div>
         </div>
 
@@ -134,28 +131,7 @@
               </thead>
               <tbody id="crm-lead-body">
                 <tr>
-                  <td><strong>Rohan Sharma</strong></td>
-                  <td>+91 98765 43210</td>
-                  <td><span class="client-code">ROHA4322</span></td>
-                  <td><span class="client-code">UCC-90812</span></td>
-                  <td><span class="badge badge-success">Fully Mapped</span></td>
-                  <td><button class="btn btn-secondary btn-xs btn-view-analytics" data-client="Rohan Sharma"><i class="fa-solid fa-chart-simple"></i> Analytics</button></td>
-                </tr>
-                <tr>
-                  <td><strong>Priya Patel</strong></td>
-                  <td>+91 87654 32109</td>
-                  <td><span class="client-code">PRIY8901</span></td>
-                  <td><span class="badge badge-warning">UCC Pending</span></td>
-                  <td><span class="badge badge-info">Only F&O</span></td>
-                  <td><button class="btn btn-secondary btn-xs btn-view-analytics" data-client="Priya Patel"><i class="fa-solid fa-chart-simple"></i> Analytics</button></td>
-                </tr>
-                <tr>
-                  <td><strong>Amit Verma</strong></td>
-                  <td>+91 76543 21098</td>
-                  <td><span class="badge badge-danger">Not Mapped</span></td>
-                  <td><span class="badge badge-danger">Not Mapped</span></td>
-                  <td><span class="badge badge-danger">Locked</span></td>
-                  <td><button class="btn btn-primary btn-xs btn-trigger-lock"><i class="fa-solid fa-lock"></i> Map Client</button></td>
+                  <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 24px;">Connecting to authenticated CRM pipeline...</td>
                 </tr>
               </tbody>
             </table>
@@ -552,7 +528,7 @@
         <div class="manual-code-verification">
           <h4>Already opened an account? Map your client code directly:</h4>
           <div class="manual-form">
-            <input type="text" id="mapping-client-code" placeholder="Enter Angel One Code (e.g., ROHA4322) or PAN" class="form-control">
+            <input type="text" id="mapping-client-code" placeholder="Enter Angel One Client Code or PAN" class="form-control">
             <button class="btn btn-primary" id="btn-submit-mapping"><i class="fa-solid fa-circle-check"></i> Verify & Unlock</button>
           </div>
           <p id="mapping-error-message" class="red-text mt-10" style="display: none;"></p>

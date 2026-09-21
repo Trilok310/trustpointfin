@@ -7,12 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let ctx = chartCanvas.getContext('2d');
   let currentTargetLeadId = null; // Track which lead is being mapped/unlocked
 
-  // Local in-memory database fallback (Active when running locally via file:// without Node.js)
-  let localLeads = [
-    { id: 1, name: 'Rohan Sharma', contact: '+91 98765 43210', angel_code: 'ROHA4322', bse_ucc: 'UCC-90812', status: 'Fully Mapped' },
-    { id: 2, name: 'Priya Patel', contact: '+91 87654 32109', angel_code: 'PRIY8901', bse_ucc: null, status: 'Only F&O' },
-    { id: 3, name: 'Amit Verma', contact: '+91 76543 21098', angel_code: null, bse_ucc: null, status: 'Locked' }
-  ];
+  // Dynamic client leads store (populated strictly via authenticated advisor API)
+  let localLeads = [];
 
   // Helper logger to write to terminal
   function terminalLog(message, tag = 'SYSTEM') {
@@ -181,25 +177,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnAddLead = document.getElementById('btn-add-lead');
   const crmLeadBody = document.getElementById('crm-lead-body');
 
-  async function loadCRMLeads() {
-    // FALLBACK: If running locally as a file:/// index.html
-    if (window.location.protocol === 'file:') {
-      renderCRMLeadsTable(localLeads);
-      return;
-    }
+  // Attach advisor logout handler
+  const btnAdvisorLogout = document.getElementById('btn-advisor-logout');
+  if (btnAdvisorLogout) {
+    btnAdvisorLogout.addEventListener('click', async () => {
+      try {
+        await fetch('/api/advisor/logout', { method: 'POST' });
+      } catch (e) {}
+      window.location.href = '/advisor/login';
+    });
+  }
 
+  async function loadCRMLeads() {
     try {
       const res = await fetch('/api/leads');
+      if (res.status === 401 || res.status === 403) {
+        terminalLog('Advisor authorization required to view CRM pipelines.', 'SYSTEM');
+        crmLeadBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--danger-color); padding: 24px;"><i class="fa-solid fa-lock"></i> Advisor authorization required. <a href="/advisor/login" style="color: var(--primary-color);">Log In</a></td></tr>';
+        return;
+      }
       const r = await res.json();
-      if (!r.success) {
-        terminalLog('Failed to fetch CRM leads from SQLite database.', 'SYSTEM');
-        renderCRMLeadsTable(localLeads);
+      if (!r.success || !Array.isArray(r.data)) {
+        terminalLog('Failed to retrieve CRM leads from server.', 'SYSTEM');
         return;
       }
       renderCRMLeadsTable(r.data);
     } catch (e) {
-      terminalLog(`Backend offline: using static lead rows. Make sure to run 'npm run start'!`, 'SYSTEM');
-      renderCRMLeadsTable(localLeads);
+      terminalLog(`Error connecting to CRM API: ${e.message}`, 'SYSTEM');
     }
   }
 

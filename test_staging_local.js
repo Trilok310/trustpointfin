@@ -102,8 +102,7 @@ async function runTests() {
     assert(healthRes.body.status === 'online', 'Health status is online');
 
     const leadsRes = await makeRequest('GET', '/api/leads');
-    assert(leadsRes.statusCode === 200, 'Leads list returns 200');
-    assert(Array.isArray(leadsRes.body.data) && leadsRes.body.data.length >= 3, 'Pre-populated CRM leads exist');
+    assert(leadsRes.statusCode === 401, 'Unauthenticated /api/leads is blocked with 401');
 
     // ── TEST GROUP 2: Unauthenticated Security & Route Protection ──
     console.log('\n▶ [2/9] Verifying Unauthenticated Access Denials (401)...');
