@@ -399,25 +399,34 @@ class OtpProvider {
       const senderId = process.env.SMS_SENDER_ID;
       const templateId = process.env.SMS_TEMPLATE_ID;
 
-      if (!apiKey || !senderId || !templateId) {
-        console.error('[OTP ERROR] Fast2SMS dispatch aborted: Missing required SMS_API_KEY, SMS_SENDER_ID, or SMS_TEMPLATE_ID.');
-        return { success: false, error: 'SMS gateway configuration incomplete.' };
+      if (!apiKey) {
+        console.error('[OTP ERROR] Fast2SMS dispatch aborted: Missing required SMS_API_KEY.');
+        return { success: false, error: 'SMS gateway authentication missing.' };
       }
 
       // Security: Mask mobile number for production logs (e.g. +91 98******10)
       const maskedMobile = (typeof mobile === 'string' && mobile.length === 10)
         ? `${mobile.substring(0, 2)}******${mobile.substring(8)}`
         : '**********';
-      console.log(`[OTP DISPATCH] Fast2SMS request initiated for destination +91 ${maskedMobile}`);
 
-      const postPayload = JSON.stringify({
-        route: 'dlt',
-        sender_id: senderId,
-        message: templateId,
-        variables_values: String(otp),
-        numbers: String(mobile),
-        flash: 0
-      });
+      // Support official DLT route when DLT credentials are provided; otherwise use Quick OTP route
+      const isDlt = Boolean(senderId && templateId);
+      console.log(`[OTP DISPATCH] Fast2SMS request initiated (${isDlt ? 'DLT Route' : 'Quick OTP Route'}) for destination +91 ${maskedMobile}`);
+
+      const postPayload = isDlt
+        ? JSON.stringify({
+            route: 'dlt',
+            sender_id: senderId,
+            message: templateId,
+            variables_values: String(otp),
+            numbers: String(mobile),
+            flash: 0
+          })
+        : JSON.stringify({
+            route: 'otp',
+            variables_values: String(otp),
+            numbers: String(mobile)
+          });
 
       return new Promise((resolve) => {
         const reqOpts = {

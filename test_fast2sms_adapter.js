@@ -91,6 +91,19 @@ async function runTests() {
   assert(interceptedPayload.numbers === '9876543210', 'Payload numbers contains mobile');
   assert(interceptedPayload.flash === 0, 'Payload flash is 0');
 
+  // Test Quick OTP route (when senderId or templateId are not provided)
+  delete process.env.SMS_SENDER_ID;
+  delete process.env.SMS_TEMPLATE_ID;
+  const quickResult = await OtpProvider.sendOtp('9876543210', '987123');
+  assert(quickResult.success === true, 'Quick OTP route succeeds when DLT headers are omitted');
+  assert(interceptedPayload.route === 'otp', 'Payload route is "otp"');
+  assert(interceptedPayload.variables_values === '987123', 'Quick OTP contains server OTP');
+  assert(interceptedPayload.numbers === '9876543210', 'Quick OTP numbers contains mobile');
+
+  // Restore DLT env vars
+  process.env.SMS_SENDER_ID = 'TRSTPT';
+  process.env.SMS_TEMPLATE_ID = '11071615000000';
+
   // ── TEST 2: FAST2SMS FAILURE HANDLING (MOCKED HTTP 200/411 return:false) ──
   console.log('\n▶ [2/8] Testing Fast2SMS Rejection Handling (return: false)...');
   https.request = function (options, callback) {
