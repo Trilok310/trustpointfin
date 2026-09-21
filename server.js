@@ -869,13 +869,14 @@ const server = http.createServer(async (req, res) => {
       const isHttps = (req.headers && req.headers['x-forwarded-proto'] === 'https') || (req.socket && req.socket.encrypted);
       const secureFlag = isHttps ? '; Secure' : '';
       const cookieVal = `tpf_advisor_session=${sessionToken}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400${secureFlag}`;
+      const clearCandidateCookie = `tpf_candidate_session=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secureFlag}`;
 
       return sendJson(res, 200, {
         success: true,
         message: 'Advisor authentication successful.',
         advisor: { id: advisor.id, username: advisor.username },
         token: sessionToken
-      }, { 'Set-Cookie': cookieVal }, req);
+      }, { 'Set-Cookie': [cookieVal, clearCandidateCookie] }, req);
     } catch (e) {
       return sendJson(res, 500, { success: false, error: e.message }, {}, req);
     }
@@ -1123,15 +1124,15 @@ const server = http.createServer(async (req, res) => {
 
   // 1. Fetch all leads (Requires Advisor Session)
   if (method === 'GET' && pathname === '/api/leads') {
-    const candidate = getAuthenticatedCandidate(req);
-    if (candidate) {
-      return sendJson(res, 403, {
-        success: false,
-        error: 'Forbidden: Academy candidates are not authorized to access CRM pipelines.'
-      }, {}, req);
-    }
     const advisor = getAuthenticatedAdvisor(req);
     if (!advisor) {
+      const candidate = getAuthenticatedCandidate(req);
+      if (candidate) {
+        return sendJson(res, 403, {
+          success: false,
+          error: 'Forbidden: Academy candidates are not authorized to access CRM pipelines.'
+        }, {}, req);
+      }
       return sendJson(res, 401, {
         success: false,
         error: 'Unauthorized: Advisor authentication required to view client records.'
@@ -1147,15 +1148,15 @@ const server = http.createServer(async (req, res) => {
 
   // 2. Insert new lead (Requires Advisor Session)
   if (method === 'POST' && pathname === '/api/leads') {
-    const candidate = getAuthenticatedCandidate(req);
-    if (candidate) {
-      return sendJson(res, 403, {
-        success: false,
-        error: 'Forbidden: Academy candidates are not authorized to manage CRM leads.'
-      }, {}, req);
-    }
     const advisor = getAuthenticatedAdvisor(req);
     if (!advisor) {
+      const candidate = getAuthenticatedCandidate(req);
+      if (candidate) {
+        return sendJson(res, 403, {
+          success: false,
+          error: 'Forbidden: Academy candidates are not authorized to manage CRM leads.'
+        }, {}, req);
+      }
       return sendJson(res, 401, {
         success: false,
         error: 'Unauthorized: Advisor authentication required to add leads.'
@@ -1180,15 +1181,15 @@ const server = http.createServer(async (req, res) => {
 
   // 3. Map client (Requires Advisor Session)
   if (method === 'POST' && pathname === '/api/leads/map') {
-    const candidate = getAuthenticatedCandidate(req);
-    if (candidate) {
-      return sendJson(res, 403, {
-        success: false,
-        error: 'Forbidden: Academy candidates are not authorized to map clients.'
-      }, {}, req);
-    }
     const advisor = getAuthenticatedAdvisor(req);
     if (!advisor) {
+      const candidate = getAuthenticatedCandidate(req);
+      if (candidate) {
+        return sendJson(res, 403, {
+          success: false,
+          error: 'Forbidden: Academy candidates are not authorized to map clients.'
+        }, {}, req);
+      }
       return sendJson(res, 401, {
         success: false,
         error: 'Unauthorized: Advisor authentication required to map client codes.'
@@ -1254,18 +1255,17 @@ const server = http.createServer(async (req, res) => {
 
   // 2. Dashboard redirects & static assets (Protected Institutional Cockpit)
   if (pathname === '/dashboard' || pathname === '/dashboard/' || pathname.startsWith('/dashboard/')) {
-    // 1. Check if an authenticated Academy Candidate is attempting access -> 403 Forbidden
-    const candidate = getAuthenticatedCandidate(req);
-    if (candidate) {
-      return sendJson(res, 403, {
-        success: false,
-        error: 'Forbidden: Academy candidates are not authorized to access the Wealth Terminal.'
-      }, {}, req);
-    }
-
-    // 2. Check if authenticated Advisor
+    // 1. Check if authenticated Advisor
     const advisor = getAuthenticatedAdvisor(req);
     if (!advisor) {
+      // Not an advisor: Check if an authenticated Academy Candidate is attempting access -> 403 Forbidden
+      const candidate = getAuthenticatedCandidate(req);
+      if (candidate) {
+        return sendJson(res, 403, {
+          success: false,
+          error: 'Forbidden: Academy candidates are not authorized to access the Wealth Terminal.'
+        }, {}, req);
+      }
       const acceptHeader = req.headers['accept'] || '';
       if (acceptHeader.includes('text/html')) {
         res.writeHead(302, { 'Location': '/advisor/login' });
@@ -1277,7 +1277,7 @@ const server = http.createServer(async (req, res) => {
       }, {}, req);
     }
 
-    // 3. Authorized Advisor -> Serve Dashboard
+    // 2. Authorized Advisor -> Serve Dashboard
     if (pathname === '/dashboard') {
       res.writeHead(302, { 'Location': '/dashboard/' });
       return res.end();
