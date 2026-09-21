@@ -385,11 +385,11 @@ class OtpProvider {
     const isProd = process.env.NODE_ENV === 'production';
     const provider = (process.env.SMS_PROVIDER || '').toLowerCase();
 
-    // 1. Non-Production / Staging / Mock mode:
-    // If not in production, or if no provider / mock / console is configured:
-    // Retain mock OTP behavior for staging QA and automated testing.
-    if (!isProd || !provider || provider === 'mock' || provider === 'console') {
-      console.log(`[OTP DISPATCH] (STAGING Mode) Destination: +91 ${mobile} | Code: ${otp} (Valid 10 min)`);
+    // 1. Default Mock Mode:
+    // If no SMS provider is configured, or explicitly set to mock/console:
+    // Retain mock OTP behavior for local testing.
+    if (!provider || provider === 'mock' || provider === 'console') {
+      console.log(`[OTP DISPATCH] (MOCK Mode) Destination: +91 ${mobile} | Code: ${otp} (Valid 10 min)`);
       return { success: true, mode: 'staging-mock' };
     }
 
@@ -670,10 +670,12 @@ const server = http.createServer(async (req, res) => {
         }, {}, req);
       }
 
+      const isRealProvider = Boolean(process.env.SMS_PROVIDER && process.env.SMS_PROVIDER !== 'mock' && process.env.SMS_PROVIDER !== 'console');
+      const suppressStagingOtp = process.env.NODE_ENV === 'production' || isRealProvider;
       const responsePayload = {
         success: true,
         message: 'OTP dispatched successfully.',
-        stagingOtp: process.env.NODE_ENV === 'production' ? undefined : otp
+        stagingOtp: suppressStagingOtp ? undefined : otp
       };
 
       return sendJson(res, 200, responsePayload, {}, req);
