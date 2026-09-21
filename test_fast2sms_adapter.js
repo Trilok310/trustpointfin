@@ -91,14 +91,23 @@ async function runTests() {
   assert(interceptedPayload.numbers === '9876543210', 'Payload numbers contains mobile');
   assert(interceptedPayload.flash === 0, 'Payload flash is 0');
 
-  // Test Quick OTP route (when senderId or templateId are not provided)
+  // Test Quick SMS route 'q' (default when DLT headers are omitted)
   delete process.env.SMS_SENDER_ID;
   delete process.env.SMS_TEMPLATE_ID;
+  delete process.env.SMS_ROUTE;
   const quickResult = await OtpProvider.sendOtp('9876543210', '987123');
-  assert(quickResult.success === true, 'Quick OTP route succeeds when DLT headers are omitted');
+  assert(quickResult.success === true, 'Quick SMS route succeeds when DLT headers are omitted');
+  assert(interceptedPayload.route === 'q', 'Payload route is "q" (bypasses website verification)');
+  assert(interceptedPayload.message.includes('987123'), 'Quick SMS contains server OTP');
+  assert(interceptedPayload.numbers === '9876543210', 'Quick SMS numbers contains mobile');
+
+  // Test explicit legacy 'otp' route
+  process.env.SMS_ROUTE = 'otp';
+  const legacyOtpResult = await OtpProvider.sendOtp('9876543210', '654321');
+  assert(legacyOtpResult.success === true, 'Legacy OTP route succeeds when explicitly configured');
   assert(interceptedPayload.route === 'otp', 'Payload route is "otp"');
-  assert(interceptedPayload.variables_values === '987123', 'Quick OTP contains server OTP');
-  assert(interceptedPayload.numbers === '9876543210', 'Quick OTP numbers contains mobile');
+  assert(interceptedPayload.variables_values === '654321', 'OTP route contains variables_values');
+  delete process.env.SMS_ROUTE;
 
   // Restore DLT env vars
   process.env.SMS_SENDER_ID = 'TRSTPT';

@@ -409,24 +409,40 @@ class OtpProvider {
         ? `${mobile.substring(0, 2)}******${mobile.substring(8)}`
         : '**********';
 
-      // Support official DLT route when DLT credentials are provided; otherwise use Quick OTP route
+      // Support official DLT route when DLT credentials are provided;
+      // Otherwise default to Fast2SMS Quick SMS route ('q') which bypasses DLT and website verification;
+      // Or route 'otp' if explicitly configured via SMS_ROUTE.
       const isDlt = Boolean(senderId && templateId);
-      console.log(`[OTP DISPATCH] Fast2SMS request initiated (${isDlt ? 'DLT Route' : 'Quick OTP Route'}) for destination +91 ${maskedMobile}`);
+      const configuredRoute = (process.env.SMS_ROUTE || (isDlt ? 'dlt' : 'q')).toLowerCase();
+      const isQuickSms = !isDlt && configuredRoute === 'q';
+      const isOtpRoute = !isDlt && configuredRoute === 'otp';
 
-      const postPayload = isDlt
-        ? JSON.stringify({
-            route: 'dlt',
-            sender_id: senderId,
-            message: templateId,
-            variables_values: String(otp),
-            numbers: String(mobile),
-            flash: 0
-          })
-        : JSON.stringify({
-            route: 'otp',
-            variables_values: String(otp),
-            numbers: String(mobile)
-          });
+      console.log(`[OTP DISPATCH] Fast2SMS request initiated (${isDlt ? 'DLT Route' : (isQuickSms ? 'Quick SMS Route (q)' : 'OTP Route')}) for destination +91 ${maskedMobile}`);
+
+      let postPayload;
+      if (isDlt) {
+        postPayload = JSON.stringify({
+          route: 'dlt',
+          sender_id: senderId,
+          message: templateId,
+          variables_values: String(otp),
+          numbers: String(mobile),
+          flash: 0
+        });
+      } else if (isOtpRoute) {
+        postPayload = JSON.stringify({
+          route: 'otp',
+          variables_values: String(otp),
+          numbers: String(mobile)
+        });
+      } else {
+        // Fast2SMS Quick SMS route ('q') — bypasses DLT template and website verification
+        postPayload = JSON.stringify({
+          route: 'q',
+          message: `Your TrustPoint Finance Academy verification code is ${otp}. Valid for 10 minutes.`,
+          numbers: String(mobile)
+        });
+      }
 
       return new Promise((resolve) => {
         const reqOpts = {
