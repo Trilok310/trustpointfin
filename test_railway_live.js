@@ -180,10 +180,11 @@ async function runLiveSuite() {
     assert(advLoginPage.rawBody.includes('Advisor Terminal'), 'Advisor login page renders branding');
 
     // Test Server-Side Rate Limiting on dedicated probe identifier
+    const probeUser = 'probe_rate_limit_' + Date.now();
     for (let i = 1; i <= 5; i++) {
-      await makeRequest('POST', '/api/advisor/login', {}, { username: 'probe_test_rate_limit', password: 'WrongPasswordProbe' });
+      await makeRequest('POST', '/api/advisor/login', {}, { username: probeUser, password: 'WrongPasswordProbe' });
     }
-    const throttledProbe = await makeRequest('POST', '/api/advisor/login', {}, { username: 'probe_test_rate_limit', password: 'WrongPasswordProbe' });
+    const throttledProbe = await makeRequest('POST', '/api/advisor/login', {}, { username: probeUser, password: 'WrongPasswordProbe' });
     assert(throttledProbe.statusCode === 429, 'Advisor login brute-force protection triggers HTTP 429 Too Many Requests');
 
     // Advisor Login (Normal Valid Login)
