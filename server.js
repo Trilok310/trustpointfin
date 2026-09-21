@@ -324,8 +324,12 @@ const MIME_TYPES = {
   '.png':  'image/png',
   '.jpg':  'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
+  '.ico':  'image/x-icon',
   '.pdf':  'application/pdf',
-  '.txt':  'text/plain; charset=utf-8'
+  '.txt':  'text/plain; charset=utf-8',
+  '.xml':  'application/xml; charset=utf-8',
+  '.mp4':  'video/mp4'
 };
 
 function sendJson(res, statusCode, data, extraHeaders = {}, req = null) {
@@ -487,8 +491,10 @@ const server = http.createServer(async (req, res) => {
         VALUES (?, ?, datetime('now', '+30 days'))
       `).run(candidate.id, sessionToken);
 
-      // Set HttpOnly session cookie
-      const cookieVal = `tpf_candidate_session=${sessionToken}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${30 * 24 * 3600}`;
+      // Set HttpOnly session cookie (Secure when HTTPS / reverse proxy)
+      const isHttps = (req.headers && req.headers['x-forwarded-proto'] === 'https') || (req.socket && req.socket.encrypted);
+      const secureFlag = isHttps ? '; Secure' : '';
+      const cookieVal = `tpf_candidate_session=${sessionToken}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${30 * 24 * 3600}${secureFlag}`;
 
       return sendJson(res, 200, {
         success: true,
@@ -521,7 +527,9 @@ const server = http.createServer(async (req, res) => {
       if (token) {
         db.prepare('DELETE FROM candidate_sessions WHERE token = ?').run(token);
       }
-      const clearCookie = 'tpf_candidate_session=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0';
+      const isHttps = (req.headers && req.headers['x-forwarded-proto'] === 'https') || (req.socket && req.socket.encrypted);
+      const secureFlag = isHttps ? '; Secure' : '';
+      const clearCookie = `tpf_candidate_session=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secureFlag}`;
       return sendJson(res, 200, { success: true, message: 'Logged out successfully.' }, { 'Set-Cookie': clearCookie }, req);
     } catch (e) {
       return sendJson(res, 500, { success: false, error: e.message }, {}, req);
@@ -800,37 +808,97 @@ const server = http.createServer(async (req, res) => {
   }
 
   // ══════════════════════════════════════════════════════════════════════════
-  // STATIC FILE SERVING
+  // STATIC FILE SERVING & UNIFIED ROUTING
   // ══════════════════════════════════════════════════════════════════════════
-  let safePath = path.normalize(pathname).replace(/^(\.\.[\/\\])+/, '');
-  if (safePath === '/' || safePath === '\\') safePath = '/index.html';
 
-  // Check if requesting academy files
-  let filePath = path.join(__dirname, safePath);
-  if (pathname.startsWith('/academy')) {
-    const acadSub = pathname.replace('/academy', '');
-    filePath = path.join(__dirname, 'academy', acadSub || '/index.html');
+  // 1. Academy redirects & static assets
+  if (pathname === '/academy') {
+    res.writeHead(302, { 'Location': '/academy/' });
+    return res.end();
   }
 
-  if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-    const ext = path.extname(filePath).toLowerCase();
+  if (pathname.startsWith('/academy/')) {
+    const acadSub = pathname.replace(/^\/academy/, '');
+    const acadFile = (acadSub === '' || acadSub === '/') ? 'index.html' : acadSub.replace(/^\//, '');
+    const filePath = path.join(__dirname, 'academy', acadFile);
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+      const ext = path.extname(filePath).toLowerCase();
+      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Access-Control-Allow-Origin': req.headers.origin || '*'
+      });
+      return fs.createReadStream(filePath).pipe(res);
+    }
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    return res.end('404 Not Found (Academy)');
+  }
+
+  // 2. Dashboard redirects & static assets (Internal Wealth Cockpit)
+  if (pathname === '/dashboard') {
+    res.writeHead(302, { 'Location': '/dashboard/' });
+    return res.end();
+  }
+
+  if (pathname.startsWith('/dashboard/')) {
+    const dashSub = pathname.replace(/^\/dashboard/, '');
+    const dashFile = (dashSub === '' || dashSub === '/') ? 'index.html' : dashSub.replace(/^\//, '');
+    const filePath = path.join(__dirname, 'dashboard', dashFile);
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+      const ext = path.extname(filePath).toLowerCase();
+      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Access-Control-Allow-Origin': req.headers.origin || '*'
+      });
+      return fs.createReadStream(filePath).pipe(res);
+    }
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    return res.end('404 Not Found (Dashboard)');
+  }
+
+  // 3. Public Marketing Website assets (served from public/)
+  let safePath = path.normalize(pathname).replace(/^(\.\.[\/\\])+/, '');
+  if (safePath === '/' || safePath === '\\') safePath = '/index.html';
+  const cleanSub = safePath.replace(/^[\/\\]+/, '');
+
+  let publicFilePath = path.join(__dirname, 'public', cleanSub);
+
+  // If path has no extension, check if an HTML file exists in public/ (e.g. /insights -> /insights.html)
+  if (!fs.existsSync(publicFilePath) || !fs.statSync(publicFilePath).isFile()) {
+    if (!path.extname(cleanSub)) {
+      const htmlCandidate = path.join(__dirname, 'public', cleanSub + '.html');
+      if (fs.existsSync(htmlCandidate) && fs.statSync(htmlCandidate).isFile()) {
+        publicFilePath = htmlCandidate;
+      }
+    }
+  }
+
+  if (fs.existsSync(publicFilePath) && fs.statSync(publicFilePath).isFile()) {
+    const ext = path.extname(publicFilePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
     res.writeHead(200, {
       'Content-Type': contentType,
       'Access-Control-Allow-Origin': req.headers.origin || '*'
     });
-    fs.createReadStream(filePath).pipe(res);
-  } else {
-    // Fallback to index.html
-    const fallbackPath = path.join(__dirname, 'index.html');
-    if (fs.existsSync(fallbackPath)) {
-      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-      fs.createReadStream(fallbackPath).pipe(res);
-    } else {
-      res.writeHead(404, { 'Content-Type': 'text/plain' });
-      res.end('404 Not Found');
-    }
+    return fs.createReadStream(publicFilePath).pipe(res);
   }
+
+  // 4. Secondary fallback: check root directory for any assets
+  let rootFilePath = path.join(__dirname, cleanSub);
+  if (fs.existsSync(rootFilePath) && fs.statSync(rootFilePath).isFile()) {
+    const ext = path.extname(rootFilePath).toLowerCase();
+    const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+    res.writeHead(200, {
+      'Content-Type': contentType,
+      'Access-Control-Allow-Origin': req.headers.origin || '*'
+    });
+    return fs.createReadStream(rootFilePath).pipe(res);
+  }
+
+  // 5. 404 Not Found
+  res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('404 Not Found');
 });
 
 // Start Server

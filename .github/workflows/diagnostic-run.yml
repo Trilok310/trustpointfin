@@ -1,0 +1,42 @@
+name: Article Pipeline Diagnostic
+
+on:
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Article Generation and Capture Trace
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
+          IMAGE_PROVIDER: ${{ secrets.IMAGE_PROVIDER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          echo "Starting diagnostic run..." > diagnostic.log
+          node scripts/post-article.js >> diagnostic.log 2>&1 || true
+          echo "Run finished." >> diagnostic.log
+
+      - name: Commit Log to Repository
+        run: |
+          mkdir -p diagnostic_output
+          cp diagnostic.log diagnostic_output/
+          git config --global user.name 'Diagnostic Bot'
+          git config --global user.email 'bot@trustpointfin.org'
+          git add diagnostic_output/
+          git commit -m "chore: save diagnostic log for article pipeline [skip ci]" || echo "No changes to commit"
+          git push

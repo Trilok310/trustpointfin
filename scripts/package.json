@@ -1,0 +1,9 @@
+{
+  "name": "trustpointfin-autopost",
+  "version": "1.0.0",
+  "description": "Automated article posting script for TrustPointFin",
+  "main": "post-article.js",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  }
+}

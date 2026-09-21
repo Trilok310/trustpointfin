@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trustpointfin.org/sitemap.xml
