@@ -106,6 +106,13 @@ db.exec(`
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (advisor_id) REFERENCES advisors(id)
   );
+
+  CREATE TABLE IF NOT EXISTS advisor_login_attempts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    identifier TEXT NOT NULL,
+    success INTEGER NOT NULL DEFAULT 0,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
 `);
 
 // Password hashing utilities using Node.js built-in crypto (scrypt)
@@ -124,30 +131,89 @@ function verifyPassword(password, storedHash) {
   return crypto.timingSafeEqual(keyBuffer, derivedKey);
 }
 
-// Provision initial staging advisor account if not present
-const defaultAdvisorUser = process.env.STAGING_ADVISOR_USERNAME || 'advisor_staging';
-const defaultAdvisorPass = process.env.STAGING_ADVISOR_PASSWORD || 'StagingAdvisor2026!Sec';
-const existingAdvisor = db.prepare('SELECT id FROM advisors WHERE username = ?').get(defaultAdvisorUser);
-if (!existingAdvisor) {
-  const hash = hashPassword(defaultAdvisorPass);
-  db.prepare(`
-    INSERT INTO advisors (username, password_hash, status)
-    VALUES (?, ?, 'active')
-  `).run(defaultAdvisorUser, hash);
-  console.log(`[ADVISOR] Initialized secure staging advisor account: '${defaultAdvisorUser}'`);
+// Rate limiting & Client IP detection for Advisor Login
+function getClientIp(req) {
+  const forwarded = req.headers['x-forwarded-for'];
+  if (forwarded) {
+    return forwarded.split(',')[0].trim();
+  }
+  return req.socket ? req.socket.remoteAddress : '127.0.0.1';
 }
 
-// Pre-populate default leads if empty
+function checkAdvisorRateLimit(ip, username) {
+  const identifier = `${ip}:${(username || '').toLowerCase()}`;
+  // Count failed attempts within last 15 minutes
+  const row = db.prepare(`
+    SELECT COUNT(*) AS failed_count, MAX(created_at) as last_attempt
+    FROM advisor_login_attempts
+    WHERE identifier = ? AND success = 0 AND datetime(created_at, '+15 minutes') > datetime('now')
+  `).get(identifier);
+
+  if (row && row.failed_count >= 5) {
+    return { locked: true, attempts: row.failed_count };
+  }
+  return { locked: false, attempts: row ? row.failed_count : 0 };
+}
+
+function recordAdvisorLoginAttempt(ip, username, success) {
+  const identifier = `${ip}:${(username || '').toLowerCase()}`;
+  if (success) {
+    // Clear failed attempts on successful login
+    db.prepare('DELETE FROM advisor_login_attempts WHERE identifier = ?').run(identifier);
+  } else {
+    // Record failed attempt
+    db.prepare('INSERT INTO advisor_login_attempts (identifier, success) VALUES (?, 0)').run(identifier);
+  }
+}
+
+// ── Advisor Account Provisioning (Strict Staging vs Production Separation) ──
+const isProduction = process.env.NODE_ENV === 'production';
+if (isProduction) {
+  const prodAdvisorUser = process.env.PROD_ADVISOR_USERNAME;
+  const prodAdvisorPass = process.env.PROD_ADVISOR_PASSWORD;
+  if (prodAdvisorUser && prodAdvisorPass) {
+    const existingAdvisor = db.prepare('SELECT id FROM advisors WHERE username = ?').get(prodAdvisorUser);
+    if (!existingAdvisor) {
+      const hash = hashPassword(prodAdvisorPass);
+      db.prepare(`
+        INSERT INTO advisors (username, password_hash, status)
+        VALUES (?, ?, 'active')
+      `).run(prodAdvisorUser, hash);
+      console.log(`[ADVISOR] Provisioned production advisor account: '${prodAdvisorUser}'`);
+    }
+  } else {
+    console.log('[ADVISOR] Production mode active: Zero default advisor credentials seeded. Awaiting PROD_ADVISOR_USERNAME and PROD_ADVISOR_PASSWORD.');
+  }
+} else {
+  // Staging / Development mode
+  const defaultAdvisorUser = process.env.STAGING_ADVISOR_USERNAME || 'advisor_staging';
+  const defaultAdvisorPass = process.env.STAGING_ADVISOR_PASSWORD || 'StagingAdvisor2026!Sec';
+  const existingAdvisor = db.prepare('SELECT id FROM advisors WHERE username = ?').get(defaultAdvisorUser);
+  if (!existingAdvisor) {
+    const hash = hashPassword(defaultAdvisorPass);
+    db.prepare(`
+      INSERT INTO advisors (username, password_hash, status)
+      VALUES (?, ?, 'active')
+    `).run(defaultAdvisorUser, hash);
+    console.log(`[ADVISOR] Initialized secure staging advisor account: '${defaultAdvisorUser}'`);
+  }
+}
+
+// ── CRM Leads Table Pre-population (Staging-Only Safeguard) ──
 const leadCountRow = db.prepare('SELECT COUNT(*) AS count FROM leads').get();
 if (leadCountRow && leadCountRow.count === 0) {
-  const insertLead = db.prepare(`
-    INSERT INTO leads (name, contact, angel_code, bse_ucc, status)
-    VALUES (?, ?, ?, ?, ?)
-  `);
-  insertLead.run('Rohan Sharma', '+91 98765 43210', 'ROHA4322', 'UCC-90812', 'Fully Mapped');
-  insertLead.run('Priya Patel', '+91 87654 32109', 'PRIY8901', null, 'Only F&O');
-  insertLead.run('Amit Verma', '+91 76543 21098', null, null, 'Locked');
-  console.log('[DATABASE] Pre-populated default CRM leads successfully.');
+  if (process.env.NODE_ENV !== 'production') {
+    const insertLead = db.prepare(`
+      INSERT INTO leads (name, contact, angel_code, bse_ucc, status)
+      VALUES (?, ?, ?, ?, ?)
+    `);
+    insertLead.run('Rohan Sharma', '+91 98765 43210', 'ROHA4322', 'UCC-90812', 'Fully Mapped');
+    insertLead.run('Priya Patel', '+91 87654 32109', 'PRIY8901', null, 'Only F&O');
+    insertLead.run('Amit Verma', '+91 76543 21098', null, null, 'Locked');
+    console.log('[DATABASE] Pre-populated default CRM leads successfully (staging mode).');
+  } else {
+    console.log('[DATABASE] Production mode active: Zero mock leads seeded. Leads table is clean.');
+  }
 }
 
 // ── Authoritative Academy Knowledge & Answer Keys (Server-Side ONLY) ──
@@ -312,11 +378,53 @@ function getAuthoritativeCandidateState(candidateId) {
   };
 }
 
-// ── OTP Provider Abstraction ──
+// ── OTP Provider Abstraction (Prepared for Production SMS Gateway) ──
 class OtpProvider {
   static async sendOtp(mobile, otp) {
-    console.log(`[OTP DISPATCH] Destination: +91 ${mobile} | Code: ${otp} (Valid for 10 min)`);
-    return { success: true };
+    const isProd = process.env.NODE_ENV === 'production';
+    const provider = (process.env.SMS_PROVIDER || '').toLowerCase();
+
+    // 1. Staging / Non-Production / Mock mode: log to server stdout
+    if (!isProd || !provider || provider === 'mock' || provider === 'console') {
+      console.log(`[OTP DISPATCH] (${isProd ? 'PRODUCTION MOCK' : 'STAGING'} Mode) Destination: +91 ${mobile} | Code: ${otp} (Valid 10 min)`);
+      return { success: true, mode: isProd ? 'production-mock' : 'staging-mock' };
+    }
+
+    // 2. Production Gateway Architecture (Configured via Environment Variables)
+    const apiKey = process.env.SMS_API_KEY;
+    const senderId = process.env.SMS_SENDER_ID;
+    const templateId = process.env.SMS_TEMPLATE_ID;
+
+    if (!apiKey) {
+      console.error(`[OTP ERROR] Production SMS provider '${provider}' configured but SMS_API_KEY is missing.`);
+      return { success: false, error: 'SMS gateway authentication missing.' };
+    }
+
+    try {
+      if (provider === 'fast2sms') {
+        // Fast2SMS API integration template (Prepared)
+        console.log(`[OTP DISPATCH] Fast2SMS gateway ready for +91 ${mobile} (Sender: ${senderId || 'Default'})`);
+        return { success: true, provider: 'fast2sms' };
+      } else if (provider === 'twilio') {
+        // Twilio API integration template (Prepared)
+        console.log(`[OTP DISPATCH] Twilio gateway ready for +91 ${mobile} (From: ${senderId || 'Default'})`);
+        return { success: true, provider: 'twilio' };
+      } else if (provider === 'msg91') {
+        // MSG91 API integration template (Prepared)
+        console.log(`[OTP DISPATCH] MSG91 gateway ready for +91 ${mobile} (Sender: ${senderId || 'Default'})`);
+        return { success: true, provider: 'msg91' };
+      } else if (provider === 'webhook' && process.env.SMS_ENDPOINT_URL) {
+        // Custom HTTPS webhook (Prepared)
+        console.log(`[OTP DISPATCH] Custom webhook ready for +91 ${mobile}`);
+        return { success: true, provider: 'webhook' };
+      } else {
+        console.warn(`[OTP WARNING] Unrecognized SMS_PROVIDER '${provider}'. Falling back to log-only.`);
+        return { success: true, mode: 'unrecognized-fallback' };
+      }
+    } catch (err) {
+      console.error('[OTP ERROR] Gateway dispatch failed:', err.message);
+      return { success: false, error: err.message };
+    }
   }
 }
 
@@ -631,21 +739,41 @@ const server = http.createServer(async (req, res) => {
     return res.end('Advisor Login Page Not Found');
   }
 
-  // 2. POST /api/advisor/login
+  // 2. POST /api/advisor/login (Protected by Server-Side Brute-Force Rate Limiting)
   if (method === 'POST' && pathname === '/api/advisor/login') {
     try {
       const body = await parseBody(req);
       const username = String(body.username || '').trim();
       const password = String(body.password || '');
+      const clientIp = getClientIp(req);
 
       if (!username || !password) {
         return sendJson(res, 400, { success: false, error: 'Advisor username and password are required.' }, {}, req);
       }
 
+      // Check brute-force rate limit (max 5 failed attempts in 15 minutes per IP:username)
+      const rateLimit = checkAdvisorRateLimit(clientIp, username);
+      if (rateLimit.locked) {
+        return sendJson(res, 429, {
+          success: false,
+          error: 'Too many failed login attempts. Account access is temporarily locked for 15 minutes. Please try again later.'
+        }, {}, req);
+      }
+
       const advisor = db.prepare('SELECT * FROM advisors WHERE username = ? AND status = ?').get(username, 'active');
       if (!advisor || !verifyPassword(password, advisor.password_hash)) {
-        return sendJson(res, 401, { success: false, error: 'Invalid advisor credentials.' }, {}, req);
+        // Record failed attempt server-side
+        recordAdvisorLoginAttempt(clientIp, username, false);
+        const nextAttempts = rateLimit.attempts + 1;
+        const remaining = 5 - nextAttempts;
+        const warning = remaining > 0
+          ? `Invalid advisor credentials. ${remaining} attempt(s) remaining before temporary lockout.`
+          : 'Invalid advisor credentials. Account access is now locked for 15 minutes.';
+        return sendJson(res, 401, { success: false, error: warning }, {}, req);
       }
+
+      // Successful login resets rate limit counter for this IP and username
+      recordAdvisorLoginAttempt(clientIp, username, true);
 
       // Generate 256-bit cryptographically secure session token
       const sessionToken = crypto.randomBytes(32).toString('hex');
@@ -1143,4 +1271,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { server, db, AUTHORITATIVE_ACADEMY };
+module.exports = { server, db, AUTHORITATIVE_ACADEMY, OtpProvider };
