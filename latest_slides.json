@@ -1,68 +1,104 @@
 {
-  "topic": "The Rule of 72: आपका पैसा कितने समय में Double होगा?",
-  "teaching_objective": "Explain the practical mental math of Rule of 72 to estimate money doubling time across different asset classes and the hidden impact of inflation.",
-  "format": "CALCULATION",
+  "topic": "P/E Ratio क्या है और यह इतना महत्वपूर्ण क्यों है? Beginners के लिए आसान Guide",
+  "teaching_objective": "Beginners को समझाना कि P/E Ratio Price और Earnings के बीच संबंध दिखाता है, इसे कैसे calculate करें, High और Low P/E को context के साथ कैसे पढ़ें, और इसकी limitations क्या हैं।",
+  "format": "BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "पैसा 2x कब होगा? जानिए 5 सेकंड का सीक्रेट!",
-      "core_explanation": "• हर निवेशक का पहला सवाल: मेरा पैसा डबल कब होगा?\n• किसी भारी कैलकुलेटर या एक्सेल शीट की जरूरत नहीं।\n• 'Rule of 72' देता है पलक झपकते ही सटीक जवाब।",
+      "headline": "Stock महंगा है या सस्ता?",
+      "core_explanation": "• केवल Stock Price देखकर फैसला करना मुश्किल हो सकता है।\n• P/E Ratio Price को Company की Earnings के संदर्भ में देखने में मदद करता है।",
       "visual_spec": {
-        "visual_concept": "An inquisitive young Indian professional looking at a small sprouting sapling that mirrors a larger, lush twin tree in the reflection of a calm water pond.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A curious young professional observing a golden sprouting plant in rich soil that casts a reflection into a tranquil lake showing two fully grown, bountiful fruit trees. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+        "visual_concept": "एक beginner investor, Asha, दो छोटे business stalls के सामने खड़ी है। एक stall की price tag बहुत बड़ी है लेकिन कम कमाई दिखती है; दूसरे की price छोटी है और कमाई का मजबूत संकेत दिखता है। Asha के हाथ में magnifying glass है और पीछे एक साफ, illustrated financial dashboard जैसा वातावरण है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A warm editorial illustration with a curious young Indian woman investor comparing two colorful small business stalls, one expensive-looking with a small basket of coins and one modest-looking with a larger basket of coins, subtle stock market motifs, magnifying glass, clean cream paper background, navy blue, teal, coral and mustard palette, hand-drawn textures, expressive characters, clear visual hierarchy, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Mental Math का सबसे आसान नियम",
-      "cta": "Swipe Next ➔"
+      "annotation": "Arrow: Price को Earnings के साथ देखें",
+      "cta": "पहले concept समझें"
     },
     {
       "slide_number": 2,
-      "purpose": "concept",
-      "headline": "The Formula: 72 ÷ Interest Rate = साल",
-      "core_explanation": "• 72 को अपने सालाना रिटर्न (CAGR%) से भाग दें।\n• नतीजा बताएगा कि पूंजी दोगुनी होने में कितने साल लगेंगे।\n• Example: 72 ÷ Expected Return Rate = Doubling Time.",
+      "purpose": "definition",
+      "headline": "P/E Ratio क्या बताता है?",
+      "core_explanation": "• P/E का अर्थ है Price-to-Earnings Ratio।\n• यह बताता है कि Market, Company की प्रति शेयर कमाई के मुकाबले कितना Price दे रहा है।\n• यह valuation को समझने का एक useful starting point है, final answer नहीं।",
       "visual_spec": {
-        "visual_concept": "A vintage mechanical balance scale in a sunlit wooden study room; on one side sits a glowing golden orb of wealth, balanced by neat hourglasses representing time.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. An elegant brass balance scale placed upon a clean wooden desk near a sunlit window. One pan holds a glowing golden seed and the other pan holds clean, glass sand timers. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+        "visual_concept": "Asha एक balance scale देख रही है। एक तरफ stock price का प्रतीक बना चमकता सिक्का है और दूसरी तरफ earnings का प्रतीक नियमित रूप से भरती हुई coin jar है। Scale valuation comparison का metaphor दिखाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A thoughtful Indian beginner investor studying a balanced brass scale, one side represented by a polished stock coin and the other by a steadily filling earnings jar, subtle abstract market chart shapes in the background, educational infographic composition without any written elements, rich paper grain, soft shadows, navy, teal, coral and gold colors, friendly modern editorial illustration, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Simple Division, Big Clarity",
-      "cta": "See Comparison"
+      "annotation": "P/E = Price और Earnings का रिश्ता",
+      "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "FD vs Mutual Funds: जमीन-आसमान का अंतर",
-      "core_explanation": "• Bank FD (6%): 72 ÷ 6 = 12 साल लगेंगे डबल होने में।\n• Equity Fund (12%): 72 ÷ 12 = सिर्फ 6 साल में डबल!\n• Return दोगुना होने पर समय आधा हो जाता है।",
+      "purpose": "calculation",
+      "headline": "P/E कैसे Calculate करें?",
+      "core_explanation": "• Formula: P/E = Market Price per Share ÷ EPS\n• उदाहरण: Price ₹200 और EPS ₹10 हो, तो P/E = 20\n• यानी Price, प्रति शेयर कमाई का लगभग 20 गुना है।",
       "visual_spec": {
-        "visual_concept": "Two parallel winding garden paths side-by-side; one path has steady tortoise-paced growth, while the other shows vibrant fast-blooming blossoms reaching full height.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A split landscape depicting two garden pathways side-by-side. The left path has small, slowly growing green hedges, while the right path features vigorous, tall blooming sunflowers and lush fruit canopies glowing in morning light. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+        "visual_concept": "एक साफ desk scene जिसमें Asha calculator पर division कर रही है। सामने एक बड़ा सिक्का price को दर्शाता है, उसके बगल में earnings coins का छोटा stack है, और result के रूप में coins की बीस समान इकाइयों वाला visual grouping है—लेकिन कोई अंक या text नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A young Indian woman calculating valuation at a tidy desk with a vintage calculator showing a blank screen, one large coin beside a small stack of earnings coins, a visual grouping suggesting one amount divided by another, notebook pages with geometric shapes only, no writing, warm sunlight, cream background, teal and coral accents, detailed hands and objects, educational storybook illustration, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Power of Compounding",
-      "cta": "Watch Out ➔"
+      "annotation": "पहले Price और EPS दोनों verify करें",
+      "cta": "Formula save करें"
     },
     {
       "slide_number": 4,
-      "purpose": "risk",
-      "headline": "The Dark Side: महंगाई आपके पैसे को आधा कर रही है!",
-      "core_explanation": "• Rule of 72 महंगाई (Inflation) पर भी लागू होता है।\n• 6% Inflation दर पर आपकी Purchasing Power 12 साल में आधी!\n• सिर्फ Savings Account में रखा पैसा असल में घट रहा है।",
+      "purpose": "interpretation",
+      "headline": "High P/E हमेशा खराब नहीं",
+      "core_explanation": "• High P/E का कारण तेज Earnings growth, मजबूत Brand या बेहतर margins हो सकते हैं।\n• लेकिन future growth उम्मीद से कमजोर रही, तो valuation multiple कम हो सकता है।\n• इसलिए High P/E को growth और business quality के साथ पढ़ें।",
       "visual_spec": {
-        "visual_concept": "A coin block or block of ice gently melting away under warm desert sunlight while a shadowy cloud consumes purchasing value.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A metaphorical concept showing a neat stack of golden clay coins slowly eroding and dissolving into mist under a gentle, hazy sunbeam, representing the quiet erosion of value over time. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+        "visual_concept": "एक उभरता हुआ business tree दिखाया गया है जिसकी शाखाओं पर नए products, loyal customers और expanding storefronts के visual symbols हैं। सामने investor एक ऊंची सीढ़ी पर चढ़ने से पहले बादलों और हवा की दिशा जांच रही है—growth opportunity के साथ uncertainty का metaphor।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An ambitious Indian entrepreneur-investor observing a tall growing business tree with branches representing products, loyal customers, strong margins and expanding stores, a high staircase beside it leading toward a bright but partly cloudy sky, visual balance between opportunity and uncertainty, sophisticated editorial illustration, textured paper, navy teal coral mustard palette, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Inflation = Silent Thief",
-      "cta": "Take Action ➔"
+      "annotation": "High P/E को growth के against check करें",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "action",
-      "headline": "Wealth Create करने का Golden Rule",
-      "core_explanation": "• हमेशा Inflation-beating एसेट्स (Equities, Mutual Funds) चुनें।\n• जितनी जल्दी शुरू करेंगे, उतनी बार पैसा 2x, 4x, 8x होगा।\n• Smart वित्तीय समझ के लिए TrustPointFin से जुड़ें।",
+      "purpose": "comparison",
+      "headline": "Low P/E = Bargain? जरूरी नहीं",
+      "core_explanation": "• Low P/E attractive लग सकता है, पर Company की growth धीमी या business risk अधिक हो सकता है।\n• तुलना Industry peers और Company के historical P/E से करें।\n• केवल एक ratio देखकर Investment decision न लें।",
       "visual_spec": {
-        "visual_concept": "A confident person resting comfortably under the shade of an expansive, healthy orchard, enjoying the shade and picking fresh ripe fruit.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. A relaxed investor sitting under a majestic, lush canopy of an ancient shade tree with abundant ripe fruit, looking outward toward a horizon of calm rolling hills bathed in warm golden twilight. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free."
+        "visual_concept": "Asha एक market lane में तीन समान दुकानों की तुलना कर रही है। एक दुकान पर कम price का संकेत देने वाला छोटा coin pile है, लेकिन उसके आसपास टूटती दीवार और कम customers हैं; दूसरी दुकानों में अलग-अलग business strength दिखाई देती है। कोई written signage नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A young Indian investor comparing three similar neighborhood businesses in a market lane, one shop surrounded by a small pile of coins but showing worn walls and few customers, the other shops showing healthier activity and stronger foundations, visual metaphor for low valuation versus business quality, richly illustrated, clean composition, paper texture, teal navy coral and mustard palette, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Invest Early & Stay Invested",
-      "cta": "Visit TrustPointFin.org"
+      "annotation": "सस्ता दिखना और मजबूत होना अलग बातें हैं",
+      "cta": "Context के साथ compare करें"
+    },
+    {
+      "slide_number": 6,
+      "purpose": "process",
+      "headline": "P/E को अकेले मत पढ़िए",
+      "core_explanation": "• Industry peers और historical P/E देखें।\n• Earnings growth, Debt और Cash Flow भी जांचें।\n• Business model और future opportunity को समझना जरूरी है।",
+      "visual_spec": {
+        "visual_concept": "एक investigation board जैसा दृश्य जिसमें Asha चार connected pathways देख रही है: peer comparison के लिए समान दुकानों की row, growth के लिए ऊपर जाता plant, debt के लिए भारी backpack, और cash flow के लिए बहती नदी। सभी visual symbols हैं, कोई text नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A focused Indian investor exploring a visual investigation board connected to four scenes: comparable shops in a row, a growing plant, a heavy debt backpack, and a flowing cash river, all connected by colored threads, no written notes, cinematic yet educational composition, hand-drawn editorial style, cream paper background, navy teal coral gold palette, no letters, no numbers, no labels, no logos, no watermark."
+      },
+      "annotation": "Checklist: Peers • Growth • Debt • Cash Flow",
+      "cta": "अपना analysis checklist बनाएं"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "limitation",
+      "headline": "Negative P/E का क्या मतलब?",
+      "core_explanation": "• Negative P/E आमतौर पर तब दिखता है जब EPS negative हो, यानी Company ने loss report किया हो।\n• ऐसी स्थिति में P/E meaningful comparison नहीं दे सकता।\n• Revenue growth, cash burn, Debt, Operating Cash Flow और profitability plan देखें।",
+      "visual_spec": {
+        "visual_concept": "एक business boat घाटे के कारण लाल पानी में डगमगा रही है। Asha केवल price sign देखने के बजाय boat की fuel gauge, leaking cash bucket, debt anchor और future route map की जांच कर रही है। दृश्य risk और deeper analysis को दर्शाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A small business boat rocking on uncertain red-tinted water, with a leaking coin bucket, a heavy anchor, a low fuel gauge shown only through visual symbols, and an Indian investor examining the boat's engine and route map, metaphor for loss-making company analysis beyond P/E, empathetic but cautionary editorial illustration, textured cream paper, navy teal coral and muted red palette, no letters, no numbers, no labels, no logos, no watermark."
+      },
+      "annotation": "Loss में P/E की जगह fundamentals देखें",
+      "cta": "Ratio को context से जोड़ें"
+    },
+    {
+      "slide_number": 8,
+      "purpose": "summary",
+      "headline": "P/E एक शुरुआत है, फैसला नहीं",
+      "core_explanation": "• P/E valuation comparison का useful tool है।\n• High या Low P/E अपने-आप सही या गलत Investment साबित नहीं करता।\n• बेहतर analysis के लिए Growth, Debt, Cash Flow और Industry context साथ में देखें।",
+      "visual_spec": {
+        "visual_concept": "Asha एक financial journey के crossroads पर खड़ी है। उसके पास compass, binoculars, balance scale और map हैं; आगे अलग-अलग रास्ते businesses, growth और risk की ओर जाते हैं। वह जल्दबाजी से बचकर जानकारी इकट्ठी कर रही है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A confident Indian beginner investor standing at a financial crossroads holding a compass, binoculars, a small balance scale and a map, multiple paths leading toward different stylized businesses with both sunny and cloudy sections, calm thoughtful mood, rich storytelling, modern educational editorial illustration, cream paper texture, navy teal coral mustard palette, no letters, no numbers, no labels, no logos, no watermark."
+      },
+      "annotation": "एक ratio नहीं—पूरी तस्वीर देखें",
+      "cta": "अगले Stock analysis में इसे apply करें"
     }
   ],
-  "caption": "क्या आप जानते हैं कि आपका पैसा वास्तव में कितने सालों में दोगुना होगा? 📈\n\n'Rule of 72' पर्सनल फाइनेंस का सबसे आसान और जादुई नियम है:\n72 ÷ Return Rate = समय (साल)\n\n👉 6% FD में: 12 साल\n👉 12% Equity/SIP में: 6 साल\n\nलेकिन याद रखें, यही नियम 6% की दर से आपकी क्रय शक्ति (Purchasing Power) को भी 12 साल में आधा कर देता है! इसलिए सही जगह निवेश करना जरूरी है।\n\nवित्तीय साक्षरता और स्मार्ट इन्वेस्टिंग के लिए विजिट करें: TrustPointFin.org\n\n#RuleOf72 #PersonalFinance #InvestingTips #TrustPointFin #Compounding #FinancialEducation #MutualFundsSahiHai #SmartMoney"
+  "caption": "P/E Ratio Stock की Price को उसकी Earnings के संदर्भ में समझने का एक useful तरीका है। लेकिन High P/E हमेशा खराब और Low P/E हमेशा bargain नहीं होता। Industry peers, historical valuation, Earnings growth, Debt और Cash Flow को साथ में देखकर ही बेहतर analysis किया जा सकता है।\n\nNegative P/E दिखे तो अक्सर Company की EPS negative हो सकती है, इसलिए Revenue growth, cash burn और future profitability plan पर ध्यान दें।\n\nयह educational content है, व्यक्तिगत Investment advice नहीं।\n\n#TrustPointFin #PERatio #StockMarketBasics #InvestingForBeginners #ValueInvesting #FinancialLiteracy #StockAnalysis #PersonalFinance #HindiFinance #InvestingEducation"
 }
