@@ -1,17 +1,22 @@
 # Social Media Posts
-*Generated for article: "P/E Ratio क्या है और यह इतना महत्वपूर्ण क्यों है? Beginners के लिए आसान Guide"*
+*Generated for article: "The 50-30-20 Rule of Money: ₹30,000 Salary पर Wealth कैसे Build करें?"*
 
 ---
 
 ## 📝 Caption
 
-P/E Ratio Stock की Price को उसकी Earnings के संदर्भ में समझने का एक useful तरीका है। लेकिन High P/E हमेशा खराब और Low P/E हमेशा bargain नहीं होता। Industry peers, historical valuation, Earnings growth, Debt और Cash Flow को साथ में देखकर ही बेहतर analysis किया जा सकता है।
+₹30,000 salary पर wealth build करना सिर्फ ज्यादा कमाने का इंतज़ार नहीं है—यह money को सही direction देने से शुरू होता है।
 
-Negative P/E दिखे तो अक्सर Company की EPS negative हो सकती है, इसलिए Revenue growth, cash burn और future profitability plan पर ध्यान दें।
+50-30-20 framework से शुरुआत करें:
+🏠 50% Needs: ₹15,000
+🎉 30% Wants: ₹9,000
+🌱 20% Savings/Debt goals: ₹6,000
 
-यह educational content है, व्यक्तिगत Investment advice नहीं।
+लेकिन याद रखें: यह rigid formula नहीं है। पहले Emergency Fund और high-interest debt पर ध्यान दें। उसके बाद ही अपने goals, time horizon, risk capacity, fees और taxation को समझकर regulated investment options पर research करें।
 
-#TrustPointFin #PERatio #StockMarketBasics #InvestingForBeginners #ValueInvesting #FinancialLiteracy #StockAnalysis #PersonalFinance #HindiFinance #InvestingEducation
+अपने budget को अपनी वास्तविक life के अनुसार adapt करें और कम-से-कम 30 दिन expenses track करें।
+
+#TrustPointFin #PersonalFinance #Budgeting #503020Rule #MoneyManagement #EmergencyFund #DebtFreeJourney #FinancialPlanning #InvestingBasics #HindiFinance
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/what-is-pe-ratio-and-why-does-it-matter.html*
+*Article URL: https://trilok310.github.io/trustpointfin/the-50-30-20-rule-of-money-how-to-build-wealth-on-a-30rs-000.html*

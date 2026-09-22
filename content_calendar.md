@@ -139,7 +139,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 993. The Rule of 72: How long to double your money?
 - [x] 994. Quiz: Which asset gave the highest return in 10 years?
 - [x] 995. What is P/E Ratio and why does it matter?
-- [ ] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30Rs. 000 Salary
+- [x] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30Rs. 000 Salary
 - [ ] 127. Why FDs Are Keeping You Poor: The Hidden Tax of Inflation
 - [ ] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5Rs. 000?
 - [ ] 129. What is a SIP and Why It's the Cheat Code for Indian Millennials

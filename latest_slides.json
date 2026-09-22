@@ -1,104 +1,99 @@
 {
-  "topic": "P/E Ratio क्या है और यह इतना महत्वपूर्ण क्यों है? Beginners के लिए आसान Guide",
-  "teaching_objective": "Beginners को समझाना कि P/E Ratio Price और Earnings के बीच संबंध दिखाता है, इसे कैसे calculate करें, High और Low P/E को context के साथ कैसे पढ़ें, और इसकी limitations क्या हैं।",
-  "format": "BEGINNER_CONCEPT",
+  "topic": "The 50-30-20 Rule of Money: ₹30,000 Salary पर Wealth कैसे Build करें?",
+  "teaching_objective": "Learners को समझाना कि ₹30,000 monthly income को Needs, Wants और Savings/Debt goals में कैसे बाँटें, और Emergency Fund व high-interest debt को investment से पहले कैसे prioritize करें।",
+  "format": "CALCULATION",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Stock महंगा है या सस्ता?",
-      "core_explanation": "• केवल Stock Price देखकर फैसला करना मुश्किल हो सकता है।\n• P/E Ratio Price को Company की Earnings के संदर्भ में देखने में मदद करता है।",
+      "headline": "₹30,000 salary को direction दो",
+      "core_explanation": [
+        "Budget का उद्देश्य सिर्फ खर्च रोकना नहीं, बल्कि हर रुपये को purpose देना है।",
+        "50-30-20 एक starting framework है, कोई mandatory rule नहीं।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक beginner investor, Asha, दो छोटे business stalls के सामने खड़ी है। एक stall की price tag बहुत बड़ी है लेकिन कम कमाई दिखती है; दूसरे की price छोटी है और कमाई का मजबूत संकेत दिखता है। Asha के हाथ में magnifying glass है और पीछे एक साफ, illustrated financial dashboard जैसा वातावरण है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A warm editorial illustration with a curious young Indian woman investor comparing two colorful small business stalls, one expensive-looking with a small basket of coins and one modest-looking with a larger basket of coins, subtle stock market motifs, magnifying glass, clean cream paper background, navy blue, teal, coral and mustard palette, hand-drawn textures, expressive characters, clear visual hierarchy, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक युवा भारतीय professional अपने monthly salary envelope को तीन साफ रास्तों में बाँटता हुआ दिखे। सामने तीन अलग-अलग खुले रास्ते हों: घर और रोजमर्रा की जरूरतों का रास्ता, आराम और experiences का रास्ता, और future security की ओर जाता हुआ रास्ता। कमरे में calendar, wallet, calculator और छोटे plant जैसे objects हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration with warm cream paper texture, deep navy ink outlines, muted teal, saffron, coral and green accents, a young Indian salaried professional at a wooden desk thoughtfully organizing monthly money into three visual pathways, home essentials on one path, leisure objects on another, a growing plant and secure future imagery on the third, calculator, wallet, calendar and gentle sunlight, layered paper cutout depth, expressive but realistic characters, clean composition, premium financial education infographic mood. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow: Price को Earnings के साथ देखें",
-      "cta": "पहले concept समझें"
+      "annotation": "पहले income को plan करो, फिर खर्च शुरू करो।",
+      "cta": "अपना monthly budget लिखना शुरू करें"
     },
     {
       "slide_number": 2,
-      "purpose": "definition",
-      "headline": "P/E Ratio क्या बताता है?",
-      "core_explanation": "• P/E का अर्थ है Price-to-Earnings Ratio।\n• यह बताता है कि Market, Company की प्रति शेयर कमाई के मुकाबले कितना Price दे रहा है।\n• यह valuation को समझने का एक useful starting point है, final answer नहीं।",
+      "purpose": "calculation",
+      "headline": "50% Needs: ₹15,000",
+      "core_explanation": [
+        "Rent, groceries, transport, bills और essential healthcare जैसे खर्च।",
+        "यह हिस्सा आपकी basic life को चलाता है—इसे पहले सुरक्षित करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "Asha एक balance scale देख रही है। एक तरफ stock price का प्रतीक बना चमकता सिक्का है और दूसरी तरफ earnings का प्रतीक नियमित रूप से भरती हुई coin jar है। Scale valuation comparison का metaphor दिखाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A thoughtful Indian beginner investor studying a balanced brass scale, one side represented by a polished stock coin and the other by a steadily filling earnings jar, subtle abstract market chart shapes in the background, educational infographic composition without any written elements, rich paper grain, soft shadows, navy, teal, coral and gold colors, friendly modern editorial illustration, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक balanced household scene जिसमें character essential expenses को संभाल रहा है: छोटा घर, किराने का थैला, bus pass जैसी बिना लिखावट वाली वस्तु, बिजली का bulb और medicine kit। एक बड़ा गोल pie-like plate का आधा हिस्सा practical essentials से भरा हो, लेकिन कोई textual markings न हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated financial lesson scene, Indian young professional calmly arranging essential household objects on exactly half of a large circular wooden budgeting board, modest apartment, grocery basket, cooking pot, transit card without markings, utility bulb, medicine pouch, balanced scale, warm cream background, navy linework, teal and ochre accents, subtle hand-drawn arrows without symbols, tactile paper collage, clear visual hierarchy, no clutter. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "P/E = Price और Earnings का रिश्ता",
-      "cta": null
+      "annotation": "Arrow: सबसे पहले essential खर्चों की सीमा तय करें।",
+      "cta": "अपने Needs की list बनाइए"
     },
     {
       "slide_number": 3,
       "purpose": "calculation",
-      "headline": "P/E कैसे Calculate करें?",
-      "core_explanation": "• Formula: P/E = Market Price per Share ÷ EPS\n• उदाहरण: Price ₹200 और EPS ₹10 हो, तो P/E = 20\n• यानी Price, प्रति शेयर कमाई का लगभग 20 गुना है।",
+      "headline": "30% Wants: ₹9,000",
+      "core_explanation": [
+        "Dining out, shopping, entertainment और hobbies इस bucket में आते हैं।",
+        "Wants गलत नहीं हैं—बस इन्हें planned और controlled रखें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक साफ desk scene जिसमें Asha calculator पर division कर रही है। सामने एक बड़ा सिक्का price को दर्शाता है, उसके बगल में earnings coins का छोटा stack है, और result के रूप में coins की बीस समान इकाइयों वाला visual grouping है—लेकिन कोई अंक या text नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A young Indian woman calculating valuation at a tidy desk with a vintage calculator showing a blank screen, one large coin beside a small stack of earnings coins, a visual grouping suggesting one amount divided by another, notebook pages with geometric shapes only, no writing, warm sunlight, cream background, teal and coral accents, detailed hands and objects, educational storybook illustration, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "वही character एक cheerful leisure corner में तीन विकल्पों के बीच चुनाव करता हुआ दिखे: café cup, headphones और shopping bag। पास में सीमित coins वाला छोटा transparent jar हो, जिससे moderation का visual संकेत मिले। Scene joyful हो, guilt-based नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration of the same young Indian professional enjoying planned lifestyle spending, choosing thoughtfully among a cafe cup, headphones, a movie ticket shape without markings, and a small shopping bag, a transparent jar with a limited amount of coins nearby suggesting a fixed boundary, joyful balanced mood, cozy urban setting, cream paper texture, bold navy outlines, coral and saffron accents, layered cut-paper depth, expressive character, premium educational storytelling. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "पहले Price और EPS दोनों verify करें",
-      "cta": "Formula save करें"
+      "annotation": "Wants को हटाना नहीं—उनके लिए limit बनानी है।",
+      "cta": "अपने fun budget की सीमा तय करें"
     },
     {
       "slide_number": 4,
-      "purpose": "interpretation",
-      "headline": "High P/E हमेशा खराब नहीं",
-      "core_explanation": "• High P/E का कारण तेज Earnings growth, मजबूत Brand या बेहतर margins हो सकते हैं।\n• लेकिन future growth उम्मीद से कमजोर रही, तो valuation multiple कम हो सकता है।\n• इसलिए High P/E को growth और business quality के साथ पढ़ें।",
+      "purpose": "calculation",
+      "headline": "20% Future: ₹6,000",
+      "core_explanation": [
+        "यह हिस्सा Savings, Emergency Fund और Debt repayment के लिए है।",
+        "Long-term investment तभी सोचें जब cash reserve और debt स्थिति manageable हो।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक उभरता हुआ business tree दिखाया गया है जिसकी शाखाओं पर नए products, loyal customers और expanding storefronts के visual symbols हैं। सामने investor एक ऊंची सीढ़ी पर चढ़ने से पहले बादलों और हवा की दिशा जांच रही है—growth opportunity के साथ uncertainty का metaphor।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An ambitious Indian entrepreneur-investor observing a tall growing business tree with branches representing products, loyal customers, strong margins and expanding stores, a high staircase beside it leading toward a bright but partly cloudy sky, visual balance between opportunity and uncertainty, sophisticated editorial illustration, textured paper, navy teal coral mustard palette, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक मजबूत financial foundation का cutaway दृश्य: character ₹6,000 के symbolic sixth-part को तीन दिशाओं में लगाता है—पहले emergency box, फिर debt chain को कमजोर करना, और अंत में long-term tree को पानी देना। किसी object पर text या symbols न हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich financial storytelling illustration, young Indian professional directing a dedicated portion of monthly money into a sturdy emergency chest, gently breaking a heavy debt chain, and watering a young long-term investment tree, visual sequence from safety to debt control to growth, three connected steps shown through objects and arrows only, no written marks, warm cream paper, deep navy ink, forest green, teal and saffron palette, sophisticated cutaway composition, optimistic but realistic. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "High P/E को growth के against check करें",
-      "cta": null
+      "annotation": "Priority arrow: Emergency Fund → high-interest Debt → long-term goals",
+      "cta": "पहले अपना financial safety net जाँचें"
     },
     {
       "slide_number": 5,
-      "purpose": "comparison",
-      "headline": "Low P/E = Bargain? जरूरी नहीं",
-      "core_explanation": "• Low P/E attractive लग सकता है, पर Company की growth धीमी या business risk अधिक हो सकता है।\n• तुलना Industry peers और Company के historical P/E से करें।\n• केवल एक ratio देखकर Investment decision न लें।",
+      "purpose": "process",
+      "headline": "क्या ₹6,000 invest करना ही है?",
+      "core_explanation": [
+        "Emergency Fund नहीं है तो ₹6,000 का बड़ा हिस्सा liquid reserve में जा सकता है।",
+        "High-interest debt हो तो repayment investment से पहले आ सकती है।",
+        "स्थिति stable हो तो goal, time horizon, risk और fees देखकर regulated options research करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "Asha एक market lane में तीन समान दुकानों की तुलना कर रही है। एक दुकान पर कम price का संकेत देने वाला छोटा coin pile है, लेकिन उसके आसपास टूटती दीवार और कम customers हैं; दूसरी दुकानों में अलग-अलग business strength दिखाई देती है। कोई written signage नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A young Indian investor comparing three similar neighborhood businesses in a market lane, one shop surrounded by a small pile of coins but showing worn walls and few customers, the other shops showing healthier activity and stronger foundations, visual metaphor for low valuation versus business quality, richly illustrated, clean composition, paper texture, teal navy coral and mustard palette, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक decision-path scene जिसमें character तीन doors या branching paths के सामने है। पहला path emergency umbrella और savings jar की ओर, दूसरा debt mountain को नीचे लाने की ओर, तीसरा diversified garden की ओर। Character पहले दो paths की जाँच करके तीसरे की ओर बढ़ने का निर्णय ले रहा हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated decision journey for personal finance, a young Indian professional standing at a three-way branching path, one route leads to an emergency umbrella shelter and liquid reserve jar, second route leads to reducing a heavy debt mountain, third route leads to a diversified garden with several different healthy plants, thoughtful decision-making pose, visual arrows made only from shapes, no written signs, cream paper background, navy outlines, teal green coral and mustard palette, NotebookLM-inspired layered educational composition. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "सस्ता दिखना और मजबूत होना अलग बातें हैं",
-      "cta": "Context के साथ compare करें"
+      "annotation": "Product चुनने से पहले goal, risk, time horizon और fees देखें।",
+      "cta": "अपनी priority के हिसाब से next step चुनें"
     },
     {
       "slide_number": 6,
-      "purpose": "process",
-      "headline": "P/E को अकेले मत पढ़िए",
-      "core_explanation": "• Industry peers और historical P/E देखें।\n• Earnings growth, Debt और Cash Flow भी जांचें।\n• Business model और future opportunity को समझना जरूरी है।",
+      "purpose": "adaptation",
+      "headline": "Rule को अपनी life के हिसाब से बदलें",
+      "core_explanation": [
+        "अगर Needs ₹15,000 से ज्यादा हैं, तो 60-20-20 या 65-25-10 जैसे modified ratios अपनाए जा सकते हैं।",
+        "Perfect ratio से ज्यादा important है: खर्च track करना, debt control करना और नियमित saving शुरू करना।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक investigation board जैसा दृश्य जिसमें Asha चार connected pathways देख रही है: peer comparison के लिए समान दुकानों की row, growth के लिए ऊपर जाता plant, debt के लिए भारी backpack, और cash flow के लिए बहती नदी। सभी visual symbols हैं, कोई text नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A focused Indian investor exploring a visual investigation board connected to four scenes: comparable shops in a row, a growing plant, a heavy debt backpack, and a flowing cash river, all connected by colored threads, no written notes, cinematic yet educational composition, hand-drawn editorial style, cream paper background, navy teal coral gold palette, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक flexible budgeting workshop जैसा दृश्य जिसमें अलग-अलग income situations वाले तीन भारतीय characters अपने अलग आकार के pie boards adjust कर रहे हों। एक board needs-heavy, दूसरा balanced, तीसरा savings-focused हो। सभी characters progress और confidence दिखाएँ, comparison या shame नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial financial education illustration showing three diverse Indian adults customizing flexible budgeting boards for different real-life situations, one needs-heavy household, one balanced budget, one stronger savings situation, adjustable colorful segments made of plain shapes, each person confident and learning, small tracking notebook with blank pages, supportive workshop atmosphere, cream paper texture, navy hand-drawn outlines, teal, green, coral and saffron accents, visual metaphor of progress not perfection, clean layered composition. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Checklist: Peers • Growth • Debt • Cash Flow",
-      "cta": "अपना analysis checklist बनाएं"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "limitation",
-      "headline": "Negative P/E का क्या मतलब?",
-      "core_explanation": "• Negative P/E आमतौर पर तब दिखता है जब EPS negative हो, यानी Company ने loss report किया हो।\n• ऐसी स्थिति में P/E meaningful comparison नहीं दे सकता।\n• Revenue growth, cash burn, Debt, Operating Cash Flow और profitability plan देखें।",
-      "visual_spec": {
-        "visual_concept": "एक business boat घाटे के कारण लाल पानी में डगमगा रही है। Asha केवल price sign देखने के बजाय boat की fuel gauge, leaking cash bucket, debt anchor और future route map की जांच कर रही है। दृश्य risk और deeper analysis को दर्शाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A small business boat rocking on uncertain red-tinted water, with a leaking coin bucket, a heavy anchor, a low fuel gauge shown only through visual symbols, and an Indian investor examining the boat's engine and route map, metaphor for loss-making company analysis beyond P/E, empathetic but cautionary editorial illustration, textured cream paper, navy teal coral and muted red palette, no letters, no numbers, no labels, no logos, no watermark."
-      },
-      "annotation": "Loss में P/E की जगह fundamentals देखें",
-      "cta": "Ratio को context से जोड़ें"
-    },
-    {
-      "slide_number": 8,
-      "purpose": "summary",
-      "headline": "P/E एक शुरुआत है, फैसला नहीं",
-      "core_explanation": "• P/E valuation comparison का useful tool है।\n• High या Low P/E अपने-आप सही या गलत Investment साबित नहीं करता।\n• बेहतर analysis के लिए Growth, Debt, Cash Flow और Industry context साथ में देखें।",
-      "visual_spec": {
-        "visual_concept": "Asha एक financial journey के crossroads पर खड़ी है। उसके पास compass, binoculars, balance scale और map हैं; आगे अलग-अलग रास्ते businesses, growth और risk की ओर जाते हैं। वह जल्दबाजी से बचकर जानकारी इकट्ठी कर रही है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A confident Indian beginner investor standing at a financial crossroads holding a compass, binoculars, a small balance scale and a map, multiple paths leading toward different stylized businesses with both sunny and cloudy sections, calm thoughtful mood, rich storytelling, modern educational editorial illustration, cream paper texture, navy teal coral mustard palette, no letters, no numbers, no labels, no logos, no watermark."
-      },
-      "annotation": "एक ratio नहीं—पूरी तस्वीर देखें",
-      "cta": "अगले Stock analysis में इसे apply करें"
+      "annotation": "Budget का best version वही है जो आप लगातार follow कर सकें।",
+      "cta": "आज से 30 दिन expenses track करें"
     }
   ],
-  "caption": "P/E Ratio Stock की Price को उसकी Earnings के संदर्भ में समझने का एक useful तरीका है। लेकिन High P/E हमेशा खराब और Low P/E हमेशा bargain नहीं होता। Industry peers, historical valuation, Earnings growth, Debt और Cash Flow को साथ में देखकर ही बेहतर analysis किया जा सकता है।\n\nNegative P/E दिखे तो अक्सर Company की EPS negative हो सकती है, इसलिए Revenue growth, cash burn और future profitability plan पर ध्यान दें।\n\nयह educational content है, व्यक्तिगत Investment advice नहीं।\n\n#TrustPointFin #PERatio #StockMarketBasics #InvestingForBeginners #ValueInvesting #FinancialLiteracy #StockAnalysis #PersonalFinance #HindiFinance #InvestingEducation"
+  "caption": "₹30,000 salary पर wealth build करना सिर्फ ज्यादा कमाने का इंतज़ार नहीं है—यह money को सही direction देने से शुरू होता है।\n\n50-30-20 framework से शुरुआत करें:\n🏠 50% Needs: ₹15,000\n🎉 30% Wants: ₹9,000\n🌱 20% Savings/Debt goals: ₹6,000\n\nलेकिन याद रखें: यह rigid formula नहीं है। पहले Emergency Fund और high-interest debt पर ध्यान दें। उसके बाद ही अपने goals, time horizon, risk capacity, fees और taxation को समझकर regulated investment options पर research करें।\n\nअपने budget को अपनी वास्तविक life के अनुसार adapt करें और कम-से-कम 30 दिन expenses track करें।\n\n#TrustPointFin #PersonalFinance #Budgeting #503020Rule #MoneyManagement #EmergencyFund #DebtFreeJourney #FinancialPlanning #InvestingBasics #HindiFinance"
 }
