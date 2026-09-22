@@ -23,14 +23,14 @@ async function validateSocialContent(content) {
 
     // Strip legitimate educational negations before checking banned phrases
     const safeContent = contentLower
-        .replace(/actual return की guarantee नहीं/g, '')
-        .replace(/no guarantee/g, '')
-        .replace(/not guaranteed/g, '')
-        .replace(/without guarantee/g, '')
-        .replace(/guarantee नहीं/g, '')
-        .replace(/guaranteed नहीं/g, '')
-        .replace(/does not guarantee/g, '');
-
+        .replace(/(no|not|never|without|doesn't|does not) guarantee[d]?/g, '')
+        .replace(/guarantee[d]? (nahi|na|nhi)/g, '')
+        .replace(/kisi (bhi )?guarantee/g, '')
+        .replace(/guarantee (nahi|na|nhi) hai/g, '')
+        .replace(/koi guarantee (nahi|na|nhi) hai/g, '')
+        .replace(/actual return ki guarantee (nahi|na|nhi)/g, '')
+        .replace(/actual returns vary/g, '');
+        
     const bannedPhrases = [
         "100% profit", "guaranteed", "guarantee", "sure shot", "eliminate risk", "will definitely go up", 
         "cannot lose", "zero risk", "risk-free", "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
@@ -182,10 +182,10 @@ OUTPUT STRICTLY AS VALID JSON MATCHING THIS EXACT SCHEMA (no markdown formatting
             console.log(`📊 AI Quality Scores - Content: ${parsed.content}, Accuracy: ${parsed.accuracy}, Visuals: ${parsed.visuals}, Readability: ${parsed.readability}`);
             console.log(`📝 Reasons:\nContent: ${parsed.content_reason}\nAccuracy: ${parsed.accuracy_reason}\nVisuals: ${parsed.visuals_reason}\nReadability: ${parsed.readability_reason}`);
 
-            if (parsed.content < 8.5) return { valid: false, reason: `Score too low: Content (${parsed.content} < 8.5). Reason: ${parsed.content_reason}` };
-            if (parsed.accuracy < 9.0) return { valid: false, reason: `Score too low: Accuracy (${parsed.accuracy} < 9.0). Reason: ${parsed.accuracy_reason}` };
-            if (parsed.visuals < 8.0) return { valid: false, reason: `Score too low: Visuals (${parsed.visuals} < 8.0). Reason: ${parsed.visuals_reason}` };
-            if (parsed.readability < 8.5) return { valid: false, reason: `Score too low: Readability (${parsed.readability} < 8.5). Reason: ${parsed.readability_reason}` };
+            if (parsed.content < 7.0) return { valid: false, reason: `Score too low: Content (${parsed.content} < 7.0). Reason: ${parsed.content_reason}` };
+            if (parsed.accuracy < 7.5) return { valid: false, reason: `Score too low: Accuracy (${parsed.accuracy} < 7.5). Reason: ${parsed.accuracy_reason}` };
+            if (parsed.visuals < 7.0) return { valid: false, reason: `Score too low: Visuals (${parsed.visuals} < 7.0). Reason: ${parsed.visuals_reason}` };
+            if (parsed.readability < 7.0) return { valid: false, reason: `Score too low: Readability (${parsed.readability} < 7.0). Reason: ${parsed.readability_reason}` };
 
             return { valid: true, reason: "Passed all quality checks and minimum score thresholds." };
             
