@@ -3,10 +3,10 @@
   "topic": "What is P/E Ratio and why does it matter?",
   "lineIndex": 140,
   "scheduled_at": null,
-  "started_at": "2026-09-22T13:53:30.678Z",
-  "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 1,
-  "article_compliance_status": "SUCCESS",
+  "started_at": "2026-09-22T14:02:57.262Z",
+  "article_generation_status": "PENDING",
+  "article_correction_attempts": 0,
+  "article_compliance_status": "PENDING",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
   "social_correction_attempts": 0,
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-09-22T13:55:28.842Z",
+  "updated_at": "2026-09-22T14:02:57.265Z",
   "filename": "what-is-pe-ratio-and-why-does-it-matter.html",
   "title": "P/E Ratio क्या है और यह इतना महत्वपूर्ण क्यों है? Beginners के लिए आसान Guide"
 }
