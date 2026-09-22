@@ -373,8 +373,7 @@ QUALITY TARGETS:
           if (process.env.TEST_MOCK_ARTICLE_TEXT) {
               resultText = process.env.TEST_MOCK_ARTICLE_TEXT;
           } else {
-              const result = await primaryModel.generateContent(currentPrompt);
-              resultText = result.response.text();
+              resultText = await aiProvider.generateContent(currentPrompt);
           }
           
           articleText = resultText;
