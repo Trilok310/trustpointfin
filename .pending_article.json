@@ -1,12 +1,12 @@
 {
-  "job_id": "job_2026-09-22_what-is-p-e-ratio-and-why-does",
-  "topic": "What is P/E Ratio and why does it matter?",
-  "lineIndex": 140,
+  "job_id": "job_2026-09-22_the-50-30-20-rule-of-money-how",
+  "topic": "The 50-30-20 Rule of Money: How to Build Wealth on a ₹30Rs. 000 Salary",
+  "lineIndex": 141,
   "scheduled_at": null,
-  "started_at": "2026-09-22T14:09:43.607Z",
-  "article_generation_status": "PENDING",
-  "article_correction_attempts": 0,
-  "article_compliance_status": "PENDING",
+  "started_at": "2026-09-22T15:08:31.691Z",
+  "article_generation_status": "SUCCESS",
+  "article_correction_attempts": 1,
+  "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
   "social_correction_attempts": 0,
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-09-22T14:09:43.610Z",
-  "filename": "what-is-pe-ratio-and-why-does-it-matter.html",
-  "title": "P/E Ratio क्या है और यह इतना महत्वपूर्ण क्यों है? Beginners के लिए आसान Guide"
+  "updated_at": "2026-09-22T15:10:16.769Z",
+  "filename": "the-50-30-20-rule-of-money-how-to-build-wealth-on-a-30rs-000.html",
+  "title": "The 50-30-20 Rule of Money: ₹30,000 Salary पर Wealth कैसे Build करें?"
 }
