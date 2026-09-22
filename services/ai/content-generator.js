@@ -5,25 +5,17 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "dummy_key");
 const modelName = process.env.GEMINI_PAID_MODEL || "gemini-3.8-flash";
 const model = genAI.getGenerativeModel({ model: modelName });
 
-async function generateSocialContent(topic) {
-    const prompt = `You are the Chief Financial Educator and Art Director for TrustPointFin.
-OBJECTIVE: Create an illustrated financial mini-lesson using a rich, NotebookLM-style educational visual system.
+async function generateSocialContent(topic, approvedArticleText = "") {
+    const basePrompt = `You are the Chief Financial Educator and Art Director for TrustPointFin.
+OBJECTIVE: Create an illustrated financial mini-lesson using a rich, NotebookLM-style educational visual system based ON THE PROVIDED APPROVED ARTICLE.
+
+APPROVED ARTICLE CONTEXT:
+${approvedArticleText.substring(0, 3000)}
 
 TARGET QUALITY:
 - Rich illustrated storytelling with actual characters, scenes, objects, and visual metaphors.
-- Educational diagrams, relationships, and charts/graphs when the topic benefits from them.
-- Format must adapt to the topic. Select from:
-  * STORY (characters + scene + speech bubbles logic)
-  * COMPARISON (two visual worlds + comparison structure)
-  * CALCULATION (illustrated objects + formula + worked example)
-  * PROCESS (step-by-step visual journey)
-  * RISK (scenario/decision illustration)
-  * MARKET_CONCEPT (chart + illustrated explanation)
-  * MYTH_VS_REALITY (contrasting scenes)
-  * PSYCHOLOGY (character conversation/internal conflict)
-  * TIMELINE (visual progression)
-  * BEGINNER_CONCEPT (everyday-life analogy)
-- DO NOT use the same generic format for every slide.
+- Format must adapt to the topic. Select from: STORY|COMPARISON|CALCULATION|PROCESS|RISK|MARKET_CONCEPT
+- CRITICAL: NO TEXT, NO LABELS in image prompts.
 
 TOPIC: ${topic}
 
@@ -37,16 +29,16 @@ OUTPUT RAW JSON:
       "slide_number": 1,
       "purpose": "context",
       "headline": "Short main text (Hindi/Hinglish)",
-      "core_explanation": "Short educational statement (Max 2-4 points, visually structured). CRITICAL: NO dense paragraph blocks. Mobile-readable, Hindi/Hinglish",
+      "core_explanation": "Short educational statement (Max 2-4 points). CRITICAL: NO dense paragraph blocks.",
       "visual_spec": {
-          "visual_concept": "Describe the core visual idea (e.g. 'Two contrasting worlds: a calm investor in a storm vs a panicked trader')",
-          "image_generation_prompt": "Prompt for DALL-E 3. MUST INCLUDE: 'NotebookLM-style educational aesthetic. Rich illustrated storytelling with characters, scenes, and visual metaphors. Full-width composition with substantial vertical depth (4:3 ratio). Fill the entire canvas space. Light, soft, airy pastel colors. CRITICAL: NO TEXT, NO LABELS, NO NUMBERS, NO CHARACTERS OF ANY ALPHABET inside the image itself. The image must be completely text-free.'"
+          "visual_concept": "Describe the core visual idea",
+          "image_generation_prompt": "Prompt for DALL-E 3. MUST INCLUDE: 'NotebookLM-style educational aesthetic. NO TEXT.'"
       },
       "annotation": "A small tip or arrow annotation",
-      "cta": "Short call to action text (max 3 words). If you include a website, ALWAYS use TRUSTPOINTFIN.ORG (never .com). Can be null."
+      "cta": "Short call to action text. Can be null."
     }
   ],
-  "caption": "Instagram/Facebook caption with relevant hashtags. Always mention TrustPointFin.org in the bio/text."
+  "caption": "Instagram/Facebook caption with relevant hashtags."
 }`;
 
     if (!process.env.GEMINI_API_KEY) {
@@ -54,31 +46,45 @@ OUTPUT RAW JSON:
     }
 
     let attempts = 0;
-    let backoffDelay = 5000;
+    let correctionContext = "";
+
     while (attempts < 5) {
         attempts++;
         try {
-            const result = await model.generateContent(prompt);
+            let currentPrompt = basePrompt;
+            if (correctionContext) {
+                console.log("[AUTO-CORRECTION] Sending social compliance feedback to AI...");
+                currentPrompt += `\n\nCRITICAL COMPLIANCE FEEDBACK FROM PREVIOUS ATTEMPT:\n${correctionContext}\nFix the JSON to resolve these errors.`;
+            }
+
+            const result = await model.generateContent(currentPrompt);
             let rawText = result.response.text();
             rawText = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
-            const parsed = JSON.parse(rawText);
+            
+            let parsed;
+            try {
+                parsed = JSON.parse(rawText);
+            } catch (e) {
+                correctionContext = "Invalid JSON syntax. Fix the formatting.";
+                continue;
+            }
             
             const qg = validateSocialContent(parsed);
             if (qg.valid) return parsed;
+            
             console.log("Quality Gate Failed:", qg.reason);
+            correctionContext = `Rule violated: ${qg.rule || qg.reason}`;
+            
+            if (attempts >= 3) {
+                throw new Error(`Social Quality Gate permanently failed: ${qg.reason}`);
+            }
         } catch (e) {
             console.log(`Generation error on attempt ${attempts}:`, e.message);
-            if (e.message.includes("limit: 20") || e.message.includes("quota")) {
-                console.error("❌ CRITICAL ERROR: Daily API quota exhausted. Halting pipeline permanently.");
-                throw e; 
-            }
-            if (e.message.includes("429") || e.message.includes("503") || e.message.includes("overloaded") || e.message.includes("unavailable")) {
-                if (attempts >= 5) {
-                    throw new Error(`Failed to generate content after 5 attempts due to API limits. Last error: ${e.message}`);
-                }
-                console.log(`⚠️ Rate limit / 503 hit (transient). Waiting ${backoffDelay/1000}s before retry...`);
-                await new Promise(resolve => setTimeout(resolve, backoffDelay));
-                backoffDelay *= 2; // exponential backoff
+            if (e.message.includes("permanently failed")) throw e;
+            
+            if (e.message.includes("429") || e.message.includes("503") || e.message.includes("overloaded")) {
+                if (attempts >= 5) throw new Error(`API limits exhausted: ${e.message}`);
+                await new Promise(resolve => setTimeout(resolve, 5000));
             } else {
                 if (attempts >= 5) throw e;
             }

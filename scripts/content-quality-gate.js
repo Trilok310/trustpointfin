@@ -38,7 +38,12 @@ async function validateSocialContent(content) {
     
     for (const phrase of bannedPhrases) {
         if (safeContent.includes(phrase)) {
-            return { valid: false, reason: `DETERMINISTIC COMPLIANCE FAILURE: Found banned absolute claim ("${phrase}").` };
+            return { 
+                valid: false, 
+                reason: `DETERMINISTIC COMPLIANCE FAILURE: Found banned absolute claim ("${phrase}").`,
+                rule: "Do not use absolute certainty or guaranteed claims.",
+                offending_text: phrase
+            };
         }
     }
 
@@ -46,23 +51,37 @@ async function validateSocialContent(content) {
     if (contentLower.includes("rule of 72") || contentLower.includes("72 ÷") || contentLower.includes("72 /")) {
         const hasApprox = contentLower.includes("≈") || contentLower.includes("approx") || contentLower.includes("लगभग") || contentLower.includes("अनुमान");
         if (!hasApprox) {
-             return { valid: false, reason: "COMPLIANCE FAILURE: Rule of 72 or formula is not described as approximate (missing ≈ or लगभग)." };
+             return { 
+                 valid: false, 
+                 reason: "COMPLIANCE FAILURE: Rule of 72 or formula is not described as approximate (missing ≈ or लगभग).",
+                 rule: "Rule of 72 and formulas must always be described as approximate using '≈' or 'लगभग'.",
+                 offending_text: "Rule of 72 calculation without approximation symbol"
+             };
         }
     }
 
     // Hypothetical Return/Inflation Check
     if (contentLower.includes("inflation") || contentLower.includes("महंगाई")) {
         if (contentLower.includes("पैसे को आधा कर रही है") || contentLower.includes("half your money")) {
-             return { valid: false, reason: "COMPLIANCE FAILURE: Inflation described with sensational/absolute language." };
+             return { 
+                 valid: false, 
+                 reason: "COMPLIANCE FAILURE: Inflation described with sensational/absolute language.",
+                 rule: "Do not use absolute or sensational language like 'halving your money' for inflation.",
+                 offending_text: "Inflation reducing money absolutely"
+             };
         }
     }
     
-    // Check for clearly labelled hypothetical returns (if equity returns mentioned without labeling)
-    // To keep it simple deterministically: if it mentions specific high returns, ensure it has illustrative words
+    // Check for clearly labelled hypothetical returns
     if (contentLower.match(/\b(1[0-9]|2[0-9])\s*%\s*(return|cagr)/)) {
         const hasLabel = contentLower.includes("hypothetical") || contentLower.includes("illustrative") || contentLower.includes("मानें") || contentLower.includes("यदि") || contentLower.includes("example") || contentLower.includes("उदाहरण");
         if (!hasLabel) {
-             return { valid: false, reason: "COMPLIANCE FAILURE: Numerical return assumption without 'hypothetical/illustrative' labeling." };
+             return { 
+                 valid: false, 
+                 reason: "COMPLIANCE FAILURE: Numerical return assumption without 'hypothetical/illustrative' labeling.",
+                 rule: "Any mention of specific high returns (e.g. 12% return) must be explicitly labelled as 'hypothetical', 'illustrative', or 'उदाहरण'.",
+                 offending_text: "High percentage return without assumption label"
+             };
         }
     }
     

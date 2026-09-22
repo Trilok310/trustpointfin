@@ -1,3 +1,4 @@
+const stateManager = require('./state-manager.js');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs = require("fs");
 const path = require("path");
@@ -131,7 +132,7 @@ function getNextTopic() {
   const calendar = fs.readFileSync(CALENDAR_PATH, "utf-8");
   const lines = calendar.split("\n");
   for (let i = 0; i < lines.length; i++) {
-    const match = lines[i].match(/^- \[ \] (.+)$/);
+    const match = lines[i].trim().match(/^- \[ \] (.+)$/);
     if (match) return { topic: match[1].replace(/^\d+\.\s*/, "").trim(), lineIndex: i, lines };
   }
   return null;
@@ -203,6 +204,9 @@ function classifyError(safeMessage) {
 }
 
 async function main() {
+  
+  stateManager.handleStalePending();
+
   // 1. STATE: SELECTED
   currentState = "SELECTED";
 
@@ -213,6 +217,12 @@ async function main() {
   currentTopic = result.topic;
   expectedSlug = slugify(currentTopic);
   const { lineIndex } = result;
+  
+  const { isDuplicate } = stateManager.initNewJob(currentTopic, lineIndex);
+  if (isDuplicate) {
+      console.log("⏭️ Job already successfully published. Skipping.");
+      process.exit(0);
+  }
   console.log(`📝 STATE: [SELECTED] - Topic: "${currentTopic}"`);
 
   // --- 2. DURABLE RECOVERY & IDEMPOTENCY ---
@@ -226,7 +236,7 @@ async function main() {
       if (isHtmlComplete(existingHtml)) {
           console.log(`\n[RECOVERY] Found complete ${expectedSlug}.html in repository root.`);
           console.log("This indicates Git Push succeeded previously but confirm-publish failed.");
-          currentState = "STAGED";
+          stateManager.updateState({ website_status: 'SUCCESS' });
           
           const titleMatch = existingHtml.match(/<title>(.*?) \| TrustPointFin Insights<\/title>/);
           const existingTitle = titleMatch ? titleMatch[1] : currentTopic;
@@ -255,7 +265,7 @@ async function main() {
       } else if (isHtmlComplete(stagedHtml)) {
           console.log(`\n[RECOVERY] Found complete ${expectedSlug}.tmp.html in .staging cache.`);
           console.log("This indicates Gemini succeeded previously but runner died before Git Push.");
-          currentState = "STAGED";
+          stateManager.updateState({ website_status: 'SUCCESS' });
           
           fs.renameSync(stagedHtmlPath, finalHtmlPath);
           fs.renameSync(stagedPendingPath, PENDING_PATH);
@@ -342,190 +352,73 @@ SEO & MISC:
 QUALITY TARGETS:
 - Your response MUST target Content: 9+/10, Accuracy: 9+/10, Visual suitability: 9+/10, Readability: 9+/10.
 
-CAROUSEL SLIDES:
-- After the article content, you MUST end with a JSON array of 3 to 10 slides for Instagram/Facebook.
-- CRITICAL: The slides content MUST be written in actual Hindi (Devanagari script) mixed with English words. Keep common financial terms in pure English.
-
-Follow this exact JSON structure for the slides:
-[
-  {
-    "type": "bg-image",
-    "title": "Main heading. Use &lt;span class='highlight'&gt;keyword&lt;/span&gt; for emphasis.",
-    "text": "The sub-text below the title",
-    "image_query": "trading psychology"
-  },
-  {
-    "type": "bg-analytical",
-    "title": "Data heading",
-    "text": "Context for the data",
-    "chart": {
-      "type": "bar",
-      "labels": ["Yr 1", "Yr 2"],
-      "datasets": [{"label": "Retail", "data": [5, 2]}]
-    }
-  },
-  {
-    "type": "bg-image",
-    "title": "Ready to trade?",
-    "text": "Execute strategies flawlessly.",
-    "image_query": "success business",
-    "is_cta": true
-  }
-]
-
-Return your response in EXACTLY this format (use the delimiters exactly):
----TITLE---
-Your article title here
----META---
-Your 160-char meta description here
----SUMMARY---
-One sentence summary for the article card (max 120 chars)
----TAKEAWAYS---
-• Takeaway 1
-• Takeaway 2
----STAT---
-150M+|Active Demat Accounts in India
----BODY---
-<h2>Section 1 Title</h2>
-<p>Short conversational Hinglish paragraph here...</p>
-<ul>
-  <li><strong>Bullet Point:</strong> Explanation...</li>
-</ul>
-<table>...</table>
----FAQ1Q---
-First frequently asked question
----FAQ1A---
-Detailed answer to first FAQ
----FAQ2Q---
-Second frequently asked question  
----FAQ2A---
-Detailed answer to second FAQ
----SLIDES---
-[
-  // Your JSON array of slides here
-]
----END---`;
+---END---`;;
 
   let articleText = "";
   const maxRetries = 3;
   let success = false;
-  const GENERATION_BUDGET_MS = 240000; // 4 minutes max wall-clock budget
-  const startTime = Date.now();
+  let correctionContext = "";
 
-  if (process.env.TEST_MOCK_ARTICLE_TEXT) {
-      articleText = process.env.TEST_MOCK_ARTICLE_TEXT;
-      success = true;
-  } else {
-      for (let i = 0; i < maxRetries; i++) {
-        attempts++;
-        try {
-          console.log(`\n[AI REQUEST] Attempt ${attempts}/${maxRetries}`);
-      
-      const remainingBudget = GENERATION_BUDGET_MS - (Date.now() - startTime);
-      if (remainingBudget <= 0) {
-          throw new Error("Hard wall-clock budget for Gemini generation exhausted.");
-      }
+  
+  stateManager.updateState({ article_generation_status: 'GENERATING' });
 
-      // Enforce absolute wall-clock timeout
-      let timeoutId;
-      const timeoutPromise = new Promise((_, reject) => {
-          timeoutId = setTimeout(() => reject(new Error("Timeout: AI API request exceeded budget.")), remainingBudget);
-      });
-      let resultText;
+  for (let i = 0; i < maxRetries; i++) {
       try {
-          resultText = await Promise.race([
-              primaryModel.generateContent(articlePrompt),
-              timeoutPromise
-          ]);
-      } finally {
-          clearTimeout(timeoutId);
-      }
-
-      console.log("[AI RESPONSE] HTTP status: 200 (Success)");
-      articleText = resultText;
-      success = true;
-      break; // break retry loop
-    } catch (error) {
-      let safeMessage = error.stack || error.message || String(error);
-      const k1 = process.env.OPENAI_API_KEY;
-      const k2 = process.env.GEMINI_API_KEY;
-      if (k1) safeMessage = safeMessage.split(k1).join("[REDACTED_API_KEY]");
-      if (k2) safeMessage = safeMessage.split(k2).join("[REDACTED_API_KEY]");
-      
-      lastErrorClass = classifyError(safeMessage);
-      if (safeMessage.includes("Timeout:") || safeMessage.includes("Hard wall-clock budget")) {
-          lastErrorClass = "TRANSIENT_TIMEOUT";
-      }
-
-      console.log("\n[AI ERROR]");
-      console.log(`Type: ${lastErrorClass}`);
-      console.log(`Message: ${safeMessage}`);
-
-      const isTransient = lastErrorClass.startsWith("TRANSIENT");
-      
-      if (isTransient && i < maxRetries - 1) {
-        // Attempt 1 fails -> wait ~30-45s, Attempt 2 fails -> wait ~60-90s
-        const delayMs = i === 0 ? 30000 + Math.random() * 15000 : 60000 + Math.random() * 30000;
-        
-        const nextBudget = GENERATION_BUDGET_MS - (Date.now() - startTime) - delayMs;
-        if (nextBudget <= 0) {
-            console.log("[WARNING] Not enough time budget left for retry. Deferring.");
-            currentState = "DEFERRED";
-            exitSafely(1, "AI provider temporarily unavailable (Budget exhausted)");
-        }
-
-        console.log(`[RETRY] Waiting ${Math.round(delayMs / 1000)}s before next attempt...`);
-        await new Promise(resolve => setTimeout(resolve, delayMs));
-      } else {
-        if (isTransient) {
-            currentState = "DEFERRED";
-            console.log("\n❌ AI provider temporarily unavailable (Max attempts exhausted)");
-            exitSafely(1, "AI provider temporarily unavailable");
-        } else {
-            exitSafely(1, `Permanent error encountered: ${lastErrorClass}. Pipeline halted.`);
-        }
-      }
-    }
-  } // end of for loop
-  } // end of else block
-
-  if (!success) exitSafely(1, "Unreachable: Loop completed without success or exit.");
-
-  // 4. STATE: GENERATED
-  currentState = "GENERATED";
-  if (!articleText || articleText.trim().length < 500 || !articleText.includes("---TITLE---") || !articleText.includes("---BODY---")) {
-      lastErrorClass = "GENERATION_MALFORMED";
-      exitSafely(1, "Model returned empty, invalid, or malformed schema output.");
-  }
-
-  // 5. STATE: QUALITY_CHECKED
-  console.log("\n🔍 Running content quality gate checks...");
-  const validationResult = await validateSocialContent(articleText);
-  if (!validationResult.valid) {
-      // Clean up previous diagnostic artifacts
-      const files = fs.readdirSync(STAGING_DIR);
-      for (const file of files) {
-          if (file.startsWith("rejected_") && file.endsWith(".html")) {
-              fs.unlinkSync(path.join(STAGING_DIR, file));
+          console.log(`\n[AI REQUEST] Generation Attempt ${i + 1}/${maxRetries}`);
+          
+          let currentPrompt = articlePrompt;
+          if (correctionContext) {
+              stateManager.updateState({ article_correction_attempts: i });
+              console.log("[AUTO-CORRECTION] Sending compliance feedback to AI...");
+              currentPrompt += `\n\nCRITICAL COMPLIANCE FEEDBACK FROM PREVIOUS ATTEMPT:\n${correctionContext}\nRewrite the violating section while preserving the factual meaning. Return the complete article.\n---END---`;
           }
-      }
-      
-      // Defense in depth: Redact API keys in case model hallucinated them
-      let safeArticleText = articleText;
-      const k1 = process.env.OPENAI_API_KEY;
-      const k2 = process.env.GEMINI_API_KEY;
-      if (k1) safeArticleText = safeArticleText.split(k1).join("[REDACTED_API_KEY]");
-      if (k2) safeArticleText = safeArticleText.split(k2).join("[REDACTED_API_KEY]");
 
-      const rejectedPath = path.join(STAGING_DIR, `rejected_${runId}.html`);
-      fs.writeFileSync(rejectedPath, safeArticleText, "utf-8");
-      console.log(`\n[DIAGNOSTIC] Rejected article saved to ${rejectedPath} for analysis.`);
-      
-      lastErrorClass = "QUALITY_GATE_FAILED";
-      exitSafely(1, `Content Quality Gate Rejected the Article: ${validationResult.reason}`);
+          let resultText;
+          if (process.env.TEST_MOCK_ARTICLE_TEXT) {
+              resultText = process.env.TEST_MOCK_ARTICLE_TEXT;
+          } else {
+              const result = await primaryModel.generateContent(currentPrompt);
+              resultText = result.response.text();
+          }
+          
+          articleText = resultText;
+          if (!articleText || articleText.trim().length < 500 || !articleText.includes("---TITLE---") || !articleText.includes("---BODY---")) {
+              throw new Error("Model returned empty, invalid, or malformed schema output.");
+          }
+
+          stateManager.updateState({ article_compliance_status: 'AUDITING' });
+          console.log("\n🔍 Running content quality gate checks...");
+          const validationResult = await validateSocialContent(articleText);
+          
+          if (!validationResult.valid) {
+              console.log(`[WARNING] Compliance Gate Failed: ${validationResult.reason}`);
+              if (i < maxRetries - 1) {
+                  correctionContext = `Rule violated: ${validationResult.rule || validationResult.reason}\nProblematic text: ${validationResult.offending_text || 'Unknown'}`;
+                  continue;
+              } else {
+                  stateManager.updateState({ article_compliance_status: 'FAILED', failure_reason: `Quality Gate failed after 3 attempts: ${validationResult.reason}` });
+                  console.error(`❌ Content Quality Gate Rejected the Article permanently: ${validationResult.reason}`);
+                  process.exit(1);
+              }
+          }
+          
+          stateManager.updateState({ article_compliance_status: 'SUCCESS', article_generation_status: 'SUCCESS' });
+          console.log("✅ Quality gate passed successfully.");
+          success = true;
+          break;
+      } catch (error) {
+          console.log(`[ERROR] ${error.message}`);
+          if (i === maxRetries - 1) {
+              stateManager.updateState({ article_generation_status: 'FAILED', failure_reason: error.message });
+              process.exit(1);
+          }
+          await new Promise(resolve => setTimeout(resolve, 5000)); // basic backoff
+      }
   }
-  currentState = "QUALITY_CHECKED";
-  console.log("✅ Quality gate passed successfully.");
+
+  if (!success) {
+      process.exit(1);
+  }
 
   // --- Parse the response ---
   function extract(text, startTag, endTag) {
@@ -619,7 +512,7 @@ Detailed answer to second FAQ
   const articleHTML = buildArticleHTML(title, meta, dateStr, fullBodyHTML, faqSchema, expectedSlug, imageUrl, currentTopic);
 
   // 6. STATE: STAGED (Atomic Writes)
-  currentState = "STAGING";
+  stateManager.updateState({ website_status: 'PUBLISHING' });
   console.log("\n📦 Performing Atomic Writes to staging...");
   
   fs.writeFileSync(stagedHtmlPath, articleHTML, "utf-8");
@@ -638,7 +531,7 @@ Detailed answer to second FAQ
   fs.renameSync(tmpSitemap, path.join(ROOT, "sitemap.xml"));
   fs.renameSync(stagedPendingPath, PENDING_PATH);
   
-  currentState = "STAGED";
+  stateManager.updateState({ website_status: 'SUCCESS' });
   exitSafely(0, `Article "${title}" staged atomically. Ready for Git Commit.`);
 }
 

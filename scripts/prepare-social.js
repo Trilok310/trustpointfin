@@ -58,7 +58,13 @@ async function main() {
         const article = await selectSourceArticle();
         
         console.log(`🧠 Generating V11 Carousel Content for: "${article.title}"`);
-        const socialData = await generateSocialContent(article.title);
+        
+        const stateManager = require('./state-manager.js');
+        stateManager.updateState({ social_generation_status: 'GENERATING' });
+        const articleHtml = fs.readFileSync(path.join(ROOT, article.filename), 'utf8');
+        const socialData = await generateSocialContent(article.title, articleHtml);
+        stateManager.updateState({ social_generation_status: 'SUCCESS', social_compliance_status: 'SUCCESS' });
+    
         
         // Strict Validation Check
         if (socialData.topic !== article.title) {

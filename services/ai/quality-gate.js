@@ -19,33 +19,48 @@ function validateSocialContent(json) {
         return { valid: false, reason: "Too promotional. Angel One mentioned too many times." };
     }
 
-    // 2. V11 Schema Compatibility Check
+    // 2. Schema Check
     if (!json.format) {
-         // The new V11 prompt requires a format field (STORY, COMPARISON, etc.)
          return { valid: false, reason: "Missing global 'format' property in JSON." };
     }
 
-    // 3. Visual density & Readability check (V11 Schema)
     for (let i = 0; i < json.slides.length; i++) {
         const s = json.slides[i];
-        
-        // Ensure interior slides have illustrations
         if (i > 0 && i < json.slides.length - 1) {
             if (!s.visual_spec || !s.visual_spec.image_generation_prompt) {
                 return { valid: false, reason: `Slide ${i+1} lacks a visual_spec with image_generation_prompt.` };
             }
         }
-        
-        // Excessive text check using the new core_explanation field
         if (s.core_explanation && s.core_explanation.length > 350) {
             return { valid: false, reason: `Slide ${i+1} has excessive text (too long for mobile).` };
         }
     }
 
-    // 4. Financial accuracy (Heuristic)
-    const allText = JSON.stringify(json).toLowerCase();
-    if (allText.includes('guaranteed') || allText.includes('100% profit') || allText.includes('sure shot')) {
-        return { valid: false, reason: "Compliance violation: mentions guaranteed returns." };
+    // 4. Financial accuracy (Strict Compliance)
+    const allTextRaw = JSON.stringify(json);
+    const allText = allTextRaw.toLowerCase()
+        .replace(/actual return की guarantee नहीं/g, '')
+        .replace(/no guarantee/g, '')
+        .replace(/not guaranteed/g, '')
+        .replace(/without guarantee/g, '')
+        .replace(/guarantee नहीं/g, '')
+        .replace(/guaranteed नहीं/g, '')
+        .replace(/does not guarantee/g, '');
+
+    const bannedPhrases = [
+        "100% profit", "guaranteed", "guarantee", "sure shot", "eliminate risk", "will definitely go up", 
+        "cannot lose", "zero risk", "risk-free", "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
+    ];
+
+    for (const phrase of bannedPhrases) {
+        if (allText.includes(phrase)) {
+            return { valid: false, reason: `Compliance violation: mentions banned phrase '${phrase}'.`, rule: "Do not use absolute certainty or guaranteed claims." };
+        }
+    }
+
+    if (allText.includes("rule of 72") || allText.includes("72 ÷") || allText.includes("72 /")) {
+        const hasApprox = allText.includes("≈") || allText.includes("approx") || allText.includes("लगभग") || allText.includes("अनुमान");
+        if (!hasApprox) return { valid: false, reason: "Rule of 72 missing approximation symbol.", rule: "Must use ≈ or लगभग for Rule of 72." };
     }
 
     return { valid: true };
