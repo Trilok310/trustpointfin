@@ -60,10 +60,10 @@ async function main() {
         console.log(`🧠 Generating V11 Carousel Content for: "${article.title}"`);
         
         const stateManager = require('./state-manager.js');
-        stateManager.updateState({ social_generation_status: 'GENERATING' });
+        stateManager.updateState({ social_generation_status: 'GENERATING' }, false);
         const articleHtml = fs.readFileSync(path.join(ROOT, article.filename), 'utf8');
         const socialData = await generateSocialContent(article.title, articleHtml);
-        stateManager.updateState({ social_generation_status: 'SUCCESS', social_compliance_status: 'SUCCESS' });
+        stateManager.updateState({ social_generation_status: 'SUCCESS', social_compliance_status: 'SUCCESS' }, false);
     
         
         // Strict Validation Check

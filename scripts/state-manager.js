@@ -100,15 +100,15 @@ function calculateFinalStatus(state) {
 
 function finalizeState() {
     // Moves pending state to current state and calculates final status
-    const pendingState = loadState(true);
-    pendingState.final_status = calculateFinalStatus(pendingState);
-    saveState(pendingState, false); // Save to current
+    const currentState = loadState(false);
+    currentState.final_status = calculateFinalStatus(currentState);
+    saveState(currentState, false); // Save to current
     
     if (fs.existsSync(PENDING_PATH)) {
         fs.unlinkSync(PENDING_PATH);
     }
     
-    return pendingState;
+    return currentState;
 }
 
 function printGitHubSummary(state) {
