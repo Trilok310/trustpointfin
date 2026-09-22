@@ -29,8 +29,8 @@ async function selectSourceArticle() {
     }
     
     const state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
-    if (state.publication_status !== "SUCCESS") {
-        throw new Error(`Article publication status is '${state.publication_status}', expected 'SUCCESS'! Halting social generation.`);
+    if (state.website_status !== "SUCCESS") {
+        throw new Error(`Article website status is '${state.website_status}', expected 'SUCCESS'! Halting social generation.`);
     }
 
     const selectedFile = state.filename;

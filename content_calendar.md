@@ -137,7 +137,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 991. Stock Market 101: What is a Demat Account?
 - [x] 992. Skipped: Formatting error on Lakh
 - [x] 993. The Rule of 72: How long to double your money?
-- [ ] 994. Quiz: Which asset gave the highest return in 10 years?
+- [x] 994. Quiz: Which asset gave the highest return in 10 years?
 - [ ] 995. What is P/E Ratio and why does it matter?
 - [ ] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30Rs. 000 Salary
 - [ ] 127. Why FDs Are Keeping You Poor: The Hidden Tax of Inflation

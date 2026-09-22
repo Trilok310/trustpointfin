@@ -1,9 +1,21 @@
 {
-  "filename": "the-rule-of-72-how-long-to-double-your-money.html",
-  "title": "The Rule of 72: आपका पैसा कितने समय में Double होगा?",
-  "topic": "The Rule of 72: How long to double your money?",
-  "lineIndex": 138,
-  "publication_status": "SUCCESS",
-  "timestamp": "2026-09-20T10:57:53.647Z",
-  "published_at": "2026-09-20T10:57:55.152Z"
+  "job_id": "job_2026-09-22_quiz-which-asset-gave-the-high",
+  "topic": "Quiz: Which asset gave the highest return in 10 years?",
+  "lineIndex": 139,
+  "scheduled_at": null,
+  "started_at": "2026-09-22T13:34:49.405Z",
+  "article_generation_status": "PENDING",
+  "article_correction_attempts": 0,
+  "article_compliance_status": "PENDING",
+  "website_status": "SUCCESS",
+  "social_generation_status": "PENDING",
+  "social_correction_attempts": 0,
+  "social_compliance_status": "PENDING",
+  "instagram_status": "PENDING",
+  "facebook_status": "PENDING",
+  "final_status": "RUNNING",
+  "failure_reason": null,
+  "updated_at": "2026-09-22T13:34:49.437Z",
+  "filename": "quiz-which-asset-gave-the-highest-return-in-10-years.html",
+  "title": "Mock Title"
 }

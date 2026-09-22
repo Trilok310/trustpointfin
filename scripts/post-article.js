@@ -241,11 +241,7 @@ async function main() {
           const titleMatch = existingHtml.match(/<title>(.*?) \| TrustPointFin Insights<\/title>/);
           const existingTitle = titleMatch ? titleMatch[1] : currentTopic;
           
-          const pendingState = {
-              filename: expectedSlug + ".html", title: existingTitle, topic: currentTopic,
-              lineIndex: lineIndex, publication_status: "PENDING", timestamp: new Date().toISOString()
-          };
-          fs.writeFileSync(PENDING_PATH, JSON.stringify(pendingState, null, 2), "utf-8");
+          stateManager.updateState({ filename: expectedSlug + '.html', title: existingTitle });
           exitSafely(0, "Restaged PENDING state from existing repository HTML.");
       } else {
           console.log(`\n[WARNING] Found INCOMPLETE ${expectedSlug}.html in repository. Purging it.`);
@@ -519,17 +515,11 @@ QUALITY TARGETS:
   const tmpInsights = updateInsightsAtomic(title, expectedSlug, dateStr, summary, imageUrl, currentTopic);
   const tmpSitemap = updateSitemapAtomic(expectedSlug);
   
-  const pendingState = {
-      filename: expectedSlug + ".html", title: title, topic: currentTopic,
-      lineIndex: lineIndex, publication_status: "PENDING", timestamp: new Date().toISOString()
-  };
-  fs.writeFileSync(stagedPendingPath, JSON.stringify(pendingState, null, 2), "utf-8");
-  
-  // ATOMIC MOVE TO REPO ROOT
-  fs.renameSync(stagedHtmlPath, finalHtmlPath);
-  fs.renameSync(tmpInsights, INSIGHTS_PATH);
-  fs.renameSync(tmpSitemap, path.join(ROOT, "sitemap.xml"));
-  fs.renameSync(stagedPendingPath, PENDING_PATH);
+  stateManager.updateState({ filename: expectedSlug + '.html', title: title });
+    // ATOMIC MOVE TO REPO ROOT
+    fs.renameSync(stagedHtmlPath, finalHtmlPath);
+    fs.renameSync(tmpInsights, INSIGHTS_PATH);
+    fs.renameSync(tmpSitemap, path.join(ROOT, 'sitemap.xml'));
   
   stateManager.updateState({ website_status: 'SUCCESS' });
   exitSafely(0, `Article "${title}" staged atomically. Ready for Git Commit.`);
