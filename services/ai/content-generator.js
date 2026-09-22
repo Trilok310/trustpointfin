@@ -41,7 +41,8 @@ OUTPUT RAW JSON:
   "caption": "Instagram/Facebook caption with relevant hashtags."
 }`;
 
-    if (!process.env.GEMINI_API_KEY && process.env.AI_TEXT_PROVIDER !== "openai") {
+    const activeProvider = process.env.AI_TEXT_PROVIDER || "openai";
+    if (!process.env.GEMINI_API_KEY && activeProvider !== "openai") {
         throw new Error("Missing GEMINI_API_KEY for content generation.");
     }
 
@@ -58,7 +59,8 @@ OUTPUT RAW JSON:
             }
 
             let rawText = "";
-            if (process.env.AI_TEXT_PROVIDER === "openai") {
+            const provider = process.env.AI_TEXT_PROVIDER || "openai";
+            if (provider === "openai") {
                 if (!process.env.OPENAI_API_KEY) throw new Error("Missing OPENAI_API_KEY");
                 const response = await fetch("https://api.openai.com/v1/chat/completions", {
                     method: "POST",
