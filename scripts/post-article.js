@@ -241,7 +241,7 @@ async function main() {
           const titleMatch = existingHtml.match(/<title>(.*?) \| TrustPointFin Insights<\/title>/);
           const existingTitle = titleMatch ? titleMatch[1] : currentTopic;
           
-          stateManager.updateState({ filename: expectedSlug + '.html', title: existingTitle });
+          stateManager.updateState({ filename: expectedSlug + '.html', title: existingTitle, website_status: 'SUCCESS' });
           exitSafely(0, "Restaged PENDING state from existing repository HTML.");
       } else {
           console.log(`\n[WARNING] Found INCOMPLETE ${expectedSlug}.html in repository. Purging it.`);
