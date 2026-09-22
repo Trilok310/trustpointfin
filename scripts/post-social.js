@@ -130,7 +130,7 @@ async function main() {
     } catch (err) {
         console.error("❌ Instagram Publishing Failed:", err.message);
         igStatus = "FAILED";
-        failureReason += \`IG Error: \${err.message} | \`;
+        failureReason += `IG Error: ${err.message} | `;
     }
 
     try {
@@ -139,7 +139,7 @@ async function main() {
     } catch (err) {
         console.error("❌ Facebook Publishing Failed:", err.message);
         fbStatus = "FAILED";
-        failureReason += \`FB Error: \${err.message}\`;
+        failureReason += `FB Error: ${err.message}`;
     }
 
     stateManager.updateState({ 
