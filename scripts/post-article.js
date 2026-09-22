@@ -345,10 +345,37 @@ SEO & MISC:
 - Mention Angel One only when contextually relevant.
 - CRITICAL: Do not use LaTeX or MathJax. Write formulas simply as plain text.
 
-QUALITY TARGETS:
-- Your response MUST target Content: 9+/10, Accuracy: 9+/10, Visual suitability: 9+/10, Readability: 9+/10.
+  QUALITY TARGETS:
+  - Your response MUST target Content: 9+/10, Accuracy: 9+/10, Visual suitability: 9+/10, Readability: 9+/10.
 
----END---`;;
+  Return your response in EXACTLY this format (use the delimiters exactly):
+  ---TITLE---
+  Your article title here
+  ---META---
+  Your 160-char meta description here
+  ---SUMMARY---
+  One sentence summary for the article card (max 120 chars)
+  ---TAKEAWAYS---
+  • Takeaway 1
+  • Takeaway 2
+  ---STAT---
+  150M+|Active Demat Accounts in India
+  ---BODY---
+  <h2>Section 1 Title</h2>
+  <p>Short conversational Hinglish paragraph here...</p>
+  <ul>
+    <li><strong>Bullet Point:</strong> Explanation...</li>
+  </ul>
+  <table>...</table>
+  ---FAQ1Q---
+  First frequently asked question
+  ---FAQ1A---
+  Detailed answer to first FAQ
+  ---FAQ2Q---
+  Second frequently asked question  
+  ---FAQ2A---
+  Detailed answer to second FAQ
+  ---END---`;
 
   let articleText = "";
   const maxRetries = 3;
