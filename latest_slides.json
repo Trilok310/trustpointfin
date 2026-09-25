@@ -1,99 +1,102 @@
 {
-  "topic": "The 50-30-20 Rule of Money: ₹30,000 Salary पर Wealth कैसे Build करें?",
-  "teaching_objective": "Learners को समझाना कि ₹30,000 monthly income को Needs, Wants और Savings/Debt goals में कैसे बाँटें, और Emergency Fund व high-interest debt को investment से पहले कैसे prioritize करें।",
+  "topic": "FDs आपको गरीब क्यों बना सकते हैं? Inflation का Hidden Tax समझिए",
+  "teaching_objective": "समझाना कि FD का nominal interest positive होने के बावजूद Tax और Inflation के बाद Real Return कम या negative हो सकता है; साथ ही यह स्पष्ट करना कि FD emergency fund और short-term goals के लिए उपयोगी हो सकती है।",
   "format": "CALCULATION",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "₹30,000 salary को direction दो",
+      "headline": "FD सुरक्षित है… पर क्या काफी है?",
       "core_explanation": [
-        "Budget का उद्देश्य सिर्फ खर्च रोकना नहीं, बल्कि हर रुपये को purpose देना है।",
-        "50-30-20 एक starting framework है, कोई mandatory rule नहीं।"
+        "FD में पैसा nominal रूप से बढ़ता दिखता है।",
+        "लेकिन असली सवाल है: आपकी purchasing power कितनी बढ़ी?"
       ],
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय professional अपने monthly salary envelope को तीन साफ रास्तों में बाँटता हुआ दिखे। सामने तीन अलग-अलग खुले रास्ते हों: घर और रोजमर्रा की जरूरतों का रास्ता, आराम और experiences का रास्ता, और future security की ओर जाता हुआ रास्ता। कमरे में calendar, wallet, calculator और छोटे plant जैसे objects हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration with warm cream paper texture, deep navy ink outlines, muted teal, saffron, coral and green accents, a young Indian salaried professional at a wooden desk thoughtfully organizing monthly money into three visual pathways, home essentials on one path, leisure objects on another, a growing plant and secure future imagery on the third, calculator, wallet, calendar and gentle sunlight, layered paper cutout depth, expressive but realistic characters, clean composition, premium financial education infographic mood. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक भारतीय परिवार का युवा कमाने वाला व्यक्ति बैंक की चमकदार सुरक्षित तिजोरी में पैसे रखता है। बाहर एक बाजार की सड़क पर रोजमर्रा की चीजों की कीमतें बढ़ती हुई दिखाई दें—दूध, सब्जियां, किराना और घर का सामान—जबकि तिजोरी स्थिर बनी रहे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, Indian middle-class family, young professional placing coins and currency into a polished bank vault, safe glowing softly, nearby marketplace with groceries, vegetables, milk and household items subtly becoming more expensive through visual scale and upward motion, expressive but realistic characters, clean infographic composition, hand-drawn textures, muted navy, saffron, teal and coral palette, soft shadows, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "पहले income को plan करो, फिर खर्च शुरू करो।",
-      "cta": "अपना monthly budget लिखना शुरू करें"
+      "annotation": "Arrow: “Nominal growth ≠ Real growth”",
+      "cta": null
     },
     {
       "slide_number": 2,
-      "purpose": "calculation",
-      "headline": "50% Needs: ₹15,000",
+      "purpose": "concept",
+      "headline": "Inflation: पैसे की चुपचाप घटती ताकत",
       "core_explanation": [
-        "Rent, groceries, transport, bills और essential healthcare जैसे खर्च।",
-        "यह हिस्सा आपकी basic life को चलाता है—इसे पहले सुरक्षित करें।"
+        "Inflation बढ़ने पर वही ₹100 कम चीजें खरीदता है।",
+        "यह आपकी purchasing power पर hidden tax जैसा असर डालता है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक balanced household scene जिसमें character essential expenses को संभाल रहा है: छोटा घर, किराने का थैला, bus pass जैसी बिना लिखावट वाली वस्तु, बिजली का bulb और medicine kit। एक बड़ा गोल pie-like plate का आधा हिस्सा practical essentials से भरा हो, लेकिन कोई textual markings न हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated financial lesson scene, Indian young professional calmly arranging essential household objects on exactly half of a large circular wooden budgeting board, modest apartment, grocery basket, cooking pot, transit card without markings, utility bulb, medicine pouch, balanced scale, warm cream background, navy linework, teal and ochre accents, subtle hand-drawn arrows without symbols, tactile paper collage, clear visual hierarchy, no clutter. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक ही व्यक्ति दो समय-बिंदुओं में दिखे: पहले वह एक टोकरी में कई groceries खरीद रहा है, बाद में उसी मुद्रा से आधी टोकरी भर पा रहा है। पीछे एक बड़ा लेकिन बिना लिखावट वाला पिघलता हुआ सिक्का समय के साथ value erosion का metaphor बने।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene visual showing the same Indian shopper in an earlier moment filling a grocery basket with many essential items, and in a later moment holding the same amount of money while the basket contains far fewer items, large melting golden coin in the background symbolizing eroding purchasing power, thoughtful facial expressions, rich storytelling, clean educational composition, textured paper, warm natural lighting, navy, mustard, teal and coral colors, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow: सबसे पहले essential खर्चों की सीमा तय करें।",
-      "cta": "अपने Needs की list बनाइए"
+      "annotation": "Arrow: “महंगाई आपकी buying power कम करती है”",
+      "cta": null
     },
     {
       "slide_number": 3,
       "purpose": "calculation",
-      "headline": "30% Wants: ₹9,000",
+      "headline": "₹1 लाख का असली हिसाब",
       "core_explanation": [
-        "Dining out, shopping, entertainment और hobbies इस bucket में आते हैं।",
-        "Wants गलत नहीं हैं—बस इन्हें planned और controlled रखें।"
+        "FD interest: 7% = ₹7,000",
+        "20% tax के बाद: ₹5,600",
+        "6% inflation के बाद Real Return लगभग -0.4%"
       ],
       "visual_spec": {
-        "visual_concept": "वही character एक cheerful leisure corner में तीन विकल्पों के बीच चुनाव करता हुआ दिखे: café cup, headphones और shopping bag। पास में सीमित coins वाला छोटा transparent jar हो, जिससे moderation का visual संकेत मिले। Scene joyful हो, guilt-based नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration of the same young Indian professional enjoying planned lifestyle spending, choosing thoughtfully among a cafe cup, headphones, a movie ticket shape without markings, and a small shopping bag, a transparent jar with a limited amount of coins nearby suggesting a fixed boundary, joyful balanced mood, cozy urban setting, cream paper texture, bold navy outlines, coral and saffron accents, layered cut-paper depth, expressive character, premium educational storytelling. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक बड़ा weighing scale दिखाएं। बाईं ओर FD से आने वाले interest coins हैं, जिनमें tax के बाद कुछ coins हटते हैं। दाईं ओर inflation की हवा और बढ़ती grocery basket उन coins की purchasing power को और कम करती है। मुख्य रकम को एक सुरक्षित glass jar में दिखाएं, लेकिन उसकी वास्तविक ताकत घटती हुई दिखाई दे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed financial calculation metaphor without written symbols: a large balanced weighing scale, one side holding a glass jar of Indian currency and coins, some coins being lifted away by a small tax collector figure, the remaining coins facing a strong warm wind from rising grocery prices, a smaller basket of goods on the far side, visual suggestion of a slight negative tilt, clean editorial infographic style, textured paper, expressive miniature characters, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Wants को हटाना नहीं—उनके लिए limit बनानी है।",
-      "cta": "अपने fun budget की सीमा तय करें"
+      "annotation": "Calculation strip: “7% − Tax − Inflation = Real Return”",
+      "cta": null
     },
     {
       "slide_number": 4,
-      "purpose": "calculation",
-      "headline": "20% Future: ₹6,000",
+      "purpose": "risk",
+      "headline": "Hidden Tax कैसे दिखता है?",
       "core_explanation": [
-        "यह हिस्सा Savings, Emergency Fund और Debt repayment के लिए है।",
-        "Long-term investment तभी सोचें जब cash reserve और debt स्थिति manageable हो।"
+        "Bank statement में balance बढ़ सकता है।",
+        "लेकिन उसी पैसे से कम सामान खरीदा जा सकता है।",
+        "यही nominal return और real return का फर्क है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक मजबूत financial foundation का cutaway दृश्य: character ₹6,000 के symbolic sixth-part को तीन दिशाओं में लगाता है—पहले emergency box, फिर debt chain को कमजोर करना, और अंत में long-term tree को पानी देना। किसी object पर text या symbols न हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich financial storytelling illustration, young Indian professional directing a dedicated portion of monthly money into a sturdy emergency chest, gently breaking a heavy debt chain, and watering a young long-term investment tree, visual sequence from safety to debt control to growth, three connected steps shown through objects and arrows only, no written marks, warm cream paper, deep navy ink, forest green, teal and saffron palette, sophisticated cutaway composition, optimistic but realistic. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक बैंक statement जैसा blank paper बिना किसी लिखावट के व्यक्ति के हाथ में हो, जिसमें coins बढ़ते हुए दिखें। उसी समय दूसरी तरफ उसका shopping cart छोटा और खाली होता जाए। Tax collector और inflation monster छोटे symbolic characters के रूप में interest को धीरे-धीरे कम करते दिखें।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Story-rich illustration of an Indian saver holding a blank bank statement with a growing pile of coins, while a shopping cart beside them becomes visibly smaller and emptier, tiny transparent tax collector removing a portion of coins and a gentle inflation creature stretching grocery prices upward, emotional contrast between account balance and lifestyle purchasing power, polished NotebookLM educational visual system, paper grain, layered composition, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Priority arrow: Emergency Fund → high-interest Debt → long-term goals",
-      "cta": "पहले अपना financial safety net जाँचें"
+      "annotation": "Arrow: “Balance बढ़ा, buying power नहीं”",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "process",
-      "headline": "क्या ₹6,000 invest करना ही है?",
+      "purpose": "context",
+      "headline": "FD कब उपयोगी हो सकती है?",
       "core_explanation": [
-        "Emergency Fund नहीं है तो ₹6,000 का बड़ा हिस्सा liquid reserve में जा सकता है।",
-        "High-interest debt हो तो repayment investment से पहले आ सकती है।",
-        "स्थिति stable हो तो goal, time horizon, risk और fees देखकर regulated options research करें।"
+        "Emergency fund के लिए",
+        "Short-term goals के लिए",
+        "Capital stability और predictable returns के लिए"
       ],
       "visual_spec": {
-        "visual_concept": "एक decision-path scene जिसमें character तीन doors या branching paths के सामने है। पहला path emergency umbrella और savings jar की ओर, दूसरा debt mountain को नीचे लाने की ओर, तीसरा diversified garden की ओर। Character पहले दो paths की जाँच करके तीसरे की ओर बढ़ने का निर्णय ले रहा हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated decision journey for personal finance, a young Indian professional standing at a three-way branching path, one route leads to an emergency umbrella shelter and liquid reserve jar, second route leads to reducing a heavy debt mountain, third route leads to a diversified garden with several different healthy plants, thoughtful decision-making pose, visual arrows made only from shapes, no written signs, cream paper background, navy outlines, teal green coral and mustard palette, NotebookLM-inspired layered educational composition. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक शांत घर का दृश्य जिसमें परिवार के पास तीन सुरक्षित compartments हों: emergency medical kit, निकट भविष्य की यात्रा या फीस का calendar-like object बिना text के, और एक मजबूत FD vault। बाहर बाजार में volatility की लहरें हों, लेकिन short-term money सुरक्षित और accessible रहे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm Indian home scene with a family calmly organizing savings into three clear visual containers: emergency medical kit, near-term life goal represented by a small suitcase and calendar pages with no writing, and a sturdy bank deposit vault, outside the window dramatic market waves and uncertainty remain at a distance, reassuring but realistic mood, clear visual hierarchy, hand-drawn editorial illustration, textured cream background, navy, teal, saffron and coral palette, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Product चुनने से पहले goal, risk, time horizon और fees देखें।",
-      "cta": "अपनी priority के हिसाब से next step चुनें"
+      "annotation": "Tip: “हर पैसा long-term growth के लिए नहीं होता”",
+      "cta": null
     },
     {
       "slide_number": 6,
-      "purpose": "adaptation",
-      "headline": "Rule को अपनी life के हिसाब से बदलें",
+      "purpose": "takeaway",
+      "headline": "FD को goal के हिसाब से इस्तेमाल करें",
       "core_explanation": [
-        "अगर Needs ₹15,000 से ज्यादा हैं, तो 60-20-20 या 65-25-10 जैसे modified ratios अपनाए जा सकते हैं।",
-        "Perfect ratio से ज्यादा important है: खर्च track करना, debt control करना और नियमित saving शुरू करना।"
+        "Return को Tax और Inflation के बाद देखें।",
+        "Time horizon, liquidity और risk tolerance पर विचार करें।",
+        "FD गलत नहीं है—सिर्फ हर goal का एकमात्र solution नहीं।"
       ],
       "visual_spec": {
-        "visual_concept": "एक flexible budgeting workshop जैसा दृश्य जिसमें अलग-अलग income situations वाले तीन भारतीय characters अपने अलग आकार के pie boards adjust कर रहे हों। एक board needs-heavy, दूसरा balanced, तीसरा savings-focused हो। सभी characters progress और confidence दिखाएँ, comparison या shame नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial financial education illustration showing three diverse Indian adults customizing flexible budgeting boards for different real-life situations, one needs-heavy household, one balanced budget, one stronger savings situation, adjustable colorful segments made of plain shapes, each person confident and learning, small tracking notebook with blank pages, supportive workshop atmosphere, cream paper texture, navy hand-drawn outlines, teal, green, coral and saffron accents, visual metaphor of progress not perfection, clean layered composition. NO TEXT. No letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक वित्तीय roadmap पर वही saver खड़ा हो, जिसके सामने तीन रास्ते हों: emergency fund के लिए safe vault, short-term goal के लिए stable bridge, और long-term goal के लिए diversified garden जिसमें growth potential हो लेकिन मौसम और volatility का संकेत भी हो। कोई लिखावट न हो; रास्तों की visual identity अलग हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Inspiring final scene with an Indian saver standing at a financial roadmap crossroads, three distinct visual paths: a secure bank vault for emergencies, a sturdy bridge toward a near-term goal, and a long-term diversified garden with growing plants, varied assets and gentle market weather, balanced risk and reward symbolism, thoughtful character, rich storytelling, premium educational editorial illustration, textured paper, warm cream background, navy, teal, saffron and coral palette, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Budget का best version वही है जो आप लगातार follow कर सकें।",
-      "cta": "आज से 30 दिन expenses track करें"
+      "annotation": "Final check: “Nominal Return नहीं, Real Return देखें”",
+      "cta": "अपने FD return का Tax और Inflation के बाद हिसाब लगाइए।"
     }
   ],
-  "caption": "₹30,000 salary पर wealth build करना सिर्फ ज्यादा कमाने का इंतज़ार नहीं है—यह money को सही direction देने से शुरू होता है।\n\n50-30-20 framework से शुरुआत करें:\n🏠 50% Needs: ₹15,000\n🎉 30% Wants: ₹9,000\n🌱 20% Savings/Debt goals: ₹6,000\n\nलेकिन याद रखें: यह rigid formula नहीं है। पहले Emergency Fund और high-interest debt पर ध्यान दें। उसके बाद ही अपने goals, time horizon, risk capacity, fees और taxation को समझकर regulated investment options पर research करें।\n\nअपने budget को अपनी वास्तविक life के अनुसार adapt करें और कम-से-कम 30 दिन expenses track करें।\n\n#TrustPointFin #PersonalFinance #Budgeting #503020Rule #MoneyManagement #EmergencyFund #DebtFreeJourney #FinancialPlanning #InvestingBasics #HindiFinance"
+  "caption": "FD में पैसा बढ़ता हुआ दिख सकता है, लेकिन Tax और Inflation के बाद आपकी purchasing power घट भी सकती है। उदाहरण: 7% FD return, 20% tax और 6% inflation के बाद Real Return लगभग -0.4% रह सकता है। इसका मतलब FD बेकार नहीं है—Emergency Fund और short-term goals के लिए यह उपयोगी हो सकती है। बस हर financial goal के लिए एक ही tool पर निर्भर न रहें।\n\nअपना पैसा evaluate करते समय देखें: Goal, Time Horizon, Liquidity, Tax और Inflation.\n\n#TrustPointFin #PersonalFinance #FD #Inflation #RealReturn #FinancialLiteracy #MoneyManagement #InvestingBasics #HindiFinance"
 }
