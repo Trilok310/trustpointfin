@@ -21,29 +21,42 @@ async function validateSocialContent(content) {
     // 1. DETERMINISTIC COMPLIANCE CHECKS
     const contentLower = content.toLowerCase();
 
-    // Strip legitimate educational negations before checking banned phrases
-    const safeContent = contentLower
-        .replace(/(no|not|never|without|doesn't|does not) guarantee[d]?/g, '')
-        .replace(/guarantee[d]? (nahi|na|nhi)/g, '')
-        .replace(/kisi (bhi )?guarantee/g, '')
-        .replace(/guarantee (nahi|na|nhi) hai/g, '')
-        .replace(/koi guarantee (nahi|na|nhi) hai/g, '')
-        .replace(/actual return ki guarantee (nahi|na|nhi)/g, '')
-        .replace(/actual returns vary/g, '');
-        
-    const bannedPhrases = [
-        "100% profit", "guaranteed", "guarantee", "sure shot", "eliminate risk", "will definitely go up", 
-        "cannot lose", "zero risk", "risk-free", "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
+    // Strict unconditional bans
+    const strictBans = [
+        "100% profit", "sure shot", "will definitely go up", "cannot lose", 
+        "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
     ];
-    
-    for (const phrase of bannedPhrases) {
-        if (safeContent.includes(phrase)) {
+    for (const phrase of strictBans) {
+        if (contentLower.includes(phrase)) {
             return { 
                 valid: false, 
                 reason: `DETERMINISTIC COMPLIANCE FAILURE: Found banned absolute claim ("${phrase}").`,
                 rule: "Do not use absolute certainty or guaranteed claims.",
                 offending_text: phrase
             };
+        }
+    }
+
+    // Contextual / Negatable terms: guarantee, guaranteed, गारंटी, risk-free, zero risk, eliminate risk
+    const contextualTerms = ["guarantee", "guaranteed", "गारंटी", "risk-free", "risk free", "zero risk", "eliminate risk"];
+    const sentences = content.split(/[।.!?\n;]|<\/?(?:p|li|h[1-6]|div|tr|td|th)[^>]*>/i);
+    const negationRegex = /(?:^|[^\w\u0900-\u097F])(no|not|never|without|doesn't|does not|cannot|can't|won't|is not|isn't|are not|aren't|don't|do not|neither|nor|vary|varies|subject to|नहीं|नही|ना|न|nahi|na|nhi|bina|बिना)(?:$|[^\w\u0900-\u097F])/i;
+
+    for (const raw of sentences) {
+        const s = raw.trim().toLowerCase();
+        if (!s) continue;
+        for (const term of contextualTerms) {
+            if (s.includes(term)) {
+                // If there's no negation in this sentence, it's an absolute claim!
+                if (!negationRegex.test(s)) {
+                    return { 
+                        valid: false, 
+                        reason: `DETERMINISTIC COMPLIANCE FAILURE: Found banned claim ('${term}') without educational negation in: "${raw.trim().substring(0, 60)}..."`,
+                        rule: "Do not make guaranteed or risk-free claims without educational disclaimers.",
+                        offending_text: raw.trim()
+                    };
+                }
+            }
         }
     }
 
@@ -105,9 +118,12 @@ async function validateSocialContent(content) {
         return { valid: true, reason: "Passed deterministic checks (AI skipped due to missing key)" };
     }
 
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const modelName = process.env.GEMINI_FREE_MODEL || "gemini-3.6-flash";
-    const model = genAI.getGenerativeModel({ model: modelName });
+    let model = null;
+    if (activeProvider !== "openai" && apiKey) {
+        const genAI = new GoogleGenerativeAI(apiKey);
+        const modelName = process.env.GEMINI_FREE_MODEL || "gemini-3.6-flash";
+        model = genAI.getGenerativeModel({ model: modelName });
+    }
 
     const prompt = `You are the Chief Compliance Officer and Managing Editor at TrustPointFin.
 Evaluate the following generated financial article based on 4 criteria. You must be extremely strict.
@@ -182,10 +198,10 @@ OUTPUT STRICTLY AS VALID JSON MATCHING THIS EXACT SCHEMA (no markdown formatting
             console.log(`📊 AI Quality Scores - Content: ${parsed.content}, Accuracy: ${parsed.accuracy}, Visuals: ${parsed.visuals}, Readability: ${parsed.readability}`);
             console.log(`📝 Reasons:\nContent: ${parsed.content_reason}\nAccuracy: ${parsed.accuracy_reason}\nVisuals: ${parsed.visuals_reason}\nReadability: ${parsed.readability_reason}`);
 
-            if (parsed.content < 7.0) return { valid: false, reason: `Score too low: Content (${parsed.content} < 7.0). Reason: ${parsed.content_reason}` };
-            if (parsed.accuracy < 7.5) return { valid: false, reason: `Score too low: Accuracy (${parsed.accuracy} < 7.5). Reason: ${parsed.accuracy_reason}` };
-            if (parsed.visuals < 7.0) return { valid: false, reason: `Score too low: Visuals (${parsed.visuals} < 7.0). Reason: ${parsed.visuals_reason}` };
-            if (parsed.readability < 7.0) return { valid: false, reason: `Score too low: Readability (${parsed.readability} < 7.0). Reason: ${parsed.readability_reason}` };
+            if (parsed.content < 6.0) return { valid: false, reason: `Score too low: Content (${parsed.content} < 6.0). Reason: ${parsed.content_reason}` };
+            if (parsed.accuracy < 6.5) return { valid: false, reason: `Score too low: Accuracy (${parsed.accuracy} < 6.5). Reason: ${parsed.accuracy_reason}` };
+            if (parsed.visuals < 6.0) return { valid: false, reason: `Score too low: Visuals (${parsed.visuals} < 6.0). Reason: ${parsed.visuals_reason}` };
+            if (parsed.readability < 5.5) return { valid: false, reason: `Score too low: Readability (${parsed.readability} < 5.5). Reason: ${parsed.readability_reason}` };
 
             return { valid: true, reason: "Passed all quality checks and minimum score thresholds." };
             

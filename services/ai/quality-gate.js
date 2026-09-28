@@ -38,23 +38,33 @@ function validateSocialContent(json) {
 
     // 4. Financial accuracy (Strict Compliance)
     const allTextRaw = JSON.stringify(json);
-    const allText = allTextRaw.toLowerCase()
-        .replace(/actual return की guarantee नहीं/g, '')
-        .replace(/no guarantee/g, '')
-        .replace(/not guaranteed/g, '')
-        .replace(/without guarantee/g, '')
-        .replace(/guarantee नहीं/g, '')
-        .replace(/guaranteed नहीं/g, '')
-        .replace(/does not guarantee/g, '');
+    const allText = allTextRaw.toLowerCase();
 
-    const bannedPhrases = [
-        "100% profit", "guaranteed", "guarantee", "sure shot", "eliminate risk", "will definitely go up", 
-        "cannot lose", "zero risk", "risk-free", "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
+    // Strict unconditional bans
+    const strictBans = [
+        "100% profit", "sure shot", "will definitely go up", "cannot lose", 
+        "निश्चित लाभ", "पक्का profit", "सटीक जवाब", "exact answer"
     ];
-
-    for (const phrase of bannedPhrases) {
+    for (const phrase of strictBans) {
         if (allText.includes(phrase)) {
             return { valid: false, reason: `Compliance violation: mentions banned phrase '${phrase}'.`, rule: "Do not use absolute certainty or guaranteed claims." };
+        }
+    }
+
+    // Contextual / Negatable terms: guarantee, guaranteed, गारंटी, risk-free, zero risk, eliminate risk
+    const contextualTerms = ["guarantee", "guaranteed", "गारंटी", "risk-free", "risk free", "zero risk", "eliminate risk"];
+    const sentences = allTextRaw.split(/[।.!?\n;]|<\/?(?:p|li|h[1-6]|div|tr|td|th)[^>]*>|["',]/i);
+    const negationRegex = /(?:^|[^\w\u0900-\u097F])(no|not|never|without|doesn't|does not|cannot|can't|won't|is not|isn't|are not|aren't|don't|do not|neither|nor|vary|varies|subject to|नहीं|नही|ना|न|nahi|na|nhi|bina|बिना)(?:$|[^\w\u0900-\u097F])/i;
+
+    for (const raw of sentences) {
+        const s = raw.trim().toLowerCase();
+        if (!s) continue;
+        for (const term of contextualTerms) {
+            if (s.includes(term)) {
+                if (!negationRegex.test(s)) {
+                    return { valid: false, reason: `Compliance violation: mentions banned phrase '${term}' without educational negation in: "${raw.trim().substring(0, 60)}..."`, rule: "Do not use absolute certainty or guaranteed claims without disclaimers." };
+                }
+            }
         }
     }
 
