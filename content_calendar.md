@@ -141,7 +141,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 995. What is P/E Ratio and why does it matter?
 - [x] 126. The 50-30-20 Rule of Money: How to Build Wealth on a ₹30Rs. 000 Salary
 - [x] 127. Why FDs Are Keeping You Poor: The Hidden Tax of Inflation
-- [ ] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5Rs. 000?
+- [x] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5Rs. 000?
 - [ ] 129. What is a SIP and Why It's the Cheat Code for Indian Millennials
 - [ ] 130. The Compounding Magic: How ₹2Rs. 000 a Month Can Make You a Crorepati
 - [ ] 131. Renting vs. Buying a Home in India: The Financial Truth

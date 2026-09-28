@@ -1,102 +1,104 @@
 {
-  "topic": "FDs आपको गरीब क्यों बना सकते हैं? Inflation का Hidden Tax समझिए",
-  "teaching_objective": "समझाना कि FD का nominal interest positive होने के बावजूद Tax और Inflation के बाद Real Return कम या negative हो सकता है; साथ ही यह स्पष्ट करना कि FD emergency fund और short-term goals के लिए उपयोगी हो सकती है।",
-  "format": "CALCULATION",
+  "topic": "Nifty 50 vs. Smallcap Funds: अपना पहला ₹5,000 कहाँ Invest करें?",
+  "teaching_objective": "शुरुआती निवेशक को Nifty 50 Index Fund और Smallcap Fund के बीच risk, volatility, time horizon और अपनी क्षमता के आधार पर सोच-समझकर चुनाव करने में मदद करना—बिना किसी guaranteed return या व्यक्तिगत recommendation के।",
+  "format": "COMPARISON",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "FD सुरक्षित है… पर क्या काफी है?",
+      "headline": "आपके पहले ₹5,000 की शुरुआत",
       "core_explanation": [
-        "FD में पैसा nominal रूप से बढ़ता दिखता है।",
-        "लेकिन असली सवाल है: आपकी purchasing power कितनी बढ़ी?"
+        "पहला सवाल सिर्फ “कहाँ ज्यादा return मिलेगा?” नहीं है।",
+        "सही सवाल है: आपका goal, horizon और risk comfort क्या है?",
+        "दोनों options market-linked हैं; loss संभव है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय परिवार का युवा कमाने वाला व्यक्ति बैंक की चमकदार सुरक्षित तिजोरी में पैसे रखता है। बाहर एक बाजार की सड़क पर रोजमर्रा की चीजों की कीमतें बढ़ती हुई दिखाई दें—दूध, सब्जियां, किराना और घर का सामान—जबकि तिजोरी स्थिर बनी रहे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, Indian middle-class family, young professional placing coins and currency into a polished bank vault, safe glowing softly, nearby marketplace with groceries, vegetables, milk and household items subtly becoming more expensive through visual scale and upward motion, expressive but realistic characters, clean infographic composition, hand-drawn textures, muted navy, saffron, teal and coral palette, soft shadows, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक युवा भारतीय beginner निवेशक हाथ में ₹5,000 की छोटी रकम लेकर दो रास्तों के सामने खड़ा है। बायाँ रास्ता चौड़ी, स्थिर सड़क और बड़े पेड़ों वाले शहर की ओर जाता है; दायाँ रास्ता संकरी, ऊँची-नीची पहाड़ी trail की ओर। पीछे एक शांत mentor दोनों रास्तों को समझाते हुए दिखाई देता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration, Indian personal finance learning scene, young Indian beginner holding a few rupee notes and a small savings envelope, standing at a fork in two paths, one broad smooth road through a city with large mature trees, one winding rocky mountain trail with smaller saplings and stronger wind, calm financial mentor nearby, expressive faces, clean composition, soft cream paper background, navy blue, teal, saffron and coral accents, subtle hand-drawn arrows without words, rich visual storytelling, no letters, no numbers, no labels, no logos."
       },
-      "annotation": "Arrow: “Nominal growth ≠ Real growth”",
-      "cta": null
+      "annotation": "पहले अपनी स्थिति समझें, फिर fund चुनें।",
+      "cta": "अपना horizon लिखकर शुरू करें।"
     },
     {
       "slide_number": 2,
-      "purpose": "concept",
-      "headline": "Inflation: पैसे की चुपचाप घटती ताकत",
+      "purpose": "comparison",
+      "headline": "Nifty 50: चौड़ा और बड़ा exposure",
       "core_explanation": [
-        "Inflation बढ़ने पर वही ₹100 कम चीजें खरीदता है।",
-        "यह आपकी purchasing power पर hidden tax जैसा असर डालता है।"
+        "Nifty 50 Index Fund बड़ी भारतीय कंपनियों के समूह को track करने की कोशिश करता है।",
+        "एक fund के ज़रिए कई large companies में exposure मिल सकता है।",
+        "फिर भी market गिरने पर इसमें भी loss हो सकता है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक ही व्यक्ति दो समय-बिंदुओं में दिखे: पहले वह एक टोकरी में कई groceries खरीद रहा है, बाद में उसी मुद्रा से आधी टोकरी भर पा रहा है। पीछे एक बड़ा लेकिन बिना लिखावट वाला पिघलता हुआ सिक्का समय के साथ value erosion का metaphor बने।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene visual showing the same Indian shopper in an earlier moment filling a grocery basket with many essential items, and in a later moment holding the same amount of money while the basket contains far fewer items, large melting golden coin in the background symbolizing eroding purchasing power, thoughtful facial expressions, rich storytelling, clean educational composition, textured paper, warm natural lighting, navy, mustard, teal and coral colors, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक मजबूत चौड़े पुल पर कई बड़े, अलग-अलग उद्योगों का प्रतिनिधित्व करते हुए mature trees और buildings खड़े हैं। निवेशक पुल पर संतुलित कदमों से आगे बढ़ रहा है; हवा हल्की है, लेकिन आसमान में market volatility के बादल भी मौजूद हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration of a broad sturdy bridge supported by many mature trees and distinct large business buildings symbolizing diversified established companies, a beginner investor walking carefully with a small investment pouch, gentle wind and a few clouds showing that markets can still fluctuate, Indian urban landscape, balanced composition, paper texture, navy, teal, muted green, saffron accents, hand-drawn financial education visual, no text, no letters, no numbers, no labels, no logos."
       },
-      "annotation": "Arrow: “महंगाई आपकी buying power कम करती है”",
+      "annotation": "Diversification risk को खत्म नहीं करती, पर exposure फैला सकती है।",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "calculation",
-      "headline": "₹1 लाख का असली हिसाब",
+      "purpose": "comparison",
+      "headline": "Smallcap: growth की संभावना, उतार-चढ़ाव भी",
       "core_explanation": [
-        "FD interest: 7% = ₹7,000",
-        "20% tax के बाद: ₹5,600",
-        "6% inflation के बाद Real Return लगभग -0.4%"
+        "Smallcap Funds छोटी कंपनियों में निवेश करते हैं।",
+        "इनमें growth की संभावना हो सकती है, लेकिन volatility अधिक हो सकती है।",
+        "अस्थायी बड़ी गिरावट सहने की क्षमता जरूरी हो सकती है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक बड़ा weighing scale दिखाएं। बाईं ओर FD से आने वाले interest coins हैं, जिनमें tax के बाद कुछ coins हटते हैं। दाईं ओर inflation की हवा और बढ़ती grocery basket उन coins की purchasing power को और कम करती है। मुख्य रकम को एक सुरक्षित glass jar में दिखाएं, लेकिन उसकी वास्तविक ताकत घटती हुई दिखाई दे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed financial calculation metaphor without written symbols: a large balanced weighing scale, one side holding a glass jar of Indian currency and coins, some coins being lifted away by a small tax collector figure, the remaining coins facing a strong warm wind from rising grocery prices, a smaller basket of goods on the far side, visual suggestion of a slight negative tilt, clean editorial infographic style, textured paper, expressive miniature characters, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक छोटे पौधे से बड़ा होता हुआ उभरता हुआ business forest, जिसमें कुछ saplings तेजी से ऊपर बढ़ रहे हैं। उसी scene में तेज हवा, झुकी शाखाएँ और zigzag पहाड़ी रास्ता volatility दिखाते हैं। एक निवेशक safety rope पकड़े हुए आगे बढ़ता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Editorial educational illustration of a young forest of small saplings growing toward sunlight, some promising sprouts reaching upward, strong wind bending branches and a steep zigzag mountain path showing high volatility, an Indian investor carefully holding a safety rope, hopeful but cautious mood, textured notebook paper, expressive visual metaphor, teal, deep blue, green, coral and warm yellow palette, no text, no letters, no numbers, no labels, no logos."
       },
-      "annotation": "Calculation strip: “7% − Tax − Inflation = Real Return”",
-      "cta": null
+      "annotation": "High growth possibility का मतलब high risk को ignore करना नहीं है।",
+      "cta": "अपनी गिरावट सहने की क्षमता ईमानदारी से जाँचें।"
     },
     {
       "slide_number": 4,
       "purpose": "risk",
-      "headline": "Hidden Tax कैसे दिखता है?",
+      "headline": "Time horizon बहुत मायने रखता है",
       "core_explanation": [
-        "Bank statement में balance बढ़ सकता है।",
-        "लेकिन उसी पैसे से कम सामान खरीदा जा सकता है।",
-        "यही nominal return और real return का फर्क है।"
+        "कम समय में market movement का असर ज्यादा महसूस हो सकता है।",
+        "लंबा horizon volatility को सहने के लिए अधिक समय दे सकता है।",
+        "लंबा समय भी return की guarantee नहीं देता।"
       ],
       "visual_spec": {
-        "visual_concept": "एक बैंक statement जैसा blank paper बिना किसी लिखावट के व्यक्ति के हाथ में हो, जिसमें coins बढ़ते हुए दिखें। उसी समय दूसरी तरफ उसका shopping cart छोटा और खाली होता जाए। Tax collector और inflation monster छोटे symbolic characters के रूप में interest को धीरे-धीरे कम करते दिखें।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Story-rich illustration of an Indian saver holding a blank bank statement with a growing pile of coins, while a shopping cart beside them becomes visibly smaller and emptier, tiny transparent tax collector removing a portion of coins and a gentle inflation creature stretching grocery prices upward, emotional contrast between account balance and lifestyle purchasing power, polished NotebookLM educational visual system, paper grain, layered composition, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक timeline जैसा दृश्य, जिसमें सुबह से कई मौसमों और वर्षों तक बदलता landscape दिखता है। शुरुआत में तेज बारिश और गिरते पत्ते हैं; आगे चलकर बादल छंटते हैं, पर landscape पूरी तरह predictable नहीं दिखता। निवेशक calendar नहीं बल्कि बदलते मौसमों के बीच धैर्य से चलता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Wide cinematic educational illustration showing the passage of time through changing seasons across an Indian landscape, early storm and falling leaves transitioning into sunlight and new growth, a patient investor walking along a path carrying a small backpack, subtle abstract clock shapes without numbers, visual metaphor for long investment horizon and uncertainty, sophisticated paper collage style, navy, indigo, teal, amber and muted green, no text, no letters, no numbers, no labels, no logos."
       },
-      "annotation": "Arrow: “Balance बढ़ा, buying power नहीं”",
-      "cta": null
+      "annotation": "Horizon जितना स्पष्ट, decision उतना बेहतर।",
+      "cta": "खुद से पूछें: यह पैसा कब चाहिए?"
     },
     {
       "slide_number": 5,
-      "purpose": "context",
-      "headline": "FD कब उपयोगी हो सकती है?",
+      "purpose": "process",
+      "headline": "₹5,000 बाँटने का कोई universal rule नहीं",
       "core_explanation": [
-        "Emergency fund के लिए",
-        "Short-term goals के लिए",
-        "Capital stability और predictable returns के लिए"
+        "50:50 allocation हर investor के लिए जरूरी या सही नहीं है।",
+        "Emergency fund, income stability और existing portfolio भी देखें।",
+        "Past returns देखकर जल्दबाजी में allocation न बदलें।"
       ],
       "visual_spec": {
-        "visual_concept": "एक शांत घर का दृश्य जिसमें परिवार के पास तीन सुरक्षित compartments हों: emergency medical kit, निकट भविष्य की यात्रा या फीस का calendar-like object बिना text के, और एक मजबूत FD vault। बाहर बाजार में volatility की लहरें हों, लेकिन short-term money सुरक्षित और accessible रहे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm Indian home scene with a family calmly organizing savings into three clear visual containers: emergency medical kit, near-term life goal represented by a small suitcase and calendar pages with no writing, and a sturdy bank deposit vault, outside the window dramatic market waves and uncertainty remain at a distance, reassuring but realistic mood, clear visual hierarchy, hand-drawn editorial illustration, textured cream background, navy, teal, saffron and coral palette, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक मेज पर चार संतुलन-प्लेटें हैं: emergency reserve का मजबूत डिब्बा, आय की स्थिरता दिखाता दीपक, existing investments का छोटा portfolio garden, और risk comfort दिखाता balance scale। निवेशक इन सबको देखकर ₹5,000 को अलग-अलग jars में रखने पर विचार करता है, लेकिन jars पर कोई writing नहीं है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed Indian financial planning desk scene, thoughtful beginner investor reviewing a sturdy emergency savings box, a steady lamp symbolizing income stability, a small diversified investment garden symbolizing existing portfolio, and a balance scale symbolizing risk comfort, several empty glass jars and a small rupee-colored pouch representing allocation choices, no written markings, warm notebook illustration, tactile paper texture, navy, teal, ochre and coral palette, no text, no letters, no numbers, no labels, no logos."
       },
-      "annotation": "Tip: “हर पैसा long-term growth के लिए नहीं होता”",
-      "cta": null
+      "annotation": "Allocation आपकी पूरी financial picture पर निर्भर कर सकता है।",
+      "cta": "पहले emergency fund और goals check करें।"
     },
     {
       "slide_number": 6,
-      "purpose": "takeaway",
-      "headline": "FD को goal के हिसाब से इस्तेमाल करें",
+      "purpose": "beginner_decision",
+      "headline": "Beginner decision checklist",
       "core_explanation": [
-        "Return को Tax और Inflation के बाद देखें।",
-        "Time horizon, liquidity और risk tolerance पर विचार करें।",
-        "FD गलत नहीं है—सिर्फ हर goal का एकमात्र solution नहीं।"
+        "अगर simplicity और broad exposure प्राथमिकता है, तो Nifty 50 को समझना आसान लग सकता है।",
+        "अगर horizon लंबा और risk capacity मजबूत है, तो Smallcap को limited portion में consider किया जा सकता है।",
+        "यह सामान्य शिक्षा है, व्यक्तिगत निवेश सलाह नहीं।"
       ],
       "visual_spec": {
-        "visual_concept": "एक वित्तीय roadmap पर वही saver खड़ा हो, जिसके सामने तीन रास्ते हों: emergency fund के लिए safe vault, short-term goal के लिए stable bridge, और long-term goal के लिए diversified garden जिसमें growth potential हो लेकिन मौसम और volatility का संकेत भी हो। कोई लिखावट न हो; रास्तों की visual identity अलग हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Inspiring final scene with an Indian saver standing at a financial roadmap crossroads, three distinct visual paths: a secure bank vault for emergencies, a sturdy bridge toward a near-term goal, and a long-term diversified garden with growing plants, varied assets and gentle market weather, balanced risk and reward symbolism, thoughtful character, rich storytelling, premium educational editorial illustration, textured paper, warm cream background, navy, teal, saffron and coral palette, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक शांत study room में mentor और beginner तीन transparent stepping stones पार कर रहे हैं: goal, time और risk। आगे दो doors हैं—एक broad city garden और दूसरा adventurous hill trail। Beginner पहले checklist-style visual symbols देखकर निर्णय लेता है; doors पर कोई text नहीं है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich final decision scene in a calm Indian study room, mentor guiding a beginner across three stepping stones represented by a target icon, a long path, and a balanced heart, leading toward two distinct open doorways: one to a broad organized city garden, another to a more rugged adventurous hill trail, thoughtful not promotional mood, soft sunlight, clean editorial composition, cream paper texture, navy, teal, saffron, coral accents, no text, no letters, no numbers, no labels, no logos."
       },
-      "annotation": "Final check: “Nominal Return नहीं, Real Return देखें”",
-      "cta": "अपने FD return का Tax और Inflation के बाद हिसाब लगाइए।"
+      "annotation": "Choice वही बेहतर हो सकती है जिसे आप समझते और निभा सकते हैं।",
+      "cta": "Invest करने से पहले factsheet और risk details पढ़ें।"
     }
   ],
-  "caption": "FD में पैसा बढ़ता हुआ दिख सकता है, लेकिन Tax और Inflation के बाद आपकी purchasing power घट भी सकती है। उदाहरण: 7% FD return, 20% tax और 6% inflation के बाद Real Return लगभग -0.4% रह सकता है। इसका मतलब FD बेकार नहीं है—Emergency Fund और short-term goals के लिए यह उपयोगी हो सकती है। बस हर financial goal के लिए एक ही tool पर निर्भर न रहें।\n\nअपना पैसा evaluate करते समय देखें: Goal, Time Horizon, Liquidity, Tax और Inflation.\n\n#TrustPointFin #PersonalFinance #FD #Inflation #RealReturn #FinancialLiteracy #MoneyManagement #InvestingBasics #HindiFinance"
+  "caption": "आपके पहले ₹5,000 के लिए सवाल सिर्फ “किसमें ज्यादा return मिलेगा?” नहीं है। Nifty 50 Index Fund और Smallcap Fund को समझते समय risk, volatility, time horizon, emergency fund और आपकी risk capacity—सबको साथ देखें। 50:50 कोई universal rule नहीं है, और past returns future results की guarantee नहीं देते। यह सामान्य educational information है, व्यक्तिगत निवेश सलाह नहीं। Market-linked investments में loss संभव है।\n\n#TrustPointFin #PersonalFinance #Nifty50 #SmallcapFunds #MutualFunds #IndexFund #InvestingBasics #FinancialLiteracy #HindiFinance #BeginnerInvesting #RiskManagement"
 }

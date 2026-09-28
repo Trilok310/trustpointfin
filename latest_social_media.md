@@ -1,15 +1,13 @@
 # Social Media Posts
-*Generated for article: "FDs आपको गरीब क्यों बना सकते हैं? Inflation का Hidden Tax समझिए"*
+*Generated for article: "Nifty 50 vs. Smallcap Funds: अपना पहला ₹5,000 कहाँ Invest करें?"*
 
 ---
 
 ## 📝 Caption
 
-FD में पैसा बढ़ता हुआ दिख सकता है, लेकिन Tax और Inflation के बाद आपकी purchasing power घट भी सकती है। उदाहरण: 7% FD return, 20% tax और 6% inflation के बाद Real Return लगभग -0.4% रह सकता है। इसका मतलब FD बेकार नहीं है—Emergency Fund और short-term goals के लिए यह उपयोगी हो सकती है। बस हर financial goal के लिए एक ही tool पर निर्भर न रहें।
+आपके पहले ₹5,000 के लिए सवाल सिर्फ “किसमें ज्यादा return मिलेगा?” नहीं है। Nifty 50 Index Fund और Smallcap Fund को समझते समय risk, volatility, time horizon, emergency fund और आपकी risk capacity—सबको साथ देखें। 50:50 कोई universal rule नहीं है, और past returns future results की guarantee नहीं देते। यह सामान्य educational information है, व्यक्तिगत निवेश सलाह नहीं। Market-linked investments में loss संभव है।
 
-अपना पैसा evaluate करते समय देखें: Goal, Time Horizon, Liquidity, Tax और Inflation.
-
-#TrustPointFin #PersonalFinance #FD #Inflation #RealReturn #FinancialLiteracy #MoneyManagement #InvestingBasics #HindiFinance
+#TrustPointFin #PersonalFinance #Nifty50 #SmallcapFunds #MutualFunds #IndexFund #InvestingBasics #FinancialLiteracy #HindiFinance #BeginnerInvesting #RiskManagement
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/why-fds-are-keeping-you-poor-the-hidden-tax-of-inflation.html*
+*Article URL: https://trilok310.github.io/trustpointfin/nifty-50-vs-smallcap-funds-where-should-you-invest-your-firs.html*
