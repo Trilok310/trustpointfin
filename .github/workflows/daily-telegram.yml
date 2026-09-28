@@ -1,14 +1,38 @@
-name: Auto Post Daily Telegram Setup
+name: Auto Post Daily Telegram Pulse
 
 on:
   schedule:
-    # 8:30 AM IST (3:00 AM UTC) - Just before the market opens
-    - cron: '0 3 * * *'
-  workflow_dispatch: # Allows manual trigger
+    # 8:00 AM IST (2:30 AM UTC) - Pre-market Opening Pulse (Mon-Fri)
+    - cron: '30 2 * * 1-5'
+    # 5:00 PM IST (11:30 AM UTC) - Closing Settlement & Wrap (Mon-Fri)
+    - cron: '30 11 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Edition to publish'
+        required: true
+        default: 'AUTO'
+        type: choice
+        options:
+          - 'AUTO'
+          - 'MORNING'
+          - 'EVENING'
+      dry_run:
+        description: 'Run in dry-run mode (render image and preview text without posting to Telegram)'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: "daily-telegram-pipeline"
+  cancel-in-progress: false
 
 jobs:
   post-telegram:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
@@ -21,13 +45,32 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install @google/generative-ai
-          echo "✅ npm install done."
+          npm install --no-fund --no-audit --loglevel=error
+          echo "✅ npm install complete."
 
-      - name: Run Telegram Bot
+      - name: Run Telegram Daily Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+          EDITION_INPUT: ${{ github.event.inputs.edition || 'AUTO' }}
+          DRY_RUN_INPUT: ${{ github.event.inputs.dry_run || 'false' }}
         run: |
-          node scripts/post-telegram.js
+          ARGS=""
+          if [ "$EDITION_INPUT" != "AUTO" ]; then
+            ARGS="$ARGS --edition=$EDITION_INPUT"
+          fi
+          if [ "$DRY_RUN_INPUT" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          echo "Executing: node scripts/post-telegram.js $ARGS"
+          node scripts/post-telegram.js $ARGS
+
+      - name: Commit and Push History Ledger
+        run: |
+          git config --global user.name "TrustPointFin AutoBot"
+          git config --global user.email "autobot@trustpointfin.org"
+          git add scripts/telegram-history.json
+          git diff --staged --quiet || git commit -m "📊 Auto: Update Telegram Ledger history [skip ci]"
+          git push
