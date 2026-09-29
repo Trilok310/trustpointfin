@@ -2,10 +2,10 @@ name: Auto Post Daily Telegram Pulse
 
 on:
   schedule:
-    # 8:00 AM IST (2:30 AM UTC) - Pre-market Opening Pulse (Mon-Fri)
-    - cron: '30 2 * * 1-5'
-    # 5:00 PM IST (11:30 AM UTC) - Closing Settlement & Wrap (Mon-Fri)
-    - cron: '30 11 * * 1-5'
+    # 7:55 AM IST (2:25 AM UTC) - Pre-market Opening Pulse (Mon-Fri)
+    - cron: '25 2 * * 1-5'
+    # 4:55 PM IST (11:25 AM UTC) - Closing Settlement & Wrap (Mon-Fri)
+    - cron: '25 11 * * 1-5'
   workflow_dispatch:
     inputs:
       edition:
@@ -51,6 +51,8 @@ jobs:
       - name: Run Telegram Daily Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_PAID_MODEL: gemini-3.8-flash
+          GEMINI_FREE_MODEL: gemini-3.6-flash
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
