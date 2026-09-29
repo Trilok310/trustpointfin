@@ -354,7 +354,7 @@ async function renderCardImage(istContext, marketData, content, outputPath) {
     const browser = await puppeteer.launch(launchOpts);
 
     const page = await browser.newPage();
-    await page.setViewport({ width: 1080, height: 1480, deviceScaleFactor: 2 });
+    await page.setViewport({ width: 1080, height: 1860, deviceScaleFactor: 2 });
 
     const niftyPoints = marketData.nifty.closes15D || [22780, 22780];
     const vixPoints = marketData.vix?.closes15D || [13.5, 14.8];
@@ -404,47 +404,57 @@ async function renderCardImage(istContext, marketData, content, outputPath) {
         <meta charset="UTF-8">
         <style>
             * { box-sizing: border-box; margin: 0; padding: 0; }
-            body { width: 1080px; height: 1480px; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #0f172a; display: flex; flex-direction: column; justify-content: space-between; padding: 48px 54px; }
-            .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 20px; }
-            .brand-box { display: flex; align-items: center; gap: 18px; }
-            .logo-img { height: 58px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-            .brand-title { font-size: 26px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
-            .brand-subtitle { font-size: 13px; color: #64748b; font-weight: 500; }
-            .badge-edition { background: #0f172a; color: #ffffff; padding: 8px 16px; border-radius: 30px; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
-            .date-badge { font-size: 13px; color: #64748b; font-weight: 600; margin-top: 4px; text-align: right; }
+            body { 
+                width: 1080px; 
+                height: 1860px; 
+                background-color: #f8fafc; 
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+                color: #0f172a; 
+                display: flex; 
+                flex-direction: column; 
+                justify-content: space-between; 
+                padding: 46px 52px; 
+            }
+            .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 22px; }
+            .brand-box { display: flex; align-items: center; gap: 20px; }
+            .logo-img { height: 68px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+            .brand-title { font-size: 32px; font-weight: 800; color: #0f172a; letter-spacing: -0.6px; }
+            .brand-subtitle { font-size: 16px; color: #64748b; font-weight: 500; margin-top: 2px; }
+            .badge-edition { background: #0f172a; color: #ffffff; padding: 10px 20px; border-radius: 30px; font-size: 16px; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; }
+            .date-badge { font-size: 15px; color: #64748b; font-weight: 600; margin-top: 6px; text-align: right; }
             
-            .macro-dashboard { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 16px 20px; margin-top: 18px; box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02); }
-            .macro-dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed #e2e8f0; }
-            .macro-title { font-size: 14px; font-weight: 800; color: #334155; text-transform: uppercase; letter-spacing: 0.5px; }
-            .macro-sub { font-size: 12px; color: #64748b; font-weight: 600; }
-            .macro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-            .macro-card { background: #f8fafc; border: 1px solid #edf2f7; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; justify-content: space-between; }
-            .macro-label { font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; }
-            .macro-val-box { display: flex; align-items: baseline; gap: 6px; margin: 4px 0 6px 0; }
-            .macro-val { font-size: 18px; font-weight: 900; color: #0f172a; }
-            .macro-change { font-size: 11px; font-weight: 700; }
+            .macro-dashboard { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 18px 22px; margin-top: 20px; box-shadow: 0 3px 8px rgba(15, 23, 42, 0.03); }
+            .macro-dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px dashed #cbd5e1; }
+            .macro-title { font-size: 16px; font-weight: 800; color: #334155; text-transform: uppercase; letter-spacing: 0.6px; }
+            .macro-sub { font-size: 14px; color: #64748b; font-weight: 600; }
+            .macro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+            .macro-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; }
+            .macro-label { font-size: 13px; color: #64748b; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; }
+            .macro-val-box { display: flex; align-items: baseline; gap: 6px; margin: 6px 0 8px 0; }
+            .macro-val { font-size: 24px; font-weight: 900; color: #0f172a; }
+            .macro-change { font-size: 13px; font-weight: 800; }
             .change-pos { color: #16a34a; }
             .change-neg { color: #dc2626; }
             .change-cool { color: #0284c7; }
-            .sparkline-box { height: 32px; margin-top: 2px; }
-            .macro-note { font-size: 10px; color: #64748b; font-weight: 600; margin-top: 4px; }
+            .sparkline-box { height: 36px; margin-top: 2px; }
+            .macro-note { font-size: 12px; color: #64748b; font-weight: 600; margin-top: 6px; }
             
-            .title-section { margin-top: 16px; }
-            .main-title { font-size: 30px; font-weight: 900; color: #0f172a; letter-spacing: -0.8px; }
-            .feed-container { display: flex; flex-direction: column; gap: 14px; margin-top: 14px; flex-grow: 1; }
-            .card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03); display: flex; flex-direction: column; gap: 6px; }
-            .card-header { display: flex; align-items: center; gap: 10px; }
-            .pill { padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; }
-            .card-headline { font-size: 17px; font-weight: 800; color: #0f172a; }
-            .card-body { font-size: 14px; color: #334155; line-height: 1.4; font-weight: 500; }
-            .chain-box { background: #f8fafc; border-left: 3px solid #0284c7; padding: 8px 12px; border-radius: 0 8px 8px 0; font-size: 13px; color: #475569; font-weight: 500; margin-top: 2px; }
-            .chain-box strong { color: #0f172a; font-weight: 700; }
+            .title-section { margin-top: 18px; }
+            .main-title { font-size: 34px; font-weight: 900; color: #0f172a; letter-spacing: -0.9px; line-height: 1.25; }
+            .feed-container { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; flex-grow: 1; }
+            .card { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 20px 24px; box-shadow: 0 3px 8px rgba(15, 23, 42, 0.03); display: flex; flex-direction: column; gap: 10px; }
+            .card-header { display: flex; align-items: center; gap: 12px; }
+            .pill { padding: 4px 12px; border-radius: 8px; font-size: 13px; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; }
+            .card-headline { font-size: 22px; font-weight: 800; color: #0f172a; line-height: 1.3; }
+            .card-body { font-size: 18px; color: #334155; line-height: 1.48; font-weight: 500; }
+            .chain-box { background: #f8fafc; border-left: 4px solid #0284c7; padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 17px; color: #334155; line-height: 1.45; font-weight: 500; margin-top: 4px; }
+            .chain-box strong { color: #0f172a; font-weight: 800; }
             
-            .footer { border-top: 2px solid #e2e8f0; padding-top: 14px; display: flex; justify-content: space-between; align-items: center; }
-            .footer-disclaimer { font-size: 11px; color: #94a3b8; line-height: 1.35; max-width: 650px; }
-            .cta-box { background: #f1f5f9; border: 1px solid #cbd5e1; padding: 8px 16px; border-radius: 10px; text-align: right; }
-            .cta-title { font-size: 11px; color: #64748b; font-weight: 600; }
-            .cta-link { font-size: 13px; color: #0284c7; font-weight: 800; }
+            .footer { border-top: 2px solid #e2e8f0; padding-top: 18px; display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+            .footer-disclaimer { font-size: 13px; color: #94a3b8; line-height: 1.4; max-width: 650px; font-weight: 500; }
+            .cta-box { background: #f1f5f9; border: 1.5px solid #cbd5e1; padding: 10px 20px; border-radius: 12px; text-align: right; }
+            .cta-title { font-size: 12px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+            .cta-link { font-size: 15px; color: #0284c7; font-weight: 800; margin-top: 2px; }
         </style>
     </head>
     <body>
@@ -477,7 +487,7 @@ async function renderCardImage(istContext, marketData, content, outputPath) {
                             ${marketData.nifty.change >= 0 ? '▲ +' : '▼ '}${marketData.nifty.change} (${marketData.nifty.changePct}%)
                         </span>
                     </div>
-                    <div class="sparkline-box">${generateSparklineSVG(niftyPoints, 130, 32, niftyColor, niftyFill)}</div>
+                    <div class="sparkline-box">${generateSparklineSVG(niftyPoints, 140, 36, niftyColor, niftyFill)}</div>
                     <div class="macro-note">${marketData.nifty.change >= 0 ? 'Bullish Traction' : 'Broader Profit-Booking'}</div>
                 </div>
 
@@ -490,7 +500,7 @@ async function renderCardImage(istContext, marketData, content, outputPath) {
                             ${(marketData.vix?.change || 0) > 0 ? '▲ +' : '▼ '}${marketData.vix?.changePct || 0}%
                         </span>
                     </div>
-                    <div class="sparkline-box">${generateSparklineSVG(vixPoints, 130, 32, vixColor, vixFill)}</div>
+                    <div class="sparkline-box">${generateSparklineSVG(vixPoints, 140, 36, vixColor, vixFill)}</div>
                     <div class="macro-note">${(marketData.vix?.change || 0) > 0 ? 'Options Volatility Expands' : 'Calm Options IV'}</div>
                 </div>
 
@@ -503,7 +513,7 @@ async function renderCardImage(istContext, marketData, content, outputPath) {
                             ${marketData.crude?.change || 0} (${marketData.crude?.changePct || 0}%)
                         </span>
                     </div>
-                    <div class="sparkline-box">${generateSparklineSVG(crudePoints, 130, 32, (marketData.crude?.change || 0) <= 0 ? '#16a34a' : '#dc2626', 'rgba(22, 163, 74, 0.08)')}</div>
+                    <div class="sparkline-box">${generateSparklineSVG(crudePoints, 140, 36, (marketData.crude?.change || 0) <= 0 ? '#16a34a' : '#dc2626', 'rgba(22, 163, 74, 0.08)')}</div>
                     <div class="macro-note">Supports OMCs & Imports</div>
                 </div>
 
@@ -516,7 +526,7 @@ async function renderCardImage(istContext, marketData, content, outputPath) {
                             ${marketData.usdinr?.change || 0} (${marketData.usdinr?.changePct || 0}%)
                         </span>
                     </div>
-                    <div class="sparkline-box">${generateSparklineSVG(usdinrPoints, 130, 32, '#0284c7', 'rgba(2, 132, 199, 0.08)')}</div>
+                    <div class="sparkline-box">${generateSparklineSVG(usdinrPoints, 140, 36, '#0284c7', 'rgba(2, 132, 199, 0.08)')}</div>
                     <div class="macro-note">Currency Stability Base</div>
                 </div>
             </div>
