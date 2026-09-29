@@ -1,104 +1,92 @@
 {
-  "topic": "Nifty 50 vs. Smallcap Funds: अपना पहला ₹5,000 कहाँ Invest करें?",
-  "teaching_objective": "शुरुआती निवेशक को Nifty 50 Index Fund और Smallcap Fund के बीच risk, volatility, time horizon और अपनी क्षमता के आधार पर सोच-समझकर चुनाव करने में मदद करना—बिना किसी guaranteed return या व्यक्तिगत recommendation के।",
-  "format": "COMPARISON",
+  "topic": "SIP क्या है और Indian Millennials के लिए यह Investment का “Cheat Code” क्यों है?",
+  "teaching_objective": "Beginners को समझाना कि SIP एक disciplined investment method है, fixed-return product नहीं; regular investing, rupee-cost averaging और long-term compounding wealth-building में मदद कर सकते हैं, लेकिन market risk बना रहता है।",
+  "format": "STORY",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "आपके पहले ₹5,000 की शुरुआत",
-      "core_explanation": [
-        "पहला सवाल सिर्फ “कहाँ ज्यादा return मिलेगा?” नहीं है।",
-        "सही सवाल है: आपका goal, horizon और risk comfort क्या है?",
-        "दोनों options market-linked हैं; loss संभव है।"
-      ],
+      "headline": "हर महीने थोड़ा, लंबे समय में बड़ा फर्क",
+      "core_explanation": "• SIP में तय रकम नियमित अंतराल पर invest की जाती है।\n• यह शुरुआत को आसान बनाता है—एक बड़ी रकम का इंतज़ार नहीं करना पड़ता।",
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय beginner निवेशक हाथ में ₹5,000 की छोटी रकम लेकर दो रास्तों के सामने खड़ा है। बायाँ रास्ता चौड़ी, स्थिर सड़क और बड़े पेड़ों वाले शहर की ओर जाता है; दायाँ रास्ता संकरी, ऊँची-नीची पहाड़ी trail की ओर। पीछे एक शांत mentor दोनों रास्तों को समझाते हुए दिखाई देता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration, Indian personal finance learning scene, young Indian beginner holding a few rupee notes and a small savings envelope, standing at a fork in two paths, one broad smooth road through a city with large mature trees, one winding rocky mountain trail with smaller saplings and stronger wind, calm financial mentor nearby, expressive faces, clean composition, soft cream paper background, navy blue, teal, saffron and coral accents, subtle hand-drawn arrows without words, rich visual storytelling, no letters, no numbers, no labels, no logos."
+        "visual_concept": "एक young Indian millennial professional का warm morning scene: वह salary आने के बाद अपने smartphone पर छोटा recurring investment set कर रहा है; पास में coffee, laptop, houseplant और छोटे-छोटे coins से बनती हुई एक growing pathway।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration of a young Indian millennial professional in a cozy modern apartment, setting up a small recurring investment on a blank smartphone screen, coffee mug, laptop, wallet, a pathway made of small golden coins leading toward a healthy growing plant, warm natural light, expressive character, polished financial education infographic composition, Indian urban details, soft navy, teal, saffron and coral palette, clean background, no readable interface, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "पहले अपनी स्थिति समझें, फिर fund चुनें।",
-      "cta": "अपना horizon लिखकर शुरू करें।"
+      "annotation": "Arrow: “छोटी शुरुआत → नियमित आदत”",
+      "cta": "पहले समझें, फिर शुरू करें।"
     },
     {
       "slide_number": 2,
-      "purpose": "comparison",
-      "headline": "Nifty 50: चौड़ा और बड़ा exposure",
-      "core_explanation": [
-        "Nifty 50 Index Fund बड़ी भारतीय कंपनियों के समूह को track करने की कोशिश करता है।",
-        "एक fund के ज़रिए कई large companies में exposure मिल सकता है।",
-        "फिर भी market गिरने पर इसमें भी loss हो सकता है।"
-      ],
+      "purpose": "definition",
+      "headline": "SIP product नहीं, investment का तरीका है",
+      "core_explanation": "• SIP यानी Systematic Investment Plan।\n• हर महीने fixed amount invest हो सकता है, लेकिन return fixed नहीं होता।",
       "visual_spec": {
-        "visual_concept": "एक मजबूत चौड़े पुल पर कई बड़े, अलग-अलग उद्योगों का प्रतिनिधित्व करते हुए mature trees और buildings खड़े हैं। निवेशक पुल पर संतुलित कदमों से आगे बढ़ रहा है; हवा हल्की है, लेकिन आसमान में market volatility के बादल भी मौजूद हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration of a broad sturdy bridge supported by many mature trees and distinct large business buildings symbolizing diversified established companies, a beginner investor walking carefully with a small investment pouch, gentle wind and a few clouds showing that markets can still fluctuate, Indian urban landscape, balanced composition, paper texture, navy, teal, muted green, saffron accents, hand-drawn financial education visual, no text, no letters, no numbers, no labels, no logos."
+        "visual_concept": "एक split-scene: बाईं ओर calendar के अलग-अलग दिनों पर एक ही आकार के coins डालती हुई millennial woman; दाईं ओर market-linked mutual fund का abstract roller-coaster landscape, जिसमें portfolio value ऊपर-नीचे हो रही है। कोई readable text नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene editorial illustration: an Indian millennial woman consistently placing identical coins into a transparent investment jar beside a monthly calendar with blank pages, while in the background an abstract market landscape rises and falls like gentle hills and waves, showing uncertainty without fear, transparent glass jar, expressive storytelling, sophisticated educational poster style, navy and cream base with teal, orange and red accents, no readable symbols, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Diversification risk को खत्म नहीं करती, पर exposure फैला सकती है।",
+      "annotation": "दो arrows: “Contribution स्थिर हो सकता है” और “Market value बदल सकती है”",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "Smallcap: growth की संभावना, उतार-चढ़ाव भी",
-      "core_explanation": [
-        "Smallcap Funds छोटी कंपनियों में निवेश करते हैं।",
-        "इनमें growth की संभावना हो सकती है, लेकिन volatility अधिक हो सकती है।",
-        "अस्थायी बड़ी गिरावट सहने की क्षमता जरूरी हो सकती है।"
-      ],
+      "purpose": "mechanism",
+      "headline": "बाज़ार ऊपर-नीचे हो, खरीद जारी रह सकती है",
+      "core_explanation": "• कीमत कम होने पर वही रकम ज्यादा units खरीदती है।\n• कीमत ज्यादा होने पर कम units मिलती हैं—यही rupee-cost averaging का basic idea है।",
       "visual_spec": {
-        "visual_concept": "एक छोटे पौधे से बड़ा होता हुआ उभरता हुआ business forest, जिसमें कुछ saplings तेजी से ऊपर बढ़ रहे हैं। उसी scene में तेज हवा, झुकी शाखाएँ और zigzag पहाड़ी रास्ता volatility दिखाते हैं। एक निवेशक safety rope पकड़े हुए आगे बढ़ता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Editorial educational illustration of a young forest of small saplings growing toward sunlight, some promising sprouts reaching upward, strong wind bending branches and a steep zigzag mountain path showing high volatility, an Indian investor carefully holding a safety rope, hopeful but cautious mood, textured notebook paper, expressive visual metaphor, teal, deep blue, green, coral and warm yellow palette, no text, no letters, no numbers, no labels, no logos."
+        "visual_concept": "एक friendly street-market metaphor: एक millennial investor हर महीने एक ही basket लेकर अलग-अलग कीमतों वाले fruit stalls पर जाता है; कम कीमत वाले stall पर basket में ज्यादा फल, महंगे stall पर कम फल। Fruits को investment units का metaphor बनाया जाए।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated Indian street market metaphor: a young Indian millennial investor carrying the same woven basket through three colorful fruit stalls, one stall with abundant low-priced fruit, one with medium amount, one with fewer expensive fruit, visual comparison of quantity changing while the basket and shopper remain consistent, warm human expressions, sophisticated financial education illustration, clean composition, no price tags, no signs, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "High growth possibility का मतलब high risk को ignore करना नहीं है।",
-      "cta": "अपनी गिरावट सहने की क्षमता ईमानदारी से जाँचें।"
+      "annotation": "Arrow: “कम कीमत = उसी रकम में ज्यादा units”",
+      "cta": "Market timing के बजाय consistency पर ध्यान दें।"
     },
     {
       "slide_number": 4,
-      "purpose": "risk",
-      "headline": "Time horizon बहुत मायने रखता है",
-      "core_explanation": [
-        "कम समय में market movement का असर ज्यादा महसूस हो सकता है।",
-        "लंबा horizon volatility को सहने के लिए अधिक समय दे सकता है।",
-        "लंबा समय भी return की guarantee नहीं देता।"
-      ],
+      "purpose": "growth",
+      "headline": "Compounding: पैसे पर भी पैसा काम करता है",
+      "core_explanation": "• समय के साथ returns भी invested capital का हिस्सा बन सकते हैं।\n• Compounding को समय चाहिए; जल्दी शुरू करना अक्सर ज्यादा महत्वपूर्ण होता है।",
       "visual_spec": {
-        "visual_concept": "एक timeline जैसा दृश्य, जिसमें सुबह से कई मौसमों और वर्षों तक बदलता landscape दिखता है। शुरुआत में तेज बारिश और गिरते पत्ते हैं; आगे चलकर बादल छंटते हैं, पर landscape पूरी तरह predictable नहीं दिखता। निवेशक calendar नहीं बल्कि बदलते मौसमों के बीच धैर्य से चलता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Wide cinematic educational illustration showing the passage of time through changing seasons across an Indian landscape, early storm and falling leaves transitioning into sunlight and new growth, a patient investor walking along a path carrying a small backpack, subtle abstract clock shapes without numbers, visual metaphor for long investment horizon and uncertainty, sophisticated paper collage style, navy, indigo, teal, amber and muted green, no text, no letters, no numbers, no labels, no logos."
+        "visual_concept": "एक time-lapse garden: एक millennial couple अलग-अलग समय पर बीज लगाता है; शुरुआती छोटे पौधे धीरे-धीरे branching tree बनते हैं, जिसकी शाखाओं पर coins और leaves बढ़ते जाते हैं। दृश्य growth को समझाए, कोई numeric promise नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Beautiful time-lapse garden illustration with an Indian millennial couple planting small seeds at different moments, tiny sprouts becoming a branching tree with layered roots, leaves and subtle golden coins integrated naturally into the branches, visual metaphor for compounding and time, sunrise-to-sunset progression across the scene, hopeful but realistic mood, premium NotebookLM editorial style, no text, no dates, no numbers, no labels, no logos."
       },
-      "annotation": "Horizon जितना स्पष्ट, decision उतना बेहतर।",
-      "cta": "खुद से पूछें: यह पैसा कब चाहिए?"
+      "annotation": "Arrow: “Time + consistency = growth का मौका”",
+      "cta": "Compounding को time दीजिए।"
     },
     {
       "slide_number": 5,
-      "purpose": "process",
-      "headline": "₹5,000 बाँटने का कोई universal rule नहीं",
-      "core_explanation": [
-        "50:50 allocation हर investor के लिए जरूरी या सही नहीं है।",
-        "Emergency fund, income stability और existing portfolio भी देखें।",
-        "Past returns देखकर जल्दबाजी में allocation न बदलें।"
-      ],
+      "purpose": "relevance",
+      "headline": "Millennials के लिए SIP क्यों practical हो सकती है?",
+      "core_explanation": "• Salary-based life में छोटे monthly contributions manage करना आसान हो सकता है।\n• Automation discipline बनाती है और impulse spending को balance करने में मदद कर सकती है।",
       "visual_spec": {
-        "visual_concept": "एक मेज पर चार संतुलन-प्लेटें हैं: emergency reserve का मजबूत डिब्बा, आय की स्थिरता दिखाता दीपक, existing investments का छोटा portfolio garden, और risk comfort दिखाता balance scale। निवेशक इन सबको देखकर ₹5,000 को अलग-अलग jars में रखने पर विचार करता है, लेकिन jars पर कोई writing नहीं है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed Indian financial planning desk scene, thoughtful beginner investor reviewing a sturdy emergency savings box, a steady lamp symbolizing income stability, a small diversified investment garden symbolizing existing portfolio, and a balance scale symbolizing risk comfort, several empty glass jars and a small rupee-colored pouch representing allocation choices, no written markings, warm notebook illustration, tactile paper texture, navy, teal, ochre and coral palette, no text, no letters, no numbers, no labels, no logos."
+        "visual_concept": "एक busy Indian millennial couple का split-day apartment scene: rent, commute, groceries और weekend plans के बीच एक छोटा automated coin-flow investment jar में जा रहा है; background में emergency fund वाला सुरक्षित box भी दिखे, ताकि priorities का balance दिखे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed lifestyle illustration of an Indian millennial couple managing a modern monthly budget at home, visual objects for rent, groceries, commute, travel and emergency savings arranged around them, a small automatic stream of coins moving calmly into a transparent investment jar, balanced not extravagant, warm apartment setting, relatable expressive characters, polished educational storytelling, no receipts with writing, no app text, no numbers, no logos, no labels."
       },
-      "annotation": "Allocation आपकी पूरी financial picture पर निर्भर कर सकता है।",
-      "cta": "पहले emergency fund और goals check करें।"
+      "annotation": "Small note arrow: “पहले emergency needs और debt obligations देखें”",
+      "cta": "Amount वही रखें जिसे लंबे समय तक जारी रख सकें।"
     },
     {
       "slide_number": 6,
-      "purpose": "beginner_decision",
-      "headline": "Beginner decision checklist",
-      "core_explanation": [
-        "अगर simplicity और broad exposure प्राथमिकता है, तो Nifty 50 को समझना आसान लग सकता है।",
-        "अगर horizon लंबा और risk capacity मजबूत है, तो Smallcap को limited portion में consider किया जा सकता है।",
-        "यह सामान्य शिक्षा है, व्यक्तिगत निवेश सलाह नहीं।"
-      ],
+      "purpose": "risk",
+      "headline": "SIP में return guaranteed नहीं होता",
+      "core_explanation": "• Market-linked funds में profit और loss दोनों संभव हैं।\n• SIP केवल investing का method है; fund selection, risk और time horizon अलग से समझें।",
       "visual_spec": {
-        "visual_concept": "एक शांत study room में mentor और beginner तीन transparent stepping stones पार कर रहे हैं: goal, time और risk। आगे दो doors हैं—एक broad city garden और दूसरा adventurous hill trail। Beginner पहले checklist-style visual symbols देखकर निर्णय लेता है; doors पर कोई text नहीं है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich final decision scene in a calm Indian study room, mentor guiding a beginner across three stepping stones represented by a target icon, a long path, and a balanced heart, leading toward two distinct open doorways: one to a broad organized city garden, another to a more rugged adventurous hill trail, thoughtful not promotional mood, soft sunlight, clean editorial composition, cream paper texture, navy, teal, saffron, coral accents, no text, no letters, no numbers, no labels, no logos."
+        "visual_concept": "एक thoughtful investor पुल पर खड़ा है: सामने market waves कभी ऊपर, कभी नीचे; उसके हाथ में helmet और map हैं, जबकि bridge stable process और long-term discipline का metaphor है। दूर horizon पर destination है, लेकिन guaranteed straight road नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Thoughtful Indian millennial investor standing safely at the start of a sturdy bridge over changing market waves, holding a simple map and protective helmet, waves moving up and down, distant horizon with soft light but no guaranteed destination, visual metaphor for risk awareness and long-term discipline, realistic yet friendly editorial illustration, navy, teal, muted orange palette, no charts with markings, no text, no numbers, no logos, no labels."
       },
-      "annotation": "Choice वही बेहतर हो सकती है जिसे आप समझते और निभा सकते हैं।",
-      "cta": "Invest करने से पहले factsheet और risk details पढ़ें।"
+      "annotation": "Arrow: “SIP risk हटाती नहीं—discipline देती है”",
+      "cta": "Risk समझे बिना सिर्फ trend follow न करें।"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "process",
+      "headline": "SIP शुरू करने से पहले 4-step checklist",
+      "core_explanation": "• Goal और time horizon तय करें।\n• Scheme का risk, expense ratio, exit load और minimum amount जाँचें।\n• Emergency fund और debt obligations को नज़रअंदाज़ न करें।",
+      "visual_spec": {
+        "visual_concept": "एक clean tabletop planning scene: millennial investor blank checklist cards, compass, calendar, shield, magnifying glass और small plant के साथ decision path बना रहा है; चार physical stepping stones आगे बढ़ते हुए दिखाई दें, लेकिन उन पर कोई लिखावट न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Clean top-down editorial illustration of an Indian millennial investor planning a mutual fund SIP using blank checklist cards, compass, calendar with empty pages, magnifying glass, protective shield, emergency savings box and a small healthy plant, four visual stepping stones leading forward, organized but human, premium financial education visual system, no writing, no readable symbols, no numbers, no logos, no labels."
+      },
+      "annotation": "Four arrows: “Goal → Time → Risk → Scheme conditions”",
+      "cta": "अपने पैसे के लिए informed decision लें।"
     }
   ],
-  "caption": "आपके पहले ₹5,000 के लिए सवाल सिर्फ “किसमें ज्यादा return मिलेगा?” नहीं है। Nifty 50 Index Fund और Smallcap Fund को समझते समय risk, volatility, time horizon, emergency fund और आपकी risk capacity—सबको साथ देखें। 50:50 कोई universal rule नहीं है, और past returns future results की guarantee नहीं देते। यह सामान्य educational information है, व्यक्तिगत निवेश सलाह नहीं। Market-linked investments में loss संभव है।\n\n#TrustPointFin #PersonalFinance #Nifty50 #SmallcapFunds #MutualFunds #IndexFund #InvestingBasics #FinancialLiteracy #HindiFinance #BeginnerInvesting #RiskManagement"
+  "caption": "SIP कोई magic formula या guaranteed return नहीं है—यह regular investing की एक disciplined method है। छोटी रकम, सही time horizon और consistency के साथ wealth creation का मौका बन सकता है। लेकिन market risk, fund selection, expense ratio, exit load, emergency fund और debt obligations को समझना ज़रूरी है।\n\nSave करें और किसी भी SIP को शुरू करने से पहले अपना goal और risk profile check करें।\n\n#SIP #MutualFunds #PersonalFinance #InvestingForBeginners #IndianMillennials #WealthBuilding #FinancialLiteracy #RupeeCostAveraging #Compounding #TrustPointFin"
 }
