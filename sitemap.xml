@@ -574,4 +574,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://trustpointfin.org/the-compounding-magic-how-2rs-000-a-month-can-make-you-a-cro.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
