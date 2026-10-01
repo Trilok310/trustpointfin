@@ -144,7 +144,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5Rs. 000?
 - [x] 129. What is a SIP and Why It's the Cheat Code for Indian Millennials
 - [x] 130. The Compounding Magic: How ₹2Rs. 000 a Month Can Make You a Crorepati
-- [ ] 131. Renting vs. Buying a Home in India: The Financial Truth
+- [x] 131. Renting vs. Buying a Home in India: The Financial Truth
 - [ ] 132. The Power of Index Funds: Why Warren Buffett Recommends Them
 - [ ] 133. How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know
 - [ ] 134. Avoid These 5 Costly Mistakes When Buying Your First Stock

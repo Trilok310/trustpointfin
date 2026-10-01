@@ -1,80 +1,117 @@
 {
-  "topic": "The Compounding Magic: How ₹2,000 a Month Can Make You a Crorepati",
-  "teaching_objective": "समझाना कि लगातार ₹2,000 की monthly SIP, लंबे समय और compounding के साथ बड़ा corpus बना सकती है—लेकिन 12% return केवल illustrative assumption है, guarantee नहीं।",
-  "format": "CALCULATION",
+  "topic": "Renting vs. Buying a Home in India: Financial Truth और सही फैसला कैसे लें",
+  "teaching_objective": "समझना कि Rent बनाम Buy का फैसला केवल EMI और rent की तुलना नहीं है; इसमें opportunity cost, investment discipline, taxes, maintenance, flexibility, risk और रहने की अवधि सभी शामिल होते हैं।",
+  "format": "COMPARISON",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "छोटी शुरुआत, बड़ा सपना",
-      "core_explanation": "हर महीने ₹2,000 invest करना छोटा लग सकता है। असली ताकत है—समय, consistency और compounding।",
+      "headline": "Rent या Buy? सवाल सिर्फ EMI का नहीं",
+      "core_explanation": [
+        "दोनों विकल्पों की financial और lifestyle कीमत होती है।",
+        "सही फैसला आपकी income, goals और कितने साल रहने की योजना पर निर्भर करता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय कर्मचारी अपने छोटे से कमरे में गुल्लक में सिक्का डाल रहा है। खिड़की के बाहर उसी सिक्के से उगता हुआ छोटा पौधा दिखाई देता है, जिसकी जड़ें धीरे-धीरे एक मजबूत पेड़ में बदलने का संकेत देती हैं। गर्म सुबह की रोशनी, hopeful mood, relatable Indian setting.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A warm editorial illustration of a young Indian office worker in a modest bedroom placing a small coin into a simple savings jar, beside a tiny sprout growing from the coin and visually transforming into a strong branching tree, subtle financial learning atmosphere, rich layered composition, expressive character, soft paper texture, muted navy, cream, teal and coral palette, cinematic sunlight, clean educational storytelling, no letters, no numbers, no labels, no logos, no typography."
+        "visual_concept": "एक भारतीय युवा दंपति शहर की सड़क पर दो अलग रास्तों के बीच खड़ा है। बाईं ओर आधुनिक किराये का apartment, हल्का suitcase और खुला रास्ता; दाईं ओर घर की चाबी पकड़े हुए स्थायी घर, छोटा garden और मजबूत नींव। बीच में परिवार सोच-विचार कर रहा है, वातावरण balanced और non-judgmental हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with warm cream paper background, Indian urban couple in their early 30s standing at a forked path, one path leading to a contemporary rented apartment with a suitcase and flexible travel feeling, the other leading to a welcoming owned Indian home with a key and small garden, subtle financial planning objects like calculator and coins integrated into the scene, hand-drawn ink outlines, layered paper cutout textures, muted saffron, teal, navy and coral palette, soft shadows, clear visual storytelling, no written characters, no signs, no labels, no logos, no watermarks."
       },
-      "annotation": "Arrow: शुरुआत छोटी हो सकती है।",
-      "cta": "क्या आप आज से शुरू कर सकते हैं?"
+      "annotation": "पहले अपनी परिस्थिति देखें, फिर फैसला करें।",
+      "cta": "अपना comparison शुरू करें"
     },
     {
       "slide_number": 2,
-      "purpose": "mechanism",
-      "headline": "SIP: हर महीने एक कदम",
-      "core_explanation": "₹2,000 हर महीने नियमित रूप से invest होते हैं। SIP market timing के बजाय disciplined investing पर ध्यान देती है।",
+      "purpose": "myth",
+      "headline": "Myth: Rent मतलब पैसा बर्बाद",
+      "core_explanation": [
+        "Rent के बदले आपको रहने की सुविधा, flexibility और liquidity मिलती है।",
+        "अगर बची हुई पूंजी invest की जाए, तो renting का outcome मजबूत हो सकता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय महिला investor हर महीने एक समान छोटा सिक्का एक flowing stream में डाल रही है। stream आगे जाकर कई छोटी धाराओं में बंटकर एक बड़े जलाशय में मिलती है, जो growing investment journey का metaphor है.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A thoughtful Indian woman investor standing beside a flowing river, dropping one small coin into the stream each month as repeated visual echoes, many tiny streams merging into a larger calm reservoir, metaphor for disciplined monthly investing and SIP, rich illustrated storytelling, detailed water movement, soft paper grain, navy teal coral and warm gold palette, no letters, no numbers, no labels, no logos, no typography."
+        "visual_concept": "एक किराये के apartment में भारतीय महिला professional आराम से रह रही है। कमरे के एक हिस्से में suitcase, moving boxes और शहर का खुला दृश्य flexibility दिखाते हैं; दूसरे हिस्से में बची हुई रकम एक पौधे की तरह बढ़ रही है, जिसकी जड़ें diversified investments के प्रतीक छोटे सिक्कों और growth leaves से बनी हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrated Indian woman professional in a bright rented apartment, relaxed and productive, one side showing a suitcase, modular furniture and an open city skyline suggesting mobility, the other side showing a growing plant whose roots are formed from coins and whose leaves suggest disciplined investing, visual metaphor for rent providing flexibility and liquidity, warm paper grain, ink and watercolor, clean composition, muted teal, green, mustard and coral, no written characters, no signs, no labels, no logos, no watermarks."
       },
-      "annotation": "Arrow: नियमितता सबसे महत्वपूर्ण आदतों में से एक है।",
+      "annotation": "Rent को अकेले मत देखें—बची capital का उपयोग भी गिनें।",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "calculation",
-      "headline": "35 साल का mathematical illustration",
-      "core_explanation": "₹2,000 × 12 महीने × 35 साल = ₹8.4 लाख का कुल निवेश। 12% annual return मानने पर corpus लगभग ₹1.27 करोड़ हो सकता है।",
+      "purpose": "comparison",
+      "headline": "Buy की कीमत EMI से बड़ी होती है",
+      "core_explanation": [
+        "Down payment, stamp duty, registration, maintenance और repairs भी जोड़ें।",
+        "घर की EMI के साथ opportunity cost भी होती है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक लंबी illustrated timeline जैसा दृश्य जिसमें वही investor तीन उम्रों में दिखाई दे—युवा अवस्था में छोटे coins, middle age में बढ़ता portfolio garden, और 35 साल बाद बड़ा glowing tree. Coins contributed amount को दर्शाएं और tree canopy investment growth को.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A wide cinematic educational illustration showing the same Indian investor at three life stages across a long winding path: young adult placing a few coins, middle-aged adult tending a flourishing investment garden, older adult standing beside a magnificent glowing tree with abundant golden leaves, visual contrast between small contributions and long-term growth, elegant timeline composition without any written timeline, rich textures, soft paper collage style, no letters, no numbers, no labels, no logos, no typography."
+        "visual_concept": "एक भारतीय परिवार नए घर के सामने खड़ा है। कटअवे शैली में घर के अंदर और आसपास कई financial layers दिखाई दें: बड़ी down payment राशि खाली होती savings jar को दर्शाए, EMI calendar-like recurring coins, maintenance tools, registration papers बिना लेखन के, और उसी पूंजी से छूटे हुए investment tree का छोटा faded रूप।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Cutaway editorial illustration of an Indian family outside a newly purchased apartment, transparent layered house showing a large down payment draining a savings jar, recurring monthly coin stacks symbolizing loan payments, repair tools and service objects symbolizing maintenance, official-looking blank papers symbolizing transaction costs, and a faint investment tree in the background symbolizing opportunity cost, sophisticated financial education visual, hand-drawn ink, paper collage, warm neutral background, navy, saffron, teal and coral accents, no written characters, no labels, no logos, no watermarks."
       },
-      "annotation": "Arrow: ₹1.27 करोड़ केवल illustrative estimate है।",
-      "cta": "Calculation को समझें, guarantee न मानें।"
+      "annotation": "EMI = total ownership cost नहीं।",
+      "cta": "Hidden costs लिखकर जोड़ें"
     },
     {
       "slide_number": 4,
-      "purpose": "compounding",
-      "headline": "Compounding: पैसे से पैसा बनना",
-      "core_explanation": "शुरुआत में growth धीमी दिख सकती है। समय के साथ returns भी returns कमाने लगते हैं, इसलिए आखिरी वर्षों में growth तेज दिख सकती है।",
+      "purpose": "calculation",
+      "headline": "Opportunity cost को picture में लाएँ",
+      "core_explanation": [
+        "Renting में बची down payment invest हो सकती है।",
+        "EMI और rent का अंतर भी नियमित रूप से invest किया जा सकता है।",
+        "Investment returns guaranteed नहीं होते।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक पेड़ की जड़ों में छोटे coins, trunk पर growing branches और canopy पर चमकीले फल दिखें। हर फल से नए छोटे फल निकलते हुए दिखाएं, जिससे returns generating further returns का visual metaphor बने.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A magical financial tree growing from a handful of small coins, with visible roots, branches multiplying over time, and glowing golden fruits sprouting new fruits of their own, visual metaphor for compounding returns generating further returns, an Indian family observing the tree with wonder, sophisticated editorial illustration, layered depth, paper texture, teal forest, warm gold highlights, no letters, no numbers, no labels, no logos, no typography."
+        "visual_concept": "Split-screen financial illustration: बाईं ओर renter के पास सुरक्षित रखी बड़ी पूंजी और हर महीने बचने वाली छोटी रकम एक diversified investment garden में जा रही है; दाईं ओर buyer का पैसा घर की ईंटों और loan repayment में जा रहा है। दोनों तरफ growth और uncertainty को संतुलित दिखाया जाए, कोई विजेता घोषित न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Balanced split-screen illustration with the same Indian professional shown as renter on the left and homeowner on the right, left side placing a large savings bundle and monthly smaller contributions into a diversified garden of varied plants and market-like abstract shapes, right side directing money into a solid home foundation and brick structure, subtle clouds and changing seasons suggesting investment uncertainty, equal visual weight for both choices, rich ink lines, watercolor and paper collage, no written characters, no labels, no logos, no watermarks."
       },
-      "annotation": "Arrow: समय compounding का सबसे बड़ा साथी है।",
-      "cta": null
+      "annotation": "दोनों scenarios को same time period पर compare करें।",
+      "cta": "Simple rent-buy calculator बनाएं"
     },
     {
       "slide_number": 5,
-      "purpose": "risk",
-      "headline": "₹1 करोड़ का मतलब हमेशा वही purchasing power नहीं",
-      "core_explanation": "Inflation समय के साथ पैसे की purchasing power घटाती है। Market returns निश्चित नहीं होते, इसलिए actual corpus कम या ज्यादा हो सकता है।",
+      "purpose": "timeline",
+      "headline": "आप कितने साल रहेंगे?",
+      "core_explanation": [
+        "Short stay में renting की flexibility और lower transaction cost महत्वपूर्ण हो सकती है।",
+        "Long stay में ownership, stability और property appreciation का महत्व बढ़ सकता है।",
+        "Future relocation को ignore न करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक ही भारतीय परिवार को दो अलग समयों में दिखाएं: आज छोटी shopping basket आराम से भरती है, भविष्य के दृश्य में वही basket भरने के लिए अधिक वस्तुएं और बड़े सिक्कों की जरूरत पड़ती है। पीछे बदलते मौसम और हल्की market volatility का संकेत.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A split-scene editorial illustration of the same Indian family comparing purchasing power across time: on one side a modest basket comfortably filled with everyday groceries, on the other side a larger basket requiring visibly more coins for similar essentials, subtle changing seasons and rolling market waves in the background, thoughtful non-alarmist mood, rich educational visual metaphor, soft paper texture, muted coral, navy, cream and gold, no letters, no numbers, no labels, no logos, no typography."
+        "visual_concept": "एक horizontal visual journey जिसमें भारतीय व्यक्ति के जीवन के तीन चरण हों: शुरुआती career में rented apartment और suitcase, मध्य चरण में family needs और शहर बदलने की संभावना, लंबे समय में स्थायी घर और mature garden। रास्ते पर blank circular milestones हों, लेकिन कोई text या number न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Horizontal life-journey illustration of an Indian person across three stages: early career in a compact rented apartment with a suitcase and metro skyline, middle stage with partner and child considering relocation and changing space needs, later stage in a stable owned home with a mature garden and community feeling, connected by a winding road with blank milestone circles, gentle sense of time passing, hand-drawn educational editorial style, textured cream paper, teal, navy, terracotta and mustard palette, no written characters, no labels, no logos, no watermarks."
       },
-      "annotation": "Arrow: Nominal value और real value अलग हो सकते हैं।",
-      "cta": "Risk और inflation को plan में शामिल करें।"
+      "annotation": "Holding period छोटा है तो buying costs recover करना कठिन हो सकता है।",
+      "cta": "अपना 5–10 साल का plan देखें"
     },
     {
       "slide_number": 6,
-      "purpose": "action",
-      "headline": "आज की सीख: शुरू करें, समझकर",
-      "core_explanation": "Goal और time horizon तय करें। Diversified investment चुनें और SIP को लंबे समय तक जारी रखें। Emergency fund, charges, taxes और product risk भी समझें।",
+      "purpose": "risk",
+      "headline": "EMI afford है या सिर्फ possible?",
+      "core_explanation": [
+        "EMI के बाद emergency fund, insurance, investments और daily expenses बचने चाहिए।",
+        "Income drop, medical emergency और interest-rate change का stress test करें।",
+        "Down payment के बाद savings खाली न करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय युवा financial planning desk पर बैठा है। सामने चार visual objects हैं—calendar, emergency umbrella, diversified basket of assets, और compass. पीछे एक advisor-like mentor समझाते हुए दिखाई देता है, लेकिन कोई लिखित checklist नहीं.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A young Indian investor at a clean planning desk with four symbolic objects: a calendar for long-term time horizon, an umbrella for emergency savings, a diversified basket containing different investment objects, and a compass for informed decisions; a calm financial educator stands nearby offering guidance, optimistic but realistic atmosphere, polished NotebookLM editorial collage, soft paper texture, navy teal cream and coral palette, no letters, no numbers, no labels, no logos, no typography."
+        "visual_concept": "एक भारतीय परिवार financial balancing scene में है। केंद्र में monthly income का बड़ा water tank जैसा container है, जिससे EMI pipe, groceries, insurance shield, emergency fund jar और investment plant को पानी मिल रहा है। अचानक बादल, medical kit और नौकरी का briefcase risk scenarios दिखाते हैं; परिवार सुरक्षित buffer के कारण स्थिर रहता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Metaphorical editorial illustration of an Indian family managing household finances, a central income reservoir distributing water through separate pipes toward a home loan payment, groceries, insurance shield, emergency savings jar and investment plant, dark clouds with a medical kit and briefcase suggesting unexpected shocks, a visible safety buffer keeping the family stable, rich hand-drawn ink and watercolor, paper texture, calm but serious mood, navy, teal, coral and warm yellow, no written characters, no labels, no logos, no watermarks."
       },
-      "annotation": "Arrow: पहले समझें, फिर invest करें।",
-      "cta": "अपना long-term investing plan बनाइए।"
+      "annotation": "Affordability को worst-case scenario में test करें।",
+      "cta": "Stress-test के बिना loan न लें"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "decision_framework",
+      "headline": "सही फैसला: अपने numbers से",
+      "core_explanation": [
+        "Rent, EMI, down payment, taxes, maintenance और expected returns को एक साथ model करें।",
+        "Lifestyle: location, stability, family needs और flexibility भी score करें।",
+        "कोई universal winner नहीं—disciplined plan सबसे महत्वपूर्ण है।"
+      ],
+      "visual_spec": {
+        "visual_concept": "एक शांत financial planning table पर भारतीय दंपति बैठा है। वे दो transparent glass jars compare कर रहे हैं: एक में rent-plus-investment strategy, दूसरे में home ownership strategy। आसपास calculator, blank spreadsheet sheets, house key, investment plant, emergency umbrella और location map जैसे objects हों। दोनों jars संतुलित scale पर हों, final decision thoughtful और personalized दिखे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian couple thoughtfully planning finances at a wooden table, comparing two balanced transparent jars representing renting with investing and buying a home, surrounded by a calculator, blank spreadsheet pages, house key, investment plant, emergency umbrella and a simple city map without markings, a balanced scale in the background with neither side winning, sophisticated NotebookLM-inspired educational illustration, ink outlines, watercolor fills, paper collage texture, warm cream background, teal, navy, saffron and coral palette, no written characters, no labels, no logos, no watermarks."
+      },
+      "annotation": "Best choice वही है जो आपके goals और cash flow को support करे।",
+      "cta": "अपना personal rent-vs-buy model बनाइए"
     }
   ],
-  "caption": "क्या ₹2,000 की monthly SIP से ₹1 करोड़ बन सकता है? Mathematical illustration में, अगर investment 35 साल तक जारी रहे और annual return 12% माना जाए, तो corpus लगभग ₹1.27 करोड़ हो सकता है। लेकिन याद रखें—12% एक illustrative assumption है, guaranteed return नहीं। Actual results market conditions, fund selection, charges, taxes, discipline, inflation और time period पर depend करेंगे। छोटी शुरुआत करें, long-term सोचें और investment को समझकर चुनें।\n\n#TrustPointFin #SIP #Compounding #PersonalFinance #MutualFunds #LongTermInvesting #FinancialLiteracy #InvestingBasics #MoneyManagement #Inflation"
+  "caption": "Rent देना हमेशा पैसा बर्बाद करना नहीं है—और घर खरीदना हमेशा financially बेहतर नहीं होता। सही तुलना में EMI के साथ down payment, taxes, maintenance, opportunity cost, investment returns, flexibility और आपकी holding period भी शामिल होनी चाहिए। सबसे जरूरी सवाल: क्या decision लेने के बाद भी आपका emergency fund, insurance और investing plan सुरक्षित रहेगा?\n\nअपने numbers के साथ सोचिए, emotions के साथ नहीं।\n\n#RentVsBuy #HomeBuyingIndia #PersonalFinanceIndia #FinancialPlanning #MoneyManagement #HomeLoan #InvestingIndia #OpportunityCost #TrustPointFin #FinanceEducation"
 }
