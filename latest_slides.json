@@ -1,117 +1,80 @@
 {
-  "topic": "Renting vs. Buying a Home in India: Financial Truth और सही फैसला कैसे लें",
-  "teaching_objective": "समझना कि Rent बनाम Buy का फैसला केवल EMI और rent की तुलना नहीं है; इसमें opportunity cost, investment discipline, taxes, maintenance, flexibility, risk और रहने की अवधि सभी शामिल होते हैं।",
-  "format": "COMPARISON",
+  "topic": "Index Funds की Power: Warren Buffett इन्हें क्यों Recommend करते हैं?",
+  "teaching_objective": "Learners समझें कि Index Funds broad diversification, transparent strategy और comparatively low cost कैसे देते हैं; साथ ही यह भी समझें कि Buffett की 90% equity recommendation को हर Indian investor का personal formula नहीं मानना चाहिए।",
+  "format": "BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Rent या Buy? सवाल सिर्फ EMI का नहीं",
-      "core_explanation": [
-        "दोनों विकल्पों की financial और lifestyle कीमत होती है।",
-        "सही फैसला आपकी income, goals और कितने साल रहने की योजना पर निर्भर करता है।"
-      ],
+      "headline": "Index Fund: एक basket, कई कंपनियाँ",
+      "core_explanation": "• Index Fund किसी market index को track करता है\n• Nifty 50 जैसे index में कई बड़ी कंपनियाँ शामिल होती हैं\n• एक fund से diversification मिल सकता है",
       "visual_spec": {
-        "visual_concept": "एक भारतीय युवा दंपति शहर की सड़क पर दो अलग रास्तों के बीच खड़ा है। बाईं ओर आधुनिक किराये का apartment, हल्का suitcase और खुला रास्ता; दाईं ओर घर की चाबी पकड़े हुए स्थायी घर, छोटा garden और मजबूत नींव। बीच में परिवार सोच-विचार कर रहा है, वातावरण balanced और non-judgmental हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with warm cream paper background, Indian urban couple in their early 30s standing at a forked path, one path leading to a contemporary rented apartment with a suitcase and flexible travel feeling, the other leading to a welcoming owned Indian home with a key and small garden, subtle financial planning objects like calculator and coins integrated into the scene, hand-drawn ink outlines, layered paper cutout textures, muted saffron, teal, navy and coral palette, soft shadows, clear visual storytelling, no written characters, no signs, no labels, no logos, no watermarks."
+        "visual_concept": "एक भारतीय beginner investor एक विशाल wicker basket पकड़े हुए है, जिसमें अलग-अलग industries के छोटे symbolic objects—बैंक भवन, software laptop, consumer package, factory, medicine capsule—संतुलित रूप से रखे हैं। पीछे शहर का शांत financial landscape और ऊपर एक broad market arc।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm off-white paper background, deep navy ink outlines, muted saffron, teal and coral accents, a friendly young Indian investor holding a large diversified basket filled with symbolic objects representing banking, technology, consumer goods, manufacturing and healthcare, gentle city skyline in the background, clean composition, subtle paper grain, hand-drawn explanatory visual, no letters, no numbers, no logos, no labels, no words."
       },
-      "annotation": "पहले अपनी परिस्थिति देखें, फिर फैसला करें।",
-      "cta": "अपना comparison शुरू करें"
+      "annotation": "Arrow pointing from one basket to many different objects: risk spread हो सकता है",
+      "cta": "पहले concept समझें, फिर product चुनें"
     },
     {
       "slide_number": 2,
-      "purpose": "myth",
-      "headline": "Myth: Rent मतलब पैसा बर्बाद",
-      "core_explanation": [
-        "Rent के बदले आपको रहने की सुविधा, flexibility और liquidity मिलती है।",
-        "अगर बची हुई पूंजी invest की जाए, तो renting का outcome मजबूत हो सकता है।"
-      ],
+      "purpose": "mechanism",
+      "headline": "यह fund काम कैसे करता है?",
+      "core_explanation": "• Fund index के constituents को broadly follow करता है\n• Manager का लक्ष्य हर stock को चुनकर beat करना नहीं होता\n• Strategy simple और transparent हो सकती है",
       "visual_spec": {
-        "visual_concept": "एक किराये के apartment में भारतीय महिला professional आराम से रह रही है। कमरे के एक हिस्से में suitcase, moving boxes और शहर का खुला दृश्य flexibility दिखाते हैं; दूसरे हिस्से में बची हुई रकम एक पौधे की तरह बढ़ रही है, जिसकी जड़ें diversified investments के प्रतीक छोटे सिक्कों और growth leaves से बनी हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrated Indian woman professional in a bright rented apartment, relaxed and productive, one side showing a suitcase, modular furniture and an open city skyline suggesting mobility, the other side showing a growing plant whose roots are formed from coins and whose leaves suggest disciplined investing, visual metaphor for rent providing flexibility and liquidity, warm paper grain, ink and watercolor, clean composition, muted teal, green, mustard and coral, no written characters, no signs, no labels, no logos, no watermarks."
+        "visual_concept": "एक शांत railway control room जैसा दृश्य, जहाँ index के कई रंगीन train coaches एक निर्धारित track पर साथ-साथ चल रहे हैं। एक fund manager केवल track को monitor कर रहा है, हर coach को अलग दिशा में नहीं धकेल रहा।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrated financial learning scene, a calm Indian railway control room metaphor with many colorful train coaches moving together on one clearly defined track, each coach subtly symbolizing a different company sector, a thoughtful fund manager observing the system rather than making constant individual choices, warm cream background, navy line art, teal and saffron highlights, visual clarity, paper texture, no letters, no numbers, no logos, no labels, no words."
       },
-      "annotation": "Rent को अकेले मत देखें—बची capital का उपयोग भी गिनें।",
+      "annotation": "Single track = index को follow करने की systematic approach",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "Buy की कीमत EMI से बड़ी होती है",
-      "core_explanation": [
-        "Down payment, stamp duty, registration, maintenance और repairs भी जोड़ें।",
-        "घर की EMI के साथ opportunity cost भी होती है।"
-      ],
+      "purpose": "benefit",
+      "headline": "Buffett को यह approach क्यों पसंद है?",
+      "core_explanation": "• Broad market exposure मिलता है\n• Stock-picking और constant decision-making कम हो सकती है\n• Comparatively low cost long-term returns में मदद कर सकता है",
       "visual_spec": {
-        "visual_concept": "एक भारतीय परिवार नए घर के सामने खड़ा है। कटअवे शैली में घर के अंदर और आसपास कई financial layers दिखाई दें: बड़ी down payment राशि खाली होती savings jar को दर्शाए, EMI calendar-like recurring coins, maintenance tools, registration papers बिना लेखन के, और उसी पूंजी से छूटे हुए investment tree का छोटा faded रूप।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Cutaway editorial illustration of an Indian family outside a newly purchased apartment, transparent layered house showing a large down payment draining a savings jar, recurring monthly coin stacks symbolizing loan payments, repair tools and service objects symbolizing maintenance, official-looking blank papers symbolizing transaction costs, and a faint investment tree in the background symbolizing opportunity cost, sophisticated financial education visual, hand-drawn ink, paper collage, warm neutral background, navy, saffron, teal and coral accents, no written characters, no labels, no logos, no watermarks."
+        "visual_concept": "एक अनुभवी वृद्ध investor एक simple sturdy bridge पर खड़ा है। bridge के नीचे कई छोटी-छोटी boats के बजाय एक wide diversified fleet सुरक्षित रूप से आगे बढ़ रही है। वह चमकदार shortcuts को छोड़कर steady path चुनता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich storybook editorial illustration of an elderly legendary investor inspired by a classic Omaha value investor, standing calmly on a sturdy wide bridge while a diversified fleet of many small boats moves steadily across a broad river, distant flashy shortcut signs represented only as abstract shapes with no writing, visual metaphor for simplicity, diversification and low-cost discipline, Indian financial education context, cream paper, navy outlines, muted red, teal and gold accents, no letters, no numbers, no logos, no labels, no words."
       },
-      "annotation": "EMI = total ownership cost नहीं।",
-      "cta": "Hidden costs लिखकर जोड़ें"
+      "annotation": "Steady system, fewer emotional decisions",
+      "cta": "Simple strategy हमेशा careless strategy नहीं होती"
     },
     {
       "slide_number": 4,
-      "purpose": "calculation",
-      "headline": "Opportunity cost को picture में लाएँ",
-      "core_explanation": [
-        "Renting में बची down payment invest हो सकती है।",
-        "EMI और rent का अंतर भी नियमित रूप से invest किया जा सकता है।",
-        "Investment returns guaranteed नहीं होते।"
-      ],
+      "purpose": "comparison",
+      "headline": "Active choice या index approach?",
+      "core_explanation": "• Active investing में stocks चुनने और timing का काम अधिक हो सकता है\n• Index approach market को broadly follow करती है\n• दोनों में market risk बना रहता है",
       "visual_spec": {
-        "visual_concept": "Split-screen financial illustration: बाईं ओर renter के पास सुरक्षित रखी बड़ी पूंजी और हर महीने बचने वाली छोटी रकम एक diversified investment garden में जा रही है; दाईं ओर buyer का पैसा घर की ईंटों और loan repayment में जा रहा है। दोनों तरफ growth और uncertainty को संतुलित दिखाया जाए, कोई विजेता घोषित न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Balanced split-screen illustration with the same Indian professional shown as renter on the left and homeowner on the right, left side placing a large savings bundle and monthly smaller contributions into a diversified garden of varied plants and market-like abstract shapes, right side directing money into a solid home foundation and brick structure, subtle clouds and changing seasons suggesting investment uncertainty, equal visual weight for both choices, rich ink lines, watercolor and paper collage, no written characters, no labels, no logos, no watermarks."
+        "visual_concept": "दो रास्तों वाला illustrated landscape: बाईं ओर एक investor कई flashing individual paths और magnifying glasses के बीच stocks चुन रहा है; दाईं ओर दूसरा investor एक broad, clearly paved market road पर diversified backpack के साथ चल रहा है। दोनों roads पर बादल और धूप, यह दिखाने के लिए कि कोई भी risk-free नहीं है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene comparison illustration, on the left a busy investor examining many separate glowing objects with magnifying glasses and branching paths, on the right a calm investor walking on one broad paved road carrying a balanced basket of diverse sector symbols, both roads passing through changing sunshine and clouds to show market risk, elegant educational composition, off-white paper, navy ink, saffron, teal and coral accents, no letters, no numbers, no logos, no labels, no words."
       },
-      "annotation": "दोनों scenarios को same time period पर compare करें।",
-      "cta": "Simple rent-buy calculator बनाएं"
+      "annotation": "Different route, same market uncertainty",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "timeline",
-      "headline": "आप कितने साल रहेंगे?",
-      "core_explanation": [
-        "Short stay में renting की flexibility और lower transaction cost महत्वपूर्ण हो सकती है।",
-        "Long stay में ownership, stability और property appreciation का महत्व बढ़ सकता है।",
-        "Future relocation को ignore न करें।"
-      ],
+      "purpose": "risk",
+      "headline": "Buffett की 90% बात: copy नहीं, context समझें",
+      "core_explanation": "• यह उनके specific estate-planning और US S&P 500 context से जुड़ी थी\n• हर Indian investor की situation अलग होती है\n• Age, income, emergency fund, debt, goals और risk tolerance देखें",
       "visual_spec": {
-        "visual_concept": "एक horizontal visual journey जिसमें भारतीय व्यक्ति के जीवन के तीन चरण हों: शुरुआती career में rented apartment और suitcase, मध्य चरण में family needs और शहर बदलने की संभावना, लंबे समय में स्थायी घर और mature garden। रास्ते पर blank circular milestones हों, लेकिन कोई text या number न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Horizontal life-journey illustration of an Indian person across three stages: early career in a compact rented apartment with a suitcase and metro skyline, middle stage with partner and child considering relocation and changing space needs, later stage in a stable owned home with a mature garden and community feeling, connected by a winding road with blank milestone circles, gentle sense of time passing, hand-drawn educational editorial style, textured cream paper, teal, navy, terracotta and mustard palette, no written characters, no labels, no logos, no watermarks."
+        "visual_concept": "एक crossroads पर अलग-अलग जीवन परिस्थितियों वाले तीन भारतीय characters: young salaried person, family with child, और near-retirement couple। उनके backpacks में अलग symbolic items हैं—emergency umbrella, home key, medical kit, calendar—और सामने US-style highway तथा Indian city road अलग दिशाओं में जा रहे हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Thoughtful financial planning crossroads, three diverse Indian characters representing a young salaried person, a family with a child, and a near-retirement couple, each carrying different symbolic items such as an emergency umbrella, home key, medical kit and calendar, two roads leading toward distinct abstract landscapes representing different markets and personal contexts, empathetic educational illustration, warm paper background, navy outlines, teal, saffron and coral palette, no letters, no numbers, no logos, no labels, no words."
       },
-      "annotation": "Holding period छोटा है तो buying costs recover करना कठिन हो सकता है।",
-      "cta": "अपना 5–10 साल का plan देखें"
+      "annotation": "90% को universal formula न मानें",
+      "cta": "अपना allocation अपनी situation से तय करें"
     },
     {
       "slide_number": 6,
-      "purpose": "risk",
-      "headline": "EMI afford है या सिर्फ possible?",
-      "core_explanation": [
-        "EMI के बाद emergency fund, insurance, investments और daily expenses बचने चाहिए।",
-        "Income drop, medical emergency और interest-rate change का stress test करें।",
-        "Down payment के बाद savings खाली न करें।"
-      ],
+      "purpose": "action",
+      "headline": "Beginner के लिए simple checklist",
+      "core_explanation": "• Goal और time horizon लिखें\n• Emergency fund और debt स्थिति देखें\n• Fund का cost, tracking और product information पढ़ें\n• जरूरत हो तो SEBI-registered adviser से सलाह लें",
       "visual_spec": {
-        "visual_concept": "एक भारतीय परिवार financial balancing scene में है। केंद्र में monthly income का बड़ा water tank जैसा container है, जिससे EMI pipe, groceries, insurance shield, emergency fund jar और investment plant को पानी मिल रहा है। अचानक बादल, medical kit और नौकरी का briefcase risk scenarios दिखाते हैं; परिवार सुरक्षित buffer के कारण स्थिर रहता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Metaphorical editorial illustration of an Indian family managing household finances, a central income reservoir distributing water through separate pipes toward a home loan payment, groceries, insurance shield, emergency savings jar and investment plant, dark clouds with a medical kit and briefcase suggesting unexpected shocks, a visible safety buffer keeping the family stable, rich hand-drawn ink and watercolor, paper texture, calm but serious mood, navy, teal, coral and warm yellow, no written characters, no labels, no logos, no watermarks."
+        "visual_concept": "एक beginner desk scene: भारतीय investor एक साफ financial roadmap बना रहा है। मेज पर compass, calendar, emergency cash box, debt balance stones, diversified basket और magnifying glass रखे हैं। सामने दूर एक शांत long-term horizon और sunrise।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated beginner financial planning desk, a young Indian investor arranging a compass, calendar, emergency cash box, balanced stones symbolizing debt, diversified investment basket and magnifying glass on a clean roadmap toward a calm sunrise horizon, encouraging but realistic mood, hand-drawn editorial style, cream paper texture, deep navy outlines, muted teal, saffron and coral accents, no letters, no numbers, no logos, no labels, no words."
       },
-      "annotation": "Affordability को worst-case scenario में test करें।",
-      "cta": "Stress-test के बिना loan न लें"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "decision_framework",
-      "headline": "सही फैसला: अपने numbers से",
-      "core_explanation": [
-        "Rent, EMI, down payment, taxes, maintenance और expected returns को एक साथ model करें।",
-        "Lifestyle: location, stability, family needs और flexibility भी score करें।",
-        "कोई universal winner नहीं—disciplined plan सबसे महत्वपूर्ण है।"
-      ],
-      "visual_spec": {
-        "visual_concept": "एक शांत financial planning table पर भारतीय दंपति बैठा है। वे दो transparent glass jars compare कर रहे हैं: एक में rent-plus-investment strategy, दूसरे में home ownership strategy। आसपास calculator, blank spreadsheet sheets, house key, investment plant, emergency umbrella और location map जैसे objects हों। दोनों jars संतुलित scale पर हों, final decision thoughtful और personalized दिखे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian couple thoughtfully planning finances at a wooden table, comparing two balanced transparent jars representing renting with investing and buying a home, surrounded by a calculator, blank spreadsheet pages, house key, investment plant, emergency umbrella and a simple city map without markings, a balanced scale in the background with neither side winning, sophisticated NotebookLM-inspired educational illustration, ink outlines, watercolor fills, paper collage texture, warm cream background, teal, navy, saffron and coral palette, no written characters, no labels, no logos, no watermarks."
-      },
-      "annotation": "Best choice वही है जो आपके goals और cash flow को support करे।",
-      "cta": "अपना personal rent-vs-buy model बनाइए"
+      "annotation": "Invest करने से पहले suitability check करें",
+      "cta": "Save करें और अपने goals से शुरू करें"
     }
   ],
-  "caption": "Rent देना हमेशा पैसा बर्बाद करना नहीं है—और घर खरीदना हमेशा financially बेहतर नहीं होता। सही तुलना में EMI के साथ down payment, taxes, maintenance, opportunity cost, investment returns, flexibility और आपकी holding period भी शामिल होनी चाहिए। सबसे जरूरी सवाल: क्या decision लेने के बाद भी आपका emergency fund, insurance और investing plan सुरक्षित रहेगा?\n\nअपने numbers के साथ सोचिए, emotions के साथ नहीं।\n\n#RentVsBuy #HomeBuyingIndia #PersonalFinanceIndia #FinancialPlanning #MoneyManagement #HomeLoan #InvestingIndia #OpportunityCost #TrustPointFin #FinanceEducation"
+  "caption": "Index Funds की power सिर्फ low cost में नहीं, बल्कि simplicity, diversification और disciplined investing में है। Warren Buffett की recommendation को समझें—लेकिन उसे हर investor के लिए fixed formula न मानें। आपका goal, time horizon, emergency fund, debt और risk tolerance सबसे important हैं।\n\nEducational purpose only. Investment decisions लेने से पहले current product information पढ़ें और जरूरत होने पर SEBI-registered investment adviser से सलाह लें।\n\n#IndexFunds #Nifty50 #InvestingForBeginners #PersonalFinanceIndia #MutualFunds #LongTermInvesting #FinancialLiteracy #WarrenBuffett #TrustPointFin"
 }
