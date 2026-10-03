@@ -1,80 +1,88 @@
 {
-  "topic": "Index Funds की Power: Warren Buffett इन्हें क्यों Recommend करते हैं?",
-  "teaching_objective": "Learners समझें कि Index Funds broad diversification, transparent strategy और comparatively low cost कैसे देते हैं; साथ ही यह भी समझें कि Buffett की 90% equity recommendation को हर Indian investor का personal formula नहीं मानना चाहिए।",
+  "topic": "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know",
+  "teaching_objective": "Beginners को stock market chart पढ़ने का एक सरल framework देना: candlestick से price action समझना, trend पहचानना, और support-resistance को volume व confirmation के साथ देखना—बिना किसी guaranteed profit claim के।",
   "format": "BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Index Fund: एक basket, कई कंपनियाँ",
-      "core_explanation": "• Index Fund किसी market index को track करता है\n• Nifty 50 जैसे index में कई बड़ी कंपनियाँ शामिल होती हैं\n• एक fund से diversification मिल सकता है",
+      "headline": "Chart ko ek map ki tarah dekho",
+      "core_explanation": [
+        "Chart past price movement दिखाता है, future का पक्का prediction नहीं।",
+        "पहले तीन चीज़ें देखो: candle, trend और key levels।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय beginner investor एक विशाल wicker basket पकड़े हुए है, जिसमें अलग-अलग industries के छोटे symbolic objects—बैंक भवन, software laptop, consumer package, factory, medicine capsule—संतुलित रूप से रखे हैं। पीछे शहर का शांत financial landscape और ऊपर एक broad market arc।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm off-white paper background, deep navy ink outlines, muted saffron, teal and coral accents, a friendly young Indian investor holding a large diversified basket filled with symbolic objects representing banking, technology, consumer goods, manufacturing and healthcare, gentle city skyline in the background, clean composition, subtle paper grain, hand-drawn explanatory visual, no letters, no numbers, no logos, no labels, no words."
+        "visual_concept": "एक beginner investor रात में अपने desk पर बैठा है और एक बड़े glowing stock chart को mountain map की तरह देख रहा है। Chart landscape में candles छोटे पर्वत-स्तंभों जैसे हैं, एक रास्ता ऊपर जा रहा है, और कुछ मजबूत चट्टानें price zones का metaphor हैं। पास में notebook, magnifying glass और coffee mug हों; mood curious और calm हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, deep navy and teal palette with coral accents, a curious young Indian beginner investor at a desk studying a large glowing stock chart visualized as a mountain map, candlestick shapes forming a winding landscape, upward and sideways paths, sturdy rock platforms suggesting price zones, notebook, magnifying glass, coffee mug, clean geometric composition, soft grain, hand-drawn annotations shown only as abstract lines and arrows, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow pointing from one basket to many different objects: risk spread हो सकता है",
-      "cta": "पहले concept समझें, फिर product चुनें"
+      "annotation": "Arrow: Pehle overall picture dekho",
+      "cta": "Chart ko pause karke observe karo."
     },
     {
       "slide_number": 2,
-      "purpose": "mechanism",
-      "headline": "यह fund काम कैसे करता है?",
-      "core_explanation": "• Fund index के constituents को broadly follow करता है\n• Manager का लक्ष्य हर stock को चुनकर beat करना नहीं होता\n• Strategy simple और transparent हो सकती है",
+      "purpose": "concept",
+      "headline": "Candlestick: ek candle, 4 prices",
+      "core_explanation": [
+        "Body बताती है Open और Close के बीच का अंतर।",
+        "Wick दिखाती है उस समय का High और Low।",
+        "Green/red color buying-selling pressure का एक visual clue है, final decision नहीं।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक शांत railway control room जैसा दृश्य, जहाँ index के कई रंगीन train coaches एक निर्धारित track पर साथ-साथ चल रहे हैं। एक fund manager केवल track को monitor कर रहा है, हर coach को अलग दिशा में नहीं धकेल रहा।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrated financial learning scene, a calm Indian railway control room metaphor with many colorful train coaches moving together on one clearly defined track, each coach subtly symbolizing a different company sector, a thoughtful fund manager observing the system rather than making constant individual choices, warm cream background, navy line art, teal and saffron highlights, visual clarity, paper texture, no letters, no numbers, no logos, no labels, no words."
+        "visual_concept": "एक friendly market teacher एक oversized candlestick sculpture को खोलकर समझा रहा है। Candle का body एक box जैसा है और दोनों तरफ wick telescopic rods की तरह ऊपर-नीचे जा रही हैं। चार glowing points अलग-अलग ऊंचाइयों पर दिखें, लेकिन कोई लिखित label न हो। पीछे beginner ध्यान से देख रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated classroom scene with a friendly financial teacher and a beginner examining an oversized three-dimensional candlestick sculpture, rectangular candle body, thin wick extending above and below, four glowing price points represented by small colored beads, one green candle and one coral candle, expressive characters, cream paper texture, navy outlines, teal and coral accents, educational visual storytelling, clean composition, abstract arrows only, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Single track = index को follow करने की systematic approach",
-      "cta": null
+      "annotation": "Arrow: Body = Open/Close; Wick = High/Low",
+      "cta": "Ek candle ko context ke bina judge mat karo."
     },
     {
       "slide_number": 3,
-      "purpose": "benefit",
-      "headline": "Buffett को यह approach क्यों पसंद है?",
-      "core_explanation": "• Broad market exposure मिलता है\n• Stock-picking और constant decision-making कम हो सकती है\n• Comparatively low cost long-term returns में मदद कर सकता है",
+      "purpose": "concept",
+      "headline": "Trend: market kis direction mein chal raha hai?",
+      "core_explanation": [
+        "Higher highs और higher lows अक्सर upward trend का संकेत दे सकते हैं।",
+        "Lower highs और lower lows downward trend दिखा सकते हैं।",
+        "Sideways movement में price एक range के भीतर घूम सकता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक अनुभवी वृद्ध investor एक simple sturdy bridge पर खड़ा है। bridge के नीचे कई छोटी-छोटी boats के बजाय एक wide diversified fleet सुरक्षित रूप से आगे बढ़ रही है। वह चमकदार shortcuts को छोड़कर steady path चुनता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich storybook editorial illustration of an elderly legendary investor inspired by a classic Omaha value investor, standing calmly on a sturdy wide bridge while a diversified fleet of many small boats moves steadily across a broad river, distant flashy shortcut signs represented only as abstract shapes with no writing, visual metaphor for simplicity, diversification and low-cost discipline, Indian financial education context, cream paper, navy outlines, muted red, teal and gold accents, no letters, no numbers, no logos, no labels, no words."
+        "visual_concept": "तीन अलग paths वाला illustrated hiking scene: एक path सीढ़ीनुमा ऊपर चढ़ रहा है, दूसरा नीचे उतर रहा है, और तीसरा flat valley में इधर-उधर जा रहा है। एक investor तीनों paths को compare कर रहा है। हर path पर abstract candlestick markers हों, पर text या labels नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration of one investor standing at a trail junction comparing three market paths: a staircase-like uphill mountain trail with progressively higher peaks and dips, a downhill trail with progressively lower peaks and dips, and a flat winding valley path moving sideways, abstract candlestick markers placed along each path, small flags without symbols, warm cream background, deep navy linework, teal, green, and coral highlights, thoughtful beginner character, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Steady system, fewer emotional decisions",
-      "cta": "Simple strategy हमेशा careless strategy नहीं होती"
+      "annotation": "Arrow: Peaks aur dips ko connect karo",
+      "cta": "Zoom out karke trend identify karo."
     },
     {
       "slide_number": 4,
-      "purpose": "comparison",
-      "headline": "Active choice या index approach?",
-      "core_explanation": "• Active investing में stocks चुनने और timing का काम अधिक हो सकता है\n• Index approach market को broadly follow करती है\n• दोनों में market risk बना रहता है",
+      "purpose": "concept",
+      "headline": "Support aur Resistance: price ke important zones",
+      "core_explanation": [
+        "Support ऐसा zone है जहाँ price पहले रुक या bounce कर चुका हो सकता है।",
+        "Resistance ऐसा zone है जहाँ price पहले रुक या reject हो सकता है।",
+        "Breakout या breakdown को volume और follow-through से confirm करना बेहतर होता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "दो रास्तों वाला illustrated landscape: बाईं ओर एक investor कई flashing individual paths और magnifying glasses के बीच stocks चुन रहा है; दाईं ओर दूसरा investor एक broad, clearly paved market road पर diversified backpack के साथ चल रहा है। दोनों roads पर बादल और धूप, यह दिखाने के लिए कि कोई भी risk-free नहीं है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene comparison illustration, on the left a busy investor examining many separate glowing objects with magnifying glasses and branching paths, on the right a calm investor walking on one broad paved road carrying a balanced basket of diverse sector symbols, both roads passing through changing sunshine and clouds to show market risk, elegant educational composition, off-white paper, navy ink, saffron, teal and coral accents, no letters, no numbers, no logos, no labels, no words."
+        "visual_concept": "एक price ball ऊंची-नीची दीवारों वाले खेल के मैदान में bounce कर रही है। नीचे padded floor support का metaphor है, ऊपर ceiling resistance का। एक volume meter जैसी abstract stack of coins breakout moment पर बढ़ रही है। Investor safety helmet पहने हुए observe कर रहा है, तुरंत jump नहीं कर रहा।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich visual metaphor of a glowing price ball moving inside a market playground, bouncing from a strong cushioned floor and stopping near a high transparent ceiling, suggesting support and resistance zones, a stack of coins rising during a possible breakout, a cautious beginner investor wearing a safety helmet observing from the side, dynamic arrows without symbols, cream paper background, navy and teal structure, coral highlights, hand-drawn editorial style, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Different route, same market uncertainty",
-      "cta": null
+      "annotation": "Arrow: Break ko volume ke saath verify karo",
+      "cta": "False breakout se सावधान रहें."
     },
     {
       "slide_number": 5,
-      "purpose": "risk",
-      "headline": "Buffett की 90% बात: copy नहीं, context समझें",
-      "core_explanation": "• यह उनके specific estate-planning और US S&P 500 context से जुड़ी थी\n• हर Indian investor की situation अलग होती है\n• Age, income, emergency fund, debt, goals और risk tolerance देखें",
+      "purpose": "application",
+      "headline": "Decision se pehle 3-step checklist",
+      "core_explanation": [
+        "1. Candle aur timeframe samjho।",
+        "2. Overall trend तथा support-resistance zones देखो।",
+        "3. Volume, confirmation, risk tolerance और exit plan check करो।",
+        "कोई भी pattern future profit की guarantee नहीं देता।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक crossroads पर अलग-अलग जीवन परिस्थितियों वाले तीन भारतीय characters: young salaried person, family with child, और near-retirement couple। उनके backpacks में अलग symbolic items हैं—emergency umbrella, home key, medical kit, calendar—और सामने US-style highway तथा Indian city road अलग दिशाओं में जा रहे हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Thoughtful financial planning crossroads, three diverse Indian characters representing a young salaried person, a family with a child, and a near-retirement couple, each carrying different symbolic items such as an emergency umbrella, home key, medical kit and calendar, two roads leading toward distinct abstract landscapes representing different markets and personal contexts, empathetic educational illustration, warm paper background, navy outlines, teal, saffron and coral palette, no letters, no numbers, no logos, no labels, no words."
+        "visual_concept": "एक calm investor एक तीन-दरवाज़े वाले decision gate के सामने खड़ा है। पहले दरवाज़े पर candle-shaped keyhole, दूसरे पर mountain path, तीसरे पर floor-ceiling zone और rising coin bars का visual metaphor हो। अंतिम दृश्य में investor पहले checklist देखता है और फिर धीरे-धीरे आगे बढ़ता है; कोई text नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich closing illustration of a calm beginner investor at a three-gate decision path, first gate decorated with abstract candlestick forms, second gate with an uphill and downhill trail, third gate with a floor-and-ceiling price zone and rising volume bars, investor holding a small checklist with blank lines and pausing before proceeding, balanced risk-aware mood, warm cream paper texture, navy outlines, teal and coral accents, subtle shield icon without symbols, clean educational composition, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "90% को universal formula न मानें",
-      "cta": "अपना allocation अपनी situation से तय करें"
-    },
-    {
-      "slide_number": 6,
-      "purpose": "action",
-      "headline": "Beginner के लिए simple checklist",
-      "core_explanation": "• Goal और time horizon लिखें\n• Emergency fund और debt स्थिति देखें\n• Fund का cost, tracking और product information पढ़ें\n• जरूरत हो तो SEBI-registered adviser से सलाह लें",
-      "visual_spec": {
-        "visual_concept": "एक beginner desk scene: भारतीय investor एक साफ financial roadmap बना रहा है। मेज पर compass, calendar, emergency cash box, debt balance stones, diversified basket और magnifying glass रखे हैं। सामने दूर एक शांत long-term horizon और sunrise।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated beginner financial planning desk, a young Indian investor arranging a compass, calendar, emergency cash box, balanced stones symbolizing debt, diversified investment basket and magnifying glass on a clean roadmap toward a calm sunrise horizon, encouraging but realistic mood, hand-drawn editorial style, cream paper texture, deep navy outlines, muted teal, saffron and coral accents, no letters, no numbers, no logos, no labels, no words."
-      },
-      "annotation": "Invest करने से पहले suitability check करें",
-      "cta": "Save करें और अपने goals से शुरू करें"
+      "annotation": "Arrow: Observe → Confirm → Plan",
+      "cta": "Save this checklist और practice on historical charts."
     }
   ],
-  "caption": "Index Funds की power सिर्फ low cost में नहीं, बल्कि simplicity, diversification और disciplined investing में है। Warren Buffett की recommendation को समझें—लेकिन उसे हर investor के लिए fixed formula न मानें। आपका goal, time horizon, emergency fund, debt और risk tolerance सबसे important हैं।\n\nEducational purpose only. Investment decisions लेने से पहले current product information पढ़ें और जरूरत होने पर SEBI-registered investment adviser से सलाह लें।\n\n#IndexFunds #Nifty50 #InvestingForBeginners #PersonalFinanceIndia #MutualFunds #LongTermInvesting #FinancialLiteracy #WarrenBuffett #TrustPointFin"
+  "caption": "Stock market chart पढ़ना मुश्किल नहीं—बस सही order में observe करना ज़रूरी है 📊\n\nCandlestick से Open, High, Low और Close समझें। फिर trend पहचानें और support-resistance zones देखें। किसी breakout या candle pattern पर तुरंत decision लेने से पहले volume, confirmation, risk tolerance और exit plan पर ध्यान दें।\n\nयाद रखें: chart analysis संभावनाएँ समझने में मदद कर सकता है, लेकिन future returns की guarantee नहीं देता।\n\n#TrustPointFin #StockMarketForBeginners #ChartReading #Candlestick #TechnicalAnalysis #InvestingBasics #PersonalFinance #HinglishFinance #FinancialLiteracy #RiskManagement"
 }

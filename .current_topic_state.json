@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-02_the-power-of-index-funds-why-w",
-  "topic": "The Power of Index Funds: Why Warren Buffett Recommends Them",
-  "lineIndex": 147,
+  "job_id": "job_2026-10-03_how-to-read-a-stock-market-cha",
+  "topic": "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know",
+  "lineIndex": 148,
   "scheduled_at": null,
-  "started_at": "2026-10-02T09:56:36.761Z",
+  "started_at": "2026-10-03T09:18:32.852Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 0,
+  "article_correction_attempts": 1,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "SUCCESS",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-02T09:58:00.580Z",
-  "filename": "the-power-of-index-funds-why-warren-buffett-recommends-them.html",
-  "title": "Index Funds की Power: Warren Buffett इन्हें क्यों Recommend करते हैं?"
+  "updated_at": "2026-10-03T09:21:11.880Z",
+  "filename": "how-to-read-a-stock-market-chart-3-basics-every-beginner-sho.html",
+  "title": "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know"
 }
