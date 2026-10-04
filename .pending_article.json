@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-03_how-to-read-a-stock-market-cha",
-  "topic": "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know",
-  "lineIndex": 148,
+  "job_id": "job_2026-10-04_avoid-these-5-costly-mistakes-",
+  "topic": "Avoid These 5 Costly Mistakes When Buying Your First Stock",
+  "lineIndex": 149,
   "scheduled_at": null,
-  "started_at": "2026-10-03T09:18:32.852Z",
+  "started_at": "2026-10-04T09:58:12.362Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 1,
+  "article_correction_attempts": 0,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-03T09:20:11.628Z",
-  "filename": "how-to-read-a-stock-market-chart-3-basics-every-beginner-sho.html",
-  "title": "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know"
+  "updated_at": "2026-10-04T09:58:59.549Z",
+  "filename": "avoid-these-5-costly-mistakes-when-buying-your-first-stock.html",
+  "title": "पहला Stock खरीदते समय इन 5 महंगी गलतियों से बचें"
 }
