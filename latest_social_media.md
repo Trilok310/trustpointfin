@@ -1,17 +1,15 @@
 # Social Media Posts
-*Generated for article: "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know"*
+*Generated for article: "पहला Stock खरीदते समय इन 5 महंगी गलतियों से बचें"*
 
 ---
 
 ## 📝 Caption
 
-Stock market chart पढ़ना मुश्किल नहीं—बस सही order में observe करना ज़रूरी है 📊
+पहला Stock खरीदना exciting हो सकता है, लेकिन सिर्फ hype, दोस्त की tip या बढ़ते हुए price पर decision लेना महंगा पड़ सकता है। ✅ Business समझें ✅ Valuation देखें ✅ Risk और position size तय करें ✅ Charges गिनें ✅ Diversification रखें ✅ Exit plan बनाएं
 
-Candlestick से Open, High, Low और Close समझें। फिर trend पहचानें और support-resistance zones देखें। किसी breakout या candle pattern पर तुरंत decision लेने से पहले volume, confirmation, risk tolerance और exit plan पर ध्यान दें।
+याद रखें: market में कोई भी return guaranteed नहीं होता। Emergency fund और short-term goals का पैसा Equity market से अलग रखें।
 
-याद रखें: chart analysis संभावनाएँ समझने में मदद कर सकता है, लेकिन future returns की guarantee नहीं देता।
-
-#TrustPointFin #StockMarketForBeginners #ChartReading #Candlestick #TechnicalAnalysis #InvestingBasics #PersonalFinance #HinglishFinance #FinancialLiteracy #RiskManagement
+#TrustPointFin #StockMarket #InvestingForBeginners #HindiFinance #PersonalFinance #LongTermInvesting #FinancialLiteracy #StockMarketIndia # निवेश #शेयरबाजार
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/how-to-read-a-stock-market-chart-3-basics-every-beginner-sho.html*
+*Article URL: https://trilok310.github.io/trustpointfin/avoid-these-5-costly-mistakes-when-buying-your-first-stock.html*

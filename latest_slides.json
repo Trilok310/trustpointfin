@@ -1,88 +1,92 @@
 {
-  "topic": "How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know",
-  "teaching_objective": "Beginners को stock market chart पढ़ने का एक सरल framework देना: candlestick से price action समझना, trend पहचानना, और support-resistance को volume व confirmation के साथ देखना—बिना किसी guaranteed profit claim के।",
-  "format": "BEGINNER_CONCEPT",
+  "topic": "पहला Stock खरीदते समय इन 5 महंगी गलतियों से बचें",
+  "teaching_objective": "Beginner investors को पहला Stock खरीदने से पहले business, valuation, risk, charges, diversification और exit plan की practical checklist समझाना।",
+  "format": "STORY",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Chart ko ek map ki tarah dekho",
-      "core_explanation": [
-        "Chart past price movement दिखाता है, future का पक्का prediction नहीं।",
-        "पहले तीन चीज़ें देखो: candle, trend और key levels।"
-      ],
+      "headline": "पहला Stock: उत्साह नहीं, तैयारी",
+      "core_explanation": "• पहला निवेश सीखने का मौका है।\n• बढ़ता price या दोस्त की tip पर्याप्त reason नहीं।\n• पहले research, फिर decision।",
       "visual_spec": {
-        "visual_concept": "एक beginner investor रात में अपने desk पर बैठा है और एक बड़े glowing stock chart को mountain map की तरह देख रहा है। Chart landscape में candles छोटे पर्वत-स्तंभों जैसे हैं, एक रास्ता ऊपर जा रहा है, और कुछ मजबूत चट्टानें price zones का metaphor हैं। पास में notebook, magnifying glass और coffee mug हों; mood curious और calm हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, deep navy and teal palette with coral accents, a curious young Indian beginner investor at a desk studying a large glowing stock chart visualized as a mountain map, candlestick shapes forming a winding landscape, upward and sideways paths, sturdy rock platforms suggesting price zones, notebook, magnifying glass, coffee mug, clean geometric composition, soft grain, hand-drawn annotations shown only as abstract lines and arrows, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक युवा भारतीय beginner investor stock market की चमकती दुनिया के प्रवेश-द्वार पर खड़ा है। उसके एक हाथ में जल्दबाजी से भरा shopping basket है और दूसरे हाथ में magnifying glass; सामने दो रास्ते हैं—एक flashy roller coaster की ओर और दूसरा शांत research desk की ओर।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, Indian young adult investor in casual clothes at the entrance of a stylized stock market world, one path with flashy lights and a roller coaster, another path with a calm research desk, magnifying glass, notebook with blank pages, expressive storytelling, hand-drawn ink outlines, layered paper cutout shapes, muted teal, saffron, coral and navy palette, soft grain, cinematic composition, no letters, no numbers, no logos, no labels, no readable writing."
       },
-      "annotation": "Arrow: Pehle overall picture dekho",
-      "cta": "Chart ko pause karke observe karo."
+      "annotation": "पहले समझो, फिर खरीदो",
+      "cta": "अपनी पहली खरीद को learning project बनाइए।"
     },
     {
       "slide_number": 2,
-      "purpose": "concept",
-      "headline": "Candlestick: ek candle, 4 prices",
-      "core_explanation": [
-        "Body बताती है Open और Close के बीच का अंतर।",
-        "Wick दिखाती है उस समय का High और Low।",
-        "Green/red color buying-selling pressure का एक visual clue है, final decision नहीं।"
-      ],
+      "purpose": "mistake_1",
+      "headline": "गलती 1: सिर्फ नाम देखकर खरीदना",
+      "core_explanation": "• Company क्या बेचती है, समझें।\n• Revenue, Profit, Cash Flow और Debt देखें।\n• Popular brand हमेशा अच्छा investment नहीं होता।",
       "visual_spec": {
-        "visual_concept": "एक friendly market teacher एक oversized candlestick sculpture को खोलकर समझा रहा है। Candle का body एक box जैसा है और दोनों तरफ wick telescopic rods की तरह ऊपर-नीचे जा रही हैं। चार glowing points अलग-अलग ऊंचाइयों पर दिखें, लेकिन कोई लिखित label न हो। पीछे beginner ध्यान से देख रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated classroom scene with a friendly financial teacher and a beginner examining an oversized three-dimensional candlestick sculpture, rectangular candle body, thin wick extending above and below, four glowing price points represented by small colored beads, one green candle and one coral candle, expressive characters, cream paper texture, navy outlines, teal and coral accents, educational visual storytelling, clean composition, abstract arrows only, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "Beginner एक बड़े चमकदार company logo-जैसे खाली emblem से प्रभावित होकर अंदर जाने वाला है, लेकिन एक analyst character उसे पीछे की ओर बने transparent factory, products, cash streams और debt weights दिखाता है। सभी प्रतीक बिना लिखावट के हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated scene of an Indian beginner investor admiring a giant shiny abstract corporate emblem while a thoughtful analyst pulls back a curtain to reveal a transparent factory, product boxes without markings, flowing coins, healthy green cash stream, and heavy debt weights, visual metaphor for understanding a business beneath its popularity, hand-drawn editorial lines, paper collage layers, warm natural lighting, muted teal, mustard, coral and navy, no letters, no numbers, no logos, no labels, no readable writing."
       },
-      "annotation": "Arrow: Body = Open/Close; Wick = High/Low",
-      "cta": "Ek candle ko context ke bina judge mat karo."
+      "annotation": "Business model की परत खोलें",
+      "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "concept",
-      "headline": "Trend: market kis direction mein chal raha hai?",
-      "core_explanation": [
-        "Higher highs और higher lows अक्सर upward trend का संकेत दे सकते हैं।",
-        "Lower highs और lower lows downward trend दिखा सकते हैं।",
-        "Sideways movement में price एक range के भीतर घूम सकता है।"
-      ],
+      "purpose": "mistake_2",
+      "headline": "गलती 2: Price को Value समझना",
+      "core_explanation": "• अच्छा business भी महंगा खरीदा जा सकता है।\n• Valuation को earnings और growth के संदर्भ में देखें।\n• सिर्फ बढ़ते price का पीछा न करें।",
       "visual_spec": {
-        "visual_concept": "तीन अलग paths वाला illustrated hiking scene: एक path सीढ़ीनुमा ऊपर चढ़ रहा है, दूसरा नीचे उतर रहा है, और तीसरा flat valley में इधर-उधर जा रहा है। एक investor तीनों paths को compare कर रहा है। हर path पर abstract candlestick markers हों, पर text या labels नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration of one investor standing at a trail junction comparing three market paths: a staircase-like uphill mountain trail with progressively higher peaks and dips, a downhill trail with progressively lower peaks and dips, and a flat winding valley path moving sideways, abstract candlestick markers placed along each path, small flags without symbols, warm cream background, deep navy linework, teal, green, and coral highlights, thoughtful beginner character, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक बाजार में दो तराजू दिखें: एक तरफ चमकता हुआ ऊंचा price balloon, दूसरी तरफ वास्तविक business के छोटे लेकिन मजबूत assets और cash flow। Beginner balloon पकड़कर ऊपर उड़ने वाला है, जबकि mentor उसे valuation balance समझाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Editorial financial illustration, Indian beginner investor reaching toward a huge shiny price balloon rising rapidly, while a balanced brass scale compares the balloon with sturdy factory parts, coins, customer boxes and a growing tree representing business value, mentor gently guiding the investor toward the scale, expressive faces, hand-drawn ink, textured paper, layered cut-paper depth, muted teal, coral, saffron and deep navy, no letters, no numbers, no logos, no labels, no readable writing."
       },
-      "annotation": "Arrow: Peaks aur dips ko connect karo",
-      "cta": "Zoom out karke trend identify karo."
+      "annotation": "Price और value एक नहीं हैं",
+      "cta": "खरीदने से पहले पूछें: क्या valuation उचित है?"
     },
     {
       "slide_number": 4,
-      "purpose": "concept",
-      "headline": "Support aur Resistance: price ke important zones",
-      "core_explanation": [
-        "Support ऐसा zone है जहाँ price पहले रुक या bounce कर चुका हो सकता है।",
-        "Resistance ऐसा zone है जहाँ price पहले रुक या reject हो सकता है।",
-        "Breakout या breakdown को volume और follow-through से confirm करना बेहतर होता है।"
-      ],
+      "purpose": "mistake_3",
+      "headline": "गलती 3: Risk और position size भूलना",
+      "core_explanation": "• पूरा पैसा एक Stock में न लगाएं।\n• Emergency fund और short-term goals अलग रखें।\n• Loss सहने की अपनी क्षमता समझें।",
       "visual_spec": {
-        "visual_concept": "एक price ball ऊंची-नीची दीवारों वाले खेल के मैदान में bounce कर रही है। नीचे padded floor support का metaphor है, ऊपर ceiling resistance का। एक volume meter जैसी abstract stack of coins breakout moment पर बढ़ रही है। Investor safety helmet पहने हुए observe कर रहा है, तुरंत jump नहीं कर रहा।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich visual metaphor of a glowing price ball moving inside a market playground, bouncing from a strong cushioned floor and stopping near a high transparent ceiling, suggesting support and resistance zones, a stack of coins rising during a possible breakout, a cautious beginner investor wearing a safety helmet observing from the side, dynamic arrows without symbols, cream paper background, navy and teal structure, coral highlights, hand-drawn editorial style, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक छोटा नाव-जैसा investment portfolio तूफानी समुद्र में है। Beginner ने सारा सामान एक ही बड़े container में रखा है, जिससे नाव असंतुलित है। Mentor छोटे-छोटे diversified containers और अलग सुरक्षित lifeboat दिखाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich metaphorical illustration of a small investment boat in a stormy ocean, an anxious Indian beginner has placed all cargo into one oversized container causing the boat to tilt, a calm mentor redistributes cargo into several smaller containers and points to a separate secure lifeboat for emergency savings, dramatic clouds but hopeful light, hand-drawn editorial style, paper texture, muted navy, teal, coral, mustard palette, no letters, no numbers, no logos, no labels, no readable writing."
       },
-      "annotation": "Arrow: Break ko volume ke saath verify karo",
-      "cta": "False breakout se सावधान रहें."
+      "annotation": "Position size नींद खराब नहीं करनी चाहिए",
+      "cta": "पहले तय करें: कितना loss comfortably सह सकते हैं?"
     },
     {
       "slide_number": 5,
-      "purpose": "application",
-      "headline": "Decision se pehle 3-step checklist",
-      "core_explanation": [
-        "1. Candle aur timeframe samjho।",
-        "2. Overall trend तथा support-resistance zones देखो।",
-        "3. Volume, confirmation, risk tolerance और exit plan check करो।",
-        "कोई भी pattern future profit की guarantee नहीं देता।"
-      ],
+      "purpose": "mistake_4",
+      "headline": "गलती 4: Charges को छोटा समझना",
+      "core_explanation": "• Brokerage, taxes और अन्य charges return घटाते हैं।\n• Frequent buying-selling महंगा पड़ सकता है।\n• Order से पहले total cost देखें।",
       "visual_spec": {
-        "visual_concept": "एक calm investor एक तीन-दरवाज़े वाले decision gate के सामने खड़ा है। पहले दरवाज़े पर candle-shaped keyhole, दूसरे पर mountain path, तीसरे पर floor-ceiling zone और rising coin bars का visual metaphor हो। अंतिम दृश्य में investor पहले checklist देखता है और फिर धीरे-धीरे आगे बढ़ता है; कोई text नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich closing illustration of a calm beginner investor at a three-gate decision path, first gate decorated with abstract candlestick forms, second gate with an uphill and downhill trail, third gate with a floor-and-ceiling price zone and rising volume bars, investor holding a small checklist with blank lines and pausing before proceeding, balanced risk-aware mood, warm cream paper texture, navy outlines, teal and coral accents, subtle shield icon without symbols, clean educational composition, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक investor को बड़ा चमकता return cake मिलता है, लेकिन रास्ते में छोटे-छोटे invisible-looking tools—commission scissors, tax sieve और fee coins—उसके हिस्से को कम कर रहे हैं। कोई text या अंक न हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Playful educational illustration of an Indian investor receiving a large golden investment return cake, while several small abstract costs quietly remove pieces using tiny scissors, a sieve and coin toll gates, the investor looks surprised and then thoughtful, clear visual metaphor for brokerage and taxes reducing returns, rich hand-drawn linework, paper collage, warm cream background, teal, coral, saffron and navy accents, no letters, no numbers, no logos, no labels, no readable writing."
       },
-      "annotation": "Arrow: Observe → Confirm → Plan",
-      "cta": "Save this checklist और practice on historical charts."
+      "annotation": "छोटी fees, लंबे समय में बड़ा असर",
+      "cta": "हर order की all-in cost check करें।"
+    },
+    {
+      "slide_number": 6,
+      "purpose": "mistake_5",
+      "headline": "गलती 5: Exit plan न बनाना",
+      "core_explanation": "• खरीदने से पहले अपना reason लिखें।\n• कब review या exit करेंगे, तय करें।\n• Emotion में panic selling या blind holding से बचें।",
+      "visual_spec": {
+        "visual_concept": "एक mountain trail पर investor बिना नक्शे के भटक रहा है। उसके पीछे खरीद का रास्ता है और आगे तीन साफ visual संकेत हैं—review calendar, risk boundary और destination flag—लेकिन किसी पर text नहीं। Mentor compass देता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Story-rich illustration of an Indian investor wandering on a mountain trail after buying an investment, holding an empty map, with a mentor offering a compass; ahead are three visual markers: a blank calendar icon, a protective boundary line, and a distant destination flag with no writing, emotional contrast between confusion and clarity, hand-drawn editorial notebook style, layered paper landscape, soft sunlight, muted teal, coral, saffron and navy, no letters, no numbers, no logos, no labels, no readable writing."
+      },
+      "annotation": "Buy करने से पहले Sell/Review rules तय करें",
+      "cta": "अपना investment thesis और review date लिखें।"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "summary",
+      "headline": "एक simple pre-buy checklist",
+      "core_explanation": "• Business समझ आया?\n• Valuation और risk उचित हैं?\n• Charges, diversification और exit plan तैयार हैं?\n• अगर जवाब नहीं, तो रुकना भी decision है।",
+      "visual_spec": {
+        "visual_concept": "एक शांत research table पर beginner investor पाँच खाली checklist cards को क्रम से जाँच रहा है। मेज पर magnifying glass, balance scale, shield, diversified plant pots, fee coins और compass रखे हैं। अंत में वह confidence के साथ छोटा, measured investment चुनता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich final scene on a calm research desk, Indian beginner investor thoughtfully reviewing five blank checklist cards surrounded by a magnifying glass, balance scale, protective shield, several diversified plant pots, small fee coins and a compass, a modest investment token selected carefully rather than impulsively, confident peaceful expression, warm cream paper, hand-drawn ink, layered editorial collage, muted teal, coral, mustard and navy, no letters, no numbers, no logos, no labels, no readable writing."
+      },
+      "annotation": "Checklist पूरी हो तभी क्लिक करें",
+      "cta": "Save करें और पहली खरीद से पहले दोबारा देखें।"
     }
   ],
-  "caption": "Stock market chart पढ़ना मुश्किल नहीं—बस सही order में observe करना ज़रूरी है 📊\n\nCandlestick से Open, High, Low और Close समझें। फिर trend पहचानें और support-resistance zones देखें। किसी breakout या candle pattern पर तुरंत decision लेने से पहले volume, confirmation, risk tolerance और exit plan पर ध्यान दें।\n\nयाद रखें: chart analysis संभावनाएँ समझने में मदद कर सकता है, लेकिन future returns की guarantee नहीं देता।\n\n#TrustPointFin #StockMarketForBeginners #ChartReading #Candlestick #TechnicalAnalysis #InvestingBasics #PersonalFinance #HinglishFinance #FinancialLiteracy #RiskManagement"
+  "caption": "पहला Stock खरीदना exciting हो सकता है, लेकिन सिर्फ hype, दोस्त की tip या बढ़ते हुए price पर decision लेना महंगा पड़ सकता है। ✅ Business समझें ✅ Valuation देखें ✅ Risk और position size तय करें ✅ Charges गिनें ✅ Diversification रखें ✅ Exit plan बनाएं\n\nयाद रखें: market में कोई भी return guaranteed नहीं होता। Emergency fund और short-term goals का पैसा Equity market से अलग रखें।\n\n#TrustPointFin #StockMarket #InvestingForBeginners #HindiFinance #PersonalFinance #LongTermInvesting #FinancialLiteracy #StockMarketIndia # निवेश #शेयरबाजार"
 }

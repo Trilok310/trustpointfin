@@ -147,7 +147,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 131. Renting vs. Buying a Home in India: The Financial Truth
 - [x] 132. The Power of Index Funds: Why Warren Buffett Recommends Them
 - [x] 133. How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know
-- [ ] 134. Avoid These 5 Costly Mistakes When Buying Your First Stock
+- [x] 134. Avoid These 5 Costly Mistakes When Buying Your First Stock
 - [ ] 135. Options Trading 101: Is It Gambling or a Real Strategy?
 - [ ] 136. How FIIs and DIIs Move the Indian Stock Market
 - [ ] 137. Why You Need Health Insurance Before You Start Investing
