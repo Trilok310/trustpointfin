@@ -1,15 +1,13 @@
 # Social Media Posts
-*Generated for article: "पहला Stock खरीदते समय इन 5 महंगी गलतियों से बचें"*
+*Generated for article: "Options Trading 101: क्या यह Gambling है या एक Real Strategy?"*
 
 ---
 
 ## 📝 Caption
 
-पहला Stock खरीदना exciting हो सकता है, लेकिन सिर्फ hype, दोस्त की tip या बढ़ते हुए price पर decision लेना महंगा पड़ सकता है। ✅ Business समझें ✅ Valuation देखें ✅ Risk और position size तय करें ✅ Charges गिनें ✅ Diversification रखें ✅ Exit plan बनाएं
+Options Trading gambling नहीं है—लेकिन बिना knowledge, plan और risk limit के यह gambling जैसी बन सकती है। Calls, Puts, Premium, Expiry और Time Decay समझे बिना trade न करें। Beginners paper trading और small defined-risk setups से शुरुआत कर सकते हैं। याद रखें: loss का risk हमेशा रहता है।
 
-याद रखें: market में कोई भी return guaranteed नहीं होता। Emergency fund और short-term goals का पैसा Equity market से अलग रखें।
-
-#TrustPointFin #StockMarket #InvestingForBeginners #HindiFinance #PersonalFinance #LongTermInvesting #FinancialLiteracy #StockMarketIndia # निवेश #शेयरबाजार
+#OptionsTrading #StockMarketIndia #InvestingForBeginners #FinancialLiteracy #RiskManagement #TradingEducation #HinglishFinance #TrustPointFin
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/avoid-these-5-costly-mistakes-when-buying-your-first-stock.html*
+*Article URL: https://trilok310.github.io/trustpointfin/options-trading-101-is-it-gambling-or-a-real-strategy.html*

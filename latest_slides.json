@@ -1,92 +1,92 @@
 {
-  "topic": "पहला Stock खरीदते समय इन 5 महंगी गलतियों से बचें",
-  "teaching_objective": "Beginner investors को पहला Stock खरीदने से पहले business, valuation, risk, charges, diversification और exit plan की practical checklist समझाना।",
-  "format": "STORY",
+  "topic": "Options Trading 101: क्या यह Gambling है या एक Real Strategy?",
+  "teaching_objective": "Beginners को Calls, Puts, Premium, Strike, Expiry और Risk Management समझाना, और यह स्पष्ट करना कि Options Trading बिना plan के gambling जैसी हो सकती है, लेकिन defined risk, research और discipline के साथ यह एक structured strategy हो सकती है।",
+  "format": "MYTH_VS_REALITY",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "पहला Stock: उत्साह नहीं, तैयारी",
-      "core_explanation": "• पहला निवेश सीखने का मौका है।\n• बढ़ता price या दोस्त की tip पर्याप्त reason नहीं।\n• पहले research, फिर decision।",
+      "headline": "Options Trading: Game या Strategy?",
+      "core_explanation": "• सिर्फ price guess करना gambling जैसा है।\n• Rules, research और risk limits strategy बनाते हैं।\n• हर trade में loss का risk रहता है।",
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय beginner investor stock market की चमकती दुनिया के प्रवेश-द्वार पर खड़ा है। उसके एक हाथ में जल्दबाजी से भरा shopping basket है और दूसरे हाथ में magnifying glass; सामने दो रास्ते हैं—एक flashy roller coaster की ओर और दूसरा शांत research desk की ओर।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, Indian young adult investor in casual clothes at the entrance of a stylized stock market world, one path with flashy lights and a roller coaster, another path with a calm research desk, magnifying glass, notebook with blank pages, expressive storytelling, hand-drawn ink outlines, layered paper cutout shapes, muted teal, saffron, coral and navy palette, soft grain, cinematic composition, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक split-scene classroom illustration: बाईं ओर एक excited trader बिना plan के roulette wheel और flashing market arrows के पीछे भाग रहा है; दाईं ओर एक calm trader desk पर notebook, calculator, shield और carefully arranged market cards के साथ decision ले रहा है। दोनों scenes के बीच एक साफ visual contrast हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a rich editorial illustration with two contrasting halves in one coherent scene: on the left, an impulsive young Indian trader in a noisy casino-like room chasing glowing market tokens and spinning chance objects; on the right, a calm Indian trader at a tidy desk studying a simple abstract market chart, calculator, shield, checklist icons, and risk boundaries. Warm paper texture, soft cream background, navy ink outlines, teal and coral accents, hand-drawn arrows and visual connectors, expressive characters, sophisticated financial education infographic composition. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "पहले समझो, फिर खरीदो",
-      "cta": "अपनी पहली खरीद को learning project बनाइए।"
+      "annotation": "पहले पूछें: मेरा plan क्या है और maximum loss कितना है?",
+      "cta": "इस lesson को save करें"
     },
     {
       "slide_number": 2,
-      "purpose": "mistake_1",
-      "headline": "गलती 1: सिर्फ नाम देखकर खरीदना",
-      "core_explanation": "• Company क्या बेचती है, समझें।\n• Revenue, Profit, Cash Flow और Debt देखें।\n• Popular brand हमेशा अच्छा investment नहीं होता।",
+      "purpose": "concept",
+      "headline": "Option असल में है क्या?",
+      "core_explanation": "• Option buyer को future में buy या sell करने का अधिकार मिलता है।\n• यह obligation नहीं, एक contract-based right है।\n• इसके लिए buyer premium pay करता है।",
       "visual_spec": {
-        "visual_concept": "Beginner एक बड़े चमकदार company logo-जैसे खाली emblem से प्रभावित होकर अंदर जाने वाला है, लेकिन एक analyst character उसे पीछे की ओर बने transparent factory, products, cash streams और debt weights दिखाता है। सभी प्रतीक बिना लिखावट के हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated scene of an Indian beginner investor admiring a giant shiny abstract corporate emblem while a thoughtful analyst pulls back a curtain to reveal a transparent factory, product boxes without markings, flowing coins, healthy green cash stream, and heavy debt weights, visual metaphor for understanding a business beneath its popularity, hand-drawn editorial lines, paper collage layers, warm natural lighting, muted teal, mustard, coral and navy, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक illustrated marketplace में buyer और seller के बीच एक चमकता हुआ contract-card exchange हो रहा है। Buyer के हाथ में दो symbolic doors हों: upward arrow वाला buy door और downward arrow वाला sell door। Seller को premium के रूप में coins मिलें।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show an illustrated financial marketplace with an Indian beginner investor receiving a glowing permission token from a professional counterparty, with two symbolic pathways: one upward path toward buying an asset and one downward path toward selling an asset. Coins flow from the buyer to the counterparty as a premium. Include a small contract scroll with completely blank surface, handshake, market building, soft paper texture, navy linework, teal, coral, mustard and cream palette, clear visual storytelling. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "Business model की परत खोलें",
+      "annotation": "Right मिलता है, guarantee नहीं।",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "mistake_2",
-      "headline": "गलती 2: Price को Value समझना",
-      "core_explanation": "• अच्छा business भी महंगा खरीदा जा सकता है।\n• Valuation को earnings और growth के संदर्भ में देखें।\n• सिर्फ बढ़ते price का पीछा न करें।",
+      "purpose": "concept",
+      "headline": "Call और Put को आसान बनाएं",
+      "core_explanation": "• Call: price ऊपर जाने की expectation।\n• Put: price नीचे जाने की expectation।\n• दोनों में direction के साथ timing भी important है।",
       "visual_spec": {
-        "visual_concept": "एक बाजार में दो तराजू दिखें: एक तरफ चमकता हुआ ऊंचा price balloon, दूसरी तरफ वास्तविक business के छोटे लेकिन मजबूत assets और cash flow। Beginner balloon पकड़कर ऊपर उड़ने वाला है, जबकि mentor उसे valuation balance समझाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Editorial financial illustration, Indian beginner investor reaching toward a huge shiny price balloon rising rapidly, while a balanced brass scale compares the balloon with sturdy factory parts, coins, customer boxes and a growing tree representing business value, mentor gently guiding the investor toward the scale, expressive faces, hand-drawn ink, textured paper, layered cut-paper depth, muted teal, coral, saffron and deep navy, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक friendly character दो रास्तों के सामने खड़ा है। ऊपर जाता हुआ mountain path Call को represent करे और नीचे जाता हुआ valley path Put को। दोनों रास्तों के अंत में एक clock हो, जिससे time factor दिखाई दे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a charming educational landscape with one Indian learner standing at a forked path: one path climbs upward toward a rising market mountain with a bullish visual mood, the other descends toward a falling market valley with a bearish visual mood. Place a large hourglass or clock between the paths to show that timing matters. Use symbolic arrows without labels, expressive character, layered paper collage, navy ink outlines, teal and coral highlights, cream background, clean composition. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "Price और value एक नहीं हैं",
-      "cta": "खरीदने से पहले पूछें: क्या valuation उचित है?"
+      "annotation": "Direction सही हो, फिर भी timing गलत हो सकती है।",
+      "cta": "Call या Put: पहले concept समझें"
     },
     {
       "slide_number": 4,
-      "purpose": "mistake_3",
-      "headline": "गलती 3: Risk और position size भूलना",
-      "core_explanation": "• पूरा पैसा एक Stock में न लगाएं।\n• Emergency fund और short-term goals अलग रखें।\n• Loss सहने की अपनी क्षमता समझें।",
+      "purpose": "calculation",
+      "headline": "Premium = Entry Cost",
+      "core_explanation": "• Buyer पहले premium pay करता है।\n• Long option में सामान्यतः maximum theoretical loss paid premium तक हो सकता है।\n• Brokerage, taxes और slippage अलग असर डाल सकते हैं।",
       "visual_spec": {
-        "visual_concept": "एक छोटा नाव-जैसा investment portfolio तूफानी समुद्र में है। Beginner ने सारा सामान एक ही बड़े container में रखा है, जिससे नाव असंतुलित है। Mentor छोटे-छोटे diversified containers और अलग सुरक्षित lifeboat दिखाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich metaphorical illustration of a small investment boat in a stormy ocean, an anxious Indian beginner has placed all cargo into one oversized container causing the boat to tilt, a calm mentor redistributes cargo into several smaller containers and points to a separate secure lifeboat for emergency savings, dramatic clouds but hopeful light, hand-drawn editorial style, paper texture, muted navy, teal, coral, mustard palette, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक buyer छोटा entry ticket खरीदता है और उसके सामने एक बड़ा gate खुलता है। Gate के बाहर market movement के कई रास्ते हैं, लेकिन buyer के चारों ओर एक protective boundary दिखे जो paid premium तक limited downside को symbolize करे। अलग से छोटे coins charges के रूप में दिखें।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrate an Indian beginner paying a small stack of coins to receive a blank golden access token, opening a large market gate with several possible price paths beyond it. Surround the beginner with a clear protective boundary that visually communicates limited downside for a typical long option buyer, while separate tiny coins drift away to represent fees and charges. Add subtle abstract market candles without any markings, textured paper, navy outlines, teal and coral accents, editorial financial education layout. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "Position size नींद खराब नहीं करनी चाहिए",
-      "cta": "पहले तय करें: कितना loss comfortably सह सकते हैं?"
+      "annotation": "Limited loss का मतलब zero risk नहीं।",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "mistake_4",
-      "headline": "गलती 4: Charges को छोटा समझना",
-      "core_explanation": "• Brokerage, taxes और अन्य charges return घटाते हैं।\n• Frequent buying-selling महंगा पड़ सकता है।\n• Order से पहले total cost देखें।",
+      "purpose": "risk",
+      "headline": "Expiry और Time Decay",
+      "core_explanation": "• Option की life expiry तक सीमित होती है।\n• समय बीतने पर option value घट सकती है।\n• सही direction के बावजूद trade loss में जा सकता है।",
       "visual_spec": {
-        "visual_concept": "एक investor को बड़ा चमकता return cake मिलता है, लेकिन रास्ते में छोटे-छोटे invisible-looking tools—commission scissors, tax sieve और fee coins—उसके हिस्से को कम कर रहे हैं। कोई text या अंक न हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Playful educational illustration of an Indian investor receiving a large golden investment return cake, while several small abstract costs quietly remove pieces using tiny scissors, a sieve and coin toll gates, the investor looks surprised and then thoughtful, clear visual metaphor for brokerage and taxes reducing returns, rich hand-drawn linework, paper collage, warm cream background, teal, coral, saffron and navy accents, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक hourglass से चमकते हुए option tokens धीरे-धीरे रेत में बदल रहे हैं। Background में market arrow सही direction में जा रहा है, लेकिन token की चमक समय के साथ कम हो रही है—यह direction और timing का फर्क दिखाए।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show a dramatic but clean educational illustration of a large hourglass containing glowing option tokens that gradually fade into sand. In the background, an abstract market path moves in a favorable direction, yet the token loses brightness as time passes, visually explaining time decay and expiry risk. Include a thoughtful Indian trader watching the hourglass, warm cream paper, navy ink, teal and coral highlights, hand-drawn arrows, no readable markings anywhere. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "छोटी fees, लंबे समय में बड़ा असर",
-      "cta": "हर order की all-in cost check करें।"
+      "annotation": "Market सही दिशा में हो, time गलत हो सकता है।",
+      "cta": "Expiry को कभी ignore न करें"
     },
     {
       "slide_number": 6,
-      "purpose": "mistake_5",
-      "headline": "गलती 5: Exit plan न बनाना",
-      "core_explanation": "• खरीदने से पहले अपना reason लिखें।\n• कब review या exit करेंगे, तय करें।\n• Emotion में panic selling या blind holding से बचें।",
+      "purpose": "comparison",
+      "headline": "Buyer बनाम Seller",
+      "core_explanation": "• Buyer premium pay करता है और right लेता है।\n• Seller premium receive करता है, लेकिन obligation लेता है।\n• Seller का risk strategy के अनुसार बहुत बड़ा हो सकता है।",
       "visual_spec": {
-        "visual_concept": "एक mountain trail पर investor बिना नक्शे के भटक रहा है। उसके पीछे खरीद का रास्ता है और आगे तीन साफ visual संकेत हैं—review calendar, risk boundary और destination flag—लेकिन किसी पर text नहीं। Mentor compass देता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Story-rich illustration of an Indian investor wandering on a mountain trail after buying an investment, holding an empty map, with a mentor offering a compass; ahead are three visual markers: a blank calendar icon, a protective boundary line, and a distant destination flag with no writing, emotional contrast between confusion and clarity, hand-drawn editorial notebook style, layered paper landscape, soft sunlight, muted teal, coral, saffron and navy, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक balanced scale पर buyer और seller आमने-सामने हों। Buyer की तरफ छोटा premium pouch और protective shield; seller की तरफ premium coins के साथ बड़ा exposed bridge और warning storm, जिससे asymmetric risk स्पष्ट हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a balanced-scale illustration comparing two financial roles: on one side, a cautious Indian option buyer holding a small premium pouch and a protective shield; on the other side, an option seller receiving coins but standing on a narrow bridge exposed to a large market storm. The seller side should visually communicate potentially much larger risk without being frightening. Rich paper collage, navy outlines, teal, coral, mustard accents, expressive characters, clean educational composition. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "Buy करने से पहले Sell/Review rules तय करें",
-      "cta": "अपना investment thesis और review date लिखें।"
+      "annotation": "Premium income दिखने में छोटा risk छिपा सकता है।",
+      "cta": null
     },
     {
       "slide_number": 7,
-      "purpose": "summary",
-      "headline": "एक simple pre-buy checklist",
-      "core_explanation": "• Business समझ आया?\n• Valuation और risk उचित हैं?\n• Charges, diversification और exit plan तैयार हैं?\n• अगर जवाब नहीं, तो रुकना भी decision है।",
+      "purpose": "action",
+      "headline": "Strategy का Safety Checklist",
+      "core_explanation": "• पहले payoff, expiry और IV समझें।\n• Paper trading और small defined-risk setup से सीखें।\n• Per-trade loss limit तय करें; बिना plan trade न करें।",
       "visual_spec": {
-        "visual_concept": "एक शांत research table पर beginner investor पाँच खाली checklist cards को क्रम से जाँच रहा है। मेज पर magnifying glass, balance scale, shield, diversified plant pots, fee coins और compass रखे हैं। अंत में वह confidence के साथ छोटा, measured investment चुनता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich final scene on a calm research desk, Indian beginner investor thoughtfully reviewing five blank checklist cards surrounded by a magnifying glass, balance scale, protective shield, several diversified plant pots, small fee coins and a compass, a modest investment token selected carefully rather than impulsively, confident peaceful expression, warm cream paper, hand-drawn ink, layered editorial collage, muted teal, coral, mustard and navy, no letters, no numbers, no logos, no labels, no readable writing."
+        "visual_concept": "एक calm learner trade से पहले चार safety gates पार कर रहा है: knowledge book, payoff balance, clock for expiry, और shield for risk limit। अंत में वह एक small, controlled stepping stone चुनता है, न कि विशाल leap।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show a calm Indian learner preparing for a trade through four visual safety gates: an open concept book, a balanced payoff scale, an hourglass for expiry, and a protective shield for a maximum-loss boundary. The learner chooses a small stable stepping stone across a stream instead of jumping toward a huge uncertain cliff. Include calculator, notebook with blank pages, subtle abstract chart shapes, warm cream paper, navy linework, teal and coral accents, optimistic but realistic mood. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
       },
-      "annotation": "Checklist पूरी हो तभी क्लिक करें",
-      "cta": "Save करें और पहली खरीद से पहले दोबारा देखें।"
+      "annotation": "Knowledge → Plan → Defined Risk → Discipline",
+      "cta": "पहले सीखें, फिर trade करें"
     }
   ],
-  "caption": "पहला Stock खरीदना exciting हो सकता है, लेकिन सिर्फ hype, दोस्त की tip या बढ़ते हुए price पर decision लेना महंगा पड़ सकता है। ✅ Business समझें ✅ Valuation देखें ✅ Risk और position size तय करें ✅ Charges गिनें ✅ Diversification रखें ✅ Exit plan बनाएं\n\nयाद रखें: market में कोई भी return guaranteed नहीं होता। Emergency fund और short-term goals का पैसा Equity market से अलग रखें।\n\n#TrustPointFin #StockMarket #InvestingForBeginners #HindiFinance #PersonalFinance #LongTermInvesting #FinancialLiteracy #StockMarketIndia # निवेश #शेयरबाजार"
+  "caption": "Options Trading gambling नहीं है—लेकिन बिना knowledge, plan और risk limit के यह gambling जैसी बन सकती है। Calls, Puts, Premium, Expiry और Time Decay समझे बिना trade न करें। Beginners paper trading और small defined-risk setups से शुरुआत कर सकते हैं। याद रखें: loss का risk हमेशा रहता है।\n\n#OptionsTrading #StockMarketIndia #InvestingForBeginners #FinancialLiteracy #RiskManagement #TradingEducation #HinglishFinance #TrustPointFin"
 }
