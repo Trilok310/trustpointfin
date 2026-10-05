@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-05T09:15:32.691Z",
+  "lastUpdated": "2026-10-05T11:26:15.556Z",
   "recentEntries": [
+    {
+      "date": "5 October 2026",
+      "edition": "EVENING",
+      "niftyPrice": 22555.75,
+      "topics": [
+        "Nifty 50 Settles at 22,555.75 (-562.85 pts)",
+        "Bank Nifty Under Pressure on Net Interest Margin Trends",
+        "Pharma & FMCG Act as Resilient Capital Safe Havens",
+        "Exchange & Depository Duopolies Gain on Volume Spikes",
+        "Crude and Global Currency Dynamics Direct FII Flow"
+      ]
+    },
     {
       "date": "5 October 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "Pharma & FMCG Act as Resilient Capital Safe Havens",
         "Exchange & Depository Duopolies Gain on Volume Spikes",
         "Crude and Global Currency Dynamics Direct FII Flow"
-      ]
-    },
-    {
-      "date": "2026-09-28",
-      "edition": "EVENING",
-      "niftyClose": 22780.25,
-      "topics": [
-        "Nifty cracks 23,000 support down 350 pts",
-        "Bank Nifty NIM pressure and deposit growth divergence",
-        "Pharma and FMCG defensive safe-haven capital rotation",
-        "Exchange duopolies BSE, CDSL, MCX benefiting on turnover surge",
-        "China monetary stimulus driving tactical EM reallocation"
       ]
     }
   ]
