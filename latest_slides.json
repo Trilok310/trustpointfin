@@ -1,92 +1,92 @@
 {
-  "topic": "Options Trading 101: क्या यह Gambling है या एक Real Strategy?",
-  "teaching_objective": "Beginners को Calls, Puts, Premium, Strike, Expiry और Risk Management समझाना, और यह स्पष्ट करना कि Options Trading बिना plan के gambling जैसी हो सकती है, लेकिन defined risk, research और discipline के साथ यह एक structured strategy हो सकती है।",
-  "format": "MYTH_VS_REALITY",
+  "topic": "How FIIs और DIIs Move the Indian Stock Market: Beginners के लिए आसान Guide",
+  "teaching_objective": "Beginners को समझाना कि FIIs और DIIs कौन होते हैं, उनके buying-selling flows से Indian Stock Market में liquidity, sentiment और short-term movement कैसे बदलते हैं—और flows को अकेले investment signal क्यों नहीं मानना चाहिए।",
+  "format": "MARKET_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Options Trading: Game या Strategy?",
-      "core_explanation": "• सिर्फ price guess करना gambling जैसा है।\n• Rules, research और risk limits strategy बनाते हैं।\n• हर trade में loss का risk रहता है।",
+      "headline": "Market एक बड़ा flow system है",
+      "core_explanation": "• अलग-अलग investors market में पैसा लाते और निकालते हैं।\n• बड़े institutional flows prices और sentiment को प्रभावित कर सकते हैं।\n• FII-DII data market की पूरी कहानी नहीं, लेकिन useful signal है।",
       "visual_spec": {
-        "visual_concept": "एक split-scene classroom illustration: बाईं ओर एक excited trader बिना plan के roulette wheel और flashing market arrows के पीछे भाग रहा है; दाईं ओर एक calm trader desk पर notebook, calculator, shield और carefully arranged market cards के साथ decision ले रहा है। दोनों scenes के बीच एक साफ visual contrast हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a rich editorial illustration with two contrasting halves in one coherent scene: on the left, an impulsive young Indian trader in a noisy casino-like room chasing glowing market tokens and spinning chance objects; on the right, a calm Indian trader at a tidy desk studying a simple abstract market chart, calculator, shield, checklist icons, and risk boundaries. Warm paper texture, soft cream background, navy ink outlines, teal and coral accents, hand-drawn arrows and visual connectors, expressive characters, sophisticated financial education infographic composition. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
+        "visual_concept": "एक विशाल भारतीय stock market को नदी और शहर के बीच बने financial harbor की तरह दिखाएँ। दो दिशाओं से capital की धाराएँ harbor में आ रही हों; छोटे retail boats और बड़े institutional ships पानी की दिशा और लहरों को प्रभावित कर रहे हों। भारतीय skyline, subtle stock-market atmosphere, thoughtful beginner-friendly storytelling.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with actual human characters, a large financial harbor representing the Indian stock market, two major streams of glowing coins and flowing water entering from opposite sides, large institutional ships creating visible ripples, small retail boats nearby, Indian city skyline in the background, warm cream paper texture, deep navy, saffron, teal and coral palette, hand-drawn ink outlines, clean composition, cinematic but educational, no words, no letters, no labels, no numbers, no logos."
       },
-      "annotation": "पहले पूछें: मेरा plan क्या है और maximum loss कितना है?",
-      "cta": "इस lesson को save करें"
+      "annotation": "Arrow: पैसा आता है → liquidity और demand बढ़ सकती है",
+      "cta": "पहले flow समझिए, फिर market reaction देखिए।"
     },
     {
       "slide_number": 2,
-      "purpose": "concept",
-      "headline": "Option असल में है क्या?",
-      "core_explanation": "• Option buyer को future में buy या sell करने का अधिकार मिलता है।\n• यह obligation नहीं, एक contract-based right है।\n• इसके लिए buyer premium pay करता है।",
+      "purpose": "explain_fii",
+      "headline": "FII: विदेश से आने वाला बड़ा capital",
+      "core_explanation": "• FIIs यानी Foreign Institutional Investors।\n• इनमें global funds, pension funds और asset managers शामिल हो सकते हैं।\n• इनकी buying से demand और selling से short-term pressure बढ़ सकता है।",
       "visual_spec": {
-        "visual_concept": "एक illustrated marketplace में buyer और seller के बीच एक चमकता हुआ contract-card exchange हो रहा है। Buyer के हाथ में दो symbolic doors हों: upward arrow वाला buy door और downward arrow वाला sell door। Seller को premium के रूप में coins मिलें।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show an illustrated financial marketplace with an Indian beginner investor receiving a glowing permission token from a professional counterparty, with two symbolic pathways: one upward path toward buying an asset and one downward path toward selling an asset. Coins flow from the buyer to the counterparty as a premium. Include a small contract scroll with completely blank surface, handshake, market building, soft paper texture, navy linework, teal, coral, mustard and cream palette, clear visual storytelling. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
+        "visual_concept": "एक confident international fund manager दुनिया के नक्शे से भारत की ओर glowing capital route देख रहा है। उसके पीछे अलग-अलग देशों के छोटे visual cues हों, सामने Mumbai-style exchange district और Indian companies के buildings हों। Character के हाथ में coins और portfolio folders हों, लेकिन कोई readable document text नहीं.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A diverse international fund manager standing beside a globe, guiding streams of golden coins from multiple countries toward India, with a modern Indian financial district and company buildings ahead, subtle airport and world-market imagery, clear visual metaphor for foreign institutional capital, expressive characters, textured paper, hand-drawn editorial lines, navy blue, gold, teal and coral colors, no words, no letters, no labels, no numbers, no logos."
       },
-      "annotation": "Right मिलता है, guarantee नहीं।",
+      "annotation": "FII flow = global money का Indian market में आना-जाना",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "concept",
-      "headline": "Call और Put को आसान बनाएं",
-      "core_explanation": "• Call: price ऊपर जाने की expectation।\n• Put: price नीचे जाने की expectation।\n• दोनों में direction के साथ timing भी important है।",
+      "purpose": "explain_dii",
+      "headline": "DII: देश के अंदर की financial ताकत",
+      "core_explanation": "• DIIs यानी Domestic Institutional Investors।\n• Mutual funds, insurance companies और pension funds इसका हिस्सा हो सकते हैं।\n• SIPs और domestic savings market को steady support दे सकते हैं।",
       "visual_spec": {
-        "visual_concept": "एक friendly character दो रास्तों के सामने खड़ा है। ऊपर जाता हुआ mountain path Call को represent करे और नीचे जाता हुआ valley path Put को। दोनों रास्तों के अंत में एक clock हो, जिससे time factor दिखाई दे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a charming educational landscape with one Indian learner standing at a forked path: one path climbs upward toward a rising market mountain with a bullish visual mood, the other descends toward a falling market valley with a bearish visual mood. Place a large hourglass or clock between the paths to show that timing matters. Use symbolic arrows without labels, expressive character, layered paper collage, navy ink outlines, teal and coral highlights, cream background, clean composition. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
+        "visual_concept": "भारत के अलग-अलग households—एक young couple, salaried worker, family और senior citizen—छोटे savings jars को एक बड़े domestic investment reservoir में डाल रहे हैं। Reservoir से capital Indian stock exchange और businesses की ओर जा रहा हो; visual stability और continuity दिखे.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm illustrated scene of diverse Indian households contributing small glowing savings jars into a large shared reservoir, with a mutual fund manager and insurance professional carefully directing the collected capital toward Indian businesses and a stock exchange building, visual metaphor for domestic institutional investors and SIP-driven steady flows, friendly educational mood, cream paper background, ink outlines, teal, saffron, navy and green accents, no words, no letters, no labels, no numbers, no logos."
       },
-      "annotation": "Direction सही हो, फिर भी timing गलत हो सकती है।",
-      "cta": "Call या Put: पहले concept समझें"
+      "annotation": "DII flow = domestic savings का market में निवेश",
+      "cta": null
     },
     {
       "slide_number": 4,
-      "purpose": "calculation",
-      "headline": "Premium = Entry Cost",
-      "core_explanation": "• Buyer पहले premium pay करता है।\n• Long option में सामान्यतः maximum theoretical loss paid premium तक हो सकता है।\n• Brokerage, taxes और slippage अलग असर डाल सकते हैं।",
+      "purpose": "show_mechanics",
+      "headline": "Buying और selling से price पर असर कैसे पड़ता है?",
+      "core_explanation": "• बड़े orders demand-supply balance को बदलते हैं।\n• Large-cap stocks और index में movement तेज़ दिख सकता है।\n• असर हमेशा एक जैसा या guaranteed नहीं होता।",
       "visual_spec": {
-        "visual_concept": "एक buyer छोटा entry ticket खरीदता है और उसके सामने एक बड़ा gate खुलता है। Gate के बाहर market movement के कई रास्ते हैं, लेकिन buyer के चारों ओर एक protective boundary दिखे जो paid premium तक limited downside को symbolize करे। अलग से छोटे coins charges के रूप में दिखें।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrate an Indian beginner paying a small stack of coins to receive a blank golden access token, opening a large market gate with several possible price paths beyond it. Surround the beginner with a clear protective boundary that visually communicates limited downside for a typical long option buyer, while separate tiny coins drift away to represent fees and charges. Add subtle abstract market candles without any markings, textured paper, navy outlines, teal and coral accents, editorial financial education layout. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
+        "visual_concept": "एक giant balance scale दिखाएँ: एक तरफ institutional buyers के बड़े baskets, दूसरी तरफ sellers के baskets। Scale के नीचे stock-market waves और कई connected company buildings हों। एक बड़ा basket scale को हल्का झुकाए, लेकिन scene में complexity दिखाने के लिए छोटे opposing flows भी मौजूद हों.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A large transparent balance scale in a financial marketplace, one side holding large baskets of glowing coins from institutional buyers and the other side holding sell orders represented by departing coin baskets, connected Indian company buildings and market waves beneath the scale, several smaller participants balancing the scene, sophisticated visual metaphor for demand and supply, rich editorial illustration, paper grain, hand-drawn contours, no words, no letters, no labels, no numbers, no logos."
       },
-      "annotation": "Limited loss का मतलब zero risk नहीं।",
-      "cta": null
+      "annotation": "बड़ा order = market में बड़ी ripple",
+      "cta": "Price movement को demand-supply के lens से देखें।"
     },
     {
       "slide_number": 5,
-      "purpose": "risk",
-      "headline": "Expiry और Time Decay",
-      "core_explanation": "• Option की life expiry तक सीमित होती है।\n• समय बीतने पर option value घट सकती है।\n• सही direction के बावजूद trade loss में जा सकता है।",
+      "purpose": "explain_market_impact",
+      "headline": "Index पर असर क्यों तेज़ दिखता है?",
+      "core_explanation": "• Institutional money अक्सर बड़े और liquid stocks में जाता है।\n• इन stocks का index में weight अधिक हो सकता है।\n• इसलिए कुछ बड़े trades पूरे index का mood बदल सकते हैं।",
       "visual_spec": {
-        "visual_concept": "एक hourglass से चमकते हुए option tokens धीरे-धीरे रेत में बदल रहे हैं। Background में market arrow सही direction में जा रहा है, लेकिन token की चमक समय के साथ कम हो रही है—यह direction और timing का फर्क दिखाए।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show a dramatic but clean educational illustration of a large hourglass containing glowing option tokens that gradually fade into sand. In the background, an abstract market path moves in a favorable direction, yet the token loses brightness as time passes, visually explaining time decay and expiry risk. Include a thoughtful Indian trader watching the hourglass, warm cream paper, navy ink, teal and coral highlights, hand-drawn arrows, no readable markings anywhere. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
+        "visual_concept": "एक Indian market index को interconnected skyscrapers और water ripple system की तरह दिखाएँ। कुछ ऊँची central buildings पर बड़े institutional waves टकराएँ और उनके ripples पूरे network में फैलें, जबकि छोटे businesses किनारों पर कम प्रभावित हों। No charts or text.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A network of interconnected Indian business skyscrapers arranged like an index, several tall central buildings receiving large waves of institutional capital, ripples traveling across the entire connected city, smaller businesses on the edges experiencing softer movement, clear metaphor for index weight and large-cap impact, dynamic yet clean educational composition, paper texture, ink illustration, navy, teal, coral and gold, no words, no letters, no labels, no numbers, no logos."
       },
-      "annotation": "Market सही दिशा में हो, time गलत हो सकता है।",
-      "cta": "Expiry को कभी ignore न करें"
-    },
-    {
-      "slide_number": 6,
-      "purpose": "comparison",
-      "headline": "Buyer बनाम Seller",
-      "core_explanation": "• Buyer premium pay करता है और right लेता है।\n• Seller premium receive करता है, लेकिन obligation लेता है।\n• Seller का risk strategy के अनुसार बहुत बड़ा हो सकता है।",
-      "visual_spec": {
-        "visual_concept": "एक balanced scale पर buyer और seller आमने-सामने हों। Buyer की तरफ छोटा premium pouch और protective shield; seller की तरफ premium coins के साथ बड़ा exposed bridge और warning storm, जिससे asymmetric risk स्पष्ट हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a balanced-scale illustration comparing two financial roles: on one side, a cautious Indian option buyer holding a small premium pouch and a protective shield; on the other side, an option seller receiving coins but standing on a narrow bridge exposed to a large market storm. The seller side should visually communicate potentially much larger risk without being frightening. Rich paper collage, navy outlines, teal, coral, mustard accents, expressive characters, clean educational composition. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
-      },
-      "annotation": "Premium income दिखने में छोटा risk छिपा सकता है।",
+      "annotation": "Large-cap में flow का असर अक्सर ज्यादा दिखाई देता है",
       "cta": null
     },
     {
-      "slide_number": 7,
-      "purpose": "action",
-      "headline": "Strategy का Safety Checklist",
-      "core_explanation": "• पहले payoff, expiry और IV समझें।\n• Paper trading और small defined-risk setup से सीखें।\n• Per-trade loss limit तय करें; बिना plan trade न करें।",
+      "slide_number": 6,
+      "purpose": "add_nuance",
+      "headline": "FII selling का मतलब हमेशा danger नहीं",
+      "core_explanation": "• कारण हो सकता है: global rates, currency, valuation या profit booking।\n• DII buying foreign selling का असर कुछ हद तक absorb कर सकती है।\n• Flow को context के साथ पढ़ना जरूरी है।",
       "visual_spec": {
-        "visual_concept": "एक calm learner trade से पहले चार safety gates पार कर रहा है: knowledge book, payoff balance, clock for expiry, और shield for risk limit। अंत में वह एक small, controlled stepping stone चुनता है, न कि विशाल leap।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show a calm Indian learner preparing for a trade through four visual safety gates: an open concept book, a balanced payoff scale, an hourglass for expiry, and a protective shield for a maximum-loss boundary. The learner chooses a small stable stepping stone across a stream instead of jumping toward a huge uncertain cliff. Include calculator, notebook with blank pages, subtle abstract chart shapes, warm cream paper, navy linework, teal and coral accents, optimistic but realistic mood. NO TEXT, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARKS."
+        "visual_concept": "एक stormy global scene में international ship कुछ cargo वापस ले जा रहा है, जबकि भारतीय domestic boats शांत होकर market harbor में नए savings cargo ला रही हैं। Harbor पूरी तरह डूबा नहीं है; अलग-अलग currents और weather conditions context को दर्शाएँ.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A sophisticated financial harbor during changing weather, an international ship carefully taking some cargo away while several Indian domestic boats bring fresh glowing savings into the harbor, wind, currency-like abstract currents, valuation and global interest-rate pressure represented through weather and waves, balanced not alarmist mood, actual human characters navigating boats, textured paper, hand-drawn editorial style, no words, no letters, no labels, no numbers, no logos."
       },
-      "annotation": "Knowledge → Plan → Defined Risk → Discipline",
-      "cta": "पहले सीखें, फिर trade करें"
+      "annotation": "पहले पूछें: selling का कारण क्या है?",
+      "cta": "Panic नहीं—context और data दोनों देखें।"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "beginner_framework",
+      "headline": "Investor को flows का इस्तेमाल कैसे करना चाहिए?",
+      "core_explanation": "• FII-DII data को market sentiment का signal मानें।\n• Company earnings, debt, valuation और business outlook भी जाँचें।\n• Goal, time horizon और risk capacity के अनुसार decision लें।",
+      "visual_spec": {
+        "visual_concept": "एक beginner investor desk पर बैठा है। उसके सामने तीन साफ़ रास्ते हैं: institutional flow compass, company fundamentals magnifying glass, और personal goal/risk map। वह तीनों clues देखकर शांत निर्णय ले रहा है, न कि भीड़ के पीछे भाग रहा है.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A calm beginner Indian investor at a desk making a thoughtful decision, using three visual tools: a compass representing institutional flows, a magnifying glass over a healthy company plant representing fundamentals, and a personal journey map with milestones representing goals and time horizon, crowded panic sellers blurred in the distant background, empowering educational storytelling, warm paper texture, hand-drawn ink, navy, teal, saffron and coral palette, no words, no letters, no labels, no numbers, no logos."
+      },
+      "annotation": "Flow signal है, final decision नहीं",
+      "cta": "FII-DII data देखें—लेकिन पूरा फैसला analysis से लें।"
     }
   ],
-  "caption": "Options Trading gambling नहीं है—लेकिन बिना knowledge, plan और risk limit के यह gambling जैसी बन सकती है। Calls, Puts, Premium, Expiry और Time Decay समझे बिना trade न करें। Beginners paper trading और small defined-risk setups से शुरुआत कर सकते हैं। याद रखें: loss का risk हमेशा रहता है।\n\n#OptionsTrading #StockMarketIndia #InvestingForBeginners #FinancialLiteracy #RiskManagement #TradingEducation #HinglishFinance #TrustPointFin"
+  "caption": "FIIs और DIIs Indian Stock Market में पैसा कैसे move करते हैं? 🌊\n\nFII buying-selling से short term में demand, liquidity और sentiment बदल सकता है। वहीं DIIs—जैसे mutual funds, insurance companies और pension funds—domestic savings और SIP flows के जरिए market को support कर सकते हैं।\n\nलेकिन सिर्फ FII selling देखकर panic selling करना सही नहीं है। Global rates, currency, valuation, profit booking, company earnings और आपके own goals—सभी को साथ में देखना जरूरी है।\n\nFII-DII data एक useful signal है, future market movement की guarantee नहीं।\n\n#TrustPointFin #StockMarket #FII #DII #IndianStockMarket #MutualFunds #SIP #InvestingForBeginners #FinancialLiteracy #PersonalFinance #ShareMarket"
 }
