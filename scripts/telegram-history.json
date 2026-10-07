@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-07T11:36:40.491Z",
+  "lastUpdated": "2026-10-07T17:56:00.027Z",
   "recentEntries": [
+    {
+      "date": "7 October 2026",
+      "edition": "EVENING",
+      "niftyPrice": 22603.05,
+      "topics": [
+        "RBI MPC 25 bps Rate Hike Triggers Sharp Selloff across Indian Indices",
+        "Bank Nifty Drops 1.78% as Monetary Tightening Elevates Funding Costs",
+        "Interest Rate Sensitive Sectors Face Liquidation Following Policy Decision",
+        "Volatility Surge Drives Turnover Engagement for Market Infrastructure Intermediaries",
+        "Elevated Crude Prices and Currency Weakness Compound Policy Risks"
+      ]
+    },
     {
       "date": "7 October 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "IT Stocks Lead Early Recovery Effort to Cushion Benchmark Losses",
         "Capital Market Infrastructure Stocks Benefit from Heightened Volatility Dynamics",
         "Elevated Crude at $95.57 and Weak Rupee Target Import Costs"
-      ]
-    },
-    {
-      "date": "30 September 2026",
-      "edition": "MORNING",
-      "niftyPrice": 22745.25,
-      "topics": [
-        "GIFT Nifty Signals Relief Bounce Following Sharp Market Sell-Off",
-        "Bank Nifty Attempts Stabilization After Dropping Over Three Percent",
-        "IT Sector Pullback Provides Support Against Ongoing Geopolitical Volatility",
-        "BSE Replaces Wipro in Nifty 50 Benchmark Index Today",
-        "Brent Crude Hits $96.32 Amid West Asia Tensions and Currency Pressure"
       ]
     }
   ]
