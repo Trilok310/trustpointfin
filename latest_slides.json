@@ -1,92 +1,92 @@
 {
-  "topic": "How FIIs और DIIs Move the Indian Stock Market: Beginners के लिए आसान Guide",
-  "teaching_objective": "Beginners को समझाना कि FIIs और DIIs कौन होते हैं, उनके buying-selling flows से Indian Stock Market में liquidity, sentiment और short-term movement कैसे बदलते हैं—और flows को अकेले investment signal क्यों नहीं मानना चाहिए।",
-  "format": "MARKET_CONCEPT",
+  "topic": "Why You Need Health Insurance Before You Start Investing",
+  "teaching_objective": "समझाना कि Health Insurance और Emergency Fund आपके Investment Plan की सुरक्षा करते हैं; Investment को पूरी तरह टालना जरूरी नहीं, लेकिन बड़े या नियमित निवेश से पहले financial protection मजबूत करना समझदारी है।",
+  "format": "STORY",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Market एक बड़ा flow system है",
-      "core_explanation": "• अलग-अलग investors market में पैसा लाते और निकालते हैं।\n• बड़े institutional flows prices और sentiment को प्रभावित कर सकते हैं।\n• FII-DII data market की पूरी कहानी नहीं, लेकिन useful signal है।",
+      "headline": "पहले सुरक्षा, फिर growth",
+      "core_explanation": "• Investment wealth बनाने में मदद करता है।\n• Health Insurance अचानक medical खर्च से बचाता है।\n• दोनों का काम अलग है—एक को दूसरे का replacement न समझें।",
       "visual_spec": {
-        "visual_concept": "एक विशाल भारतीय stock market को नदी और शहर के बीच बने financial harbor की तरह दिखाएँ। दो दिशाओं से capital की धाराएँ harbor में आ रही हों; छोटे retail boats और बड़े institutional ships पानी की दिशा और लहरों को प्रभावित कर रहे हों। भारतीय skyline, subtle stock-market atmosphere, thoughtful beginner-friendly storytelling.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with actual human characters, a large financial harbor representing the Indian stock market, two major streams of glowing coins and flowing water entering from opposite sides, large institutional ships creating visible ripples, small retail boats nearby, Indian city skyline in the background, warm cream paper texture, deep navy, saffron, teal and coral palette, hand-drawn ink outlines, clean composition, cinematic but educational, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "एक युवा भारतीय प्रोफेशनल अपने छोटे पौधे जैसे investment portfolio को पानी दे रहा है, जबकि पीछे एक मजबूत छतरी और घर उसकी रक्षा कर रहे हैं। छतरी Health Insurance और घर Emergency Fund का visual metaphor हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A warm editorial illustration of a young Indian professional in a modern apartment balcony, carefully watering a small growing money tree in a ceramic pot, while a large protective umbrella and a sturdy home shelter shield the plant from dark rain clouds, subtle medical cross-shaped forms integrated into the umbrella design without any symbols or writing, rich storytelling, soft cream paper background, navy blue, teal, coral and mustard palette, hand-drawn textures, clean composition, cinematic lighting, educational finance illustration, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "Arrow: पैसा आता है → liquidity और demand बढ़ सकती है",
-      "cta": "पहले flow समझिए, फिर market reaction देखिए।"
+      "annotation": "Arrow from the umbrella to the growing plant: protection enables growth",
+      "cta": "अपना financial foundation check करें"
     },
     {
       "slide_number": 2,
-      "purpose": "explain_fii",
-      "headline": "FII: विदेश से आने वाला बड़ा capital",
-      "core_explanation": "• FIIs यानी Foreign Institutional Investors।\n• इनमें global funds, pension funds और asset managers शामिल हो सकते हैं।\n• इनकी buying से demand और selling से short-term pressure बढ़ सकता है।",
+      "purpose": "tension",
+      "headline": "एक medical emergency plan बदल सकती है",
+      "core_explanation": "• Hospital bill अचानक आ सकता है।\n• Cash बचत कम हो तो investments बेचने पड़ सकते हैं।\n• गलत समय पर बेचने से long-term compounding प्रभावित हो सकती है।",
       "visual_spec": {
-        "visual_concept": "एक confident international fund manager दुनिया के नक्शे से भारत की ओर glowing capital route देख रहा है। उसके पीछे अलग-अलग देशों के छोटे visual cues हों, सामने Mumbai-style exchange district और Indian companies के buildings हों। Character के हाथ में coins और portfolio folders हों, लेकिन कोई readable document text नहीं.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A diverse international fund manager standing beside a globe, guiding streams of golden coins from multiple countries toward India, with a modern Indian financial district and company buildings ahead, subtle airport and world-market imagery, clear visual metaphor for foreign institutional capital, expressive characters, textured paper, hand-drawn editorial lines, navy blue, gold, teal and coral colors, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "वही व्यक्ति अपने investment पौधे को बढ़ते हुए देख रहा है, तभी तेज बारिश और ambulance जैसी दूर की emergency संकेतक रोशनी आती है; वह घबराकर पौधे का गमला उठाने लगता है, जो financial stress को दर्शाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A narrative editorial scene with the same young Indian professional in a cozy apartment, a healthy money tree growing in a pot, sudden storm outside with distant emergency vehicle lights, the person anxiously lifting the pot as if forced to sacrifice future growth for an urgent expense, expressive body language, no visible logos, soft paper grain, navy, teal, coral and mustard colors, layered composition, hand-drawn educational visual, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "FII flow = global money का Indian market में आना-जाना",
+      "annotation": "Small red arrow toward the storm: unexpected timing",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "explain_dii",
-      "headline": "DII: देश के अंदर की financial ताकत",
-      "core_explanation": "• DIIs यानी Domestic Institutional Investors।\n• Mutual funds, insurance companies और pension funds इसका हिस्सा हो सकते हैं।\n• SIPs और domestic savings market को steady support दे सकते हैं।",
+      "purpose": "risk",
+      "headline": "Protection न हो तो risk कहाँ जाता है?",
+      "core_explanation": "• Medical खर्च savings को खा सकता है।\n• Investments जल्दबाज़ी में withdraw या sell हो सकते हैं।\n• लक्ष्य, retirement और family plans delay हो सकते हैं।",
       "visual_spec": {
-        "visual_concept": "भारत के अलग-अलग households—एक young couple, salaried worker, family और senior citizen—छोटे savings jars को एक बड़े domestic investment reservoir में डाल रहे हैं। Reservoir से capital Indian stock exchange और businesses की ओर जा रहा हो; visual stability और continuity दिखे.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm illustrated scene of diverse Indian households contributing small glowing savings jars into a large shared reservoir, with a mutual fund manager and insurance professional carefully directing the collected capital toward Indian businesses and a stock exchange building, visual metaphor for domestic institutional investors and SIP-driven steady flows, friendly educational mood, cream paper background, ink outlines, teal, saffron, navy and green accents, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "एक financial journey को नदी के रूप में दिखाया गया है। व्यक्ति नाव में अपने goals लेकर आगे बढ़ रहा है, लेकिन medical bill का बड़ा whirlpool नाव को investment jars और future goal boxes से दूर खींच रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An imaginative educational illustration of a young Indian couple traveling in a small wooden boat across a calm river, carrying symbolic jars of savings, a home model, a graduation cap and a retirement picnic basket, while a sudden medical emergency whirlpool pulls at the boat, dramatic but approachable storytelling, clear visual metaphor for financial risk, textured paper background, elegant navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "DII flow = domestic savings का market में निवेश",
-      "cta": null
+      "annotation": "Curved arrow around the whirlpool: emergency can redirect the whole journey",
+      "cta": "अपने biggest financial risks पहचानें"
     },
     {
       "slide_number": 4,
-      "purpose": "show_mechanics",
-      "headline": "Buying और selling से price पर असर कैसे पड़ता है?",
-      "core_explanation": "• बड़े orders demand-supply balance को बदलते हैं।\n• Large-cap stocks और index में movement तेज़ दिख सकता है।\n• असर हमेशा एक जैसा या guaranteed नहीं होता।",
+      "purpose": "solution",
+      "headline": "Health Insurance एक financial shield है",
+      "core_explanation": "• Policy eligible medical खर्च का बड़ा हिस्सा संभाल सकती है।\n• Investments को panic में बेचने की जरूरत कम हो सकती है।\n• Policy terms, exclusions और limits समझना जरूरी है।",
       "visual_spec": {
-        "visual_concept": "एक giant balance scale दिखाएँ: एक तरफ institutional buyers के बड़े baskets, दूसरी तरफ sellers के baskets। Scale के नीचे stock-market waves और कई connected company buildings हों। एक बड़ा basket scale को हल्का झुकाए, लेकिन scene में complexity दिखाने के लिए छोटे opposing flows भी मौजूद हों.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A large transparent balance scale in a financial marketplace, one side holding large baskets of glowing coins from institutional buyers and the other side holding sell orders represented by departing coin baskets, connected Indian company buildings and market waves beneath the scale, several smaller participants balancing the scene, sophisticated visual metaphor for demand and supply, rich editorial illustration, paper grain, hand-drawn contours, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "एक परिवार के सामने translucent protective shield है। बाहर hospital building, falling bills और storm हैं; अंदर family, emergency savings box और growing investment tree सुरक्षित हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich editorial illustration of an Indian family standing safely behind a large translucent protective shield, outside the shield are abstract hospital architecture, falling paper bills and storm clouds, inside are a growing money tree, a small emergency savings box and peaceful family members, the shield should feel like health protection without any written symbols, warm human expressions, sophisticated paper collage texture, navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "बड़ा order = market में बड़ी ripple",
-      "cta": "Price movement को demand-supply के lens से देखें।"
+      "annotation": "Arrow pointing outward from shield: risk transferred, not eliminated",
+      "cta": "Coverage को सिर्फ premium से नहीं, terms से judge करें"
     },
     {
       "slide_number": 5,
-      "purpose": "explain_market_impact",
-      "headline": "Index पर असर क्यों तेज़ दिखता है?",
-      "core_explanation": "• Institutional money अक्सर बड़े और liquid stocks में जाता है।\n• इन stocks का index में weight अधिक हो सकता है।\n• इसलिए कुछ बड़े trades पूरे index का mood बदल सकते हैं।",
+      "purpose": "process",
+      "headline": "Practical order क्या हो सकता है?",
+      "core_explanation": "• Basic Health Insurance और Emergency Fund से शुरुआत करें।\n• फिर goals के अनुसार regular investing बढ़ाएँ।\n• छोटी investment शुरू हो सकती है—protection को अनिश्चितकाल तक delay न करें।",
       "visual_spec": {
-        "visual_concept": "एक Indian market index को interconnected skyscrapers और water ripple system की तरह दिखाएँ। कुछ ऊँची central buildings पर बड़े institutional waves टकराएँ और उनके ripples पूरे network में फैलें, जबकि छोटे businesses किनारों पर कम प्रभावित हों। No charts or text.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A network of interconnected Indian business skyscrapers arranged like an index, several tall central buildings receiving large waves of institutional capital, ripples traveling across the entire connected city, smaller businesses on the edges experiencing softer movement, clear metaphor for index weight and large-cap impact, dynamic yet clean educational composition, paper texture, ink illustration, navy, teal, coral and gold, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "सीढ़ियों जैसा visual journey: पहली सीढ़ी पर umbrella और medical kit, दूसरी पर emergency savings jar, तीसरी पर diversified investment garden, और ऊपर family goal house। व्यक्ति क्रम से ऊपर चढ़ रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A beautifully staged educational story showing a young Indian professional climbing a wide staircase toward a bright future home, first step represented by a protective umbrella and medical kit, second by a secure savings jar, third by a flourishing diversified investment garden, final step by a peaceful family home and sunrise, clear sequence without written labels, soft editorial illustration, textured cream paper, navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "Large-cap में flow का असर अक्सर ज्यादा दिखाई देता है",
-      "cta": null
+      "annotation": "Three upward arrows showing protection, liquidity, then growth",
+      "cta": "आज अपना first protection step तय करें"
     },
     {
       "slide_number": 6,
-      "purpose": "add_nuance",
-      "headline": "FII selling का मतलब हमेशा danger नहीं",
-      "core_explanation": "• कारण हो सकता है: global rates, currency, valuation या profit booking।\n• DII buying foreign selling का असर कुछ हद तक absorb कर सकती है।\n• Flow को context के साथ पढ़ना जरूरी है।",
+      "purpose": "clarification",
+      "headline": "Employer cover है—क्या वही काफी है?",
+      "core_explanation": "• Sum Insured, room-rent limits और exclusions देखें।\n• Dependents और parents covered हैं या नहीं, जाँचें।\n• Job change या career break में cover समाप्त हो सकता है।",
       "visual_spec": {
-        "visual_concept": "एक stormy global scene में international ship कुछ cargo वापस ले जा रहा है, जबकि भारतीय domestic boats शांत होकर market harbor में नए savings cargo ला रही हैं। Harbor पूरी तरह डूबा नहीं है; अलग-अलग currents और weather conditions context को दर्शाएँ.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A sophisticated financial harbor during changing weather, an international ship carefully taking some cargo away while several Indian domestic boats bring fresh glowing savings into the harbor, wind, currency-like abstract currents, valuation and global interest-rate pressure represented through weather and waves, balanced not alarmist mood, actual human characters navigating boats, textured paper, hand-drawn editorial style, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "एक ऑफिस ID card जैसा blank card एक temporary bridge से जुड़ा है, जो job change के समय टूटने लगता है। परिवार दूसरी ओर personal umbrella और backup bridge के साथ सुरक्षित खड़ा है। कोई readable text या logo नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A conceptual editorial illustration of an Indian employee crossing a temporary office bridge with a blank identity card shape, the bridge becomes fragile near a doorway suggesting job change, while the employee's family stands on solid ground with a personal protective umbrella and a backup bridge, visual metaphor for employer insurance continuity, no logos or writing, thoughtful facial expressions, paper collage texture, navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "पहले पूछें: selling का कारण क्या है?",
-      "cta": "Panic नहीं—context और data दोनों देखें।"
+      "annotation": "Dashed arrow from temporary bridge to personal umbrella: review your backup",
+      "cta": "Employer policy को personal needs से compare करें"
     },
     {
       "slide_number": 7,
-      "purpose": "beginner_framework",
-      "headline": "Investor को flows का इस्तेमाल कैसे करना चाहिए?",
-      "core_explanation": "• FII-DII data को market sentiment का signal मानें।\n• Company earnings, debt, valuation और business outlook भी जाँचें।\n• Goal, time horizon और risk capacity के अनुसार decision लें।",
+      "purpose": "action",
+      "headline": "आपकी simple financial checklist",
+      "core_explanation": "• Health Insurance: coverage और exclusions review करें।\n• Emergency Fund: essential expenses के लिए liquidity रखें।\n• Investments: risk profile और goals के अनुसार धीरे-धीरे बढ़ाएँ।",
       "visual_spec": {
-        "visual_concept": "एक beginner investor desk पर बैठा है। उसके सामने तीन साफ़ रास्ते हैं: institutional flow compass, company fundamentals magnifying glass, और personal goal/risk map। वह तीनों clues देखकर शांत निर्णय ले रहा है, न कि भीड़ के पीछे भाग रहा है.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A calm beginner Indian investor at a desk making a thoughtful decision, using three visual tools: a compass representing institutional flows, a magnifying glass over a healthy company plant representing fundamentals, and a personal journey map with milestones representing goals and time horizon, crowded panic sellers blurred in the distant background, empowering educational storytelling, warm paper texture, hand-drawn ink, navy, teal, saffron and coral palette, no words, no letters, no labels, no numbers, no logos."
+        "visual_concept": "एक desk-top scene जिसमें परिवार तीन practical objects व्यवस्थित कर रहा है: protective umbrella, emergency cash jar और अलग-अलग पौधों वाला investment garden। पीछे शांत भविष्य का दृश्य है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A polished top-down editorial illustration of an Indian family arranging three practical financial objects on a clean desk: a protective umbrella with subtle healthcare cues, a secure emergency savings jar, and a small diversified garden of different healthy plants representing investments, checklist-like arrangement without any writing, calm optimistic mood, cream paper texture, navy teal coral mustard palette, hand-drawn educational style, no text, no labels, no letters, no numbers, no watermark."
       },
-      "annotation": "Flow signal है, final decision नहीं",
-      "cta": "FII-DII data देखें—लेकिन पूरा फैसला analysis से लें।"
+      "annotation": "Three simple check marks as abstract shapes, without words",
+      "cta": "Protection मजबूत करें, फिर investing को लगातार रखें"
     }
   ],
-  "caption": "FIIs और DIIs Indian Stock Market में पैसा कैसे move करते हैं? 🌊\n\nFII buying-selling से short term में demand, liquidity और sentiment बदल सकता है। वहीं DIIs—जैसे mutual funds, insurance companies और pension funds—domestic savings और SIP flows के जरिए market को support कर सकते हैं।\n\nलेकिन सिर्फ FII selling देखकर panic selling करना सही नहीं है। Global rates, currency, valuation, profit booking, company earnings और आपके own goals—सभी को साथ में देखना जरूरी है।\n\nFII-DII data एक useful signal है, future market movement की guarantee नहीं।\n\n#TrustPointFin #StockMarket #FII #DII #IndianStockMarket #MutualFunds #SIP #InvestingForBeginners #FinancialLiteracy #PersonalFinance #ShareMarket"
+  "caption": "Investing शुरू करना जरूरी है—but बिना protection के आपका long-term plan एक unexpected medical emergency से derail हो सकता है। Health Insurance और Emergency Fund wealth creation के alternatives नहीं, उसके safeguards हैं। पहले अपनी coverage, exclusions, dependents और liquidity check करें; फिर goals के अनुसार disciplined investing करें। छोटी investment शुरू की जा सकती है, लेकिन protection को अनिश्चितकाल तक delay न करें।\n\n#TrustPointFin #HealthInsurance #PersonalFinance #InvestingBasics #EmergencyFund #FinancialPlanning #MoneyMindset #InsuranceAwareness #IndiaFinance #WealthBuilding"
 }

@@ -150,7 +150,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 134. Avoid These 5 Costly Mistakes When Buying Your First Stock
 - [x] 135. Options Trading 101: Is It Gambling or a Real Strategy?
 - [x] 136. How FIIs and DIIs Move the Indian Stock Market
-- [ ] 137. Why You Need Health Insurance Before You Start Investing
+- [x] 137. Why You Need Health Insurance Before You Start Investing
 - [ ] 138. Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46Rs. 800
 - [ ] 139. Debt vs. Equity: Finding the Right Balance for Your Age
 - [ ] 140. What is the Nifty Bank Index and How Does It Affect the Economy?
