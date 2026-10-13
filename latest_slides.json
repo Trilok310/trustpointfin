@@ -1,92 +1,80 @@
 {
-  "topic": "Why You Need Health Insurance Before You Start Investing",
-  "teaching_objective": "समझाना कि Health Insurance और Emergency Fund आपके Investment Plan की सुरक्षा करते हैं; Investment को पूरी तरह टालना जरूरी नहीं, लेकिन बड़े या नियमित निवेश से पहले financial protection मजबूत करना समझदारी है।",
-  "format": "STORY",
+  "topic": "Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46,800",
+  "teaching_objective": "Beginners को समझाना कि ELSS में Section 80C deduction से tax benefit कैसे calculate होता है, ₹46,800 केवल एक illustration क्यों है, और 3-year lock-in व market risk को समझे बिना investment क्यों नहीं करना चाहिए।",
+  "format": "CALCULATION",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "पहले सुरक्षा, फिर growth",
-      "core_explanation": "• Investment wealth बनाने में मदद करता है।\n• Health Insurance अचानक medical खर्च से बचाता है।\n• दोनों का काम अलग है—एक को दूसरे का replacement न समझें।",
+      "headline": "ELSS: Tax Saving + Market Investment",
+      "core_explanation": "• ELSS एक equity-oriented mutual fund है।\n• Old tax regime में यह Section 80C के तहत eligible हो सकता है।\n• Tax benefit आपकी eligibility और tax liability पर निर्भर करता है।",
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय प्रोफेशनल अपने छोटे पौधे जैसे investment portfolio को पानी दे रहा है, जबकि पीछे एक मजबूत छतरी और घर उसकी रक्षा कर रहे हैं। छतरी Health Insurance और घर Emergency Fund का visual metaphor हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A warm editorial illustration of a young Indian professional in a modern apartment balcony, carefully watering a small growing money tree in a ceramic pot, while a large protective umbrella and a sturdy home shelter shield the plant from dark rain clouds, subtle medical cross-shaped forms integrated into the umbrella design without any symbols or writing, rich storytelling, soft cream paper background, navy blue, teal, coral and mustard palette, hand-drawn textures, clean composition, cinematic lighting, educational finance illustration, no text, no labels, no letters, no numbers, no watermark."
+        "visual_concept": "एक भारतीय युवा निवेशक घर की मेज पर बैठा है; एक तरफ calculator और tax documents, दूसरी तरफ रंगीन mutual fund portfolio, growing plant और stock-market-inspired abstract waves। दृश्य में tax planning और long-term investing का संतुलन दिखे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration with a young Indian professional at a home desk, calculator, blank financial papers, a small growing plant symbolizing investment growth, colorful abstract market waves, a savings jar, soft cream background, navy and teal accents, expressive character, clean educational composition, subtle paper texture, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow from the umbrella to the growing plant: protection enables growth",
-      "cta": "अपना financial foundation check करें"
+      "annotation": "Arrow: पहले tax regime और existing deductions check करें।",
+      "cta": "पहले basics समझें, फिर invest करें।"
     },
     {
       "slide_number": 2,
-      "purpose": "tension",
-      "headline": "एक medical emergency plan बदल सकती है",
-      "core_explanation": "• Hospital bill अचानक आ सकता है।\n• Cash बचत कम हो तो investments बेचने पड़ सकते हैं।\n• गलत समय पर बेचने से long-term compounding प्रभावित हो सकती है।",
+      "purpose": "eligibility",
+      "headline": "₹1.5 लाख की 80C सीमा समझें",
+      "core_explanation": "• Section 80C की combined limit सामान्यतः ₹1.5 लाख है।\n• EPF, PPF, life insurance और अन्य eligible investments भी इसी limit में आ सकते हैं।\n• Limit पहले से पूरी है, तो extra ELSS से अलग deduction नहीं मिलेगा।",
       "visual_spec": {
-        "visual_concept": "वही व्यक्ति अपने investment पौधे को बढ़ते हुए देख रहा है, तभी तेज बारिश और ambulance जैसी दूर की emergency संकेतक रोशनी आती है; वह घबराकर पौधे का गमला उठाने लगता है, जो financial stress को दर्शाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A narrative editorial scene with the same young Indian professional in a cozy apartment, a healthy money tree growing in a pot, sudden storm outside with distant emergency vehicle lights, the person anxiously lifting the pot as if forced to sacrifice future growth for an urgent expense, expressive body language, no visible logos, soft paper grain, navy, teal, coral and mustard colors, layered composition, hand-drawn educational visual, no text, no labels, no letters, no numbers, no watermark."
+        "visual_concept": "एक बड़ा transparent savings basket जिसमें अलग-अलग compartments हैं: salary-linked retirement contribution, long-term savings, insurance shield और equity fund units। Basket भरने पर निवेशक रुककर सोच रहा है, जिससे shared 80C limit का concept दिखे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated scene of a transparent financial basket with several compartments holding symbolic objects: retirement coins, a locked savings box, a protective umbrella, and colorful investment tokens; an Indian investor carefully checks whether the basket is full, visual metaphor for a shared annual tax-deduction limit, cream paper background, teal, coral and mustard palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Small red arrow toward the storm: unexpected timing",
+      "annotation": "Arrow: 80C एक shared bucket है, ELSS की अलग limit नहीं।",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "risk",
-      "headline": "Protection न हो तो risk कहाँ जाता है?",
-      "core_explanation": "• Medical खर्च savings को खा सकता है।\n• Investments जल्दबाज़ी में withdraw या sell हो सकते हैं।\n• लक्ष्य, retirement और family plans delay हो सकते हैं।",
+      "purpose": "calculation",
+      "headline": "₹46,800 कैसे calculate होता है?",
+      "core_explanation": "• Eligible investment: ₹1,50,000\n• Assumed marginal tax rate: 30% → ₹45,000\n• 4% cess: ₹1,800\n• Illustration total: ₹46,800 संभावित tax reduction",
       "visual_spec": {
-        "visual_concept": "एक financial journey को नदी के रूप में दिखाया गया है। व्यक्ति नाव में अपने goals लेकर आगे बढ़ रहा है, लेकिन medical bill का बड़ा whirlpool नाव को investment jars और future goal boxes से दूर खींच रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An imaginative educational illustration of a young Indian couple traveling in a small wooden boat across a calm river, carrying symbolic jars of savings, a home model, a graduation cap and a retirement picnic basket, while a sudden medical emergency whirlpool pulls at the boat, dramatic but approachable storytelling, clear visual metaphor for financial risk, textured paper background, elegant navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
+        "visual_concept": "एक स्पष्ट visual calculation scene: निवेशक तीन बड़े blank calculation cards को क्रम से calculator, coins और percentage-shaped abstract blocks से जोड़ रहा है। अंतिम परिणाम के रूप में चमकता हुआ coin stack दिखे, लेकिन कोई अंक या text न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrated calculation storyboard with an Indian investor arranging three blank cards beside a calculator, a large pile of coins, a subtle percentage-shaped geometric form, and a final highlighted coin stack representing a tax-saving illustration; clean sequential arrows without writing, soft shadows, cream paper texture, navy, green and gold palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Curved arrow around the whirlpool: emergency can redirect the whole journey",
-      "cta": "अपने biggest financial risks पहचानें"
+      "annotation": "यह केवल example है: ₹1.5L × 30% = ₹45,000; फिर 4% cess।",
+      "cta": "अपनी actual tax position से calculation मिलाएँ।"
     },
     {
       "slide_number": 4,
-      "purpose": "solution",
-      "headline": "Health Insurance एक financial shield है",
-      "core_explanation": "• Policy eligible medical खर्च का बड़ा हिस्सा संभाल सकती है।\n• Investments को panic में बेचने की जरूरत कम हो सकती है।\n• Policy terms, exclusions और limits समझना जरूरी है।",
+      "purpose": "caveat",
+      "headline": "₹46,800 हर किसी के लिए नहीं",
+      "core_explanation": "• यह illustration old tax regime और 30% marginal slab मानता है।\n• New tax regime में सामान्यतः 80C deduction उपलब्ध नहीं होती।\n• Actual benefit slab, surcharge, rebate, tax liability और unused 80C space पर निर्भर करेगा।",
       "visual_spec": {
-        "visual_concept": "एक परिवार के सामने translucent protective shield है। बाहर hospital building, falling bills और storm हैं; अंदर family, emergency savings box और growing investment tree सुरक्षित हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich editorial illustration of an Indian family standing safely behind a large translucent protective shield, outside the shield are abstract hospital architecture, falling paper bills and storm clouds, inside are a growing money tree, a small emergency savings box and peaceful family members, the shield should feel like health protection without any written symbols, warm human expressions, sophisticated paper collage texture, navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
+        "visual_concept": "एक forked pathway: एक रास्ता पुराने tax regime को दर्शाता है और दूसरा नए regime को; निवेशक दोनों रास्तों के सामने tax calculator और blank documents देखकर सही route चुनने की कोशिश कर रहा है। कोई लिखित sign या label नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A thoughtful Indian taxpayer standing at a forked pathway, one path represented by a vintage ledger and calculator, the other by a modern digital tax interface with blank screens, both paths leading through different financial gates; visual metaphor for tax-regime choice and eligibility, rich editorial illustration, cream background, navy, orange and teal accents, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow pointing outward from shield: risk transferred, not eliminated",
-      "cta": "Coverage को सिर्फ premium से नहीं, terms से judge करें"
+      "annotation": "Arrow: regime चुनने से पहले tax calculation करें।",
+      "cta": "‘Guaranteed saving’ नहीं—‘possible benefit’ समझें।"
     },
     {
       "slide_number": 5,
-      "purpose": "process",
-      "headline": "Practical order क्या हो सकता है?",
-      "core_explanation": "• Basic Health Insurance और Emergency Fund से शुरुआत करें।\n• फिर goals के अनुसार regular investing बढ़ाएँ।\n• छोटी investment शुरू हो सकती है—protection को अनिश्चितकाल तक delay न करें।",
+      "purpose": "lock_in_and_risk",
+      "headline": "3 साल का lock-in, return की guarantee नहीं",
+      "core_explanation": "• ELSS में minimum lock-in सामान्यतः 3 साल होता है।\n• Lock-in पूरा होना positive return की guarantee नहीं है।\n• Market movements, economy और company performance से value बदल सकती है।",
       "visual_spec": {
-        "visual_concept": "सीढ़ियों जैसा visual journey: पहली सीढ़ी पर umbrella और medical kit, दूसरी पर emergency savings jar, तीसरी पर diversified investment garden, और ऊपर family goal house। व्यक्ति क्रम से ऊपर चढ़ रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A beautifully staged educational story showing a young Indian professional climbing a wide staircase toward a bright future home, first step represented by a protective umbrella and medical kit, second by a secure savings jar, third by a flourishing diversified investment garden, final step by a peaceful family home and sunrise, clear sequence without written labels, soft editorial illustration, textured cream paper, navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
+        "visual_concept": "एक investment plant को तीन seasonal stages से गुजरते हुए दिखाया जाए: धूप, बारिश और तेज हवा। Plant के पास बंद समय-कैप्सूल जैसा lock दिखे; investor धैर्य से देख रहा हो, पर growth निश्चित न दिखाई जाए।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A symbolic investment plant growing through three changing seasons inside a transparent time capsule with a secure lock, sunlight, rain and wind representing market cycles; an Indian investor watches patiently from nearby without certainty of outcome, nuanced educational storytelling, expressive character, cream paper texture, green, blue and amber palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Three upward arrows showing protection, liquidity, then growth",
-      "cta": "आज अपना first protection step तय करें"
+      "annotation": "Arrow: 3-year lock-in = access restriction, return guarantee नहीं।",
+      "cta": "केवल वही पैसा लगाएँ जिसकी तुरंत जरूरत न हो।"
     },
     {
       "slide_number": 6,
-      "purpose": "clarification",
-      "headline": "Employer cover है—क्या वही काफी है?",
-      "core_explanation": "• Sum Insured, room-rent limits और exclusions देखें।\n• Dependents और parents covered हैं या नहीं, जाँचें।\n• Job change या career break में cover समाप्त हो सकता है।",
+      "purpose": "decision_framework",
+      "headline": "Invest करने से पहले 4 checks",
+      "core_explanation": "• अपना tax regime और 80C balance देखें।\n• 3 साल या उससे अधिक का horizon रखें।\n• Equity volatility सहने की क्षमता जाँचें।\n• Fund चुनने से पहले risk, costs और goal समझें।",
       "visual_spec": {
-        "visual_concept": "एक ऑफिस ID card जैसा blank card एक temporary bridge से जुड़ा है, जो job change के समय टूटने लगता है। परिवार दूसरी ओर personal umbrella और backup bridge के साथ सुरक्षित खड़ा है। कोई readable text या logo नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A conceptual editorial illustration of an Indian employee crossing a temporary office bridge with a blank identity card shape, the bridge becomes fragile near a doorway suggesting job change, while the employee's family stands on solid ground with a personal protective umbrella and a backup bridge, visual metaphor for employer insurance continuity, no logos or writing, thoughtful facial expressions, paper collage texture, navy teal coral mustard palette, no text, no labels, no letters, no numbers, no watermark."
+        "visual_concept": "एक beginner investor चार-step staircase चढ़ता है; हर step पर अलग symbolic object है: tax folder, clock, market wave shield और goal compass। ऊपर पहुँचकर वह शांत, informed decision लेता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An Indian beginner investor climbing four sturdy steps, each step represented by a symbolic object: a blank tax folder, a clock, a protective shield against market waves, and a compass pointing toward a personal financial goal; confident but thoughtful mood, rich editorial illustration, cream paper texture, navy, teal, coral and gold accents, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Dashed arrow from temporary bridge to personal umbrella: review your backup",
-      "cta": "Employer policy को personal needs से compare करें"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "action",
-      "headline": "आपकी simple financial checklist",
-      "core_explanation": "• Health Insurance: coverage और exclusions review करें।\n• Emergency Fund: essential expenses के लिए liquidity रखें।\n• Investments: risk profile और goals के अनुसार धीरे-धीरे बढ़ाएँ।",
-      "visual_spec": {
-        "visual_concept": "एक desk-top scene जिसमें परिवार तीन practical objects व्यवस्थित कर रहा है: protective umbrella, emergency cash jar और अलग-अलग पौधों वाला investment garden। पीछे शांत भविष्य का दृश्य है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A polished top-down editorial illustration of an Indian family arranging three practical financial objects on a clean desk: a protective umbrella with subtle healthcare cues, a secure emergency savings jar, and a small diversified garden of different healthy plants representing investments, checklist-like arrangement without any writing, calm optimistic mood, cream paper texture, navy teal coral mustard palette, hand-drawn educational style, no text, no labels, no letters, no numbers, no watermark."
-      },
-      "annotation": "Three simple check marks as abstract shapes, without words",
-      "cta": "Protection मजबूत करें, फिर investing को लगातार रखें"
+      "annotation": "Arrow: tax benefit से पहले suitability और risk check करें।",
+      "cta": "Save नहीं, smart decision करें।"
     }
   ],
-  "caption": "Investing शुरू करना जरूरी है—but बिना protection के आपका long-term plan एक unexpected medical emergency से derail हो सकता है। Health Insurance और Emergency Fund wealth creation के alternatives नहीं, उसके safeguards हैं। पहले अपनी coverage, exclusions, dependents और liquidity check करें; फिर goals के अनुसार disciplined investing करें। छोटी investment शुरू की जा सकती है, लेकिन protection को अनिश्चितकाल तक delay न करें।\n\n#TrustPointFin #HealthInsurance #PersonalFinance #InvestingBasics #EmergencyFund #FinancialPlanning #MoneyMindset #InsuranceAwareness #IndiaFinance #WealthBuilding"
+  "caption": "ELSS से ₹46,800 tax saving? संभव है—लेकिन हर व्यक्ति के लिए नहीं। यह figure एक illustration है: old tax regime, ₹1.5 लाख eligible 80C investment, 30% marginal tax rate और 4% cess मानकर। आपका actual benefit tax regime, slab, rebate, surcharge, total tax liability और पहले से किए गए 80C investments पर निर्भर करेगा। ELSS में सामान्यतः 3 साल का lock-in होता है, लेकिन return guaranteed नहीं होता क्योंकि यह equity-oriented investment है।\n\nInvest करने से पहले अपना 80C balance, tax regime, goal और risk capacity जाँचें।\n\n#ELSS #TaxSaving #Section80C #MutualFunds #PersonalFinance #InvestingBasics #TaxPlanning #TrustPointFin"
 }
