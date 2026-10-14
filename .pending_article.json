@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-13_tax-saving-101-how-elss-mutual",
-  "topic": "Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46Rs. 800",
-  "lineIndex": 153,
+  "job_id": "job_2026-10-14_debt-vs-equity-finding-the-rig",
+  "topic": "Debt vs. Equity: Finding the Right Balance for Your Age",
+  "lineIndex": 154,
   "scheduled_at": null,
-  "started_at": "2026-10-13T10:50:16.790Z",
+  "started_at": "2026-10-14T08:53:28.182Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 0,
+  "article_correction_attempts": 1,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-13T10:51:13.590Z",
-  "filename": "tax-saving-101-how-elss-mutual-funds-can-save-you-46rs-800.html",
-  "title": "Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46,800"
+  "updated_at": "2026-10-14T08:55:15.963Z",
+  "filename": "debt-vs-equity-finding-the-right-balance-for-your-age.html",
+  "title": "Debt vs. Equity: अपनी Age के हिसाब से सही Investment Balance कैसे चुनें?"
 }
