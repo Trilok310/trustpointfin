@@ -152,7 +152,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 136. How FIIs and DIIs Move the Indian Stock Market
 - [x] 137. Why You Need Health Insurance Before You Start Investing
 - [x] 138. Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46Rs. 800
-- [ ] 139. Debt vs. Equity: Finding the Right Balance for Your Age
+- [x] 139. Debt vs. Equity: Finding the Right Balance for Your Age
 - [ ] 140. What is the Nifty Bank Index and How Does It Affect the Economy?
 - [ ] 141. Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?
 - [ ] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth

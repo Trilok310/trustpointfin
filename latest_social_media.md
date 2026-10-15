@@ -1,15 +1,17 @@
 # Social Media Posts
-*Generated for article: "Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46,800"*
+*Generated for article: "Debt vs. Equity: अपनी Age के हिसाब से सही Investment Balance कैसे चुनें?"*
 
 ---
 
 ## 📝 Caption
 
-ELSS से ₹46,800 tax saving? संभव है—लेकिन हर व्यक्ति के लिए नहीं। यह figure एक illustration है: old tax regime, ₹1.5 लाख eligible 80C investment, 30% marginal tax rate और 4% cess मानकर। आपका actual benefit tax regime, slab, rebate, surcharge, total tax liability और पहले से किए गए 80C investments पर निर्भर करेगा। ELSS में सामान्यतः 3 साल का lock-in होता है, लेकिन return guaranteed नहीं होता क्योंकि यह equity-oriented investment है।
+Age के बराबर Debt रखना एक आसान thumb rule हो सकता है—लेकिन यह हर investor के लिए सही formula नहीं है। सही Debt-Equity balance चुनने से पहले अपने goals, time horizon, income stability, emergency fund, dependents और risk tolerance को समझें।
 
-Invest करने से पहले अपना 80C balance, tax regime, goal और risk capacity जाँचें।
+Short-term जरूरतों के लिए stability और liquidity जरूरी हो सकती है, जबकि long-term goals में diversified Equity growth और inflation से बचाव में मदद कर सकती है। Allocation को समय-समय पर review और rebalance करना भी उतना ही जरूरी है।
 
-#ELSS #TaxSaving #Section80C #MutualFunds #PersonalFinance #InvestingBasics #TaxPlanning #TrustPointFin
+यह educational content है, personalised investment advice नहीं।
+
+#TrustPointFin #DebtVsEquity #AssetAllocation #InvestingBasics #PersonalFinance #FinancialPlanning #MutualFunds #RetirementPlanning #HindiFinance #MoneyManagement
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/tax-saving-101-how-elss-mutual-funds-can-save-you-46rs-800.html*
+*Article URL: https://trilok310.github.io/trustpointfin/debt-vs-equity-finding-the-right-balance-for-your-age.html*

@@ -1,80 +1,92 @@
 {
-  "topic": "Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46,800",
-  "teaching_objective": "Beginners को समझाना कि ELSS में Section 80C deduction से tax benefit कैसे calculate होता है, ₹46,800 केवल एक illustration क्यों है, और 3-year lock-in व market risk को समझे बिना investment क्यों नहीं करना चाहिए।",
-  "format": "CALCULATION",
+  "topic": "Debt vs. Equity: अपनी Age के हिसाब से सही Investment Balance कैसे चुनें?",
+  "teaching_objective": "Learners समझें कि age-based Debt-Equity rule केवल starting point है; सही allocation goals, time horizon, income stability, dependents, emergency fund और risk tolerance देखकर तय किया जाता है.",
+  "format": "MYTH_VS_REALITY",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "ELSS: Tax Saving + Market Investment",
-      "core_explanation": "• ELSS एक equity-oriented mutual fund है।\n• Old tax regime में यह Section 80C के तहत eligible हो सकता है।\n• Tax benefit आपकी eligibility और tax liability पर निर्भर करता है।",
+      "headline": "Age बढ़े, तो Debt अपने-आप बढ़े?",
+      "core_explanation": "• Age एक useful starting point है, final formula नहीं।\n• सही mix आपके goals और risk capacity पर निर्भर करता है।",
       "visual_spec": {
-        "visual_concept": "एक भारतीय युवा निवेशक घर की मेज पर बैठा है; एक तरफ calculator और tax documents, दूसरी तरफ रंगीन mutual fund portfolio, growing plant और stock-market-inspired abstract waves। दृश्य में tax planning और long-term investing का संतुलन दिखे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration with a young Indian professional at a home desk, calculator, blank financial papers, a small growing plant symbolizing investment growth, colorful abstract market waves, a savings jar, soft cream background, navy and teal accents, expressive character, clean educational composition, subtle paper texture, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक भारतीय investor जीवन के अलग-अलग चरणों के crossroads पर खड़ा है—युवा अवस्था में दूर दिखता हुआ growth-oriented रास्ता, मध्य आयु में परिवार और घर के goals, और retirement phase में शांत लेकिन लंबा रास्ता। उसके हाथ में दो संतुलित तराजू हैं, जिनमें एक ओर स्थिर bond-like objects और दूसरी ओर growing plants तथा market-inspired abstract shapes हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, Indian family financial planning scene, a thoughtful Indian investor standing at a crossroads representing different life stages, subtle abstract debt symbols like government bonds, fixed deposits and sturdy bricks on one side, equity symbols like growing trees, diversified market shapes and upward organic forms on the other side, balanced composition, expressive characters, soft shadows, navy blue, teal, coral and mustard palette, clean hand-drawn textures, no letters, no numbers, no labels, no charts with text."
       },
-      "annotation": "Arrow: पहले tax regime और existing deductions check करें।",
-      "cta": "पहले basics समझें, फिर invest करें।"
+      "annotation": "Arrow: “Age = starting point, decision नहीं”",
+      "cta": "पहले अपनी situation समझें"
     },
     {
       "slide_number": 2,
-      "purpose": "eligibility",
-      "headline": "₹1.5 लाख की 80C सीमा समझें",
-      "core_explanation": "• Section 80C की combined limit सामान्यतः ₹1.5 लाख है।\n• EPF, PPF, life insurance और अन्य eligible investments भी इसी limit में आ सकते हैं।\n• Limit पहले से पूरी है, तो extra ELSS से अलग deduction नहीं मिलेगा।",
+      "purpose": "myth",
+      "headline": "Myth: Age के बराबर Debt रखो",
+      "core_explanation": "• यह simple thumb rule हो सकता है।\n• लेकिन हर 35-year-old या 60-year-old investor की जरूरत समान नहीं होती।",
       "visual_spec": {
-        "visual_concept": "एक बड़ा transparent savings basket जिसमें अलग-अलग compartments हैं: salary-linked retirement contribution, long-term savings, insurance shield और equity fund units। Basket भरने पर निवेशक रुककर सोच रहा है, जिससे shared 80C limit का concept दिखे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated scene of a transparent financial basket with several compartments holding symbolic objects: retirement coins, a locked savings box, a protective umbrella, and colorful investment tokens; an Indian investor carefully checks whether the basket is full, visual metaphor for a shared annual tax-deduction limit, cream paper background, teal, coral and mustard palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "दो समान उम्र के भारतीय investors को एक split-screen scene में दिखाया जाए। पहला व्यक्ति stable office setting, emergency savings का संकेत और दूर retirement horizon के साथ relatively growth-friendly posture में है। दूसरा व्यक्ति irregular freelance work, निकट घर खरीदने का goal और चिंतित मुद्रा में है। दोनों की उम्र समान दिखे, लेकिन financial context बहुत अलग हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen editorial illustration of two Indian adults of the same apparent age living very different financial realities, left side stable salaried professional with calm posture, family safety net and a long open road toward the future, right side freelance worker with uneven income cues, near-term home purchase dream and cautious posture, visual contrast without any written labels, rich storytelling, paper collage textures, warm cream background, navy, teal, coral and mustard accents, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "Arrow: 80C एक shared bucket है, ELSS की अलग limit नहीं।",
-      "cta": null
+      "annotation": "Circle both characters: “Same age ≠ same allocation”",
+      "cta": "Thumb rule को blindly follow न करें"
     },
     {
       "slide_number": 3,
-      "purpose": "calculation",
-      "headline": "₹46,800 कैसे calculate होता है?",
-      "core_explanation": "• Eligible investment: ₹1,50,000\n• Assumed marginal tax rate: 30% → ₹45,000\n• 4% cess: ₹1,800\n• Illustration total: ₹46,800 संभावित tax reduction",
+      "purpose": "comparison",
+      "headline": "Debt और Equity का काम अलग है",
+      "core_explanation": "• Debt portfolio में stability और liquidity ला सकता है।\n• Equity long-term growth और inflation-beating potential दे सकती है।\n• दोनों का role आपके goal के अनुसार बदलता है।",
       "visual_spec": {
-        "visual_concept": "एक स्पष्ट visual calculation scene: निवेशक तीन बड़े blank calculation cards को क्रम से calculator, coins और percentage-shaped abstract blocks से जोड़ रहा है। अंतिम परिणाम के रूप में चमकता हुआ coin stack दिखे, लेकिन कोई अंक या text न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrated calculation storyboard with an Indian investor arranging three blank cards beside a calculator, a large pile of coins, a subtle percentage-shaped geometric form, and a final highlighted coin stack representing a tax-saving illustration; clean sequential arrows without writing, soft shadows, cream paper texture, navy, green and gold palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक मजबूत पुल के दो हिस्से: Debt side पर शांत नींव, सुरक्षित घर, पानी का reservoir और steady lanterns; Equity side पर growing trees, sunrise और दूर तक जाती ऊंची road। बीच में investor पुल पार कर रहा है, जिससे balance और complementary roles का metaphor बने।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich metaphorical illustration of a bridge built from two complementary sides, one side stable and grounded with strong foundations, a secure home, a calm reservoir and steady lanterns representing debt, the other side filled with growing trees, sunrise, diversified abstract growth forms and a long road representing equity, an Indian investor walking carefully across the bridge, elegant educational infographic composition without text, textured paper, navy blue, teal, coral, mustard and cream palette, no letters, no numbers, no labels."
       },
-      "annotation": "यह केवल example है: ₹1.5L × 30% = ₹45,000; फिर 4% cess।",
-      "cta": "अपनी actual tax position से calculation मिलाएँ।"
+      "annotation": "Two arrows: “Stability” और “Growth”",
+      "cta": "हर asset का role पहचानें"
     },
     {
       "slide_number": 4,
-      "purpose": "caveat",
-      "headline": "₹46,800 हर किसी के लिए नहीं",
-      "core_explanation": "• यह illustration old tax regime और 30% marginal slab मानता है।\n• New tax regime में सामान्यतः 80C deduction उपलब्ध नहीं होती।\n• Actual benefit slab, surcharge, rebate, tax liability और unused 80C space पर निर्भर करेगा।",
+      "purpose": "process",
+      "headline": "Allocation चुनने के 4 सवाल",
+      "core_explanation": "• पैसा कब चाहिए?\n• Income कितनी stable है?\n• Emergency fund और dependents की स्थिति क्या है?\n• Market गिरने पर आप कितना risk सह सकते हैं?",
       "visual_spec": {
-        "visual_concept": "एक forked pathway: एक रास्ता पुराने tax regime को दर्शाता है और दूसरा नए regime को; निवेशक दोनों रास्तों के सामने tax calculator और blank documents देखकर सही route चुनने की कोशिश कर रहा है। कोई लिखित sign या label नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A thoughtful Indian taxpayer standing at a forked pathway, one path represented by a vintage ledger and calculator, the other by a modern digital tax interface with blank screens, both paths leading through different financial gates; visual metaphor for tax-regime choice and eligibility, rich editorial illustration, cream background, navy, orange and teal accents, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक Indian couple financial planning table पर बैठा है। चार visual stations उनके चार सवालों को दिखाते हैं: calendar और near/far road for time horizon, stable and uneven income streams, emergency suitcase and family dependents, तथा stormy market scene के सामने investor का emotional response। कोई लिखित signage नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed educational scene of an Indian couple planning finances around a wooden table, four visual stations arranged naturally: a calendar and short versus long road for time horizon, stable salary stream versus uneven freelance stream, emergency suitcase and family members for financial responsibilities, and a dramatic market storm outside a window testing emotional risk tolerance, expressive faces, clear storytelling, hand-drawn paper texture, soft shadows, cream background with navy, teal, coral and mustard, no letters, no numbers, no labels."
       },
-      "annotation": "Arrow: regime चुनने से पहले tax calculation करें।",
-      "cta": "‘Guaranteed saving’ नहीं—‘possible benefit’ समझें।"
+      "annotation": "Four small arrows pointing to: Goal, Income, Safety, Risk",
+      "cta": "इन 4 सवालों के जवाब लिखें"
     },
     {
       "slide_number": 5,
-      "purpose": "lock_in_and_risk",
-      "headline": "3 साल का lock-in, return की guarantee नहीं",
-      "core_explanation": "• ELSS में minimum lock-in सामान्यतः 3 साल होता है।\n• Lock-in पूरा होना positive return की guarantee नहीं है।\n• Market movements, economy और company performance से value बदल सकती है।",
+      "purpose": "timeline",
+      "headline": "Goal जितना पास, volatility उतनी कम",
+      "core_explanation": "• अगले कुछ वर्षों के goals का पैसा high-volatility Equity में रखने से बचें।\n• Long-term goals में diversified Equity का role बढ़ सकता है।\n• Time horizon allocation को age से ज्यादा meaningful बना सकता है।",
       "visual_spec": {
-        "visual_concept": "एक investment plant को तीन seasonal stages से गुजरते हुए दिखाया जाए: धूप, बारिश और तेज हवा। Plant के पास बंद समय-कैप्सूल जैसा lock दिखे; investor धैर्य से देख रहा हो, पर growth निश्चित न दिखाई जाए।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A symbolic investment plant growing through three changing seasons inside a transparent time capsule with a secure lock, sunlight, rain and wind representing market cycles; an Indian investor watches patiently from nearby without certainty of outcome, nuanced educational storytelling, expressive character, cream paper texture, green, blue and amber palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक visual timeline जैसा landscape: पास में घर की down payment और education fee के सुरक्षित boxes, बीच में medium-term family goal, और बहुत दूर retirement horizon के पास growing diversified garden। रास्ते के पास market waves हैं, लेकिन near-term goals को शांत shelter में रखा गया है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Wide cinematic educational landscape showing financial goals at different distances along a path, near foreground has a secure home down-payment box and education fund protected inside a calm shelter, middle distance shows a family goal with moderate movement, far horizon shows retirement represented by a peaceful garden and long-growing trees, market waves visible but kept away from near-term safety zone, Indian family characters, rich paper collage, no letters, no numbers, no labels, no typography, navy teal coral mustard and cream colors."
       },
-      "annotation": "Arrow: 3-year lock-in = access restriction, return guarantee नहीं।",
-      "cta": "केवल वही पैसा लगाएँ जिसकी तुरंत जरूरत न हो।"
+      "annotation": "Arrow from near goal to safe shelter: “Short horizon = lower volatility”",
+      "cta": "हर goal का अलग bucket बनाएं"
     },
     {
       "slide_number": 6,
-      "purpose": "decision_framework",
-      "headline": "Invest करने से पहले 4 checks",
-      "core_explanation": "• अपना tax regime और 80C balance देखें।\n• 3 साल या उससे अधिक का horizon रखें।\n• Equity volatility सहने की क्षमता जाँचें।\n• Fund चुनने से पहले risk, costs और goal समझें।",
+      "purpose": "risk",
+      "headline": "Retirement के बाद Equity पूरी तरह बंद?",
+      "core_explanation": "• जरूरी नहीं—retirement कई दशकों तक चल सकती है।\n• Inflation से लड़ने के लिए कुछ long-term growth exposure उपयोगी हो सकता है।\n• अगले कुछ वर्षों के खर्च relatively liquid और lower-volatility assets में रखें।",
       "visual_spec": {
-        "visual_concept": "एक beginner investor चार-step staircase चढ़ता है; हर step पर अलग symbolic object है: tax folder, clock, market wave shield और goal compass। ऊपर पहुँचकर वह शांत, informed decision लेता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An Indian beginner investor climbing four sturdy steps, each step represented by a symbolic object: a blank tax folder, a clock, a protective shield against market waves, and a compass pointing toward a personal financial goal; confident but thoughtful mood, rich editorial illustration, cream paper texture, navy, teal, coral and gold accents, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक retired Indian couple garden में बैठा है। पास में अगले वर्षों के खर्च के लिए सुरक्षित, आसानी से उपलब्ध resources रखे हैं; पीछे लंबी दूरी तक फैला diversified orchard inflation और longevity का metaphor है। Couple शांत है, लेकिन पूरी तरह risk-free नहीं—संतुलित और staged planning का संकेत।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm retirement planning illustration with an Indian retired couple in a peaceful garden, nearby secure liquid resources symbolized by a small accessible basket and calm water source for near-term expenses, behind them a diversified orchard growing toward a long horizon to represent inflation protection and longevity, subtle healthcare and family support cues, balanced not overly risk-free mood, rich hand-drawn editorial style, cream paper, navy teal coral mustard palette, no letters, no numbers, no labels."
       },
-      "annotation": "Arrow: tax benefit से पहले suitability और risk check करें।",
-      "cta": "Save नहीं, smart decision करें।"
+      "annotation": "Foreground arrow: “Near-term expenses” | Background arrow: “Long-term growth”",
+      "cta": "Retirement को short और long buckets में सोचें"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "action",
+      "headline": "Best allocation वही, जिसे आप निभा सकें",
+      "core_explanation": "• Allocation तय करके समय-समय पर review और rebalance करें।\n• Income, goals, dependents या risk tolerance बदलें तो mix भी बदल सकता है।\n• Personalised advice के लिए qualified financial professional से बात करें।",
+      "visual_spec": {
+        "visual_concept": "एक family financial dashboard जैसा physical scene: investor समय-समय पर तराजू को gently rebalance कर रहा है। पीछे life events के छोटे illustrated moments—नई नौकरी, बच्चा, घर, retirement—दिखते हैं। तराजू rigid नहीं, adaptable है; अंतिम भाव confidence और discipline का हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich final editorial illustration of an Indian investor gently rebalancing a large financial balance scale between stable assets and growing assets, with a supportive family nearby and subtle life-stage moments in the background such as new job, child, home and retirement, visual sense of periodic review and adaptability, confident calm expressions, sophisticated paper collage, navy blue, teal, coral, mustard and cream palette, no letters, no numbers, no labels, no typography."
+      },
+      "annotation": "Circular arrow: “Review → Rebalance → Repeat”",
+      "cta": "आज अपना goal-wise allocation review करें"
     }
   ],
-  "caption": "ELSS से ₹46,800 tax saving? संभव है—लेकिन हर व्यक्ति के लिए नहीं। यह figure एक illustration है: old tax regime, ₹1.5 लाख eligible 80C investment, 30% marginal tax rate और 4% cess मानकर। आपका actual benefit tax regime, slab, rebate, surcharge, total tax liability और पहले से किए गए 80C investments पर निर्भर करेगा। ELSS में सामान्यतः 3 साल का lock-in होता है, लेकिन return guaranteed नहीं होता क्योंकि यह equity-oriented investment है।\n\nInvest करने से पहले अपना 80C balance, tax regime, goal और risk capacity जाँचें।\n\n#ELSS #TaxSaving #Section80C #MutualFunds #PersonalFinance #InvestingBasics #TaxPlanning #TrustPointFin"
+  "caption": "Age के बराबर Debt रखना एक आसान thumb rule हो सकता है—लेकिन यह हर investor के लिए सही formula नहीं है। सही Debt-Equity balance चुनने से पहले अपने goals, time horizon, income stability, emergency fund, dependents और risk tolerance को समझें।\n\nShort-term जरूरतों के लिए stability और liquidity जरूरी हो सकती है, जबकि long-term goals में diversified Equity growth और inflation से बचाव में मदद कर सकती है। Allocation को समय-समय पर review और rebalance करना भी उतना ही जरूरी है।\n\nयह educational content है, personalised investment advice नहीं।\n\n#TrustPointFin #DebtVsEquity #AssetAllocation #InvestingBasics #PersonalFinance #FinancialPlanning #MutualFunds #RetirementPlanning #HindiFinance #MoneyManagement"
 }
