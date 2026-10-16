@@ -1,92 +1,103 @@
 {
-  "topic": "Debt vs. Equity: अपनी Age के हिसाब से सही Investment Balance कैसे चुनें?",
-  "teaching_objective": "Learners समझें कि age-based Debt-Equity rule केवल starting point है; सही allocation goals, time horizon, income stability, dependents, emergency fund और risk tolerance देखकर तय किया जाता है.",
-  "format": "MYTH_VS_REALITY",
+  "topic": "Nifty Bank Index क्या है और यह Economy को कैसे प्रभावित करता है?",
+  "teaching_objective": "Learners समझें कि Nifty Bank एक banking-sector index है, जो चुनिंदा liquid और representative bank stocks की collective performance दिखाता है; इसके movements को interest rates, credit growth, earnings और asset quality के context में पढ़ना चाहिए—इसे पूरी Economy का अकेला report card नहीं मानना चाहिए।",
+  "format": "MARKET_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Age बढ़े, तो Debt अपने-आप बढ़े?",
-      "core_explanation": "• Age एक useful starting point है, final formula नहीं।\n• सही mix आपके goals और risk capacity पर निर्भर करता है।",
+      "headline": "Nifty Bank: बैंकों का performance meter",
+      "core_explanation": [
+        "Nifty Bank, banking sector के प्रमुख listed stocks का index है।",
+        "यह पूरे stock market या पूरी Economy को अकेले represent नहीं करता।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय investor जीवन के अलग-अलग चरणों के crossroads पर खड़ा है—युवा अवस्था में दूर दिखता हुआ growth-oriented रास्ता, मध्य आयु में परिवार और घर के goals, और retirement phase में शांत लेकिन लंबा रास्ता। उसके हाथ में दो संतुलित तराजू हैं, जिनमें एक ओर स्थिर bond-like objects और दूसरी ओर growing plants तथा market-inspired abstract shapes हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm cream paper background, Indian family financial planning scene, a thoughtful Indian investor standing at a crossroads representing different life stages, subtle abstract debt symbols like government bonds, fixed deposits and sturdy bricks on one side, equity symbols like growing trees, diversified market shapes and upward organic forms on the other side, balanced composition, expressive characters, soft shadows, navy blue, teal, coral and mustard palette, clean hand-drawn textures, no letters, no numbers, no labels, no charts with text."
+        "visual_concept": "एक व्यस्त भारतीय शहर का aerial दृश्य, जिसमें अलग-अलग आकार की modern bank buildings एक circular glass dashboard से जुड़ी हों। Dashboard पर ऊपर जाती और नीचे आती abstract market lines हों, लेकिन कोई संख्या, अक्षर या label न हो। सामने एक युवा learner magnifying glass से banking network को देख रहा हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration, warm ivory paper background, deep navy ink outlines, teal and saffron accents, hand-drawn textures, Indian urban setting, diverse young learner observing a connected network of bank buildings through a circular glass market dashboard, subtle upward and downward abstract line movement, polished educational infographic composition, cinematic soft shadows, actual characters and objects, no readable writing anywhere, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
       },
-      "annotation": "Arrow: “Age = starting point, decision नहीं”",
-      "cta": "पहले अपनी situation समझें"
+      "annotation": "Arrow: “Sector snapshot”",
+      "cta": "पहले index को पहचानिए"
     },
     {
       "slide_number": 2,
-      "purpose": "myth",
-      "headline": "Myth: Age के बराबर Debt रखो",
-      "core_explanation": "• यह simple thumb rule हो सकता है।\n• लेकिन हर 35-year-old या 60-year-old investor की जरूरत समान नहीं होती।",
+      "purpose": "definition",
+      "headline": "यह index बनता कैसे है?",
+      "core_explanation": [
+        "इसमें eligible और liquid banking stocks शामिल होते हैं।",
+        "Constituents और weights समय के साथ methodology के अनुसार बदल सकते हैं।",
+        "Latest list और weights के लिए NSE Indices की official factsheet देखें।"
+      ],
       "visual_spec": {
-        "visual_concept": "दो समान उम्र के भारतीय investors को एक split-screen scene में दिखाया जाए। पहला व्यक्ति stable office setting, emergency savings का संकेत और दूर retirement horizon के साथ relatively growth-friendly posture में है। दूसरा व्यक्ति irregular freelance work, निकट घर खरीदने का goal और चिंतित मुद्रा में है। दोनों की उम्र समान दिखे, लेकिन financial context बहुत अलग हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen editorial illustration of two Indian adults of the same apparent age living very different financial realities, left side stable salaried professional with calm posture, family safety net and a long open road toward the future, right side freelance worker with uneven income cues, near-term home purchase dream and cautious posture, visual contrast without any written labels, rich storytelling, paper collage textures, warm cream background, navy, teal, coral and mustard accents, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक curator-style scene: एक analyst बड़े transparent circular tray में अलग-अलग bank buildings के miniature models चुन रहा है। कुछ models बड़े, कुछ छोटे; एक balance scale market representation और liquidity को visually दर्शाए। पीछे official-looking but completely blank papers और a magnifying lens हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Detailed hand-illustrated editorial scene on textured cream paper, an Indian financial analyst carefully selecting miniature bank buildings from a transparent circular index tray, varied building sizes suggesting different weights, a balanced scale symbolizing eligibility and liquidity, magnifying glass, blank documents with no markings, organized visual hierarchy, navy, teal, coral and mustard palette, sophisticated classroom infographic feel, no readable writing, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
       },
-      "annotation": "Circle both characters: “Same age ≠ same allocation”",
-      "cta": "Thumb rule को blindly follow न करें"
+      "annotation": "Arrow: “Selection बदल सकती है”",
+      "cta": "Fixed list मानकर मत चलिए"
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "Debt और Equity का काम अलग है",
-      "core_explanation": "• Debt portfolio में stability और liquidity ला सकता है।\n• Equity long-term growth और inflation-beating potential दे सकती है।\n• दोनों का role आपके goal के अनुसार बदलता है।",
+      "purpose": "calculation",
+      "headline": "Index level क्या दिखाता है?",
+      "core_explanation": [
+        "Index एक basket की combined movement को summarize करता है।",
+        "बड़े market-weight वाले stocks का असर ज्यादा हो सकता है।",
+        "यह किसी एक bank के share price के बराबर नहीं है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक मजबूत पुल के दो हिस्से: Debt side पर शांत नींव, सुरक्षित घर, पानी का reservoir और steady lanterns; Equity side पर growing trees, sunrise और दूर तक जाती ऊंची road। बीच में investor पुल पार कर रहा है, जिससे balance और complementary roles का metaphor बने।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich metaphorical illustration of a bridge built from two complementary sides, one side stable and grounded with strong foundations, a secure home, a calm reservoir and steady lanterns representing debt, the other side filled with growing trees, sunrise, diversified abstract growth forms and a long road representing equity, an Indian investor walking carefully across the bridge, elegant educational infographic composition without text, textured paper, navy blue, teal, coral, mustard and cream palette, no letters, no numbers, no labels."
+        "visual_concept": "एक transparent weighing machine पर कई bank-shaped blocks रखे हों। बड़े blocks का platform पर प्रभाव ज्यादा दिखाई दे, जबकि छोटे blocks भी basket का हिस्सा हों। एक market gauge collective movement दिखाए, बिना किसी printed scale या digits के।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Illustrated financial learning metaphor, transparent weighing machine holding multiple stylized bank-shaped blocks of different sizes, larger blocks visibly influencing a central market gauge, smaller blocks contributing to the same basket, Indian finance classroom atmosphere, clean layered composition, tactile paper grain, deep blue outlines with teal and amber highlights, no chart labels, no digits, no letters, no logos, no readable text, no signage. NO TEXT."
       },
-      "annotation": "Two arrows: “Stability” और “Growth”",
-      "cta": "हर asset का role पहचानें"
+      "annotation": "Arrow: “Weight matters”",
+      "cta": "Basket effect समझिए"
     },
     {
       "slide_number": 4,
-      "purpose": "process",
-      "headline": "Allocation चुनने के 4 सवाल",
-      "core_explanation": "• पैसा कब चाहिए?\n• Income कितनी stable है?\n• Emergency fund और dependents की स्थिति क्या है?\n• Market गिरने पर आप कितना risk सह सकते हैं?",
+      "purpose": "drivers",
+      "headline": "Rates और credit growth का connection",
+      "core_explanation": [
+        "Interest rates बदलने से banks की lending, funding और margins प्रभावित हो सकते हैं।",
+        "Credit growth तेज हो तो loans और business activity को support मिल सकता है।",
+        "लेकिन impact हमेशा immediate या one-directional नहीं होता।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक Indian couple financial planning table पर बैठा है। चार visual stations उनके चार सवालों को दिखाते हैं: calendar और near/far road for time horizon, stable and uneven income streams, emergency suitcase and family dependents, तथा stormy market scene के सामने investor का emotional response। कोई लिखित signage नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed educational scene of an Indian couple planning finances around a wooden table, four visual stations arranged naturally: a calendar and short versus long road for time horizon, stable salary stream versus uneven freelance stream, emergency suitcase and family members for financial responsibilities, and a dramatic market storm outside a window testing emotional risk tolerance, expressive faces, clear storytelling, hand-drawn paper texture, soft shadows, cream background with navy, teal, coral and mustard, no letters, no numbers, no labels."
+        "visual_concept": "एक split-scene banking ecosystem: बाईं ओर central bank-inspired building से rate dial नियंत्रित हो रहा है; बीच में bank manager loan applications देख रहा है; दाईं ओर small businesses, homes और factories को loans से ऊर्जा मिल रही है। Water pipes और valves money flow का metaphor हों, बिना किसी text के।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich split-scene illustration showing an Indian banking ecosystem, a dignified central financial institution building with a blank circular rate dial, bank manager reviewing loan folders, money-flow pipes with open and partly closed valves connecting to a small shop, family home, and factory, hopeful but nuanced mood, diverse characters, editorial educational storytelling, cream paper texture, navy teal saffron palette, no writing, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
       },
-      "annotation": "Four small arrows pointing to: Goal, Income, Safety, Risk",
-      "cta": "इन 4 सवालों के जवाब लिखें"
+      "annotation": "Arrow: “Rates → lending conditions”",
+      "cta": "एक factor से पूरी कहानी न बनाएं"
     },
     {
       "slide_number": 5,
-      "purpose": "timeline",
-      "headline": "Goal जितना पास, volatility उतनी कम",
-      "core_explanation": "• अगले कुछ वर्षों के goals का पैसा high-volatility Equity में रखने से बचें।\n• Long-term goals में diversified Equity का role बढ़ सकता है।\n• Time horizon allocation को age से ज्यादा meaningful बना सकता है।",
+      "purpose": "risk",
+      "headline": "NPA: growth के साथ quality भी",
+      "core_explanation": [
+        "Loan growth अच्छी खबर हो सकती है, पर repayment quality भी जरूरी है।",
+        "NPA बढ़ने पर provisions, profits और investor confidence पर दबाव आ सकता है।",
+        "इसलिए index को asset quality के साथ पढ़ें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक visual timeline जैसा landscape: पास में घर की down payment और education fee के सुरक्षित boxes, बीच में medium-term family goal, और बहुत दूर retirement horizon के पास growing diversified garden। रास्ते के पास market waves हैं, लेकिन near-term goals को शांत shelter में रखा गया है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Wide cinematic educational landscape showing financial goals at different distances along a path, near foreground has a secure home down-payment box and education fund protected inside a calm shelter, middle distance shows a family goal with moderate movement, far horizon shows retirement represented by a peaceful garden and long-growing trees, market waves visible but kept away from near-term safety zone, Indian family characters, rich paper collage, no letters, no numbers, no labels, no typography, navy teal coral mustard and cream colors."
+        "visual_concept": "एक bank bridge दो तरफ से supported है: एक तरफ नए loans से बढ़ता green tree और construction activity, दूसरी तरफ cracked loan folders से bridge में छोटी दरारें। Risk manager repair tools और shield लेकर quality check कर रहा हो। दृश्य balanced हो, डरावना नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Sophisticated financial risk metaphor, a strong bridge shaped like a bank connecting growing businesses and households, one side with healthy green growth and new lending, the other side with a few cracked loan folders causing small visible bridge fractures, careful risk manager holding a shield and repair tools, balanced non-alarmist composition, hand-drawn ink, textured paper, teal green navy and muted coral palette, no text, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
       },
-      "annotation": "Arrow from near goal to safe shelter: “Short horizon = lower volatility”",
-      "cta": "हर goal का अलग bucket बनाएं"
+      "annotation": "Arrow: “Growth + quality”",
+      "cta": "NPA को ignore मत कीजिए"
     },
     {
       "slide_number": 6,
-      "purpose": "risk",
-      "headline": "Retirement के बाद Equity पूरी तरह बंद?",
-      "core_explanation": "• जरूरी नहीं—retirement कई दशकों तक चल सकती है।\n• Inflation से लड़ने के लिए कुछ long-term growth exposure उपयोगी हो सकता है।\n• अगले कुछ वर्षों के खर्च relatively liquid और lower-volatility assets में रखें।",
+      "purpose": "interpretation",
+      "headline": "Nifty Bank बढ़े तो Economy मजबूत?",
+      "core_explanation": [
+        "ज़रूरी नहीं—index future bank earnings और investor expectations दिखा सकता है।",
+        "Economy समझने के लिए GDP, inflation, jobs, consumption, industry और government finances भी देखें।",
+        "Index एक useful signal है, पूरी तस्वीर नहीं।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक retired Indian couple garden में बैठा है। पास में अगले वर्षों के खर्च के लिए सुरक्षित, आसानी से उपलब्ध resources रखे हैं; पीछे लंबी दूरी तक फैला diversified orchard inflation और longevity का metaphor है। Couple शांत है, लेकिन पूरी तरह risk-free नहीं—संतुलित और staged planning का संकेत।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm retirement planning illustration with an Indian retired couple in a peaceful garden, nearby secure liquid resources symbolized by a small accessible basket and calm water source for near-term expenses, behind them a diversified orchard growing toward a long horizon to represent inflation protection and longevity, subtle healthcare and family support cues, balanced not overly risk-free mood, rich hand-drawn editorial style, cream paper, navy teal coral mustard palette, no letters, no numbers, no labels."
+        "visual_concept": "एक learner विशाल observation deck पर खड़ा है। सामने Nifty Bank का glowing banking sector signal है, लेकिन उसके चारों ओर wider economy के दृश्य—factory, families shopping, employment scene, transport, farms और government infrastructure—एक mosaic panorama बनाते हैं। Learner binoculars से पूरी landscape देख रहा हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Grand closing educational illustration, a young Indian learner on an observation deck viewing a glowing banking-sector signal in the foreground while a broad economic panorama stretches behind it: factory, working people, families consuming, transport, farms, public infrastructure and stable homes, visual metaphor that one signal is not the whole economy, rich layered storytelling, warm paper grain, navy teal saffron and coral accents, no written symbols, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
       },
-      "annotation": "Foreground arrow: “Near-term expenses” | Background arrow: “Long-term growth”",
-      "cta": "Retirement को short और long buckets में सोचें"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "action",
-      "headline": "Best allocation वही, जिसे आप निभा सकें",
-      "core_explanation": "• Allocation तय करके समय-समय पर review और rebalance करें।\n• Income, goals, dependents या risk tolerance बदलें तो mix भी बदल सकता है।\n• Personalised advice के लिए qualified financial professional से बात करें।",
-      "visual_spec": {
-        "visual_concept": "एक family financial dashboard जैसा physical scene: investor समय-समय पर तराजू को gently rebalance कर रहा है। पीछे life events के छोटे illustrated moments—नई नौकरी, बच्चा, घर, retirement—दिखते हैं। तराजू rigid नहीं, adaptable है; अंतिम भाव confidence और discipline का हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich final editorial illustration of an Indian investor gently rebalancing a large financial balance scale between stable assets and growing assets, with a supportive family nearby and subtle life-stage moments in the background such as new job, child, home and retirement, visual sense of periodic review and adaptability, confident calm expressions, sophisticated paper collage, navy blue, teal, coral, mustard and cream palette, no letters, no numbers, no labels, no typography."
-      },
-      "annotation": "Circular arrow: “Review → Rebalance → Repeat”",
-      "cta": "आज अपना goal-wise allocation review करें"
+      "annotation": "Arrow: “Signal, not full report card”",
+      "cta": "अब index को context के साथ पढ़िए"
     }
   ],
-  "caption": "Age के बराबर Debt रखना एक आसान thumb rule हो सकता है—लेकिन यह हर investor के लिए सही formula नहीं है। सही Debt-Equity balance चुनने से पहले अपने goals, time horizon, income stability, emergency fund, dependents और risk tolerance को समझें।\n\nShort-term जरूरतों के लिए stability और liquidity जरूरी हो सकती है, जबकि long-term goals में diversified Equity growth और inflation से बचाव में मदद कर सकती है। Allocation को समय-समय पर review और rebalance करना भी उतना ही जरूरी है।\n\nयह educational content है, personalised investment advice नहीं।\n\n#TrustPointFin #DebtVsEquity #AssetAllocation #InvestingBasics #PersonalFinance #FinancialPlanning #MutualFunds #RetirementPlanning #HindiFinance #MoneyManagement"
+  "caption": "Nifty Bank सिर्फ banks के selected stocks का performance snapshot है—पूरी Indian Economy का अकेला report card नहीं। 📊\n\nInterest rates, credit growth, bank earnings और NPA जैसे factors इसके movement को प्रभावित कर सकते हैं। इसलिए index बढ़े या गिरे, हमेशा broader indicators भी देखें: GDP, inflation, jobs, consumption और industrial activity.\n\nSave करें और अगली बार market move को बेहतर context में समझें।\n\n#NiftyBank #StockMarket #IndianEconomy #BankingSector #FinancialLiteracy #InvestingBasics #PersonalFinance #TrustPointFin #HindiFinance"
 }

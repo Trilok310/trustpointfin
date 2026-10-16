@@ -1,12 +1,12 @@
 {
-  "job_id": "job_2026-10-15_debt-vs-equity-finding-the-rig",
-  "topic": "Debt vs. Equity: Finding the Right Balance for Your Age",
-  "lineIndex": 154,
+  "job_id": "job_2026-10-16_what-is-the-nifty-bank-index-a",
+  "topic": "What is the Nifty Bank Index and How Does It Affect the Economy?",
+  "lineIndex": 155,
   "scheduled_at": null,
-  "started_at": "2026-10-15T08:28:23.453Z",
-  "article_generation_status": "PENDING",
-  "article_correction_attempts": 0,
-  "article_compliance_status": "PENDING",
+  "started_at": "2026-10-16T08:21:26.562Z",
+  "article_generation_status": "SUCCESS",
+  "article_correction_attempts": 2,
+  "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "SUCCESS",
   "social_correction_attempts": 0,
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-15T08:28:56.433Z",
-  "filename": "debt-vs-equity-finding-the-right-balance-for-your-age.html",
-  "title": "Debt vs. Equity: अपनी Age के हिसाब से सही Investment Balance कैसे चुनें?"
+  "updated_at": "2026-10-16T08:24:19.763Z",
+  "filename": "what-is-the-nifty-bank-index-and-how-does-it-affect-the-econ.html",
+  "title": "Nifty Bank Index क्या है और यह Economy को कैसे प्रभावित करता है?"
 }
