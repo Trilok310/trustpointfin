@@ -1,103 +1,121 @@
 {
-  "topic": "Nifty Bank Index क्या है और यह Economy को कैसे प्रभावित करता है?",
-  "teaching_objective": "Learners समझें कि Nifty Bank एक banking-sector index है, जो चुनिंदा liquid और representative bank stocks की collective performance दिखाता है; इसके movements को interest rates, credit growth, earnings और asset quality के context में पढ़ना चाहिए—इसे पूरी Economy का अकेला report card नहीं मानना चाहिए।",
-  "format": "MARKET_CONCEPT",
+  "topic": "Gold vs Digital Gold vs SGBs: कौन-सा Investment आपके लिए बेहतर है?",
+  "teaching_objective": "Learners will compare Physical Gold, Digital Gold and Sovereign Gold Bonds across purpose, costs, liquidity, safety, returns and holding period, then choose based on their own financial goal.",
+  "format": "COMPARISON",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Nifty Bank: बैंकों का performance meter",
+      "headline": "Gold लेने से पहले अपना goal समझिए",
       "core_explanation": [
-        "Nifty Bank, banking sector के प्रमुख listed stocks का index है।",
-        "यह पूरे stock market या पूरी Economy को अकेले represent नहीं करता।"
+        "क्या आपको jewellery चाहिए या सिर्फ Gold exposure?",
+        "Short-term convenience और long-term investment अलग जरूरतें हैं।"
       ],
       "visual_spec": {
-        "visual_concept": "एक व्यस्त भारतीय शहर का aerial दृश्य, जिसमें अलग-अलग आकार की modern bank buildings एक circular glass dashboard से जुड़ी हों। Dashboard पर ऊपर जाती और नीचे आती abstract market lines हों, लेकिन कोई संख्या, अक्षर या label न हो। सामने एक युवा learner magnifying glass से banking network को देख रहा हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration, warm ivory paper background, deep navy ink outlines, teal and saffron accents, hand-drawn textures, Indian urban setting, diverse young learner observing a connected network of bank buildings through a circular glass market dashboard, subtle upward and downward abstract line movement, polished educational infographic composition, cinematic soft shadows, actual characters and objects, no readable writing anywhere, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
+        "visual_concept": "A warm Indian home scene where one person stands at a three-way crossroads: a jewellery box with ornaments, a glowing smartphone with a tiny gold coin emerging from it, and a formal golden bond certificate represented only by a sealed document and a secure vault. Three distinct paths show different goals: wearing, convenience, and long-term investing. Diverse Indian characters, expressive faces, soft editorial lighting, hand-drawn financial education illustration, layered paper textures, subtle gold accents.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a rich editorial illustration with actual Indian characters, a three-way crossroads, a jewellery box containing ornaments, a smartphone with a glowing gold coin, and a secure vault holding a sealed formal document. Show visual storytelling for wearing gold, buying digitally, and long-term investing. Use warm cream paper, deep navy, muted teal, saffron and gold palette, soft shadows, hand-drawn collage elements, clean composition, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow: “Sector snapshot”",
-      "cta": "पहले index को पहचानिए"
+      "annotation": "पहला सवाल: आपका purpose क्या है?",
+      "cta": "अपना goal लिखकर शुरू करें"
     },
     {
       "slide_number": 2,
-      "purpose": "definition",
-      "headline": "यह index बनता कैसे है?",
+      "purpose": "comparison",
+      "headline": "Physical Gold: हाथ में asset, साथ में costs",
       "core_explanation": [
-        "इसमें eligible और liquid banking stocks शामिल होते हैं।",
-        "Constituents और weights समय के साथ methodology के अनुसार बदल सकते हैं।",
-        "Latest list और weights के लिए NSE Indices की official factsheet देखें।"
+        "Jewellery और coins में physical ownership मिलती है।",
+        "Making charges, purity check, storage और theft risk ध्यान में रखें।",
+        "यह पहनने या gifting के लिए उपयोगी हो सकता है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक curator-style scene: एक analyst बड़े transparent circular tray में अलग-अलग bank buildings के miniature models चुन रहा है। कुछ models बड़े, कुछ छोटे; एक balance scale market representation और liquidity को visually दर्शाए। पीछे official-looking but completely blank papers और a magnifying lens हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Detailed hand-illustrated editorial scene on textured cream paper, an Indian financial analyst carefully selecting miniature bank buildings from a transparent circular index tray, varied building sizes suggesting different weights, a balanced scale symbolizing eligibility and liquidity, magnifying glass, blank documents with no markings, organized visual hierarchy, navy, teal, coral and mustard palette, sophisticated classroom infographic feel, no readable writing, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
+        "visual_concept": "An Indian family at a jeweller's counter examining a necklace and gold coin with a magnifying glass. In the background, a locked home safe, insurance shield, and small expense coins subtly suggest storage, safety and extra charges. The family looks happy about ownership but thoughtful about costs.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrate an Indian family at a jewellery shop examining a gold necklace and coin with a magnifying glass, while a locked home safe, a protective shield, and several small unlabeled expense tokens appear in the background. Show ownership and practical trade-offs through facial expressions and objects. Rich hand-drawn editorial collage, warm paper texture, navy and saffron accents, realistic jewellery details, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow: “Selection बदल सकती है”",
-      "cta": "Fixed list मानकर मत चलिए"
+      "annotation": "पहनने के लिए अच्छा, investment cost अलग से देखें",
+      "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "calculation",
-      "headline": "Index level क्या दिखाता है?",
+      "purpose": "comparison",
+      "headline": "Digital Gold: आसान खरीद, पर platform risk भी",
       "core_explanation": [
-        "Index एक basket की combined movement को summarize करता है।",
-        "बड़े market-weight वाले stocks का असर ज्यादा हो सकता है।",
-        "यह किसी एक bank के share price के बराबर नहीं है।"
+        "छोटी राशि से app के जरिए Gold खरीदना आसान हो सकता है।",
+        "GST, buy-sell spread, storage और redemption terms check करें।",
+        "Platform, custodian, insurance और audit की credibility समझें।"
       ],
       "visual_spec": {
-        "visual_concept": "एक transparent weighing machine पर कई bank-shaped blocks रखे हों। बड़े blocks का platform पर प्रभाव ज्यादा दिखाई दे, जबकि छोटे blocks भी basket का हिस्सा हों। एक market gauge collective movement दिखाए, बिना किसी printed scale या digits के।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Illustrated financial learning metaphor, transparent weighing machine holding multiple stylized bank-shaped blocks of different sizes, larger blocks visibly influencing a central market gauge, smaller blocks contributing to the same basket, Indian finance classroom atmosphere, clean layered composition, tactile paper grain, deep blue outlines with teal and amber highlights, no chart labels, no digits, no letters, no logos, no readable text, no signage. NO TEXT."
+        "visual_concept": "A young Indian investor uses a smartphone to purchase tiny glowing gold particles that flow into a transparent digital vault. Behind the vault are three supporting pillars—custodian, insurance shield and audit magnifying glass—while one slightly cracked pillar symbolizes platform risk. A balance scale contrasts convenience with due diligence.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show a young Indian investor using a smartphone as tiny glowing gold particles flow into a transparent digital vault. Include a custodian figure, an insurance shield, an audit magnifying glass, and one visibly cracked support pillar to symbolize platform risk. Add a balanced scale showing convenience versus due diligence. Rich educational illustration, layered paper collage, muted teal, navy, saffron and gold, expressive character, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow: “Weight matters”",
-      "cta": "Basket effect समझिए"
+      "annotation": "App दिखे आसान, terms पढ़ना जरूरी",
+      "cta": "Buy करने से पहले checklist देखें"
     },
     {
       "slide_number": 4,
-      "purpose": "drivers",
-      "headline": "Rates और credit growth का connection",
+      "purpose": "comparison",
+      "headline": "SGBs: Gold exposure + interest का संयोजन",
       "core_explanation": [
-        "Interest rates बदलने से banks की lending, funding और margins प्रभावित हो सकते हैं।",
-        "Credit growth तेज हो तो loans और business activity को support मिल सकता है।",
-        "लेकिन impact हमेशा immediate या one-directional नहीं होता।"
+        "SGB में physical Gold रखने की जरूरत नहीं होती।",
+        "सामान्यतः 2.5% annual interest मिलता है, terms verify करें।",
+        "Maturity, premature exit और exchange liquidity समझना जरूरी है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक split-scene banking ecosystem: बाईं ओर central bank-inspired building से rate dial नियंत्रित हो रहा है; बीच में bank manager loan applications देख रहा है; दाईं ओर small businesses, homes और factories को loans से ऊर्जा मिल रही है। Water pipes और valves money flow का metaphor हों, बिना किसी text के।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich split-scene illustration showing an Indian banking ecosystem, a dignified central financial institution building with a blank circular rate dial, bank manager reviewing loan folders, money-flow pipes with open and partly closed valves connecting to a small shop, family home, and factory, hopeful but nuanced mood, diverse characters, editorial educational storytelling, cream paper texture, navy teal saffron palette, no writing, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
+        "visual_concept": "A calm long-term investor places a golden bond certificate into a secure vault shaped like a tree. The tree has two visual fruits: a rising gold coin and recurring interest droplets. A winding calendar path leads toward maturity, while a smaller side gate represents limited early exit and market liquidity.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a rich metaphorical illustration of an Indian long-term investor placing a sealed golden bond document into a secure vault shaped like a growing tree. Show two fruits representing gold price appreciation and recurring interest, a winding calendar path toward a distant maturity gate, and a smaller side gate suggesting limited early exit and exchange liquidity. No readable writing, no letters, no numbers, no labels, no logos, no watermark. Hand-drawn NotebookLM educational collage, cream paper background, deep navy, muted green, saffron and gold palette."
       },
-      "annotation": "Arrow: “Rates → lending conditions”",
-      "cta": "एक factor से पूरी कहानी न बनाएं"
+      "annotation": "Long-term horizon हो तो terms compare करें",
+      "cta": null
     },
     {
       "slide_number": 5,
       "purpose": "risk",
-      "headline": "NPA: growth के साथ quality भी",
+      "headline": "तीनों में Gold price risk रहेगा",
       "core_explanation": [
-        "Loan growth अच्छी खबर हो सकती है, पर repayment quality भी जरूरी है।",
-        "NPA बढ़ने पर provisions, profits और investor confidence पर दबाव आ सकता है।",
-        "इसलिए index को asset quality के साथ पढ़ें।"
+        "Gold का market price ऊपर-नीचे हो सकता है।",
+        "Digital Gold में platform और liquidity risk जुड़ सकते हैं।",
+        "SGB में maturity और exit conditions समझना जरूरी है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक bank bridge दो तरफ से supported है: एक तरफ नए loans से बढ़ता green tree और construction activity, दूसरी तरफ cracked loan folders से bridge में छोटी दरारें। Risk manager repair tools और shield लेकर quality check कर रहा हो। दृश्य balanced हो, डरावना नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Sophisticated financial risk metaphor, a strong bridge shaped like a bank connecting growing businesses and households, one side with healthy green growth and new lending, the other side with a few cracked loan folders causing small visible bridge fractures, careful risk manager holding a shield and repair tools, balanced non-alarmist composition, hand-drawn ink, textured paper, teal green navy and muted coral palette, no text, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
+        "visual_concept": "A large golden mountain shaped like a market wave rises and falls. Three travelers—one carrying jewellery, one holding a smartphone, and one holding a sealed bond document—cross different bridges. The physical gold bridge has a lockbox, the digital bridge has a platform support beam, and the bond bridge has a clock and exit gate. All travelers wear safety gear, showing risk awareness rather than fear.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrate a large golden mountain shaped like a rising and falling market wave. Show three Indian travelers crossing different bridges: one carrying jewellery, one holding a smartphone, and one holding a sealed bond document. Include a lockbox, a platform support beam, a clock, and an exit gate as visual symbols of different risks. Use safety ropes and thoughtful expressions. Rich editorial collage, paper texture, navy, teal, saffron and gold, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow: “Growth + quality”",
-      "cta": "NPA को ignore मत कीजिए"
+      "annotation": "Return के साथ risk और liquidity भी देखें",
+      "cta": "सिर्फ past return देखकर फैसला न करें"
     },
     {
       "slide_number": 6,
-      "purpose": "interpretation",
-      "headline": "Nifty Bank बढ़े तो Economy मजबूत?",
+      "purpose": "process",
+      "headline": "सही विकल्प चुनने की 4-step प्रक्रिया",
       "core_explanation": [
-        "ज़रूरी नहीं—index future bank earnings और investor expectations दिखा सकता है।",
-        "Economy समझने के लिए GDP, inflation, jobs, consumption, industry और government finances भी देखें।",
-        "Index एक useful signal है, पूरी तस्वीर नहीं।"
+        "1. Purpose तय करें: पहनना, बचत या investment।",
+        "2. Holding period और liquidity need लिखें।",
+        "3. Total cost, safety और tax rules compare करें।",
+        "4. Terms पढ़कर ही amount तय करें।"
       ],
       "visual_spec": {
-        "visual_concept": "एक learner विशाल observation deck पर खड़ा है। सामने Nifty Bank का glowing banking sector signal है, लेकिन उसके चारों ओर wider economy के दृश्य—factory, families shopping, employment scene, transport, farms और government infrastructure—एक mosaic panorama बनाते हैं। Learner binoculars से पूरी landscape देख रहा हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Grand closing educational illustration, a young Indian learner on an observation deck viewing a glowing banking-sector signal in the foreground while a broad economic panorama stretches behind it: factory, working people, families consuming, transport, farms, public infrastructure and stable homes, visual metaphor that one signal is not the whole economy, rich layered storytelling, warm paper grain, navy teal saffron and coral accents, no written symbols, no letters, no numbers, no logos, no labels, no signage. NO TEXT."
+        "visual_concept": "A visual decision journey on a tabletop: an Indian investor moves four large symbolic stepping stones—purpose compass, calendar, balance scale, and magnifying glass—toward three destination objects: jewellery, smartphone gold vault, and secure bond vault. A notebook with blank pages and colored sticky shapes supports the planning process without any readable text.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a tabletop decision journey with an Indian investor moving four symbolic stepping stones: a compass for purpose, a calendar for holding period, a balance scale for cost and safety, and a magnifying glass for reading terms. Three destination objects appear ahead: jewellery, a smartphone with a gold vault, and a secure bond vault. Include blank notebook pages and abstract sticky shapes with no writing. Hand-drawn financial education collage, cream paper, navy, teal, saffron and gold, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Arrow: “Signal, not full report card”",
-      "cta": "अब index को context के साथ पढ़िए"
+      "annotation": "Purpose → Time → Cost → Terms",
+      "cta": "इस framework को save करें"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "summary",
+      "headline": "एक ही answer सबके लिए नहीं होता",
+      "core_explanation": [
+        "Jewellery या physical possession चाहिए: Physical Gold पर विचार करें।",
+        "Convenience चाहिए: Digital Gold की terms और platform risk जाँचें।",
+        "Long-term Gold exposure चाहिए: SGB की available terms, liquidity और maturity compare करें।",
+        "Final choice आपकी जरूरत, risk और horizon पर निर्भर है।"
+      ],
+      "visual_spec": {
+        "visual_concept": "A balanced final scene with three Indian characters making different sensible choices: one chooses a jewellery box for a family celebration, one carefully uses a smartphone after checking a magnifying glass, and one places a bond document into a long-term vault. The scene emphasizes that different goals can lead to different appropriate choices, with a balanced scale in the center.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show three Indian characters making different thoughtful choices: one selecting a jewellery box for a family celebration, one using a smartphone while checking details with a magnifying glass, and one placing a sealed bond document into a secure long-term vault. Put a balanced scale in the center to symbolize suitability and personal goals. Warm optimistic editorial illustration, rich hand-drawn collage, cream paper texture, navy, muted teal, saffron and gold palette, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+      },
+      "annotation": "Best option वही है जो आपके goal से match करे",
+      "cta": "Save करें और किसी investor friend को भेजें"
     }
   ],
-  "caption": "Nifty Bank सिर्फ banks के selected stocks का performance snapshot है—पूरी Indian Economy का अकेला report card नहीं। 📊\n\nInterest rates, credit growth, bank earnings और NPA जैसे factors इसके movement को प्रभावित कर सकते हैं। इसलिए index बढ़े या गिरे, हमेशा broader indicators भी देखें: GDP, inflation, jobs, consumption और industrial activity.\n\nSave करें और अगली बार market move को बेहतर context में समझें।\n\n#NiftyBank #StockMarket #IndianEconomy #BankingSector #FinancialLiteracy #InvestingBasics #PersonalFinance #TrustPointFin #HindiFinance"
+  "caption": "Gold खरीदना और Gold में invest करना एक ही बात नहीं है। Physical Gold, Digital Gold और SGBs—तीनों के purpose, cost, liquidity और risk अलग हैं। Jewellery चाहिए, convenience चाहिए या long-term Gold exposure? पहले अपना goal तय करें, फिर terms compare करें। यह जानकारी educational purpose के लिए है; निवेश से पहले current rules, charges, liquidity और tax implications verify करें।\n\n#TrustPointFin #GoldInvestment #DigitalGold #SGB #SovereignGoldBond #PersonalFinance #InvestingBasics #FinancialLiteracy #HindiFinance #MoneyEducation"
 }
