@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-16_what-is-the-nifty-bank-index-a",
-  "topic": "What is the Nifty Bank Index and How Does It Affect the Economy?",
-  "lineIndex": 155,
+  "job_id": "job_2026-10-17_gold-vs-digital-gold-vs-sgbs-w",
+  "topic": "Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?",
+  "lineIndex": 156,
   "scheduled_at": null,
-  "started_at": "2026-10-16T08:21:26.562Z",
+  "started_at": "2026-10-17T07:56:27.414Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 2,
+  "article_correction_attempts": 0,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-16T08:23:56.994Z",
-  "filename": "what-is-the-nifty-bank-index-and-how-does-it-affect-the-econ.html",
-  "title": "Nifty Bank Index क्या है और यह Economy को कैसे प्रभावित करता है?"
+  "updated_at": "2026-10-17T07:57:18.413Z",
+  "filename": "gold-vs-digital-gold-vs-sgbs-which-is-the-best-investment.html",
+  "title": "Gold vs Digital Gold vs SGBs: कौन-सा Investment आपके लिए बेहतर है?"
 }
