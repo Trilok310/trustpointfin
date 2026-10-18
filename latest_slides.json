@@ -1,121 +1,92 @@
 {
-  "topic": "Gold vs Digital Gold vs SGBs: कौन-सा Investment आपके लिए बेहतर है?",
-  "teaching_objective": "Learners will compare Physical Gold, Digital Gold and Sovereign Gold Bonds across purpose, costs, liquidity, safety, returns and holding period, then choose based on their own financial goal.",
-  "format": "COMPARISON",
+  "topic": "The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth",
+  "teaching_objective": "Learners will understand how FOMO, social proof and recency bias can push them into overvalued stocks, and will learn a simple pause-and-check process for making disciplined investment decisions.",
+  "format": "PSYCHOLOGY",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Gold लेने से पहले अपना goal समझिए",
-      "core_explanation": [
-        "क्या आपको jewellery चाहिए या सिर्फ Gold exposure?",
-        "Short-term convenience और long-term investment अलग जरूरतें हैं।"
-      ],
+      "headline": "Sab kama rahe hain… main kyun nahi?",
+      "core_explanation": "• Social media par success stories baar-baar dikhai deti hain.\n• Mind ko lagta hai ki opportunity abhi miss ho rahi hai.\n• Isi urgency ko FOMO kehte hain.",
       "visual_spec": {
-        "visual_concept": "A warm Indian home scene where one person stands at a three-way crossroads: a jewellery box with ornaments, a glowing smartphone with a tiny gold coin emerging from it, and a formal golden bond certificate represented only by a sealed document and a secure vault. Three distinct paths show different goals: wearing, convenience, and long-term investing. Diverse Indian characters, expressive faces, soft editorial lighting, hand-drawn financial education illustration, layered paper textures, subtle gold accents.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a rich editorial illustration with actual Indian characters, a three-way crossroads, a jewellery box containing ornaments, a smartphone with a glowing gold coin, and a secure vault holding a sealed formal document. Show visual storytelling for wearing gold, buying digitally, and long-term investing. Use warm cream paper, deep navy, muted teal, saffron and gold palette, soft shadows, hand-drawn collage elements, clean composition, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "A young Indian investor sits at a desk at night, surrounded by glowing phones showing celebratory stock-market scenes without readable content. Through the window, a crowd runs toward a distant golden train, symbolizing a supposedly disappearing opportunity. The investor looks anxious and tempted.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with hand-drawn ink outlines, textured paper collage, muted teal, warm saffron, coral and navy palette, expressive Indian young adult investor at a home desk, multiple phones with abstract upward shapes and celebratory silhouettes but no readable interface, distant golden train, rushing crowd, warm desk lamp, subtle financial notebook and calculator, layered cut-paper depth, cinematic composition, educational visual storytelling, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "पहला सवाल: आपका purpose क्या है?",
-      "cta": "अपना goal लिखकर शुरू करें"
+      "annotation": "Arrow toward the rushing crowd: “Pressure ka source”",
+      "cta": "Pehle emotion notice karo."
     },
     {
       "slide_number": 2,
-      "purpose": "comparison",
-      "headline": "Physical Gold: हाथ में asset, साथ में costs",
-      "core_explanation": [
-        "Jewellery और coins में physical ownership मिलती है।",
-        "Making charges, purity check, storage और theft risk ध्यान में रखें।",
-        "यह पहनने या gifting के लिए उपयोगी हो सकता है।"
-      ],
+      "purpose": "psychology",
+      "headline": "FOMO ka engine: 3 biases",
+      "core_explanation": "• Recency bias: recent winners future ka promise lagte hain.\n• Social proof: sab kharid rahe hain, toh decision sahi lagta hai.\n• Regret aversion: baad mein पछताने ka fear decision ko hijack karta hai.",
       "visual_spec": {
-        "visual_concept": "An Indian family at a jeweller's counter examining a necklace and gold coin with a magnifying glass. In the background, a locked home safe, insurance shield, and small expense coins subtly suggest storage, safety and extra charges. The family looks happy about ownership but thoughtful about costs.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrate an Indian family at a jewellery shop examining a gold necklace and coin with a magnifying glass, while a locked home safe, a protective shield, and several small unlabeled expense tokens appear in the background. Show ownership and practical trade-offs through facial expressions and objects. Rich hand-drawn editorial collage, warm paper texture, navy and saffron accents, realistic jewellery details, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "Three-panel scene featuring the same investor: in one panel, a giant rear-view mirror magnifies a past stock winner; in another, a crowd pulls the investor toward a glowing market stall; in the third, two doors represent buy-now versus wait, with a shadow of future regret looming behind.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Three-panel psychological storytelling illustration, same Indian investor in each scene, oversized rear-view mirror reflecting a dramatic rising market chart made only of abstract lines, excited crowd pulling toward a glowing investment stall, forked doorway with a looming regret shadow, hand-drawn ink, paper grain, collage cutouts, teal coral mustard and charcoal colors, expressive faces, clear visual metaphors, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "पहनने के लिए अच्छा, investment cost अलग से देखें",
+      "annotation": "Three small arrows pointing to mirror, crowd and shadow",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "Digital Gold: आसान खरीद, पर platform risk भी",
-      "core_explanation": [
-        "छोटी राशि से app के जरिए Gold खरीदना आसान हो सकता है।",
-        "GST, buy-sell spread, storage और redemption terms check करें।",
-        "Platform, custodian, insurance और audit की credibility समझें।"
-      ],
+      "purpose": "risk",
+      "headline": "Past multibagger = future guarantee nahi",
+      "core_explanation": "• High growth ke saath high volatility bhi aa sakti hai.\n• Valuation correction returns ko hurt kar sakta hai.\n• Business execution, debt aur cash flow risks ignore nahi karne chahiye.",
       "visual_spec": {
-        "visual_concept": "A young Indian investor uses a smartphone to purchase tiny glowing gold particles that flow into a transparent digital vault. Behind the vault are three supporting pillars—custodian, insurance shield and audit magnifying glass—while one slightly cracked pillar symbolizes platform risk. A balance scale contrasts convenience with due diligence.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show a young Indian investor using a smartphone as tiny glowing gold particles flow into a transparent digital vault. Include a custodian figure, an insurance shield, an audit magnifying glass, and one visibly cracked support pillar to symbolize platform risk. Add a balanced scale showing convenience versus due diligence. Rich educational illustration, layered paper collage, muted teal, navy, saffron and gold, expressive character, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "A spectacular tree with golden fruit rises from a fragile pot. One side shows healthy roots, while the other reveals cracked roots, debt weights and a dry cash-flow stream. An investor reaches for the fruit while standing on an unstable ladder.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich symbolic financial illustration, enormous golden fruit tree growing from a fragile ceramic pot, visible roots split between strong healthy roots and cracked roots tangled with heavy iron weights and a dried stream, Indian investor reaching from an unstable ladder, dramatic but educational, hand-drawn ink and watercolor, textured paper, muted green, gold, rust and navy palette, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "App दिखे आसान, terms पढ़ना जरूरी",
-      "cta": "Buy करने से पहले checklist देखें"
+      "annotation": "Arrow to the cracked roots: “Business risk”",
+      "cta": "Fruit se pehle roots check karo."
     },
     {
       "slide_number": 4,
-      "purpose": "comparison",
-      "headline": "SGBs: Gold exposure + interest का संयोजन",
-      "core_explanation": [
-        "SGB में physical Gold रखने की जरूरत नहीं होती।",
-        "सामान्यतः 2.5% annual interest मिलता है, terms verify करें।",
-        "Maturity, premature exit और exchange liquidity समझना जरूरी है।"
-      ],
+      "purpose": "calculation",
+      "headline": "Loss ka maths zyada tough hota hai",
+      "core_explanation": "• ₹100 se 50% girkar ₹50 bache.\n• Wapas ₹100 hone ke liye 100% gain chahiye.\n• Isliye downside ko ignore karna expensive ho sakta hai.",
       "visual_spec": {
-        "visual_concept": "A calm long-term investor places a golden bond certificate into a secure vault shaped like a tree. The tree has two visual fruits: a rising gold coin and recurring interest droplets. A winding calendar path leads toward maturity, while a smaller side gate represents limited early exit and market liquidity.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a rich metaphorical illustration of an Indian long-term investor placing a sealed golden bond document into a secure vault shaped like a growing tree. Show two fruits representing gold price appreciation and recurring interest, a winding calendar path toward a distant maturity gate, and a smaller side gate suggesting limited early exit and exchange liquidity. No readable writing, no letters, no numbers, no labels, no logos, no watermark. Hand-drawn NotebookLM educational collage, cream paper background, deep navy, muted green, saffron and gold palette."
+        "visual_concept": "A balanced scale shows a small-looking downward drop on one side and a much taller uphill climb on the other. A rupee coin rolls down from a high platform, while the investor faces a steep mountain to recover the original height.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational financial metaphor, rupee coin rolling down a steep half-height cliff, same coin needing to climb a dramatically taller mountain to return to its starting platform, balanced scale emphasizing asymmetric loss and recovery, Indian investor observing thoughtfully, hand-drawn ink, watercolor wash, textured notebook paper, teal, ochre, coral and deep blue, clean composition, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Long-term horizon हो तो terms compare करें",
-      "cta": null
+      "annotation": "Arrow from the lower valley to the taller mountain: “Recovery harder”",
+      "cta": "Har buy se pehle downside imagine karo."
     },
     {
       "slide_number": 5,
-      "purpose": "risk",
-      "headline": "तीनों में Gold price risk रहेगा",
-      "core_explanation": [
-        "Gold का market price ऊपर-नीचे हो सकता है।",
-        "Digital Gold में platform और liquidity risk जुड़ सकते हैं।",
-        "SGB में maturity और exit conditions समझना जरूरी है।"
-      ],
+      "purpose": "process",
+      "headline": "24-hour pause: FOMO ka antidote",
+      "core_explanation": "• Sudden rally ke baad turant order mat place karo.\n• 24-hour cooling-off period rakho.\n• Price chart ke bina business ko explain kar pa rahe ho?",
       "visual_spec": {
-        "visual_concept": "A large golden mountain shaped like a market wave rises and falls. Three travelers—one carrying jewellery, one holding a smartphone, and one holding a sealed bond document—cross different bridges. The physical gold bridge has a lockbox, the digital bridge has a platform support beam, and the bond bridge has a clock and exit gate. All travelers wear safety gear, showing risk awareness rather than fear.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Illustrate a large golden mountain shaped like a rising and falling market wave. Show three Indian travelers crossing different bridges: one carrying jewellery, one holding a smartphone, and one holding a sealed bond document. Include a lockbox, a platform support beam, a clock, and an exit gate as visual symbols of different risks. Use safety ropes and thoughtful expressions. Rich editorial collage, paper texture, navy, teal, saffron and gold, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "The investor stands between a flashing buy button and a calm research table. A large hourglass separates impulse from analysis. On the table are a company report, magnifying glass, cash-flow stream, debt blocks and a blank checklist card with no writing.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian investor pausing between a glowing abstract trading button and a calm research desk, large hourglass in the center, company report pages with no readable markings, magnifying glass, healthy and unhealthy cash-flow symbols, small debt blocks, blank checklist card, warm morning light, hand-drawn ink and paper collage, teal saffron coral and navy palette, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Return के साथ risk और liquidity भी देखें",
-      "cta": "सिर्फ past return देखकर फैसला न करें"
+      "annotation": "Arrow to the hourglass: “Pause = protection”",
+      "cta": "Impulse ko overnight test do."
     },
     {
       "slide_number": 6,
       "purpose": "process",
-      "headline": "सही विकल्प चुनने की 4-step प्रक्रिया",
-      "core_explanation": [
-        "1. Purpose तय करें: पहनना, बचत या investment।",
-        "2. Holding period और liquidity need लिखें।",
-        "3. Total cost, safety और tax rules compare करें।",
-        "4. Terms पढ़कर ही amount तय करें।"
-      ],
+      "headline": "Buy karne se pehle 5 checks",
+      "core_explanation": "• Business quality aur management.\n• Valuation, debt aur cash flow.\n• Position size aur downside scenario.",
       "visual_spec": {
-        "visual_concept": "A visual decision journey on a tabletop: an Indian investor moves four large symbolic stepping stones—purpose compass, calendar, balance scale, and magnifying glass—toward three destination objects: jewellery, smartphone gold vault, and secure bond vault. A notebook with blank pages and colored sticky shapes supports the planning process without any readable text.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Create a tabletop decision journey with an Indian investor moving four symbolic stepping stones: a compass for purpose, a calendar for holding period, a balance scale for cost and safety, and a magnifying glass for reading terms. Three destination objects appear ahead: jewellery, a smartphone with a gold vault, and a secure bond vault. Include blank notebook pages and abstract sticky shapes with no writing. Hand-drawn financial education collage, cream paper, navy, teal, saffron and gold, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "A thoughtful investor crosses five stepping stones over a risky river. Each stone is represented visually by a strong building, a balanced scale, a debt chain being inspected, flowing coins, and a small safety net. The investor carries a portfolio basket with limited size.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Five visual stepping stones across a risky river: sturdy business building, balanced valuation scale, inspected debt chain, flowing cash stream, and protective safety net, thoughtful Indian investor crossing carefully with a small diversified portfolio basket, calm instructional mood, hand-drawn ink, textured paper collage, muted teal, mustard, coral, cream and navy, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Purpose → Time → Cost → Terms",
-      "cta": "इस framework को save करें"
+      "annotation": "Five arrows follow the stepping-stone path",
+      "cta": "Checklist ke bina conviction incomplete hai."
     },
     {
       "slide_number": 7,
-      "purpose": "summary",
-      "headline": "एक ही answer सबके लिए नहीं होता",
-      "core_explanation": [
-        "Jewellery या physical possession चाहिए: Physical Gold पर विचार करें।",
-        "Convenience चाहिए: Digital Gold की terms और platform risk जाँचें।",
-        "Long-term Gold exposure चाहिए: SGB की available terms, liquidity और maturity compare करें।",
-        "Final choice आपकी जरूरत, risk और horizon पर निर्भर है।"
-      ],
+      "purpose": "takeaway",
+      "headline": "Wealth speed se nahi, discipline se banti hai",
+      "core_explanation": "• Multibagger chase karna strategy nahi hai.\n• Quality, valuation aur allocation ko priority do.\n• Missed opportunity se better hai avoidable loss se bachna.",
       "visual_spec": {
-        "visual_concept": "A balanced final scene with three Indian characters making different sensible choices: one chooses a jewellery box for a family celebration, one carefully uses a smartphone after checking a magnifying glass, and one places a bond document into a long-term vault. The scene emphasizes that different goals can lead to different appropriate choices, with a balanced scale in the center.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Show three Indian characters making different thoughtful choices: one selecting a jewellery box for a family celebration, one using a smartphone while checking details with a magnifying glass, and one placing a sealed bond document into a secure long-term vault. Put a balanced scale in the center to symbolize suitability and personal goals. Warm optimistic editorial illustration, rich hand-drawn collage, cream paper texture, navy, muted teal, saffron and gold palette, no readable writing, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "Two paths lead toward a thriving financial garden: one is a chaotic shortcut filled with broken ladders and falling coins, while the other is a steady paved path with diversified plants, protective fences and a patient investor walking calmly.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Final inspiring financial storytelling illustration, two paths toward a thriving garden, chaotic shortcut with broken ladders, scattered coins and storm clouds, steady paved path with diversified healthy plants, protective fence and calm Indian investor walking patiently, sunrise, hand-drawn ink and watercolor, textured paper, rich teal, green, saffron, coral and navy palette, optimistic educational tone, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Best option वही है जो आपके goal से match करे",
-      "cta": "Save करें और किसी investor friend को भेजें"
+      "annotation": "Arrow toward the steady path: “Long-term discipline”",
+      "cta": "FOMO ko pause karo. Plan ko follow karo."
     }
   ],
-  "caption": "Gold खरीदना और Gold में invest करना एक ही बात नहीं है। Physical Gold, Digital Gold और SGBs—तीनों के purpose, cost, liquidity और risk अलग हैं। Jewellery चाहिए, convenience चाहिए या long-term Gold exposure? पहले अपना goal तय करें, फिर terms compare करें। यह जानकारी educational purpose के लिए है; निवेश से पहले current rules, charges, liquidity और tax implications verify करें।\n\n#TrustPointFin #GoldInvestment #DigitalGold #SGB #SovereignGoldBond #PersonalFinance #InvestingBasics #FinancialLiteracy #HindiFinance #MoneyEducation"
+  "caption": "Har rising stock opportunity nahi hota—andar se kabhi-kabhi woh sirf FOMO hota hai. 🚦\n\nPast multibagger performance future returns ki guarantee nahi deti. Buy karne se pehle 24-hour pause, business quality, valuation, debt, cash flow, position size aur downside scenario check karein.\n\nWealth excitement se nahi, repeatable discipline se banti hai.\n\n#TrustPointFin #FOMO #InvestingPsychology #PersonalFinance #StockMarketEducation #RiskManagement #LongTermInvesting #BehavioralFinance #FinancialLiteracy #InvestSmart"
 }

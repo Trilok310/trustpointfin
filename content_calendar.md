@@ -155,7 +155,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 139. Debt vs. Equity: Finding the Right Balance for Your Age
 - [x] 140. What is the Nifty Bank Index and How Does It Affect the Economy?
 - [x] 141. Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?
-- [ ] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth
+- [x] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth
 - [ ] 143. How to Build an Emergency Fund in Just 6 Months
 - [ ] 144. Demystifying IPOs: Should You Invest in Every New Listing?
 - [ ] 145. Why Angel One is the Perfect Platform for Your First Trade
