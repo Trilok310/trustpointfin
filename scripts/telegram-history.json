@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-19T05:28:10.102Z",
+  "lastUpdated": "2026-10-19T11:26:08.212Z",
   "recentEntries": [
+    {
+      "date": "19 October 2026",
+      "edition": "EVENING",
+      "niftyPrice": 22888.95,
+      "topics": [
+        "Nifty Defends 22,888 Following Severe Intraday Swings and Wealth Erosion",
+        "Bank Nifty Rebounds to 55,488 Despite Underlying Margin and Deposit Pressures",
+        "Export-Oriented IT and Auto Sectors Navigate Headwinds from Rupee Depreciation",
+        "Mutual Fund Infrastructure RTAs Maintain Revenue Invariance Despite Market Swings",
+        "Brent Crude at $108.53 and USD/INR at ₹94.92 Compound Current Account Pressures"
+      ]
+    },
     {
       "date": "19 October 2026",
       "edition": "MORNING",
@@ -227,18 +239,6 @@
         "Information Technology Braces for Crucial Second-Quarter Numbers Amid Extreme Volatility",
         "Market Infrastructure Intermediaries Retain Structural Advantage Through Massive Liquidation Volumes",
         "Brent Surges Past $105 as USD/INR Sinks to 96.78"
-      ]
-    },
-    {
-      "date": "8 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22250,
-      "topics": [
-        "Nifty Tumbles 1,096 Points as Severe Selling Liquidation Grips Dalal Street",
-        "Bank Nifty Drops 3.16% Toward 54,579 on Persistent Margin Pressures",
-        "Technology Counters Turn Cautious Ahead of Heavyweight TCS Quarterly Earnings",
-        "Market Infrastructure Duopolies Capture Resilient Value from Heightened Turnover Spikes",
-        "Brent Crude at $104.41 and Weak Rupee Amplify Imported Inflation Pressures"
       ]
     }
   ]
