@@ -1,92 +1,119 @@
 {
-  "topic": "The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth",
-  "teaching_objective": "Learners will understand how FOMO, social proof and recency bias can push them into overvalued stocks, and will learn a simple pause-and-check process for making disciplined investment decisions.",
-  "format": "PSYCHOLOGY",
+  "topic": "Emergency Fund सिर्फ 6 महीनों में कैसे बनाएं: Beginners के लिए Step-by-Step Guide",
+  "teaching_objective": "Beginners को सिखाना कि essential expenses के आधार पर emergency fund target कैसे calculate करें, उसे 6 महीनों के saving plan में कैसे बदलें, सही जगह कैसे रखें और common mistakes से कैसे बचें।",
+  "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Sab kama rahe hain… main kyun nahi?",
-      "core_explanation": "• Social media par success stories baar-baar dikhai deti hain.\n• Mind ko lagta hai ki opportunity abhi miss ho rahi hai.\n• Isi urgency ko FOMO kehte hain.",
+      "headline": "Emergency Fund क्यों ज़रूरी है?",
+      "core_explanation": [
+        "Unexpected medical bill, job gap या urgent repair के समय यह financial cushion देता है।",
+        "इससे credit card या महंगे loan पर निर्भरता कम हो सकती है।"
+      ],
       "visual_spec": {
-        "visual_concept": "A young Indian investor sits at a desk at night, surrounded by glowing phones showing celebratory stock-market scenes without readable content. Through the window, a crowd runs toward a distant golden train, symbolizing a supposedly disappearing opportunity. The investor looks anxious and tempted.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with hand-drawn ink outlines, textured paper collage, muted teal, warm saffron, coral and navy palette, expressive Indian young adult investor at a home desk, multiple phones with abstract upward shapes and celebratory silhouettes but no readable interface, distant golden train, rushing crowd, warm desk lamp, subtle financial notebook and calculator, layered cut-paper depth, cinematic composition, educational visual storytelling, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक young Indian couple अपने छोटे apartment में बैठे हैं। बाहर तेज बारिश, बिजली और car breakdown जैसी दृश्यात्मक परेशानियां हैं, लेकिन कमरे के अंदर एक glowing transparent safety shield उन्हें सुरक्षित दिखा रहा है। पास में savings jar और शांत expression वाला family dog है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm Indian urban home, young Indian couple calmly protected inside a translucent golden safety shield while rain, a broken-down scooter, a hospital symbol without text, and a leaking ceiling appear outside, savings jar on a table, expressive faces, layered paper collage, hand-drawn ink outlines, soft cream background, teal and coral accents, cinematic composition, clear visual hierarchy, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow toward the rushing crowd: “Pressure ka source”",
-      "cta": "Pehle emotion notice karo."
+      "annotation": "Arrow toward the safety shield: अचानक खर्चों से protection",
+      "cta": "आज ही अपना target लिखें"
     },
     {
       "slide_number": 2,
-      "purpose": "psychology",
-      "headline": "FOMO ka engine: 3 biases",
-      "core_explanation": "• Recency bias: recent winners future ka promise lagte hain.\n• Social proof: sab kharid rahe hain, toh decision sahi lagta hai.\n• Regret aversion: baad mein पछताने ka fear decision ko hijack karta hai.",
+      "purpose": "calculation",
+      "headline": "पहला कदम: अपना Target निकालें",
+      "core_explanation": [
+        "सिर्फ essential monthly expenses को जोड़ें।",
+        "Target = Essential Expenses × 3–6 months",
+        "उदाहरण: ₹30,000 × 5 = ₹1,50,000"
+      ],
       "visual_spec": {
-        "visual_concept": "Three-panel scene featuring the same investor: in one panel, a giant rear-view mirror magnifies a past stock winner; in another, a crowd pulls the investor toward a glowing market stall; in the third, two doors represent buy-now versus wait, with a shadow of future regret looming behind.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Three-panel psychological storytelling illustration, same Indian investor in each scene, oversized rear-view mirror reflecting a dramatic rising market chart made only of abstract lines, excited crowd pulling toward a glowing investment stall, forked doorway with a looming regret shadow, hand-drawn ink, paper grain, collage cutouts, teal coral mustard and charcoal colors, expressive faces, clear visual metaphors, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक beginner desk पर बैठकर calculator, rent, groceries, utilities और transport जैसे खर्चों के miniature objects को एक balance scale पर रख रहा है। दूसरी तरफ छह glowing monthly blocks का stack है, जो final emergency reserve में बदल रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian beginner at a tidy desk calculating a financial safety target, calculator with blank display, miniature home rent key, grocery basket, electricity bulb, water drop, bus pass without markings, and medicine bottle on one side of a balance scale, six glowing monthly blocks stacking into a secure glass reserve jar on the other side, rich illustrated storytelling, paper texture, hand-drawn outlines, teal, mustard and coral palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Three small arrows pointing to mirror, crowd and shadow",
-      "cta": null
+      "annotation": "Circle the essential-expense objects; ignore luxury shopping objects",
+      "cta": "अपने पिछले महीने के essential खर्च देखें"
     },
     {
       "slide_number": 3,
-      "purpose": "risk",
-      "headline": "Past multibagger = future guarantee nahi",
-      "core_explanation": "• High growth ke saath high volatility bhi aa sakti hai.\n• Valuation correction returns ko hurt kar sakta hai.\n• Business execution, debt aur cash flow risks ignore nahi karne chahiye.",
+      "purpose": "process",
+      "headline": "6 महीनों का Saving Plan बनाएं",
+      "core_explanation": [
+        "Final target को 6 से divide करें।",
+        "₹1,50,000 target के लिए लगभग ₹25,000 प्रति माह बचाना होगा।",
+        "Amount मुश्किल हो तो खर्च घटाएं, income बढ़ाएं या timeline realistic बनाएं।"
+      ],
       "visual_spec": {
-        "visual_concept": "A spectacular tree with golden fruit rises from a fragile pot. One side shows healthy roots, while the other reveals cracked roots, debt weights and a dry cash-flow stream. An investor reaches for the fruit while standing on an unstable ladder.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich symbolic financial illustration, enormous golden fruit tree growing from a fragile ceramic pot, visible roots split between strong healthy roots and cracked roots tangled with heavy iron weights and a dried stream, Indian investor reaching from an unstable ladder, dramatic but educational, hand-drawn ink and watercolor, textured paper, muted green, gold, rust and navy palette, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक लंबी छह-step सीढ़ी। हर step पर वही character एक छोटा coin pouch भर रहा है; ऊपर पहुँचकर छह pouches मिलकर एक बड़ा emergency vault बनाते हैं। पीछे calendar pages की visual rhythm है, लेकिन कोई readable text नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Six-step staircase representing six months, a determined young Indian professional climbing while placing one coin pouch on each step, six small pouches visually combining into a large secure emergency vault at the top, subtle blank calendar sheets floating in the background, hopeful sunrise, rich paper collage, hand-drawn ink details, dimensional objects, teal and warm orange palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow to the cracked roots: “Business risk”",
-      "cta": "Fruit se pehle roots check karo."
+      "annotation": "Arrow moving upward: हर महीने एक fixed contribution",
+      "cta": "Monthly amount को salary budget में पहले रखें"
     },
     {
       "slide_number": 4,
-      "purpose": "calculation",
-      "headline": "Loss ka maths zyada tough hota hai",
-      "core_explanation": "• ₹100 se 50% girkar ₹50 bache.\n• Wapas ₹100 hone ke liye 100% gain chahiye.\n• Isliye downside ko ignore karna expensive ho sakta hai.",
+      "purpose": "process",
+      "headline": "Saving को Automatic बनाएं",
+      "core_explanation": [
+        "Salary आते ही अलग account में auto-transfer सेट करें।",
+        "पहले saving, फिर spending—यह discipline आसान बनाता है।",
+        "Bonus या extra income का हिस्सा भी fund में जोड़ें।"
+      ],
       "visual_spec": {
-        "visual_concept": "A balanced scale shows a small-looking downward drop on one side and a much taller uphill climb on the other. A rupee coin rolls down from a high platform, while the investor faces a steep mountain to recover the original height.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational financial metaphor, rupee coin rolling down a steep half-height cliff, same coin needing to climb a dramatically taller mountain to return to its starting platform, balanced scale emphasizing asymmetric loss and recovery, Indian investor observing thoughtfully, hand-drawn ink, watercolor wash, textured notebook paper, teal, ochre, coral and deep blue, clean composition, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "Salary का glowing stream एक main account से अलग emergency account की ओर automatically बह रहा है। Character आराम से चाय पी रहा है, जबकि एक friendly robot-like banking assistant transfer कर रहा है। खर्चों की छोटी नदी emergency fund तक पहुँचने से पहले अलग channel में जा रही है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm Indian home scene with a young professional relaxing with tea while a glowing salary stream automatically flows from one blank bank card icon into a separate transparent emergency savings jar, friendly mechanical assistant guiding the flow, spending stream diverted into smaller household expense bowls, calm organized mood, editorial financial education illustration, layered paper texture, soft shadows, teal, cream and coral colors, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow from the lower valley to the taller mountain: “Recovery harder”",
-      "cta": "Har buy se pehle downside imagine karo."
+      "annotation": "Arrow on the first flow: payday automation",
+      "cta": "अपने bank app में standing instruction देखें"
     },
     {
       "slide_number": 5,
-      "purpose": "process",
-      "headline": "24-hour pause: FOMO ka antidote",
-      "core_explanation": "• Sudden rally ke baad turant order mat place karo.\n• 24-hour cooling-off period rakho.\n• Price chart ke bina business ko explain kar pa rahe ho?",
+      "purpose": "comparison",
+      "headline": "Fund को कहाँ रखें?",
+      "core_explanation": [
+        "Immediate cash का हिस्सा आसानी से accessible savings account में रखें।",
+        "बाकी रकम के लिए sweep-in FD या short-term FD जैसे liquid options समझें।",
+        "Core emergency fund को direct stocks या equity mutual funds में रखने से volatility risk बढ़ सकता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "The investor stands between a flashing buy button and a calm research table. A large hourglass separates impulse from analysis. On the table are a company report, magnifying glass, cash-flow stream, debt blocks and a blank checklist card with no writing.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian investor pausing between a glowing abstract trading button and a calm research desk, large hourglass in the center, company report pages with no readable markings, magnifying glass, healthy and unhealthy cash-flow symbols, small debt blocks, blank checklist card, warm morning light, hand-drawn ink and paper collage, teal saffron coral and navy palette, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "तीन रास्तों वाला illustrated financial landscape। पहला रास्ता एक open savings wallet और instant-access door तक जाता है। दूसरा रास्ता stable glass vault और short-term deposit structure तक जाता है। तीसरा रास्ता roller-coaster stock market की ओर जाता है, जहां emergency umbrella लेकर खड़ा character अस्थिरता से परेशान है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Three-path financial landscape: one calm path leading to an open accessible savings wallet and nearby cash door, one stable path leading to a transparent secure deposit vault with gentle steps, and one dramatic roller-coaster market path with a worried person holding an emergency umbrella, visual contrast between liquidity and volatility, Indian financial education context, rich hand-drawn editorial illustration, layered paper, teal, navy, coral and cream palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow to the hourglass: “Pause = protection”",
-      "cta": "Impulse ko overnight test do."
+      "annotation": "Use a shield icon beside liquid and low-volatility options",
+      "cta": "Liquidity, risk और tax rules पहले verify करें"
     },
     {
       "slide_number": 6,
-      "purpose": "process",
-      "headline": "Buy karne se pehle 5 checks",
-      "core_explanation": "• Business quality aur management.\n• Valuation, debt aur cash flow.\n• Position size aur downside scenario.",
+      "purpose": "timeline",
+      "headline": "हर महीने Progress Check करें",
+      "core_explanation": [
+        "हर महीने contribution के बाद balance और target gap देखें।",
+        "Income या essential expenses बदलें तो plan update करें।",
+        "छोटी शुरुआत भी consistent हो तो momentum बनता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "A thoughtful investor crosses five stepping stones over a risky river. Each stone is represented visually by a strong building, a balanced scale, a debt chain being inspected, flowing coins, and a small safety net. The investor carries a portfolio basket with limited size.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Five visual stepping stones across a risky river: sturdy business building, balanced valuation scale, inspected debt chain, flowing cash stream, and protective safety net, thoughtful Indian investor crossing carefully with a small diversified portfolio basket, calm instructional mood, hand-drawn ink, textured paper collage, muted teal, mustard, coral, cream and navy, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "छह transparent glass jars एक row में रखे हैं, हर jar में बढ़ता हुआ पानी और coins हैं। Character हर महीने एक jar पर छोटा golden check mark लगाता है; आखिरी jar एक glowing shield में बदल जाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Six transparent glass savings jars arranged as a visual timeline, each jar progressively fuller with coins and warm light, a young Indian woman marking progress with a small golden check symbol, final jar transforming into a glowing protective shield around her home, optimistic educational storytelling, detailed hand-drawn objects, paper collage layers, soft cream background, teal and gold accents, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Five arrows follow the stepping-stone path",
-      "cta": "Checklist ke bina conviction incomplete hai."
+      "annotation": "Arrow from first jar to final shield: consistency compounds confidence",
+      "cta": "हर महीने 10-minute money review करें"
     },
     {
       "slide_number": 7,
-      "purpose": "takeaway",
-      "headline": "Wealth speed se nahi, discipline se banti hai",
-      "core_explanation": "• Multibagger chase karna strategy nahi hai.\n• Quality, valuation aur allocation ko priority do.\n• Missed opportunity se better hai avoidable loss se bachna.",
+      "purpose": "risk",
+      "headline": "इन Common Mistakes से बचें",
+      "core_explanation": [
+        "Emergency fund को shopping, vacations या speculative investing में न मिलाएं।",
+        "सारा पैसा ऐसी जगह न रखें जहां withdrawal मुश्किल या बहुत slow हो।",
+        "3–6 months एक guideline है; dependents, debt या irregular income होने पर target बड़ा हो सकता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "Two paths lead toward a thriving financial garden: one is a chaotic shortcut filled with broken ladders and falling coins, while the other is a steady paved path with diversified plants, protective fences and a patient investor walking calmly.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Final inspiring financial storytelling illustration, two paths toward a thriving garden, chaotic shortcut with broken ladders, scattered coins and storm clouds, steady paved path with diversified healthy plants, protective fence and calm Indian investor walking patiently, sunrise, hand-drawn ink and watercolor, textured paper, rich teal, green, saffron, coral and navy palette, optimistic educational tone, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक forked road पर character emergency fund के लिए सही glowing shield path चुन रहा है। गलत रास्तों पर shopping cart, risky roller coaster और locked box हैं; सही रास्ते पर accessible savings jar, family home और calm sunrise दिखाई देते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian young adult standing at a forked road, choosing a glowing protective shield path leading toward a safe home and accessible savings jar, alternative paths show an overflowing shopping cart, a risky financial roller coaster, and a locked box with a small key out of reach, clear visual metaphor for common mistakes, rich editorial illustration, hand-drawn ink, layered paper, warm sunrise, teal, coral and mustard palette, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow toward the steady path: “Long-term discipline”",
-      "cta": "FOMO ko pause karo. Plan ko follow karo."
+      "annotation": "Bold arrow toward the shield path: safety first, returns later",
+      "cta": "आज अपना first contribution शुरू करें"
     }
   ],
-  "caption": "Har rising stock opportunity nahi hota—andar se kabhi-kabhi woh sirf FOMO hota hai. 🚦\n\nPast multibagger performance future returns ki guarantee nahi deti. Buy karne se pehle 24-hour pause, business quality, valuation, debt, cash flow, position size aur downside scenario check karein.\n\nWealth excitement se nahi, repeatable discipline se banti hai.\n\n#TrustPointFin #FOMO #InvestingPsychology #PersonalFinance #StockMarketEducation #RiskManagement #LongTermInvesting #BehavioralFinance #FinancialLiteracy #InvestSmart"
+  "caption": "Emergency Fund बनाना मुश्किल नहीं—बस target clear, plan practical और saving consistent होनी चाहिए। पहले अपने essential monthly expenses निकालें, फिर 3–6 months का cushion तय करें और उसे 6 महीनों के monthly contributions में बदलें। Immediate cash के लिए liquidity को priority दें और core emergency fund को high-volatility investments से अलग रखें।\n\nआपका emergency fund target कितना है?\n\n#EmergencyFund #PersonalFinance #MoneyManagement #FinancialPlanning #SavingTips #BeginnersFinance #HindiFinance #HinglishFinance #TrustPointFin"
 }
