@@ -1,119 +1,92 @@
 {
-  "topic": "Emergency Fund सिर्फ 6 महीनों में कैसे बनाएं: Beginners के लिए Step-by-Step Guide",
-  "teaching_objective": "Beginners को सिखाना कि essential expenses के आधार पर emergency fund target कैसे calculate करें, उसे 6 महीनों के saving plan में कैसे बदलें, सही जगह कैसे रखें और common mistakes से कैसे बचें।",
+  "topic": "Demystifying IPOs: क्या आपको हर New Listing में Invest करना चाहिए?",
+  "teaching_objective": "Learners समझें कि IPO में apply करने से पहले केवल listing gain नहीं, बल्कि business quality, financial health, IPO structure, valuation और risks को evaluate करना जरूरी है.",
   "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Emergency Fund क्यों ज़रूरी है?",
-      "core_explanation": [
-        "Unexpected medical bill, job gap या urgent repair के समय यह financial cushion देता है।",
-        "इससे credit card या महंगे loan पर निर्भरता कम हो सकती है।"
-      ],
+      "headline": "हर New Listing में Invest करना ज़रूरी नहीं",
+      "core_explanation": "IPO कोई guaranteed profit ticket नहीं है। Listing price issue price से ऊपर, बराबर या नीचे हो सकती है।",
       "visual_spec": {
-        "visual_concept": "एक young Indian couple अपने छोटे apartment में बैठे हैं। बाहर तेज बारिश, बिजली और car breakdown जैसी दृश्यात्मक परेशानियां हैं, लेकिन कमरे के अंदर एक glowing transparent safety shield उन्हें सुरक्षित दिखा रहा है। पास में savings jar और शांत expression वाला family dog है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm Indian urban home, young Indian couple calmly protected inside a translucent golden safety shield while rain, a broken-down scooter, a hospital symbol without text, and a leaking ceiling appear outside, savings jar on a table, expressive faces, layered paper collage, hand-drawn ink outlines, soft cream background, teal and coral accents, cinematic composition, clear visual hierarchy, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक उत्साहित beginner investor चमकते हुए IPO launch gate के सामने खड़ा है। Gate के पीछे दो रास्ते दिखते हैं—एक ऊपर जाती रोशनी वाला, दूसरा नीचे जाती छाया वाला—जो uncertain listing outcome को दर्शाए। आसपास भीड़ उत्साह में है, लेकिन character के हाथ में magnifying glass है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial financial illustration, warm cream paper background, navy blue and coral accents, a curious young Indian investor standing before a glamorous new company launch gate, excited crowd in the background, two diverging paths behind the gate—one gently rising and one gently falling—to symbolize uncertain listing outcomes, magnifying glass in the investor's hand, hand-drawn textures, clean geometric shapes, soft shadows, expressive characters, premium educational infographic composition, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow toward the safety shield: अचानक खर्चों से protection",
-      "cta": "आज ही अपना target लिखें"
+      "annotation": "Arrow toward the two diverging paths: Outcome uncertain",
+      "cta": "पहले समझें, फिर apply करें"
     },
     {
       "slide_number": 2,
-      "purpose": "calculation",
-      "headline": "पहला कदम: अपना Target निकालें",
-      "core_explanation": [
-        "सिर्फ essential monthly expenses को जोड़ें।",
-        "Target = Essential Expenses × 3–6 months",
-        "उदाहरण: ₹30,000 × 5 = ₹1,50,000"
-      ],
+      "purpose": "myth",
+      "headline": "Myth: Listing Gain पक्का है",
+      "core_explanation": "Demand, valuation और market sentiment listing price को प्रभावित करते हैं। Popular IPO भी नीचे list हो सकता है।",
       "visual_spec": {
-        "visual_concept": "एक beginner desk पर बैठकर calculator, rent, groceries, utilities और transport जैसे खर्चों के miniature objects को एक balance scale पर रख रहा है। दूसरी तरफ छह glowing monthly blocks का stack है, जो final emergency reserve में बदल रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian beginner at a tidy desk calculating a financial safety target, calculator with blank display, miniature home rent key, grocery basket, electricity bulb, water drop, bus pass without markings, and medicine bottle on one side of a balance scale, six glowing monthly blocks stacking into a secure glass reserve jar on the other side, rich illustrated storytelling, paper texture, hand-drawn outlines, teal, mustard and coral palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक carnival-style prediction wheel घूम रहा है, लेकिन उसके परिणाम तीन अलग दिशाओं में जा रहे हैं—ऊपर, बराबर और नीचे। Beginner investor wheel को रोकने की कोशिश कर रहा है, जबकि पीछे market mood बदलते clouds दिख रहे हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A vibrant editorial illustration of a financial prediction wheel spinning unpredictably, with three visual outcomes represented only by arrows: upward, flat, and downward, a young Indian beginner investor looking surprised while trying to understand it, changing market mood shown through sunny and cloudy shapes, small crowd reacting with mixed emotions, cream paper texture, navy, teal, coral and mustard palette, hand-drawn educational style, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Circle the essential-expense objects; ignore luxury shopping objects",
-      "cta": "अपने पिछले महीने के essential खर्च देखें"
+      "annotation": "Arrow pointing to the three outcomes: No guarantee",
+      "cta": null
     },
     {
       "slide_number": 3,
       "purpose": "process",
-      "headline": "6 महीनों का Saving Plan बनाएं",
-      "core_explanation": [
-        "Final target को 6 से divide करें।",
-        "₹1,50,000 target के लिए लगभग ₹25,000 प्रति माह बचाना होगा।",
-        "Amount मुश्किल हो तो खर्च घटाएं, income बढ़ाएं या timeline realistic बनाएं।"
-      ],
+      "headline": "Step 1: Business को समझिए",
+      "core_explanation": "Company क्या बेचती है? Customer कौन है? Revenue कैसे बनता है? अगर business समझ नहीं आता, pause करना ठीक है।",
       "visual_spec": {
-        "visual_concept": "एक लंबी छह-step सीढ़ी। हर step पर वही character एक छोटा coin pouch भर रहा है; ऊपर पहुँचकर छह pouches मिलकर एक बड़ा emergency vault बनाते हैं। पीछे calendar pages की visual rhythm है, लेकिन कोई readable text नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Six-step staircase representing six months, a determined young Indian professional climbing while placing one coin pouch on each step, six small pouches visually combining into a large secure emergency vault at the top, subtle blank calendar sheets floating in the background, hopeful sunrise, rich paper collage, hand-drawn ink details, dimensional objects, teal and warm orange palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "Beginner investor एक transparent company machine को खोलकर देख रहा है। Machine में product, customer और payment flow के रूप में स्पष्ट visual objects घूम रहे हैं। दूसरी ओर एक धुंधली, उलझी machine है जिसे character सावधानी से दूर रखता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A curious young Indian investor examining a transparent business machine with clear visual components: a product box, happy customer, coins flowing through a simple pathway, and a storefront, while a second tangled opaque machine sits aside as a warning, friendly mentor pointing with a magnifying glass, rich hand-drawn editorial illustration, cream notebook background, navy and coral palette, clean composition, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow moving upward: हर महीने एक fixed contribution",
-      "cta": "Monthly amount को salary budget में पहले रखें"
+      "annotation": "Arrow along the flow from product to customer to cash",
+      "cta": "Business समझ में आए तभी आगे बढ़ें"
     },
     {
       "slide_number": 4,
-      "purpose": "process",
-      "headline": "Saving को Automatic बनाएं",
-      "core_explanation": [
-        "Salary आते ही अलग account में auto-transfer सेट करें।",
-        "पहले saving, फिर spending—यह discipline आसान बनाता है।",
-        "Bonus या extra income का हिस्सा भी fund में जोड़ें।"
-      ],
+      "purpose": "analysis",
+      "headline": "Step 2: Financial Health Check",
+      "core_explanation": "Revenue और profit trend देखें। Operating cash flow, debt और business consistency को नजरअंदाज न करें।",
       "visual_spec": {
-        "visual_concept": "Salary का glowing stream एक main account से अलग emergency account की ओर automatically बह रहा है। Character आराम से चाय पी रहा है, जबकि एक friendly robot-like banking assistant transfer कर रहा है। खर्चों की छोटी नदी emergency fund तक पहुँचने से पहले अलग channel में जा रही है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm Indian home scene with a young professional relaxing with tea while a glowing salary stream automatically flows from one blank bank card icon into a separate transparent emergency savings jar, friendly mechanical assistant guiding the flow, spending stream diverted into smaller household expense bowls, calm organized mood, editorial financial education illustration, layered paper texture, soft shadows, teal, cream and coral colors, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक financial health clinic जैसा दृश्य। Company को एक character के रूप में दिखाया गया है, जिसकी जांच doctor-investor कर रहा है। तीन instruments visual रूप से revenue growth, cash flow और debt pressure दर्शाते हैं—एक मजबूत pulse, बहता cash pipe और भारी debt backpack।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A financial health clinic scene where a company is personified as a healthy business character being examined by a thoughtful investor-doctor, three visual instruments show business health: a steadily rising staircase of coins, a clear flowing water pipe representing operating cash flow, and a heavy backpack of debt being measured, supportive educational tone, Indian characters, cream paper texture, navy blue, green, coral and mustard accents, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow on the first flow: payday automation",
-      "cta": "अपने bank app में standing instruction देखें"
+      "annotation": "Three arrows: Growth, Cash, Debt",
+      "cta": "Profit के साथ cash flow भी देखें"
     },
     {
       "slide_number": 5,
-      "purpose": "comparison",
-      "headline": "Fund को कहाँ रखें?",
-      "core_explanation": [
-        "Immediate cash का हिस्सा आसानी से accessible savings account में रखें।",
-        "बाकी रकम के लिए sweep-in FD या short-term FD जैसे liquid options समझें।",
-        "Core emergency fund को direct stocks या equity mutual funds में रखने से volatility risk बढ़ सकता है।"
-      ],
+      "purpose": "structure",
+      "headline": "Step 3: IPO का पैसा कहाँ जाएगा?",
+      "core_explanation": "Fresh Issue से company को नया capital मिलता है। OFS में existing shareholders अपने shares बेचते हैं। दोनों का अर्थ अलग है।",
       "visual_spec": {
-        "visual_concept": "तीन रास्तों वाला illustrated financial landscape। पहला रास्ता एक open savings wallet और instant-access door तक जाता है। दूसरा रास्ता stable glass vault और short-term deposit structure तक जाता है। तीसरा रास्ता roller-coaster stock market की ओर जाता है, जहां emergency umbrella लेकर खड़ा character अस्थिरता से परेशान है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Three-path financial landscape: one calm path leading to an open accessible savings wallet and nearby cash door, one stable path leading to a transparent secure deposit vault with gentle steps, and one dramatic roller-coaster market path with a worried person holding an emergency umbrella, visual contrast between liquidity and volatility, Indian financial education context, rich hand-drawn editorial illustration, layered paper, teal, navy, coral and cream palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक दो-दरवाज़ों वाला funding room। बाईं ओर नए coins company के factory expansion, technology और working capital में जा रहे हैं। दाईं ओर एक existing shareholder अपने पुराने share certificates exchange कर रहा है और पैसा बाहर जा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A split-scene funding room with two doors, one side showing fresh coins entering a company factory, technology lab, and inventory shelves for growth, the other side showing an existing shareholder exchanging old ownership papers for coins leaving the company, clear visual contrast between new capital and shareholder sale, Indian business characters, rich NotebookLM-style hand-drawn educational illustration, cream background, navy, teal, coral and gold palette, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Use a shield icon beside liquid and low-volatility options",
-      "cta": "Liquidity, risk और tax rules पहले verify करें"
+      "annotation": "Arrow into the company versus arrow away from the company",
+      "cta": "Issue structure जरूर पढ़ें"
     },
     {
       "slide_number": 6,
-      "purpose": "timeline",
-      "headline": "हर महीने Progress Check करें",
-      "core_explanation": [
-        "हर महीने contribution के बाद balance और target gap देखें।",
-        "Income या essential expenses बदलें तो plan update करें।",
-        "छोटी शुरुआत भी consistent हो तो momentum बनता है।"
-      ],
+      "purpose": "valuation_and_risk",
+      "headline": "Step 4: अच्छी Company, महंगा Price?",
+      "core_explanation": "Business अच्छा होना पर्याप्त नहीं। Valuation peers, growth और profitability के मुकाबले उचित है या नहीं, यह भी देखें।",
       "visual_spec": {
-        "visual_concept": "छह transparent glass jars एक row में रखे हैं, हर jar में बढ़ता हुआ पानी और coins हैं। Character हर महीने एक jar पर छोटा golden check mark लगाता है; आखिरी jar एक glowing shield में बदल जाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Six transparent glass savings jars arranged as a visual timeline, each jar progressively fuller with coins and warm light, a young Indian woman marking progress with a small golden check symbol, final jar transforming into a glowing protective shield around her home, optimistic educational storytelling, detailed hand-drawn objects, paper collage layers, soft cream background, teal and gold accents, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक मजबूत, सुंदर business building को एक बहुत ऊंचे price pedestal पर रखा गया है। Investor weighing scale पर business quality और valuation को संतुलित करने की कोशिश करता है। दूसरी ओर warning clouds, competition और regulatory storm दिखाई देते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A strong attractive business building placed on an excessively tall price pedestal, a thoughtful Indian investor balancing two sides of a large scale—business quality on one side and valuation on the other, warning clouds symbolizing competition, regulation, and execution risk in the distance, sophisticated editorial financial illustration, cream notebook paper, navy, coral, mustard and muted red accents, hand-drawn textures, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow from first jar to final shield: consistency compounds confidence",
-      "cta": "हर महीने 10-minute money review करें"
+      "annotation": "Arrow to the scale: Quality is not the same as Price",
+      "cta": "Valuation को context में देखें"
     },
     {
       "slide_number": 7,
-      "purpose": "risk",
-      "headline": "इन Common Mistakes से बचें",
-      "core_explanation": [
-        "Emergency fund को shopping, vacations या speculative investing में न मिलाएं।",
-        "सारा पैसा ऐसी जगह न रखें जहां withdrawal मुश्किल या बहुत slow हो।",
-        "3–6 months एक guideline है; dependents, debt या irregular income होने पर target बड़ा हो सकता है।"
-      ],
+      "purpose": "decision_framework",
+      "headline": "Final Filter: Apply या Skip?",
+      "core_explanation": "Business समझ में आए, financials मजबूत हों और valuation reasonable हो तो आगे सोचें। Doubt ज्यादा हो तो skip करना भी decision है।",
       "visual_spec": {
-        "visual_concept": "एक forked road पर character emergency fund के लिए सही glowing shield path चुन रहा है। गलत रास्तों पर shopping cart, risky roller coaster और locked box हैं; सही रास्ते पर accessible savings jar, family home और calm sunrise दिखाई देते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian young adult standing at a forked road, choosing a glowing protective shield path leading toward a safe home and accessible savings jar, alternative paths show an overflowing shopping cart, a risky financial roller coaster, and a locked box with a small key out of reach, clear visual metaphor for common mistakes, rich editorial illustration, hand-drawn ink, layered paper, warm sunrise, teal, coral and mustard palette, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक शांत decision bridge। Investor चार stepping stones पार करता है—business, financials, structure और valuation—और अंत में दो साफ रास्ते चुनता है: आगे बढ़ना या सुरक्षित रूप से रुक जाना। पीछे emergency fund और diversified portfolio को सुरक्षित boxes में दिखाया गया है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A calm decision bridge scene with a young Indian investor crossing four stepping stones represented visually by a storefront, healthy cash-flow stream, funding arrows, and a balanced scale, leading to two clear paths: proceed carefully or pause safely, protected emergency savings box and diversified investment basket in the background, reassuring financial education mood, cream paper texture, navy blue, teal, coral and mustard palette, rich characters and objects, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Bold arrow toward the shield path: safety first, returns later",
-      "cta": "आज अपना first contribution शुरू करें"
+      "annotation": "Arrow toward the pause path: Skipping is also a decision",
+      "cta": "अपने पैसे और risk capacity के हिसाब से निर्णय लें"
     }
   ],
-  "caption": "Emergency Fund बनाना मुश्किल नहीं—बस target clear, plan practical और saving consistent होनी चाहिए। पहले अपने essential monthly expenses निकालें, फिर 3–6 months का cushion तय करें और उसे 6 महीनों के monthly contributions में बदलें। Immediate cash के लिए liquidity को priority दें और core emergency fund को high-volatility investments से अलग रखें।\n\nआपका emergency fund target कितना है?\n\n#EmergencyFund #PersonalFinance #MoneyManagement #FinancialPlanning #SavingTips #BeginnersFinance #HindiFinance #HinglishFinance #TrustPointFin"
+  "caption": "हर IPO में apply करना जरूरी नहीं होता। Listing gain guaranteed नहीं है—कंपनी का business, revenue-profit trend, operating cash flow, debt, Fresh Issue बनाम OFS, valuation और key risks जरूर समझें। अगर business या valuation स्पष्ट नहीं है, तो skip करना भी एक समझदारी भरा decision हो सकता है। निवेश से पहले research करें और वही पैसा लगाएँ जिसकी निकट भविष्य में जरूरत न हो।\n\n#IPO #IPOInvesting #PersonalFinance #FinancialLiteracy #StockMarketIndia #InvestingForBeginners #HindiFinance #TrustPointFin #LongTermInvesting #RiskManagement"
 }

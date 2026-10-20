@@ -157,7 +157,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 141. Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?
 - [x] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth
 - [x] 143. How to Build an Emergency Fund in Just 6 Months
-- [ ] 144. Demystifying IPOs: Should You Invest in Every New Listing?
+- [x] 144. Demystifying IPOs: Should You Invest in Every New Listing?
 - [ ] 145. Why Angel One is the Perfect Platform for Your First Trade
 - [ ] 146. What Happens When the RBI Changes the Repo Rate?
 - [ ] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?

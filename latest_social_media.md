@@ -1,15 +1,13 @@
 # Social Media Posts
-*Generated for article: "Emergency Fund सिर्फ 6 महीनों में कैसे बनाएं: Beginners के लिए Step-by-Step Guide"*
+*Generated for article: "Demystifying IPOs: क्या आपको हर New Listing में Invest करना चाहिए?"*
 
 ---
 
 ## 📝 Caption
 
-Emergency Fund बनाना मुश्किल नहीं—बस target clear, plan practical और saving consistent होनी चाहिए। पहले अपने essential monthly expenses निकालें, फिर 3–6 months का cushion तय करें और उसे 6 महीनों के monthly contributions में बदलें। Immediate cash के लिए liquidity को priority दें और core emergency fund को high-volatility investments से अलग रखें।
+हर IPO में apply करना जरूरी नहीं होता। Listing gain guaranteed नहीं है—कंपनी का business, revenue-profit trend, operating cash flow, debt, Fresh Issue बनाम OFS, valuation और key risks जरूर समझें। अगर business या valuation स्पष्ट नहीं है, तो skip करना भी एक समझदारी भरा decision हो सकता है। निवेश से पहले research करें और वही पैसा लगाएँ जिसकी निकट भविष्य में जरूरत न हो।
 
-आपका emergency fund target कितना है?
-
-#EmergencyFund #PersonalFinance #MoneyManagement #FinancialPlanning #SavingTips #BeginnersFinance #HindiFinance #HinglishFinance #TrustPointFin
+#IPO #IPOInvesting #PersonalFinance #FinancialLiteracy #StockMarketIndia #InvestingForBeginners #HindiFinance #TrustPointFin #LongTermInvesting #RiskManagement
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/how-to-build-an-emergency-fund-in-just-6-months.html*
+*Article URL: https://trilok310.github.io/trustpointfin/demystifying-ipos-should-you-invest-in-every-new-listing.html*
