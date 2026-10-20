@@ -1,3 +1,4 @@
 node_modules/
 tpf-telegram-card.jpg
 *.tmp
+scripts/dispatcher.log
