@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-20T15:45:59.758Z",
+  "lastUpdated": "2026-10-21T07:55:32.475Z",
   "recentEntries": [
+    {
+      "date": "21 October 2026",
+      "edition": "EVENING",
+      "niftyPrice": 22737.85,
+      "topics": [
+        "Intraday Rally Fades as Nifty 50 Settles at 22,737.85",
+        "Bank Nifty Rebounds 0.99% to Close at 54,797",
+        "IT Stocks Lead Sectoral Gains as Nifty IT Jumps 2.6%",
+        "High Trading Volatility Drives Activity Across Exchange Infrastructure Providers",
+        "Brent Crude Holds at $109.68 as USD/INR Trades Near ₹94.69"
+      ]
+    },
     {
       "date": "20 October 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "IT Stocks Show Defensive Resilience Led by TCS Q2 Earnings Signals",
         "Exchange Duopolies BSE and NSE Spotlight Structural Tollbooth Earnings Power",
         "Brent at $104.03 and Rupee at 96.76 Elevate Imported Cost Pressures"
-      ]
-    },
-    {
-      "date": "9 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22557.9,
-      "topics": [
-        "Nifty 50 Settles at 22,557.9 (-788.5 pts)",
-        "Bank Nifty Under Pressure on Net Interest Margin Trends",
-        "Pharma & FMCG Act as Resilient Capital Safe Havens",
-        "Exchange & Depository Duopolies Gain on Volume Spikes",
-        "Crude and Global Currency Dynamics Direct FII Flow"
       ]
     }
   ]
