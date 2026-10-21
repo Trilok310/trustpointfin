@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-20_demystifying-ipos-should-you-i",
-  "topic": "Demystifying IPOs: Should You Invest in Every New Listing?",
-  "lineIndex": 159,
+  "job_id": "job_2026-10-21_why-angel-one-is-the-perfect-p",
+  "topic": "Why Angel One is the Perfect Platform for Your First Trade",
+  "lineIndex": 160,
   "scheduled_at": null,
-  "started_at": "2026-10-20T08:44:33.371Z",
+  "started_at": "2026-10-21T08:45:12.121Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 2,
+  "article_correction_attempts": 1,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-20T08:47:24.104Z",
-  "filename": "demystifying-ipos-should-you-invest-in-every-new-listing.html",
-  "title": "Demystifying IPOs: क्या आपको हर New Listing में Invest करना चाहिए?"
+  "updated_at": "2026-10-21T08:46:49.129Z",
+  "filename": "why-angel-one-is-the-perfect-platform-for-your-first-trade.html",
+  "title": "Why Angel One is the Perfect Platform for Your First Trade"
 }
