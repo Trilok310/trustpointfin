@@ -158,7 +158,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth
 - [x] 143. How to Build an Emergency Fund in Just 6 Months
 - [x] 144. Demystifying IPOs: Should You Invest in Every New Listing?
-- [ ] 145. Why Angel One is the Perfect Platform for Your First Trade
+- [x] 145. Why Angel One is the Perfect Platform for Your First Trade
 - [ ] 146. What Happens When the RBI Changes the Repo Rate?
 - [ ] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?
 - [ ] 148. The Secret to Beating Inflation in India

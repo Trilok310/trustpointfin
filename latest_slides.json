@@ -1,92 +1,104 @@
 {
-  "topic": "Demystifying IPOs: क्या आपको हर New Listing में Invest करना चाहिए?",
-  "teaching_objective": "Learners समझें कि IPO में apply करने से पहले केवल listing gain नहीं, बल्कि business quality, financial health, IPO structure, valuation और risks को evaluate करना जरूरी है.",
-  "format": "PROCESS",
+  "topic": "Why Angel One is the Perfect Platform for Your First Trade",
+  "teaching_objective": "Beginners ko samjhana ki Angel One jaise platform par first trade se pehle features, order types, charges aur risks ko kaise evaluate karein. Platform useful ho sakta hai, lekin returns ya market-loss ki guarantee nahi hoti.",
+  "format": "BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "हर New Listing में Invest करना ज़रूरी नहीं",
-      "core_explanation": "IPO कोई guaranteed profit ticket नहीं है। Listing price issue price से ऊपर, बराबर या नीचे हो सकती है।",
+      "headline": "Pehla trade: excitement ke saath preparation bhi",
+      "core_explanation": [
+        "Angel One beginners ke liye multiple investing tools provide kar sakta hai.",
+        "Lekin koi bhi broker profit ya loss se protection guarantee nahi karta.",
+        "Start karne se pehle apni goal, budget aur risk tolerance samjho."
+      ],
       "visual_spec": {
-        "visual_concept": "एक उत्साहित beginner investor चमकते हुए IPO launch gate के सामने खड़ा है। Gate के पीछे दो रास्ते दिखते हैं—एक ऊपर जाती रोशनी वाला, दूसरा नीचे जाती छाया वाला—जो uncertain listing outcome को दर्शाए। आसपास भीड़ उत्साह में है, लेकिन character के हाथ में magnifying glass है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial financial illustration, warm cream paper background, navy blue and coral accents, a curious young Indian investor standing before a glamorous new company launch gate, excited crowd in the background, two diverging paths behind the gate—one gently rising and one gently falling—to symbolize uncertain listing outcomes, magnifying glass in the investor's hand, hand-drawn textures, clean geometric shapes, soft shadows, expressive characters, premium educational infographic composition, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "A young Indian beginner stands at the entrance of a bright financial learning studio, holding a small notebook and looking at a branching path with icons of stocks, ETFs, mutual funds and IPO participation represented as simple objects. A friendly guide gestures toward the path while a small cautionary mountain appears in the distance. Warm, optimistic but realistic storytelling.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with actual Indian young adult character, friendly financial guide, learning studio entrance, branching pathway, miniature stock certificates, ETF basket, mutual fund plant, IPO ticket and a distant market mountain, soft cream paper background, navy blue, coral, teal and mustard palette, hand-drawn ink outlines, subtle paper grain, cinematic composition, clear visual hierarchy, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow toward the two diverging paths: Outcome uncertain",
-      "cta": "पहले समझें, फिर apply करें"
+      "annotation": "Arrow: Pehle seekho, phir trade karo",
+      "cta": "First trade se pehle checklist banao."
     },
     {
       "slide_number": 2,
-      "purpose": "myth",
-      "headline": "Myth: Listing Gain पक्का है",
-      "core_explanation": "Demand, valuation और market sentiment listing price को प्रभावित करते हैं। Popular IPO भी नीचे list हो सकता है।",
+      "purpose": "feature_overview",
+      "headline": "Ek platform, kai investing choices",
+      "core_explanation": [
+        "Stocks, ETFs, Mutual Funds aur IPOs jaise products explore kiye ja sakte hain.",
+        "Watchlist aur research-related tools decision-making ko organize karne mein help kar sakte hain.",
+        "Har product ka risk aur purpose alag hota hai."
+      ],
       "visual_spec": {
-        "visual_concept": "एक carnival-style prediction wheel घूम रहा है, लेकिन उसके परिणाम तीन अलग दिशाओं में जा रहे हैं—ऊपर, बराबर और नीचे। Beginner investor wheel को रोकने की कोशिश कर रहा है, जबकि पीछे market mood बदलते clouds दिख रहे हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A vibrant editorial illustration of a financial prediction wheel spinning unpredictably, with three visual outcomes represented only by arrows: upward, flat, and downward, a young Indian beginner investor looking surprised while trying to understand it, changing market mood shown through sunny and cloudy shapes, small crowd reacting with mixed emotions, cream paper texture, navy, teal, coral and mustard palette, hand-drawn educational style, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "A spacious workbench showing four distinct investment pathways: individual company shares as colorful plant cards, ETFs as a diversified basket, mutual funds as a community garden, and IPOs as a new storefront opening. The beginner organizes them on a tablet-like board while the guide points out that each path has a different terrain.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed educational editorial illustration, Indian beginner at a financial workbench, four visual investment metaphors: single company plants, diversified basket of assets, community garden, newly opening storefront, tablet interface shown only with abstract shapes and no readable content, friendly guide, warm paper texture, navy, teal, coral and yellow accents, hand-inked outlines, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow pointing to the three outcomes: No guarantee",
-      "cta": null
+      "annotation": "Har product ko samajhkar choose karo",
+      "cta": "Product ka purpose aur risk compare karo."
     },
     {
       "slide_number": 3,
       "purpose": "process",
-      "headline": "Step 1: Business को समझिए",
-      "core_explanation": "Company क्या बेचती है? Customer कौन है? Revenue कैसे बनता है? अगर business समझ नहीं आता, pause करना ठीक है।",
+      "headline": "Account se order tak: simple process",
+      "core_explanation": [
+        "Digital account opening ke liye KYC aur required documents complete karne hote hain.",
+        "Stock choose karne se pehle watchlist aur basic research use karo.",
+        "Order place karne se pehle quantity, price aur order type check karo."
+      ],
       "visual_spec": {
-        "visual_concept": "Beginner investor एक transparent company machine को खोलकर देख रहा है। Machine में product, customer और payment flow के रूप में स्पष्ट visual objects घूम रहे हैं। दूसरी ओर एक धुंधली, उलझी machine है जिसे character सावधानी से दूर रखता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A curious young Indian investor examining a transparent business machine with clear visual components: a product box, happy customer, coins flowing through a simple pathway, and a storefront, while a second tangled opaque machine sits aside as a warning, friendly mentor pointing with a magnifying glass, rich hand-drawn editorial illustration, cream notebook background, navy and coral palette, clean composition, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "A visual journey across three connected scenes: the beginner completes identity verification at a desk, studies a small set of company cards with a magnifying glass, then reviews an order ticket with a calm mentor before pressing a confirmation button. Use arrows and physical stepping stones, but no written interface text.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Three-part visual story in one cohesive illustration: Indian beginner completing digital identity verification with documents and secure shield, analyzing a few abstract company cards with magnifying glass, carefully reviewing a blank order ticket with a mentor before confirmation, connected by a gentle pathway and arrows made of shapes only, cream paper, navy blue and coral palette, expressive characters, hand-drawn editorial style, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow along the flow from product to customer to cash",
-      "cta": "Business समझ में आए तभी आगे बढ़ें"
+      "annotation": "Confirm button dabane se pehle double-check",
+      "cta": "Order review ko habit banao."
     },
     {
       "slide_number": 4,
-      "purpose": "analysis",
-      "headline": "Step 2: Financial Health Check",
-      "core_explanation": "Revenue और profit trend देखें। Operating cash flow, debt और business consistency को नजरअंदाज न करें।",
+      "purpose": "order_types",
+      "headline": "Market ya limit? Order type samjho",
+      "core_explanation": [
+        "Market order generally available market price par execute hone ki koshish karta hai.",
+        "Limit order mein aap desired price set karte ho; execution guaranteed nahi hota.",
+        "Fast execution aur price control ke beech trade-off samjho."
+      ],
       "visual_spec": {
-        "visual_concept": "एक financial health clinic जैसा दृश्य। Company को एक character के रूप में दिखाया गया है, जिसकी जांच doctor-investor कर रहा है। तीन instruments visual रूप से revenue growth, cash flow और debt pressure दर्शाते हैं—एक मजबूत pulse, बहता cash pipe और भारी debt backpack।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A financial health clinic scene where a company is personified as a healthy business character being examined by a thoughtful investor-doctor, three visual instruments show business health: a steadily rising staircase of coins, a clear flowing water pipe representing operating cash flow, and a heavy backpack of debt being measured, supportive educational tone, Indian characters, cream paper texture, navy blue, green, coral and mustard accents, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "A split-scene illustration: on one side, a character boards a moving train quickly, symbolizing a market order; on the other side, another character waits at a clearly marked platform gate for a chosen fare, symbolizing a limit order. A mentor shows both paths with balanced scales, emphasizing choice rather than a universally better option.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen financial metaphor with two Indian characters: one quickly boarding a moving train, another patiently waiting at a platform gate with a chosen price token, balanced scale between them, mentor explaining the difference, abstract trading environment, no readable signs or symbols, textured cream paper, navy, teal, coral and mustard palette, rich hand-drawn editorial illustration, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Three arrows: Growth, Cash, Debt",
-      "cta": "Profit के साथ cash flow भी देखें"
+      "annotation": "Speed vs price control",
+      "cta": "Order type ko blindly select mat karo."
     },
     {
       "slide_number": 5,
-      "purpose": "structure",
-      "headline": "Step 3: IPO का पैसा कहाँ जाएगा?",
-      "core_explanation": "Fresh Issue से company को नया capital मिलता है। OFS में existing shareholders अपने shares बेचते हैं। दोनों का अर्थ अलग है।",
+      "purpose": "calculation",
+      "headline": "Trade value aur charges: chhota example",
+      "core_explanation": [
+        "Example: ₹100 ka stock × 10 shares = ₹1,000 trade value.",
+        "Iske upar applicable taxes aur charges add ho sakte hain.",
+        "Latest brokerage, AMC, DP charges aur taxes official sources par verify karo."
+      ],
       "visual_spec": {
-        "visual_concept": "एक दो-दरवाज़ों वाला funding room। बाईं ओर नए coins company के factory expansion, technology और working capital में जा रहे हैं। दाईं ओर एक existing shareholder अपने पुराने share certificates exchange कर रहा है और पैसा बाहर जा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A split-scene funding room with two doors, one side showing fresh coins entering a company factory, technology lab, and inventory shelves for growth, the other side showing an existing shareholder exchanging old ownership papers for coins leaving the company, clear visual contrast between new capital and shareholder sale, Indian business characters, rich NotebookLM-style hand-drawn educational illustration, cream background, navy, teal, coral and gold palette, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "A friendly classroom table with ten small share tokens arranged beside a single hundred-rupee-style abstract coin, forming a neat bundle. Separate small bowls represent taxes and platform-related charges without using readable text. The beginner calculates with wooden counting blocks while a magnifying glass highlights the fine print area.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational calculation scene with Indian beginner arranging ten abstract share tokens beside one hundred-value coin represented symbolically without currency numerals, wooden counting blocks forming a simple multiplication arrangement, separate small bowls for taxes and charges, magnifying glass over a blank document, warm cream paper, navy blue, coral, teal and mustard palette, hand-drawn ink, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow into the company versus arrow away from the company",
-      "cta": "Issue structure जरूर पढ़ें"
+      "annotation": "Example only — actual charges verify karo",
+      "cta": "Trade value ke saath total cost bhi dekho."
     },
     {
       "slide_number": 6,
-      "purpose": "valuation_and_risk",
-      "headline": "Step 4: अच्छी Company, महंगा Price?",
-      "core_explanation": "Business अच्छा होना पर्याप्त नहीं। Valuation peers, growth और profitability के मुकाबले उचित है या नहीं, यह भी देखें।",
+      "purpose": "risk_and_action",
+      "headline": "Perfect platform nahi—right preparation important hai",
+      "core_explanation": [
+        "Angel One useful ho sakta hai, par suitability aapki needs par depend karti hai.",
+        "Market price fluctuate karta hai; loss possible hai.",
+        "Aise amount se start karo jisse financial goals impact na hon."
+      ],
       "visual_spec": {
-        "visual_concept": "एक मजबूत, सुंदर business building को एक बहुत ऊंचे price pedestal पर रखा गया है। Investor weighing scale पर business quality और valuation को संतुलित करने की कोशिश करता है। दूसरी ओर warning clouds, competition और regulatory storm दिखाई देते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A strong attractive business building placed on an excessively tall price pedestal, a thoughtful Indian investor balancing two sides of a large scale—business quality on one side and valuation on the other, warning clouds symbolizing competition, regulation, and execution risk in the distance, sophisticated editorial financial illustration, cream notebook paper, navy, coral, mustard and muted red accents, hand-drawn textures, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "The beginner reaches a calm lookout point above a winding market landscape. They carry a small backpack labeled only through visual symbols: budget coin pouch, checklist, safety helmet and long-term goal plant. A guide helps them choose a manageable stepping stone, while dramatic market waves remain in the background.",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Inspiring but realistic final scene with Indian beginner at a lookout above a winding financial landscape, market waves in the background, small backpack containing abstract budget coins, checklist paper with no writing, safety helmet and growing goal plant, supportive mentor helping choose a manageable stepping stone, balanced composition, cream paper texture, navy, teal, coral and mustard palette, rich hand-drawn editorial storytelling, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow to the scale: Quality is not the same as Price",
-      "cta": "Valuation को context में देखें"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "decision_framework",
-      "headline": "Final Filter: Apply या Skip?",
-      "core_explanation": "Business समझ में आए, financials मजबूत हों और valuation reasonable हो तो आगे सोचें। Doubt ज्यादा हो तो skip करना भी decision है।",
-      "visual_spec": {
-        "visual_concept": "एक शांत decision bridge। Investor चार stepping stones पार करता है—business, financials, structure और valuation—और अंत में दो साफ रास्ते चुनता है: आगे बढ़ना या सुरक्षित रूप से रुक जाना। पीछे emergency fund और diversified portfolio को सुरक्षित boxes में दिखाया गया है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A calm decision bridge scene with a young Indian investor crossing four stepping stones represented visually by a storefront, healthy cash-flow stream, funding arrows, and a balanced scale, leading to two clear paths: proceed carefully or pause safely, protected emergency savings box and diversified investment basket in the background, reassuring financial education mood, cream paper texture, navy blue, teal, coral and mustard palette, rich characters and objects, no letters, no numbers, no logos, no labels, no watermark."
-      },
-      "annotation": "Arrow toward the pause path: Skipping is also a decision",
-      "cta": "अपने पैसे और risk capacity के हिसाब से निर्णय लें"
+      "annotation": "Risk samjho, amount manageable rakho",
+      "cta": "Official details verify karke hi first trade plan karo."
     }
   ],
-  "caption": "हर IPO में apply करना जरूरी नहीं होता। Listing gain guaranteed नहीं है—कंपनी का business, revenue-profit trend, operating cash flow, debt, Fresh Issue बनाम OFS, valuation और key risks जरूर समझें। अगर business या valuation स्पष्ट नहीं है, तो skip करना भी एक समझदारी भरा decision हो सकता है। निवेश से पहले research करें और वही पैसा लगाएँ जिसकी निकट भविष्य में जरूरत न हो।\n\n#IPO #IPOInvesting #PersonalFinance #FinancialLiteracy #StockMarketIndia #InvestingForBeginners #HindiFinance #TrustPointFin #LongTermInvesting #RiskManagement"
+  "caption": "First trade ka best platform wahi hai jise aap samajhkar use karein. Angel One par Stocks, ETFs, Mutual Funds aur IPOs jaise options aur useful tools available ho sakte hain—but charges, order types aur risks ko verify karna zaroori hai. Example: ₹100 × 10 shares = ₹1,000 trade value, plus applicable taxes and charges. Market returns guaranteed nahi hote. #TrustPointFin #AngelOne #FirstTrade #StockMarketForBeginners #InvestingBasics #PersonalFinanceIndia #FinancialLiteracy #LearnBeforeYouInvest"
 }
