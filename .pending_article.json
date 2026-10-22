@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-21_why-angel-one-is-the-perfect-p",
-  "topic": "Why Angel One is the Perfect Platform for Your First Trade",
-  "lineIndex": 160,
+  "job_id": "job_2026-10-22_what-happens-when-the-rbi-chan",
+  "topic": "What Happens When the RBI Changes the Repo Rate?",
+  "lineIndex": 161,
   "scheduled_at": null,
-  "started_at": "2026-10-21T08:45:12.121Z",
+  "started_at": "2026-10-22T08:47:12.772Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 1,
+  "article_correction_attempts": 0,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-21T08:46:49.129Z",
-  "filename": "why-angel-one-is-the-perfect-platform-for-your-first-trade.html",
-  "title": "Why Angel One is the Perfect Platform for Your First Trade"
+  "updated_at": "2026-10-22T08:48:09.549Z",
+  "filename": "what-happens-when-the-rbi-changes-the-repo-rate.html",
+  "title": "RBI Repo Rate बदलने पर क्या होता है? Loans, FD, Inflation और Stock Market पर असर"
 }
