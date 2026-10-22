@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-21T07:55:32.475Z",
+  "lastUpdated": "2026-10-22T15:57:02.277Z",
   "recentEntries": [
+    {
+      "date": "22 October 2026",
+      "edition": "EVENING",
+      "niftyPrice": 22687.65,
+      "topics": [
+        "Nifty Settles at 22,687.65 as Surging Energy Prices Fuel Cautious Sentiment",
+        "Bank Nifty Closes at 54,925 as Margin Challenges Temper Credit Growth",
+        "FMCG and IT Stocks Lag While Defensive Pharma Displays Relative Resilience",
+        "Surging Jio IPO Subscription Underpins Structural Moats in Market Infrastructure",
+        "Brent Crude Hits $111.18 as USD/INR Holds at ₹94.81 Headwind"
+      ]
+    },
     {
       "date": "21 October 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "Defensive Sectors and IT Selected Counters Experience Relative Volume Resilience",
         "Capital Market Infrastructure Exchanges Benefit from Elevated Daily Trading Volume",
         "Brent Crude at $105.53 and Rupee at 95.71 Amplify Imported Inflation Risks"
-      ]
-    },
-    {
-      "date": "9 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22520.45,
-      "topics": [
-        "Nifty Settles at 22,520.45 as Benchmark Navigates Sharp 825-Point Drawdown",
-        "Bank Nifty Drops 1.96% to 55,256.65 Under Sticky Cost-of-Funds Headwinds",
-        "IT Stocks Show Defensive Resilience Led by TCS Q2 Earnings Signals",
-        "Exchange Duopolies BSE and NSE Spotlight Structural Tollbooth Earnings Power",
-        "Brent at $104.03 and Rupee at 96.76 Elevate Imported Cost Pressures"
       ]
     }
   ]
