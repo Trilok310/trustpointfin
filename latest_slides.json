@@ -1,104 +1,92 @@
 {
-  "topic": "Why Angel One is the Perfect Platform for Your First Trade",
-  "teaching_objective": "Beginners ko samjhana ki Angel One jaise platform par first trade se pehle features, order types, charges aur risks ko kaise evaluate karein. Platform useful ho sakta hai, lekin returns ya market-loss ki guarantee nahi hoti.",
-  "format": "BEGINNER_CONCEPT",
+  "topic": "RBI Repo Rate बदलने पर क्या होता है? Loans, FD, Inflation और Stock Market पर असर",
+  "teaching_objective": "Learners समझें कि Repo Rate RBI से banks की borrowing cost को कैसे प्रभावित करता है और उसका असर धीरे-धीरे loans, FD, inflation, bonds और stock market तक कैसे पहुँचता है।",
+  "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Pehla trade: excitement ke saath preparation bhi",
-      "core_explanation": [
-        "Angel One beginners ke liye multiple investing tools provide kar sakta hai.",
-        "Lekin koi bhi broker profit ya loss se protection guarantee nahi karta.",
-        "Start karne se pehle apni goal, budget aur risk tolerance samjho."
-      ],
+      "headline": "Repo Rate क्या है?",
+      "core_explanation": "• Repo Rate वह दर है जिस पर RBI banks को short-term funds देता है।\n• यह banks की money cost और economy में credit flow को प्रभावित करती है।",
       "visual_spec": {
-        "visual_concept": "A young Indian beginner stands at the entrance of a bright financial learning studio, holding a small notebook and looking at a branching path with icons of stocks, ETFs, mutual funds and IPO participation represented as simple objects. A friendly guide gestures toward the path while a small cautionary mountain appears in the distance. Warm, optimistic but realistic storytelling.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with actual Indian young adult character, friendly financial guide, learning studio entrance, branching pathway, miniature stock certificates, ETF basket, mutual fund plant, IPO ticket and a distant market mountain, soft cream paper background, navy blue, coral, teal and mustard palette, hand-drawn ink outlines, subtle paper grain, cinematic composition, clear visual hierarchy, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक बड़े भारतीय central bank जैसे भवन से एक नियंत्रित पानी की धारा commercial bank, business और household तक जा रही है। बीच में एक बड़ा metallic valve repo rate का प्रतीक है, जिसे एक professional central banker घुमा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm ivory paper background, deep navy and saffron accents, Indian financial ecosystem, recognizable generic central bank building with Indian flag, a large brass control valve connected by flowing water channels to a modern bank, small business, and family home, friendly human characters, clean layered composition, subtle hand-drawn arrows without symbols or lettering, soft shadows, sophisticated financial education infographic feel, no words, no numbers, no labels, no logos."
       },
-      "annotation": "Arrow: Pehle seekho, phir trade karo",
-      "cta": "First trade se pehle checklist banao."
+      "annotation": "RBI का rate change banks की funding cost को प्रभावित करता है।",
+      "cta": "पहले mechanism समझिए"
     },
     {
       "slide_number": 2,
-      "purpose": "feature_overview",
-      "headline": "Ek platform, kai investing choices",
-      "core_explanation": [
-        "Stocks, ETFs, Mutual Funds aur IPOs jaise products explore kiye ja sakte hain.",
-        "Watchlist aur research-related tools decision-making ko organize karne mein help kar sakte hain.",
-        "Har product ka risk aur purpose alag hota hai."
-      ],
+      "purpose": "process",
+      "headline": "Rate बढ़े तो EMI पर दबाव",
+      "core_explanation": "• Banks की borrowing cost बढ़ सकती है।\n• Floating-rate home या business loans की EMI बढ़ सकती है, या tenure लंबा हो सकता है।\n• असर bank के benchmark और reset rules पर निर्भर करता है।",
       "visual_spec": {
-        "visual_concept": "A spacious workbench showing four distinct investment pathways: individual company shares as colorful plant cards, ETFs as a diversified basket, mutual funds as a community garden, and IPOs as a new storefront opening. The beginner organizes them on a tablet-like board while the guide points out that each path has a different terrain.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed educational editorial illustration, Indian beginner at a financial workbench, four visual investment metaphors: single company plants, diversified basket of assets, community garden, newly opening storefront, tablet interface shown only with abstract shapes and no readable content, friendly guide, warm paper texture, navy, teal, coral and yellow accents, hand-inked outlines, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक परिवार अपने घर के सामने खड़ा है। घर की ओर जाने वाली सीढ़ी floating interest rate बढ़ने पर ऊँची और भारी हो रही है; परिवार का monthly budget basket हल्का दिख रहा है। एक banker दूसरी ओर rate transmission का lever adjust कर रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated storytelling scene, Indian family outside a modest modern home, a staircase becoming steeper and heavier as it rises, a monthly household budget basket visibly strained, professional banker adjusting a financial lever in the background, visual metaphor for floating loan costs increasing, warm paper texture, navy, terracotta, muted green palette, expressive but realistic characters, editorial learning illustration, no words, no numbers, no labels, no logos."
       },
-      "annotation": "Har product ko samajhkar choose karo",
-      "cta": "Product ka purpose aur risk compare karo."
+      "annotation": "Rate revision के बाद loan agreement और reset cycle check करें।",
+      "cta": "अपनी EMI review करें"
     },
     {
       "slide_number": 3,
-      "purpose": "process",
-      "headline": "Account se order tak: simple process",
-      "core_explanation": [
-        "Digital account opening ke liye KYC aur required documents complete karne hote hain.",
-        "Stock choose karne se pehle watchlist aur basic research use karo.",
-        "Order place karne se pehle quantity, price aur order type check karo."
-      ],
+      "purpose": "calculation",
+      "headline": "EMI का छोटा बदलाव, बड़ा असर",
+      "core_explanation": "• Illustrative example: ₹40 लाख, 20-year loan में 8.50% से 9.00% rate होने पर EMI लगभग ₹34,700 से ₹35,995 हो सकती है।\n• Monthly difference करीब ₹1,295 है।\n• Actual EMI अलग हो सकती है।",
       "visual_spec": {
-        "visual_concept": "A visual journey across three connected scenes: the beginner completes identity verification at a desk, studies a small set of company cards with a magnifying glass, then reviews an order ticket with a calm mentor before pressing a confirmation button. Use arrows and physical stepping stones, but no written interface text.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Three-part visual story in one cohesive illustration: Indian beginner completing digital identity verification with documents and secure shield, analyzing a few abstract company cards with magnifying glass, carefully reviewing a blank order ticket with a mentor before confirmation, connected by a gentle pathway and arrows made of shapes only, cream paper, navy blue and coral palette, expressive characters, hand-drawn editorial style, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक साफ़ split-screen financial illustration: बाईं ओर परिवार की छोटी EMI basket, दाईं ओर rate बढ़ने के बाद थोड़ी बड़ी basket। नीचे coins की दो flowing rows दिखें, जिनमें दूसरी row अधिक लंबी हो। कोई लिखित आंकड़ा न हो; visual comparison स्पष्ट हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen financial education illustration, same Indian family comparing two monthly payment baskets, left basket modest and right basket slightly fuller and heavier, two elegant streams of coins with the second stream visibly longer, small home loan document shown as blank paper with no writing, clear visual comparison, warm ivory background, navy and coral accents, precise editorial composition, soft dimensional shadows, no words, no numbers, no labels, no logos."
       },
-      "annotation": "Confirm button dabane se pehle double-check",
-      "cta": "Order review ko habit banao."
+      "annotation": "यह calculation-based illustration है, guarantee नहीं।",
+      "cta": "अपना exact loan calculator देखें"
     },
     {
       "slide_number": 4,
-      "purpose": "order_types",
-      "headline": "Market ya limit? Order type samjho",
-      "core_explanation": [
-        "Market order generally available market price par execute hone ki koshish karta hai.",
-        "Limit order mein aap desired price set karte ho; execution guaranteed nahi hota.",
-        "Fast execution aur price control ke beech trade-off samjho."
-      ],
+      "purpose": "comparison",
+      "headline": "FD और savers पर असर",
+      "core_explanation": "• Repo Rate बढ़ने पर banks नई FD पर बेहतर rates offer कर सकते हैं।\n• Rate घटने पर FD returns धीरे-धीरे कम हो सकते हैं।\n• Existing FD का return आमतौर पर उसके tenure और terms पर निर्भर रहता है।",
       "visual_spec": {
-        "visual_concept": "A split-scene illustration: on one side, a character boards a moving train quickly, symbolizing a market order; on the other side, another character waits at a clearly marked platform gate for a chosen fare, symbolizing a limit order. A mentor shows both paths with balanced scales, emphasizing choice rather than a universally better option.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen financial metaphor with two Indian characters: one quickly boarding a moving train, another patiently waiting at a platform gate with a chosen price token, balanced scale between them, mentor explaining the difference, abstract trading environment, no readable signs or symbols, textured cream paper, navy, teal, coral and mustard palette, rich hand-drawn editorial illustration, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक saver दो तरफ़ खड़ा है: एक ओर rising interest garden जिसमें fixed deposit certificates के रूप में blank seed packets फल दे रहे हैं; दूसरी ओर falling-rate season में growth धीमी है। Bank counter पर respectful advisor समझा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich metaphorical illustration of an Indian saver in a financial garden, one side showing healthy growing money plants fed by a bank vault and the other side showing slower growth under a softer financial season, blank certificate papers represented as seed packets without writing, friendly bank advisor explaining calmly, elegant paper collage texture, deep blue, saffron, sage green, no words, no numbers, no labels, no logos."
       },
-      "annotation": "Speed vs price control",
-      "cta": "Order type ko blindly select mat karo."
+      "annotation": "FD खोलने से पहले tenure, rate और premature withdrawal rules देखें।",
+      "cta": "Return के साथ liquidity भी compare करें"
     },
     {
       "slide_number": 5,
-      "purpose": "calculation",
-      "headline": "Trade value aur charges: chhota example",
-      "core_explanation": [
-        "Example: ₹100 ka stock × 10 shares = ₹1,000 trade value.",
-        "Iske upar applicable taxes aur charges add ho sakte hain.",
-        "Latest brokerage, AMC, DP charges aur taxes official sources par verify karo."
-      ],
+      "purpose": "market_concept",
+      "headline": "Inflation पर indirect असर",
+      "core_explanation": "• Rate बढ़ने से borrowing और spending धीमी हो सकती है।\n• Demand कम होने पर inflation पर दबाव घट सकता है।\n• असर तुरंत नहीं आता और कई दूसरे factors भी काम करते हैं।",
       "visual_spec": {
-        "visual_concept": "A friendly classroom table with ten small share tokens arranged beside a single hundred-rupee-style abstract coin, forming a neat bundle. Separate small bowls represent taxes and platform-related charges without using readable text. The beginner calculates with wooden counting blocks while a magnifying glass highlights the fine print area.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational calculation scene with Indian beginner arranging ten abstract share tokens beside one hundred-value coin represented symbolically without currency numerals, wooden counting blocks forming a simple multiplication arrangement, separate small bowls for taxes and charges, magnifying glass over a blank document, warm cream paper, navy blue, coral, teal and mustard palette, hand-drawn ink, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक bustling Indian market में shopping carts और business activity की गति को एक central dial नियंत्रित कर रहा है। Rate बढ़ने पर भीड़ और carts धीरे चलते हैं, prices के गुब्बारे नीचे आते हैं; दृश्य में supply chain, fuel और weather के छोटे symbolic elements भी मौजूद हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed Indian marketplace scene used as an economic metaphor, shoppers and business carts moving from fast motion on one side to calmer motion on the other, a large central control dial symbolizing monetary policy, price balloons gently lowering, subtle visual elements for fuel, weather, and supply chains showing other inflation drivers, warm editorial illustration on textured paper, no words, no numbers, no labels, no logos."
       },
-      "annotation": "Example only — actual charges verify karo",
-      "cta": "Trade value ke saath total cost bhi dekho."
+      "annotation": "Inflation सिर्फ interest rates से तय नहीं होती।",
+      "cta": "Headline नहीं, पूरा context देखें"
     },
     {
       "slide_number": 6,
-      "purpose": "risk_and_action",
-      "headline": "Perfect platform nahi—right preparation important hai",
-      "core_explanation": [
-        "Angel One useful ho sakta hai, par suitability aapki needs par depend karti hai.",
-        "Market price fluctuate karta hai; loss possible hai.",
-        "Aise amount se start karo jisse financial goals impact na hon."
-      ],
+      "purpose": "market_concept",
+      "headline": "Bonds और Stock Market की प्रतिक्रिया",
+      "core_explanation": "• Rate बढ़ने पर bond prices पर दबाव आ सकता है।\n• Higher borrowing cost से company profits और stock valuations प्रभावित हो सकते हैं।\n• Rate cut growth और valuations के लिए supportive हो सकता है, पर market expectations पहले से price-in हो सकती हैं।",
       "visual_spec": {
-        "visual_concept": "The beginner reaches a calm lookout point above a winding market landscape. They carry a small backpack labeled only through visual symbols: budget coin pouch, checklist, safety helmet and long-term goal plant. A guide helps them choose a manageable stepping stone, while dramatic market waves remain in the background.",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Inspiring but realistic final scene with Indian beginner at a lookout above a winding financial landscape, market waves in the background, small backpack containing abstract budget coins, checklist paper with no writing, safety helmet and growing goal plant, supportive mentor helping choose a manageable stepping stone, balanced composition, cream paper texture, navy, teal, coral and mustard palette, rich hand-drawn editorial storytelling, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक financial city में दो connected towers: bond tower और stock market tower। Central rate signal के ऊपर जाने पर bond tower की seesaw नीचे और growth companies की cash-flow bridge संकरी दिखे; नीचे investors अलग-अलग भावनाओं के साथ charts को देख रहे हों, लेकिन कोई chart text न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Sophisticated financial city illustration with two connected towers representing bonds and stocks, a central interest-rate signal lever, a seesaw showing bond values under pressure, a narrower cash-flow bridge toward growth companies, diverse investors calmly observing market movement, abstract upward and downward lines without numbers or lettering, textured ivory paper, navy, rust, muted teal palette, rich editorial storytelling, no words, no labels, no logos."
       },
-      "annotation": "Risk samjho, amount manageable rakho",
-      "cta": "Official details verify karke hi first trade plan karo."
+      "annotation": "Market reaction expectation, inflation और global news पर भी निर्भर करती है।",
+      "cta": "Short-term noise से बचें"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "action",
+      "headline": "Rate change पर क्या करें?",
+      "core_explanation": "• Loan: reset rule, EMI और tenure check करें।\n• FD: rate, tenure और liquidity compare करें।\n• Prepayment से पहले emergency fund, charges, tax और alternative returns देखें।\n• Investment decisions जल्दबाज़ी में न लें।",
+      "visual_spec": {
+        "visual_concept": "एक household financial planning table पर family, advisor और तीन blank folders रखे हैं: loan, savings और investments को अलग-अलग प्रतीकात्मक objects से दिखाया गया है। पीछे balance scale पर emergency fund और debt planning संतुलित हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm final scene of an Indian family planning finances with a trusted advisor at a wooden table, three blank folders represented by a house key, a secure savings jar, and a diversified investment plant, balanced scale symbolizing emergency fund and debt decisions, calm confident expressions, organized objects, soft natural light, premium editorial financial education illustration, textured paper, no words, no numbers, no labels, no logos."
+      },
+      "annotation": "Repo Rate signal है—personal decision हमेशा आपकी स्थिति पर depend करेगा।",
+      "cta": "अपने loan और savings की review list बनाइए"
     }
   ],
-  "caption": "First trade ka best platform wahi hai jise aap samajhkar use karein. Angel One par Stocks, ETFs, Mutual Funds aur IPOs jaise options aur useful tools available ho sakte hain—but charges, order types aur risks ko verify karna zaroori hai. Example: ₹100 × 10 shares = ₹1,000 trade value, plus applicable taxes and charges. Market returns guaranteed nahi hote. #TrustPointFin #AngelOne #FirstTrade #StockMarketForBeginners #InvestingBasics #PersonalFinanceIndia #FinancialLiteracy #LearnBeforeYouInvest"
+  "caption": "RBI Repo Rate बदलने पर सिर्फ EMI ही नहीं, FD rates, inflation, bonds और stock market भी प्रभावित हो सकते हैं। लेकिन असर तुरंत या हर व्यक्ति पर एक जैसा नहीं होता—bank के reset rules, loan terms, market expectations और आपकी personal situation बहुत मायने रखते हैं।\n\nअपने loan की EMI, FD की maturity और emergency fund को समय-समय पर review करें।\n\n#RBI #RepoRate #PersonalFinance #HomeLoan #EMI #FD #Inflation #StockMarket #Bonds #FinancialLiteracy #TrustPointFin"
 }
