@@ -1,92 +1,80 @@
 {
-  "topic": "RBI Repo Rate बदलने पर क्या होता है? Loans, FD, Inflation और Stock Market पर असर",
-  "teaching_objective": "Learners समझें कि Repo Rate RBI से banks की borrowing cost को कैसे प्रभावित करता है और उसका असर धीरे-धीरे loans, FD, inflation, bonds और stock market तक कैसे पहुँचता है।",
-  "format": "PROCESS",
+  "topic": "Growth vs. Dividend Stocks: आपके लिए कौन-सी Investment Strategy बेहतर है?",
+  "teaching_objective": "Learners समझें कि Growth Stocks और Dividend Stocks कैसे अलग तरीके से wealth बना सकते हैं, दोनों के risks क्या हैं, और strategy चुनते समय goal, time horizon, cash-flow needs, diversification और tax rules पर ध्यान क्यों देना चाहिए।",
+  "format": "COMPARISON",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Repo Rate क्या है?",
-      "core_explanation": "• Repo Rate वह दर है जिस पर RBI banks को short-term funds देता है।\n• यह banks की money cost और economy में credit flow को प्रभावित करती है।",
+      "headline": "दो रास्ते, एक financial goal",
+      "core_explanation": "• Growth Stocks: company profits को business में reinvest कर सकती है।\n• Dividend Stocks: profits का कुछ हिस्सा shareholders को cash के रूप में मिल सकता है।\n• दोनों में return और risk guaranteed नहीं होते।",
       "visual_spec": {
-        "visual_concept": "एक बड़े भारतीय central bank जैसे भवन से एक नियंत्रित पानी की धारा commercial bank, business और household तक जा रही है। बीच में एक बड़ा metallic valve repo rate का प्रतीक है, जिसे एक professional central banker घुमा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration, warm ivory paper background, deep navy and saffron accents, Indian financial ecosystem, recognizable generic central bank building with Indian flag, a large brass control valve connected by flowing water channels to a modern bank, small business, and family home, friendly human characters, clean layered composition, subtle hand-drawn arrows without symbols or lettering, soft shadows, sophisticated financial education infographic feel, no words, no numbers, no labels, no logos."
+        "visual_concept": "एक युवा भारतीय investor दो रास्तों के बीच खड़ा है। बायाँ रास्ता तेज़ी से बढ़ते पेड़, नई branches और ऊपर जाते हुए sunlit hills की ओर जाता है। दायाँ रास्ता नियमित रूप से फल देने वाले पेड़ों, cash-flow जैसी बहती छोटी धारा और शांत घर की ओर जाता है। दोनों रास्ते एक बड़े financial goal के रूप में खुले आकाश की ओर मिलते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with actual characters and objects, a young Indian investor standing at a forked garden path, left path with a rapidly growing tree, fresh branches, upward movement and distant hills, right path with mature fruit trees, a gentle stream, a peaceful home and recurring harvest imagery, warm paper texture, hand-drawn ink outlines, soft gouache colors, thoughtful financial education mood, clean composition, subtle shadows, no letters, no numbers, no symbols, no labels, no watermark."
       },
-      "annotation": "RBI का rate change banks की funding cost को प्रभावित करता है।",
-      "cta": "पहले mechanism समझिए"
+      "annotation": "Arrow toward both paths: “पहले goal समझें”",
+      "cta": "आपका goal: growth या regular income?"
     },
     {
       "slide_number": 2,
-      "purpose": "process",
-      "headline": "Rate बढ़े तो EMI पर दबाव",
-      "core_explanation": "• Banks की borrowing cost बढ़ सकती है।\n• Floating-rate home या business loans की EMI बढ़ सकती है, या tenure लंबा हो सकता है।\n• असर bank के benchmark और reset rules पर निर्भर करता है।",
+      "purpose": "comparison",
+      "headline": "Growth Stocks: आज reinvest, कल potential",
+      "core_explanation": "• ऐसी companies अक्सर expansion, technology या innovation में profits reinvest करती हैं।\n• Investor का return मुख्यतः share price बढ़ने से आ सकता है।\n• Price volatility और valuation risk को नजरअंदाज न करें।",
       "visual_spec": {
-        "visual_concept": "एक परिवार अपने घर के सामने खड़ा है। घर की ओर जाने वाली सीढ़ी floating interest rate बढ़ने पर ऊँची और भारी हो रही है; परिवार का monthly budget basket हल्का दिख रहा है। एक banker दूसरी ओर rate transmission का lever adjust कर रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated storytelling scene, Indian family outside a modest modern home, a staircase becoming steeper and heavier as it rises, a monthly household budget basket visibly strained, professional banker adjusting a financial lever in the background, visual metaphor for floating loan costs increasing, warm paper texture, navy, terracotta, muted green palette, expressive but realistic characters, editorial learning illustration, no words, no numbers, no labels, no logos."
+        "visual_concept": "एक ambitious entrepreneur greenhouse में पौधे की देखभाल कर रहा है। पौधा एक छोटे seedling से विशाल futuristic tree बन रहा है, जिसकी branches में technology, factory, research lab और global markets जैसे visual elements हैं। पास में investor इंतजार कर रहा है, लेकिन harvest अभी दूर है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Story-rich editorial scene inside a bright greenhouse, an ambitious entrepreneur carefully reinvesting water, tools and energy into a tiny seedling that grows into a large futuristic tree, branches connected visually to a laboratory, factory, computer chip, renewable energy equipment and distant cities, a patient investor watching from the side, expressive characters, paper collage and watercolor texture, muted teal, green and amber palette, no letters, no numbers, no symbols, no labels, no watermark."
       },
-      "annotation": "Rate revision के बाद loan agreement और reset cycle check करें।",
-      "cta": "अपनी EMI review करें"
+      "annotation": "Arrow from profits to new branches: “Profit वापस business में”",
+      "cta": "High growth के साथ high uncertainty भी हो सकती है।"
     },
     {
       "slide_number": 3,
-      "purpose": "calculation",
-      "headline": "EMI का छोटा बदलाव, बड़ा असर",
-      "core_explanation": "• Illustrative example: ₹40 लाख, 20-year loan में 8.50% से 9.00% rate होने पर EMI लगभग ₹34,700 से ₹35,995 हो सकती है।\n• Monthly difference करीब ₹1,295 है।\n• Actual EMI अलग हो सकती है।",
+      "purpose": "comparison",
+      "headline": "Dividend Stocks: cash-flow का अनुभव",
+      "core_explanation": "• Company profits का कुछ हिस्सा dividend के रूप में distribute कर सकती है।\n• Dividend income portfolio से cash-flow दे सकती है।\n• Dividend fixed नहीं होता; company इसे घटा या बंद कर सकती है।",
       "visual_spec": {
-        "visual_concept": "एक साफ़ split-screen financial illustration: बाईं ओर परिवार की छोटी EMI basket, दाईं ओर rate बढ़ने के बाद थोड़ी बड़ी basket। नीचे coins की दो flowing rows दिखें, जिनमें दूसरी row अधिक लंबी हो। कोई लिखित आंकड़ा न हो; visual comparison स्पष्ट हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen financial education illustration, same Indian family comparing two monthly payment baskets, left basket modest and right basket slightly fuller and heavier, two elegant streams of coins with the second stream visibly longer, small home loan document shown as blank paper with no writing, clear visual comparison, warm ivory background, navy and coral accents, precise editorial composition, soft dimensional shadows, no words, no numbers, no labels, no logos."
+        "visual_concept": "एक mature tree की branches से नियमित रूप से coins नहीं बल्कि छोटे golden fruit गिर रहे हैं, जिन्हें एक परिवार की basket में रखा जा रहा है। Tree की जड़ें मजबूत balance sheet और cash-flow को दर्शाती हैं, जबकि पीछे बदलते मौसम market uncertainty को दिखाते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration of a mature fruit tree with deep visible roots, golden fruit gently falling at intervals into a basket held by a multigenerational Indian family, subtle clouds and changing seasons in the background to suggest uncertainty, a few fragile branches showing that payouts can change, rich paper grain, hand-painted gouache, ink contours, human expressions, balanced composition, no letters, no numbers, no symbols, no labels, no watermark."
       },
-      "annotation": "यह calculation-based illustration है, guarantee नहीं।",
-      "cta": "अपना exact loan calculator देखें"
+      "annotation": "Arrow to falling fruit: “Income मिल सकता है, guarantee नहीं”",
+      "cta": "Dividend history देखें, पर business quality भी जांचें।"
     },
     {
       "slide_number": 4,
-      "purpose": "comparison",
-      "headline": "FD और savers पर असर",
-      "core_explanation": "• Repo Rate बढ़ने पर banks नई FD पर बेहतर rates offer कर सकते हैं।\n• Rate घटने पर FD returns धीरे-धीरे कम हो सकते हैं।\n• Existing FD का return आमतौर पर उसके tenure और terms पर निर्भर रहता है।",
+      "purpose": "risk",
+      "headline": "Dividend का मतलब low risk नहीं",
+      "core_explanation": "• Share price market, business performance, debt और valuation से गिर सकता है।\n• Dividend मिलने पर भी total return negative हो सकता है।\n• एक sector या company पर concentration risk बढ़ सकता है।",
       "visual_spec": {
-        "visual_concept": "एक saver दो तरफ़ खड़ा है: एक ओर rising interest garden जिसमें fixed deposit certificates के रूप में blank seed packets फल दे रहे हैं; दूसरी ओर falling-rate season में growth धीमी है। Bank counter पर respectful advisor समझा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich metaphorical illustration of an Indian saver in a financial garden, one side showing healthy growing money plants fed by a bank vault and the other side showing slower growth under a softer financial season, blank certificate papers represented as seed packets without writing, friendly bank advisor explaining calmly, elegant paper collage texture, deep blue, saffron, sage green, no words, no numbers, no labels, no logos."
+        "visual_concept": "एक investor dividend tree के नीचे खड़ा है, लेकिन अचानक तेज़ हवा और बारिश tree को झुका रही है। जमीन में cracks, गिरते हुए फल और पीछे debt जैसे भारी पत्थरों का बोझ business risk का metaphor है। Investor umbrella के साथ portfolio basket को कई पेड़ों में बाँटने की कोशिश कर रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Dramatic but educational editorial illustration, an investor under a fruit-bearing tree during strong wind and rain, some fruit falling, tree branches bending, visible cracked ground and heavy stones near the roots representing financial pressure, the investor protecting a diversified basket containing small plants from different sectors, cinematic paper texture, hand-drawn ink, muted blue, rust and green palette, no letters, no numbers, no symbols, no labels, no watermark."
       },
-      "annotation": "FD खोलने से पहले tenure, rate और premature withdrawal rules देखें।",
-      "cta": "Return के साथ liquidity भी compare करें"
+      "annotation": "Arrow to storm clouds: “Cash payout price risk खत्म नहीं करता”",
+      "cta": "Dividend yield अकेला decision-maker नहीं है।"
     },
     {
       "slide_number": 5,
-      "purpose": "market_concept",
-      "headline": "Inflation पर indirect असर",
-      "core_explanation": "• Rate बढ़ने से borrowing और spending धीमी हो सकती है।\n• Demand कम होने पर inflation पर दबाव घट सकता है।\n• असर तुरंत नहीं आता और कई दूसरे factors भी काम करते हैं।",
+      "purpose": "process",
+      "headline": "सही strategy कैसे चुनें?",
+      "core_explanation": "• Goal और time horizon लिखें: wealth creation या regular cash-flow?\n• Risk tolerance, emergency fund और income stability check करें।\n• Business quality, balance sheet, cash-flow, valuation और diversification देखें।\n• Current tax rules समझकर ही decision लें।",
       "visual_spec": {
-        "visual_concept": "एक bustling Indian market में shopping carts और business activity की गति को एक central dial नियंत्रित कर रहा है। Rate बढ़ने पर भीड़ और carts धीरे चलते हैं, prices के गुब्बारे नीचे आते हैं; दृश्य में supply chain, fuel और weather के छोटे symbolic elements भी मौजूद हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed Indian marketplace scene used as an economic metaphor, shoppers and business carts moving from fast motion on one side to calmer motion on the other, a large central control dial symbolizing monetary policy, price balloons gently lowering, subtle visual elements for fuel, weather, and supply chains showing other inflation drivers, warm editorial illustration on textured paper, no words, no numbers, no labels, no logos."
+        "visual_concept": "एक financial planning desk पर investor चार बड़े visual checkpoints से गुजर रहा है: calendar for time horizon, safety cushion for emergency fund, balance scale for risk, और diversified garden basket for portfolio mix. एक mentor शांत तरीके से map पर route दिखा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed financial planning desk scene with a young Indian investor and a calm mentor, four clear visual checkpoints represented only through objects: a calendar with blank pages, a safety cushion, a balanced scale, and a basket containing varied healthy plants, an open map and compass suggesting goal-based planning, warm cream paper background, refined ink and gouache illustration, organized but human, no letters, no numbers, no symbols, no labels, no watermark."
       },
-      "annotation": "Inflation सिर्फ interest rates से तय नहीं होती।",
-      "cta": "Headline नहीं, पूरा context देखें"
+      "annotation": "Step-by-step arrow: “Goal → Risk → Quality → Diversification”",
+      "cta": "पहले plan, फिर product।"
     },
     {
       "slide_number": 6,
-      "purpose": "market_concept",
-      "headline": "Bonds और Stock Market की प्रतिक्रिया",
-      "core_explanation": "• Rate बढ़ने पर bond prices पर दबाव आ सकता है।\n• Higher borrowing cost से company profits और stock valuations प्रभावित हो सकते हैं।\n• Rate cut growth और valuations के लिए supportive हो सकता है, पर market expectations पहले से price-in हो सकती हैं।",
+      "purpose": "conclusion",
+      "headline": "आपके लिए answer: एक balanced decision",
+      "core_explanation": "• Younger investors के लिए growth potential उपयोगी हो सकता है, पर volatility समझें।\n• Income needs वाले investors dividend cash-flow पर विचार कर सकते हैं, पर payout risk याद रखें।\n• कोई universal percentage नहीं; diversified portfolio और personal context महत्वपूर्ण हैं।",
       "visual_spec": {
-        "visual_concept": "एक financial city में दो connected towers: bond tower और stock market tower। Central rate signal के ऊपर जाने पर bond tower की seesaw नीचे और growth companies की cash-flow bridge संकरी दिखे; नीचे investors अलग-अलग भावनाओं के साथ charts को देख रहे हों, लेकिन कोई chart text न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Sophisticated financial city illustration with two connected towers representing bonds and stocks, a central interest-rate signal lever, a seesaw showing bond values under pressure, a narrower cash-flow bridge toward growth companies, diverse investors calmly observing market movement, abstract upward and downward lines without numbers or lettering, textured ivory paper, navy, rust, muted teal palette, rich editorial storytelling, no words, no labels, no logos."
+        "visual_concept": "एक balanced financial ecosystem: बाईं ओर बढ़ता हुआ युवा tree, दाईं ओर फल देता mature tree, बीच में investor दोनों से resources को एक shared portfolio basket में संतुलित कर रहा है। पीछे family goals, emergency reserve और long-term horizon के रूप में घर, protective umbrella और दूर का sunrise दिखता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Inspiring final editorial illustration, an Indian investor thoughtfully combining a young fast-growing tree and a mature fruit-bearing tree into one diversified portfolio garden, a family home, protective umbrella, emergency savings jar and distant sunrise symbolizing long-term goals in the background, balanced visual harmony, hopeful but realistic mood, textured paper, hand-drawn ink and soft gouache, rich storytelling, no letters, no numbers, no symbols, no labels, no watermark."
       },
-      "annotation": "Market reaction expectation, inflation और global news पर भी निर्भर करती है।",
-      "cta": "Short-term noise से बचें"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "action",
-      "headline": "Rate change पर क्या करें?",
-      "core_explanation": "• Loan: reset rule, EMI और tenure check करें।\n• FD: rate, tenure और liquidity compare करें।\n• Prepayment से पहले emergency fund, charges, tax और alternative returns देखें।\n• Investment decisions जल्दबाज़ी में न लें।",
-      "visual_spec": {
-        "visual_concept": "एक household financial planning table पर family, advisor और तीन blank folders रखे हैं: loan, savings और investments को अलग-अलग प्रतीकात्मक objects से दिखाया गया है। पीछे balance scale पर emergency fund और debt planning संतुलित हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm final scene of an Indian family planning finances with a trusted advisor at a wooden table, three blank folders represented by a house key, a secure savings jar, and a diversified investment plant, balanced scale symbolizing emergency fund and debt decisions, calm confident expressions, organized objects, soft natural light, premium editorial financial education illustration, textured paper, no words, no numbers, no labels, no logos."
-      },
-      "annotation": "Repo Rate signal है—personal decision हमेशा आपकी स्थिति पर depend करेगा।",
-      "cta": "अपने loan और savings की review list बनाइए"
+      "annotation": "Arrow toward shared basket: “Portfolio आपके context के अनुसार”",
+      "cta": "अपना goal लिखें और allocation पर सोच-समझकर निर्णय लें।"
     }
   ],
-  "caption": "RBI Repo Rate बदलने पर सिर्फ EMI ही नहीं, FD rates, inflation, bonds और stock market भी प्रभावित हो सकते हैं। लेकिन असर तुरंत या हर व्यक्ति पर एक जैसा नहीं होता—bank के reset rules, loan terms, market expectations और आपकी personal situation बहुत मायने रखते हैं।\n\nअपने loan की EMI, FD की maturity और emergency fund को समय-समय पर review करें।\n\n#RBI #RepoRate #PersonalFinance #HomeLoan #EMI #FD #Inflation #StockMarket #Bonds #FinancialLiteracy #TrustPointFin"
+  "caption": "Growth Stocks और Dividend Stocks में कोई एक universal winner नहीं होता। Growth companies profits को reinvest कर सकती हैं, जबकि dividend companies cash payout दे सकती हैं—लेकिन दोनों में market risk मौजूद रहता है। अपना goal, time horizon, emergency fund, risk tolerance, business quality, diversification और current tax rules समझकर ही strategy चुनें। Returns की कोई guarantee नहीं होती।\n\nआप किसे prefer करते हैं—long-term growth, regular income या दोनों का balanced approach?\n\n#TrustPointFin #PersonalFinance #InvestingBasics #GrowthStocks #DividendStocks #StockMarketIndia #FinancialLiteracy #WealthBuilding #InvestmentStrategy #HindiFinance"
 }

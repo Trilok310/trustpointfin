@@ -160,7 +160,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 144. Demystifying IPOs: Should You Invest in Every New Listing?
 - [x] 145. Why Angel One is the Perfect Platform for Your First Trade
 - [x] 146. What Happens When the RBI Changes the Repo Rate?
-- [ ] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?
+- [x] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?
 - [ ] 148. The Secret to Beating Inflation in India
 - [ ] 149. How to Spot a Fundamentally Strong Company in 5 Minutes
 - [ ] 150. 3 Books Every Indian Investor Must Read
