@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-27T08:03:09.760Z",
+  "lastUpdated": "2026-10-27T16:45:50.489Z",
   "recentEntries": [
+    {
+      "date": "27 October 2026",
+      "edition": "EVENING",
+      "niftyPrice": 22749.75,
+      "topics": [
+        "Nifty Closes Flat at 22,749 as Midcaps Outperform Benchmark Indecision",
+        "Bank Nifty Tumbles 2.09% as Axis Bank Leads Financial Sector Sell-Off",
+        "Telecom and Consumer Goods Gain Momentum While IT and Paints Drag",
+        "Capital Market Intermediaries Maintain Moats Amid Steady India VIX at 16.4",
+        "Crude Eases to $109.54 as USD/INR Hovering at 95.11 Caps Gains"
+      ]
+    },
     {
       "date": "27 October 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "IT Counters Exhibit Relative Resilience While High-Beta Industrials Slump",
         "Exchange Tollbooths Capture Elevated Cash and Derivative Hedging Volume",
         "Brent at $106.35 and Rupee at ₹95.02 Escalate Imported Inflation"
-      ]
-    },
-    {
-      "date": "14 October 2026",
-      "edition": "MORNING",
-      "niftyPrice": 22676.8,
-      "topics": [
-        "Nifty Slips Below 22,700 as Global Volatility Tests Key 22,600 Support",
-        "Bank Nifty Drops 2.13% to 55,346 Amid Divergent Heavyweight Momentum",
-        "Nifty IT Rallies 1.5% Counteracting Broader Domestic Equity Selling",
-        "Market Infrastructure Providers See Sustained Velocity on Churn",
-        "Brent Reaches $106.26 and Rupee at ₹94.93 Escalate Cost Pressures"
       ]
     }
   ]
