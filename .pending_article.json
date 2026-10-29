@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-23_growth-vs-dividend-stocks-whic",
-  "topic": "Growth vs. Dividend Stocks: Which Strategy is Best for You?",
-  "lineIndex": 162,
+  "job_id": "job_2026-10-29_the-secret-to-beating-inflatio",
+  "topic": "The Secret to Beating Inflation in India",
+  "lineIndex": 163,
   "scheduled_at": null,
-  "started_at": "2026-10-23T08:43:00.099Z",
+  "started_at": "2026-10-29T10:15:29.410Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 0,
+  "article_correction_attempts": 2,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-23T08:43:50.850Z",
-  "filename": "growth-vs-dividend-stocks-which-strategy-is-best-for-you.html",
-  "title": "Growth vs. Dividend Stocks: आपके लिए कौन-सी Investment Strategy बेहतर है?"
+  "updated_at": "2026-10-29T10:17:53.833Z",
+  "filename": "the-secret-to-beating-inflation-in-india.html",
+  "title": "भारत में Inflation को हराने का Secret: Purchasing Power बचाने की Smart Strategy"
 }
