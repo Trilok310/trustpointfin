@@ -1,80 +1,80 @@
 {
-  "topic": "Growth vs. Dividend Stocks: आपके लिए कौन-सी Investment Strategy बेहतर है?",
-  "teaching_objective": "Learners समझें कि Growth Stocks और Dividend Stocks कैसे अलग तरीके से wealth बना सकते हैं, दोनों के risks क्या हैं, और strategy चुनते समय goal, time horizon, cash-flow needs, diversification और tax rules पर ध्यान क्यों देना चाहिए।",
-  "format": "COMPARISON",
+  "topic": "भारत में Inflation को हराने का Secret: Purchasing Power बचाने की Smart Strategy",
+  "teaching_objective": "Learners समझें कि Inflation समय के साथ पैसे की purchasing power घटाता है, इसलिए Emergency Fund, Insurance, Debt Management और goal-based diversified asset allocation के जरिए अपने financial plan को मजबूत करना जरूरी है। कोई भी return guaranteed नहीं होता।",
+  "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "दो रास्ते, एक financial goal",
-      "core_explanation": "• Growth Stocks: company profits को business में reinvest कर सकती है।\n• Dividend Stocks: profits का कुछ हिस्सा shareholders को cash के रूप में मिल सकता है।\n• दोनों में return और risk guaranteed नहीं होते।",
+      "headline": "आज का ₹100, कल कितना?",
+      "core_explanation": "Inflation के कारण समय के साथ वस्तुओं और सेवाओं की कीमतें बढ़ती हैं। वही रकम भविष्य में कम चीजें खरीद सकती है।",
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय investor दो रास्तों के बीच खड़ा है। बायाँ रास्ता तेज़ी से बढ़ते पेड़, नई branches और ऊपर जाते हुए sunlit hills की ओर जाता है। दायाँ रास्ता नियमित रूप से फल देने वाले पेड़ों, cash-flow जैसी बहती छोटी धारा और शांत घर की ओर जाता है। दोनों रास्ते एक बड़े financial goal के रूप में खुले आकाश की ओर मिलते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with actual characters and objects, a young Indian investor standing at a forked garden path, left path with a rapidly growing tree, fresh branches, upward movement and distant hills, right path with mature fruit trees, a gentle stream, a peaceful home and recurring harvest imagery, warm paper texture, hand-drawn ink outlines, soft gouache colors, thoughtful financial education mood, clean composition, subtle shadows, no letters, no numbers, no symbols, no labels, no watermark."
+        "visual_concept": "एक भारतीय परिवार की किराना खरीदारी का दृश्य: बाईं ओर आज का छोटा बजट आराम से सामान खरीद रहा है, दाईं ओर भविष्य में वही नोट और खाली होती टोकरी; बीच में धीरे-धीरे ऊपर उठती कीमतों का visual metaphor, जैसे गर्म हवा में ऊपर जाते गुब्बारे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated editorial scene in a warm Indian household grocery market, a middle-class Indian family comparing a full grocery basket in the present with a noticeably emptier basket in the future, the same currency notes shown as physical objects without readable markings, rising price tags represented only by abstract floating shapes, expressive but realistic characters, layered paper-cut textures, soft cream background, navy blue, saffron, teal and coral palette, cinematic composition, educational storytelling, no readable writing, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
       },
-      "annotation": "Arrow toward both paths: “पहले goal समझें”",
-      "cta": "आपका goal: growth या regular income?"
+      "annotation": "Arrow: Purchasing power नीचे जाती है",
+      "cta": "पहला सवाल: आपका पैसा भविष्य के लिए पर्याप्त होगा?"
     },
     {
       "slide_number": 2,
-      "purpose": "comparison",
-      "headline": "Growth Stocks: आज reinvest, कल potential",
-      "core_explanation": "• ऐसी companies अक्सर expansion, technology या innovation में profits reinvest करती हैं।\n• Investor का return मुख्यतः share price बढ़ने से आ सकता है।\n• Price volatility और valuation risk को नजरअंदाज न करें।",
+      "purpose": "calculation",
+      "headline": "Return देखो, Real Return समझो",
+      "core_explanation": "अगर FD return 7% और inflation 6% हो, तो simple pre-tax estimate में real return लगभग 1% हो सकता है। Tax और बदलती inflation के बाद परिणाम अलग हो सकते हैं।",
       "visual_spec": {
-        "visual_concept": "एक ambitious entrepreneur greenhouse में पौधे की देखभाल कर रहा है। पौधा एक छोटे seedling से विशाल futuristic tree बन रहा है, जिसकी branches में technology, factory, research lab और global markets जैसे visual elements हैं। पास में investor इंतजार कर रहा है, लेकिन harvest अभी दूर है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Story-rich editorial scene inside a bright greenhouse, an ambitious entrepreneur carefully reinvesting water, tools and energy into a tiny seedling that grows into a large futuristic tree, branches connected visually to a laboratory, factory, computer chip, renewable energy equipment and distant cities, a patient investor watching from the side, expressive characters, paper collage and watercolor texture, muted teal, green and amber palette, no letters, no numbers, no symbols, no labels, no watermark."
+        "visual_concept": "एक balance scale: एक तरफ 7 प्रतिशत का चमकता हुआ growth arrow, दूसरी तरफ 6 प्रतिशत का बड़ा inflation balloon, और बीच में बची हुई बहुत छोटी 1 प्रतिशत की रोशनी; एक भारतीय saver ध्यान से scale देख रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. A thoughtful Indian saver in a simple home office examining a beautifully illustrated balance scale, one side lifted by a tall green growth arrow and the other weighed down by a large red-orange inflation balloon, a tiny remaining golden spark in the center symbolizing real return, calculator and household budget objects nearby, no visible digits or symbols, sophisticated editorial infographic composition, textured paper, clean cream background, navy, green, orange and gold palette, no readable writing, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
       },
-      "annotation": "Arrow from profits to new branches: “Profit वापस business में”",
-      "cta": "High growth के साथ high uncertainty भी हो सकती है।"
+      "annotation": "Tip: Real return = return minus inflation, before tax",
+      "cta": "सिर्फ interest rate नहीं—purchasing power भी देखिए।"
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "Dividend Stocks: cash-flow का अनुभव",
-      "core_explanation": "• Company profits का कुछ हिस्सा dividend के रूप में distribute कर सकती है।\n• Dividend income portfolio से cash-flow दे सकती है।\n• Dividend fixed नहीं होता; company इसे घटा या बंद कर सकती है।",
+      "purpose": "foundation",
+      "headline": "पहले Financial Foundation",
+      "core_explanation": "Emergency Fund unexpected खर्चों के लिए liquidity देता है। Adequate Insurance और high-cost debt management, investing से पहले जरूरी आधार हैं।",
       "visual_spec": {
-        "visual_concept": "एक mature tree की branches से नियमित रूप से coins नहीं बल्कि छोटे golden fruit गिर रहे हैं, जिन्हें एक परिवार की basket में रखा जा रहा है। Tree की जड़ें मजबूत balance sheet और cash-flow को दर्शाती हैं, जबकि पीछे बदलते मौसम market uncertainty को दिखाते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration of a mature fruit tree with deep visible roots, golden fruit gently falling at intervals into a basket held by a multigenerational Indian family, subtle clouds and changing seasons in the background to suggest uncertainty, a few fragile branches showing that payouts can change, rich paper grain, hand-painted gouache, ink contours, human expressions, balanced composition, no letters, no numbers, no symbols, no labels, no watermark."
+        "visual_concept": "एक मजबूत तीन-स्तरीय घर: नीचे emergency cash box और पानी का सुरक्षित reservoir, बीच में insurance shield से परिवार की सुरक्षा, ऊपर debt chains को काटता हुआ व्यक्ति; घर की छत पर शांत निवेश का पौधा।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. A warm illustrated three-level financial foundation represented as a sturdy Indian home, bottom level with an emergency cash container and accessible water reservoir, middle level protected by a large abstract shield around a family, a person gently breaking heavy metal chains symbolizing expensive debt, a small healthy investment plant growing on the roof, no written labels, no currency symbols, rich editorial storytelling, paper collage and ink textures, soft shadows, cream, teal, navy, terracotta and gold palette, no readable writing, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
       },
-      "annotation": "Arrow to falling fruit: “Income मिल सकता है, guarantee नहीं”",
-      "cta": "Dividend history देखें, पर business quality भी जांचें।"
+      "annotation": "Arrow sequence: Safety → Protection → Growth",
+      "cta": "Invest करने से पहले अपना base मजबूत करें।"
     },
     {
       "slide_number": 4,
-      "purpose": "risk",
-      "headline": "Dividend का मतलब low risk नहीं",
-      "core_explanation": "• Share price market, business performance, debt और valuation से गिर सकता है।\n• Dividend मिलने पर भी total return negative हो सकता है।\n• एक sector या company पर concentration risk बढ़ सकता है।",
+      "purpose": "process",
+      "headline": "हर Goal का अलग रास्ता",
+      "core_explanation": "Short-term जरूरतों का पैसा volatile Equity में रखने से बचें। Long-term goals में diversified growth assets पर विचार किया जा सकता है।",
       "visual_spec": {
-        "visual_concept": "एक investor dividend tree के नीचे खड़ा है, लेकिन अचानक तेज़ हवा और बारिश tree को झुका रही है। जमीन में cracks, गिरते हुए फल और पीछे debt जैसे भारी पत्थरों का बोझ business risk का metaphor है। Investor umbrella के साथ portfolio basket को कई पेड़ों में बाँटने की कोशिश कर रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Dramatic but educational editorial illustration, an investor under a fruit-bearing tree during strong wind and rain, some fruit falling, tree branches bending, visible cracked ground and heavy stones near the roots representing financial pressure, the investor protecting a diversified basket containing small plants from different sectors, cinematic paper texture, hand-drawn ink, muted blue, rust and green palette, no letters, no numbers, no symbols, no labels, no watermark."
+        "visual_concept": "तीन अलग रास्तों वाला भारतीय शहर का landscape: पास का रास्ता सुरक्षित पुल और debt instruments की ओर, बीच का रास्ता balanced garden की ओर, दूर का रास्ता उतार-चढ़ाव वाली पहाड़ियों से होकर diversified equity growth forest तक; एक यात्री अपनी मंजिल देखकर रास्ता चुन रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. A visually rich Indian landscape with three paths leading toward different time horizons: a short nearby path across a stable bridge, a medium path through a balanced garden, and a distant adventurous path across rolling hills toward a diverse green forest, one Indian traveler holding a compass and choosing based on destination, visual metaphors only, no signs or written directions, no text, no numbers, no letters, no labels, no logos, no watermark, NotebookLM-style educational aesthetic, editorial illustration, layered paper textures, clean composition, muted cream with teal, blue, green and saffron accents. NO TEXT."
       },
-      "annotation": "Arrow to storm clouds: “Cash payout price risk खत्म नहीं करता”",
-      "cta": "Dividend yield अकेला decision-maker नहीं है।"
+      "annotation": "Arrow: Goal + Time Horizon → Asset Mix",
+      "cta": "पहले goal तय करें, फिर product चुनें।"
     },
     {
       "slide_number": 5,
-      "purpose": "process",
-      "headline": "सही strategy कैसे चुनें?",
-      "core_explanation": "• Goal और time horizon लिखें: wealth creation या regular cash-flow?\n• Risk tolerance, emergency fund और income stability check करें।\n• Business quality, balance sheet, cash-flow, valuation और diversification देखें।\n• Current tax rules समझकर ही decision लें।",
+      "purpose": "comparison",
+      "headline": "एक ही Basket पर निर्भर न रहें",
+      "core_explanation": "Equity long-term growth में मदद कर सकती है, Debt stability और liquidity दे सकता है, जबकि Gold diversification में भूमिका निभा सकता है। हर asset में risk और limits हैं।",
       "visual_spec": {
-        "visual_concept": "एक financial planning desk पर investor चार बड़े visual checkpoints से गुजर रहा है: calendar for time horizon, safety cushion for emergency fund, balance scale for risk, और diversified garden basket for portfolio mix. एक mentor शांत तरीके से map पर route दिखा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed financial planning desk scene with a young Indian investor and a calm mentor, four clear visual checkpoints represented only through objects: a calendar with blank pages, a safety cushion, a balanced scale, and a basket containing varied healthy plants, an open map and compass suggesting goal-based planning, warm cream paper background, refined ink and gouache illustration, organized but human, no letters, no numbers, no symbols, no labels, no watermark."
+        "visual_concept": "एक भारतीय परिवार तीन मजबूत baskets में resources बाँट रहा है: एक basket में growing trees और market waves, दूसरे में steady bricks और cash cushion, तीसरे में golden metal shield; baskets अलग-अलग रखे हैं ताकि एक झटका पूरे plan को प्रभावित न करे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. An Indian family thoughtfully distributing colorful resources into three separate sturdy baskets: one basket contains growing trees mixed with gentle market waves, another contains stable bricks and a liquid cushion, the third contains a golden protective object representing gold, baskets arranged with space between them to show diversification, no financial logos, no readable markings, rich NotebookLM-style educational aesthetic, hand-drawn editorial illustration, paper grain, soft dimensional lighting, cream background, navy, emerald, saffron and muted red palette, no text, no numbers, no letters, no labels, no watermark. NO TEXT."
       },
-      "annotation": "Step-by-step arrow: “Goal → Risk → Quality → Diversification”",
-      "cta": "पहले plan, फिर product।"
+      "annotation": "Tip: Diversification risk को खत्म नहीं करती, manage करने में मदद करती है",
+      "cta": "Asset mix को अपने goal और risk capacity से मिलाइए।"
     },
     {
       "slide_number": 6,
-      "purpose": "conclusion",
-      "headline": "आपके लिए answer: एक balanced decision",
-      "core_explanation": "• Younger investors के लिए growth potential उपयोगी हो सकता है, पर volatility समझें।\n• Income needs वाले investors dividend cash-flow पर विचार कर सकते हैं, पर payout risk याद रखें।\n• कोई universal percentage नहीं; diversified portfolio और personal context महत्वपूर्ण हैं।",
+      "purpose": "action",
+      "headline": "Plan बनाइए, फिर Review कीजिए",
+      "core_explanation": "SIP disciplined investing का tool हो सकता है, लेकिन market loss से protection या guaranteed return नहीं देता। Fees, taxation, liquidity और risks समझकर periodic review करें।",
       "visual_spec": {
-        "visual_concept": "एक balanced financial ecosystem: बाईं ओर बढ़ता हुआ युवा tree, दाईं ओर फल देता mature tree, बीच में investor दोनों से resources को एक shared portfolio basket में संतुलित कर रहा है। पीछे family goals, emergency reserve और long-term horizon के रूप में घर, protective umbrella और दूर का sunrise दिखता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Inspiring final editorial illustration, an Indian investor thoughtfully combining a young fast-growing tree and a mature fruit-bearing tree into one diversified portfolio garden, a family home, protective umbrella, emergency savings jar and distant sunrise symbolizing long-term goals in the background, balanced visual harmony, hopeful but realistic mood, textured paper, hand-drawn ink and soft gouache, rich storytelling, no letters, no numbers, no symbols, no labels, no watermark."
+        "visual_concept": "एक शांत भारतीय home-planning scene: व्यक्ति calendar, compass और three-part portfolio jars के साथ plan review कर रहा है; खिड़की के बाहर मौसम बदलते दिखते हैं, पर table पर plan को समय-समय पर rebalance किया जा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. A calm Indian investor at a home desk reviewing a financial plan using a blank calendar, compass, three transparent portfolio jars and a small balance tool, changing seasons visible through the window to symbolize market conditions, the person making a thoughtful adjustment rather than reacting with panic, family goals represented by subtle objects like education books and a home key without readable markings, warm editorial illustration, textured paper, cream, navy, teal, gold and coral palette, no text, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
       },
-      "annotation": "Arrow toward shared basket: “Portfolio आपके context के अनुसार”",
-      "cta": "अपना goal लिखें और allocation पर सोच-समझकर निर्णय लें।"
+      "annotation": "Arrow: Invest → Monitor → Review → Adjust",
+      "cta": "Personalised advice के लिए SEBI-registered investment adviser से बात करें।"
     }
   ],
-  "caption": "Growth Stocks और Dividend Stocks में कोई एक universal winner नहीं होता। Growth companies profits को reinvest कर सकती हैं, जबकि dividend companies cash payout दे सकती हैं—लेकिन दोनों में market risk मौजूद रहता है। अपना goal, time horizon, emergency fund, risk tolerance, business quality, diversification और current tax rules समझकर ही strategy चुनें। Returns की कोई guarantee नहीं होती।\n\nआप किसे prefer करते हैं—long-term growth, regular income या दोनों का balanced approach?\n\n#TrustPointFin #PersonalFinance #InvestingBasics #GrowthStocks #DividendStocks #StockMarketIndia #FinancialLiteracy #WealthBuilding #InvestmentStrategy #HindiFinance"
+  "caption": "Inflation सिर्फ prices नहीं बढ़ाता—यह आपके पैसे की purchasing power भी घटाता है। इसलिए strategy का पहला कदम high return ढूँढना नहीं, बल्कि financial foundation मजबूत करना है: Emergency Fund, adequate Insurance, high-cost Debt management और goal-based asset allocation। Equity, Debt और Gold की भूमिका अलग हो सकती है, लेकिन कोई भी asset guaranteed नहीं है। अपने time horizon, risk capacity, fees, taxation और liquidity को समझकर plan बनाइए और समय-समय पर review कीजिए।\n\n#Inflation #PurchasingPower #PersonalFinance #InvestingForBeginners #AssetAllocation #EmergencyFund #FinancialPlanning #SIP #MoneyManagement #TrustPointFin"
 }
