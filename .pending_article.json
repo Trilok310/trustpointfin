@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-29_the-secret-to-beating-inflatio",
-  "topic": "The Secret to Beating Inflation in India",
-  "lineIndex": 163,
+  "job_id": "job_2026-10-30_how-to-spot-a-fundamentally-st",
+  "topic": "How to Spot a Fundamentally Strong Company in 5 Minutes",
+  "lineIndex": 164,
   "scheduled_at": null,
-  "started_at": "2026-10-29T10:15:29.410Z",
+  "started_at": "2026-10-30T10:16:53.775Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 2,
+  "article_correction_attempts": 0,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-29T10:17:53.833Z",
-  "filename": "the-secret-to-beating-inflation-in-india.html",
-  "title": "भारत में Inflation को हराने का Secret: Purchasing Power बचाने की Smart Strategy"
+  "updated_at": "2026-10-30T10:17:49.059Z",
+  "filename": "how-to-spot-a-fundamentally-strong-company-in-5-minutes.html",
+  "title": "5 मिनट में Fundamentally Strong Company को कैसे पहचानें? Beginner के लिए आसान Checklist"
 }
