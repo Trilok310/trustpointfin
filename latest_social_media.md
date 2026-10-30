@@ -1,13 +1,15 @@
 # Social Media Posts
-*Generated for article: "भारत में Inflation को हराने का Secret: Purchasing Power बचाने की Smart Strategy"*
+*Generated for article: "5 मिनट में Fundamentally Strong Company को कैसे पहचानें? Beginner के लिए आसान Checklist"*
 
 ---
 
 ## 📝 Caption
 
-Inflation सिर्फ prices नहीं बढ़ाता—यह आपके पैसे की purchasing power भी घटाता है। इसलिए strategy का पहला कदम high return ढूँढना नहीं, बल्कि financial foundation मजबूत करना है: Emergency Fund, adequate Insurance, high-cost Debt management और goal-based asset allocation। Equity, Debt और Gold की भूमिका अलग हो सकती है, लेकिन कोई भी asset guaranteed नहीं है। अपने time horizon, risk capacity, fees, taxation और liquidity को समझकर plan बनाइए और समय-समय पर review कीजिए।
+किसी Company को समझने के लिए 5 मिनट की यह checklist आपकी initial screening में मदद कर सकती है। Business model, Revenue-Profit trend, Cash Flow, Debt, Valuation और Governance—इन सभी को साथ में देखें। याद रखें: 5 मिनट में final investment decision नहीं लिया जा सकता। Annual Report, latest filings, industry outlook, competitors और promoter history की deeper research जरूर करें।
 
-#Inflation #PurchasingPower #PersonalFinance #InvestingForBeginners #AssetAllocation #EmergencyFund #FinancialPlanning #SIP #MoneyManagement #TrustPointFin
+High ROE या high profit को अकेले देखकर प्रभावित न हों—Debt, CFO और sustainability भी check करें।
+
+#TrustPointFin #StockMarketForBeginners #FundamentalAnalysis #InvestingBasics #PersonalFinanceIndia #StockResearch #FinancialLiteracy #HindiFinance #LongTermInvesting #BeginnerInvesting
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/the-secret-to-beating-inflation-in-india.html*
+*Article URL: https://trilok310.github.io/trustpointfin/how-to-spot-a-fundamentally-strong-company-in-5-minutes.html*

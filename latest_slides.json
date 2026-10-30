@@ -1,80 +1,92 @@
 {
-  "topic": "भारत में Inflation को हराने का Secret: Purchasing Power बचाने की Smart Strategy",
-  "teaching_objective": "Learners समझें कि Inflation समय के साथ पैसे की purchasing power घटाता है, इसलिए Emergency Fund, Insurance, Debt Management और goal-based diversified asset allocation के जरिए अपने financial plan को मजबूत करना जरूरी है। कोई भी return guaranteed नहीं होता।",
+  "topic": "5 मिनट में Fundamentally Strong Company को कैसे पहचानें? Beginner के लिए आसान Checklist",
+  "teaching_objective": "Beginners को 5 मिनट की initial screening में किसी Company के Business, Growth, Profit, Cash Flow, Debt, Valuation और Governance red flags को जल्दी समझना सिखाना—बिना इसे final investment decision मानने के।",
   "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "आज का ₹100, कल कितना?",
-      "core_explanation": "Inflation के कारण समय के साथ वस्तुओं और सेवाओं की कीमतें बढ़ती हैं। वही रकम भविष्य में कम चीजें खरीद सकती है।",
+      "headline": "5 मिनट की Screening, Final फैसला नहीं",
+      "core_explanation": "• 5 मिनट में सिर्फ initial filter करें\n• Final decision के लिए Annual Report और latest filings पढ़ें",
       "visual_spec": {
-        "visual_concept": "एक भारतीय परिवार की किराना खरीदारी का दृश्य: बाईं ओर आज का छोटा बजट आराम से सामान खरीद रहा है, दाईं ओर भविष्य में वही नोट और खाली होती टोकरी; बीच में धीरे-धीरे ऊपर उठती कीमतों का visual metaphor, जैसे गर्म हवा में ऊपर जाते गुब्बारे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich illustrated editorial scene in a warm Indian household grocery market, a middle-class Indian family comparing a full grocery basket in the present with a noticeably emptier basket in the future, the same currency notes shown as physical objects without readable markings, rising price tags represented only by abstract floating shapes, expressive but realistic characters, layered paper-cut textures, soft cream background, navy blue, saffron, teal and coral palette, cinematic composition, educational storytelling, no readable writing, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
+        "visual_concept": "एक beginner investor desk पर बैठा है और एक बड़ी company को पाँच मिनट की magnifying glass से देख रहा है। सामने company का miniature building है, जिसके पीछे research files, annual reports और market charts का बड़ा landscape दिखाई देता है। Magnifying glass केवल शुरुआती हिस्सा रोशन करती है, पूरी तस्वीर नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration with warm cream paper background, deep navy, coral, teal and mustard accents, friendly beginner investor at a desk using a magnifying glass over a miniature company building, surrounding stacks of financial documents and a distant research landscape, clear visual storytelling, hand-drawn ink outlines, subtle paper texture, cinematic composition, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
       },
-      "annotation": "Arrow: Purchasing power नीचे जाती है",
-      "cta": "पहला सवाल: आपका पैसा भविष्य के लिए पर्याप्त होगा?"
+      "annotation": "Arrow points from the magnifying glass toward the words area: पहले screen, फिर research",
+      "cta": "चलो 5-step checklist शुरू करें"
     },
     {
       "slide_number": 2,
-      "purpose": "calculation",
-      "headline": "Return देखो, Real Return समझो",
-      "core_explanation": "अगर FD return 7% और inflation 6% हो, तो simple pre-tax estimate में real return लगभग 1% हो सकता है। Tax और बदलती inflation के बाद परिणाम अलग हो सकते हैं।",
+      "purpose": "business_model",
+      "headline": "Step 1: Business समझ आता है?",
+      "core_explanation": "• Company क्या बेचती है?\n• Customer कौन है और पैसा कैसे आता है?",
       "visual_spec": {
-        "visual_concept": "एक balance scale: एक तरफ 7 प्रतिशत का चमकता हुआ growth arrow, दूसरी तरफ 6 प्रतिशत का बड़ा inflation balloon, और बीच में बची हुई बहुत छोटी 1 प्रतिशत की रोशनी; एक भारतीय saver ध्यान से scale देख रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. A thoughtful Indian saver in a simple home office examining a beautifully illustrated balance scale, one side lifted by a tall green growth arrow and the other weighed down by a large red-orange inflation balloon, a tiny remaining golden spark in the center symbolizing real return, calculator and household budget objects nearby, no visible digits or symbols, sophisticated editorial infographic composition, textured paper, clean cream background, navy, green, orange and gold palette, no readable writing, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
+        "visual_concept": "एक साफ-सुथरा business ecosystem: company का central workshop, products या services customers तक जा रहे हैं, और coins वापस company की ओर flow कर रहे हैं। Beginner investor puzzle pieces जोड़कर business model समझ रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Illustrated business ecosystem showing a central company workshop connected by visible arrows to diverse customers, products and services moving outward, coins and value flowing back inward, a curious beginner investor assembling puzzle pieces nearby, warm cream paper, navy outlines, coral, teal and mustard palette, rich characters and objects, no readable writing, no symbols resembling letters, no logos, NO TEXT, NO LABELS."
       },
-      "annotation": "Tip: Real return = return minus inflation, before tax",
-      "cta": "सिर्फ interest rate नहीं—purchasing power भी देखिए।"
+      "annotation": "Arrow follows the loop: Product or Service → Customer → Revenue",
+      "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "foundation",
-      "headline": "पहले Financial Foundation",
-      "core_explanation": "Emergency Fund unexpected खर्चों के लिए liquidity देता है। Adequate Insurance और high-cost debt management, investing से पहले जरूरी आधार हैं।",
+      "purpose": "growth_and_profit",
+      "headline": "Step 2: Revenue और Profit बढ़ रहे हैं?",
+      "core_explanation": "• कई वर्षों का trend देखें\n• Sales बढ़ें, लेकिन sustainable profit भी दिखे",
       "visual_spec": {
-        "visual_concept": "एक मजबूत तीन-स्तरीय घर: नीचे emergency cash box और पानी का सुरक्षित reservoir, बीच में insurance shield से परिवार की सुरक्षा, ऊपर debt chains को काटता हुआ व्यक्ति; घर की छत पर शांत निवेश का पौधा।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. A warm illustrated three-level financial foundation represented as a sturdy Indian home, bottom level with an emergency cash container and accessible water reservoir, middle level protected by a large abstract shield around a family, a person gently breaking heavy metal chains symbolizing expensive debt, a small healthy investment plant growing on the roof, no written labels, no currency symbols, rich editorial storytelling, paper collage and ink textures, soft shadows, cream, teal, navy, terracotta and gold palette, no readable writing, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
+        "visual_concept": "एक healthy company tree जिसकी जड़ें मजबूत हैं और शाखाएँ धीरे-धीरे ऊपर बढ़ रही हैं। दो baskets में revenue और profit के coins लगातार भर रहे हैं। पास में एक अस्थायी balloon profit हवा में ऊपर जाता दिखता है, लेकिन उसकी string कमजोर है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich metaphorical illustration of a healthy company tree with deep roots, steadily rising branches, fruit baskets representing revenue and profit filled over several seasons, a separate fragile balloon rising temporarily with a loose string, beginner investor comparing sustainable growth with a one-time spike, textured paper, hand-drawn editorial style, navy, teal, coral and mustard colors, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
       },
-      "annotation": "Arrow sequence: Safety → Protection → Growth",
-      "cta": "Invest करने से पहले अपना base मजबूत करें।"
+      "annotation": "Circle the strong roots: growth की quality भी देखें",
+      "cta": null
     },
     {
       "slide_number": 4,
-      "purpose": "process",
-      "headline": "हर Goal का अलग रास्ता",
-      "core_explanation": "Short-term जरूरतों का पैसा volatile Equity में रखने से बचें। Long-term goals में diversified growth assets पर विचार किया जा सकता है।",
+      "purpose": "cash_flow",
+      "headline": "Step 3: Profit सच में Cash बन रहा है?",
+      "core_explanation": "• Profit statement में दिख सकता है\n• CFO बताता है कि business cash generate कर रहा है या नहीं",
       "visual_spec": {
-        "visual_concept": "तीन अलग रास्तों वाला भारतीय शहर का landscape: पास का रास्ता सुरक्षित पुल और debt instruments की ओर, बीच का रास्ता balanced garden की ओर, दूर का रास्ता उतार-चढ़ाव वाली पहाड़ियों से होकर diversified equity growth forest तक; एक यात्री अपनी मंजिल देखकर रास्ता चुन रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. A visually rich Indian landscape with three paths leading toward different time horizons: a short nearby path across a stable bridge, a medium path through a balanced garden, and a distant adventurous path across rolling hills toward a diverse green forest, one Indian traveler holding a compass and choosing based on destination, visual metaphors only, no signs or written directions, no text, no numbers, no letters, no labels, no logos, no watermark, NotebookLM-style educational aesthetic, editorial illustration, layered paper textures, clean composition, muted cream with teal, blue, green and saffron accents. NO TEXT."
+        "visual_concept": "एक company factory से दो अलग रास्ते निकलते हैं: एक कागज़ी profit के चमकदार coins की ओर, दूसरा वास्तविक cash नदी की ओर। मजबूत company में cash नदी business treasury तक पहुँचती है; कमजोर रास्ते में coins कागज़ों पर अटक जाते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Educational financial metaphor with a company factory and two pathways: one path carries shiny paper-like coins that stop at documents, the other carries a clear flowing river of real coins into a secure company treasury, beginner investor observing the difference with a thoughtful expression, rich objects, hand-drawn ink, cream paper, navy, teal, coral and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
       },
-      "annotation": "Arrow: Goal + Time Horizon → Asset Mix",
-      "cta": "पहले goal तय करें, फिर product चुनें।"
+      "annotation": "Arrow highlights the river reaching the treasury: cash conversion check करें",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "comparison",
-      "headline": "एक ही Basket पर निर्भर न रहें",
-      "core_explanation": "Equity long-term growth में मदद कर सकती है, Debt stability और liquidity दे सकता है, जबकि Gold diversification में भूमिका निभा सकता है। हर asset में risk और limits हैं।",
+      "purpose": "debt_and_risk",
+      "headline": "Step 4: Debt manageable है?",
+      "core_explanation": "• Debt-to-Equity और Interest Coverage देखें\n• High ROE कभी-कभी ज्यादा debt से भी दिख सकता है",
       "visual_spec": {
-        "visual_concept": "एक भारतीय परिवार तीन मजबूत baskets में resources बाँट रहा है: एक basket में growing trees और market waves, दूसरे में steady bricks और cash cushion, तीसरे में golden metal shield; baskets अलग-अलग रखे हैं ताकि एक झटका पूरे plan को प्रभावित न करे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. An Indian family thoughtfully distributing colorful resources into three separate sturdy baskets: one basket contains growing trees mixed with gentle market waves, another contains stable bricks and a liquid cushion, the third contains a golden protective object representing gold, baskets arranged with space between them to show diversification, no financial logos, no readable markings, rich NotebookLM-style educational aesthetic, hand-drawn editorial illustration, paper grain, soft dimensional lighting, cream background, navy, emerald, saffron and muted red palette, no text, no numbers, no letters, no labels, no watermark. NO TEXT."
+        "visual_concept": "दो companies का visual comparison: पहली छोटी backpack के साथ स्थिर पहाड़ी चढ़ रही है; दूसरी बहुत भारी debt backpacks और गिरते boulders के नीचे दब रही है। एक scale पर ROE का चमकदार ऊँचा परिणाम दिखाई देता है, पर पीछे debt का वजन स्पष्ट है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Split-scene comparison of two companies climbing a mountain: one carries a light manageable backpack and walks steadily, the other is overloaded with heavy debt bags and falling financial boulders, a balanced scale showing a deceptively impressive result caused by excess weight, beginner investor examining the scene, expressive characters, textured cream paper, navy outlines, teal, coral and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
       },
-      "annotation": "Tip: Diversification risk को खत्म नहीं करती, manage करने में मदद करती है",
-      "cta": "Asset mix को अपने goal और risk capacity से मिलाइए।"
+      "annotation": "Warning arrow points to the heavy backpack: High ROE को अकेले मत मानें",
+      "cta": null
     },
     {
       "slide_number": 6,
-      "purpose": "action",
-      "headline": "Plan बनाइए, फिर Review कीजिए",
-      "core_explanation": "SIP disciplined investing का tool हो सकता है, लेकिन market loss से protection या guaranteed return नहीं देता। Fees, taxation, liquidity और risks समझकर periodic review करें।",
+      "purpose": "valuation_and_governance",
+      "headline": "Step 5: Price और Governance check करें",
+      "core_explanation": "• अच्छी Company भी बहुत महँगी हो सकती है\n• Promoter history और red flags जरूर देखें",
       "visual_spec": {
-        "visual_concept": "एक शांत भारतीय home-planning scene: व्यक्ति calendar, compass और three-part portfolio jars के साथ plan review कर रहा है; खिड़की के बाहर मौसम बदलते दिखते हैं, पर table पर plan को समय-समय पर rebalance किया जा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. A calm Indian investor at a home desk reviewing a financial plan using a blank calendar, compass, three transparent portfolio jars and a small balance tool, changing seasons visible through the window to symbolize market conditions, the person making a thoughtful adjustment rather than reacting with panic, family goals represented by subtle objects like education books and a home key without readable markings, warm editorial illustration, textured paper, cream, navy, teal, gold and coral palette, no text, no numbers, no letters, no labels, no logos, no watermark. NO TEXT."
+        "visual_concept": "एक मजबूत महल के बाहर दो gates हैं: valuation gate पर price tag जैसा blank oversized tag और balance scale, governance gate पर transparent glass doorway। बाहर एक चमकदार mask गिर रहा है और पीछे warning shadows दिखाई दे रही हैं। Investor torch से hidden corners देख रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration of a strong company castle with two gates, one gate represented by an oversized blank price tag and a balance scale, the other by a transparent glass governance doorway revealing both clean foundations and subtle warning shadows, a beginner investor using a flashlight to inspect hidden corners, sophisticated educational metaphor, cream paper texture, navy, coral, teal and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
       },
-      "annotation": "Arrow: Invest → Monitor → Review → Adjust",
-      "cta": "Personalised advice के लिए SEBI-registered investment adviser से बात करें।"
+      "annotation": "Torch points behind the polished surface: चमक के पीछे भी देखें",
+      "cta": null
+    },
+    {
+      "slide_number": 7,
+      "purpose": "summary",
+      "headline": "5 मिनट का Quick Checklist",
+      "core_explanation": "• Business → Growth → Cash Flow\n• Debt → Valuation → Governance\n• सब ठीक लगे तो ही deeper research करें",
+      "visual_spec": {
+        "visual_concept": "एक छह-step winding path पर beginner investor छह illustrated checkpoints पार करता है: business storefront, rising tree, cash river, manageable backpack, balanced scale और transparent shield. अंत में एक research library है, जहाँ वह आगे पढ़ने जा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. Wide illustrated journey showing a beginner investor walking along a winding path through six visual checkpoints: a clear business storefront, growing tree, flowing cash river, manageable debt backpack, balanced valuation scale, transparent governance shield, ending at a welcoming research library, cohesive storytelling, hand-drawn ink outlines, warm cream paper, navy, teal, coral and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
+      },
+      "annotation": "Final arrow points toward the library: Checklist के बाद deep research",
+      "cta": "Save करें और अगली Company पर apply करें"
     }
   ],
-  "caption": "Inflation सिर्फ prices नहीं बढ़ाता—यह आपके पैसे की purchasing power भी घटाता है। इसलिए strategy का पहला कदम high return ढूँढना नहीं, बल्कि financial foundation मजबूत करना है: Emergency Fund, adequate Insurance, high-cost Debt management और goal-based asset allocation। Equity, Debt और Gold की भूमिका अलग हो सकती है, लेकिन कोई भी asset guaranteed नहीं है। अपने time horizon, risk capacity, fees, taxation और liquidity को समझकर plan बनाइए और समय-समय पर review कीजिए।\n\n#Inflation #PurchasingPower #PersonalFinance #InvestingForBeginners #AssetAllocation #EmergencyFund #FinancialPlanning #SIP #MoneyManagement #TrustPointFin"
+  "caption": "किसी Company को समझने के लिए 5 मिनट की यह checklist आपकी initial screening में मदद कर सकती है। Business model, Revenue-Profit trend, Cash Flow, Debt, Valuation और Governance—इन सभी को साथ में देखें। याद रखें: 5 मिनट में final investment decision नहीं लिया जा सकता। Annual Report, latest filings, industry outlook, competitors और promoter history की deeper research जरूर करें।\n\nHigh ROE या high profit को अकेले देखकर प्रभावित न हों—Debt, CFO और sustainability भी check करें।\n\n#TrustPointFin #StockMarketForBeginners #FundamentalAnalysis #InvestingBasics #PersonalFinanceIndia #StockResearch #FinancialLiteracy #HindiFinance #LongTermInvesting #BeginnerInvesting"
 }
