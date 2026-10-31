@@ -7,7 +7,7 @@
  * - Keeps exactly the top 5 high-engagement / foundational posts published before 21st September 2026.
  * - Hides all remaining pre-Sep 21 posts from the page timeline via Meta Graph API:
  *     POST https://graph.facebook.com/v21.0/{post-id}?is_hidden=true
- * - Gracefully handles token permissions: attempts engagement metrics with fallback to standard feed.
+ * - Gracefully attempts published_posts, feed, and photos endpoints depending on token scopes.
  * - DOES NOT permanently delete any post.
  */
 
@@ -51,23 +51,56 @@ async function hidePost(postId) {
     return fetchJSON(postUrl, { method: 'POST' });
 }
 
-async function fetchPosts(useEngagement = true) {
-    const fields = useEngagement 
-        ? 'id,created_time,message,shares,reactions.summary(total_count),comments.summary(total_count)'
-        : 'id,created_time,message';
-    
-    let allPosts = [];
-    let nextUrl = `https://graph.facebook.com/${API_VERSION}/${FB_PAGE_ID}/feed?fields=${fields}&limit=100&access_token=${PAGE_TOKEN}`;
+async function tryFetchEndpoint(endpoint, fields) {
+    let allItems = [];
+    let nextUrl = `https://graph.facebook.com/${API_VERSION}/${FB_PAGE_ID}/${endpoint}?fields=${fields}&limit=100&access_token=${PAGE_TOKEN}`;
 
-    while (nextUrl && allPosts.length < 500) {
-        console.log(`Fetching batch from Facebook Graph API (fields: ${useEngagement ? 'engagement' : 'basic'})...`);
-        const feedData = await fetchJSON(nextUrl);
-        if (feedData.data && feedData.data.length > 0) {
-            allPosts = allPosts.concat(feedData.data);
+    while (nextUrl && allItems.length < 500) {
+        console.log(`Querying ${endpoint} (limit=100)...`);
+        const data = await fetchJSON(nextUrl);
+        if (data.data && data.data.length > 0) {
+            allItems = allItems.concat(data.data);
         }
-        nextUrl = feedData.paging && feedData.paging.next ? feedData.paging.next : null;
+        nextUrl = data.paging && data.paging.next ? data.paging.next : null;
     }
-    return allPosts;
+    return allItems;
+}
+
+async function fetchAllAvailablePosts() {
+    // Attempt 1: published_posts with basic fields (standard for pages_manage_posts)
+    try {
+        console.log("Attempting to fetch via 'published_posts'...");
+        const posts = await tryFetchEndpoint('published_posts', 'id,created_time,message');
+        if (posts.length > 0) return posts;
+    } catch (e) {
+        console.warn(`⚠️ 'published_posts' endpoint failed: ${e.message}`);
+    }
+
+    // Attempt 2: feed endpoint
+    try {
+        console.log("Attempting to fetch via 'feed'...");
+        const posts = await tryFetchEndpoint('feed', 'id,created_time,message');
+        if (posts.length > 0) return posts;
+    } catch (e) {
+        console.warn(`⚠️ 'feed' endpoint failed: ${e.message}`);
+    }
+
+    // Attempt 3: uploaded photos endpoint
+    try {
+        console.log("Attempting to fetch via 'photos?type=uploaded'...");
+        const photos = await tryFetchEndpoint('photos', 'id,created_time,name');
+        if (photos.length > 0) {
+            return photos.map(p => ({
+                id: p.id,
+                created_time: p.created_time,
+                message: p.name || 'Photo post'
+            }));
+        }
+    } catch (e) {
+        console.warn(`⚠️ 'photos' endpoint failed: ${e.message}`);
+    }
+
+    throw new Error("Unable to retrieve posts using available endpoints and token permissions.");
 }
 
 async function main() {
@@ -81,18 +114,7 @@ async function main() {
 
     console.log(`Connecting to Facebook Page ID: ${FB_PAGE_ID}...`);
 
-    let allPosts = [];
-    try {
-        allPosts = await fetchPosts(true);
-    } catch (err) {
-        if (err.code === 10 || err.message.includes('pages_read_engagement')) {
-            console.warn(`⚠️ pages_read_engagement not enabled on token; falling back to standard feed fields.`);
-            allPosts = await fetchPosts(false);
-        } else {
-            throw err;
-        }
-    }
-
+    const allPosts = await fetchAllAvailablePosts();
     console.log(`\nTotal posts retrieved from Page: ${allPosts.length}`);
 
     // Partition into after-cutoff and before-cutoff
@@ -126,7 +148,7 @@ async function main() {
     console.log(`\nFound ${postsAfterCutoff.length} posts published AFTER 21 Sep 2026 (PROTECTED, WILL KEEP LIVE).`);
     console.log(`Found ${postsBeforeCutoff.length} posts published BEFORE 21 Sep 2026.`);
 
-    // Sort pre-Sep 21 posts: if engagement is available, sort descending by engagement; otherwise keep the 5 closest to cutoff
+    // Sort pre-Sep 21 posts: if engagement exists, sort by engagement; otherwise keep the 5 closest to cutoff
     postsBeforeCutoff.sort((a, b) => {
         if (b.engagement !== a.engagement) {
             return b.engagement - a.engagement;
@@ -162,7 +184,7 @@ async function main() {
         } catch (e) {
             console.error(`❌ Failed to hide [ID: ${p.id}]: ${e.message}`);
         }
-        // Small throttle to stay well within Meta rate limits
+        // Throttle to stay within Meta rate limits
         await new Promise(r => setTimeout(r, 400));
     }
 
