@@ -3,7 +3,8 @@
  * 
  * Case-insensitive monitor for campaign comments on Facebook & Instagram.
  * Detects "IPO" or "PDF" (any case: ipo, IPO, Ipo, pdf, PDF, Pdf, etc.)
- * Responds via Meta Graph API comment reply with the report PDF link.
+ * Responds to comments with: "Check DM! 📩"
+ * Attempts to deliver the report via DM without exposing raw file paths.
  */
 
 const fs = require('fs');
@@ -12,6 +13,7 @@ const path = require('path');
 const ROOT = process.env.GITHUB_WORKSPACE || path.join(__dirname, '..');
 const PAGE_TOKEN = process.env.META_PAGE_TOKEN;
 const FB_PAGE_ID = process.env.FB_PAGE_ID;
+const IG_ACCOUNT_ID = process.env.IG_ACCOUNT_ID;
 const API_VERSION = 'v21.0';
 const RESULTS_FILE = path.join(ROOT, 'campaign_publish_results.json');
 const REPLIED_LOG = path.join(ROOT, 'campaign_replied_comments.json');
@@ -51,6 +53,26 @@ async function replyToIGComment(commentId, message) {
     });
 }
 
+// Attempt to send Instagram Private DM if permissions allow
+async function sendIGPrivateDM(commentId, reportTitle, reportUrl) {
+    if (!FB_PAGE_ID && !IG_ACCOUNT_ID) return;
+    const target = FB_PAGE_ID || IG_ACCOUNT_ID;
+    const url = `https://graph.facebook.com/${API_VERSION}/${target}/messages`;
+    
+    // Clean DM text without displaying complex raw folder paths
+    const dmText = `Hi! Here is your research report:\n\n📄 ${reportTitle} (PDF)\nDownload: ${reportUrl}\n\n👉 Open Free Demat Account: https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=IG&utm_campaign=Nov`;
+
+    return fetchJSON(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            recipient: { comment_id: commentId },
+            message: { text: dmText },
+            access_token: PAGE_TOKEN
+        })
+    });
+}
+
 async function main() {
     if (!PAGE_TOKEN) {
         throw new Error("Missing META_PAGE_TOKEN in environment variables!");
@@ -76,6 +98,7 @@ async function main() {
 
     for (const c of campaigns) {
         const regex = new RegExp(`\\b${c.keyword}\\b`, 'i');
+        const reportTitle = c.keyword.toUpperCase() === 'IPO' ? 'IPO DRHP Scorecard' : '2027 India Megatrends Report';
         console.log(`Checking [${c.name}] for trigger keyword: "${c.keyword}" (Regex: ${regex})`);
 
         // Check Facebook Comments
@@ -94,12 +117,12 @@ async function main() {
 
                     if (regex.test(cm.message || '')) {
                         console.log(`🎯 Match found on FB from "${cm.from ? cm.from.name : 'User'}": "${cm.message}"`);
-                        const replyMsg = `Hi! Here is your official ${c.keyword.toUpperCase()} Research Report PDF: ${c.pdfUrl}\n\n👉 Open Free Demat Account with Angel One: https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=faceBook&utm_medium=FB&utm_campaign=Nov`;
+                        const replyMsg = `Check DM! 📩`;
                         
                         try {
                             await replyToFBComment(cm.id, replyMsg);
                             repliedIds.push(cm.id);
-                            console.log(`✅ Replied to FB comment [ID: ${cm.id}]`);
+                            console.log(`✅ Replied to FB comment [ID: ${cm.id}] with "Check DM! 📩"`);
                         } catch (err) {
                             console.error(`❌ Failed to reply to FB comment ${cm.id}: ${err.message}`);
                         }
@@ -122,12 +145,21 @@ async function main() {
 
                     if (regex.test(cm.text || '')) {
                         console.log(`🎯 Match found on IG: "${cm.text}"`);
-                        const replyMsg = `Hi! Here is your official ${c.keyword.toUpperCase()} Research Report PDF: ${c.pdfUrl} 📈\n\n🔗 Tap the link in our bio to open your Angel One Demat account!`;
                         
+                        // 1. Try sending DM
+                        try {
+                            await sendIGPrivateDM(cm.id, reportTitle, c.pdfUrl);
+                            console.log(`✅ Sent Private DM to IG comment [ID: ${cm.id}]`);
+                        } catch (err) {
+                            console.warn(`ℹ️ Private DM via API: ${err.message}`);
+                        }
+
+                        // 2. Public Comment Reply: "Check DM! 📩"
+                        const replyMsg = `Check DM! 📩`;
                         try {
                             await replyToIGComment(cm.id, replyMsg);
                             repliedIds.push(cm.id);
-                            console.log(`✅ Replied to IG comment [ID: ${cm.id}]`);
+                            console.log(`✅ Replied to IG comment [ID: ${cm.id}] with "Check DM! 📩"`);
                         } catch (err) {
                             console.error(`❌ Failed to reply to IG comment ${cm.id}: ${err.message}`);
                         }

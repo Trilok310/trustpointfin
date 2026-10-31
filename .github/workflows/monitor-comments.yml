@@ -26,6 +26,7 @@ jobs:
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
         run: node scripts/monitor-campaign-comments.js
 
       - name: Commit Replied Comments State

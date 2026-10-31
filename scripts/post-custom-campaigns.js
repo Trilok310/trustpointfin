@@ -102,14 +102,14 @@ India's primary market is preparing for a historic wave of consumer, fintech, an
 
 💡 3 SEBI-Compliant Rules Smart Retail Investors Follow Before Bidding:
 ✅ Check Day-2 Institutional (QIB) Demand (>15x): Never bid blindly on grey market hype.
-✅ Use 24x7 Pre-Open Application on @angelone: Apply 1 day early with zero last-day UPI failure.
+✅ Use 24x7 Pre-Open Application: Apply 1 day early with zero last-day UPI failure.
 ✅ SEBI-Compliant Family Accounts: Never apply multiple bids from 1 PAN (gets rejected!). Instead, each eligible adult family member can legally apply 1 Retail Lot from their own individual Demat & own linked bank/UPI!
 
 📩 Comment "IPO" below to get the Full 2-Page Mainboard IPO DRHP Scorecard PDF in your DM!
 
 Tag a friend or family member who shouldn't miss these upcoming IPOs! 👇
 
-#UpcomingIPO #FlipkartIPO #PhonePeIPO #Haldirams #Zepto #CarDekho #MainboardIPO #IPOAlert #StockMarketIndia #IndianStockMarket #Nifty50 #DalalStreet #InvestingIndia #AngelOne #TrustPointFin #DematAccount #SmartInvesting #WealthCreation`
+#UpcomingIPO #FlipkartIPO #PhonePeIPO #Haldirams #Zepto #CarDekho #MainboardIPO #IPOAlert #StockMarketIndia #IndianStockMarket #Nifty50 #DalalStreet #InvestingIndia #TrustPointFin #DematAccount #SmartInvesting #WealthCreation`
         },
         {
             name: "Campaign #2: 2027 India Megatrends & Order-Book Leaders",
@@ -120,14 +120,14 @@ Tag a friend or family member who shouldn't miss these upcoming IPOs! 👇
 
 While a ₹10,000/month SIP in the broad Nifty 50 grew to ₹10.4 Lakhs (13.8% CAGR), top institutional Order-Book & Capex Leaders with 3.5x+ revenue visibility compounded to ₹24.8 Lakhs (31.4% CAGR)!
 
-Inside our 2027 India Megatrends Research Report by TrustPoint Fin (Authorised Partner • @angelone):
+Inside our 2027 India Megatrends Research Report by TrustPoint Fin:
 🔹 Where FIIs & Domestic Mutual Funds are deploying ₹16.6 Lakh Cr across Defence, HVDC Power Grids & Semiconductors
 🔹 Ranked Order-Book Leaders including HAL (@hal_india), Bharat Electronics (BEL), Hitachi Energy, and Dixon Technologies
 🔹 How to unlock VIP Stocks #5 & #6 (Railway Kavach & Transformer Leaders) for ₹0
 
 📩 Comment "PDF" below to get the Full 2027 India Megatrends Research Report PDF in your DM!
 
-#StockMarketIndia #Nifty50 #MultibaggerStocks #DefenceStocks #HAL #BharatElectronics #CapexIndia #MakeInIndia #IndianShareMarket #MutualFundsIndia #SIP #WealthManagement #AngelOne #TrustPointFin #InvestingTips`
+#StockMarketIndia #Nifty50 #MultibaggerStocks #DefenceStocks #HAL #BharatElectronics #CapexIndia #MakeInIndia #IndianShareMarket #MutualFundsIndia #SIP #WealthManagement #TrustPointFin #InvestingTips`
         }
     ];
 
@@ -147,7 +147,7 @@ Inside our 2027 India Megatrends Research Report by TrustPoint Fin (Authorised P
         console.log(`Image Raw URL: ${rawImageUrl}`);
 
         // Format Facebook Caption
-        const fbCaption = `${c.baseCaption}\n\n💬 Chat with our desk on WhatsApp: ${WA_LINK}\n👉 Open Free Demat Account with Angel One: ${FB_REFERRAL_LINK}`;
+        const fbCaption = `${c.baseCaption}\n\n💬 Chat with our desk on WhatsApp: ${WA_LINK}\n👉 Open Free Demat Account: ${FB_REFERRAL_LINK}`;
 
         // Format Instagram Caption (Link in bio prompt + WhatsApp vanity link)
         const igCaption = `${c.baseCaption}\n\n💬 Chat on WhatsApp: ${WA_LINK}\n🔗 Open Free Demat Account (Link in Bio): ${IG_REFERRAL_LINK}`;
