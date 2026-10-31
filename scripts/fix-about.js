@@ -13,7 +13,7 @@ const newAbout = `    <!-- About Section -->
                     <p style="margin-bottom: 16px; font-size: 1.1rem; line-height: 1.7; color: var(--color-text-main);">TrustPointFin is an official <strong>Authorized partner Angel one</strong>. Our mission is to facilitate a seamless onboarding experience for retail investors, traders, and beginners across India.</p>
                     <p style="margin-bottom: 24px; font-size: 1.1rem; line-height: 1.7; color: var(--color-text-main);">By opening your Demat account through TrustPointFin, you gain access to Angel One's robust technological ecosystem, including zero account opening charges, competitive brokerage rates, and an advanced trading suite, while receiving dedicated onboarding support from our team.</p>
                     <div style="margin-top: 32px;">
-                        <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary">Open Demat Account</a>
+                        <a href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov" target="_blank" class="btn btn-primary">Open Demat Account</a>
                     </div>
                 </div>
                 <div class="about-visual" style="flex: 1;">

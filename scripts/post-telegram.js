@@ -6,7 +6,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-const ANGELONE_LINK = "https://a.aonelink.in/ANGOne/8Xovqg1";
+const ANGELONE_LINK = "https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov";
 const HISTORY_FILE = path.join(__dirname, 'telegram-history.json');
 
 // Get current IST Date and Time

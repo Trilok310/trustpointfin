@@ -3081,7 +3081,7 @@ function TrustPointZellaApp() {
 
             <div className="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
               <a
-                href="https://a.aonelink.in/ANGOne/8Xovqg1"
+                href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov"
                 target="_blank"
                 rel="noreferrer"
                 className="text-emerald-400 hover:underline font-medium"

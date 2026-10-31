@@ -1207,7 +1207,7 @@ window.FreemiumPartnerModal = function FreemiumPartnerModal({
               <i className="fa-solid fa-shield-halved text-emerald-400"></i> Have a TrustPoint Partner Account? Unlock Lifetime PRO for ₹0
             </div>
             <p className="text-slate-400 text-[11px]">
-              Traders mapped under our Angel One Partner Tag (<code className="text-emerald-300 font-mono">8Xovqg1</code>) get complimentary lifetime access. Enter your Client ID to verify:
+              Traders mapped under our Angel One Partner Tag (<code className="text-emerald-300 font-mono">uOwRu9n</code>) get complimentary lifetime access. Enter your Client ID to verify:
             </p>
           </div>
           <div className="flex items-center gap-2 w-full sm:w-auto">
@@ -1238,7 +1238,7 @@ window.FreemiumPartnerModal = function FreemiumPartnerModal({
             <span>{verifyStatus.msg}</span>
             {!verifyStatus.ok && (
               <a
-                href="https://a.aonelink.in/ANGOne/8Xovqg1"
+                href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov"
                 target="_blank"
                 rel="noreferrer"
                 className="px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold whitespace-nowrap"

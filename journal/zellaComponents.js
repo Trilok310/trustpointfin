@@ -1111,7 +1111,7 @@ window.FreemiumPartnerModal = function FreemiumPartnerModal({
             </div>
             <div className="mt-5 pt-3 border-t border-emerald-500/30 text-[11px] text-emerald-200 flex items-center justify-between">
               <span>Verified automatically against our Angel One NXT Master List</span>
-              <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" rel="noreferrer" className="underline font-bold text-emerald-400">Open Mapped Account →</a>
+              <a href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov" target="_blank" rel="noreferrer" className="underline font-bold text-emerald-400">Open Mapped Account →</a>
             </div>
           </div>
         </div>
@@ -1155,7 +1155,7 @@ window.FreemiumPartnerModal = function FreemiumPartnerModal({
               <span>{verifyStatus.msg}</span>
               {!verifyStatus.ok && (
                 <a
-                  href="https://a.aonelink.in/ANGOne/8Xovqg1"
+                  href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov"
                   target="_blank"
                   rel="noreferrer"
                   className="px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold whitespace-nowrap"

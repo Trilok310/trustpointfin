@@ -17,7 +17,7 @@ const newAbout = `    <!-- About Section -->
                     <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text-main); margin: 0;">By opening your Demat account through TrustPointFin, you gain access to Angel One's robust technological ecosystem, including zero account opening charges, competitive brokerage rates, and an advanced trading suite, while receiving dedicated onboarding support from our team.</p>
                 </div>
                 <div style="margin-top: 40px;">
-                    <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Open Demat Account</a>
+                    <a href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov" target="_blank" class="btn btn-primary btn-lg">Open Demat Account</a>
                 </div>
             </div>
         </div>

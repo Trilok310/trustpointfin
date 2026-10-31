@@ -12,4 +12,4 @@ Whenever modifying existing templates, adding new pages, or generating articles:
 ### 2. Autonomous Action on Errors
 - Proactively run telemetry health checks using [`scripts/telemetry.js`](file:///C:/Users/HP/.gemini/antigravity/scratch/trustpointfin/scripts/telemetry.js) during tests and builds.
 - When any runtime or network exception occurs, diagnose the exact root cause, inspect the source file and line number, and apply fixes proactively.
-- Monitor critical conversion funnels (especially Angel One Demat account referrals `https://a.aonelink.in/ANGOne/8Xovqg1`).
+- Monitor critical conversion funnels (especially Angel One Demat account referrals `https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov`).

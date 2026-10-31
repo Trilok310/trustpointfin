@@ -26,7 +26,7 @@ const newAbout = `    <!-- About Section -->
                     <p style="margin-bottom: 16px; font-size: 1.1rem; line-height: 1.7; color: var(--color-text-main);">We are a dedicated financial services provider operating as an Authorized partner Angel one. Our mission is to democratize retail investing by providing seamless access to the capital markets.</p>
                     <p style="margin-bottom: 24px; font-size: 1.1rem; line-height: 1.7; color: var(--color-text-main);">By opening your Demat account through TrustPointFin, you gain access to Angel One's robust technological ecosystem, including zero account opening charges, competitive brokerage rates, and an advanced trading suite, while receiving dedicated onboarding support from our team.</p>
                     <div style="margin-top: 32px;">
-                        <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary">Open Demat Account</a>
+                        <a href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov" target="_blank" class="btn btn-primary">Open Demat Account</a>
                     </div>
                 </div>
                 <div class="about-visual" style="flex: 1;">
@@ -68,7 +68,7 @@ const newServicesHeader = `<div class="section-header" style="display: flex; jus
                     <p class="section-subtitle" style="text-align: left; margin: 0; color: var(--color-text-muted);">Diversify your portfolio with a single Demat account.</p>
                 </div>
                 <div>
-                    <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-outline" style="background: #fff; border-color: var(--color-border);">Explore All Products</a>
+                    <a href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov" target="_blank" class="btn btn-outline" style="background: #fff; border-color: var(--color-border);">Explore All Products</a>
                 </div>
             </div>`;
 
@@ -76,7 +76,7 @@ html = html.replace(oldServicesHeader, newServicesHeader);
 
 // Remove the centered button at the bottom of services since we moved it to the header
 const oldServicesBtn = `<div style="text-align: center; margin-top: 48px;">
-                <a href="https://a.aonelink.in/ANGOne/8Xovqg1" target="_blank" class="btn btn-primary btn-lg">Explore All Products</a>
+                <a href="https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov" target="_blank" class="btn btn-primary btn-lg">Explore All Products</a>
             </div>`;
 html = html.replace(oldServicesBtn, '');
 

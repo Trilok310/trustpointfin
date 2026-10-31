@@ -10,7 +10,7 @@ const IG_ACCOUNT_ID = process.env.IG_ACCOUNT_ID;
 const FB_PAGE_ID = process.env.FB_PAGE_ID;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-const ANGELONE_LINK = "https://a.aonelink.in/ANGOne/8Xovqg1";
+const ANGELONE_LINK = "https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=Web&utm_campaign=Nov";
 
 const API_VERSION = 'v20.0';
 
