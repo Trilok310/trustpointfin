@@ -1,0 +1,35 @@
+name: Auto-Reply to Campaign Comments
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+  workflow_dispatch: # Allows manual trigger anytime
+
+permissions:
+  contents: write
+
+jobs:
+  monitor-comments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Monitor & Reply to Comments
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+        run: node scripts/monitor-campaign-comments.js
+
+      - name: Commit Replied Comments State
+        run: |
+          git config --global user.name "TrustPointFin AutoBot"
+          git config --global user.email "autobot@trustpointfin.org"
+          git add campaign_replied_comments.json || true
+          git diff --staged --quiet || (git commit -m "🤖 Update replied comments log [skip ci]" && git push) || true
