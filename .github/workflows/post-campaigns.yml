@@ -1,0 +1,32 @@
+name: Post Custom Campaigns (FB & IG)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-campaigns:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run Campaign Publisher
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: |
+          node scripts/post-custom-campaigns.js
+
+      - name: Commit Publish Results
+        run: |
+          git config --global user.name "TrustPointFin AutoBot"
+          git config --global user.email "autobot@trustpointfin.org"
+          git add campaign_publish_results.json || true
+          git diff --staged --quiet || git commit -m "🤖 Record campaign publish IDs [skip ci]"
+          git push || true
