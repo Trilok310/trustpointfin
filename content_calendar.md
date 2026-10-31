@@ -143,27 +143,27 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 127. Why FDs Are Keeping You Poor: The Hidden Tax of Inflation
 - [x] 128. Nifty 50 vs. Smallcap Funds: Where Should You Invest Your First ₹5Rs. 000?
 - [x] 129. What is a SIP and Why It's the Cheat Code for Indian Millennials
-- [ ] 130. The Compounding Magic: How ₹2Rs. 000 a Month Can Make You a Crorepati
-- [ ] 131. Renting vs. Buying a Home in India: The Financial Truth
-- [ ] 132. The Power of Index Funds: Why Warren Buffett Recommends Them
-- [ ] 133. How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know
-- [ ] 134. Avoid These 5 Costly Mistakes When Buying Your First Stock
-- [ ] 135. Options Trading 101: Is It Gambling or a Real Strategy?
-- [ ] 136. How FIIs and DIIs Move the Indian Stock Market
-- [ ] 137. Why You Need Health Insurance Before You Start Investing
-- [ ] 138. Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46Rs. 800
-- [ ] 139. Debt vs. Equity: Finding the Right Balance for Your Age
-- [ ] 140. What is the Nifty Bank Index and How Does It Affect the Economy?
-- [ ] 141. Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?
-- [ ] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth
-- [ ] 143. How to Build an Emergency Fund in Just 6 Months
-- [ ] 144. Demystifying IPOs: Should You Invest in Every New Listing?
-- [ ] 145. Why Angel One is the Perfect Platform for Your First Trade
-- [ ] 146. What Happens When the RBI Changes the Repo Rate?
-- [ ] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?
-- [ ] 148. The Secret to Beating Inflation in India
-- [ ] 149. How to Spot a Fundamentally Strong Company in 5 Minutes
-- [ ] 150. 3 Books Every Indian Investor Must Read
+- [x] 130. The Compounding Magic: How ₹2Rs. 000 a Month Can Make You a Crorepati
+- [x] 131. Renting vs. Buying a Home in India: The Financial Truth
+- [x] 132. The Power of Index Funds: Why Warren Buffett Recommends Them
+- [x] 133. How to Read a Stock Market Chart: 3 Basics Every Beginner Should Know
+- [x] 134. Avoid These 5 Costly Mistakes When Buying Your First Stock
+- [x] 135. Options Trading 101: Is It Gambling or a Real Strategy?
+- [x] 136. How FIIs and DIIs Move the Indian Stock Market
+- [x] 137. Why You Need Health Insurance Before You Start Investing
+- [x] 138. Tax Saving 101: How ELSS Mutual Funds Can Save You ₹46Rs. 800
+- [x] 139. Debt vs. Equity: Finding the Right Balance for Your Age
+- [x] 140. What is the Nifty Bank Index and How Does It Affect the Economy?
+- [x] 141. Gold vs. Digital Gold vs. SGBs: Which is the Best Investment?
+- [x] 142. The Psychology of FOMO: Why Chasing Multibaggers Destroys Wealth
+- [x] 143. How to Build an Emergency Fund in Just 6 Months
+- [x] 144. Demystifying IPOs: Should You Invest in Every New Listing?
+- [x] 145. Why Angel One is the Perfect Platform for Your First Trade
+- [x] 146. What Happens When the RBI Changes the Repo Rate?
+- [x] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?
+- [x] 148. The Secret to Beating Inflation in India
+- [x] 149. How to Spot a Fundamentally Strong Company in 5 Minutes
+- [x] 150. 3 Books Every Indian Investor Must Read
 - [ ] 151. Mutual Funds vs. Direct Stocks: The Ultimate Comparison
 - [ ] 152. Why 'Time in the Market' Always Beats 'Timing the Market'
 - [ ] 153. The Impact of Union Budgets on Retail Investors

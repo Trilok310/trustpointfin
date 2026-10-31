@@ -1,92 +1,100 @@
 {
-  "topic": "SIP क्या है और Indian Millennials के लिए यह Investment का “Cheat Code” क्यों है?",
-  "teaching_objective": "Beginners को समझाना कि SIP एक disciplined investment method है, fixed-return product नहीं; regular investing, rupee-cost averaging और long-term compounding wealth-building में मदद कर सकते हैं, लेकिन market risk बना रहता है।",
-  "format": "STORY",
+  "topic": "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide",
+  "teaching_objective": "Beginners को तीन investing books का practical learning path समझाना: पहले money mindset और behaviour, फिर business और stock research, और अंत में value investing व risk discipline।",
+  "format": "BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "हर महीने थोड़ा, लंबे समय में बड़ा फर्क",
-      "core_explanation": "• SIP में तय रकम नियमित अंतराल पर invest की जाती है।\n• यह शुरुआत को आसान बनाता है—एक बड़ी रकम का इंतज़ार नहीं करना पड़ता।",
+      "headline": "Investing सीखने की शुरुआत कहाँ से करें?",
+      "core_explanation": [
+        "सिर्फ stock tips से नहीं, सही सोच और process से शुरुआत करें।",
+        "तीन किताबें investing journey को step-by-step समझने में मदद कर सकती हैं।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक young Indian millennial professional का warm morning scene: वह salary आने के बाद अपने smartphone पर छोटा recurring investment set कर रहा है; पास में coffee, laptop, houseplant और छोटे-छोटे coins से बनती हुई एक growing pathway।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration of a young Indian millennial professional in a cozy modern apartment, setting up a small recurring investment on a blank smartphone screen, coffee mug, laptop, wallet, a pathway made of small golden coins leading toward a healthy growing plant, warm natural light, expressive character, polished financial education infographic composition, Indian urban details, soft navy, teal, saffron and coral palette, clean background, no readable interface, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक भारतीय beginner investor अपने कमरे में मेज पर रखी तीन अलग-अलग blank books को देख रहा है। सामने एक शांत road-map जैसा दृश्य है जिसमें शुरुआत, research और discipline की ओर जाती हुई तीन glowing paths हैं। पास में rupee coins, calculator, notebook और छोटा पौधा दिखे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich editorial illustration of a young Indian beginner investor at a desk, studying three blank hardcover books with distinct colors, a subtle glowing three-stage path leading from mindset to research to disciplined investing, rupee coins, calculator, notebook, small growing plant, warm natural light, expressive character, layered paper collage, clean educational composition, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow: “छोटी शुरुआत → नियमित आदत”",
-      "cta": "पहले समझें, फिर शुरू करें।"
+      "annotation": "पहले foundation, फिर action",
+      "cta": "अपनी learning journey शुरू करें"
     },
     {
       "slide_number": 2,
-      "purpose": "definition",
-      "headline": "SIP product नहीं, investment का तरीका है",
-      "core_explanation": "• SIP यानी Systematic Investment Plan।\n• हर महीने fixed amount invest हो सकता है, लेकिन return fixed नहीं होता।",
+      "purpose": "concept",
+      "headline": "1. The Psychology of Money: पहले अपना mindset समझें",
+      "core_explanation": [
+        "Money decisions केवल maths से नहीं, emotions और behaviour से भी प्रभावित होते हैं।",
+        "Risk, patience और personal financial habits को समझना जरूरी है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक split-scene: बाईं ओर calendar के अलग-अलग दिनों पर एक ही आकार के coins डालती हुई millennial woman; दाईं ओर market-linked mutual fund का abstract roller-coaster landscape, जिसमें portfolio value ऊपर-नीचे हो रही है। कोई readable text नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene editorial illustration: an Indian millennial woman consistently placing identical coins into a transparent investment jar beside a monthly calendar with blank pages, while in the background an abstract market landscape rises and falls like gentle hills and waves, showing uncertainty without fear, transparent glass jar, expressive storytelling, sophisticated educational poster style, navy and cream base with teal, orange and red accents, no readable symbols, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक भारतीय investor के दो रूप दिखें—एक घबराकर market screen देख रहा है, दूसरा शांत होकर long-term plant को पानी दे रहा है। दोनों के बीच एक बड़ा brain और heart balance metaphor हो। Background में बदलते market waves हों, लेकिन शांत character steady रहे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene illustration of an Indian investor facing market volatility: on one side an anxious character reacting to dramatic rising and falling abstract market waves, on the other side a calm character patiently watering a growing plant beside a simple home budget, a balanced brain-and-heart metaphor floating between them, warm colors, expressive faces, educational visual storytelling, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "दो arrows: “Contribution स्थिर हो सकता है” और “Market value बदल सकती है”",
+      "annotation": "Emotion को observe करें, follow नहीं",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "mechanism",
-      "headline": "बाज़ार ऊपर-नीचे हो, खरीद जारी रह सकती है",
-      "core_explanation": "• कीमत कम होने पर वही रकम ज्यादा units खरीदती है।\n• कीमत ज्यादा होने पर कम units मिलती हैं—यही rupee-cost averaging का basic idea है।",
+      "purpose": "process",
+      "headline": "2. One Up on Wall Street: Business को समझना सीखें",
+      "core_explanation": [
+        "Stock खरीदने से पहले company के business को समझें।",
+        "Product, competition, financial performance और future potential पर research करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक friendly street-market metaphor: एक millennial investor हर महीने एक ही basket लेकर अलग-अलग कीमतों वाले fruit stalls पर जाता है; कम कीमत वाले stall पर basket में ज्यादा फल, महंगे stall पर कम फल। Fruits को investment units का metaphor बनाया जाए।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich illustrated Indian street market metaphor: a young Indian millennial investor carrying the same woven basket through three colorful fruit stalls, one stall with abundant low-priced fruit, one with medium amount, one with fewer expensive fruit, visual comparison of quantity changing while the basket and shopper remain consistent, warm human expressions, sophisticated financial education illustration, clean composition, no price tags, no signs, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक beginner investor भारतीय company ecosystem का miniature model देख रहा है: factory, दुकान, customers, delivery truck और finance papers। वह magnifying glass से business की ताकत और कमजोरियां समझ रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed illustrated scene of a young Indian investor researching a company through a miniature business ecosystem: factory, retail store, customers, delivery vehicle, warehouse, cash flow pipes, balance scale, financial papers with abstract charts but no readable marks, magnifying glass, thoughtful expression, rich layered educational collage, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow: “कम कीमत = उसी रकम में ज्यादा units”",
-      "cta": "Market timing के बजाय consistency पर ध्यान दें।"
+      "annotation": "Stock नहीं, business को study करें",
+      "cta": "एक company चुनें और research questions लिखें"
     },
     {
       "slide_number": 4,
-      "purpose": "growth",
-      "headline": "Compounding: पैसे पर भी पैसा काम करता है",
-      "core_explanation": "• समय के साथ returns भी invested capital का हिस्सा बन सकते हैं।\n• Compounding को समय चाहिए; जल्दी शुरू करना अक्सर ज्यादा महत्वपूर्ण होता है।",
+      "purpose": "risk",
+      "headline": "3. The Intelligent Investor: Price और value में फर्क समझें",
+      "core_explanation": [
+        "अच्छी company और सही price हमेशा एक ही बात नहीं होती।",
+        "Risk को समझकर margin of safety और disciplined decisions पर ध्यान दें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक time-lapse garden: एक millennial couple अलग-अलग समय पर बीज लगाता है; शुरुआती छोटे पौधे धीरे-धीरे branching tree बनते हैं, जिसकी शाखाओं पर coins और leaves बढ़ते जाते हैं। दृश्य growth को समझाए, कोई numeric promise नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Beautiful time-lapse garden illustration with an Indian millennial couple planting small seeds at different moments, tiny sprouts becoming a branching tree with layered roots, leaves and subtle golden coins integrated naturally into the branches, visual metaphor for compounding and time, sunrise-to-sunset progression across the scene, hopeful but realistic mood, premium NotebookLM editorial style, no text, no dates, no numbers, no labels, no logos."
+        "visual_concept": "एक पुराने भारतीय बाजार में दो दुकानदार दिखें: एक चमकदार लेकिन महंगी वस्तु बेच रहा है, दूसरा साधारण पर मजबूत वस्तु उचित कीमत पर। Investor एक balance scale से quality और price को तौल रहा है। पीछे सुरक्षा के लिए मजबूत पत्थर की दीवार का metaphor हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Storybook illustration in an Indian marketplace showing an investor comparing two objects on a balance scale: one flashy and overpriced, the other durable and reasonably valued, a strong protective stone wall symbolizing margin of safety, calm analytical mood, textured paper, rich colors, clear visual metaphor, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow: “Time + consistency = growth का मौका”",
-      "cta": "Compounding को time दीजिए।"
+      "annotation": "Value देखें, केवल excitement नहीं",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "relevance",
-      "headline": "Millennials के लिए SIP क्यों practical हो सकती है?",
-      "core_explanation": "• Salary-based life में छोटे monthly contributions manage करना आसान हो सकता है।\n• Automation discipline बनाती है और impulse spending को balance करने में मदद कर सकती है।",
+      "purpose": "timeline",
+      "headline": "Beginner reading order: आसान से गहरा",
+      "core_explanation": [
+        "पहले: The Psychology of Money — mindset और behaviour।",
+        "फिर: One Up on Wall Street — business और stock research।",
+        "अंत में: The Intelligent Investor — value investing और discipline।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक busy Indian millennial couple का split-day apartment scene: rent, commute, groceries और weekend plans के बीच एक छोटा automated coin-flow investment jar में जा रहा है; background में emergency fund वाला सुरक्षित box भी दिखे, ताकि priorities का balance दिखे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed lifestyle illustration of an Indian millennial couple managing a modern monthly budget at home, visual objects for rent, groceries, commute, travel and emergency savings arranged around them, a small automatic stream of coins moving calmly into a transparent investment jar, balanced not extravagant, warm apartment setting, relatable expressive characters, polished educational storytelling, no receipts with writing, no app text, no numbers, no logos, no labels."
+        "visual_concept": "एक staircase या mountain trail जिसमें तीन पड़ाव हों। पहला पड़ाव शांत mind और heart के symbols से, दूसरा magnifying glass और business model से, तीसरा balance scale और protective shield से represented हो। किताबों के covers blank हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich vertical staircase journey for a beginner Indian investor with three distinct stages represented only through visuals: calm mind and heart at the first step, magnifying glass examining a business at the second, balance scale and protective shield at the third, three blank books placed along the path, sunrise, inviting character walking upward, layered infographic storytelling, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Small note arrow: “पहले emergency needs और debt obligations देखें”",
-      "cta": "Amount वही रखें जिसे लंबे समय तक जारी रख सकें।"
+      "annotation": "Mindset → Research → Discipline",
+      "cta": "इस order को अपनी reading plan बनाएं"
     },
     {
       "slide_number": 6,
-      "purpose": "risk",
-      "headline": "SIP में return guaranteed नहीं होता",
-      "core_explanation": "• Market-linked funds में profit और loss दोनों संभव हैं।\n• SIP केवल investing का method है; fund selection, risk और time horizon अलग से समझें।",
+      "purpose": "safety",
+      "headline": "Books foundation देती हैं, guarantee नहीं",
+      "core_explanation": [
+        "Book पढ़ना profit या सही stock selection की guarantee नहीं है।",
+        "Emergency fund, goals, time horizon और risk tolerance पहले समझें।",
+        "Individual stock से पहले business, debt, cash flow, valuation और risks की जांच करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक thoughtful investor पुल पर खड़ा है: सामने market waves कभी ऊपर, कभी नीचे; उसके हाथ में helmet और map हैं, जबकि bridge stable process और long-term discipline का metaphor है। दूर horizon पर destination है, लेकिन guaranteed straight road नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Thoughtful Indian millennial investor standing safely at the start of a sturdy bridge over changing market waves, holding a simple map and protective helmet, waves moving up and down, distant horizon with soft light but no guaranteed destination, visual metaphor for risk awareness and long-term discipline, realistic yet friendly editorial illustration, navy, teal, muted orange palette, no charts with markings, no text, no numbers, no logos, no labels."
+        "visual_concept": "एक thoughtful Indian investor investment bridge पार करने से पहले safety checklist-style objects देख रहा है: emergency savings jar, compass, clock, helmet, magnifying glass और diversified basket। सामने एक SEBI-registered adviser जैसा professional guidance दे रहा है, बिना किसी readable signage के।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An Indian beginner investor standing before a financial bridge, carefully checking symbolic safeguards: emergency savings jar, compass for goals, clock for time horizon, protective helmet for risk tolerance, magnifying glass for research, and a diversified basket, with a professional financial adviser offering guidance nearby, reassuring educational tone, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow: “SIP risk हटाती नहीं—discipline देती है”",
-      "cta": "Risk समझे बिना सिर्फ trend follow न करें।"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "process",
-      "headline": "SIP शुरू करने से पहले 4-step checklist",
-      "core_explanation": "• Goal और time horizon तय करें।\n• Scheme का risk, expense ratio, exit load और minimum amount जाँचें।\n• Emergency fund और debt obligations को नज़रअंदाज़ न करें।",
-      "visual_spec": {
-        "visual_concept": "एक clean tabletop planning scene: millennial investor blank checklist cards, compass, calendar, shield, magnifying glass और small plant के साथ decision path बना रहा है; चार physical stepping stones आगे बढ़ते हुए दिखाई दें, लेकिन उन पर कोई लिखावट न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Clean top-down editorial illustration of an Indian millennial investor planning a mutual fund SIP using blank checklist cards, compass, calendar with empty pages, magnifying glass, protective shield, emergency savings box and a small healthy plant, four visual stepping stones leading forward, organized but human, premium financial education visual system, no writing, no readable symbols, no numbers, no logos, no labels."
-      },
-      "annotation": "Four arrows: “Goal → Time → Risk → Scheme conditions”",
-      "cta": "अपने पैसे के लिए informed decision लें।"
+      "annotation": "Learn first, invest thoughtfully",
+      "cta": "आज एक book चुनें और अपनी checklist बनाएं"
     }
   ],
-  "caption": "SIP कोई magic formula या guaranteed return नहीं है—यह regular investing की एक disciplined method है। छोटी रकम, सही time horizon और consistency के साथ wealth creation का मौका बन सकता है। लेकिन market risk, fund selection, expense ratio, exit load, emergency fund और debt obligations को समझना ज़रूरी है।\n\nSave करें और किसी भी SIP को शुरू करने से पहले अपना goal और risk profile check करें।\n\n#SIP #MutualFunds #PersonalFinance #InvestingForBeginners #IndianMillennials #WealthBuilding #FinancialLiteracy #RupeeCostAveraging #Compounding #TrustPointFin"
+  "caption": "Investing में शुरुआत stock tips से नहीं, सही सोच से होती है। 📚\n\nBeginners के लिए practical reading order:\n1️⃣ The Psychology of Money — money mindset और behaviour\n2️⃣ One Up on Wall Street — business और stock research\n3️⃣ The Intelligent Investor — value investing और discipline\n\nयाद रखें: किताबें foundation देती हैं, profit की guarantee नहीं। अपने emergency fund, goals, time horizon और risk tolerance को समझकर ही investment decisions लें।\n\n#TrustPointFin #InvestingForBeginners #IndianInvestors #PersonalFinance #StockMarketIndia #ValueInvesting #FinancialLiteracy #MoneyMindset #LongTermInvesting #HinglishFinance"
 }

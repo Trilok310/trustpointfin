@@ -1,15 +1,20 @@
 # Social Media Posts
-*Generated for article: "SIP क्या है और Indian Millennials के लिए यह Investment का “Cheat Code” क्यों है?"*
+*Generated for article: "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide"*
 
 ---
 
 ## 📝 Caption
 
-SIP कोई magic formula या guaranteed return नहीं है—यह regular investing की एक disciplined method है। छोटी रकम, सही time horizon और consistency के साथ wealth creation का मौका बन सकता है। लेकिन market risk, fund selection, expense ratio, exit load, emergency fund और debt obligations को समझना ज़रूरी है।
+Investing में शुरुआत stock tips से नहीं, सही सोच से होती है। 📚
 
-Save करें और किसी भी SIP को शुरू करने से पहले अपना goal और risk profile check करें।
+Beginners के लिए practical reading order:
+1️⃣ The Psychology of Money — money mindset और behaviour
+2️⃣ One Up on Wall Street — business और stock research
+3️⃣ The Intelligent Investor — value investing और discipline
 
-#SIP #MutualFunds #PersonalFinance #InvestingForBeginners #IndianMillennials #WealthBuilding #FinancialLiteracy #RupeeCostAveraging #Compounding #TrustPointFin
+याद रखें: किताबें foundation देती हैं, profit की guarantee नहीं। अपने emergency fund, goals, time horizon और risk tolerance को समझकर ही investment decisions लें।
+
+#TrustPointFin #InvestingForBeginners #IndianInvestors #PersonalFinance #StockMarketIndia #ValueInvesting #FinancialLiteracy #MoneyMindset #LongTermInvesting #HinglishFinance
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/what-is-a-sip-and-why-its-the-cheat-code-for-indian-millenni.html*
+*Article URL: https://trilok310.github.io/trustpointfin/3-books-every-indian-investor-must-read.html*
