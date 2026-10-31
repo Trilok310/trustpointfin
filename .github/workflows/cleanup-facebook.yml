@@ -1,0 +1,24 @@
+name: Facebook Page Post Cleanup
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup-facebook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Facebook Cleanup Script
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: |
+          node scripts/archive-fb-posts.js
