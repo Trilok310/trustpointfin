@@ -163,7 +163,7 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 147. Growth vs. Dividend Stocks: Which Strategy is Best for You?
 - [x] 148. The Secret to Beating Inflation in India
 - [x] 149. How to Spot a Fundamentally Strong Company in 5 Minutes
-- [ ] 150. 3 Books Every Indian Investor Must Read
+- [x] 150. 3 Books Every Indian Investor Must Read
 - [ ] 151. Mutual Funds vs. Direct Stocks: The Ultimate Comparison
 - [ ] 152. Why 'Time in the Market' Always Beats 'Timing the Market'
 - [ ] 153. The Impact of Union Budgets on Retail Investors

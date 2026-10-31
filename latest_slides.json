@@ -1,92 +1,100 @@
 {
-  "topic": "5 मिनट में Fundamentally Strong Company को कैसे पहचानें? Beginner के लिए आसान Checklist",
-  "teaching_objective": "Beginners को 5 मिनट की initial screening में किसी Company के Business, Growth, Profit, Cash Flow, Debt, Valuation और Governance red flags को जल्दी समझना सिखाना—बिना इसे final investment decision मानने के।",
-  "format": "PROCESS",
+  "topic": "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide",
+  "teaching_objective": "Beginners को तीन investing books का practical learning path समझाना: पहले money mindset और behaviour, फिर business और stock research, और अंत में value investing व risk discipline।",
+  "format": "BEGINNER_CONCEPT",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "5 मिनट की Screening, Final फैसला नहीं",
-      "core_explanation": "• 5 मिनट में सिर्फ initial filter करें\n• Final decision के लिए Annual Report और latest filings पढ़ें",
+      "headline": "Investing सीखने की शुरुआत कहाँ से करें?",
+      "core_explanation": [
+        "सिर्फ stock tips से नहीं, सही सोच और process से शुरुआत करें।",
+        "तीन किताबें investing journey को step-by-step समझने में मदद कर सकती हैं।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक beginner investor desk पर बैठा है और एक बड़ी company को पाँच मिनट की magnifying glass से देख रहा है। सामने company का miniature building है, जिसके पीछे research files, annual reports और market charts का बड़ा landscape दिखाई देता है। Magnifying glass केवल शुरुआती हिस्सा रोशन करती है, पूरी तस्वीर नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration with warm cream paper background, deep navy, coral, teal and mustard accents, friendly beginner investor at a desk using a magnifying glass over a miniature company building, surrounding stacks of financial documents and a distant research landscape, clear visual storytelling, hand-drawn ink outlines, subtle paper texture, cinematic composition, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
+        "visual_concept": "एक भारतीय beginner investor अपने कमरे में मेज पर रखी तीन अलग-अलग blank books को देख रहा है। सामने एक शांत road-map जैसा दृश्य है जिसमें शुरुआत, research और discipline की ओर जाती हुई तीन glowing paths हैं। पास में rupee coins, calculator, notebook और छोटा पौधा दिखे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich editorial illustration of a young Indian beginner investor at a desk, studying three blank hardcover books with distinct colors, a subtle glowing three-stage path leading from mindset to research to disciplined investing, rupee coins, calculator, notebook, small growing plant, warm natural light, expressive character, layered paper collage, clean educational composition, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow points from the magnifying glass toward the words area: पहले screen, फिर research",
-      "cta": "चलो 5-step checklist शुरू करें"
+      "annotation": "पहले foundation, फिर action",
+      "cta": "अपनी learning journey शुरू करें"
     },
     {
       "slide_number": 2,
-      "purpose": "business_model",
-      "headline": "Step 1: Business समझ आता है?",
-      "core_explanation": "• Company क्या बेचती है?\n• Customer कौन है और पैसा कैसे आता है?",
+      "purpose": "concept",
+      "headline": "1. The Psychology of Money: पहले अपना mindset समझें",
+      "core_explanation": [
+        "Money decisions केवल maths से नहीं, emotions और behaviour से भी प्रभावित होते हैं।",
+        "Risk, patience और personal financial habits को समझना जरूरी है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक साफ-सुथरा business ecosystem: company का central workshop, products या services customers तक जा रहे हैं, और coins वापस company की ओर flow कर रहे हैं। Beginner investor puzzle pieces जोड़कर business model समझ रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Illustrated business ecosystem showing a central company workshop connected by visible arrows to diverse customers, products and services moving outward, coins and value flowing back inward, a curious beginner investor assembling puzzle pieces nearby, warm cream paper, navy outlines, coral, teal and mustard palette, rich characters and objects, no readable writing, no symbols resembling letters, no logos, NO TEXT, NO LABELS."
+        "visual_concept": "एक भारतीय investor के दो रूप दिखें—एक घबराकर market screen देख रहा है, दूसरा शांत होकर long-term plant को पानी दे रहा है। दोनों के बीच एक बड़ा brain और heart balance metaphor हो। Background में बदलते market waves हों, लेकिन शांत character steady रहे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene illustration of an Indian investor facing market volatility: on one side an anxious character reacting to dramatic rising and falling abstract market waves, on the other side a calm character patiently watering a growing plant beside a simple home budget, a balanced brain-and-heart metaphor floating between them, warm colors, expressive faces, educational visual storytelling, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow follows the loop: Product or Service → Customer → Revenue",
+      "annotation": "Emotion को observe करें, follow नहीं",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "growth_and_profit",
-      "headline": "Step 2: Revenue और Profit बढ़ रहे हैं?",
-      "core_explanation": "• कई वर्षों का trend देखें\n• Sales बढ़ें, लेकिन sustainable profit भी दिखे",
+      "purpose": "process",
+      "headline": "2. One Up on Wall Street: Business को समझना सीखें",
+      "core_explanation": [
+        "Stock खरीदने से पहले company के business को समझें।",
+        "Product, competition, financial performance और future potential पर research करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक healthy company tree जिसकी जड़ें मजबूत हैं और शाखाएँ धीरे-धीरे ऊपर बढ़ रही हैं। दो baskets में revenue और profit के coins लगातार भर रहे हैं। पास में एक अस्थायी balloon profit हवा में ऊपर जाता दिखता है, लेकिन उसकी string कमजोर है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich metaphorical illustration of a healthy company tree with deep roots, steadily rising branches, fruit baskets representing revenue and profit filled over several seasons, a separate fragile balloon rising temporarily with a loose string, beginner investor comparing sustainable growth with a one-time spike, textured paper, hand-drawn editorial style, navy, teal, coral and mustard colors, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
+        "visual_concept": "एक beginner investor भारतीय company ecosystem का miniature model देख रहा है: factory, दुकान, customers, delivery truck और finance papers। वह magnifying glass से business की ताकत और कमजोरियां समझ रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed illustrated scene of a young Indian investor researching a company through a miniature business ecosystem: factory, retail store, customers, delivery vehicle, warehouse, cash flow pipes, balance scale, financial papers with abstract charts but no readable marks, magnifying glass, thoughtful expression, rich layered educational collage, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Circle the strong roots: growth की quality भी देखें",
-      "cta": null
+      "annotation": "Stock नहीं, business को study करें",
+      "cta": "एक company चुनें और research questions लिखें"
     },
     {
       "slide_number": 4,
-      "purpose": "cash_flow",
-      "headline": "Step 3: Profit सच में Cash बन रहा है?",
-      "core_explanation": "• Profit statement में दिख सकता है\n• CFO बताता है कि business cash generate कर रहा है या नहीं",
+      "purpose": "risk",
+      "headline": "3. The Intelligent Investor: Price और value में फर्क समझें",
+      "core_explanation": [
+        "अच्छी company और सही price हमेशा एक ही बात नहीं होती।",
+        "Risk को समझकर margin of safety और disciplined decisions पर ध्यान दें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक company factory से दो अलग रास्ते निकलते हैं: एक कागज़ी profit के चमकदार coins की ओर, दूसरा वास्तविक cash नदी की ओर। मजबूत company में cash नदी business treasury तक पहुँचती है; कमजोर रास्ते में coins कागज़ों पर अटक जाते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Educational financial metaphor with a company factory and two pathways: one path carries shiny paper-like coins that stop at documents, the other carries a clear flowing river of real coins into a secure company treasury, beginner investor observing the difference with a thoughtful expression, rich objects, hand-drawn ink, cream paper, navy, teal, coral and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
+        "visual_concept": "एक पुराने भारतीय बाजार में दो दुकानदार दिखें: एक चमकदार लेकिन महंगी वस्तु बेच रहा है, दूसरा साधारण पर मजबूत वस्तु उचित कीमत पर। Investor एक balance scale से quality और price को तौल रहा है। पीछे सुरक्षा के लिए मजबूत पत्थर की दीवार का metaphor हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Storybook illustration in an Indian marketplace showing an investor comparing two objects on a balance scale: one flashy and overpriced, the other durable and reasonably valued, a strong protective stone wall symbolizing margin of safety, calm analytical mood, textured paper, rich colors, clear visual metaphor, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Arrow highlights the river reaching the treasury: cash conversion check करें",
+      "annotation": "Value देखें, केवल excitement नहीं",
       "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "debt_and_risk",
-      "headline": "Step 4: Debt manageable है?",
-      "core_explanation": "• Debt-to-Equity और Interest Coverage देखें\n• High ROE कभी-कभी ज्यादा debt से भी दिख सकता है",
+      "purpose": "timeline",
+      "headline": "Beginner reading order: आसान से गहरा",
+      "core_explanation": [
+        "पहले: The Psychology of Money — mindset और behaviour।",
+        "फिर: One Up on Wall Street — business और stock research।",
+        "अंत में: The Intelligent Investor — value investing और discipline।"
+      ],
       "visual_spec": {
-        "visual_concept": "दो companies का visual comparison: पहली छोटी backpack के साथ स्थिर पहाड़ी चढ़ रही है; दूसरी बहुत भारी debt backpacks और गिरते boulders के नीचे दब रही है। एक scale पर ROE का चमकदार ऊँचा परिणाम दिखाई देता है, पर पीछे debt का वजन स्पष्ट है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Split-scene comparison of two companies climbing a mountain: one carries a light manageable backpack and walks steadily, the other is overloaded with heavy debt bags and falling financial boulders, a balanced scale showing a deceptively impressive result caused by excess weight, beginner investor examining the scene, expressive characters, textured cream paper, navy outlines, teal, coral and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
+        "visual_concept": "एक staircase या mountain trail जिसमें तीन पड़ाव हों। पहला पड़ाव शांत mind और heart के symbols से, दूसरा magnifying glass और business model से, तीसरा balance scale और protective shield से represented हो। किताबों के covers blank हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich vertical staircase journey for a beginner Indian investor with three distinct stages represented only through visuals: calm mind and heart at the first step, magnifying glass examining a business at the second, balance scale and protective shield at the third, three blank books placed along the path, sunrise, inviting character walking upward, layered infographic storytelling, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Warning arrow points to the heavy backpack: High ROE को अकेले मत मानें",
-      "cta": null
+      "annotation": "Mindset → Research → Discipline",
+      "cta": "इस order को अपनी reading plan बनाएं"
     },
     {
       "slide_number": 6,
-      "purpose": "valuation_and_governance",
-      "headline": "Step 5: Price और Governance check करें",
-      "core_explanation": "• अच्छी Company भी बहुत महँगी हो सकती है\n• Promoter history और red flags जरूर देखें",
+      "purpose": "safety",
+      "headline": "Books foundation देती हैं, guarantee नहीं",
+      "core_explanation": [
+        "Book पढ़ना profit या सही stock selection की guarantee नहीं है।",
+        "Emergency fund, goals, time horizon और risk tolerance पहले समझें।",
+        "Individual stock से पहले business, debt, cash flow, valuation और risks की जांच करें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक मजबूत महल के बाहर दो gates हैं: valuation gate पर price tag जैसा blank oversized tag और balance scale, governance gate पर transparent glass doorway। बाहर एक चमकदार mask गिर रहा है और पीछे warning shadows दिखाई दे रही हैं। Investor torch से hidden corners देख रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Rich editorial illustration of a strong company castle with two gates, one gate represented by an oversized blank price tag and a balance scale, the other by a transparent glass governance doorway revealing both clean foundations and subtle warning shadows, a beginner investor using a flashlight to inspect hidden corners, sophisticated educational metaphor, cream paper texture, navy, coral, teal and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
+        "visual_concept": "एक thoughtful Indian investor investment bridge पार करने से पहले safety checklist-style objects देख रहा है: emergency savings jar, compass, clock, helmet, magnifying glass और diversified basket। सामने एक SEBI-registered adviser जैसा professional guidance दे रहा है, बिना किसी readable signage के।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An Indian beginner investor standing before a financial bridge, carefully checking symbolic safeguards: emergency savings jar, compass for goals, clock for time horizon, protective helmet for risk tolerance, magnifying glass for research, and a diversified basket, with a professional financial adviser offering guidance nearby, reassuring educational tone, no letters, no numbers, no logos, no labels."
       },
-      "annotation": "Torch points behind the polished surface: चमक के पीछे भी देखें",
-      "cta": null
-    },
-    {
-      "slide_number": 7,
-      "purpose": "summary",
-      "headline": "5 मिनट का Quick Checklist",
-      "core_explanation": "• Business → Growth → Cash Flow\n• Debt → Valuation → Governance\n• सब ठीक लगे तो ही deeper research करें",
-      "visual_spec": {
-        "visual_concept": "एक छह-step winding path पर beginner investor छह illustrated checkpoints पार करता है: business storefront, rising tree, cash river, manageable backpack, balanced scale और transparent shield. अंत में एक research library है, जहाँ वह आगे पढ़ने जा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. Wide illustrated journey showing a beginner investor walking along a winding path through six visual checkpoints: a clear business storefront, growing tree, flowing cash river, manageable debt backpack, balanced valuation scale, transparent governance shield, ending at a welcoming research library, cohesive storytelling, hand-drawn ink outlines, warm cream paper, navy, teal, coral and mustard palette, no readable writing, no numbers, no letters, no logos, NO TEXT, NO LABELS."
-      },
-      "annotation": "Final arrow points toward the library: Checklist के बाद deep research",
-      "cta": "Save करें और अगली Company पर apply करें"
+      "annotation": "Learn first, invest thoughtfully",
+      "cta": "आज एक book चुनें और अपनी checklist बनाएं"
     }
   ],
-  "caption": "किसी Company को समझने के लिए 5 मिनट की यह checklist आपकी initial screening में मदद कर सकती है। Business model, Revenue-Profit trend, Cash Flow, Debt, Valuation और Governance—इन सभी को साथ में देखें। याद रखें: 5 मिनट में final investment decision नहीं लिया जा सकता। Annual Report, latest filings, industry outlook, competitors और promoter history की deeper research जरूर करें।\n\nHigh ROE या high profit को अकेले देखकर प्रभावित न हों—Debt, CFO और sustainability भी check करें।\n\n#TrustPointFin #StockMarketForBeginners #FundamentalAnalysis #InvestingBasics #PersonalFinanceIndia #StockResearch #FinancialLiteracy #HindiFinance #LongTermInvesting #BeginnerInvesting"
+  "caption": "Investing में शुरुआत stock tips से नहीं, सही सोच से होती है। 📚\n\nBeginners के लिए practical reading order:\n1️⃣ The Psychology of Money — money mindset और behaviour\n2️⃣ One Up on Wall Street — business और stock research\n3️⃣ The Intelligent Investor — value investing और discipline\n\nयाद रखें: किताबें foundation देती हैं, profit की guarantee नहीं। अपने emergency fund, goals, time horizon और risk tolerance को समझकर ही investment decisions लें।\n\n#TrustPointFin #InvestingForBeginners #IndianInvestors #PersonalFinance #StockMarketIndia #ValueInvesting #FinancialLiteracy #MoneyMindset #LongTermInvesting #HinglishFinance"
 }

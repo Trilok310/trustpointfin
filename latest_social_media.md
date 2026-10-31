@@ -1,15 +1,20 @@
 # Social Media Posts
-*Generated for article: "5 मिनट में Fundamentally Strong Company को कैसे पहचानें? Beginner के लिए आसान Checklist"*
+*Generated for article: "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide"*
 
 ---
 
 ## 📝 Caption
 
-किसी Company को समझने के लिए 5 मिनट की यह checklist आपकी initial screening में मदद कर सकती है। Business model, Revenue-Profit trend, Cash Flow, Debt, Valuation और Governance—इन सभी को साथ में देखें। याद रखें: 5 मिनट में final investment decision नहीं लिया जा सकता। Annual Report, latest filings, industry outlook, competitors और promoter history की deeper research जरूर करें।
+Investing में शुरुआत stock tips से नहीं, सही सोच से होती है। 📚
 
-High ROE या high profit को अकेले देखकर प्रभावित न हों—Debt, CFO और sustainability भी check करें।
+Beginners के लिए practical reading order:
+1️⃣ The Psychology of Money — money mindset और behaviour
+2️⃣ One Up on Wall Street — business और stock research
+3️⃣ The Intelligent Investor — value investing और discipline
 
-#TrustPointFin #StockMarketForBeginners #FundamentalAnalysis #InvestingBasics #PersonalFinanceIndia #StockResearch #FinancialLiteracy #HindiFinance #LongTermInvesting #BeginnerInvesting
+याद रखें: किताबें foundation देती हैं, profit की guarantee नहीं। अपने emergency fund, goals, time horizon और risk tolerance को समझकर ही investment decisions लें।
+
+#TrustPointFin #InvestingForBeginners #IndianInvestors #PersonalFinance #StockMarketIndia #ValueInvesting #FinancialLiteracy #MoneyMindset #LongTermInvesting #HinglishFinance
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/how-to-spot-a-fundamentally-strong-company-in-5-minutes.html*
+*Article URL: https://trilok310.github.io/trustpointfin/3-books-every-indian-investor-must-read.html*
