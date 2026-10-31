@@ -11,6 +11,9 @@ const IG_ACCOUNT_ID = process.env.IG_ACCOUNT_ID;
 const FB_PAGE_ID = process.env.FB_PAGE_ID;
 const API_VERSION = 'v20.0';
 
+const FB_REFERRAL_LINK = "https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=faceBook&utm_medium=FB&utm_campaign=Nov";
+const IG_REFERRAL_LINK = "https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=IG&utm_campaign=Nov";
+
 async function fetchJSON(url, options = {}) {
     const res = await fetch(url, options);
     const data = await res.json();
@@ -118,14 +121,29 @@ async function main() {
 
     const socialMdContent = fs.readFileSync(SOCIAL_MD, 'utf-8');
     const captionMatch = socialMdContent.match(/## 📝 Caption\n\n([\s\S]*?)\n\n---/);
-    const captionText = captionMatch ? captionMatch[1].trim() : "New Insights from TrustPointFin!";
+    const baseCaption = captionMatch ? captionMatch[1].trim() : "New Insights from TrustPointFin!";
+
+    // Dedicated channel-specific captions with proper UTM campaign tracking
+    let igCaption = baseCaption;
+    if (!igCaption.includes("aonelink.in")) {
+        igCaption += `\n\n🔗 Open Free Demat Account (Link in Bio): ${IG_REFERRAL_LINK}`;
+    } else {
+        igCaption = igCaption.replace(/https:\/\/a\.aonelink\.in\/[^\s\)]+/, IG_REFERRAL_LINK);
+    }
+
+    let fbCaption = baseCaption;
+    if (!fbCaption.includes("aonelink.in")) {
+        fbCaption += `\n\n👉 Open Free Demat Account with Angel One: ${FB_REFERRAL_LINK}`;
+    } else {
+        fbCaption = fbCaption.replace(/https:\/\/a\.aonelink\.in\/[^\s\)]+/, FB_REFERRAL_LINK);
+    }
 
     let igStatus = "PENDING";
     let fbStatus = "PENDING";
     let failureReason = "";
 
     try {
-        await publishInstagram(slideFiles, captionText);
+        await publishInstagram(slideFiles, igCaption);
         igStatus = "SUCCESS";
     } catch (err) {
         console.error("❌ Instagram Publishing Failed:", err.message);
@@ -134,7 +152,7 @@ async function main() {
     }
 
     try {
-        await publishFacebook(slideFiles, captionText);
+        await publishFacebook(slideFiles, fbCaption);
         fbStatus = "SUCCESS";
     } catch (err) {
         console.error("❌ Facebook Publishing Failed:", err.message);
