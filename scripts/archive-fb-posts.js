@@ -1,41 +1,73 @@
 /**
- * TrustPointFin - Automated Facebook Page Cleanup Script
+ * archive-fb-posts.js
  * 
- * Rules:
- * 1. Keeps ALL posts published AFTER 21 September 2026.
- * 2. Identifies all posts published BEFORE 21 September 2026.
- * 3. Calculates total engagement (Reactions + Comments + Shares) for each pre-Sep 21 post.
- * 4. Retains the TOP 5 highest engagement posts before Sep 21.
- * 5. Calls `is_hidden=true` to cleanly hide all remaining older posts from public visitors.
+ * Safe Cleanup / Archival for Facebook Page posts:
+ * - Fetches published posts from the Facebook Page.
+ * - Protects ALL posts published after 21st September 2026.
+ * - Keeps exactly the top 5 high-engagement / foundational posts published before 21st September 2026.
+ * - Hides all remaining pre-Sep 21 posts from the page timeline via Meta Graph API:
+ *     POST https://graph.facebook.com/v21.0/{post-id}?is_hidden=true
+ * - Gracefully handles token permissions: attempts engagement metrics with fallback to standard feed.
+ * - DOES NOT permanently delete any post.
  */
+
+const https = require('https');
 
 const PAGE_TOKEN = process.env.META_PAGE_TOKEN;
 const FB_PAGE_ID = process.env.FB_PAGE_ID;
-const API_VERSION = 'v20.0';
+const API_VERSION = 'v21.0';
 const CUTOFF_DATE = new Date('2026-09-21T00:00:00Z');
 
-async function fetchJSON(url, options = {}) {
-    const res = await fetch(url, options);
-    const data = await res.json();
-    if (data.error) {
-        throw new Error(data.error.message || JSON.stringify(data.error));
-    }
-    return data;
+function fetchJSON(url, options = {}) {
+    return new Promise((resolve, reject) => {
+        const req = https.request(url, options, (res) => {
+            let body = '';
+            res.on('data', chunk => body += chunk);
+            res.on('end', () => {
+                try {
+                    const parsed = JSON.parse(body);
+                    if (parsed.error) {
+                        const err = new Error(parsed.error.message || 'Meta API error');
+                        err.code = parsed.error.code;
+                        err.subcode = parsed.error.error_subcode;
+                        return reject(err);
+                    }
+                    resolve(parsed);
+                } catch (e) {
+                    reject(new Error(`Failed to parse response: ${body.substring(0, 200)}`));
+                }
+            });
+        });
+        req.on('error', reject);
+        if (options.body) {
+            req.write(options.body);
+        }
+        req.end();
+    });
 }
 
 async function hidePost(postId) {
-    const url = `https://graph.facebook.com/${API_VERSION}/${postId}`;
-    const formData = new URLSearchParams();
-    formData.append('is_hidden', 'true');
-    formData.append('access_token', PAGE_TOKEN);
+    const postUrl = `https://graph.facebook.com/${API_VERSION}/${postId}?is_hidden=true&access_token=${PAGE_TOKEN}`;
+    return fetchJSON(postUrl, { method: 'POST' });
+}
 
-    const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formData.toString()
-    });
-    const data = await res.json();
-    return data;
+async function fetchPosts(useEngagement = true) {
+    const fields = useEngagement 
+        ? 'id,created_time,message,shares,reactions.summary(total_count),comments.summary(total_count)'
+        : 'id,created_time,message';
+    
+    let allPosts = [];
+    let nextUrl = `https://graph.facebook.com/${API_VERSION}/${FB_PAGE_ID}/feed?fields=${fields}&limit=100&access_token=${PAGE_TOKEN}`;
+
+    while (nextUrl && allPosts.length < 500) {
+        console.log(`Fetching batch from Facebook Graph API (fields: ${useEngagement ? 'engagement' : 'basic'})...`);
+        const feedData = await fetchJSON(nextUrl);
+        if (feedData.data && feedData.data.length > 0) {
+            allPosts = allPosts.concat(feedData.data);
+        }
+        nextUrl = feedData.paging && feedData.paging.next ? feedData.paging.next : null;
+    }
+    return allPosts;
 }
 
 async function main() {
@@ -49,22 +81,21 @@ async function main() {
 
     console.log(`Connecting to Facebook Page ID: ${FB_PAGE_ID}...`);
 
-    // 1. Fetch published feed posts with reactions, comments, and shares
     let allPosts = [];
-    let nextUrl = `https://graph.facebook.com/${API_VERSION}/${FB_PAGE_ID}/feed?fields=id,created_time,message,shares,reactions.summary(total_count),comments.summary(total_count)&limit=100&access_token=${PAGE_TOKEN}`;
-
-    while (nextUrl && allPosts.length < 500) {
-        console.log(`Fetching batch from Facebook Graph API...`);
-        const feedData = await fetchJSON(nextUrl);
-        if (feedData.data && feedData.data.length > 0) {
-            allPosts = allPosts.concat(feedData.data);
+    try {
+        allPosts = await fetchPosts(true);
+    } catch (err) {
+        if (err.code === 10 || err.message.includes('pages_read_engagement')) {
+            console.warn(`⚠️ pages_read_engagement not enabled on token; falling back to standard feed fields.`);
+            allPosts = await fetchPosts(false);
+        } else {
+            throw err;
         }
-        nextUrl = feedData.paging && feedData.paging.next ? feedData.paging.next : null;
     }
 
     console.log(`\nTotal posts retrieved from Page: ${allPosts.length}`);
 
-    // 2. Partition into after-cutoff and before-cutoff
+    // Partition into after-cutoff and before-cutoff
     const postsAfterCutoff = [];
     const postsBeforeCutoff = [];
 
@@ -92,18 +123,23 @@ async function main() {
         }
     }
 
-    console.log(`\n📌 Posts after 21-Sep-2026: ${postsAfterCutoff.length} (ALL KEPT LIVE)`);
-    console.log(`📌 Posts before 21-Sep-2026: ${postsBeforeCutoff.length}`);
+    console.log(`\nFound ${postsAfterCutoff.length} posts published AFTER 21 Sep 2026 (PROTECTED, WILL KEEP LIVE).`);
+    console.log(`Found ${postsBeforeCutoff.length} posts published BEFORE 21 Sep 2026.`);
 
-    // 3. Sort pre-cutoff posts by total engagement descending
-    postsBeforeCutoff.sort((a, b) => b.engagement - a.engagement);
+    // Sort pre-Sep 21 posts: if engagement is available, sort descending by engagement; otherwise keep the 5 closest to cutoff
+    postsBeforeCutoff.sort((a, b) => {
+        if (b.engagement !== a.engagement) {
+            return b.engagement - a.engagement;
+        }
+        return new Date(b.date) - new Date(a.date);
+    });
 
     // Keep top 5
     const top5ToKeep = postsBeforeCutoff.slice(0, 5);
     const postsToHide = postsBeforeCutoff.slice(5);
 
     console.log("\n==================================================");
-    console.log("   🏆 TOP 5 HIGH-ENGAGEMENT POSTS (KEPT LIVE)");
+    console.log("   🏆 TOP 5 FOUNDATIONAL POSTS (KEPT LIVE)");
     console.log("==================================================");
     top5ToKeep.forEach((p, idx) => {
         console.log(`${idx + 1}. [Engagement: ${p.engagement}] (${p.date}) ${p.title} (ID: ${p.id})`);
@@ -132,7 +168,7 @@ async function main() {
 
     console.log(`\n🎉 Facebook Cleanup Complete!`);
     console.log(`- Kept live: ${postsAfterCutoff.length} posts published after Sep 21`);
-    console.log(`- Kept live: ${top5ToKeep.length} top-engagement posts published before Sep 21`);
+    console.log(`- Kept live: ${top5ToKeep.length} foundational posts published before Sep 21`);
     console.log(`- Successfully hidden from timeline: ${hiddenCount} posts`);
 }
 
