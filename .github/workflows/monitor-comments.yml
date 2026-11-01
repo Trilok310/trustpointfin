@@ -1,9 +1,10 @@
 name: Auto-Reply to Campaign Comments
 
+# on:
+#   schedule:
+#     - cron: '*/30 * * * *' # Standby fallback (Meta Business Suite handles real-time)
 on:
-  schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
-  workflow_dispatch: # Allows manual trigger anytime
+  workflow_dispatch: # Allows manual trigger anytime as a backup
 
 permissions:
   contents: write
