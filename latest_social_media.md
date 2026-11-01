@@ -1,20 +1,17 @@
 # Social Media Posts
-*Generated for article: "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide"*
+*Generated for article: "Mutual Funds vs. Direct Stocks: Beginners के लिए Ultimate Comparison"*
 
 ---
 
 ## 📝 Caption
 
-Investing में शुरुआत stock tips से नहीं, सही सोच से होती है। 📚
+Mutual Funds या Direct Stocks — beginners के लिए कौन सा रास्ता बेहतर है? 📊
 
-Beginners के लिए practical reading order:
-1️⃣ The Psychology of Money — money mindset और behaviour
-2️⃣ One Up on Wall Street — business और stock research
-3️⃣ The Intelligent Investor — value investing और discipline
+Mutual Funds diversification और professional management दे सकते हैं, जबकि Direct Stocks में ज्यादा control और research responsibility होती है। फैसला लेने से पहले अपना time, risk comfort, knowledge और total cost जरूर समझें।
 
-याद रखें: किताबें foundation देती हैं, profit की guarantee नहीं। अपने emergency fund, goals, time horizon और risk tolerance को समझकर ही investment decisions लें।
+यह educational content है, investment advice नहीं।
 
-#TrustPointFin #InvestingForBeginners #IndianInvestors #PersonalFinance #StockMarketIndia #ValueInvesting #FinancialLiteracy #MoneyMindset #LongTermInvesting #HinglishFinance
+#TrustPointFin #MutualFunds #DirectStocks #StockMarketForBeginners #PersonalFinance #InvestingBasics #FinancialLiteracy #HindiFinance #IndianInvestors
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/3-books-every-indian-investor-must-read.html*
+*Article URL: https://trilok310.github.io/trustpointfin/mutual-funds-vs-direct-stocks-the-ultimate-comparison.html*

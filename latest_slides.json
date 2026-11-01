@@ -1,100 +1,80 @@
 {
-  "topic": "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide",
-  "teaching_objective": "Beginners को तीन investing books का practical learning path समझाना: पहले money mindset और behaviour, फिर business और stock research, और अंत में value investing व risk discipline।",
-  "format": "BEGINNER_CONCEPT",
+  "topic": "Mutual Funds vs. Direct Stocks: Beginners के लिए Ultimate Comparison",
+  "teaching_objective": "Beginners को Mutual Funds और Direct Stocks के बीच ownership, diversification, risk, effort, cost और suitability का आसान comparison समझाना।",
+  "format": "COMPARISON",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Investing सीखने की शुरुआत कहाँ से करें?",
-      "core_explanation": [
-        "सिर्फ stock tips से नहीं, सही सोच और process से शुरुआत करें।",
-        "तीन किताबें investing journey को step-by-step समझने में मदद कर सकती हैं।"
-      ],
+      "headline": "एक ही मंज़िल, दो रास्ते",
+      "core_explanation": "Mutual Funds में आपका पैसा कई assets के basket में जाता है। Direct Stocks में आप individual companies के shares खुद चुनते हैं।",
       "visual_spec": {
-        "visual_concept": "एक भारतीय beginner investor अपने कमरे में मेज पर रखी तीन अलग-अलग blank books को देख रहा है। सामने एक शांत road-map जैसा दृश्य है जिसमें शुरुआत, research और discipline की ओर जाती हुई तीन glowing paths हैं। पास में rupee coins, calculator, notebook और छोटा पौधा दिखे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich editorial illustration of a young Indian beginner investor at a desk, studying three blank hardcover books with distinct colors, a subtle glowing three-stage path leading from mindset to research to disciplined investing, rupee coins, calculator, notebook, small growing plant, warm natural light, expressive character, layered paper collage, clean educational composition, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक beginner investor दो रास्तों के बीच खड़ा है। बायाँ रास्ता एक professionally guided diversified garden की ओर जाता है, जबकि दायाँ रास्ता individual company buildings और अलग-अलग shares की ओर जाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration, Indian beginner investor standing at a forked path, one path leading to a carefully managed garden containing many different healthy plants and baskets, the other path leading to several distinct company buildings represented by abstract towers and share tokens, friendly educational mood, rich visual storytelling, soft cream paper background, navy blue, teal, coral and mustard palette, clean hand-drawn shapes, subtle shadows, no letters, no words, no labels, no numbers."
       },
-      "annotation": "पहले foundation, फिर action",
-      "cta": "अपनी learning journey शुरू करें"
+      "annotation": "सोचें: आपको guidance चाहिए या control?",
+      "cta": "पहले फर्क समझें, फिर विकल्प चुनें।"
     },
     {
       "slide_number": 2,
-      "purpose": "concept",
-      "headline": "1. The Psychology of Money: पहले अपना mindset समझें",
-      "core_explanation": [
-        "Money decisions केवल maths से नहीं, emotions और behaviour से भी प्रभावित होते हैं।",
-        "Risk, patience और personal financial habits को समझना जरूरी है।"
-      ],
+      "purpose": "comparison",
+      "headline": "Ownership कैसे काम करती है?",
+      "core_explanation": "Mutual Fund में कई investors का पैसा pool होता है। Fund manager उस pool को अलग-अलग securities में invest करता है। Direct Stocks में decision-making सीधे आपके हाथ में रहती है।",
       "visual_spec": {
-        "visual_concept": "एक भारतीय investor के दो रूप दिखें—एक घबराकर market screen देख रहा है, दूसरा शांत होकर long-term plant को पानी दे रहा है। दोनों के बीच एक बड़ा brain और heart balance metaphor हो। Background में बदलते market waves हों, लेकिन शांत character steady रहे।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene illustration of an Indian investor facing market volatility: on one side an anxious character reacting to dramatic rising and falling abstract market waves, on the other side a calm character patiently watering a growing plant beside a simple home budget, a balanced brain-and-heart metaphor floating between them, warm colors, expressive faces, educational visual storytelling, no letters, no numbers, no logos, no labels."
+        "visual_concept": "कई छोटे investors coins एक shared transparent reservoir में डाल रहे हैं, जहाँ एक experienced gardener अलग-अलग पौधों में पानी बाँट रहा है। दूसरी ओर एक investor खुद अलग-अलग company saplings चुनकर लगा रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene illustration showing multiple Indian investors contributing coins into one transparent shared reservoir while a calm professional gardener distributes water among many different plants, contrasted with one investor personally selecting and planting individual saplings, clear visual contrast between pooled management and self-directed choice, expressive characters, textured paper, elegant infographic composition, no letters, no words, no labels, no numbers."
       },
-      "annotation": "Emotion को observe करें, follow नहीं",
+      "annotation": "Pool = shared investment; choice = personal responsibility.",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "process",
-      "headline": "2. One Up on Wall Street: Business को समझना सीखें",
-      "core_explanation": [
-        "Stock खरीदने से पहले company के business को समझें।",
-        "Product, competition, financial performance और future potential पर research करें।"
-      ],
+      "purpose": "risk",
+      "headline": "Diversification बनाम concentration",
+      "core_explanation": "Mutual Funds में कई holdings होने से एक company का खराब प्रदर्शन पूरे portfolio पर कम असर डाल सकता है। Direct Stocks में कम companies चुनने पर risk अधिक concentrated हो सकता है।",
       "visual_spec": {
-        "visual_concept": "एक beginner investor भारतीय company ecosystem का miniature model देख रहा है: factory, दुकान, customers, delivery truck और finance papers। वह magnifying glass से business की ताकत और कमजोरियां समझ रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed illustrated scene of a young Indian investor researching a company through a miniature business ecosystem: factory, retail store, customers, delivery vehicle, warehouse, cash flow pipes, balance scale, financial papers with abstract charts but no readable marks, magnifying glass, thoughtful expression, rich layered educational collage, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक diversified basket में अलग-अलग रंगों के fruits हैं और एक fruit खराब होने पर बाकी सुरक्षित हैं। दूसरी ओर एक single tall glass में एक ही fruit है, जो गिरने पर पूरा glass खाली हो जाता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational metaphor with two baskets: the first contains many varied colorful fruits, one bruised fruit separated while the rest remain stable; the second contains one fragile fruit in a tall glass that is tipping over, illustrating diversification versus concentration, Indian visual styling, warm paper texture, polished editorial illustration, gentle shadows, no letters, no words, no labels, no numbers."
       },
-      "annotation": "Stock नहीं, business को study करें",
-      "cta": "एक company चुनें और research questions लिखें"
+      "annotation": "एक asset पर निर्भरता कम करना risk को balance कर सकता है।",
+      "cta": "Portfolio में variety पर ध्यान दें।"
     },
     {
       "slide_number": 4,
-      "purpose": "risk",
-      "headline": "3. The Intelligent Investor: Price और value में फर्क समझें",
-      "core_explanation": [
-        "अच्छी company और सही price हमेशा एक ही बात नहीं होती।",
-        "Risk को समझकर margin of safety और disciplined decisions पर ध्यान दें।"
-      ],
+      "purpose": "comparison",
+      "headline": "Time, research और control",
+      "core_explanation": "Mutual Funds में professional management के कारण आपका research burden कम हो सकता है। Direct Stocks में company analysis, market tracking और disciplined decisions की जरूरत अधिक होती है।",
       "visual_spec": {
-        "visual_concept": "एक पुराने भारतीय बाजार में दो दुकानदार दिखें: एक चमकदार लेकिन महंगी वस्तु बेच रहा है, दूसरा साधारण पर मजबूत वस्तु उचित कीमत पर। Investor एक balance scale से quality और price को तौल रहा है। पीछे सुरक्षा के लिए मजबूत पत्थर की दीवार का metaphor हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Storybook illustration in an Indian marketplace showing an investor comparing two objects on a balance scale: one flashy and overpriced, the other durable and reasonably valued, a strong protective stone wall symbolizing margin of safety, calm analytical mood, textured paper, rich colors, clear visual metaphor, no letters, no numbers, no logos, no labels."
+        "visual_concept": "बायाँ दृश्य: investor आराम से बैठा है और fund manager एक dashboard-style garden की देखभाल कर रहा है। दायाँ दृश्य: investor magnifying glass, reports और multiple clocks के साथ खुद companies का अध्ययन कर रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen editorial illustration: on one side a relaxed Indian beginner investor watches a skilled portfolio gardener carefully maintain a diversified investment garden; on the other side an investor actively studies company buildings with a magnifying glass, papers, charts without readable markings, and several clocks, communicating different time and effort requirements, rich characters and objects, no letters, no words, no labels, no numbers."
       },
-      "annotation": "Value देखें, केवल excitement नहीं",
+      "annotation": "Convenience की कीमत और control की जिम्मेदारी दोनों समझें।",
       "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "timeline",
-      "headline": "Beginner reading order: आसान से गहरा",
-      "core_explanation": [
-        "पहले: The Psychology of Money — mindset और behaviour।",
-        "फिर: One Up on Wall Street — business और stock research।",
-        "अंत में: The Intelligent Investor — value investing और discipline।"
-      ],
+      "purpose": "cost",
+      "headline": "Cost को भी comparison में रखें",
+      "core_explanation": "Mutual Funds में management और fund-related expenses हो सकते हैं। Direct Stocks में fund-management fee नहीं होती, लेकिन brokerage, taxes और research time जैसे costs हो सकते हैं।",
       "visual_spec": {
-        "visual_concept": "एक staircase या mountain trail जिसमें तीन पड़ाव हों। पहला पड़ाव शांत mind और heart के symbols से, दूसरा magnifying glass और business model से, तीसरा balance scale और protective shield से represented हो। किताबों के covers blank हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A rich vertical staircase journey for a beginner Indian investor with three distinct stages represented only through visuals: calm mind and heart at the first step, magnifying glass examining a business at the second, balance scale and protective shield at the third, three blank books placed along the path, sunrise, inviting character walking upward, layered infographic storytelling, no letters, no numbers, no logos, no labels."
+        "visual_concept": "दो समान-sized travel bags दिखाएँ। एक bag में छोटे transparent service coins और maintenance tools हैं, दूसरा हल्का है लेकिन investor को खुद map, tools और time tokens उठाने पड़ते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Two balanced travel bags representing investment choices: one contains small transparent service coins, maintenance tools, and a helpful guide figure; the other is lighter but requires the investor to carry a map, research tools, and several time hourglasses, visualizing different types of costs, sophisticated educational illustration, cream paper background, no letters, no words, no labels, no numbers."
       },
-      "annotation": "Mindset → Research → Discipline",
-      "cta": "इस order को अपनी reading plan बनाएं"
+      "annotation": "सिर्फ visible fee नहीं, total effort और expenses भी देखें।",
+      "cta": "Cost समझकर net outcome पर सोचें।"
     },
     {
       "slide_number": 6,
-      "purpose": "safety",
-      "headline": "Books foundation देती हैं, guarantee नहीं",
-      "core_explanation": [
-        "Book पढ़ना profit या सही stock selection की guarantee नहीं है।",
-        "Emergency fund, goals, time horizon और risk tolerance पहले समझें।",
-        "Individual stock से पहले business, debt, cash flow, valuation और risks की जांच करें।"
-      ],
+      "purpose": "decision",
+      "headline": "किसके लिए क्या बेहतर?",
+      "core_explanation": "Beginners और busy investors के लिए diversified Mutual Funds सरल starting point हो सकते हैं। Research, control और active decision-making पसंद करने वालों के लिए Direct Stocks उपयुक्त हो सकते हैं।",
       "visual_spec": {
-        "visual_concept": "एक thoughtful Indian investor investment bridge पार करने से पहले safety checklist-style objects देख रहा है: emergency savings jar, compass, clock, helmet, magnifying glass और diversified basket। सामने एक SEBI-registered adviser जैसा professional guidance दे रहा है, बिना किसी readable signage के।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. An Indian beginner investor standing before a financial bridge, carefully checking symbolic safeguards: emergency savings jar, compass for goals, clock for time horizon, protective helmet for risk tolerance, magnifying glass for research, and a diversified basket, with a professional financial adviser offering guidance nearby, reassuring educational tone, no letters, no numbers, no logos, no labels."
+        "visual_concept": "एक decision garden में दो beginner characters हैं: एक guided diversified path चुनता है, दूसरा अपने चुने हुए company saplings के साथ focused path चुनता है। दोनों paths एक shared long-term sunrise की ओर जाते हैं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Hopeful final scene with two Indian beginner investors choosing different but valid paths through a financial garden: one follows a guided path through a diversified orchard, the other carefully tends selected company saplings with research tools, both paths lead toward the same bright sunrise and long-term horizon, inclusive and reassuring mood, rich storytelling, clean editorial composition, no letters, no words, no labels, no numbers."
       },
-      "annotation": "Learn first, invest thoughtfully",
-      "cta": "आज एक book चुनें और अपनी checklist बनाएं"
+      "annotation": "सही विकल्प आपकी knowledge, time और risk comfort पर निर्भर है।",
+      "cta": "अपनी शुरुआत समझदारी से करें।"
     }
   ],
-  "caption": "Investing में शुरुआत stock tips से नहीं, सही सोच से होती है। 📚\n\nBeginners के लिए practical reading order:\n1️⃣ The Psychology of Money — money mindset और behaviour\n2️⃣ One Up on Wall Street — business और stock research\n3️⃣ The Intelligent Investor — value investing और discipline\n\nयाद रखें: किताबें foundation देती हैं, profit की guarantee नहीं। अपने emergency fund, goals, time horizon और risk tolerance को समझकर ही investment decisions लें।\n\n#TrustPointFin #InvestingForBeginners #IndianInvestors #PersonalFinance #StockMarketIndia #ValueInvesting #FinancialLiteracy #MoneyMindset #LongTermInvesting #HinglishFinance"
+  "caption": "Mutual Funds या Direct Stocks — beginners के लिए कौन सा रास्ता बेहतर है? 📊\n\nMutual Funds diversification और professional management दे सकते हैं, जबकि Direct Stocks में ज्यादा control और research responsibility होती है। फैसला लेने से पहले अपना time, risk comfort, knowledge और total cost जरूर समझें।\n\nयह educational content है, investment advice नहीं।\n\n#TrustPointFin #MutualFunds #DirectStocks #StockMarketForBeginners #PersonalFinance #InvestingBasics #FinancialLiteracy #HindiFinance #IndianInvestors"
 }

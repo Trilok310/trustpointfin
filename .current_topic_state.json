@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-10-31_3-books-every-indian-investor-",
-  "topic": "3 Books Every Indian Investor Must Read",
-  "lineIndex": 165,
+  "job_id": "job_2026-11-01_mutual-funds-vs-direct-stocks-",
+  "topic": "Mutual Funds vs. Direct Stocks: The Ultimate Comparison",
+  "lineIndex": 166,
   "scheduled_at": null,
-  "started_at": "2026-10-31T09:50:58.175Z",
+  "started_at": "2026-11-01T10:40:45.103Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 0,
+  "article_correction_attempts": 1,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "SUCCESS",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-10-31T09:52:18.616Z",
-  "filename": "3-books-every-indian-investor-must-read.html",
-  "title": "3 Books Every Indian Investor Must Read: Beginners के लिए Practical Investing Guide"
+  "updated_at": "2026-11-01T10:43:26.066Z",
+  "filename": "mutual-funds-vs-direct-stocks-the-ultimate-comparison.html",
+  "title": "Mutual Funds vs. Direct Stocks: Beginners के लिए Ultimate Comparison"
 }
