@@ -1,80 +1,80 @@
 {
-  "topic": "Mutual Funds vs. Direct Stocks: Beginners के लिए Ultimate Comparison",
-  "teaching_objective": "Beginners को Mutual Funds और Direct Stocks के बीच ownership, diversification, risk, effort, cost और suitability का आसान comparison समझाना।",
+  "topic": "क्यों “Time in the Market” हमेशा “Timing the Market” से बेहतर होता है?",
+  "teaching_objective": "Learners समझें कि market को बार-बार predict करने के बजाय लंबे समय तक invested रहना compounding, disciplined investing और recovery का लाभ देता है।",
   "format": "COMPARISON",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "एक ही मंज़िल, दो रास्ते",
-      "core_explanation": "Mutual Funds में आपका पैसा कई assets के basket में जाता है। Direct Stocks में आप individual companies के shares खुद चुनते हैं।",
+      "headline": "Market को predict करना आसान नहीं है",
+      "core_explanation": "• सही समय पर entry और exit पहचानना बेहद कठिन है\n• डर और लालच फैसलों को प्रभावित कर सकते हैं\n• इसलिए focus prediction पर नहीं, participation पर होना चाहिए",
       "visual_spec": {
-        "visual_concept": "एक beginner investor दो रास्तों के बीच खड़ा है। बायाँ रास्ता एक professionally guided diversified garden की ओर जाता है, जबकि दायाँ रास्ता individual company buildings और अलग-अलग shares की ओर जाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Warm editorial illustration, Indian beginner investor standing at a forked path, one path leading to a carefully managed garden containing many different healthy plants and baskets, the other path leading to several distinct company buildings represented by abstract towers and share tokens, friendly educational mood, rich visual storytelling, soft cream paper background, navy blue, teal, coral and mustard palette, clean hand-drawn shapes, subtle shadows, no letters, no words, no labels, no numbers."
+        "visual_concept": "एक युवा भारतीय investor दो रास्तों के सामने खड़ा है। एक रास्ता तेजी से बदलते मौसम, घड़ी और अस्थिर पुलों से भरा है; दूसरा रास्ता शांत, लंबा और लगातार आगे बढ़ता हुआ है। पीछे market जैसी उठती-गिरती लहरें दिखाई दें।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with an Indian young adult investor standing at a fork in the road, one path chaotic with storm clouds, swinging clock hands, sharp market-like waves and scattered coins, the other path calm and long with steady sunlight, growing plants and a gentle upward landscape. Warm cream paper background, navy ink outlines, teal and coral accents, subtle hand-drawn textures, thoughtful financial education mood, cinematic composition, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "सोचें: आपको guidance चाहिए या control?",
-      "cta": "पहले फर्क समझें, फिर विकल्प चुनें।"
+      "annotation": "Arrow toward the steady path: “Predict नहीं, participate करें”",
+      "cta": "पहले principle समझिए"
     },
     {
       "slide_number": 2,
       "purpose": "comparison",
-      "headline": "Ownership कैसे काम करती है?",
-      "core_explanation": "Mutual Fund में कई investors का पैसा pool होता है। Fund manager उस pool को अलग-अलग securities में invest करता है। Direct Stocks में decision-making सीधे आपके हाथ में रहती है।",
+      "headline": "Time in the Market बनाम Timing the Market",
+      "core_explanation": "• Time in the Market: लंबे समय तक invested रहना\n• Timing the Market: हर गिरावट और तेजी का अनुमान लगाना\n• अनुमान गलत हुआ तो best days miss हो सकते हैं",
       "visual_spec": {
-        "visual_concept": "कई छोटे investors coins एक shared transparent reservoir में डाल रहे हैं, जहाँ एक experienced gardener अलग-अलग पौधों में पानी बाँट रहा है। दूसरी ओर एक investor खुद अलग-अलग company saplings चुनकर लगा रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-scene illustration showing multiple Indian investors contributing coins into one transparent shared reservoir while a calm professional gardener distributes water among many different plants, contrasted with one investor personally selecting and planting individual saplings, clear visual contrast between pooled management and self-directed choice, expressive characters, textured paper, elegant infographic composition, no letters, no words, no labels, no numbers."
+        "visual_concept": "Split-screen दृश्य। बाईं ओर एक investor शांत होकर पौधे को पानी दे रहा है, जो धीरे-धीरे बड़ा पेड़ बन रहा है। दाईं ओर दूसरा investor बार-बार बदलते दरवाजों और घड़ियों के बीच भाग रहा है, कभी अंदर तो कभी बाहर।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen illustrated comparison: on the left, a calm Indian investor consistently watering a small investment plant that grows into a strong tree with fruit and coins; on the right, an anxious investor rushing between revolving doors, clocks, market waves and open gates, repeatedly entering and exiting. Use visual contrast between calm continuity and frantic prediction. Cream notebook paper, navy linework, teal, coral and mustard accents, expressive characters, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "Pool = shared investment; choice = personal responsibility.",
-      "cta": null
+      "annotation": "Circle the growing tree as the visual metaphor for consistency",
+      "cta": "किस रास्ते पर आपका focus है?"
     },
     {
       "slide_number": 3,
-      "purpose": "risk",
-      "headline": "Diversification बनाम concentration",
-      "core_explanation": "Mutual Funds में कई holdings होने से एक company का खराब प्रदर्शन पूरे portfolio पर कम असर डाल सकता है। Direct Stocks में कम companies चुनने पर risk अधिक concentrated हो सकता है।",
+      "purpose": "calculation",
+      "headline": "Compounding को समय चाहिए",
+      "core_explanation": "• Returns पर मिलने वाले returns भी आगे invest होते हैं\n• शुरुआत में growth धीमी दिख सकती है\n• समय के साथ छोटा निवेश snowball की तरह बढ़ सकता है",
       "visual_spec": {
-        "visual_concept": "एक diversified basket में अलग-अलग रंगों के fruits हैं और एक fruit खराब होने पर बाकी सुरक्षित हैं। दूसरी ओर एक single tall glass में एक ही fruit है, जो गिरने पर पूरा glass खाली हो जाता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational metaphor with two baskets: the first contains many varied colorful fruits, one bruised fruit separated while the rest remain stable; the second contains one fragile fruit in a tall glass that is tipping over, illustrating diversification versus concentration, Indian visual styling, warm paper texture, polished editorial illustration, gentle shadows, no letters, no words, no labels, no numbers."
+        "visual_concept": "एक छोटी snowball पहाड़ी से नीचे लुढ़कते हुए बड़ी होती जाती है। रास्ते में coins, leaves और छोटे अंकुर जुड़ते जाते हैं, लेकिन कोई लिखित संख्या या chart label न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A small golden snowball made of coins rolling down a gentle hill and becoming progressively larger, gathering more coins, leaves, roots and glowing particles along the way. Show the early stage as modest and the later stage as visibly powerful, communicating compounding through scale and momentum. Hand-drawn educational illustration, cream paper texture, navy outlines, emerald teal and warm coral highlights, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "एक asset पर निर्भरता कम करना risk को balance कर सकता है।",
-      "cta": "Portfolio में variety पर ध्यान दें।"
+      "annotation": "Use a curved arrow showing growth building on previous growth",
+      "cta": "Compounding को time दीजिए"
     },
     {
       "slide_number": 4,
-      "purpose": "comparison",
-      "headline": "Time, research और control",
-      "core_explanation": "Mutual Funds में professional management के कारण आपका research burden कम हो सकता है। Direct Stocks में company analysis, market tracking और disciplined decisions की जरूरत अधिक होती है।",
+      "purpose": "risk",
+      "headline": "Market गिरता है, लेकिन recovery भी होती है",
+      "core_explanation": "• Short-term volatility normal है\n• गिरावट में panic selling नुकसान को lock कर सकती है\n• Invested रहने से recovery और future growth में भागीदारी बनी रहती है",
       "visual_spec": {
-        "visual_concept": "बायाँ दृश्य: investor आराम से बैठा है और fund manager एक dashboard-style garden की देखभाल कर रहा है। दायाँ दृश्य: investor magnifying glass, reports और multiple clocks के साथ खुद companies का अध्ययन कर रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen editorial illustration: on one side a relaxed Indian beginner investor watches a skilled portfolio gardener carefully maintain a diversified investment garden; on the other side an investor actively studies company buildings with a magnifying glass, papers, charts without readable markings, and several clocks, communicating different time and effort requirements, rich characters and objects, no letters, no words, no labels, no numbers."
+        "visual_concept": "एक मजबूत पेड़ तूफान में झुकता है लेकिन जड़ों के कारण गिरता नहीं। बादल हटने पर सूरज निकलता है और पेड़ पर नए पत्ते उगते हैं। पास में घबराया investor बेचने के बजाय धैर्य से बैठा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A resilient investment tree with deep visible roots bending during a dramatic storm, falling leaves and wind symbolizing market volatility, while a patient Indian investor protects the roots and waits calmly. In the background, clouds clear, sunlight returns and fresh leaves grow. Rich visual metaphor for recovery and staying invested. NotebookLM-inspired paper collage, navy ink, teal foliage, coral raincoat, warm sunlight, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "Convenience की कीमत और control की जिम्मेदारी दोनों समझें।",
-      "cta": null
+      "annotation": "Arrow from deep roots to new leaves: “Recovery के लिए invested रहना ज़रूरी है”",
+      "cta": "Volatility को समझें, उससे भागें नहीं"
     },
     {
       "slide_number": 5,
-      "purpose": "cost",
-      "headline": "Cost को भी comparison में रखें",
-      "core_explanation": "Mutual Funds में management और fund-related expenses हो सकते हैं। Direct Stocks में fund-management fee नहीं होती, लेकिन brokerage, taxes और research time जैसे costs हो सकते हैं।",
+      "purpose": "process",
+      "headline": "SIP: discipline को आसान बनाइए",
+      "core_explanation": "• हर महीने fixed amount invest करें\n• Market ऊपर हो या नीचे, process जारी रखें\n• अलग-अलग prices पर units खरीदने से consistency बनती है",
       "visual_spec": {
-        "visual_concept": "दो समान-sized travel bags दिखाएँ। एक bag में छोटे transparent service coins और maintenance tools हैं, दूसरा हल्का है लेकिन investor को खुद map, tools और time tokens उठाने पड़ते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Two balanced travel bags representing investment choices: one contains small transparent service coins, maintenance tools, and a helpful guide figure; the other is lighter but requires the investor to carry a map, research tools, and several time hourglasses, visualizing different types of costs, sophisticated educational illustration, cream paper background, no letters, no words, no labels, no numbers."
+        "visual_concept": "एक monthly calendar जैसा visual, जिसमें अलग-अलग दिनों पर एक ही आकार के coins एक growing jar में डाले जा रहे हैं। पृष्ठभूमि में market waves ऊपर-नीचे होती हैं, लेकिन investor का हाथ steady है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A disciplined Indian investor placing equal golden coins into a transparent growing investment jar at regular intervals, with a soft abstract calendar grid in the background but no written dates. Behind the jar, market waves rise and fall, while the investor remains steady and calm. Show different coin entry heights subtly without any numerical markings. Warm cream paper, navy outlines, teal and coral accents, friendly educational illustration, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "सिर्फ visible fee नहीं, total effort और expenses भी देखें।",
-      "cta": "Cost समझकर net outcome पर सोचें।"
+      "annotation": "Small repeated arrows toward the jar show regular investing",
+      "cta": "एक simple investing routine बनाइए"
     },
     {
       "slide_number": 6,
-      "purpose": "decision",
-      "headline": "किसके लिए क्या बेहतर?",
-      "core_explanation": "Beginners और busy investors के लिए diversified Mutual Funds सरल starting point हो सकते हैं। Research, control और active decision-making पसंद करने वालों के लिए Direct Stocks उपयुक्त हो सकते हैं।",
+      "purpose": "action",
+      "headline": "अच्छा investor prediction नहीं, patience चुनता है",
+      "core_explanation": "• Goal और time horizon तय करें\n• Diversified और disciplined approach रखें\n• Short-term noise के बजाय long-term journey पर ध्यान दें",
       "visual_spec": {
-        "visual_concept": "एक decision garden में दो beginner characters हैं: एक guided diversified path चुनता है, दूसरा अपने चुने हुए company saplings के साथ focused path चुनता है। दोनों paths एक shared long-term sunrise की ओर जाते हैं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Hopeful final scene with two Indian beginner investors choosing different but valid paths through a financial garden: one follows a guided path through a diversified orchard, the other carefully tends selected company saplings with research tools, both paths lead toward the same bright sunrise and long-term horizon, inclusive and reassuring mood, rich storytelling, clean editorial composition, no letters, no words, no labels, no numbers."
+        "visual_concept": "एक परिवार लंबी पहाड़ी यात्रा पर आगे बढ़ रहा है। उनके पास compass, पानी और पौधा है। रास्ते में market waves और छोटे उतार-चढ़ाव हैं, लेकिन दूर एक उजला लक्ष्य दिखाई देता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A diverse Indian family walking together on a long scenic mountain path toward a bright sunrise, carrying a compass, a small growing plant and a simple backpack. The path includes gentle ups and downs, abstract market waves and passing clouds, but remains clearly forward-moving. Hopeful long-term financial journey, rich editorial storytelling, cream notebook texture, navy linework, teal mountains, coral clothing accents, no letters, no numbers, no labels, no typography."
       },
-      "annotation": "सही विकल्प आपकी knowledge, time और risk comfort पर निर्भर है।",
-      "cta": "अपनी शुरुआत समझदारी से करें।"
+      "annotation": "Arrow pointing toward the sunrise: “Long-term journey पर focus”",
+      "cta": "आज का छोटा कदम, कल का बड़ा फर्क"
     }
   ],
-  "caption": "Mutual Funds या Direct Stocks — beginners के लिए कौन सा रास्ता बेहतर है? 📊\n\nMutual Funds diversification और professional management दे सकते हैं, जबकि Direct Stocks में ज्यादा control और research responsibility होती है। फैसला लेने से पहले अपना time, risk comfort, knowledge और total cost जरूर समझें।\n\nयह educational content है, investment advice नहीं।\n\n#TrustPointFin #MutualFunds #DirectStocks #StockMarketForBeginners #PersonalFinance #InvestingBasics #FinancialLiteracy #HindiFinance #IndianInvestors"
+  "caption": "Market को perfectly time करना लगभग impossible है। लेकिन लंबे समय तक invested रहना, compounding को time देना और SIP जैसी disciplined strategy अपनाना आपके पक्ष में काम कर सकता है। गिरावट journey का हिस्सा है—panic नहीं, patience ज़रूरी है।\n\nयह educational content है, investment advice नहीं।\n\n#TimeInTheMarket #TimingTheMarket #InvestingBasics #SIP #Compounding #LongTermInvesting #PersonalFinance #FinancialLiteracy #TrustPointFin"
 }
