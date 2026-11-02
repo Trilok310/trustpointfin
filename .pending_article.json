@@ -1,11 +1,11 @@
 {
-  "job_id": "job_2026-11-01_mutual-funds-vs-direct-stocks-",
-  "topic": "Mutual Funds vs. Direct Stocks: The Ultimate Comparison",
-  "lineIndex": 166,
+  "job_id": "job_2026-11-02_why-time-in-the-market-always-",
+  "topic": "Why 'Time in the Market' Always Beats 'Timing the Market'",
+  "lineIndex": 167,
   "scheduled_at": null,
-  "started_at": "2026-11-01T10:40:45.103Z",
+  "started_at": "2026-11-02T11:29:32.567Z",
   "article_generation_status": "SUCCESS",
-  "article_correction_attempts": 1,
+  "article_correction_attempts": 0,
   "article_compliance_status": "SUCCESS",
   "website_status": "SUCCESS",
   "social_generation_status": "PENDING",
@@ -15,7 +15,7 @@
   "facebook_status": "PENDING",
   "final_status": "RUNNING",
   "failure_reason": null,
-  "updated_at": "2026-11-01T10:42:37.535Z",
-  "filename": "mutual-funds-vs-direct-stocks-the-ultimate-comparison.html",
-  "title": "Mutual Funds vs. Direct Stocks: Beginners के लिए Ultimate Comparison"
+  "updated_at": "2026-11-02T11:30:41.821Z",
+  "filename": "why-time-in-the-market-always-beats-timing-the-market.html",
+  "title": "क्यों “Time in the Market” हमेशा “Timing the Market” से बेहतर होता है?"
 }
