@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-03T09:44:46.995Z",
+  "lastUpdated": "2026-11-03T18:33:39.214Z",
   "recentEntries": [
+    {
+      "date": "4 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 23810.85,
+      "topics": [
+        "Nifty 50 Surges 1,088 Points to Cross 23,800 as FPI Buying Surges",
+        "Bank Nifty Consolidates Near 55,540 as Margin Pressures Restrain Momentum",
+        "Reliance Energy Rally Drives Main Benchmark Upward for Fourth Straight Session",
+        "Market Infrastructure Institutions Benefit From Rising Cash Market Velocity",
+        "Brent Crude Softens to $103.39 as USD/INR Holds Stable Near 94.74"
+      ]
+    },
     {
       "date": "3 November 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "70% Nifty Large-Caps Clear 10-Day Moving Average While Small-Caps Lag",
         "Jio’s ₹30,213 Crore Mega IPO to Test Dalal Street Secondary Liquidity",
         "Brent Crude Surges to $107.86 as Rupee Softens to ₹94.81 Per Dollar"
-      ]
-    },
-    {
-      "date": "16 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 23146.15,
-      "topics": [
-        "Nifty 50 Settles at 23,146.15 (+5.65 pts)",
-        "Bank Nifty Under Pressure on Net Interest Margin Trends",
-        "Pharma & FMCG Act as Resilient Capital Safe Havens",
-        "Exchange & Depository Duopolies Gain on Volume Spikes",
-        "Crude and Global Currency Dynamics Direct FII Flow"
       ]
     }
   ]
