@@ -1,80 +1,101 @@
 {
-  "topic": "क्यों “Time in the Market” हमेशा “Timing the Market” से बेहतर होता है?",
-  "teaching_objective": "Learners समझें कि market को बार-बार predict करने के बजाय लंबे समय तक invested रहना compounding, disciplined investing और recovery का लाभ देता है।",
-  "format": "COMPARISON",
+  "topic": "Union Budget का Retail Investors पर Impact: Tax, Stocks और Investments को आसान भाषा में समझें",
+  "teaching_objective": "Retail investors समझें कि Union Budget का असर केवल tax पर नहीं, बल्कि inflation, interest rates, business sectors, stock prices और उनके overall portfolio पर भी पड़ सकता है।",
+  "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Market को predict करना आसान नहीं है",
-      "core_explanation": "• सही समय पर entry और exit पहचानना बेहद कठिन है\n• डर और लालच फैसलों को प्रभावित कर सकते हैं\n• इसलिए focus prediction पर नहीं, participation पर होना चाहिए",
+      "headline": "Budget सिर्फ सरकार का हिसाब नहीं",
+      "core_explanation": [
+        "Union Budget policies के जरिए economy की दिशा तय करता है।",
+        "इसका असर tax, spending, inflation, interest rates और markets तक पहुंच सकता है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक युवा भारतीय investor दो रास्तों के सामने खड़ा है। एक रास्ता तेजी से बदलते मौसम, घड़ी और अस्थिर पुलों से भरा है; दूसरा रास्ता शांत, लंबा और लगातार आगे बढ़ता हुआ है। पीछे market जैसी उठती-गिरती लहरें दिखाई दें।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with an Indian young adult investor standing at a fork in the road, one path chaotic with storm clouds, swinging clock hands, sharp market-like waves and scattered coins, the other path calm and long with steady sunlight, growing plants and a gentle upward landscape. Warm cream paper background, navy ink outlines, teal and coral accents, subtle hand-drawn textures, thoughtful financial education mood, cinematic composition, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक भारतीय retail investor अपने घर की मेज पर बैठा है। सामने एक बड़ा glowing budget document जैसा बिना लिखावट वाला कागज है, जिसके पीछे से roads, factories, schools, digital infrastructure और stock market जैसी miniature city scenes उभर रही हैं। एक subtle ripple effect कागज से पूरे शहर तक फैल रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with warm cream paper background, Indian retail investor at a home desk, a large blank glowing government budget document, miniature roads, factories, schools, digital infrastructure and financial market elements emerging from it, ripple effect spreading across a stylized Indian city, thoughtful storytelling, clean geometric shapes, soft grain, teal, navy, saffron and coral palette, polished educational infographic composition, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow toward the steady path: “Predict नहीं, participate करें”",
-      "cta": "पहले principle समझिए"
+      "annotation": "Arrow: Budget → Economy → Portfolio",
+      "cta": "पहले पूरा chain समझिए"
     },
     {
       "slide_number": 2,
-      "purpose": "comparison",
-      "headline": "Time in the Market बनाम Timing the Market",
-      "core_explanation": "• Time in the Market: लंबे समय तक invested रहना\n• Timing the Market: हर गिरावट और तेजी का अनुमान लगाना\n• अनुमान गलत हुआ तो best days miss हो सकते हैं",
+      "purpose": "process",
+      "headline": "Budget का असर कैसे आगे बढ़ता है?",
+      "core_explanation": [
+        "सरकारी फैसले spending, taxation और borrowing को बदल सकते हैं।",
+        "इनसे demand, business earnings और investor sentiment प्रभावित हो सकते हैं।"
+      ],
       "visual_spec": {
-        "visual_concept": "Split-screen दृश्य। बाईं ओर एक investor शांत होकर पौधे को पानी दे रहा है, जो धीरे-धीरे बड़ा पेड़ बन रहा है। दाईं ओर दूसरा investor बार-बार बदलते दरवाजों और घड़ियों के बीच भाग रहा है, कभी अंदर तो कभी बाहर।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Split-screen illustrated comparison: on the left, a calm Indian investor consistently watering a small investment plant that grows into a strong tree with fruit and coins; on the right, an anxious investor rushing between revolving doors, clocks, market waves and open gates, repeatedly entering and exiting. Use visual contrast between calm continuity and frantic prediction. Cream notebook paper, navy linework, teal, coral and mustard accents, expressive characters, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक flowing pathway में चार connected scenes: government treasury से infrastructure project, वहां से busy businesses, फिर stock exchange style rising and falling market landscape, और अंत में investor के diversified portfolio basket तक। कोई readable interface या text नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A flowing visual pathway connecting four scenes: an Indian government treasury releasing coins toward infrastructure projects, active businesses and consumers, an abstract stock market landscape with varied upward and downward movement, and a retail investor holding a diversified basket of assets, connected by glowing arrows and flowing particles, no readable screens, no letters, no numbers, no logos, no labels, no watermark, rich editorial illustration, warm paper texture, teal navy saffron coral palette."
       },
-      "annotation": "Circle the growing tree as the visual metaphor for consistency",
-      "cta": "किस रास्ते पर आपका focus है?"
+      "annotation": "हर step का असर अगले step तक जाता है",
+      "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "calculation",
-      "headline": "Compounding को समय चाहिए",
-      "core_explanation": "• Returns पर मिलने वाले returns भी आगे invest होते हैं\n• शुरुआत में growth धीमी दिख सकती है\n• समय के साथ छोटा निवेश snowball की तरह बढ़ सकता है",
+      "purpose": "comparison",
+      "headline": "Tax में बदलाव: फायदा किसे, असर कितना?",
+      "core_explanation": [
+        "Tax changes से disposable income और saving capacity बदल सकती है।",
+        "Investment बेचने पर capital gains tax और holding period जैसे नियम महत्वपूर्ण होते हैं।",
+        "हर investor को अपने facts और applicable rules के आधार पर निर्णय लेना चाहिए।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक छोटी snowball पहाड़ी से नीचे लुढ़कते हुए बड़ी होती जाती है। रास्ते में coins, leaves और छोटे अंकुर जुड़ते जाते हैं, लेकिन कोई लिखित संख्या या chart label न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A small golden snowball made of coins rolling down a gentle hill and becoming progressively larger, gathering more coins, leaves, roots and glowing particles along the way. Show the early stage as modest and the later stage as visibly powerful, communicating compounding through scale and momentum. Hand-drawn educational illustration, cream paper texture, navy outlines, emerald teal and warm coral highlights, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक balanced scale: एक तरफ household wallet, salary coins और savings jar; दूसरी तरफ investment portfolio जिसमें mutual fund units, shares और long-term growth plant हैं। Scale के आसपास tax papers के blank sheets हैं, लेकिन कोई text नहीं। Investor calculator के साथ सोच-समझकर तुलना कर रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian retail investor thoughtfully comparing a household wallet, salary coins and savings jar on one side of a balanced scale with a diversified investment portfolio, mutual fund shapes, share certificates represented only by abstract icons, and a growing plant on the other side, blank tax papers around the scene, calculator without display text, calm analytical mood, no letters, no numbers, no logos, no labels, no watermark, editorial educational illustration, textured paper, teal navy saffron coral palette."
       },
-      "annotation": "Use a curved arrow showing growth building on previous growth",
-      "cta": "Compounding को time दीजिए"
+      "annotation": "Tax saving ≠ automatic investing decision",
+      "cta": "Rule पढ़ें, फिर plan बनाएं"
     },
     {
       "slide_number": 4,
-      "purpose": "risk",
-      "headline": "Market गिरता है, लेकिन recovery भी होती है",
-      "core_explanation": "• Short-term volatility normal है\n• गिरावट में panic selling नुकसान को lock कर सकती है\n• Invested रहने से recovery और future growth में भागीदारी बनी रहती है",
+      "purpose": "market_concept",
+      "headline": "Stocks: Budget सुनकर market क्यों हिलता है?",
+      "core_explanation": [
+        "कुछ sectors को policy support मिल सकता है, जबकि कुछ पर लागत या regulation का असर पड़ सकता है।",
+        "Short-term price reaction और long-term business performance एक जैसी चीजें नहीं हैं।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक मजबूत पेड़ तूफान में झुकता है लेकिन जड़ों के कारण गिरता नहीं। बादल हटने पर सूरज निकलता है और पेड़ पर नए पत्ते उगते हैं। पास में घबराया investor बेचने के बजाय धैर्य से बैठा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A resilient investment tree with deep visible roots bending during a dramatic storm, falling leaves and wind symbolizing market volatility, while a patient Indian investor protects the roots and waits calmly. In the background, clouds clear, sunlight returns and fresh leaves grow. Rich visual metaphor for recovery and staying invested. NotebookLM-inspired paper collage, navy ink, teal foliage, coral raincoat, warm sunlight, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक stylized Indian market street जहां अलग-अलग business sectors अलग दुकानों और buildings से दिखाए गए हैं: infrastructure, banks, consumption, manufacturing और technology। ऊपर से policy light कुछ sectors को उजाला देती है, जबकि market crowd अलग-अलग भावनाओं में प्रतिक्रिया देता है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Stylized Indian business district showing infrastructure construction, banks, consumer shops, manufacturing plant and technology office as distinct visual sectors, a beam of policy light illuminating some areas more than others, diverse retail investors reacting with curiosity rather than panic, abstract market waves in the sky, no stock ticker, no charts with numbers, no letters, no logos, no labels, no watermark, rich storytelling editorial illustration, paper texture, teal navy saffron coral palette."
       },
-      "annotation": "Arrow from deep roots to new leaves: “Recovery के लिए invested रहना ज़रूरी है”",
-      "cta": "Volatility को समझें, उससे भागें नहीं"
+      "annotation": "Market reaction तेज हो सकती है; business impact धीरे दिख सकता है",
+      "cta": "Headline नहीं, fundamentals देखें"
     },
     {
       "slide_number": 5,
-      "purpose": "process",
-      "headline": "SIP: discipline को आसान बनाइए",
-      "core_explanation": "• हर महीने fixed amount invest करें\n• Market ऊपर हो या नीचे, process जारी रखें\n• अलग-अलग prices पर units खरीदने से consistency बनती है",
+      "purpose": "risk",
+      "headline": "Inflation और interest rates को न भूलें",
+      "core_explanation": [
+        "सरकारी spending और revenue decisions inflation expectations को प्रभावित कर सकते हैं।",
+        "Interest rates बदलने पर loans, bonds, fixed-income returns और stock valuations पर असर पड़ सकता है।",
+        "Portfolio में risk, liquidity और time horizon का balance जरूरी है।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक monthly calendar जैसा visual, जिसमें अलग-अलग दिनों पर एक ही आकार के coins एक growing jar में डाले जा रहे हैं। पृष्ठभूमि में market waves ऊपर-नीचे होती हैं, लेकिन investor का हाथ steady है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A disciplined Indian investor placing equal golden coins into a transparent growing investment jar at regular intervals, with a soft abstract calendar grid in the background but no written dates. Behind the jar, market waves rise and fall, while the investor remains steady and calm. Show different coin entry heights subtly without any numerical markings. Warm cream paper, navy outlines, teal and coral accents, friendly educational illustration, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक भारतीय परिवार के financial ecosystem का cutaway scene: ऊपर rising grocery basket और fuel pump, बीच में central bank style interest-rate lever, नीचे home loan, bond ladder और equity tree। अलग-अलग elements पर subtle up-down arrows हों, मगर कोई text या numbers नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Cutaway illustration of an Indian family's financial ecosystem: rising grocery basket and fuel pump above, an abstract central bank inspired interest-rate lever in the middle, home loan house, bond ladder and equity tree below, subtle directional arrows showing interconnected effects, balanced and non-alarmist mood, no letters, no numbers, no logos, no labels, no watermark, rich educational editorial style, warm cream paper, teal navy saffron coral accents."
       },
-      "annotation": "Small repeated arrows toward the jar show regular investing",
-      "cta": "एक simple investing routine बनाइए"
+      "annotation": "एक ही asset पर पूरा भरोसा न रखें",
+      "cta": "Risk को portfolio में spread करें"
     },
     {
       "slide_number": 6,
       "purpose": "action",
-      "headline": "अच्छा investor prediction नहीं, patience चुनता है",
-      "core_explanation": "• Goal और time horizon तय करें\n• Diversified और disciplined approach रखें\n• Short-term noise के बजाय long-term journey पर ध्यान दें",
+      "headline": "Investor का practical checklist",
+      "core_explanation": [
+        "1. Budget के tax और policy changes को official source से verify करें।",
+        "2. अपने goals, time horizon और risk capacity से मिलाकर portfolio review करें।",
+        "3. जल्दबाजी में buying या selling के बजाय diversification और discipline बनाए रखें।"
+      ],
       "visual_spec": {
-        "visual_concept": "एक परिवार लंबी पहाड़ी यात्रा पर आगे बढ़ रहा है। उनके पास compass, पानी और पौधा है। रास्ते में market waves और छोटे उतार-चढ़ाव हैं, लेकिन दूर एक उजला लक्ष्य दिखाई देता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A diverse Indian family walking together on a long scenic mountain path toward a bright sunrise, carrying a compass, a small growing plant and a simple backpack. The path includes gentle ups and downs, abstract market waves and passing clouds, but remains clearly forward-moving. Hopeful long-term financial journey, rich editorial storytelling, cream notebook texture, navy linework, teal mountains, coral clothing accents, no letters, no numbers, no labels, no typography."
+        "visual_concept": "एक शांत investor desk scene: investor blank checklist पर तीन symbolic check marks बनाता है, साथ में emergency fund jar, diversified investment garden, magnifying glass और long-term roadmap रखा है। पीछे market noise धीरे-धीरे शांत होकर stable path में बदल रहा है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Calm Indian retail investor at a clean desk reviewing a blank checklist with three symbolic check marks, emergency fund jar, diversified investment garden with different plants, magnifying glass, long-term roadmap and compass, noisy market waves in the background settling into a steady path, confident but thoughtful mood, no letters, no numbers, no logos, no labels, no watermark, polished NotebookLM-inspired editorial illustration, textured cream paper, teal navy saffron coral palette."
       },
-      "annotation": "Arrow pointing toward the sunrise: “Long-term journey पर focus”",
-      "cta": "आज का छोटा कदम, कल का बड़ा फर्क"
+      "annotation": "Verify → Review → Diversify → Stay disciplined",
+      "cta": "Budget को समझें, reaction नहीं—strategy चुनें"
     }
   ],
-  "caption": "Market को perfectly time करना लगभग impossible है। लेकिन लंबे समय तक invested रहना, compounding को time देना और SIP जैसी disciplined strategy अपनाना आपके पक्ष में काम कर सकता है। गिरावट journey का हिस्सा है—panic नहीं, patience ज़रूरी है।\n\nयह educational content है, investment advice नहीं।\n\n#TimeInTheMarket #TimingTheMarket #InvestingBasics #SIP #Compounding #LongTermInvesting #PersonalFinance #FinancialLiteracy #TrustPointFin"
+  "caption": "Union Budget का असर सिर्फ tax तक सीमित नहीं होता। इसका connection inflation, interest rates, business sectors, stock prices और आपके portfolio से भी हो सकता है। इसलिए budget headlines देखकर तुरंत buy या sell करने के बजाय policy को समझें, official rules verify करें और अपने goals, risk capacity और time horizon के अनुसार portfolio review करें।\n\nयह educational content है, personalized investment या tax advice नहीं।\n\n#UnionBudget #RetailInvestors #PersonalFinance #StockMarketIndia #TaxPlanning #InvestingBasics #MutualFunds #FinancialLiteracy #PortfolioPlanning #TrustPointFin"
 }
