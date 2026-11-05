@@ -1,15 +1,15 @@
 # Social Media Posts
-*Generated for article: "Union Budget का Retail Investors पर Impact: Tax, Stocks और Investments को आसान भाषा में समझें"*
+*Generated for article: "Dividend Yields से Passive Income Stream कैसे बनाएं: Indian Beginners के लिए Practical Guide"*
 
 ---
 
 ## 📝 Caption
 
-Union Budget का असर सिर्फ tax तक सीमित नहीं होता। इसका connection inflation, interest rates, business sectors, stock prices और आपके portfolio से भी हो सकता है। इसलिए budget headlines देखकर तुरंत buy या sell करने के बजाय policy को समझें, official rules verify करें और अपने goals, risk capacity और time horizon के अनुसार portfolio review करें।
+Dividend yield देखकर passive income का सपना attractive लगता है—लेकिन smart investing सिर्फ high yield चुनना नहीं है। पहले yield calculate करें, फिर company के profits, cash flow, dividend history, taxes और risks जाँचें। Diversification और realistic expectations के साथ ही dividend strategy को long-term plan का हिस्सा बनाइए।
 
-यह educational content है, personalized investment या tax advice नहीं।
+यह educational content है, personal investment advice नहीं।
 
-#UnionBudget #RetailInvestors #PersonalFinance #StockMarketIndia #TaxPlanning #InvestingBasics #MutualFunds #FinancialLiteracy #PortfolioPlanning #TrustPointFin
+#DividendInvesting #PassiveIncome #IndianInvestors #StockMarketForBeginners #PersonalFinanceIndia #DividendYield #InvestingBasics #TrustPointFin
 
 ---
-*Article URL: https://trilok310.github.io/trustpointfin/the-impact-of-union-budgets-on-retail-investors.html*
+*Article URL: https://trilok310.github.io/trustpointfin/how-to-create-a-passive-income-stream-with-dividend-yields.html*

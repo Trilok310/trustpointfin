@@ -167,5 +167,5 @@ This calendar drives the automated GEO Insights Hub. The scheduled background ag
 - [x] 151. Mutual Funds vs. Direct Stocks: The Ultimate Comparison
 - [x] 152. Why 'Time in the Market' Always Beats 'Timing the Market'
 - [x] 153. The Impact of Union Budgets on Retail Investors
-- [ ] 154. How to Create a Passive Income Stream with Dividend Yields
+- [x] 154. How to Create a Passive Income Stream with Dividend Yields
 - [ ] 155. Financial Freedom at 40: A Realistic Roadmap for Indians

@@ -1,101 +1,122 @@
 {
-  "topic": "Union Budget का Retail Investors पर Impact: Tax, Stocks और Investments को आसान भाषा में समझें",
-  "teaching_objective": "Retail investors समझें कि Union Budget का असर केवल tax पर नहीं, बल्कि inflation, interest rates, business sectors, stock prices और उनके overall portfolio पर भी पड़ सकता है।",
+  "topic": "Dividend Yields से Passive Income Stream कैसे बनाएं: Indian Beginners के लिए Practical Guide",
+  "teaching_objective": "Beginners को समझाना कि dividend yield कैसे calculate होता है, dividend stocks कैसे evaluate करें, taxes और risks को कैसे देखें, और एक diversified, realistic passive-income plan कैसे बनाएं।",
   "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Budget सिर्फ सरकार का हिसाब नहीं",
+      "headline": "Dividend se income kaise aati hai?",
       "core_explanation": [
-        "Union Budget policies के जरिए economy की दिशा तय करता है।",
-        "इसका असर tax, spending, inflation, interest rates और markets तक पहुंच सकता है।"
+        "कुछ companies अपने profits का हिस्सा shareholders को dividend के रूप में देती हैं।",
+        "आप shares hold करते हैं, company dividend declare करती है, और eligible investors को payment मिलता है।",
+        "यह income opportunity है, guaranteed salary नहीं।"
       ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय retail investor अपने घर की मेज पर बैठा है। सामने एक बड़ा glowing budget document जैसा बिना लिखावट वाला कागज है, जिसके पीछे से roads, factories, schools, digital infrastructure और stock market जैसी miniature city scenes उभर रही हैं। एक subtle ripple effect कागज से पूरे शहर तक फैल रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with warm cream paper background, Indian retail investor at a home desk, a large blank glowing government budget document, miniature roads, factories, schools, digital infrastructure and financial market elements emerging from it, ripple effect spreading across a stylized Indian city, thoughtful storytelling, clean geometric shapes, soft grain, teal, navy, saffron and coral palette, polished educational infographic composition, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक भारतीय beginner investor balcony garden में छोटे पौधे लगा रहा है। कुछ पौधों पर coins जैसे फल उग रहे हैं, पीछे एक शांत शहर और company buildings दिख रही हैं। पौधों की growth dividend income के समय के साथ बनने का metaphor हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with an Indian beginner investor tending a small balcony garden, several healthy plants bearing subtle metallic coin-like fruits, distant Indian city skyline and modern company buildings, warm morning light, clear visual storytelling, soft paper texture, hand-drawn accents, tasteful teal, saffron, navy and cream palette, friendly educational mood, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Arrow: Budget → Economy → Portfolio",
-      "cta": "पहले पूरा chain समझिए"
+      "annotation": "Dividend को salary नहीं, business ownership का payout समझें।",
+      "cta": "पहले concept समझें, फिर calculation करें।"
     },
     {
       "slide_number": 2,
-      "purpose": "process",
-      "headline": "Budget का असर कैसे आगे बढ़ता है?",
+      "purpose": "concept",
+      "headline": "Yield का simple मतलब",
       "core_explanation": [
-        "सरकारी फैसले spending, taxation और borrowing को बदल सकते हैं।",
-        "इनसे demand, business earnings और investor sentiment प्रभावित हो सकते हैं।"
+        "Dividend yield बताता है कि share price के मुकाबले सालाना dividend कितना है।",
+        "Formula: Annual dividend per share ÷ Current share price × 100।",
+        "Yield अकेले देखकर stock चुनना सही नहीं है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक flowing pathway में चार connected scenes: government treasury से infrastructure project, वहां से busy businesses, फिर stock exchange style rising and falling market landscape, और अंत में investor के diversified portfolio basket तक। कोई readable interface या text नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. A flowing visual pathway connecting four scenes: an Indian government treasury releasing coins toward infrastructure projects, active businesses and consumers, an abstract stock market landscape with varied upward and downward movement, and a retail investor holding a diversified basket of assets, connected by glowing arrows and flowing particles, no readable screens, no letters, no numbers, no logos, no labels, no watermark, rich editorial illustration, warm paper texture, teal navy saffron coral palette."
+        "visual_concept": "एक balance scale जिसमें एक तरफ dividend coins और दूसरी तरफ share price का बड़ा abstract market object रखा हो। बीच में percentage का visual idea रंगीन circular gauge से दिखे, लेकिन कोई अंक या text न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational editorial illustration of a balanced scale, one side holding a small stream of dividend coins and the other side holding a larger abstract stock market token, circular percentage gauge in the background without numbers, Indian financial learning context, clean composition, soft shadows, textured paper, teal and coral accents, no letters, no numerals, no logos, no labels, no watermark."
       },
-      "annotation": "हर step का असर अगले step तक जाता है",
+      "annotation": "High yield = हमेशा high quality नहीं।",
       "cta": null
     },
     {
       "slide_number": 3,
-      "purpose": "comparison",
-      "headline": "Tax में बदलाव: फायदा किसे, असर कितना?",
+      "purpose": "calculation",
+      "headline": "Ek simple calculation",
       "core_explanation": [
-        "Tax changes से disposable income और saving capacity बदल सकती है।",
-        "Investment बेचने पर capital gains tax और holding period जैसे नियम महत्वपूर्ण होते हैं।",
-        "हर investor को अपने facts और applicable rules के आधार पर निर्णय लेना चाहिए।"
+        "मान लीजिए annual dividend ₹5 और share price ₹100 है।",
+        "Dividend yield = ₹5 ÷ ₹100 × 100 = 5%。",
+        "100 shares पर annual dividend ₹500 होगा, tax से पहले।"
       ],
       "visual_spec": {
-        "visual_concept": "एक balanced scale: एक तरफ household wallet, salary coins और savings jar; दूसरी तरफ investment portfolio जिसमें mutual fund units, shares और long-term growth plant हैं। Scale के आसपास tax papers के blank sheets हैं, लेकिन कोई text नहीं। Investor calculator के साथ सोच-समझकर तुलना कर रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Indian retail investor thoughtfully comparing a household wallet, salary coins and savings jar on one side of a balanced scale with a diversified investment portfolio, mutual fund shapes, share certificates represented only by abstract icons, and a growing plant on the other side, blank tax papers around the scene, calculator without display text, calm analytical mood, no letters, no numbers, no logos, no labels, no watermark, editorial educational illustration, textured paper, teal navy saffron coral palette."
+        "visual_concept": "एक साफ़ educational tabletop scene: एक तरफ 100 का abstract share token, दूसरी तरफ 5 छोटे dividend coins, और पीछे 100 shares का stack। Arrows और calculator जैसे objects calculation flow दिखाएँ, पर कोई text या अंक न हों।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich calculation illustration on a wooden desk, abstract stock token beside a smaller group of dividend coins, a neatly stacked collection of share cards, simple calculator and directional arrows showing division and multiplication concept, Indian rupee-inspired visual mood without readable symbols, bright instructional lighting, paper-cut and hand-drawn hybrid style, no letters, no numbers, no labels, no logos, no watermark."
       },
-      "annotation": "Tax saving ≠ automatic investing decision",
-      "cta": "Rule पढ़ें, फिर plan बनाएं"
+      "annotation": "Example केवल समझाने के लिए है, return promise नहीं।",
+      "cta": "अपनी watchlist में yield calculate करें।"
     },
     {
       "slide_number": 4,
-      "purpose": "market_concept",
-      "headline": "Stocks: Budget सुनकर market क्यों हिलता है?",
+      "purpose": "selection",
+      "headline": "Stock चुनते समय 4 checks",
       "core_explanation": [
-        "कुछ sectors को policy support मिल सकता है, जबकि कुछ पर लागत या regulation का असर पड़ सकता है।",
-        "Short-term price reaction और long-term business performance एक जैसी चीजें नहीं हैं।"
+        "क्या company का profit और cash flow stable है?",
+        "क्या dividend history consistent है?",
+        "क्या payout company की earning के मुकाबले sustainable है?",
+        "क्या business, sector और holdings diversified हैं?"
       ],
       "visual_spec": {
-        "visual_concept": "एक stylized Indian market street जहां अलग-अलग business sectors अलग दुकानों और buildings से दिखाए गए हैं: infrastructure, banks, consumption, manufacturing और technology। ऊपर से policy light कुछ sectors को उजाला देती है, जबकि market crowd अलग-अलग भावनाओं में प्रतिक्रिया देता है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Stylized Indian business district showing infrastructure construction, banks, consumer shops, manufacturing plant and technology office as distinct visual sectors, a beam of policy light illuminating some areas more than others, diverse retail investors reacting with curiosity rather than panic, abstract market waves in the sky, no stock ticker, no charts with numbers, no letters, no logos, no labels, no watermark, rich storytelling editorial illustration, paper texture, teal navy saffron coral palette."
+        "visual_concept": "एक भारतीय investor magnifying glass से एक मजबूत tree-like company को जाँच रहा है। Tree की roots cash flow, trunk business strength, branches dividend history और आसपास अलग-अलग छोटे trees diversification को दर्शाएँ।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed metaphorical illustration of an Indian investor examining a strong company tree with a magnifying glass, deep roots representing cash flow, sturdy trunk representing business strength, healthy branches representing consistent dividends, several different trees around it representing diversification, polished educational infographic composition without labels, warm natural colors, paper grain, no letters, no numbers, no logos, no watermark."
       },
-      "annotation": "Market reaction तेज हो सकती है; business impact धीरे दिख सकता है",
-      "cta": "Headline नहीं, fundamentals देखें"
+      "annotation": "Dividend history देखें, केवल current yield नहीं।",
+      "cta": null
     },
     {
       "slide_number": 5,
-      "purpose": "risk",
-      "headline": "Inflation और interest rates को न भूलें",
+      "purpose": "tax",
+      "headline": "Dividend आया, tax भी समझिए",
       "core_explanation": [
-        "सरकारी spending और revenue decisions inflation expectations को प्रभावित कर सकते हैं।",
-        "Interest rates बदलने पर loans, bonds, fixed-income returns और stock valuations पर असर पड़ सकता है।",
-        "Portfolio में risk, liquidity और time horizon का balance जरूरी है।"
+        "भारत में dividend income आम तौर पर investor के applicable income-tax slab के अनुसार taxable होती है।",
+        "कुछ situations में company TDS काट सकती है; final tax liability अलग हो सकती है।",
+        "Net income calculate करते समय tax और platform-related costs को ध्यान में रखें।"
       ],
       "visual_spec": {
-        "visual_concept": "एक भारतीय परिवार के financial ecosystem का cutaway scene: ऊपर rising grocery basket और fuel pump, बीच में central bank style interest-rate lever, नीचे home loan, bond ladder और equity tree। अलग-अलग elements पर subtle up-down arrows हों, मगर कोई text या numbers नहीं।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Cutaway illustration of an Indian family's financial ecosystem: rising grocery basket and fuel pump above, an abstract central bank inspired interest-rate lever in the middle, home loan house, bond ladder and equity tree below, subtle directional arrows showing interconnected effects, balanced and non-alarmist mood, no letters, no numbers, no logos, no labels, no watermark, rich educational editorial style, warm cream paper, teal navy saffron coral accents."
+        "visual_concept": "एक dividend payment stream investor तक पहुँचती है और बीच में transparent filter से गुजरती है। कुछ coins investor के wallet में जाते हैं और कुछ government-style civic building की ओर, tax deduction का neutral metaphor।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Editorial illustration of a dividend coin stream flowing toward an Indian investor's wallet through a transparent filter, with a smaller portion moving toward a dignified civic government building, neutral and non-threatening tax metaphor, clean composition, soft blue and warm gold palette, subtle paper texture, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "एक ही asset पर पूरा भरोसा न रखें",
-      "cta": "Risk को portfolio में spread करें"
+      "annotation": "Gross dividend और post-tax income अलग हो सकते हैं।",
+      "cta": "Net cash flow पर focus करें।"
     },
     {
       "slide_number": 6,
-      "purpose": "action",
-      "headline": "Investor का practical checklist",
+      "purpose": "risk",
+      "headline": "High yield का hidden risk",
       "core_explanation": [
-        "1. Budget के tax और policy changes को official source से verify करें।",
-        "2. अपने goals, time horizon और risk capacity से मिलाकर portfolio review करें।",
-        "3. जल्दबाजी में buying या selling के बजाय diversification और discipline बनाए रखें।"
+        "Share price गिरने पर yield percentage बढ़ी हुई दिख सकती है।",
+        "Profit कमजोर होने पर dividend cut या बंद भी हो सकता है।",
+        "एक या दो stocks पर निर्भर रहने से portfolio risk बढ़ता है।"
       ],
       "visual_spec": {
-        "visual_concept": "एक शांत investor desk scene: investor blank checklist पर तीन symbolic check marks बनाता है, साथ में emergency fund jar, diversified investment garden, magnifying glass और long-term roadmap रखा है। पीछे market noise धीरे-धीरे शांत होकर stable path में बदल रहा है।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Calm Indian retail investor at a clean desk reviewing a blank checklist with three symbolic check marks, emergency fund jar, diversified investment garden with different plants, magnifying glass, long-term roadmap and compass, noisy market waves in the background settling into a steady path, confident but thoughtful mood, no letters, no numbers, no logos, no labels, no watermark, polished NotebookLM-inspired editorial illustration, textured cream paper, teal navy saffron coral palette."
+        "visual_concept": "एक चमकदार ऊँचा dividend fountain बाहर से आकर्षक दिखता है, लेकिन उसके नीचे cracked foundation और गिरती share-price slope है। पास में diversified baskets वाला stable pathway contrast दिखाए।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Dramatic but clear financial risk illustration: an attractive golden dividend fountain standing on a cracked foundation with a downward-sloping market path, beside a safer diversified set of baskets containing different business symbols as abstract shapes, Indian investor observing carefully, cinematic editorial lighting, textured paper, no letters, no numbers, no logos, no labels, no watermark."
       },
-      "annotation": "Verify → Review → Diversify → Stay disciplined",
-      "cta": "Budget को समझें, reaction नहीं—strategy चुनें"
+      "annotation": "Yield बढ़ना कभी-कभी price गिरने का signal भी हो सकता है।",
+      "cta": "Risk समझे बिना yield chase न करें।"
+    },
+    {
+      "slide_number": 7,
+      "purpose": "action_plan",
+      "headline": "Passive income plan बनाइए",
+      "core_explanation": [
+        "अपना income goal और investment budget तय करें।",
+        "Quality companies की shortlist बनाकर fundamentals और valuation जाँचें।",
+        "Diversify करें, dividends reinvest करने या cash लेने का नियम तय करें।",
+        "हर quarter portfolio और dividend sustainability review करें।"
+      ],
+      "visual_spec": {
+        "visual_concept": "एक clear four-step pathway: goal-setting desk, company research station, diversified investment baskets, और recurring review calendar represented by seasonal changes. आगे बढ़ता हुआ Indian beginner investor confident लेकिन cautious हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich step-by-step storytelling scene of an Indian beginner investor walking along a four-part pathway: setting a financial goal at a desk, researching strong businesses with a magnifying glass, arranging diversified investment baskets, and reviewing a changing seasonal portfolio garden, optimistic but realistic mood, elegant editorial illustration, teal, saffron, cream and deep navy palette, no letters, no numbers, no logos, no labels, no watermark."
+      },
+      "annotation": "Small, consistent investing beats chasing spectacular yields।",
+      "cta": "आज अपनी dividend checklist बनाइए।"
     }
   ],
-  "caption": "Union Budget का असर सिर्फ tax तक सीमित नहीं होता। इसका connection inflation, interest rates, business sectors, stock prices और आपके portfolio से भी हो सकता है। इसलिए budget headlines देखकर तुरंत buy या sell करने के बजाय policy को समझें, official rules verify करें और अपने goals, risk capacity और time horizon के अनुसार portfolio review करें।\n\nयह educational content है, personalized investment या tax advice नहीं।\n\n#UnionBudget #RetailInvestors #PersonalFinance #StockMarketIndia #TaxPlanning #InvestingBasics #MutualFunds #FinancialLiteracy #PortfolioPlanning #TrustPointFin"
+  "caption": "Dividend yield देखकर passive income का सपना attractive लगता है—लेकिन smart investing सिर्फ high yield चुनना नहीं है। पहले yield calculate करें, फिर company के profits, cash flow, dividend history, taxes और risks जाँचें। Diversification और realistic expectations के साथ ही dividend strategy को long-term plan का हिस्सा बनाइए।\n\nयह educational content है, personal investment advice नहीं।\n\n#DividendInvesting #PassiveIncome #IndianInvestors #StockMarketForBeginners #PersonalFinanceIndia #DividendYield #InvestingBasics #TrustPointFin"
 }
