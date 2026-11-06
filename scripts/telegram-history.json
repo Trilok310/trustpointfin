@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-06T07:24:52.278Z",
+  "lastUpdated": "2026-11-06T09:42:18.759Z",
   "recentEntries": [
+    {
+      "date": "6 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 24883.25,
+      "topics": [
+        "Sensex and Nifty Log Massive Single-Day Gains Driven by Foreign Inflows",
+        "Bank Nifty Scales 58,739 as Credit Growth Outpaces Deposit Volatility Headwinds",
+        "Indian Equities Buck Asian Tech Rout as Domestic Cyclicals Lead Rally",
+        "Capital Market Platforms Benefit as Daily Trading Turnover Rebounds sharply",
+        "Brent Crude Moderates to $96.99 as Rupee Consolidates Near 93.91"
+      ]
+    },
     {
       "date": "6 November 2026",
       "edition": "MORNING",
@@ -227,18 +239,6 @@
         "IT Heavyweights TCS, Infosys, and HCL Tech Counter Market Weakness",
         "Exchange Tollbooths Gain Traction as India VIX Holds at 16.86",
         "Brent Crude at $112.04 and USD/INR at ₹94.93 Sustain Headwinds"
-      ]
-    },
-    {
-      "date": "23 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22415.25,
-      "topics": [
-        "Nifty Erases Morning Gains to Settle Flat at 22,415 Amid Intraday Volatility",
-        "Bank Nifty Drops 0.77% to 54,028 as Financials Lead Late-Session Selloff",
-        "IT Heavyweights TCS and Infosys Cushion Downside Despite Broader Market Bleed",
-        "Market Intermediaries Benefit from Elevated Turnover and Anticipated Mega Offerings",
-        "Brent Crude at $109.4 and USD/INR at ₹94.93 Sustain Elevated Cost Pressures"
       ]
     }
   ]
