@@ -1,122 +1,80 @@
 {
-  "topic": "Dividend Yields से Passive Income Stream कैसे बनाएं: Indian Beginners के लिए Practical Guide",
-  "teaching_objective": "Beginners को समझाना कि dividend yield कैसे calculate होता है, dividend stocks कैसे evaluate करें, taxes और risks को कैसे देखें, और एक diversified, realistic passive-income plan कैसे बनाएं।",
+  "topic": "Financial Freedom at 40: Indians के लिए Realistic Roadmap",
+  "teaching_objective": "Learners को यह समझाना कि 40 तक financial freedom एक realistic, step-by-step process है—जिसमें खर्चों की clarity, future corpus planning, disciplined SIP, inflation protection, insurance और debt control शामिल हैं।",
   "format": "PROCESS",
   "slides": [
     {
       "slide_number": 1,
       "purpose": "context",
-      "headline": "Dividend se income kaise aati hai?",
-      "core_explanation": [
-        "कुछ companies अपने profits का हिस्सा shareholders को dividend के रूप में देती हैं।",
-        "आप shares hold करते हैं, company dividend declare करती है, और eligible investors को payment मिलता है।",
-        "यह income opportunity है, guaranteed salary नहीं।"
-      ],
+      "headline": "Freedom का मतलब सिर्फ बड़ा पैसा नहीं",
+      "core_explanation": "• Financial freedom = अपने जरूरी खर्चों के लिए नौकरी पर पूरी dependence न रहना।\n• Goal है पैसा आपके लिए काम करे, न कि हर decision डर से लेना पड़े।",
       "visual_spec": {
-        "visual_concept": "एक भारतीय beginner investor balcony garden में छोटे पौधे लगा रहा है। कुछ पौधों पर coins जैसे फल उग रहे हैं, पीछे एक शांत शहर और company buildings दिख रही हैं। पौधों की growth dividend income के समय के साथ बनने का metaphor हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with an Indian beginner investor tending a small balcony garden, several healthy plants bearing subtle metallic coin-like fruits, distant Indian city skyline and modern company buildings, warm morning light, clear visual storytelling, soft paper texture, hand-drawn accents, tasteful teal, saffron, navy and cream palette, friendly educational mood, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक भारतीय middle-class परिवार—working couple और उनका बच्चा—शहर की बालकनी में सुबह की रोशनी के बीच खड़ा है। पीछे एक खुला रास्ता, गुल्लक, घर, पौधा और शांत calendar-like circular sun metaphor दिखे; दृश्य aspiration और stability दोनों communicate करे।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich editorial illustration with warm paper texture, Indian urban family in their late thirties standing on a balcony at sunrise, calm confident expressions, child nearby, subtle visual metaphors of a clay savings pot, a secure home, a growing plant, an open road and a glowing sun representing freedom, tasteful teal, saffron, cream and navy palette, hand-drawn outlines, soft shadows, thoughtful financial education composition, no letters, no words, no numbers, no labels, no watermark."
       },
-      "annotation": "Dividend को salary नहीं, business ownership का payout समझें।",
-      "cta": "पहले concept समझें, फिर calculation करें।"
+      "annotation": "Arrow: Freedom = choices + security",
+      "cta": "पहले अपना freedom goal define करें"
     },
     {
       "slide_number": 2,
-      "purpose": "concept",
-      "headline": "Yield का simple मतलब",
-      "core_explanation": [
-        "Dividend yield बताता है कि share price के मुकाबले सालाना dividend कितना है।",
-        "Formula: Annual dividend per share ÷ Current share price × 100।",
-        "Yield अकेले देखकर stock चुनना सही नहीं है।"
-      ],
+      "purpose": "foundation",
+      "headline": "Step 1: खर्चों की असली तस्वीर",
+      "core_explanation": "• Monthly expenses को essentials, lifestyle और irregular costs में बाँटें।\n• आपका current lifestyle ही future corpus की starting point है।\n• खर्च छिपाने से goal धुंधला होता है।",
       "visual_spec": {
-        "visual_concept": "एक balance scale जिसमें एक तरफ dividend coins और दूसरी तरफ share price का बड़ा abstract market object रखा हो। बीच में percentage का visual idea रंगीन circular gauge से दिखे, लेकिन कोई अंक या text न हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Educational editorial illustration of a balanced scale, one side holding a small stream of dividend coins and the other side holding a larger abstract stock market token, circular percentage gauge in the background without numbers, Indian financial learning context, clean composition, soft shadows, textured paper, teal and coral accents, no letters, no numerals, no logos, no labels, no watermark."
+        "visual_concept": "एक भारतीय couple dining table पर household finances organize कर रहा है। मेज पर groceries, rent or home keys, school bag, utility objects, restaurant receipt-like blank slips और smartphone हैं; अलग-अलग रंगों के transparent bowls में खर्चों को sort करते हुए दिखाया जाए, लेकिन कोई लिखित label न हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed Indian household budgeting scene, young Indian couple at a dining table sorting everyday objects into three transparent bowls: groceries and medicine, lifestyle items and dining, occasional bills and school expenses, smartphone and calculator present without readable displays, warm home interior, expressive hands, visual storytelling, cream paper background, teal and coral accents, hand-drawn infographic illustration, no letters, no words, no numbers, no labels, no watermark."
       },
-      "annotation": "High yield = हमेशा high quality नहीं।",
-      "cta": null
+      "annotation": "Tip: पिछले 3–6 महीनों का खर्च देखें",
+      "cta": "आज ही expense audit शुरू करें"
     },
     {
       "slide_number": 3,
       "purpose": "calculation",
-      "headline": "Ek simple calculation",
-      "core_explanation": [
-        "मान लीजिए annual dividend ₹5 और share price ₹100 है।",
-        "Dividend yield = ₹5 ÷ ₹100 × 100 = 5%。",
-        "100 shares पर annual dividend ₹500 होगा, tax से पहले।"
-      ],
+      "headline": "Step 2: Corpus को समझें",
+      "core_explanation": "• Future annual expenses का अनुमान लगाइए।\n• Inflation के कारण आज का खर्च future में बढ़ेगा।\n• Corpus इतना होना चाहिए कि withdrawals के बाद भी पैसा लंबे समय तक टिके।",
       "visual_spec": {
-        "visual_concept": "एक साफ़ educational tabletop scene: एक तरफ 100 का abstract share token, दूसरी तरफ 5 छोटे dividend coins, और पीछे 100 shares का stack। Arrows और calculator जैसे objects calculation flow दिखाएँ, पर कोई text या अंक न हों।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich calculation illustration on a wooden desk, abstract stock token beside a smaller group of dividend coins, a neatly stacked collection of share cards, simple calculator and directional arrows showing division and multiplication concept, Indian rupee-inspired visual mood without readable symbols, bright instructional lighting, paper-cut and hand-drawn hybrid style, no letters, no numbers, no labels, no logos, no watermark."
+        "visual_concept": "एक winding bridge समय के साथ आगे बढ़ता है। शुरुआती तरफ आज की छोटी shopping basket है, बीच में बढ़ती हुई baskets और healthcare/home objects हैं, और अंतिम तरफ एक मजबूत reservoir-like investment corpus है। एक Indian planner bridge पर torch लेकर आगे देख रहा है; rising scale को आकार और दूरी से दिखाया जाए, text से नहीं।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Conceptual financial planning illustration for an Indian family, a winding bridge moving from present day to later life, small basket of essentials gradually becoming larger baskets with healthcare, housing and family needs, ending at a large stable reservoir symbolizing a retirement corpus, Indian financial planner holding a lantern and looking ahead, visual sense of inflation through increasing object sizes, elegant paper texture, navy, mustard, mint and coral palette, no letters, no words, no numbers, no labels, no watermark."
       },
-      "annotation": "Example केवल समझाने के लिए है, return promise नहीं।",
-      "cta": "अपनी watchlist में yield calculate करें।"
+      "annotation": "Arrow: आज का खर्च ≠ future का खर्च",
+      "cta": "अपना future expense estimate बनाएं"
     },
     {
       "slide_number": 4,
-      "purpose": "selection",
-      "headline": "Stock चुनते समय 4 checks",
-      "core_explanation": [
-        "क्या company का profit और cash flow stable है?",
-        "क्या dividend history consistent है?",
-        "क्या payout company की earning के मुकाबले sustainable है?",
-        "क्या business, sector और holdings diversified हैं?"
-      ],
+      "purpose": "process",
+      "headline": "Step 3: SIP से दूरी घटाइए",
+      "core_explanation": "• Regular investing छोटी शुरुआत को meaningful corpus में बदल सकती है।\n• SIP को income बढ़ने के साथ gradually बढ़ाना मददगार हो सकता है।\n• Consistency, perfect timing से ज्यादा important है।",
       "visual_spec": {
-        "visual_concept": "एक भारतीय investor magnifying glass से एक मजबूत tree-like company को जाँच रहा है। Tree की roots cash flow, trunk business strength, branches dividend history और आसपास अलग-अलग छोटे trees diversification को दर्शाएँ।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Detailed metaphorical illustration of an Indian investor examining a strong company tree with a magnifying glass, deep roots representing cash flow, sturdy trunk representing business strength, healthy branches representing consistent dividends, several different trees around it representing diversification, polished educational infographic composition without labels, warm natural colors, paper grain, no letters, no numbers, no logos, no watermark."
+        "visual_concept": "एक Indian professional हर महीने एक छोटा seed एक transparent glass garden में डालता है। समय के साथ वही garden मजबूत tree बनता है, जिसकी branches पर home, education, health और freedom के symbolic objects उगते हैं। अलग-अलग stages में वही character दिखाई दे, जिससे compounding और consistency का storytelling effect बने।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Sequential storytelling illustration showing the same Indian professional making regular small deposits as seeds into a transparent garden, the seeds growing into a strong tree with symbolic branches representing home, education, healthcare and personal freedom, repeated monthly rhythm conveyed through multiple subtle character poses, rich hand-drawn editorial style, soft paper grain, optimistic green, blue and orange palette, no letters, no words, no numbers, no labels, no watermark."
       },
-      "annotation": "Dividend history देखें, केवल current yield नहीं।",
-      "cta": null
+      "annotation": "Tip: income बढ़े तो investment भी step-up करें",
+      "cta": "एक sustainable SIP amount से शुरू करें"
     },
     {
       "slide_number": 5,
-      "purpose": "tax",
-      "headline": "Dividend आया, tax भी समझिए",
-      "core_explanation": [
-        "भारत में dividend income आम तौर पर investor के applicable income-tax slab के अनुसार taxable होती है।",
-        "कुछ situations में company TDS काट सकती है; final tax liability अलग हो सकती है।",
-        "Net income calculate करते समय tax और platform-related costs को ध्यान में रखें।"
-      ],
+      "purpose": "risk",
+      "headline": "Step 4: Protection पहले, growth बाद में",
+      "core_explanation": "• Emergency fund unexpected shocks के लिए cushion देता है।\n• Health और life insurance बड़े financial setbacks से बचाने में मदद करते हैं।\n• High-cost debt को control करना wealth building का जरूरी हिस्सा है।",
       "visual_spec": {
-        "visual_concept": "एक dividend payment stream investor तक पहुँचती है और बीच में transparent filter से गुजरती है। कुछ coins investor के wallet में जाते हैं और कुछ government-style civic building की ओर, tax deduction का neutral metaphor।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Editorial illustration of a dividend coin stream flowing toward an Indian investor's wallet through a transparent filter, with a smaller portion moving toward a dignified civic government building, neutral and non-threatening tax metaphor, clean composition, soft blue and warm gold palette, subtle paper texture, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक Indian family को तीन-layer protective structure shelter कर रहा है: emergency fund के लिए glowing reserve box, health protection के लिए umbrella with medical cross-like abstract symbol, और debt control के लिए नीचे से हटती भारी chain. बाहर बारिश और अचानक खर्चों के visual symbols हैं, अंदर परिवार सुरक्षित और शांत है।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich symbolic illustration of an Indian family safely standing inside a three-layer protective shelter, a glowing reserve box, a broad health-protection umbrella with a simple abstract medical symbol, and heavy debt chains being unlocked and removed, storm clouds and unexpected expense objects outside, warm safe light inside, sophisticated financial education art, textured paper, deep blue, red, gold and cream palette, no letters, no words, no numbers, no labels, no watermark."
       },
-      "annotation": "Gross dividend और post-tax income अलग हो सकते हैं।",
-      "cta": "Net cash flow पर focus करें।"
+      "annotation": "Arrow: पहले downside संभालें",
+      "cta": "Protection gaps की checklist बनाएं"
     },
     {
       "slide_number": 6,
-      "purpose": "risk",
-      "headline": "High yield का hidden risk",
-      "core_explanation": [
-        "Share price गिरने पर yield percentage बढ़ी हुई दिख सकती है।",
-        "Profit कमजोर होने पर dividend cut या बंद भी हो सकता है।",
-        "एक या दो stocks पर निर्भर रहने से portfolio risk बढ़ता है।"
-      ],
+      "purpose": "action",
+      "headline": "40 तक roadmap: छोटे steps, बड़ा फर्क",
+      "core_explanation": "• खर्च track करें और target corpus तय करें।\n• SIP को automate और समय-समय पर review करें।\n• Inflation, insurance, debt और changing goals के अनुसार plan update करें।\n• Financial freedom एक finish line नहीं, ongoing system है।",
       "visual_spec": {
-        "visual_concept": "एक चमकदार ऊँचा dividend fountain बाहर से आकर्षक दिखता है, लेकिन उसके नीचे cracked foundation और गिरती share-price slope है। पास में diversified baskets वाला stable pathway contrast दिखाए।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Dramatic but clear financial risk illustration: an attractive golden dividend fountain standing on a cracked foundation with a downward-sloping market path, beside a safer diversified set of baskets containing different business symbols as abstract shapes, Indian investor observing carefully, cinematic editorial lighting, textured paper, no letters, no numbers, no logos, no labels, no watermark."
+        "visual_concept": "एक illustrated pathway में वही Indian couple अलग-अलग milestones पार करता है: expense map, growing investment tree, protective umbrella, cleared debt bridge और अंत में शांत घर के सामने स्वतंत्र जीवन। रास्ते पर कोई text या number नहीं, केवल visual milestones और confident forward movement हो।",
+        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Wide cinematic editorial illustration of an Indian couple walking along a clear pathway toward a peaceful home and open horizon, visual milestones along the path include an organized household basket, a growing investment tree, a protective umbrella, a small emergency reserve chest, and an uncluttered bridge symbolizing cleared debt, hopeful sunrise, subtle Indian urban setting, cohesive hand-drawn educational visual system, rich paper texture, teal, saffron, green and navy palette, no letters, no words, no numbers, no labels, no watermark."
       },
-      "annotation": "Yield बढ़ना कभी-कभी price गिरने का signal भी हो सकता है।",
-      "cta": "Risk समझे बिना yield chase न करें।"
-    },
-    {
-      "slide_number": 7,
-      "purpose": "action_plan",
-      "headline": "Passive income plan बनाइए",
-      "core_explanation": [
-        "अपना income goal और investment budget तय करें।",
-        "Quality companies की shortlist बनाकर fundamentals और valuation जाँचें।",
-        "Diversify करें, dividends reinvest करने या cash लेने का नियम तय करें।",
-        "हर quarter portfolio और dividend sustainability review करें।"
-      ],
-      "visual_spec": {
-        "visual_concept": "एक clear four-step pathway: goal-setting desk, company research station, diversified investment baskets, और recurring review calendar represented by seasonal changes. आगे बढ़ता हुआ Indian beginner investor confident लेकिन cautious हो।",
-        "image_generation_prompt": "NotebookLM-style educational aesthetic. NO TEXT. Rich step-by-step storytelling scene of an Indian beginner investor walking along a four-part pathway: setting a financial goal at a desk, researching strong businesses with a magnifying glass, arranging diversified investment baskets, and reviewing a changing seasonal portfolio garden, optimistic but realistic mood, elegant editorial illustration, teal, saffron, cream and deep navy palette, no letters, no numbers, no logos, no labels, no watermark."
-      },
-      "annotation": "Small, consistent investing beats chasing spectacular yields।",
-      "cta": "आज अपनी dividend checklist बनाइए।"
+      "annotation": "Final tip: plan को हर साल review करें",
+      "cta": "आज अपना पहला roadmap step चुनें"
     }
   ],
-  "caption": "Dividend yield देखकर passive income का सपना attractive लगता है—लेकिन smart investing सिर्फ high yield चुनना नहीं है। पहले yield calculate करें, फिर company के profits, cash flow, dividend history, taxes और risks जाँचें। Diversification और realistic expectations के साथ ही dividend strategy को long-term plan का हिस्सा बनाइए।\n\nयह educational content है, personal investment advice नहीं।\n\n#DividendInvesting #PassiveIncome #IndianInvestors #StockMarketForBeginners #PersonalFinanceIndia #DividendYield #InvestingBasics #TrustPointFin"
+  "caption": "Financial freedom at 40 कोई overnight miracle नहीं—यह clear expenses, realistic corpus planning, disciplined SIP, inflation awareness, insurance और debt control से बनने वाला system है। छोटे steps आज शुरू करें, ताकि future में choices ज्यादा और money stress कम हो।\n\n#FinancialFreedom #PersonalFinanceIndia #SIP #InvestmentPlanning #MoneyManagement #RetirementPlanning #FinancialPlanning #IndianInvestors #TrustPointFin #HinglishFinance"
 }
