@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-06T09:42:18.759Z",
+  "lastUpdated": "2026-11-09T21:33:55.321Z",
   "recentEntries": [
+    {
+      "date": "10 November 2026",
+      "edition": "MORNING",
+      "niftyPrice": 25044.65,
+      "topics": [
+        "Nifty Reclaims 25,000 Pivot as Benchmark Indices Establish Bullish Baseline",
+        "Bank Nifty Touches 59,741 as PSU Lenders Lead Banking Sector Momentum",
+        "Pharmaceutical Stocks Advance Alongside Banks to Deliver Defensive Portfolio Cushion",
+        "Data Patterns Surges 9% Highlighting High-Entry-Barrier Defence Electronics Moat",
+        "Crude Oil Cools to $92.79 as Rupee Holds Near 93.92"
+      ]
+    },
     {
       "date": "6 November 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "Metal and Pharma Stocks Surge as Defensive and Cyclical Drivers Rebound",
         "Capital Market Intermediaries Gain Momentum Amid Elevated Trading Volatility",
         "Brent Crude Holds Above $111 as USD/INR Sits at ₹95.17"
-      ]
-    },
-    {
-      "date": "23 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22600,
-      "topics": [
-        "Nifty Reclaims 22,600 Following Sharp Intraday Drop Below 22,400",
-        "Bank Nifty Slips 0.3% to 54,287 as Financials Face Headwinds",
-        "IT Heavyweights TCS, Infosys, and HCL Tech Counter Market Weakness",
-        "Exchange Tollbooths Gain Traction as India VIX Holds at 16.86",
-        "Brent Crude at $112.04 and USD/INR at ₹94.93 Sustain Headwinds"
       ]
     }
   ]
