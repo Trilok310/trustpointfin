@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-09T21:33:55.321Z",
+  "lastUpdated": "2026-11-10T18:48:28.055Z",
   "recentEntries": [
+    {
+      "date": "11 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 25044.65,
+      "topics": [
+        "Nifty Surges Past 25,000 as Global Brokerages Turn Bullish Post-Diwali",
+        "Bank Nifty Reaches 59,741 Driven by Institutional Post-Holiday Buying",
+        "Individual Ownership Hits Record 19.5% in NSE Companies During Q2FY27",
+        "India VIX Reaches 17.42 Signalling Increased Hedging Activity Demand",
+        "Brent Crude Softens to $91.68 Offering Relief for Domestic Currency"
+      ]
+    },
     {
       "date": "10 November 2026",
       "edition": "MORNING",
@@ -227,18 +239,6 @@
         "IT Stocks Face Selling Pressure While Selective Domestic Sectors Show Resilience",
         "Market Infrastructure Entities Gain Traction as India VIX Sustains at 16.77",
         "Crude Oil at $111.15 and USD/INR at 95.17 Maintain Import Cost Pressures"
-      ]
-    },
-    {
-      "date": "26 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22753.2,
-      "topics": [
-        "Nifty Snaps 4-Day Losing Streak to Reclaim 22,750 Level",
-        "Bank Nifty Slips 0.63% to 54,366.7 Amid Divergent Financial Performance",
-        "Metal and Pharma Stocks Surge as Defensive and Cyclical Drivers Rebound",
-        "Capital Market Intermediaries Gain Momentum Amid Elevated Trading Volatility",
-        "Brent Crude Holds Above $111 as USD/INR Sits at ₹95.17"
       ]
     }
   ]
