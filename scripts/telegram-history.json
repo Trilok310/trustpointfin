@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-10T18:48:28.055Z",
+  "lastUpdated": "2026-11-11T05:01:10.685Z",
   "recentEntries": [
+    {
+      "date": "11 November 2026",
+      "edition": "MORNING",
+      "niftyPrice": 25362.75,
+      "topics": [
+        "Nifty Crosses 25,350 Resistance as Global Indices Trigger Massive Bull Gap-Up",
+        "Bank Nifty Blasts Past 60,800 Led by SBI and ICICI Bank Momentum",
+        "Auto and Aviation Surge as M&M and IndiGo Capitalize on Softening Costs",
+        "Capital Market Tollbooths Gain Operating Leverage Amid Record Intraday Turnover Spikes",
+        "Brent Crude Pullback to $92.48 Eases Current Account Pressures for Rupee"
+      ]
+    },
     {
       "date": "11 November 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "Telecom and Consumer Goods Gain Momentum While IT and Paints Drag",
         "Capital Market Intermediaries Maintain Moats Amid Steady India VIX at 16.4",
         "Crude Eases to $109.54 as USD/INR Hovering at 95.11 Caps Gains"
-      ]
-    },
-    {
-      "date": "27 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22695.3,
-      "topics": [
-        "Nifty Slips Below 22,700 Mark Amid Volatility Ahead of Monthly Expiry",
-        "Bank Nifty Tumbles 1.89% to 54,085 as Heavyweight Financials Drag Benchmarks",
-        "IT Stocks Face Selling Pressure While Selective Domestic Sectors Show Resilience",
-        "Market Infrastructure Entities Gain Traction as India VIX Sustains at 16.77",
-        "Crude Oil at $111.15 and USD/INR at 95.17 Maintain Import Cost Pressures"
       ]
     }
   ]
