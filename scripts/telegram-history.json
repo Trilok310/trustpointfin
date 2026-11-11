@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-11T12:37:13.420Z",
+  "lastUpdated": "2026-11-11T18:51:39.210Z",
   "recentEntries": [
+    {
+      "date": "12 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 25255.05,
+      "topics": [
+        "Nifty Closes at 25255 as Q2 Earnings and Foreign Inflows Drive Benchmark Gains",
+        "Bank Nifty Reaches 60792 as Financials Lead Foreign Capital Allocation",
+        "IndiGo, M&M, and Trent Top Gainers as Earnings Boost Discretionary Momentum",
+        "NSE 500 Outperformers Hit New Peak Levels Amid Broad Expansion",
+        "Brent Crude Trades at $93.05 as India VIX Holds at 17.55 Level"
+      ]
+    },
     {
       "date": "11 November 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "Adani Pack and Consumer Discretionary Heavyweights Spearhead Market Breadth",
         "Capital Market Infrastructure Tollbooths Expand Margins on Massive Volume Spikes",
         "Brent Crude Stabilizes at $110 as Rupee at 95.25 Keeps Landed Costs Elevated"
-      ]
-    },
-    {
-      "date": "29 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22891.55,
-      "topics": [
-        "Nifty Surges 2.97% Near 22,900 as Global and Policy Tailwinds Converge",
-        "Bank Nifty Underperforms Broad Benchmark Surge With Subdued 0.41% Gain",
-        "Infra and Power Lead Charge as Adani Pack and PowerGrid Rally",
-        "Record IPO Activity Expands Operating Tollbooths for Market Infrastructure",
-        "Brent Crude at $110.43 and ₹95.32 Rupee Keep Inflation Concerns Elevated"
       ]
     }
   ]
