@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-11T05:01:10.685Z",
+  "lastUpdated": "2026-11-11T09:37:30.611Z",
   "recentEntries": [
+    {
+      "date": "11 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 25116.15,
+      "topics": [
+        "Nifty Settles at 25,116 After Parrying Intraday Highs Past 25,300",
+        "Bank Nifty Defends 60,500 Threshold as Institutional Buying Anchors Heavyweights",
+        "IT and Healthcare Stocks Face Selling Pressure During High-Beta Rotation",
+        "Adani Ports Touches Record High Showcasing Maritime Infrastructure Pricing Power",
+        "Brent Crude Stabilizes at $92.6 as Rupee Trades at 93.73"
+      ]
+    },
     {
       "date": "11 November 2026",
       "edition": "MORNING",
@@ -227,18 +239,6 @@
         "IT Stocks Face Heavy Selling Pressure While Telecom Gains on Jio Listing",
         "Market Infrastructure Tollbooths Benefit as India VIX Sustains at 16.3",
         "Brent Crude at $111.21 and ₹95.17 Rupee Compound Import Costs"
-      ]
-    },
-    {
-      "date": "27 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22749.75,
-      "topics": [
-        "Nifty Closes Flat at 22,749 as Midcaps Outperform Benchmark Indecision",
-        "Bank Nifty Tumbles 2.09% as Axis Bank Leads Financial Sector Sell-Off",
-        "Telecom and Consumer Goods Gain Momentum While IT and Paints Drag",
-        "Capital Market Intermediaries Maintain Moats Amid Steady India VIX at 16.4",
-        "Crude Eases to $109.54 as USD/INR Hovering at 95.11 Caps Gains"
       ]
     }
   ]
