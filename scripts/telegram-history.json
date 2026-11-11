@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-11T09:37:30.611Z",
+  "lastUpdated": "2026-11-11T12:37:13.420Z",
   "recentEntries": [
+    {
+      "date": "11 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 25255.05,
+      "topics": [
+        "Nifty 50 Closes Above 25,250 as Foreign Institutional Inflows Fuel Afternoon Upside",
+        "Bank Nifty Settles at 60,792 as Financials Lead Broad Market Liquidity Absorption",
+        "Consumer Discretionary and Smallcaps Outperform on Resilient Domestic Festive Demand",
+        "Capital Market Infrastructure Tollbooths Benefit Despite Moderating Mutual Fund Inflow Pace",
+        "Brent Crude at $93.17 and Rupee at 93.68 Anchor Sovereign Cost Pressures"
+      ]
+    },
     {
       "date": "11 November 2026",
       "edition": "EVENING",
@@ -227,18 +239,6 @@
         "Infra and Power Lead Charge as Adani Pack and PowerGrid Rally",
         "Record IPO Activity Expands Operating Tollbooths for Market Infrastructure",
         "Brent Crude at $110.43 and ₹95.32 Rupee Keep Inflation Concerns Elevated"
-      ]
-    },
-    {
-      "date": "28 October 2026",
-      "edition": "EVENING",
-      "niftyPrice": 22699.55,
-      "topics": [
-        "Nifty Reclaims 22,699 Amid High Intraday Swings and Sensex Gains",
-        "Bank Nifty Slides 1.4% to 54,282 as Pressure Mounts on Heavyweights",
-        "IT Stocks Face Heavy Selling Pressure While Telecom Gains on Jio Listing",
-        "Market Infrastructure Tollbooths Benefit as India VIX Sustains at 16.3",
-        "Brent Crude at $111.21 and ₹95.17 Rupee Compound Import Costs"
       ]
     }
   ]
