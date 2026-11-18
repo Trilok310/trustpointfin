@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-18T07:27:01.442Z",
+  "lastUpdated": "2026-11-18T10:29:11.827Z",
   "recentEntries": [
+    {
+      "date": "18 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 25227.95,
+      "topics": [
+        "Nifty Settles at 25,227.95 as Goldman Sachs Upgrades India to Overweight",
+        "Bank Nifty Holds 62,038.65 as FPI Monthly Inflows Hit ₹99,000 Crore Record",
+        "Nifty Consumer Durables Slides 3% as Titan and Kalyan Jewellers Drop 5%",
+        "Glass Wall Systems Jumps 4% Following New Contract Win",
+        "Brent Crude Moderates to $89.57 as USD/INR Settles at ₹93.44"
+      ]
+    },
     {
       "date": "18 November 2026",
       "edition": "MORNING",
@@ -227,18 +239,6 @@
         "Individual Ownership Hits Record 19.5% in NSE Companies During Q2FY27",
         "India VIX Reaches 17.42 Signalling Increased Hedging Activity Demand",
         "Brent Crude Softens to $91.68 Offering Relief for Domestic Currency"
-      ]
-    },
-    {
-      "date": "10 November 2026",
-      "edition": "MORNING",
-      "niftyPrice": 25044.65,
-      "topics": [
-        "Nifty Reclaims 25,000 Pivot as Benchmark Indices Establish Bullish Baseline",
-        "Bank Nifty Touches 59,741 as PSU Lenders Lead Banking Sector Momentum",
-        "Pharmaceutical Stocks Advance Alongside Banks to Deliver Defensive Portfolio Cushion",
-        "Data Patterns Surges 9% Highlighting High-Entry-Barrier Defence Electronics Moat",
-        "Crude Oil Cools to $92.79 as Rupee Holds Near 93.92"
       ]
     }
   ]
