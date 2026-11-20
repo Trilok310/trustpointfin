@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-20T06:01:58.520Z",
+  "lastUpdated": "2026-11-20T11:31:44.393Z",
   "recentEntries": [
+    {
+      "date": "20 November 2026",
+      "edition": "EVENING",
+      "niftyPrice": 25800.6,
+      "topics": [
+        "Sensex Rebounds 1,400 Points From Lows as Nifty Reclaims 25,800",
+        "Bank Nifty Tops 64,000 Record High Led by HDFC and ICICI Bank",
+        "Apollo Hospitals and IT Stocks Fuel Afternoon Market Surge",
+        "NSE Becomes World's 5th Largest Exchange by Market Capitalization",
+        "India VIX Tops 17 as Brent Crude Cools to $88.77"
+      ]
+    },
     {
       "date": "20 November 2026",
       "edition": "MORNING",
@@ -227,18 +239,6 @@
         "Pharma & FMCG Act as Resilient Capital Safe Havens",
         "Exchange & Depository Duopolies Gain on Volume Spikes",
         "Crude and Global Currency Dynamics Direct FII Flow"
-      ]
-    },
-    {
-      "date": "12 November 2026",
-      "edition": "MORNING",
-      "niftyPrice": 25255.05,
-      "topics": [
-        "GIFT Nifty Signals Steady Start While Global Cues Present Mixed Signals",
-        "Bank Nifty Reclaims Heavyweight Leadership Driven by Renewed Foreign Institutional Buying",
-        "Auto Stocks Lead Benchmark Outperformance Amid Largecap Earnings Momentum",
-        "Capital Market Intermediaries Gain Traction as Q2 Earnings Boost Volume Trajectory",
-        "Brent Crude Eases to $91.97 Per Barrel Cushioning Sovereign Cost Pressures"
       ]
     }
   ]
