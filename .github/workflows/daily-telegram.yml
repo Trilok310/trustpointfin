@@ -1,11 +1,12 @@
 name: Auto Post Daily Telegram Pulse
 
+# on:
+#   schedule:
+#     # 7:55 AM IST (2:25 AM UTC) - Pre-market Opening Pulse (Mon-Fri)
+#     - cron: '25 2 * * 1-5'
+#     # 4:55 PM IST (11:25 AM UTC) - Closing Settlement & Wrap (Mon-Fri)
+#     - cron: '25 11 * * 1-5'
 on:
-  schedule:
-    # 7:55 AM IST (2:25 AM UTC) - Pre-market Opening Pulse (Mon-Fri)
-    - cron: '25 2 * * 1-5'
-    # 4:55 PM IST (11:25 AM UTC) - Closing Settlement & Wrap (Mon-Fri)
-    - cron: '25 11 * * 1-5'
   workflow_dispatch:
     inputs:
       edition:
