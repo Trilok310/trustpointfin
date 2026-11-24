@@ -1,0 +1,118 @@
+name: Institutional Quant Radar & Multi-Channel Publisher
+
+on:
+  schedule:
+    # 1. Market Hours Catalyst Polling (Mon-Fri hourly 9:30 AM to 2:30 PM IST / 4:00 to 9:00 UTC)
+    - cron: '30 4,6,8 * * 1-5'
+    # 2. EOD Quant Bhavcopy & Research Run (Mon-Fri 7:15 PM IST / 13:45 UTC)
+    - cron: '45 13 * * 1-5'
+    # 3. Sunday Evening SFT Story Run (Sunday 7:30 PM IST / 14:00 UTC)
+    - cron: '0 14 * * 0'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Publishing Target'
+        required: true
+        default: 'AUTO'
+        type: choice
+        options:
+          - 'AUTO'
+          - 'TELEGRAM_CATALYST'
+          - 'SOCIAL_SFT'
+          - 'WEBSITE_RESEARCH'
+          - 'FULL_HARVEST'
+
+concurrency:
+  group: "quant-radar-pipeline"
+  cancel-in-progress: false
+
+jobs:
+  run-radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install System Dependencies for Puppeteer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgbm1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 || true
+
+      - name: Install Node Dependencies
+        run: |
+          npm install --no-fund --no-audit --loglevel=error
+          echo "✅ Dependencies verified."
+
+      - name: Execute Quant Harvesters & Synthesis
+        env:
+          TARGET_INPUT: ${{ github.event.inputs.target || 'AUTO' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "🚀 Executing Institutional Quant Pipeline (Target: $TARGET_INPUT)..."
+          
+          # Step 1: Harvesters
+          node scripts/engine/fetch-nse-oi.js || echo "OI fetch completed with fallback"
+          node scripts/engine/fetch-nse-delivery.js || echo "Delivery fetch completed with fallback"
+          node scripts/engine/fetch-exchange-filings.js || echo "Filings fetch completed with fallback"
+
+          # Determine Day of Week (0 = Sun, 2 = Tue, 3 = Wed, 5 = Fri)
+          DAY_OF_WEEK=$(date +%u)
+
+          # Step 2: Website Research (Tuesdays & Fridays EOD, or manual)
+          if [ "$TARGET_INPUT" = "WEBSITE_RESEARCH" ] || [ "$TARGET_INPUT" = "FULL_HARVEST" ] || [ "$DAY_OF_WEEK" -eq 2 ] || [ "$DAY_OF_WEEK" -eq 5 ]; then
+            echo "📰 Generating Website Institutional Research..."
+            node scripts/synthesizers/synthesize-research.js
+          fi
+
+          # Step 3: Social SFT Story (Wednesdays & Sundays, or manual)
+          if [ "$TARGET_INPUT" = "SOCIAL_SFT" ] || [ "$TARGET_INPUT" = "FULL_HARVEST" ] || [ "$DAY_OF_WEEK" -eq 3 ] || [ "$DAY_OF_WEEK" -eq 7 ]; then
+            echo "📸 Generating Twice-a-Week SFT Social Story..."
+            node scripts/synthesizers/synthesize-social.js
+          fi
+
+          # Step 4: Telegram Catalyst Alert Dispatch
+          if [ "$TARGET_INPUT" = "TELEGRAM_CATALYST" ] || [ "$TARGET_INPUT" = "FULL_HARVEST" ] || [ "$TARGET_INPUT" = "AUTO" ]; then
+            echo "⚡ Checking Telegram Catalyst Alert..."
+            node scripts/synthesizers/synthesize-telegram.js
+            
+            # Send alert to Telegram if pending
+            if [ -f "scripts/synthesizers/out/telegram-pending.json" ] && [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+              node -e "
+                const fs = require('fs');
+                const https = require('https');
+                const data = JSON.parse(fs.readFileSync('scripts/synthesizers/out/telegram-pending.json', 'utf-8'));
+                if (data && data.rawText) {
+                  const token = process.env.TELEGRAM_BOT_TOKEN;
+                  const chatId = process.env.TELEGRAM_CHAT_ID;
+                  const payload = JSON.stringify({ chat_id: chatId, text: data.rawText, disable_web_page_preview: true });
+                  const req = https.request({
+                    hostname: 'api.telegram.org',
+                    path: '/bot' + token + '/sendMessage',
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(payload) }
+                  }, res => console.log('Telegram dispatch HTTP status:', res.statusCode));
+                  req.on('error', e => console.error('Telegram dispatch error:', e.message));
+                  req.write(payload);
+                  req.end();
+                }
+              "
+            fi
+          fi
+
+      - name: Commit and Push Automated Updates
+        run: |
+          git config --global user.name "TrustPointFin QuantBot"
+          git config --global user.email "bot@trustpointfin.org"
+          git add scripts/engine/data/ scripts/synthesizers/out/ insights.html sitemap.xml *.html
+          git diff --staged --quiet || git commit -m "📊 Quant Radar: sync latest exchange flow & publications [skip ci]"
+          git push
