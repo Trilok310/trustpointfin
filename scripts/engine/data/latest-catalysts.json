@@ -1,0 +1,33 @@
+{
+  "scannedAt": "2026-11-24T08:53:00.053Z",
+  "totalScanned": 20,
+  "catalystCount": 2,
+  "catalysts": [
+    {
+      "symbol": "AXISCADES",
+      "companyName": "AXISCADES",
+      "category": "Acquisition",
+      "headline": "Acquisition",
+      "timestamp": "24-Nov-2026 14:15:01",
+      "attachmentUrl": null,
+      "matchedKeywords": [
+        "acquisition"
+      ],
+      "extractedAmount": null,
+      "isHighImpact": false
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "companyName": "BHARTIARTL",
+      "category": "Action(s) taken or orders passed",
+      "headline": "Action(s) taken or orders passed",
+      "timestamp": "24-Nov-2026 13:13:15",
+      "attachmentUrl": null,
+      "matchedKeywords": [
+        "order"
+      ],
+      "extractedAmount": null,
+      "isHighImpact": false
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "date": "23-Nov-2026",
+  "totalScannedEquities": 3588,
+  "highConvictionCount": 169,
+  "topAccumulation": [
+    {
+      "symbol": "HDFCBANK",
+      "date": "23-Nov-2026",
+      "closePrice": 817.8,
+      "changePct": -3.33,
+      "turnoverCr": 4624.37,
+      "delivQty": 32003042,
+      "delivPer": 57.53,
+      "delivTurnoverCr": 2660.4,
+      "noOfTrades": 503605
+    },
+    {
+      "symbol": "ICICIBANK",
+      "date": "23-Nov-2026",
+      "closePrice": 1585.5,
+      "changePct": -3.32,
+      "turnoverCr": 3569.6,
+      "delivQty": 14052189,
+      "delivPer": 63.18,
+      "delivTurnoverCr": 2255.27,
+      "noOfTrades": 299735
+    },
+    {
+      "symbol": "DIVISLAB",
+      "date": "23-Nov-2026",
+      "closePrice": 11203,
+      "changePct": 0.2,
+      "turnoverCr": 1398.91,
+      "delivQty": 826469,
+      "delivPer": 66.63,
+      "delivTurnoverCr": 932.09,
+      "noOfTrades": 77431
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "date": "23-Nov-2026",
+      "closePrice": 2128.5,
+      "changePct": -1.54,
+      "turnoverCr": 1217.59,
+      "delivQty": 3858883,
+      "delivPer": 67.7,
+      "delivTurnoverCr": 824.31,
+      "noOfTrades": 120919
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "date": "23-Nov-2026",
+      "closePrice": 1095.5,
+      "changePct": -2.36,
+      "turnoverCr": 1066.04,
+      "delivQty": 5981593,
+      "delivPer": 62.16,
+      "delivTurnoverCr": 662.65,
+      "noOfTrades": 213367
+    },
+    {
+      "symbol": "HINDALCO",
+      "date": "23-Nov-2026",
+      "closePrice": 900.45,
+      "changePct": -3.13,
+      "turnoverCr": 1085.8,
+      "delivQty": 6924252,
+      "delivPer": 57.83,
+      "delivTurnoverCr": 627.92,
+      "noOfTrades": 130614
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "date": "23-Nov-2026",
+      "closePrice": 502.85,
+      "changePct": -2.51,
+      "turnoverCr": 1042.27,
+      "delivQty": 11596013,
+      "delivPer": 56.46,
+      "delivTurnoverCr": 588.47,
+      "noOfTrades": 210103
+    },
+    {
+      "symbol": "M&M",
+      "date": "23-Nov-2026",
+      "closePrice": 3487.4,
+      "changePct": -1.62,
+      "turnoverCr": 946.06,
+      "delivQty": 1618899,
+      "delivPer": 60.1,
+      "delivTurnoverCr": 568.58,
+      "noOfTrades": 127099
+    },
+    {
+      "symbol": "ITC",
+      "date": "23-Nov-2026",
+      "closePrice": 301,
+      "changePct": 0.64,
+      "turnoverCr": 828.23,
+      "delivQty": 16581933,
+      "delivPer": 60.27,
+      "delivTurnoverCr": 499.17,
+      "noOfTrades": 137215
+    },
+    {
+      "symbol": "LIQUIDBEES",
+      "date": "23-Nov-2026",
+      "closePrice": 1000,
+      "changePct": 0,
+      "turnoverCr": 571.56,
+      "delivQty": 4575146,
+      "delivPer": 80.05,
+      "delivTurnoverCr": 457.53,
+      "noOfTrades": 5426
+    },
+    {
+      "symbol": "EICHERMOT",
+      "date": "23-Nov-2026",
+      "closePrice": 8172.5,
+      "changePct": 0.73,
+      "turnoverCr": 622.53,
+      "delivQty": 435717,
+      "delivPer": 57.26,
+      "delivTurnoverCr": 356.46,
+      "noOfTrades": 96875
+    },
+    {
+      "symbol": "GOLDIETF",
+      "date": "23-Nov-2026",
+      "closePrice": 106.69,
+      "changePct": 1.51,
+      "turnoverCr": 434.15,
+      "delivQty": 31198216,
+      "delivPer": 77.05,
+      "delivTurnoverCr": 334.51,
+      "noOfTrades": 89678
+    },
+    {
+      "symbol": "LICI",
+      "date": "23-Nov-2026",
+      "closePrice": 407.3,
+      "changePct": -0.83,
+      "turnoverCr": 472.74,
+      "delivQty": 7375562,
+      "delivPer": 64.16,
+      "delivTurnoverCr": 303.31,
+      "noOfTrades": 94010
+    },
+    {
+      "symbol": "MEESHO",
+      "date": "23-Nov-2026",
+      "closePrice": 253.11,
+      "changePct": -2.62,
+      "turnoverCr": 479.54,
+      "delivQty": 10953255,
+      "delivPer": 59.08,
+      "delivTurnoverCr": 283.31,
+      "noOfTrades": 99589
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "date": "23-Nov-2026",
+      "closePrice": 10643,
+      "changePct": -1.13,
+      "turnoverCr": 409.03,
+      "delivQty": 238930,
+      "delivPer": 62.53,
+      "delivTurnoverCr": 255.77,
+      "noOfTrades": 47570
+    }
+  ]
+}

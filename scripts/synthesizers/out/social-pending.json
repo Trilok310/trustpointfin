@@ -1,0 +1,71 @@
+{
+  "symbol": "HDFCBANK",
+  "slides": [
+    {
+      "slideIndex": 1,
+      "tag": "AUCTION MARKET THEORY • CASE STUDY",
+      "headline": "Why Smart Money Bought ₹2660.4 Cr of HDFCBANK While Retail Panicked",
+      "subheadline": "Price dropped -3.33%, but institutional delivery surged to an abnormal 57.53%. Here is the order flow breakdown.",
+      "statBox": {
+        "label": "Institutional Delivery",
+        "value": "57.53%"
+      }
+    },
+    {
+      "slideIndex": 2,
+      "tag": "THE LIQUIDITY TRAP",
+      "headline": "Retail Sees Panic. Smart Money Sees Wholesale Value.",
+      "body": "When broad market sentiment is fearful (FIIs 79.87% short in Index Futures), retail traders dump holdings at market bid prices. Institutional algorithms use this sell-side liquidity to fill large block buy orders without driving prices higher.",
+      "bullets": [
+        "Retail Stance: Selling into breakdown support levels",
+        "Smart Money Stance: Passive limit-order absorption at wholesale prices"
+      ]
+    },
+    {
+      "slideIndex": 3,
+      "tag": "QUANTITATIVE FOOTPRINT",
+      "headline": "The Delta & Delivery Divergence",
+      "body": "Normal daily delivery for HDFCBANK hovers between 35–45%. Today's jump to 57.53% with ₹2660.4 Cr committed proves strong institutional hands stepping in.",
+      "metrics": [
+        {
+          "name": "Close Price",
+          "value": "₹817.8"
+        },
+        {
+          "name": "Day Change",
+          "value": "-3.33%"
+        },
+        {
+          "name": "Delivery %",
+          "value": "57.53%"
+        },
+        {
+          "name": "Capital Deployed",
+          "value": "₹2660.4 Cr"
+        }
+      ]
+    },
+    {
+      "slideIndex": 4,
+      "tag": "THE SFT PLAYBOOK",
+      "headline": "How Institutional Desks Trade This Setup",
+      "body": "Never chase green candles blindly after an absorption event. The professional playbook follows 3 strict rules:",
+      "rules": [
+        "Wait for Value Area Acceptance: Look for daily close above the Point of Control (POC).",
+        "Confirm with Volume Profile: Ensure low volume nodes (LVN) act as price rejection floors.",
+        "Manage Risk Strictly: Invalidation occurs if price breaks below the day's absorption low on high volume."
+      ]
+    },
+    {
+      "slideIndex": 5,
+      "tag": "TRUSTPOINT FINANCE RESEARCH",
+      "headline": "Trade with Institutional Market Intelligence",
+      "body": "Stop trading on noisy retail tips. Upgrade to order flow, auction market structure, and real-time delivery insights.",
+      "action1": "Comment 'FLOW' to get our complete Order Flow Checklist PDF",
+      "action2": "Connect directly with our research desk on WhatsApp",
+      "link": "https://trustpointfin.org/whatsapp",
+      "disclosure": "Authorised Person of Angel One Ltd. For educational research only."
+    }
+  ],
+  "caption": "🚨 Why Did Smart Money Accumulate ₹2660.4 Cr of HDFCBANK on a Red Day? 📊\n\nRetail traders see a -3.33% drop and panic sell. But when you look under the hood with Auction Market Theory and Order Flow, the story is completely different:\n\n🔍 The Institutional Due Diligence:\n1️⃣ HDFCBANK saw an abnormal delivery ratio of 57.53%.\n2️⃣ Out of total turnover, over ₹2660.4 Crore was taken home in genuine demat delivery — not intraday speculation.\n3️⃣ FIIs are currently 79.87% net short in Index Futures while Retail is 70.17% long. In this asymmetric market, institutions accumulate selective blue-chips at wholesale discount levels.\n\n💡 The Key Takeaway:\nWhen price makes a lower low but institutional delivery volume spikes with absorption, smart money is accumulating passive liquidity. Wait for Value Area confirmation before taking exposure.\n\n📩 Comment \"FLOW\" below and we will DM you our complete Auction Market Theory Quick Reference Guide!\n\n💬 Chat directly with our financial research desk on WhatsApp:\nhttps://trustpointfin.org/whatsapp\n\n👉 Open Free Demat Account with Angel One:\nhttps://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=IG&utm_campaign=Nov\n\n#AuctionMarketTheory #OrderFlow #StockMarketIndia #SmartMoneyConcepts #Nifty50 #HDFCBANK #TrustPointFin #DalalStreet #PriceActionTrading"
+}

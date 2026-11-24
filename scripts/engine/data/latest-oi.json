@@ -1,0 +1,105 @@
+{
+  "date": "Participant wise Open Interest no of contracts in Equity Derivatives as on Nov 23, 2026,,,,,,,,,,,,,,",
+  "participants": {
+    "Client": {
+      "indexFutures": {
+        "long": 163812,
+        "short": 69646,
+        "total": 233458,
+        "net": 94166,
+        "longPercent": 70.17,
+        "shortPercent": 29.83
+      },
+      "stockFutures": {
+        "long": 3019722,
+        "short": 193247,
+        "net": 2826475
+      },
+      "indexOptions": {
+        "callLong": 2149564,
+        "putLong": 1602519,
+        "callShort": 2089822,
+        "putShort": 2021403,
+        "netCalls": 59742,
+        "netPuts": -418884
+      }
+    },
+    "DII": {
+      "indexFutures": {
+        "long": 52934,
+        "short": 33166,
+        "total": 86100,
+        "net": 19768,
+        "longPercent": 61.48,
+        "shortPercent": 38.52
+      },
+      "stockFutures": {
+        "long": 277217,
+        "short": 4212946,
+        "net": -3935729
+      },
+      "indexOptions": {
+        "callLong": 8005,
+        "putLong": 48250,
+        "callShort": 2083,
+        "putShort": 1847,
+        "netCalls": 5922,
+        "netPuts": 46403
+      }
+    },
+    "FII": {
+      "indexFutures": {
+        "long": 30649,
+        "short": 121598,
+        "total": 152247,
+        "net": -90949,
+        "longPercent": 20.13,
+        "shortPercent": 79.87
+      },
+      "stockFutures": {
+        "long": 3397963,
+        "short": 2593524,
+        "net": 804439
+      },
+      "indexOptions": {
+        "callLong": 395710,
+        "putLong": 629193,
+        "callShort": 485893,
+        "putShort": 317883,
+        "netCalls": -90183,
+        "netPuts": 311310
+      }
+    },
+    "Pro": {
+      "indexFutures": {
+        "long": 17521,
+        "short": 40506,
+        "total": 58027,
+        "net": -22985,
+        "longPercent": 30.19,
+        "shortPercent": 69.81
+      },
+      "stockFutures": {
+        "long": 623530,
+        "short": 318715,
+        "net": 304815
+      },
+      "indexOptions": {
+        "callLong": 594590,
+        "putLong": 579735,
+        "callShort": 570071,
+        "putShort": 518564,
+        "netCalls": 24519,
+        "netPuts": 61171
+      }
+    }
+  },
+  "summary": {
+    "fiiIndexLongPercent": 20.13,
+    "fiiIndexShortPercent": 79.87,
+    "clientIndexLongPercent": 70.17,
+    "clientIndexShortPercent": 29.83,
+    "retailFiiDivergence": 50.04,
+    "marketStance": "Extreme Smart Money Trap Setup: FIIs heavily net short in Index Futures while Retail is aggressively long. High vulnerability to downward pressure or sharp short-covering traps."
+  }
+}
