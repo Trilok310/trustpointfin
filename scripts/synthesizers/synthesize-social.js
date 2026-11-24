@@ -74,8 +74,7 @@ function generateSftCarousel(deliveryStock, oiData) {
     headline: "Trade with Institutional Market Intelligence",
     body: "Stop trading on noisy retail tips. Upgrade to order flow, auction market structure, and real-time delivery insights.",
     action1: "Comment 'FLOW' to get our complete Order Flow Checklist PDF",
-    action2: "Connect directly with our research desk on WhatsApp",
-    link: "https://trustpointfin.org/whatsapp",
+    action2: "Connect with our research desk & open an account via Link in Bio",
     disclosure: "Authorised Person of Angel One Ltd. For educational research only."
   };
 
