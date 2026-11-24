@@ -123,20 +123,12 @@ async function main() {
     const captionMatch = socialMdContent.match(/## 📝 Caption\n\n([\s\S]*?)\n\n---/);
     const baseCaption = captionMatch ? captionMatch[1].trim() : "New Insights from TrustPointFin!";
 
-    // Dedicated channel-specific captions with proper UTM campaign tracking
-    let igCaption = baseCaption;
-    if (!igCaption.includes("aonelink.in")) {
-        igCaption += `\n\n🔗 Open Free Demat Account (Link in Bio): ${IG_REFERRAL_LINK}`;
-    } else {
-        igCaption = igCaption.replace(/https:\/\/a\.aonelink\.in\/[^\s\)]+/, IG_REFERRAL_LINK);
-    }
+    // Dedicated channel-specific captions (ZERO outbound links to prevent Meta algorithm reach throttling)
+    // Strip any raw URLs from base caption
+    let cleanCaption = baseCaption.replace(/https?:\/\/[^\s\)]+/g, '').replace(/\n\s*\n\s*\n/g, '\n\n').trim();
 
-    let fbCaption = baseCaption;
-    if (!fbCaption.includes("aonelink.in")) {
-        fbCaption += `\n\n👉 Open Free Demat Account with Angel One: ${FB_REFERRAL_LINK}`;
-    } else {
-        fbCaption = fbCaption.replace(/https:\/\/a\.aonelink\.in\/[^\s\)]+/, FB_REFERRAL_LINK);
-    }
+    let igCaption = `${cleanCaption}\n\n🔗 Link in Bio to access our research desk & open an institutional Demat account.`;
+    let fbCaption = `${cleanCaption}\n\n👉 Check the link in our Bio or Pinned comment to connect with our research desk.`;
 
     let igStatus = "PENDING";
     let fbStatus = "PENDING";

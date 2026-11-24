@@ -79,7 +79,7 @@ function generateSftCarousel(deliveryStock, oiData) {
     disclosure: "Authorised Person of Angel One Ltd. For educational research only."
   };
 
-  // Caption for Instagram / Facebook
+  // Caption for Instagram / Facebook (Zero outbound URLs to prevent Meta reach throttling)
   const caption = 
 `🚨 Why Did Smart Money Accumulate ₹${turnoverCr} Cr of ${symbol} on a Red Day? 📊
 
@@ -93,13 +93,9 @@ Retail traders see a ${changePct}% drop and panic sell. But when you look under 
 💡 The Key Takeaway:
 When price makes a lower low but institutional delivery volume spikes with absorption, smart money is accumulating passive liquidity. Wait for Value Area confirmation before taking exposure.
 
-📩 Comment "FLOW" below and we will DM you our complete Auction Market Theory Quick Reference Guide!
+📩 Comment "FLOW" below and we will send our complete Auction Market Theory Quick Reference Guide directly to your DMs!
 
-💬 Chat directly with our financial research desk on WhatsApp:
-https://trustpointfin.org/whatsapp
-
-👉 Open Free Demat Account with Angel One:
-https://a.aonelink.in/ANGOne/uOwRu9n?utm_source=other&utm_medium=IG&utm_campaign=Nov
+🔗 Check the link in our bio to connect with our financial research desk and open an account.
 
 #AuctionMarketTheory #OrderFlow #StockMarketIndia #SmartMoneyConcepts #Nifty50 #${symbol} #TrustPointFin #DalalStreet #PriceActionTrading`;
 
